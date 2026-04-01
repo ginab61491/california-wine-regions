@@ -3,3 +3,4 @@ node_modules/
 data/diaries/
 *.log
 .DS_Store
+.github/
