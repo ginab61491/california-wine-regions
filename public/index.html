@@ -1,0 +1,1610 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Sommplicity — Wine Education</title>
+  <link rel="stylesheet" href="css/styles.css" />
+  <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css" />
+  <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"></script>
+  <script src="https://accounts.google.com/gsi/client" async defer></script>
+</head>
+<body>
+
+  <!-- Sidebar Navigation -->
+  <nav class="sidebar" id="sidebar">
+    <div class="sidebar-logo">
+      <img src="https://sommplicity.lovable.app/assets/hero-wine-BVxfFN1K.jpg" alt="" class="sidebar-wine-img" />
+      <span class="logo-wordmark">sommplicity</span>
+      <span class="logo-sub">wine education</span>
+    </div>
+
+    <ul class="nav-list">
+
+      <li class="nav-group-label">Travel to Wine Country</li>
+
+      <li class="nav-item active" data-section="catrip">
+        <span class="nav-icon">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+            <path d="M3 9l9-7 9 7v11a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z"/>
+            <polyline points="9 22 9 12 15 12 15 22"/>
+          </svg>
+        </span>
+        <span class="nav-label">Plan California Trip</span>
+      </li>
+      <li class="nav-item" data-section="caregions">
+        <span class="nav-icon">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+            <polygon points="1 6 1 22 8 18 16 22 23 18 23 2 16 6 8 2 1 6"/>
+            <line x1="8" y1="2" x2="8" y2="18"/>
+            <line x1="16" y1="6" x2="16" y2="22"/>
+          </svg>
+        </span>
+        <span class="nav-label">Explore California Wine Country</span>
+      </li>
+      <li class="nav-item" data-section="regions">
+        <span class="nav-icon">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+            <circle cx="12" cy="12" r="10"/>
+            <line x1="2" y1="12" x2="22" y2="12"/>
+            <path d="M12 2a15.3 15.3 0 0 1 4 10 15.3 15.3 0 0 1-4 10 15.3 15.3 0 0 1-4-10 15.3 15.3 0 0 1 4-10z"/>
+          </svg>
+        </span>
+        <span class="nav-label">Wine Regions of the World</span>
+      </li>
+      <li class="nav-item" data-section="events">
+        <span class="nav-icon">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+            <rect x="3" y="4" width="18" height="18" rx="2" ry="2"/><line x1="16" y1="2" x2="16" y2="6"/><line x1="8" y1="2" x2="8" y2="6"/><line x1="3" y1="10" x2="21" y2="10"/>
+          </svg>
+        </span>
+        <span class="nav-label">Bay Area Wine Events</span>
+      </li>
+
+      <li class="nav-group-label">Learn About Wine</li>
+
+      <li class="nav-item" data-section="dailywine">
+        <span class="nav-icon">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+            <path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/>
+            <polyline points="22,6 12,13 2,6"/>
+          </svg>
+        </span>
+        <span class="nav-label">Daily Wine Emails</span>
+      </li>
+      <li class="nav-item" data-section="wheel">
+        <span class="nav-icon">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+            <circle cx="12" cy="12" r="10"/>
+            <circle cx="12" cy="12" r="4"/>
+            <line x1="12" y1="2" x2="12" y2="8"/>
+            <line x1="12" y1="16" x2="12" y2="22"/>
+            <line x1="2" y1="12" x2="8" y2="12"/>
+            <line x1="16" y1="12" x2="22" y2="12"/>
+          </svg>
+        </span>
+        <span class="nav-label">Flavor Wheel</span>
+      </li>
+      <li class="nav-item" data-section="pairing">
+        <span class="nav-icon">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+            <path d="M18 8h1a4 4 0 0 1 0 8h-1"/>
+            <path d="M2 8h16v9a4 4 0 0 1-4 4H6a4 4 0 0 1-4-4V8z"/>
+            <line x1="6" y1="1" x2="6" y2="4"/>
+            <line x1="10" y1="1" x2="10" y2="4"/>
+            <line x1="14" y1="1" x2="14" y2="4"/>
+          </svg>
+        </span>
+        <span class="nav-label">Food Pairing</span>
+      </li>
+
+      <li class="nav-group-label">My Wine Journey</li>
+
+      <li class="nav-item" data-section="analyzer">
+        <span class="nav-icon">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+            <path d="M20.84 4.61a5.5 5.5 0 0 0-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 0 0-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 0 0 0-7.78z"/>
+          </svg>
+        </span>
+        <span class="nav-label">I Love This Wine</span>
+      </li>
+      <li class="nav-item" data-section="preferences">
+        <span class="nav-icon">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+            <path d="M20 21v-2a4 4 0 0 0-4-4H8a4 4 0 0 0-4 4v2"/><circle cx="12" cy="7" r="4"/>
+          </svg>
+        </span>
+        <span class="nav-label">My Account</span>
+      </li>
+      <li class="nav-item" data-section="diary">
+        <span class="nav-icon">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+            <path d="M4 19.5A2.5 2.5 0 0 1 6.5 17H20"/>
+            <path d="M6.5 2H20v20H6.5A2.5 2.5 0 0 1 4 19.5v-15A2.5 2.5 0 0 1 6.5 2z"/>
+            <line x1="8" y1="7" x2="16" y2="7"/><line x1="8" y1="11" x2="13" y2="11"/>
+          </svg>
+        </span>
+        <span class="nav-label">My Wine Diary</span>
+      </li>
+      <li class="nav-item" data-section="vault">
+        <span class="nav-icon">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+            <rect x="3" y="3" width="18" height="18" rx="2" ry="2"/>
+            <path d="M3 9h18"/><path d="M9 21V9"/>
+          </svg>
+        </span>
+        <span class="nav-label">My Wine Vault</span>
+      </li>
+      <li class="nav-item" data-section="recs">
+        <span class="nav-icon">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+            <polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/>
+          </svg>
+        </span>
+        <span class="nav-label">Recommendations</span>
+      </li>
+
+      <li class="nav-group-label">About</li>
+
+      <li class="nav-item" data-section="about">
+        <span class="nav-icon">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+            <circle cx="12" cy="12" r="10"/>
+            <line x1="12" y1="16" x2="12" y2="12"/>
+            <line x1="12" y1="8" x2="12.01" y2="8"/>
+          </svg>
+        </span>
+        <span class="nav-label">About Sommplicity</span>
+      </li>
+
+    </ul>
+  </nav>
+
+
+  <!-- Main Content -->
+  <main class="main-content" id="main-content">
+
+    <!-- ═══════════════════════════════════════════
+         SECTION 1: Sommelier AI Chatbot
+    ════════════════════════════════════════════ -->
+    <section class="section" id="chat-section">
+      <div class="section-header">
+        <h1>Sommelier AI</h1>
+        <span class="section-tagline">"helping people discover and understand their own palates"</span>
+        <p>Ask me anything about wine — regions, grapes, pairings, tasting notes, and more.</p>
+      </div>
+
+      <div class="chat-container">
+        <div class="chat-sidebar">
+          <h3>Quick Topics</h3>
+          <div class="quick-topics">
+            <button class="topic-btn" data-prompt="What are the main wine regions of France and what makes each one unique?">French Wine Regions</button>
+            <button class="topic-btn" data-prompt="Explain the difference between Old World and New World wines.">Old vs New World</button>
+            <button class="topic-btn" data-prompt="How do I properly taste and evaluate wine? What should I look for?">How to Taste Wine</button>
+            <button class="topic-btn" data-prompt="What are the most important red grape varieties and their flavor profiles?">Red Grape Varieties</button>
+            <button class="topic-btn" data-prompt="What are the most important white grape varieties and their flavor profiles?">White Grape Varieties</button>
+            <button class="topic-btn" data-prompt="Explain how oak aging affects wine flavor and what terms like 'oaky' or 'toasty' mean.">Oak Aging Explained</button>
+            <button class="topic-btn" data-prompt="What is terroir and why do winemakers talk about it so much?">What is Terroir?</button>
+            <button class="topic-btn" data-prompt="Give me a beginner's guide to Champagne and sparkling wines.">Sparkling Wine Guide</button>
+            <button class="topic-btn" data-prompt="How should I store and serve wine at home?">Storage & Service</button>
+            <button class="topic-btn" data-prompt="What are natural wines, biodynamic wines, and organic wines? How are they different?">Natural Wine</button>
+          </div>
+        </div>
+
+        <div class="chat-main">
+          <div class="messages-area" id="messages-area">
+            <div class="message assistant-message welcome-message">
+              <div class="message-avatar">🍷</div>
+              <div class="message-content">
+                <p>Welcome to <strong>Sommplicity</strong>. I'm here to help you experience wine differently — with clarity, curiosity, and genuine connection.</p>
+                <p>Whether you're just beginning your wine journey or deepening your knowledge, ask me about any region, grape, tasting note, food pairing, or winemaking question. The best wine experiences emerge when people feel comfortable and curious.</p>
+                <p><em>What would you like to explore today?</em></p>
+              </div>
+            </div>
+          </div>
+
+          <div class="chat-input-area">
+            <div class="input-wrapper">
+              <textarea
+                id="chat-input"
+                placeholder="Ask about wine regions, grape varieties, tasting notes, food pairings..."
+                rows="1"
+              ></textarea>
+              <button id="send-btn" class="send-btn" title="Send">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                  <line x1="22" y1="2" x2="11" y2="13"/>
+                  <polygon points="22 2 15 22 11 13 2 9 22 2"/>
+                </svg>
+              </button>
+            </div>
+            <p class="input-hint">Press Enter to send, Shift+Enter for new line</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ═══════════════════════════════════════════
+         SECTION: Daily Wine Emails
+    ════════════════════════════════════════════ -->
+    <section class="section" id="dailywine-section">
+      <div class="dailywine-scroll">
+
+        <div class="section-header">
+          <h1>Daily Bite-Size Wine Emails</h1>
+          <span class="section-tagline">Learn something new about wine every morning</span>
+          <p>Subscribe to receive short, curated lessons on wine — tailored to your level and interests. Built from the most trusted sources in wine education.</p>
+        </div>
+
+        <div class="dailywine-body">
+
+          <!-- Value prop -->
+          <div class="dailywine-intro">
+            <div class="dailywine-intro-card">
+              <div class="dailywine-intro-icon">📬</div>
+              <h2>What You'll Get</h2>
+              <p>A short, beautifully written email every day covering one wine topic — a grape variety, a region, a tasting technique, a food pairing tip, or a piece of wine history. Each email takes 2–3 minutes to read and is designed to build your knowledge over time.</p>
+            </div>
+          </div>
+
+          <!-- Trusted sources -->
+          <div class="dailywine-sources">
+            <h3>Sourced From the Best in Wine Education</h3>
+            <p class="dailywine-sources-sub">Every email is curated from the most respected and trusted wine references in the world:</p>
+            <div class="dailywine-source-grid">
+              <div class="dailywine-source">
+                <span class="source-name">GuildSomm</span>
+                <span class="source-desc">Professional sommelier education</span>
+              </div>
+              <div class="dailywine-source">
+                <span class="source-name">Wine Scholar Guild</span>
+                <span class="source-desc">In-depth regional wine study</span>
+              </div>
+              <div class="dailywine-source">
+                <span class="source-name">The Oxford Companion to Wine</span>
+                <span class="source-desc">The definitive wine encyclopedia</span>
+              </div>
+              <div class="dailywine-source">
+                <span class="source-name">JancisRobinson.com</span>
+                <span class="source-desc">World's most respected wine critic</span>
+              </div>
+              <div class="dailywine-source">
+                <span class="source-name">Wine Folly</span>
+                <span class="source-desc">Visual wine education &amp; guides</span>
+              </div>
+              <div class="dailywine-source">
+                <span class="source-name">Decanter</span>
+                <span class="source-desc">World-class wine journalism</span>
+              </div>
+              <div class="dailywine-source">
+                <span class="source-name">Wine Spectator</span>
+                <span class="source-desc">Ratings, reviews &amp; industry insight</span>
+              </div>
+              <div class="dailywine-source">
+                <span class="source-name">The World Atlas of Wine</span>
+                <span class="source-desc">Essential reference for wine geography</span>
+              </div>
+            </div>
+          </div>
+
+          <!-- Sign-up form -->
+          <div class="dailywine-form-section">
+            <h2>Customize Your Daily Emails</h2>
+
+            <div class="dailywine-form">
+
+              <!-- Email -->
+              <div class="dw-field">
+                <label class="dw-label">Your email</label>
+                <input type="email" class="dw-input" id="dw-email" placeholder="you@example.com" />
+              </div>
+
+              <!-- Name -->
+              <div class="dw-field">
+                <label class="dw-label">First name</label>
+                <input type="text" class="dw-input" id="dw-name" placeholder="e.g. Gina" />
+              </div>
+
+              <!-- Level -->
+              <div class="dw-field">
+                <label class="dw-label">What's your wine knowledge level?</label>
+                <div class="dw-level-options" id="dw-level">
+                  <button class="dw-level-btn" data-level="beginner">
+                    <span class="dw-level-emoji">🌱</span>
+                    <span class="dw-level-title">Beginner</span>
+                    <span class="dw-level-desc">I'm new to wine and want to learn the basics — grapes, regions, how to taste</span>
+                  </button>
+                  <button class="dw-level-btn" data-level="intermediate">
+                    <span class="dw-level-emoji">🍇</span>
+                    <span class="dw-level-title">Intermediate</span>
+                    <span class="dw-level-desc">I know the basics and want to go deeper — terroir, winemaking, blind tasting</span>
+                  </button>
+                  <button class="dw-level-btn" data-level="advanced">
+                    <span class="dw-level-emoji">🏆</span>
+                    <span class="dw-level-title">Advanced / Studying</span>
+                    <span class="dw-level-desc">I'm preparing for WSET, CMS, or want expert-level detail on appellations and producers</span>
+                  </button>
+                </div>
+              </div>
+
+              <!-- Topics -->
+              <div class="dw-field">
+                <label class="dw-label">Topics you're most interested in <span class="dw-hint">(select all that apply)</span></label>
+                <div class="dw-topics" id="dw-topics">
+                  <button class="dw-topic-btn" data-topic="grapes">🍇 Grape Varieties</button>
+                  <button class="dw-topic-btn" data-topic="regions">🗺️ Wine Regions</button>
+                  <button class="dw-topic-btn" data-topic="tasting">👃 Tasting Technique</button>
+                  <button class="dw-topic-btn" data-topic="pairing">🍽️ Food Pairing</button>
+                  <button class="dw-topic-btn" data-topic="winemaking">🏭 Winemaking</button>
+                  <button class="dw-topic-btn" data-topic="history">📜 Wine History</button>
+                  <button class="dw-topic-btn" data-topic="buying">💰 Buying &amp; Value</button>
+                  <button class="dw-topic-btn" data-topic="cellar">🍾 Cellaring &amp; Aging</button>
+                  <button class="dw-topic-btn" data-topic="exam">📝 Exam Prep (CMS/WSET)</button>
+                </div>
+              </div>
+
+              <!-- Submit -->
+              <button class="dw-subscribe-btn" id="dw-subscribe-btn">Subscribe — It's Free</button>
+
+              <p class="dw-footer-note">You'll receive one email per day. Unsubscribe anytime. Curated by a certified sommelier and reviewed for accuracy.</p>
+
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- ═══════════════════════════════════════════
+         SECTION 2: Flavor Wheel
+    ════════════════════════════════════════════ -->
+    <section class="section" id="wheel-section">
+      <div class="section-header">
+        <h1>Wine Flavor Wheel</h1>
+        <span class="section-tagline">"clarity, sensory presence, and genuine connection"</span>
+        <p>Click any segment to explore flavor categories and discover tasting notes.</p>
+      </div>
+
+      <div class="wheel-container">
+        <div class="wheel-canvas-wrap">
+          <canvas id="flavor-wheel" width="560" height="560"></canvas>
+        </div>
+        <div class="wheel-info-panel" id="wheel-info-panel">
+          <div class="wheel-info-default">
+            <div class="wheel-hint-icon">👆</div>
+            <h3>Click a Segment</h3>
+            <p>Click any section of the wheel to learn about that flavor category — what causes it, which wines express it, and specific examples.</p>
+            <div class="wheel-legend" id="wheel-legend"></div>
+          </div>
+          <div class="wheel-info-detail" id="wheel-info-detail" style="display:none">
+            <button class="back-btn" id="wheel-back-btn">← Back to overview</button>
+            <div id="wheel-detail-content"></div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ═══════════════════════════════════════════
+         SECTION 3: Wine Regions Map
+    ════════════════════════════════════════════ -->
+    <section class="section" id="regions-section">
+      <div class="section-header">
+        <h1>World Wine Regions</h1>
+        <span class="section-tagline">"wine becomes a bridge to deeper connection with others"</span>
+        <p>Click any highlighted region to discover its grape varieties, wine styles, and character.</p>
+      </div>
+
+      <div class="regions-container">
+        <div class="map-wrapper">
+          <svg id="world-map" viewBox="0 0 960 480" preserveAspectRatio="xMidYMid meet">
+            <!-- Fixed ocean background (doesn't zoom) -->
+            <rect id="map-ocean" width="960" height="480"/>
+            <!-- Zoom group — D3 zoom transforms this -->
+            <g id="map-zoom-group">
+              <path id="map-sphere"/>
+              <g id="map-graticule"></g>
+              <g id="map-countries"></g>
+              <g id="map-borders"></g>
+              <g id="map-country-labels"></g>
+              <g id="region-markers"></g>
+            </g>
+          </svg>
+          <div id="map-loading" style="position:absolute;color:rgba(255,255,255,0.5);font-family:Arial,sans-serif;font-size:13px;pointer-events:none;">Loading map…</div>
+          <!-- Zoom controls -->
+          <div class="map-zoom-controls">
+            <button class="map-zoom-btn" id="zoom-in" title="Zoom in">+</button>
+            <button class="map-zoom-btn" id="zoom-reset" title="Reset view">⊙</button>
+            <button class="map-zoom-btn" id="zoom-out" title="Zoom out">−</button>
+          </div>
+          <!-- Hover tooltip -->
+          <div id="map-tooltip" class="map-tooltip"></div>
+        </div>
+
+        <div class="region-info-panel" id="region-info-panel">
+          <div class="region-info-default">
+            <h3>Explore Wine Regions</h3>
+            <p>Hover any <span class="marker-legend"></span> for a preview. Click to dive deeper.</p>
+            <ul>
+              <li>Key grape varieties grown there</li>
+              <li>Dominant wine styles</li>
+              <li>Climate &amp; soil characteristics</li>
+              <li>Famous appellations &amp; producers</li>
+            </ul>
+            <div class="region-filter">
+              <p class="filter-label">Filter by country:</p>
+              <div class="filter-buttons" id="region-filters"></div>
+            </div>
+          </div>
+          <div class="region-info-detail" id="region-info-detail" style="display:none">
+            <button class="back-btn" id="region-back-btn">← All regions</button>
+            <div id="region-detail-content"></div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Region Explorer -->
+      <div class="region-explorer">
+        <div class="explorer-header">
+          <h3>Which wine region should I explore?</h3>
+          <p>Click a preference below — or edit any word and press Enter to customize your search.</p>
+        </div>
+        <div class="explorer-chips" id="explorer-chips"></div>
+        <div class="explorer-results" id="explorer-results" style="display:none"></div>
+      </div>
+    </section>
+
+    <!-- ═══════════════════════════════════════════
+         SECTION 4: Food & Wine Pairing
+    ════════════════════════════════════════════ -->
+    <section class="section" id="pairing-section">
+      <div class="section-header">
+        <h1>Food &amp; Wine Pairing</h1>
+        <span class="section-tagline">"elevating your wine experience with curated selections and expert guidance"</span>
+        <p>Discover perfect matches — start with a wine and find foods, or start with a dish and find wines.</p>
+      </div>
+
+      <div class="pairing-container">
+        <div class="pairing-controls">
+          <div class="pairing-mode-tabs">
+            <button class="pairing-tab active" data-mode="wine-to-food">Wine → Food</button>
+            <button class="pairing-tab" data-mode="food-to-wine">Food → Wine</button>
+          </div>
+
+          <div class="pairing-selector" id="wine-selector">
+            <h3>Select a Wine Style</h3>
+            <div class="selector-grid" id="wine-grid"></div>
+          </div>
+
+          <div class="pairing-selector" id="food-selector" style="display:none">
+            <h3>Select a Dish or Ingredient</h3>
+            <div class="selector-grid" id="food-grid"></div>
+          </div>
+        </div>
+
+        <div class="pairing-results" id="pairing-results">
+          <div class="pairing-placeholder">
+            <div class="placeholder-icon">🥂</div>
+            <h3>Make a Selection</h3>
+            <p>Choose a wine style or food to see pairing suggestions with explanations of why they work.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ═══════════════════════════════════════════
+         SECTION 5: I Love This Wine Analyzer
+    ════════════════════════════════════════════ -->
+    <section class="section" id="analyzer-section">
+      <div class="section-header">
+        <h1>I Love This Wine</h1>
+        <span class="section-tagline">"helping people discover and understand their own palates"</span>
+        <p>Search for a wine you love and discover exactly why — every tasting note explained in plain language.</p>
+      </div>
+
+      <div class="analyzer-container">
+        <div class="analyzer-search-panel">
+          <h3>Tell us your wine</h3>
+
+          <div class="wine-field-group">
+            <label class="wine-field-label" for="wine-name-input">Wine Name</label>
+            <input
+              type="text"
+              id="wine-name-input"
+              class="wine-text-input"
+              placeholder="e.g. Opus One, Barolo, Sassicaia"
+              autocomplete="off"
+            />
+          </div>
+
+          <div class="wine-field-group">
+            <label class="wine-field-label" for="wine-producer-input">Producer / Winery <span class="wine-field-optional">(optional)</span></label>
+            <input
+              type="text"
+              id="wine-producer-input"
+              class="wine-text-input"
+              placeholder="e.g. Giacomo Conterno, Penfolds"
+              autocomplete="off"
+            />
+          </div>
+
+          <div class="wine-field-group">
+            <label class="wine-field-label" for="wine-vintage-input">Vintage <span class="wine-field-optional">(optional)</span></label>
+            <input
+              type="text"
+              id="wine-vintage-input"
+              class="wine-text-input wine-text-input--short"
+              placeholder="e.g. 2018"
+              autocomplete="off"
+              maxlength="4"
+            />
+          </div>
+
+          <div class="analyzer-actions">
+            <button class="analyzer-clear-btn" id="wine-clear-btn">Clear</button>
+            <button class="analyzer-btn" id="wine-analyze-btn" disabled>Analyze</button>
+          </div>
+
+          <div class="analyzer-source-note">
+            <p>Descriptors sourced from Wine Spectator, Decanter, Vinous, Robert Parker, and Jancis Robinson.</p>
+          </div>
+        </div>
+
+        <div class="analyzer-results" id="wine-analyzer-results">
+          <div class="analyzer-empty">
+            <div class="analyzer-empty-icon">🍷</div>
+            <h3>Enter a Wine</h3>
+            <p>Type any wine you love — name the bottle, add the producer if you know it, then click Analyze to discover what makes it special.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ═══════════════════════════════════════════
+         SECTION 6: Plan a Trip to California Wine Country
+    ════════════════════════════════════════════ -->
+    <section class="section active" id="catrip-section">
+
+      <!-- ── Full-width Step 1 header ── -->
+      <div class="catrip-step-header step1-header">
+        <div class="catrip-step-num">Step 1</div>
+        <div class="catrip-step-title">Find a Winery</div>
+        <div class="catrip-step-sub">Set your preferences and discover perfectly matched California wine experiences</div>
+      </div>
+
+      <!-- ── Two-column layout ── -->
+      <div class="catrip-layout">
+
+        <!-- LEFT SIDEBAR: compact preference toolbar -->
+        <aside class="catrip-sidebar">
+          <div class="catrip-sidebar-inner">
+
+            <div class="sidebar-header">
+              <div class="sidebar-title">Find a Winery</div>
+              <div class="sidebar-sub">Tune your preferences, then hit Find.</div>
+            </div>
+
+            <!-- Region -->
+            <div class="s-section" id="region-panel">
+              <div class="s-label">Region</div>
+              <div class="region-select-btns" id="region-select-btns">
+                <button class="region-select-btn" data-region="Napa Valley">🏔️ Napa</button>
+                <button class="region-select-btn" data-region="Sonoma County">🌲 Sonoma</button>
+                <button class="region-select-btn" data-region="Healdsburg">🏡 Healdsburg</button>
+                <button class="region-select-btn" data-region="Paso Robles">☀️ Paso</button>
+              </div>
+            </div>
+
+            <!-- Subregion -->
+            <div class="s-section" id="subregion-panel" style="display:none">
+              <div class="s-label">Area <span class="optional-label">optional</span></div>
+              <div class="subregion-chips" id="subregion-chips"></div>
+            </div>
+
+            <!-- Sliders -->
+            <div class="s-section">
+              <div class="s-label">Preferences</div>
+              <div id="trip-sliders"></div>
+            </div>
+
+            <button class="trip-find-btn" id="find-wineries-btn">Find Wineries →</button>
+
+            <!-- Trip builder -->
+            <div class="s-section s-trip-builder" id="trip-builder-section" style="display:none">
+              <div id="trip-selected-list"></div>
+              <button class="trip-next-btn" id="go-to-step2-btn">↓ Go to Step 2</button>
+            </div>
+
+          </div>
+        </aside>
+
+        <!-- RIGHT MAIN: map then results -->
+        <div class="catrip-main">
+
+          <!-- Map state (initial) — artisan wine country collage -->
+          <div class="catrip-map-state" id="catrip-map-state">
+            <div class="catrip-collage">
+              <div class="collage-img collage-main">
+                <img src="https://images.unsplash.com/photo-1506377247377-2a5b3b417ebb?w=800&h=600&fit=crop" alt="Vineyard rows" onerror="this.parentElement.style.background='var(--cream-mid)'"/>
+              </div>
+              <div class="collage-img collage-top-right">
+                <img src="https://images.unsplash.com/photo-1474722883778-792e7990302f?w=400&h=300&fit=crop" alt="Wine barrels" onerror="this.parentElement.style.background='var(--cream-mid)'"/>
+              </div>
+              <div class="collage-img collage-bottom-right">
+                <img src="https://images.unsplash.com/photo-1510812431401-41d2bd2722f3?w=400&h=300&fit=crop" alt="Wine tasting" onerror="this.parentElement.style.background='var(--cream-mid)'"/>
+              </div>
+            </div>
+            <div class="catrip-map-overlay">
+              <div class="map-intro-box">
+                <div class="map-intro-title">California Wine Country</div>
+                <div class="map-intro-sub">Select a region, tune your preferences,<br>then click <strong>Find Wineries</strong> to see curated recommendations.</div>
+                <div class="map-region-pills">
+                  <span style="background:rgba(196,96,42,0.2);border-color:rgba(196,96,42,0.5)">Napa Valley</span>
+                  <span style="background:rgba(92,122,82,0.2);border-color:rgba(92,122,82,0.5)">Sonoma</span>
+                  <span style="background:rgba(196,146,42,0.2);border-color:rgba(196,146,42,0.5)">Healdsburg</span>
+                  <span style="background:rgba(196,96,42,0.15);border-color:rgba(196,96,42,0.4)">Paso Robles</span>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Results state (shown after search) -->
+          <div class="catrip-results-state" id="catrip-results-state" style="display:none">
+            <div class="results-top-bar">
+              <span id="winery-count-label" class="results-count"></span>
+              <button class="adjust-prefs-btn" id="back-to-map-btn">← Adjust Preferences</button>
+            </div>
+            <div class="results-scroll" id="trip-results"></div>
+          </div>
+
+        </div><!-- .catrip-main -->
+      </div><!-- .catrip-layout -->
+
+      <!-- ── STEP 2 ── -->
+      <div id="step2-section">
+        <div class="catrip-step-header step2-header">
+          <div class="catrip-step-num">Step 2</div>
+          <div class="catrip-step-title">Plan Your Trip</div>
+          <div class="catrip-step-sub">Build your day with wineries, meals, and stops</div>
+        </div>
+        <div class="step2-inner">
+
+          <!-- All trip settings in one card -->
+          <div class="step2-settings-card">
+
+            <div class="s2-row">
+              <div class="s2-field" style="flex:1">
+                <div class="s2-label">Your wineries</div>
+                <div class="step2-wineries-list" id="step2-winery-list">
+                  <span class="step2-empty-msg">Add wineries from Step 1 above</span>
+                </div>
+              </div>
+            </div>
+
+            <div class="s2-divider"></div>
+
+            <div class="s2-row s2-row-3">
+              <div class="s2-field">
+                <div class="s2-label">Days</div>
+                <div class="trip-days-options" id="trip-days-options">
+                  <button class="trip-day-btn active" data-days="1">Day</button>
+                  <button class="trip-day-btn" data-days="2">2</button>
+                  <button class="trip-day-btn" data-days="3">3</button>
+                  <button class="trip-day-btn" data-days="4">4+</button>
+                </div>
+              </div>
+              <div class="s2-field">
+                <div class="s2-label">Starting from</div>
+                <select id="start-location" class="logistics-select">
+                  <option value="San Francisco, CA">San Francisco</option>
+                  <option value="San Francisco Airport (SFO)">SFO Airport</option>
+                  <option value="Downtown Napa, CA">Downtown Napa</option>
+                  <option value="Sonoma Plaza, Sonoma, CA">Sonoma Square</option>
+                  <option value="custom">Somewhere else...</option>
+                </select>
+                <input type="text" id="start-location-custom" class="logistics-input" placeholder="Enter location" style="display:none;margin-top:4px"/>
+              </div>
+              <div class="s2-field">
+                <div class="s2-label">First tasting</div>
+                <select id="trip-start-time" class="logistics-select">
+                  <option value="9">9:00 AM</option>
+                  <option value="9.5">9:30 AM</option>
+                  <option value="10" selected>10:00 AM</option>
+                  <option value="10.5">10:30 AM</option>
+                  <option value="11">11:00 AM</option>
+                </select>
+              </div>
+            </div>
+
+            <div class="s2-row">
+              <div class="s2-field" style="flex:1">
+                <div class="s2-label">Accommodation</div>
+                <input type="text" id="accommodation-input" class="logistics-input" placeholder="e.g. Meadowood Resort, Hotel Healdsburg" />
+              </div>
+              <div class="s2-field" id="transport-placeholder" style="display:none">
+                <div class="transport-options" id="transport-options"></div>
+                <div class="transport-advice" id="transport-advice"></div>
+              </div>
+            </div>
+
+            <div class="s2-divider"></div>
+
+            <div class="s2-row s2-row-3">
+              <div class="s2-field">
+                <label class="meal-check"><input type="checkbox" id="plan-breakfast" /> Breakfast</label>
+                <div id="breakfast-style-wrap" class="meal-style-wrap" style="display:none">
+                  <div class="meal-style-btns">
+                    <button class="meal-style-btn active" data-meal="breakfast" data-type="quick">Quick</button>
+                    <button class="meal-style-btn" data-meal="breakfast" data-type="sitdown">Sit-Down</button>
+                    <button class="meal-style-btn" data-meal="breakfast" data-type="rated">Top Rated</button>
+                  </div>
+                  <div class="meal-spot-picker" id="breakfast-spot-picker"></div>
+                </div>
+              </div>
+              <div class="s2-field">
+                <label class="meal-check"><input type="checkbox" id="plan-lunch" /> Lunch</label>
+                <div id="lunch-style-wrap" class="meal-style-wrap" style="display:none">
+                  <div class="meal-style-btns">
+                    <button class="meal-style-btn active" data-meal="lunch" data-type="quick">Quick</button>
+                    <button class="meal-style-btn" data-meal="lunch" data-type="sitdown">Sit-Down</button>
+                    <button class="meal-style-btn" data-meal="lunch" data-type="scenic">Scenic</button>
+                    <button class="meal-style-btn" data-meal="lunch" data-type="rated">Top Rated</button>
+                  </div>
+                  <div class="meal-spot-picker" id="lunch-spot-picker"></div>
+                </div>
+              </div>
+              <div class="s2-field">
+                <label class="meal-check"><input type="checkbox" id="plan-dinner" /> Dinner</label>
+                <div id="dinner-style-wrap" class="meal-style-wrap" style="display:none">
+                  <div class="meal-style-btns">
+                    <button class="meal-style-btn" data-meal="dinner" data-type="quick">Quick</button>
+                    <button class="meal-style-btn active" data-meal="dinner" data-type="sitdown">Sit-Down</button>
+                    <button class="meal-style-btn" data-meal="dinner" data-type="scenic">Scenic</button>
+                    <button class="meal-style-btn" data-meal="dinner" data-type="rated">Top Rated</button>
+                  </div>
+                  <div class="meal-spot-picker" id="dinner-spot-picker"></div>
+                </div>
+              </div>
+            </div>
+
+            <div class="s2-divider"></div>
+
+            <div class="s2-row">
+              <div class="s2-field" style="flex:1">
+                <div class="s2-label">Add to schedule</div>
+                <div class="custom-activity-row">
+                  <input type="text" id="custom-activity-input" class="logistics-input" placeholder="e.g. Sonoma Square, coffee, hike" />
+                  <button class="custom-activity-add-btn" id="custom-activity-add-btn">+</button>
+                </div>
+                <div class="custom-activities-list" id="custom-activities-list"></div>
+              </div>
+            </div>
+
+          </div>
+
+          <!-- Build itinerary button -->
+          <div class="logistics-actions">
+            <button class="logistics-action-btn" id="build-itinerary-btn">Build My Itinerary</button>
+          </div>
+
+          <!-- Two-column: itinerary + recommendations sidebar -->
+          <div class="step2-layout">
+            <div class="step2-main">
+              <div class="trip-itinerary" id="trip-itinerary"></div>
+              <div class="logistics-actions" id="itinerary-actions" style="display:none">
+                <button class="logistics-action-btn" id="open-maps-btn">🗺️ Preview Route in Google Maps</button>
+              </div>
+            </div>
+            <aside class="step2-recs-sidebar" id="step2-recs-sidebar" style="display:none">
+              <div class="recs-sidebar-title">Recommended Stops</div>
+              <div class="recs-sidebar-sub">Based on your route — add any to your schedule</div>
+              <div class="recs-sidebar-list" id="recs-sidebar-list"></div>
+              <div class="recs-sidebar-title" style="margin-top:18px">Tips</div>
+              <div class="recs-sidebar-tips" id="recs-sidebar-tips"></div>
+            </aside>
+          </div>
+
+        </div>
+      </div>
+
+    </section>
+
+    <!-- ═══════════════════════════════════════════
+         SECTION: Explore California Wine Regions
+    ════════════════════════════════════════════ -->
+    <section class="section" id="caregions-section">
+
+      <!-- Hero -->
+      <div class="caregions-hero">
+        <div class="caregions-hero-inner">
+          <div class="caregions-eyebrow">California Wine Country</div>
+          <h1 class="caregions-title">Explore California Wine Country</h1>
+          <p class="caregions-subtitle">From Napa's storied hillsides to Sonoma's hidden valleys — understand what makes each region distinct, and which one calls to you.</p>
+        </div>
+        <img class="caregions-hero-photo" src="https://images.unsplash.com/photo-1506377247377-2a5b3b417ebb?w=480&h=320&fit=crop" alt="Wine country vineyard" />
+      </div>
+
+      <!-- Map + callouts -->
+      <div class="caregions-map-section">
+        <div class="ca-map-layout">
+
+          <!-- Left callouts -->
+          <div class="ca-callouts ca-callouts-left">
+            <div class="ca-callout callout-healdsburg" data-region="healdsburg">
+              <div class="callout-body">
+                <div class="callout-name" style="color:#C4922A"><a href="#" class="callout-name-link" data-card-id="healdsburg">Healdsburg</a></div>
+                <div class="callout-sub">Relaxed, low-key, and draws a local crowd. A charming square with tasting rooms, farm-to-table restaurants, and boutique hotels.</div>
+                <div class="callout-wineries">
+                  <span class="callout-winery-name">Seghesio</span>
+                  <span class="callout-winery-sep">·</span>
+                  <span class="callout-winery-name">A. Rafanelli</span>
+                  <span class="callout-winery-sep">·</span>
+                  <span class="callout-winery-name">Ridge</span>
+                  <span class="callout-winery-sep">·</span>
+                  <span class="callout-winery-name">Copain</span>
+                </div>
+              </div>
+            </div>
+            <div class="ca-callout callout-sonoma" data-region="sonoma">
+              <div class="callout-body">
+                <div class="callout-name" style="color:#5C7A52"><a href="#" class="callout-name-link" data-card-id="sonoma">Sonoma</a></div>
+                <div class="callout-sub">Cooler, diverse, and laid-back. Three times Napa's size. The best Pinot Noir in California, great value, and a genuine farm-country feel.</div>
+                <div class="callout-wineries">
+                  <span class="callout-winery-name">Williams Selyem</span>
+                  <span class="callout-winery-sep">·</span>
+                  <span class="callout-winery-name">Rochioli</span>
+                  <span class="callout-winery-sep">·</span>
+                  <span class="callout-winery-name">Kistler</span>
+                  <span class="callout-winery-sep">·</span>
+                  <span class="callout-winery-name">Flowers</span>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Leaflet Map -->
+          <div class="ca-map-svg-wrap">
+            <div id="ca-wine-leaflet-map"></div>
+          </div>
+
+          <!-- Right callouts -->
+          <div class="ca-callouts ca-callouts-right">
+            <div class="ca-callout callout-napa" data-region="napa">
+              <div class="callout-body">
+                <div class="callout-name" style="color:#C4602A"><a href="#" class="callout-name-link" data-card-id="napa">Napa Valley</a></div>
+                <div class="callout-sub">World-famous and polished — grand estates, celebrity chefs, and blockbuster Cabernets. Higher prices, bigger crowds, but iconic.</div>
+                <div class="callout-wineries">
+                  <span class="callout-winery-name">Opus One</span>
+                  <span class="callout-winery-sep">·</span>
+                  <span class="callout-winery-name">Caymus</span>
+                  <span class="callout-winery-sep">·</span>
+                  <span class="callout-winery-name">Stag's Leap</span>
+                  <span class="callout-winery-sep">·</span>
+                  <span class="callout-winery-name">Domaine Chandon</span>
+                </div>
+              </div>
+            </div>
+            <div class="ca-callout callout-paso" data-region="paso-robles">
+              <div class="callout-body">
+                <div class="callout-name" style="color:#8A6DAC"><a href="#" class="callout-name-link" data-card-id="paso-robles">Paso Robles</a></div>
+                <div class="callout-sub">California's most exciting emerging destination — 3.5 hrs south. Rugged, agricultural. World-class Rhône varieties at a fraction of Napa prices.</div>
+                <div class="callout-wineries">
+                  <span class="callout-winery-name">JUSTIN</span>
+                  <span class="callout-winery-sep">·</span>
+                  <span class="callout-winery-name">Tablas Creek</span>
+                  <span class="callout-winery-sep">·</span>
+                  <span class="callout-winery-name">Saxum</span>
+                  <span class="callout-winery-sep">·</span>
+                  <span class="callout-winery-name">Epoch</span>
+                </div>
+              </div>
+            </div>
+          </div>
+
+        </div>
+      </div><!-- .caregions-map-section -->
+
+      <!-- Expandable region cards -->
+      <div class="caregions-cards-section">
+        <h2 class="caregions-cards-title">Dive Deeper Into Each Region</h2>
+        <div class="ca-region-cards-grid" id="ca-regions-guide"></div>
+      </div>
+
+      <!-- Tips for visiting wine country -->
+      <div class="caregions-tips-section">
+        <h2 class="caregions-tips-title">Tips for Visiting California Wine Country</h2>
+
+        <div class="caregions-tips-grid">
+
+          <div class="caregions-tip-card">
+            <div class="tip-card-icon">🗓️</div>
+            <h3>Best Seasons to Visit</h3>
+            <div class="season-item">
+              <img class="season-img" src="https://images.unsplash.com/photo-1523531294919-4bcd7c65ef8a?w=100&h=100&fit=crop" alt="Spring vineyard with new green buds" />
+              <p><strong>Spring (Mar–May)</strong> — Mustard season in Napa. Vineyards are bright yellow, crowds are lighter, and prices are lower. Weather can be unpredictable.</p>
+            </div>
+            <div class="season-item">
+              <img class="season-img" src="https://images.unsplash.com/photo-1560493676-04071c5f467b?w=100&h=100&fit=crop" alt="Summer vineyard with full green leaf canopy" />
+              <p><strong>Summer (Jun–Aug)</strong> — Peak tourist season. Long warm days, everything is open, but wineries and restaurants book up fast. Reserve 2–4 weeks ahead.</p>
+            </div>
+            <div class="season-item">
+              <img class="season-img" src="https://images.unsplash.com/photo-1596142813210-0da03ce613fb?w=100&h=100&fit=crop" alt="Harvest ripe purple grapes on vine" />
+              <p><strong>Harvest (Sep–Oct)</strong> — The most exciting time to visit. Grapes being picked, wineries buzzing with activity. Called "crush" — you can smell fermentation in the air. Book everything far in advance.</p>
+            </div>
+            <div class="season-item">
+              <img class="season-img" src="https://images.unsplash.com/photo-1542601906990-b4d3fb778b09?w=100&h=100&fit=crop" alt="Winter bare dormant vine rows" />
+              <p><strong>Fall/Winter (Nov–Feb)</strong> — Quieter, more intimate. Many wineries offer library tastings and special events. Rainy days are great for caves and barrel rooms. Best prices on hotels.</p>
+            </div>
+          </div>
+
+          <div class="caregions-tip-card">
+            <div class="tip-card-icon">🍇</div>
+            <h3>Harvest Calendar</h3>
+            <p><strong>Late August</strong> — Sparkling wine grapes (Pinot Noir, Chardonnay) harvested first for lower sugar.</p>
+            <p><strong>September</strong> — Pinot Noir, Chardonnay, Sauvignon Blanc. Sonoma Coast and Russian River start early.</p>
+            <p><strong>October</strong> — Cabernet Sauvignon, Merlot, Zinfandel. Napa Valley's big reds come in last.</p>
+            <p><strong>Late October</strong> — Late-harvest varieties, Petit Verdot. The last picks of the season.</p>
+            <p class="tip-note">Harvest timing shifts each year based on weather. Warm years start 1–2 weeks earlier.</p>
+          </div>
+
+          <div class="caregions-tip-card">
+            <div class="tip-card-icon">🚗</div>
+            <h3>Getting Around</h3>
+            <p><strong>Rent a car</strong> — Essential for Sonoma, Healdsburg, and Paso Robles. Most flexible option. Budget $60–$100/day from SFO. <em>Designate a driver or rotate.</em></p>
+            <p><strong>Hire a driver</strong> — Best for groups of 4+. $300–$600/full day. No one has to skip tasting. Search "Napa wine country driver" or "Sonoma limo service."</p>
+            <div class="tip-links">
+              <a href="https://www.beauwinetours.com" target="_blank">Beau Wine Tours</a>
+              <a href="https://www.platypustours.com" target="_blank">Platypus Tours</a>
+              <a href="https://www.napavalleywinetrolley.com" target="_blank">Napa Wine Trolley</a>
+            </div>
+            <p><strong>Guided tours</strong> — Great for first-timers. $150–$350/person including tastings and often lunch.</p>
+            <div class="tip-links">
+              <a href="https://www.platypustours.com" target="_blank">Platypus (Napa/Sonoma)</a>
+              <a href="https://www.grapeline.com" target="_blank">Grapeline Wine Tours</a>
+              <a href="https://www.breakawaytours.com" target="_blank">Breakaway Tours</a>
+            </div>
+          </div>
+
+          <div class="caregions-tip-card">
+            <div class="tip-card-icon">📱</div>
+            <h3>Where Uber/Lyft Works (and Doesn't)</h3>
+            <p><strong>Works well:</strong> Downtown Napa, Yountville, St. Helena, town of Sonoma. Short hops between tasting rooms.</p>
+            <p><strong>Unreliable:</strong> Russian River Valley, Dry Creek Valley, Alexander Valley — too rural. Expect 15–30 min waits or no drivers at all.</p>
+            <p><strong>Doesn't work:</strong> Sonoma Coast, Howell Mountain, Spring Mountain, Paso Robles — don't count on it. Cell service is spotty in these areas too.</p>
+            <p class="tip-note">Download offline maps (Google Maps → download area) before heading to remote regions. Save winery addresses ahead of time.</p>
+          </div>
+
+          <div class="caregions-tip-card">
+            <div class="tip-card-icon">🏨</div>
+            <h3>Where to Stay</h3>
+            <p><strong>Napa:</strong> Yountville for walkability and dining. Calistoga for a more relaxed, hot-springs vibe. Downtown Napa for nightlife and Oxbow Market.</p>
+            <p><strong>Sonoma:</strong> Healdsburg is the best base — central to Russian River, Dry Creek, and Alexander Valley. The town of Sonoma for a more affordable, quieter option.</p>
+            <p><strong>Paso Robles:</strong> Downtown Paso has charming inns. JUSTIN has an on-site luxury inn. Allegretto is a standout resort.</p>
+            <p class="tip-note">Book accommodations at least 2–4 weeks ahead for weekends. During harvest (Sep–Oct), book months ahead.</p>
+          </div>
+
+          <div class="caregions-tip-card">
+            <div class="tip-card-icon">💡</div>
+            <h3>Pro Tips</h3>
+            <p><strong>3 wineries max per day.</strong> More than that and your palate fatigues. Savor each one.</p>
+            <p><strong>Eat before you taste.</strong> A solid breakfast makes the difference between a great day and a short one.</p>
+            <p><strong>Use the spit bucket.</strong> Seriously — sommeliers do it, and it lets you taste more without the effects.</p>
+            <p><strong>Ask for the reserve tasting.</strong> It costs more but features the best wines. Always worth the upgrade.</p>
+            <p><strong>Ship wine home.</strong> Most wineries will ship. It's easier and safer than checking wine in luggage.</p>
+            <p><strong>Weekdays are better.</strong> Fewer crowds, more personal attention, sometimes walk-in availability at appointment-only spots.</p>
+          </div>
+
+        </div>
+      </div>
+
+    </section>
+
+    <!-- ═══════════════════════════════════════════
+         SECTION: My Account (blank)
+    ════════════════════════════════════════════ -->
+    <section class="section" id="preferences-section">
+      <div class="section-header">
+        <h1>My Account</h1>
+        <span class="section-tagline">Your profile and preferences</span>
+        <p>Manage your account, set your palate preferences, and personalize your experience.</p>
+      </div>
+      <div class="account-scroll">
+        <div class="account-body">
+
+          <!-- Not signed in state -->
+          <div class="account-card" id="account-not-signed-in">
+            <div class="account-card-icon">🔒</div>
+            <h2>Sign in to view your account</h2>
+            <p>Sign in with Google to save preferences, manage email subscriptions, and personalize your experience.</p>
+            <button class="auth-signin-btn" id="account-google-signin-btn">
+              <svg class="auth-google-icon" viewBox="0 0 24 24"><path d="M22.56 12.25c0-.78-.07-1.53-.2-2.25H12v4.26h5.92a5.06 5.06 0 0 1-2.2 3.32v2.77h3.57c2.08-1.92 3.27-4.74 3.27-8.1z" fill="#4285F4"/><path d="M12 23c2.97 0 5.46-.98 7.28-2.66l-3.57-2.77c-.98.66-2.23 1.06-3.71 1.06-2.86 0-5.29-1.93-6.16-4.53H2.18v2.84C3.99 20.53 7.7 23 12 23z" fill="#34A853"/><path d="M5.84 14.09c-.22-.66-.35-1.36-.35-2.09s.13-1.43.35-2.09V7.07H2.18A10.96 10.96 0 0 0 1 12c0 1.77.42 3.45 1.18 4.93l3.66-2.84z" fill="#FBBC05"/><path d="M12 5.38c1.62 0 3.06.56 4.21 1.64l3.15-3.15C17.45 2.09 14.97 1 12 1 7.7 1 3.99 3.47 2.18 7.07l3.66 2.84c.87-2.6 3.3-4.53 6.16-4.53z" fill="#EA4335"/></svg>
+              Sign in with Google
+            </button>
+          </div>
+
+          <!-- Signed in state -->
+          <div id="account-signed-in" style="display:none">
+
+            <!-- Profile -->
+            <div class="account-card">
+              <h2>Profile</h2>
+              <div class="account-profile-row">
+                <img class="account-avatar" id="account-avatar" src="" alt="" />
+                <div class="account-profile-info">
+                  <div class="account-field">
+                    <span class="account-field-label">Name</span>
+                    <span class="account-field-value" id="account-name">—</span>
+                  </div>
+                  <div class="account-field">
+                    <span class="account-field-label">Email</span>
+                    <span class="account-field-value" id="account-email">—</span>
+                  </div>
+                </div>
+              </div>
+              <button class="account-signout-btn" id="account-signout-btn">Sign out</button>
+            </div>
+
+            <!-- Email preferences -->
+            <div class="account-card">
+              <h2>Daily Wine Email</h2>
+              <div id="account-email-not-subscribed">
+                <p class="account-card-desc">You haven't subscribed to daily wine emails yet.</p>
+                <button class="account-action-btn" id="account-go-to-emails">Set up daily emails →</button>
+              </div>
+              <div id="account-email-subscribed" style="display:none">
+                <div class="account-email-status">
+                  <span class="account-status-badge active">Active</span>
+                  <span class="account-status-text">You're receiving daily emails</span>
+                </div>
+                <div class="account-field">
+                  <span class="account-field-label">Level</span>
+                  <span class="account-field-value" id="account-sub-level">—</span>
+                </div>
+                <div class="account-field">
+                  <span class="account-field-label">Topics</span>
+                  <span class="account-field-value" id="account-sub-topics">—</span>
+                </div>
+                <div class="account-email-actions">
+                  <button class="account-action-btn" id="account-edit-emails">Edit preferences →</button>
+                  <button class="account-action-btn secondary" id="account-unsub-btn">Unsubscribe</button>
+                </div>
+              </div>
+            </div>
+
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ═══════════════════════════════════════════
+         SECTION: My Wine Diary (blank)
+    ════════════════════════════════════════════ -->
+    <section class="section" id="diary-section">
+      <div class="section-header">
+        <h1>My Wine Diary</h1>
+        <span class="section-tagline">Your personal tasting journal</span>
+        <p>Log wines you've tried, rate them, and track how your palate evolves over time.</p>
+      </div>
+      <div class="diary-scroll">
+        <div class="diary-body">
+
+          <!-- Add entry form -->
+          <div class="diary-form-card">
+            <h2>Log a Wine</h2>
+            <div class="diary-form">
+              <div class="diary-form-row">
+                <div class="diary-field diary-field-grow">
+                  <label class="diary-label">Wine Name</label>
+                  <input type="text" class="diary-input" id="diary-wine-name" placeholder="e.g. Opus One 2018" />
+                </div>
+                <div class="diary-field">
+                  <label class="diary-label">Date</label>
+                  <input type="date" class="diary-input" id="diary-date" />
+                </div>
+              </div>
+              <div class="diary-form-row">
+                <div class="diary-field diary-field-grow">
+                  <label class="diary-label">Producer / Winery</label>
+                  <input type="text" class="diary-input" id="diary-producer" placeholder="e.g. Robert Mondavi" />
+                </div>
+                <div class="diary-field">
+                  <label class="diary-label">Region</label>
+                  <input type="text" class="diary-input" id="diary-region" placeholder="e.g. Napa Valley" />
+                </div>
+              </div>
+              <div class="diary-form-row">
+                <div class="diary-field">
+                  <label class="diary-label">Rating</label>
+                  <div class="diary-stars" id="diary-stars">
+                    <span class="diary-star" data-rating="1">★</span>
+                    <span class="diary-star" data-rating="2">★</span>
+                    <span class="diary-star" data-rating="3">★</span>
+                    <span class="diary-star" data-rating="4">★</span>
+                    <span class="diary-star" data-rating="5">★</span>
+                  </div>
+                </div>
+                <div class="diary-field">
+                  <label class="diary-label">Occasion</label>
+                  <input type="text" class="diary-input" id="diary-occasion" placeholder="e.g. Anniversary dinner, Tuesday night" />
+                </div>
+              </div>
+              <div class="diary-field">
+                <label class="diary-label">Tasting Notes</label>
+                <textarea class="diary-textarea" id="diary-notes" rows="3" placeholder="What did you taste? Aromas, flavors, texture, finish..."></textarea>
+              </div>
+              <div class="diary-field">
+                <label class="diary-label">Your Review</label>
+                <textarea class="diary-textarea" id="diary-review" rows="2" placeholder="What did you think? Would you buy it again?"></textarea>
+              </div>
+              <div class="diary-field">
+                <label class="diary-label">Photo of the Bottle</label>
+                <label class="diary-photo-upload" id="diary-photo-label">
+                  <input type="file" accept="image/*" id="diary-photo" style="display:none" />
+                  <span class="diary-photo-placeholder" id="diary-photo-placeholder">Click to upload a photo</span>
+                  <img class="diary-photo-preview" id="diary-photo-preview" style="display:none" />
+                </label>
+              </div>
+              <button class="diary-submit-btn" id="diary-submit-btn">Add to Diary</button>
+            </div>
+          </div>
+
+          <!-- Entries list -->
+          <div id="diary-entries-section">
+            <h2 class="diary-entries-title" id="diary-entries-title" style="display:none">Your Journal</h2>
+            <div class="diary-entries" id="diary-entries"></div>
+            <div class="diary-empty" id="diary-empty">
+              <div class="diary-empty-icon">📓</div>
+              <p>Your wine diary is empty. Log your first wine above to start your journal.</p>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- ═══════════════════════════════════════════
+         SECTION: My Wine Vault (blank)
+    ════════════════════════════════════════════ -->
+    <section class="section" id="vault-section">
+      <div class="section-header">
+        <h1>My Wine Vault</h1>
+        <span class="section-tagline">Your cellar, organized</span>
+        <p>Store what you have, track what you want, and know when to open each bottle.</p>
+      </div>
+      <div class="blank-section-body">
+        <div class="blank-section-placeholder">Coming soon</div>
+      </div>
+    </section>
+
+    <!-- ═══════════════════════════════════════════
+         SECTION: Recommendations (blank)
+    ════════════════════════════════════════════ -->
+    <section class="section" id="recs-section">
+      <div class="section-header">
+        <h1>Recommendations</h1>
+        <span class="section-tagline">Wines picked just for you</span>
+        <p>Based on what you love, we'll find your next favorite bottle.</p>
+      </div>
+      <div class="blank-section-body">
+        <div class="blank-section-placeholder">Coming soon</div>
+      </div>
+    </section>
+
+    <!-- ═══════════════════════════════════════════
+         SECTION: Bay Area Wine Events
+    ════════════════════════════════════════════ -->
+    <section class="section" id="events-section">
+      <div class="events-scroll">
+        <div class="section-header">
+          <h1>Bay Area Wine Events</h1>
+          <span class="section-tagline">What's happening in wine country this month</span>
+          <p>Tastings, festivals, classes, and experiences near San Francisco. <a href="https://www.localwineevents.com/sign-up" target="_blank" rel="noopener" class="events-subscribe-link">Subscribe to "The Juice" newsletter</a> to stay up to date.</p>
+        </div>
+
+        <div class="events-body">
+          <div class="events-source-bar">
+            <span>Events sourced from
+              <a href="https://www.localwineevents.com/wine-tasting-events-and-festivals/near/san-francisco-california/9q8yv9r9z3" target="_blank" rel="noopener">LocalWineEvents.com</a> ·
+              <a href="https://napavalley.wine/visit/events/" target="_blank" rel="noopener">Napa Valley Vintners</a> ·
+              <a href="https://shop.klwines.com/company/events" target="_blank" rel="noopener">K&amp;L Wine Merchants</a>
+            </span>
+            <a href="https://www.localwineevents.com/sign-up" target="_blank" rel="noopener" class="events-newsletter-btn">Get Email Updates</a>
+          </div>
+
+          <!-- Calendar -->
+          <div class="events-calendar">
+            <div class="cal-header">
+              <h2 class="cal-month">April 2026</h2>
+            </div>
+            <div class="cal-grid">
+              <div class="cal-day-label">Sun</div><div class="cal-day-label">Mon</div><div class="cal-day-label">Tue</div><div class="cal-day-label">Wed</div><div class="cal-day-label">Thu</div><div class="cal-day-label">Fri</div><div class="cal-day-label">Sat</div>
+              <!-- Row 1: Apr starts on Wed -->
+              <div class="cal-day empty"></div>
+              <div class="cal-day empty"></div>
+              <div class="cal-day empty"></div>
+              <div class="cal-day has-events"><span class="cal-num">1</span>
+                <a href="https://www.localwineevents.com/view/event/blind-tasting-game-night-match-the-wine-to-the-varietal/997100" target="_blank" class="cal-event">Blind Tasting Game Night</a>
+                <a href="https://www.localwineevents.com/view/event/blend-your-own-bottle-of-wine/994276" target="_blank" class="cal-event">Blend Your Own Bottle</a>
+              </div>
+              <div class="cal-day has-events"><span class="cal-num">2</span>
+                <a href="https://www.localwineevents.com/view/event/wine-blending-experience-at-the-wine-foundry/994486" target="_blank" class="cal-event">Wine Blending — Wine Foundry</a>
+                <a href="https://shop.klwines.com/company/events" target="_blank" class="cal-event cal-kl">K&amp;L Wine Club Tasting</a>
+              </div>
+              <div class="cal-day has-events"><span class="cal-num">3</span>
+                <a href="https://www.localwineevents.com/view/event/napa-food-wine-tour-downtown/994626" target="_blank" class="cal-event">Napa Food &amp; Wine Tour</a>
+                <a href="https://www.localwineevents.com/view/event/uncorked-italian-sparkling-101/994650" target="_blank" class="cal-event">Italian Sparkling 101</a>
+              </div>
+              <div class="cal-day has-events"><span class="cal-num">4</span>
+                <a href="https://www.localwineevents.com/view/event/sip-stroll-copains-spring-2026-release/996444" target="_blank" class="cal-event">Sip &amp; Stroll — Copain</a>
+                <a href="https://www.localwineevents.com/view/event/french-gastronomy-festival-2026/994799" target="_blank" class="cal-event">French Gastronomy Festival</a>
+                <a href="https://www.localwineevents.com/view/event/winemakers-pour-adam-lee-status-quo/987904" target="_blank" class="cal-event">Winemaker's Pour: Adam Lee</a>
+              </div>
+              <!-- Row 2 -->
+              <div class="cal-day"><span class="cal-num">5</span></div>
+              <div class="cal-day"><span class="cal-num">6</span></div>
+              <div class="cal-day"><span class="cal-num">7</span></div>
+              <div class="cal-day"><span class="cal-num">8</span></div>
+              <div class="cal-day"><span class="cal-num">9</span></div>
+              <div class="cal-day has-events"><span class="cal-num">10</span>
+                <a href="https://www.localwineevents.com/view/event/wset-level-1-award-in-wines/986101" target="_blank" class="cal-event">WSET Level 1 Award</a>
+              </div>
+              <div class="cal-day has-events"><span class="cal-num">11</span>
+                <a href="https://www.localwineevents.com/view/event/april-in-paris-at-beaulieu-vineyard/991764" target="_blank" class="cal-event">April in Paris — BV</a>
+              </div>
+              <!-- Row 3 -->
+              <div class="cal-day has-events"><span class="cal-num">12</span>
+                <a href="https://napavalley.wine/visit/events/festival-napa-valley-taste-of-napa--3628108" target="_blank" class="cal-event cal-napa">Taste of Napa — Festival Napa Valley</a>
+              </div>
+              <div class="cal-day"><span class="cal-num">13</span></div>
+              <div class="cal-day"><span class="cal-num">14</span></div>
+              <div class="cal-day"><span class="cal-num">15</span></div>
+              <div class="cal-day has-events"><span class="cal-num">16</span>
+                <a href="https://www.localwineevents.com/view/event/wset-level-2-award-in-wine-spring-bootcamp/986130" target="_blank" class="cal-event">WSET Level 2 Bootcamp</a>
+                <a href="https://shop.klwines.com/company/events" target="_blank" class="cal-event cal-kl">K&amp;L Craft Spirits Tasting</a>
+              </div>
+              <div class="cal-day"><span class="cal-num">17</span></div>
+              <div class="cal-day"><span class="cal-num">18</span></div>
+              <!-- Row 4 -->
+              <div class="cal-day has-events"><span class="cal-num">19</span>
+                <a href="https://shop.klwines.com/company/events" target="_blank" class="cal-event cal-kl">K&amp;L Angel's Envy Bourbon</a>
+              </div>
+              <div class="cal-day"><span class="cal-num">20</span></div>
+              <div class="cal-day"><span class="cal-num">21</span></div>
+              <div class="cal-day"><span class="cal-num">22</span></div>
+              <div class="cal-day has-events"><span class="cal-num">23</span>
+                <a href="https://www.localwineevents.com/view/event/pour-explore-pinot-noir-tasting/994599" target="_blank" class="cal-event cal-featured">Pour + Explore Pinot Noir</a>
+              </div>
+              <div class="cal-day has-events"><span class="cal-num">24</span>
+                <a href="https://napavalley.wine/visit/events/vineyard-to-vintner--3627941" target="_blank" class="cal-event cal-napa">Vineyard to Vintner — Stags Leap</a>
+              </div>
+              <div class="cal-day has-events"><span class="cal-num">25</span>
+                <a href="https://napavalley.wine/visit/events/vineyard-to-vintner--3627941" target="_blank" class="cal-event cal-napa">Vineyard to Vintner (Day 2)</a>
+              </div>
+              <!-- Row 5 -->
+              <div class="cal-day has-events"><span class="cal-num">26</span>
+                <a href="https://www.localwineevents.com/view/event/annual-grand-tasting----napa-valley-wine-library/982886" target="_blank" class="cal-event cal-featured">Grand Tasting — Napa Wine Library</a>
+              </div>
+              <div class="cal-day"><span class="cal-num">27</span></div>
+              <div class="cal-day"><span class="cal-num">28</span></div>
+              <div class="cal-day"><span class="cal-num">29</span></div>
+              <div class="cal-day has-events"><span class="cal-num">30</span>
+                <a href="https://shop.klwines.com/company/events" target="_blank" class="cal-event cal-kl">K&amp;L Almare Spritz Tasting</a>
+              </div>
+              <div class="cal-day empty"></div>
+              <div class="cal-day empty"></div>
+            </div>
+          </div>
+
+          <!-- Upcoming highlights -->
+          <div class="events-upcoming">
+            <h2 class="events-upcoming-title">Coming Up in May &amp; June</h2>
+            <div class="events-list">
+              <a href="https://www.localwineevents.com/view/event/wine-kentucky-derby-party-at-trinitas-cellars-napa-valley/994426" target="_blank" class="event-list-item">
+                <span class="event-date">May 2</span>
+                <span class="event-name">Wine &amp; Kentucky Derby Party — Trinitas Cellars</span>
+                <span class="event-loc">Napa, CA</span>
+              </a>
+              <a href="https://www.localwineevents.com/view/event/garagiste-wine-festival-8th-annual-northern-exposure/988796" target="_blank" class="event-list-item">
+                <span class="event-date">May 2</span>
+                <span class="event-name">Garagiste Wine Festival: Northern Exposure</span>
+                <span class="event-loc">Sonoma, CA</span>
+              </a>
+              <a href="https://shop.klwines.com/company/events" target="_blank" class="event-list-item">
+                <span class="event-date">May 3</span>
+                <span class="event-name">Tequila with a Timeline — Fuenteseca at K&amp;L</span>
+                <span class="event-loc">San Francisco, CA</span>
+              </a>
+              <a href="https://napavalley.wine/visit/events/https-www-plumpjackcollection-com-shop-wines-bottlerock-brunch-plumpjack-estate-2026--3628138" target="_blank" class="event-list-item">
+                <span class="event-date">May 22–24</span>
+                <span class="event-name">BottleRock Brunch — PlumpJack Winery</span>
+                <span class="event-loc">Napa, CA</span>
+              </a>
+              <a href="https://shop.klwines.com/company/events" target="_blank" class="event-list-item">
+                <span class="event-date">May 28</span>
+                <span class="event-name">Germain-Robin Brandy Tasting at K&amp;L</span>
+                <span class="event-loc">San Francisco, CA</span>
+              </a>
+              <a href="https://www.localwineevents.com/view/event/wset-level-3-award-in-wines-intensive/986126" target="_blank" class="event-list-item">
+                <span class="event-date">Jun 16–21</span>
+                <span class="event-name">WSET Level 3 Intensive</span>
+                <span class="event-loc">Napa, CA</span>
+              </a>
+              <a href="https://napavalley.wine/visit/events/taste-of-howell-mountain--3628079" target="_blank" class="event-list-item">
+                <span class="event-date">Jun 20</span>
+                <span class="event-name">Taste of Howell Mountain 2026</span>
+                <span class="event-loc">St. Helena, CA</span>
+              </a>
+              <a href="https://www.localwineevents.com/view/event/bring-a-bottle-dinner-party-on-the-farm/996715" target="_blank" class="event-list-item">
+                <span class="event-date">Jun 20</span>
+                <span class="event-name">Bring a Bottle Dinner Party "On the Farm"</span>
+                <span class="event-loc">Petaluma, CA</span>
+              </a>
+              <a href="https://www.localwineevents.com/view/event/champagne-specialist-course/986093" target="_blank" class="event-list-item">
+                <span class="event-date">Jun 27–28</span>
+                <span class="event-name">Champagne Specialist Course</span>
+                <span class="event-loc">Napa, CA</span>
+              </a>
+            </div>
+          </div>
+
+          <!-- Gina's Events -->
+          <div class="gina-events-section">
+            <div class="gina-events-header">
+              <h2>Attend One of Gina's Events</h2>
+              <p>Wine tastings, bread pairings, and educational experiences hosted by Sommplicity in the Bay Area. <a href="https://sommplicity.lovable.app/events" target="_blank" rel="noopener">View all on sommplicity.com →</a></p>
+            </div>
+
+            <!-- Upcoming -->
+            <h3 class="gina-events-sub">Upcoming</h3>
+            <div class="gina-event-cards">
+              <div class="gina-event-card">
+                <div class="gina-event-photo">
+                  <img src="https://sommplicity.lovable.app/assets/heirloom-jan-wines-rmICOB-v.jpg" alt="Wine tasting at Heirloom Cafe" />
+                </div>
+                <div class="gina-event-info">
+                  <div class="gina-event-date">Sat, Jan 17, 2026 · 11 AM – 2 PM</div>
+                  <div class="gina-event-name">Wine Tasting &amp; Bread at Heirloom Cafe</div>
+                  <div class="gina-event-loc">Heirloom Cafe, San Francisco</div>
+                  <p class="gina-event-desc">Sample ~15 wines at your own pace for $20/glass. Gina will be baking and sampling her sourdough and focaccia — perfected over the past year. No ticket needed, just stop by!</p>
+                </div>
+              </div>
+            </div>
+
+            <!-- Past Events -->
+            <h3 class="gina-events-sub">Past Events</h3>
+            <div class="gina-event-cards">
+
+              <div class="gina-event-card past">
+                <div class="gina-event-photo">
+                  <img src="https://sommplicity.lovable.app/assets/gallery-wine-bottles-1LjCNlwc.png" alt="Styles of Champagne at K&L" />
+                </div>
+                <div class="gina-event-info">
+                  <div class="gina-event-date">Dec 29, 2025</div>
+                  <div class="gina-event-name">Somm Services: Styles of Champagne</div>
+                  <div class="gina-event-loc">K&amp;L Wine Merchants, San Francisco</div>
+                  <p class="gina-event-desc">A guided tasting demystifying Champagne labels — Blanc de Blancs, Blanc de Noirs, Brut Nature. Guests tasted through a focused lineup side by side.</p>
+                  <a href="https://www.exploretock.com/k-and-l-wine-merchants-san-francisco/event/585797/somm-services-presents-styles-of-champagne" target="_blank" class="gina-event-link">View on Tock →</a>
+                </div>
+              </div>
+
+              <div class="gina-event-card past">
+                <div class="gina-event-photo">
+                  <img src="https://sommplicity.lovable.app/assets/event-bread-wine-Da64uybC.png" alt="Bread and wine pairing" />
+                </div>
+                <div class="gina-event-info">
+                  <div class="gina-event-date">Dec 14, 2025</div>
+                  <div class="gina-event-name">Wine &amp; Bread Pairing at Heirloom Cafe</div>
+                  <div class="gina-event-loc">Heirloom Cafe, Mission District, SF</div>
+                  <p class="gina-event-desc">3+ courses of house-made breads — sourdough fleur de sel, pesto heirloom tomato, rustic olive &amp; rosemary — paired with curated wines from Heirloom's cellar.</p>
+                  <a href="https://resy.com/cities/san-francisco-ca/venues/heirloom-cafe/events/wine-and-bread-pairing-at-heirloom-cafe-featuring-gina-biernacki-2025-12-14" target="_blank" class="gina-event-link">View on Resy →</a>
+                </div>
+              </div>
+
+              <div class="gina-event-card past">
+                <div class="gina-event-photo">
+                  <img src="https://sommplicity.lovable.app/assets/event-holiday-pairing-DHn4LJLR.jpg" alt="Holiday wine pairing" />
+                </div>
+                <div class="gina-event-info">
+                  <div class="gina-event-date">Dec 11, 2025</div>
+                  <div class="gina-event-name">Holiday Pairing Perfected — Farming Hope</div>
+                  <div class="gina-event-loc">Refettorio San Francisco, 690 Van Ness Ave</div>
+                  <p class="gina-event-desc">Wine education, exceptional food, and meaningful impact. Gina guided guests through curated holiday pairings while Farming Hope Apprentices served thoughtfully crafted bites.</p>
+                  <a href="https://events.humanitix.com/holiday-pairing-perfected" target="_blank" class="gina-event-link">View on Humanitix →</a>
+                </div>
+              </div>
+
+              <div class="gina-event-card past">
+                <div class="gina-event-photo">
+                  <img src="https://sommplicity.lovable.app/assets/event-time-wine-DUByMmsU.png" alt="Time and Wine tasting" />
+                </div>
+                <div class="gina-event-info">
+                  <div class="gina-event-date">Past Event</div>
+                  <div class="gina-event-name">Somm Services: Time &amp; Wine</div>
+                  <div class="gina-event-loc">K&amp;L Wine Merchants, Redwood City</div>
+                  <p class="gina-event-desc">How does time change wine? A comparative tasting of current release vs. back vintage wines from Jordan, de Pez, and Moulin de la Gardette.</p>
+                  <a href="https://www.exploretock.com/k-and-l-wine-merchants-redwood/event/580935" target="_blank" class="gina-event-link">View on Tock →</a>
+                </div>
+              </div>
+
+            </div>
+
+            <!-- Photo gallery -->
+            <h3 class="gina-events-sub">Event Gallery</h3>
+            <div class="gina-gallery">
+              <img src="https://sommplicity.lovable.app/assets/gallery-crowd-tasting-DEeZn3ky.jpg" alt="Crowd wine tasting" />
+              <img src="https://sommplicity.lovable.app/assets/gallery-gina-speaking-DfHmtiak.jpg" alt="Gina speaking" />
+              <img src="https://sommplicity.lovable.app/assets/gallery-heirloom-menu-C-N6qJVE.jpg" alt="Heirloom menu" />
+              <img src="https://sommplicity.lovable.app/assets/gallery-group-tasting-CjiTc8Rm.jpeg" alt="Group tasting" />
+              <img src="https://sommplicity.lovable.app/assets/gallery-bread-butter-D5FFtH_6.jpg" alt="Sourdough and butter" />
+              <img src="https://sommplicity.lovable.app/assets/gallery-wine-display-rmPeLSSk.jpg" alt="Wine display" />
+              <img src="https://sommplicity.lovable.app/assets/gallery-venue-overhead-B98Q0zLX.jpg" alt="Event venue" />
+              <img src="https://sommplicity.lovable.app/assets/gallery-holiday-menu-bKQf5XXN.png" alt="Holiday menu" />
+              <img src="https://sommplicity.lovable.app/assets/farming-hope-wine-CZhXkJqJ.png" alt="Farming Hope event" />
+              <img src="https://sommplicity.lovable.app/assets/gallery-bread-wine-w6dTx9xn.png" alt="Bread and wine" />
+              <img src="https://sommplicity.lovable.app/assets/gallery-xfinity-event-CUtEJIMH.png" alt="Xfinity event" />
+              <img src="https://sommplicity.lovable.app/assets/gallery-google-presentation-CVl-naFO.png" alt="Google presentation" />
+            </div>
+          </div>
+
+          <div class="events-cta">
+            <a href="https://www.localwineevents.com/wine-tasting-events-and-festivals/near/san-francisco-california/9q8yv9r9z3" target="_blank" rel="noopener">Browse all events on LocalWineEvents.com →</a>
+            &nbsp;·&nbsp;
+            <a href="https://napavalley.wine/visit/events/" target="_blank" rel="noopener">Napa Valley Vintners →</a>
+            &nbsp;·&nbsp;
+            <a href="https://shop.klwines.com/company/events" target="_blank" rel="noopener">K&amp;L Wine Merchants →</a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ═══════════════════════════════════════════
+         SECTION: About Sommplicity
+    ════════════════════════════════════════════ -->
+    <section class="section" id="about-section">
+      <div class="about-scroll">
+
+        <!-- Header -->
+        <div class="about-hero">
+          <div class="about-hero-eyebrow">The Story</div>
+          <h1 class="about-hero-title">About Sommplicity</h1>
+          <p class="about-hero-subtitle">Certified Sommelier &amp; Wine Educator</p>
+        </div>
+
+        <!-- Philosophy -->
+        <div class="about-philosophy">
+          <div class="about-philosophy-card">
+            <p>My approach blends deep technical understanding with emotional and sensory focus, creating grounded moments where people reconnect with themselves and with each other. Wine is not meant to be mastered; it is meant to be experienced. In a world that only grows busier, wine remains one of the purest products of the earth and invites us to slow down and be present.</p>
+          </div>
+        </div>
+
+        <!-- Bio -->
+        <div class="about-bio">
+          <div class="about-bio-photo">
+            <img src="https://sommplicity.lovable.app/assets/gina-sommelier-BA_5xRDS.png" alt="Gina Biernacki, Certified Sommelier" />
+          </div>
+          <div class="about-bio-text">
+            <div class="about-bio-eyebrow">Meet the Sommelier</div>
+            <h2 class="about-bio-name">About Gina</h2>
+            <p>I'm a Certified Sommelier who discovered my love for wine by sharing it with others. What began as informal tastings with friends and colleagues at Google evolved into dedicated study through WSET Level 3 with Distinction and the Court of Master Sommeliers Certified exam, as well as hands-on work in vineyards and cellars in France.</p>
+            <p>Today, I bring that blend of training and curiosity to tastings throughout the Bay Area. My focus is on clarity, sensory presence, and genuine connection &mdash; helping people discover and understand their own palates.</p>
+          </div>
+        </div>
+
+        <!-- AI + Sommelier -->
+        <div class="about-ai-note">
+          <div class="about-ai-card">
+            <div class="about-ai-icon">🤖 + 🍷</div>
+            <h3>Powered by AI, Guided by a Sommelier</h3>
+            <p>This platform is powered by AI, but every recommendation, tasting note, and regional guide is reviewed, maintained, curated, and tested by a certified sommelier. Technology amplifies the experience &mdash; the human palate ensures it's trustworthy.</p>
+          </div>
+        </div>
+
+        <!-- Journey Timeline -->
+        <div class="about-journey">
+          <div class="about-journey-eyebrow">The Path</div>
+          <h2 class="about-journey-title">My Journey to Wine</h2>
+
+          <div class="about-timeline">
+
+            <div class="timeline-entry timeline-left">
+              <div class="timeline-node"><img src="https://sommplicity.lovable.app/images/brand-google.png" alt="Google" /></div>
+              <div class="timeline-card">
+                <div class="timeline-date">2013 &ndash; 2025</div>
+                <h3>MBA &amp; Product Manager at Google</h3>
+                <p>Started in consulting before earning an MBA from Chicago Booth. At Google, learned to distill complexity into clarity and found every opportunity to teach colleagues about wine.</p>
+                <div class="timeline-photos">
+                  <img src="https://sommplicity.lovable.app/assets/bay-area-events-8oTvLXKu.jpg" alt="Teaching wine tasting at Google" />
+                  <img src="https://sommplicity.lovable.app/assets/google-presenting-7gdo-2Up.png" alt="Presenting at Google" />
+                </div>
+              </div>
+            </div>
+
+            <div class="timeline-entry timeline-right">
+              <div class="timeline-node"><img src="https://sommplicity.lovable.app/images/brand-wset.png" alt="WSET" /></div>
+              <div class="timeline-card">
+                <div class="timeline-date">2021</div>
+                <h3>WSET Level 3 with Distinction</h3>
+                <p>Completed with distinction, demonstrating advanced knowledge of wines and winemaking from around the world.</p>
+                <div class="timeline-photos">
+                  <img src="https://sommplicity.lovable.app/images/journey-wset.jpg" alt="WSET Level 3 training" />
+                  <img src="https://sommplicity.lovable.app/assets/wset-classroom-ChyX1IpH.png" alt="WSET classroom" />
+                </div>
+              </div>
+            </div>
+
+            <div class="timeline-entry timeline-left">
+              <div class="timeline-node"><img src="https://sommplicity.lovable.app/images/brand-cms.png" alt="CMS" /></div>
+              <div class="timeline-card">
+                <div class="timeline-date">2022</div>
+                <h3>Court of Master Sommeliers &mdash; Certified</h3>
+                <p>Completed the Certified Sommelier examination, joining a select group of wine professionals recognized for advanced expertise in wine knowledge, service, and blind tasting.</p>
+                <div class="timeline-photos">
+                  <img src="https://sommplicity.lovable.app/assets/cms-certificate-C5vM-fhw.jpg" alt="CMS certificate" />
+                  <img src="https://sommplicity.lovable.app/assets/cms-celebration-BQL5L-q3.jpg" alt="Celebrating certification" />
+                  <img src="https://sommplicity.lovable.app/assets/cms-group-B98Gtq3S.png" alt="Certified class" />
+                </div>
+              </div>
+            </div>
+
+            <div class="timeline-entry timeline-right">
+              <div class="timeline-node"><img src="https://sommplicity.lovable.app/images/brand-vineyard.png" alt="Vineyard" /></div>
+              <div class="timeline-card">
+                <div class="timeline-date">Summer 2025</div>
+                <h3>Working the Harvest in Bordeaux</h3>
+                <p>Fulfilled a lifelong dream working the harvest with Puy Savage, a small producer in Bordeaux. Worked closely with the winemaker, picking grapes and contributing to the winemaking process.</p>
+                <div class="timeline-photos">
+                  <img src="https://sommplicity.lovable.app/images/journey-harvest-1.jpg" alt="Picking grapes in Bordeaux" />
+                  <img src="https://sommplicity.lovable.app/images/journey-harvest-2.jpg" alt="Grape harvest" />
+                  <img src="https://sommplicity.lovable.app/images/journey-harvest-3.jpg" alt="French countryside winery" />
+                </div>
+              </div>
+            </div>
+
+            <div class="timeline-entry timeline-left">
+              <div class="timeline-node"><span class="timeline-node-icon">🍷</span></div>
+              <div class="timeline-card">
+                <div class="timeline-date">Ongoing</div>
+                <h3>Wine Industry &amp; Events</h3>
+                <p>Contracting across SF wine, restaurant, and hospitality partners through pop-ups, private events, and corporate gatherings. Continued blind tasting practice with the SF sommeliers study group.</p>
+                <div class="timeline-photos">
+                  <img src="https://sommplicity.lovable.app/images/journey-event-1.png" alt="Wine tasting event" />
+                  <img src="https://sommplicity.lovable.app/images/journey-event-2.png" alt="Serving wine" />
+                </div>
+              </div>
+            </div>
+
+          </div>
+        </div>
+
+        <!-- Connect -->
+        <div class="about-connect">
+          <div class="about-connect-col">
+            <h3>Connect</h3>
+            <a href="https://www.instagram.com/somm_plicity/" target="_blank" rel="noopener">Instagram</a>
+            <a href="https://www.linkedin.com/in/gina-biernacki-1029901b/" target="_blank" rel="noopener">LinkedIn</a>
+          </div>
+          <div class="about-connect-col">
+            <h3>Contact</h3>
+            <a href="mailto:gina@somm-plicity.com">gina@somm-plicity.com</a>
+            <span>San Francisco Bay Area</span>
+          </div>
+        </div>
+
+      </div>
+    </section>
+
+  </main>
+
+  <script src="https://cdn.jsdelivr.net/npm/d3@7/dist/d3.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/topojson-client@3/dist/topojson-client.min.js"></script>
+  <script src="js/flavor-wheel.js"></script>
+  <script src="js/wine-regions.js"></script>
+  <script src="js/food-pairing.js"></script>
+  <script src="js/chatbot.js"></script>
+  <script src="js/wine-analyzer.js"></script>
+  <script src="js/ca-wine-trip.js"></script>
+  <script src="js/auth.js"></script>
+  <script src="js/daily-wine.js"></script>
+  <script src="js/wine-diary.js"></script>
+  <script src="js/account.js"></script>
+  <script src="js/app.js"></script>
+</body>
+</html>

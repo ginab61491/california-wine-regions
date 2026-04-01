@@ -1,0 +1,32 @@
+{
+  "permissions": {
+    "allow": [
+      "Bash(curl -s \"https://sommplicity.lovable.app/assets/index-7u91TR0h.js\")",
+      "Bash(curl -s \"https://sommplicity.lovable.app/assets/index-C6T0wYQt.css\")",
+      "Bash(python3:*)",
+      "Bash(grep -o \"--[^:]*:[^;]*\")",
+      "Bash(node:*)",
+      "Bash(curl:*)",
+      "Bash(npm restart:*)",
+      "Bash(grep:*)",
+      "WebFetch(domain:sommplicity.lovable.app)",
+      "Bash(grep -oE 'https?://[^\"\"\"\"''''`\\\\s,\\)}>]+')",
+      "WebFetch(domain:napavintners.com)",
+      "WebFetch(domain:sonomawine.com)",
+      "WebFetch(domain:napavalley.wine)",
+      "WebFetch(domain:www.sonomawine.com)",
+      "WebFetch(domain:www.klwines.com)",
+      "WebSearch",
+      "WebFetch(domain:shop.klwines.com)",
+      "WebFetch(domain:taste.klwines.com)",
+      "WebFetch(domain:www.exploretock.com)",
+      "Bash(grep -oP 'https?://[^\\\\s\"\"\"\"''''`,\\)]+')",
+      "Bash(git init:*)",
+      "Bash(git add:*)",
+      "Bash(git commit:*)",
+      "Bash(git branch:*)",
+      "Bash(git remote:*)",
+      "Bash(git push:*)"
+    ]
+  }
+}

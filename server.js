@@ -1,0 +1,234 @@
+require('dotenv').config();
+const express = require('express');
+const Anthropic = require('@anthropic-ai/sdk');
+const cors = require('cors');
+const path = require('path');
+
+const app = express();
+const PORT = process.env.PORT || 3000;
+
+const anthropic = new Anthropic({ apiKey: process.env.ANTHROPIC_API_KEY });
+
+app.use(cors());
+app.use(express.json());
+app.use(express.static(path.join(__dirname, 'public')));
+
+const SYSTEM_PROMPT = `You are an expert wine sommelier and educator with decades of experience.
+You have deep knowledge of:
+- Wine regions around the world (France, Italy, Spain, Germany, USA, Argentina, Chile, Australia, New Zealand, South Africa, and beyond)
+- Grape varieties — both major and obscure — and their flavor profiles
+- Winemaking techniques: fermentation, aging, oak treatment, natural wine, biodynamic methods
+- Tasting notes: how to describe color, aroma, palate, and finish
+- Food and wine pairing principles
+- Wine vintages and how climate affects wine quality
+- Wine service: temperature, glassware, decanting
+- Wine regions' terroir, soil types, and microclimates
+
+Respond in a warm, educational, and enthusiastic tone. Keep answers focused and informative.
+When relevant, suggest related topics the user might want to explore.
+Format responses with clear structure when helpful, but keep conversational for simple questions.
+Never refuse a wine question — even basic ones deserve a thoughtful answer.`;
+
+// SSE streaming chat endpoint
+app.post('/api/chat', async (req, res) => {
+  const { messages } = req.body;
+
+  if (!messages || !Array.isArray(messages)) {
+    return res.status(400).json({ error: 'messages array required' });
+  }
+
+  if (!process.env.ANTHROPIC_API_KEY) {
+    return res.status(500).json({ error: 'ANTHROPIC_API_KEY not configured on server' });
+  }
+
+  res.setHeader('Content-Type', 'text/event-stream');
+  res.setHeader('Cache-Control', 'no-cache');
+  res.setHeader('Connection', 'keep-alive');
+  res.setHeader('X-Accel-Buffering', 'no');
+
+  try {
+    const stream = anthropic.messages.stream({
+      model: 'claude-sonnet-4-6',
+      max_tokens: 1024,
+      system: SYSTEM_PROMPT,
+      messages: messages.map(m => ({ role: m.role, content: m.content })),
+    });
+
+    stream.on('text', (text) => {
+      if (!res.writableEnded) res.write(`data: ${JSON.stringify({ text })}\n\n`);
+    });
+
+    stream.on('error', (err) => {
+      console.error('Stream error:', err.message);
+      if (!res.writableEnded) {
+        res.write(`data: ${JSON.stringify({ error: err.message })}\n\n`);
+        res.end();
+      }
+    });
+
+    stream.on('end', () => {
+      if (!res.writableEnded) {
+        res.write('data: [DONE]\n\n');
+        res.end();
+      }
+    });
+  } catch (err) {
+    console.error('Chat error:', err);
+    res.write(`data: ${JSON.stringify({ error: 'Failed to connect to AI service. Check your API key.' })}\n\n`);
+    res.end();
+  }
+});
+
+// Wine analyzer endpoint — returns structured JSON descriptor analysis
+app.post('/api/analyze-wine', async (req, res) => {
+  const { wine } = req.body;
+
+  if (!wine || !wine.name) {
+    return res.status(400).json({ error: 'wine.name is required' });
+  }
+
+  if (!process.env.ANTHROPIC_API_KEY) {
+    return res.status(500).json({ error: 'ANTHROPIC_API_KEY not configured on server' });
+  }
+
+  const wineLabel = [wine.vintage, wine.name, wine.producer ? `by ${wine.producer}` : ''].filter(Boolean).join(' ');
+
+  const prompt = `You are an expert wine sommelier. Analyze the wine: ${wineLabel}.
+
+Based on how this wine is consistently described by trusted critics (Wine Spectator, Decanter, Robert Parker, Vinous, Jancis Robinson, James Suckling), explain why someone might love this wine. If the wine is not widely documented, draw on your deep sommelier knowledge of the grape variety, region, and style.
+
+Respond ONLY with valid JSON — no markdown code fences, no commentary, just the raw JSON object:
+{
+  "intro": "2 sentences max. State what this wine is and why people love it. Plain language, no poetry.",
+  "descriptors": [
+    {
+      "name": "2–4 word attribute name (e.g. 'Silky Tannins', 'Bright Acidity', 'Dark Fruit')",
+      "category": "one of: texture, acidity, fruit, finish, aroma, body, oak, terroir, sweetness",
+      "what_it_is": "1 sentence. Plain factual explanation of what causes this attribute. No metaphors.",
+      "how_it_feels": "1 sentence. Concrete sensory description — what you actually taste or feel. No poetry.",
+      "in_this_wine": "1 sentence. How critics specifically describe this in this wine."
+    }
+  ],
+  "great_vintages": [list of years as integers — the best, most acclaimed vintages, up to 5],
+  "notable_vintages": [list of years as integers — solid but not legendary vintages worth knowing, up to 4],
+  "storage": {
+    "drink_from": year as integer (earliest recommended drinking year from today),
+    "drink_by": year as integer (latest recommended drinking year),
+    "note": "1 sentence. Plain advice on when and why to open it."
+  }
+}
+
+Include exactly 6 descriptors. Choose the most defining attributes. Only include descriptors well-documented across trusted sources.`;
+
+  try {
+    const message = await anthropic.messages.create({
+      model: 'claude-sonnet-4-6',
+      max_tokens: 2048,
+      messages: [{ role: 'user', content: prompt }],
+    });
+
+    const raw = message.content[0].text.trim();
+
+    // Strip any accidental markdown code fences
+    const cleaned = raw.replace(/^```(?:json)?\s*/i, '').replace(/\s*```\s*$/i, '');
+    const data = JSON.parse(cleaned);
+
+    res.json(data);
+  } catch (err) {
+    console.error('Analyze wine error:', err);
+    if (err instanceof SyntaxError) {
+      return res.status(500).json({ error: 'Failed to parse AI response. Please try again.' });
+    }
+    res.status(500).json({ error: 'Failed to analyze wine. Check your API key.' });
+  }
+});
+
+// Subscribe to daily wine emails — adds contact to Mailchimp
+app.post('/api/subscribe', async (req, res) => {
+  const { email, name, level, topics } = req.body;
+
+  if (!email || !email.includes('@')) {
+    return res.status(400).json({ error: 'Valid email required' });
+  }
+
+  const MC_KEY = process.env.MAILCHIMP_API_KEY || '';
+  const MC_SERVER = process.env.MAILCHIMP_SERVER || 'us11';
+  const MC_LIST = process.env.MAILCHIMP_LIST_ID || '02a4dd50dd';
+
+  try {
+    const response = await fetch(`https://${MC_SERVER}.api.mailchimp.com/3.0/lists/${MC_LIST}/members`, {
+      method: 'POST',
+      headers: {
+        'Content-Type': 'application/json',
+        'Authorization': `Basic ${Buffer.from('x:' + MC_KEY).toString('base64')}`,
+      },
+      body: JSON.stringify({
+        email_address: email,
+        status: 'subscribed',
+        merge_fields: {
+          FNAME: name || '',
+          LEVEL: level || '',
+          TOPICS: (topics || []).join(','),
+        },
+      }),
+    });
+
+    const data = await response.json();
+
+    if (data.status === 'subscribed' || data.status === 400) {
+      res.json({ ok: true });
+    } else {
+      res.status(400).json({ error: data.title || 'Subscription failed' });
+    }
+  } catch (err) {
+    console.error('Mailchimp error:', err);
+    res.status(500).json({ error: 'Failed to subscribe. Try again later.' });
+  }
+});
+
+// ── Wine Diary — per-user storage ─────────────────────
+const fs = require('fs');
+const DIARY_DIR = path.join(__dirname, 'data', 'diaries');
+if (!fs.existsSync(DIARY_DIR)) fs.mkdirSync(DIARY_DIR, { recursive: true });
+
+function diaryPath(email) {
+  // Sanitize email to safe filename
+  const safe = email.toLowerCase().replace(/[^a-z0-9]/g, '_');
+  return path.join(DIARY_DIR, safe + '.json');
+}
+
+// Get diary entries
+app.get('/api/diary', (req, res) => {
+  const email = req.query.email;
+  if (!email) return res.status(400).json({ error: 'email required' });
+  const file = diaryPath(email);
+  try {
+    if (fs.existsSync(file)) {
+      const entries = JSON.parse(fs.readFileSync(file, 'utf8'));
+      res.json(entries);
+    } else {
+      res.json([]);
+    }
+  } catch {
+    res.json([]);
+  }
+});
+
+// Save diary entries
+app.post('/api/diary', (req, res) => {
+  const { email, entries } = req.body;
+  if (!email) return res.status(400).json({ error: 'email required' });
+  if (!Array.isArray(entries)) return res.status(400).json({ error: 'entries array required' });
+  try {
+    fs.writeFileSync(diaryPath(email), JSON.stringify(entries, null, 2));
+    res.json({ ok: true });
+  } catch (err) {
+    console.error('Diary save error:', err);
+    res.status(500).json({ error: 'Failed to save diary' });
+  }
+});
+
+app.listen(PORT, () => {
+  console.log(`\n🍷 Wine Education Site running at http://localhost:${PORT}`);
+  console.log(`   API key configured: ${process.env.ANTHROPIC_API_KEY ? 'Yes' : 'NO — set ANTHROPIC_API_KEY in .env'}\n`);
+});
