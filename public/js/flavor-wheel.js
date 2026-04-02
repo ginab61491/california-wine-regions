@@ -112,13 +112,16 @@ class FlavorWheel {
     this.hoveredMain  = null;
     this.hoveredSub   = null;
 
-    // Geometry
-    this.cx = 280;
-    this.cy = 280;
-    this.r0 = 60;   // center label
-    this.r1 = 130;  // inner ring inner
-    this.r2 = 210;  // inner ring outer / outer ring inner
-    this.r3 = 275;  // outer ring outer
+    // Geometry — larger wheel
+    this.cx = 320;
+    this.cy = 320;
+    this.r0 = 70;   // center label
+    this.r1 = 150;  // inner ring inner
+    this.r2 = 240;  // inner ring outer / outer ring inner
+    this.r3 = 312;  // outer ring outer
+
+    // Flavor profile tracking
+    this.profileFlavors = [];
   }
 
   init() {
@@ -140,6 +143,21 @@ class FlavorWheel {
       this.draw();
       this.showDefault();
     });
+
+    // Reset button
+    const resetBtn = document.getElementById('wheel-reset-btn');
+    if (resetBtn) {
+      resetBtn.addEventListener('click', () => {
+        this.selectedMain = null;
+        this.selectedSub  = null;
+        this.hoveredMain  = null;
+        this.hoveredSub   = null;
+        this.profileFlavors = [];
+        this.updateProfile();
+        this.draw();
+        this.showDefault();
+      });
+    }
 
     this.buildLegend();
     this.draw();
@@ -201,31 +219,38 @@ class FlavorWheel {
         ctx.fill();
 
         if (isHov || isSel) {
-          ctx.strokeStyle = 'rgba(255,255,255,0.9)';
+          // Gold inner glow effect
+          ctx.shadowColor = 'rgba(201,169,97,0.6)';
+          ctx.shadowBlur = 12;
+          ctx.strokeStyle = 'rgba(255,255,255,0.95)';
           ctx.lineWidth = 2.5;
         } else {
+          ctx.shadowColor = 'transparent';
+          ctx.shadowBlur = 0;
           ctx.strokeStyle = 'rgba(255,255,255,0.4)';
           ctx.lineWidth = 1;
         }
         ctx.stroke();
+        ctx.shadowColor = 'transparent';
+        ctx.shadowBlur = 0;
 
-        // Sub label
+        // Sub label — larger, more readable
         const midAngle  = (sa + ea) / 2;
         const labelR    = (this.r2 + this.r3) / 2;
         const lx = this.cx + labelR * Math.cos(midAngle);
         const ly = this.cy + labelR * Math.sin(midAngle);
         const arcSpan   = ea - sa;
-        const charWidth = 5.5;
         const arcLength = arcSpan * labelR;
 
         ctx.save();
         ctx.translate(lx, ly);
         ctx.rotate(midAngle + Math.PI / 2);
 
-        const fontSize = Math.min(9.5, arcLength / sub.name.length * 1.1);
-        if (fontSize > 5) {
-          ctx.font = `${fontSize}px Arial, sans-serif`;
-          ctx.fillStyle = 'rgba(255,255,255,0.92)';
+        const fontSize = Math.min(11.5, arcLength / sub.name.length * 1.2);
+        if (fontSize > 5.5) {
+          const fontWeight = (isHov || isSel) ? '600' : '400';
+          ctx.font = `${fontWeight} ${fontSize}px 'Montserrat', Arial, sans-serif`;
+          ctx.fillStyle = (isHov || isSel) ? 'rgba(255,255,255,1)' : 'rgba(255,255,255,0.9)';
           ctx.textAlign = 'center';
           ctx.textBaseline = 'middle';
           ctx.fillText(sub.name, 0, 0);
@@ -379,10 +404,12 @@ class FlavorWheel {
       this.selectedMain = hit.main;
       this.selectedSub  = null;
       this.showCategoryDetail(hit.main);
+      this.addToProfile(WHEEL_DATA[hit.main].name);
     } else {
       this.selectedMain = null;
       this.selectedSub  = { main: hit.main, sub: hit.sub };
       this.showSubcategoryDetail(hit.main, hit.sub);
+      this.addToProfile(WHEEL_DATA[hit.main].subcategories[hit.sub].name);
     }
     this.draw();
   }
@@ -490,6 +517,28 @@ class FlavorWheel {
         this.showCategoryDetail(idx);
       });
     });
+  }
+
+  // ── Flavor Profile ─────────────────────────────────────────
+
+  addToProfile(name) {
+    if (!this.profileFlavors.includes(name)) {
+      this.profileFlavors.push(name);
+      if (this.profileFlavors.length > 8) this.profileFlavors.shift();
+      this.updateProfile();
+    }
+  }
+
+  updateProfile() {
+    const el = document.getElementById('wheel-profile-flavors');
+    if (!el) return;
+    if (this.profileFlavors.length === 0) {
+      el.innerHTML = '<span class="wheel-profile-empty">Click flavors to build your profile</span>';
+    } else {
+      el.innerHTML = this.profileFlavors.map(f =>
+        `<span class="wheel-profile-flavor">${f}</span>`
+      ).join('');
+    }
   }
 
   hexToRgba(hex, alpha) {

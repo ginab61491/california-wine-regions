@@ -792,11 +792,17 @@ class CaTripPlanner {
       btn.addEventListener('click', (e) => { e.stopPropagation(); this.toggleTrip(btn.dataset.wineryId, btn); });
     });
     resultsEl.querySelectorAll('.winery-result-card').forEach(card => {
-      card.style.cursor = 'pointer';
-      card.addEventListener('click', (e) => {
-        if (e.target.closest('.winery-add-btn') || e.target.closest('a')) return;
+      // "Learn More" button and card body open popup
+      const openPopup = () => {
         const w = WINERIES_DEDUPED.find(x => x.id === card.dataset.wineryId);
         if (w) this._showWineryPopup(w);
+      };
+      const cta = card.querySelector('.winery-card-cta');
+      if (cta) cta.addEventListener('click', (e) => { e.stopPropagation(); openPopup(); });
+      card.style.cursor = 'pointer';
+      card.addEventListener('click', (e) => {
+        if (e.target.closest('.winery-add-btn') || e.target.closest('a') || e.target.closest('.winery-card-cta')) return;
+        openPopup();
       });
     });
   }
@@ -807,18 +813,28 @@ class CaTripPlanner {
     const isInTrip = this.tripSelected.some(t => t.id === w.id);
     const TAG_LABELS = { 'sommelier-pick': 'Sommelier Pick', 'historic-estate': 'Historic Estate', 'family-owned': 'Family-Owned', 'emerging-producer': 'Emerging Producer', 'best-value': 'Best Value', 'natural-wine': 'Natural Wine', 'organic-biodynamic': 'Organic/Biodynamic', 'small-batch': 'Small-Batch', 'mountain-views': 'Mountain Views', 'scenic-drive': 'Scenic Drive', 'secluded': 'Secluded', 'walk-in-friendly': 'Walk-In Friendly', 'dog-friendly': 'Dog-Friendly', 'food-pairing': 'Food Pairing', 'educational-tastings': 'Educational Tastings', 'hands-on-winemaker': 'Hands-On Winemaker', 'old-world-style': 'Old World Style', 'experimental': 'Experimental', 'estate-bottled': 'Estate-Bottled', 'cellar-tour': 'Cellar Tour', 'picnic-friendly': 'Picnic-Friendly', 'group-tastings': 'Great for Groups', 'contemporary-design': 'Contemporary Design', 'cult-following': 'Cult Following', 'hard-to-find': 'Hard to Find', 'boundary-pushing': 'Boundary-Pushing', 'off-beaten-path': 'Off the Beaten Path', 'fine-dining-nearby': 'Fine Dining Nearby', 'award-winning': 'Award-Winning', 'farm-to-table': 'Farm-to-Table', 'women-winemakers': 'Women Winemakers', 'sunset-views': 'Sunset Views', 'vineyard-tour': 'Vineyard Tour', 'music-venue': 'Music Venue', 'commercial': 'Well-Known Brand' };
     const TAG_PRIORITY = ['sommelier-pick','cult-following','historic-estate','award-winning','women-winemakers','organic-biodynamic','hands-on-winemaker','small-batch','sunset-views','secluded','cellar-tour','food-pairing','family-owned','boundary-pushing','best-value','walk-in-friendly'];
-    const topTags = TAG_PRIORITY.filter(t => (w.tags||[]).includes(t)).slice(0, 3).map(t => `<span class="winery-top-tag">${TAG_LABELS[t]||t}</span>`).join('');
+    const visibleTags = TAG_PRIORITY.filter(t => (w.tags||[]).includes(t)).slice(0, 4);
+    const tagPills = visibleTags.map(t => `<span class="winery-tag-pill">${TAG_LABELS[t]||t}</span>`).join('');
     const sentences = w.description.match(/[^.!]+[.!]+/g) || [w.description];
-    const tagline = sentences.slice(0, 2).join(' ').trim();
-    const reviewInfo = w.googleRating ? `⭐${w.googleRating}${w.reviewCount ? ` (${w.reviewCount})` : ''}` : '';
+    const tagline = sentences.slice(0, 1).join(' ').trim();
+    const reviewInfo = w.googleRating ? `${w.googleRating} ★` : '';
+    // Gradient hue based on region for visual variety
+    const hues = { 'Napa Valley': '340,30%', 'Sonoma County': '25,35%', 'Paso Robles': '35,40%', 'Santa Barbara': '210,25%', 'Livermore Valley': '45,30%', 'Mendocino': '160,20%', 'Santa Cruz Mountains': '280,20%', 'Sierra Foothills': '30,35%', 'Lodi': '50,35%', 'Monterey': '195,20%' };
+    const hue = hues[w.region] || '340,25%';
     return `<div class="winery-result-card" data-winery-id="${w.id}">
-      <div class="winery-card-top"><div class="winery-card-info">
-        <div class="winery-name">${w.name}<span class="winery-name-meta">${w.tastingCost || priceLabel}${reviewInfo ? ` · ${reviewInfo}` : ''}${w.website ? ` · <a href="https://${w.website}" target="_blank" class="winery-name-link" onclick="event.stopPropagation()">Visit ↗</a>` : ''}</span></div>
-        <div class="winery-location">${w.subregion} · ${driveText}</div>
-      </div><button class="winery-add-btn ${isInTrip ? 'added' : ''}" data-winery-id="${w.id}">${isInTrip ? '✓' : '+'}</button></div>
-      ${topTags ? `<div class="winery-top-tags">${topTags}</div>` : ''}
-      <p class="winery-tagline">${tagline}</p>
-      <button class="winery-expand-btn">Expand</button>
+      <div class="winery-card-hero" style="background: linear-gradient(135deg, hsla(${hue},18%,1) 0%, hsla(${hue},28%,1) 100%);">
+        <div class="winery-card-hero-overlay">
+          <span class="winery-card-price">${w.tastingCost || priceLabel}</span>
+          <h3 class="winery-card-name">${w.name}</h3>
+        </div>
+        <button class="winery-add-btn ${isInTrip ? 'added' : ''}" data-winery-id="${w.id}" title="${isInTrip ? 'Remove from trip' : 'Add to trip'}">${isInTrip ? '✓' : '+'}</button>
+      </div>
+      <div class="winery-card-body">
+        <div class="winery-card-region">${w.subregion} · ${driveText}${reviewInfo ? ` · ${reviewInfo}` : ''}</div>
+        ${tagPills ? `<div class="winery-card-tags">${tagPills}</div>` : ''}
+        <p class="winery-card-note">${tagline}</p>
+        <button class="winery-card-cta">Learn More</button>
+      </div>
     </div>`;
   }
 
@@ -1304,13 +1320,29 @@ Warm regards,
     const guideEl = document.getElementById('ca-regions-guide'); if (!guideEl) return;
     guideEl.innerHTML = '';
     this._wireMapHover();
+    // Notable producers per region for card display
+    const REGION_PRODUCERS = {
+      napa: 'Opus One, Stag\'s Leap, Chateau Montelena, Schramsberg, Caymus',
+      sonoma: 'Williams Selyem, Kistler, Hirsch, Flowers, Littorai',
+      healdsburg: 'Ridge, Seghesio, Mauritson, Gary Farrell, Medlock Ames',
+      'paso-robles': 'Tablas Creek, Justin, Daou, L\'Aventure, Epoch',
+    };
+    // Background gradient hues per region
+    const REGION_BG = {
+      napa: 'linear-gradient(135deg, hsl(12,45%,22%) 0%, hsl(12,35%,32%) 100%)',
+      sonoma: 'linear-gradient(135deg, hsl(135,25%,20%) 0%, hsl(135,18%,30%) 100%)',
+      healdsburg: 'linear-gradient(135deg, hsl(38,40%,22%) 0%, hsl(38,30%,32%) 100%)',
+      'paso-robles': 'linear-gradient(135deg, hsl(270,25%,22%) 0%, hsl(270,18%,32%) 100%)',
+    };
     CA_REGIONS_GUIDE.forEach(region => {
-      const card = document.createElement('div'); card.className = 'rg-card'; card.dataset.regionId = region.id; card.style.borderTopColor = region.color;
-      card.innerHTML = `<button class="rg-header" aria-expanded="false"><div class="rg-header-left"><div class="rg-name">${region.name}</div><div class="rg-tagline">${region.tagline}</div></div><span class="rg-chevron">Explore →</span></button>
+      const card = document.createElement('div'); card.className = 'rg-card'; card.dataset.regionId = region.id;
+      const producers = REGION_PRODUCERS[region.id] || '';
+      const bg = REGION_BG[region.id] || `linear-gradient(135deg, hsl(0,0%,20%) 0%, hsl(0,0%,30%) 100%)`;
+      card.innerHTML = `<button class="rg-header" aria-expanded="false" style="background:${bg}"><div class="rg-header-left"><div class="rg-name">${region.name}</div><div class="rg-tagline">${region.tagline}</div>${producers ? `<div class="rg-producers">${producers}</div>` : ''}</div><span class="rg-chevron">Explore</span></button>
         <div class="rg-body" hidden><div class="rg-meta-row"><span>🍇 ${region.bestFor}</span><span>🚗 ${region.sfDrive}</span></div><p class="rg-overview">${region.overview}</p>
         <div class="rg-subregions">${region.subregions.map(sub=>`<div class="rg-sub" style="border-left:3px solid ${region.color}"><div class="rg-sub-name"><span class="rg-sub-dot" style="background:${region.color}"></span>${sub.name}</div><p class="rg-sub-desc">${sub.description}</p><div class="rg-sub-footer"><strong>Best for:</strong> ${sub.bestFor} · <strong>Know:</strong> ${sub.mustKnow}</div></div>`).join('')}</div></div>`;
       const header = card.querySelector('.rg-header'); const body = card.querySelector('.rg-body'); const chevron = card.querySelector('.rg-chevron');
-      header.addEventListener('click', () => { const isOpen = !body.hidden; body.hidden = isOpen; chevron.textContent = isOpen ? 'Explore →' : 'Close ×'; card.classList.toggle('open', !isOpen); });
+      header.addEventListener('click', () => { const isOpen = !body.hidden; body.hidden = isOpen; chevron.textContent = isOpen ? 'Close' : 'Explore'; card.classList.toggle('open', !isOpen); });
       guideEl.appendChild(card);
     });
     document.querySelectorAll('.callout-name-link').forEach(link => {

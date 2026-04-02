@@ -1,6 +1,19 @@
 // config.js — Environment configuration for daily wine email pipeline
 // Set these as environment variables (GitHub Secrets) or in a .env file
 
+// Load .env from parent directory if running locally
+const path = require('path');
+const fs = require('fs');
+const envPath = path.join(__dirname, '..', '.env');
+if (fs.existsSync(envPath)) {
+  fs.readFileSync(envPath, 'utf8').split('\n').forEach(line => {
+    const [key, ...val] = line.split('=');
+    if (key && !key.startsWith('#') && val.length) {
+      process.env[key.trim()] = val.join('=').trim();
+    }
+  });
+}
+
 module.exports = {
   // Anthropic (Claude) API
   ANTHROPIC_API_KEY: process.env.ANTHROPIC_API_KEY || 'YOUR_ANTHROPIC_API_KEY',
@@ -12,9 +25,11 @@ module.exports = {
   MAILCHIMP_LIST_ID: process.env.MAILCHIMP_LIST_ID || '02a4dd50dd',
 
   // From address (must be verified in Mailchimp)
+  // Note: gina@somm-plicity.com is NOT verified in Mailchimp yet.
+  // Using gmail until somm-plicity.com domain is authenticated in Mailchimp.
   FROM_NAME: 'Sommplicity',
-  FROM_EMAIL: 'gina@somm-plicity.com',
-  REPLY_TO: 'gina@somm-plicity.com',
+  FROM_EMAIL: 'gina.biernacki@gmail.com',
+  REPLY_TO: 'gina.biernacki@gmail.com',
 
   // Topics — must match the data-topic values in the signup form
   TOPICS: [

@@ -6,164 +6,262 @@
   <title>Sommplicity — Wine Education</title>
   <link rel="icon" href="/favicon.jpg" type="image/jpeg" />
   <link rel="stylesheet" href="css/styles.css" />
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,600;0,700;1,400&family=Crimson+Text:ital,wght@0,400;0,600;1,400&display=swap" rel="stylesheet" />
   <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css" />
   <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"></script>
   <script src="https://accounts.google.com/gsi/client" async defer></script>
 </head>
 <body>
 
-  <!-- Sidebar Navigation -->
-  <nav class="sidebar" id="sidebar">
-    <div class="sidebar-logo">
-      <img src="https://sommplicity.lovable.app/assets/hero-wine-BVxfFN1K.jpg" alt="" class="sidebar-wine-img" />
-      <span class="logo-wordmark">sommplicity</span>
-      <span class="logo-sub">wine education</span>
+  <!-- Skip to content (accessibility) -->
+  <a href="#main-content" class="skip-link">Skip to main content</a>
+
+  <!-- Sticky Header Navigation -->
+  <header class="topnav" id="topnav">
+    <div class="topnav-inner">
+
+      <!-- Left: Wordmark -->
+      <a class="topnav-brand" id="nav-home">
+        <span class="topnav-wordmark">sommplicity</span>
+        <span class="topnav-tagline">by Gina Biernacki</span>
+      </a>
+
+      <!-- Center: Main Nav (desktop) -->
+      <nav class="topnav-links" id="topnav-links">
+        <!-- Wine Education dropdown -->
+        <div class="topnav-dropdown">
+          <button class="topnav-link topnav-link--has-menu">Wine Education</button>
+          <div class="topnav-menu">
+            <a class="topnav-menu-item" data-section="dailywine">Daily Wine Emails</a>
+            <a class="topnav-menu-item" data-section="wheel">Flavor Wheel</a>
+            <a class="topnav-menu-item" data-section="pairing">Food Pairing</a>
+            <a class="topnav-menu-item" data-section="regions">Wine Regions of the World</a>
+          </div>
+        </div>
+        <!-- Wine Country dropdown -->
+        <div class="topnav-dropdown">
+          <button class="topnav-link topnav-link--has-menu">Wine Country</button>
+          <div class="topnav-menu">
+            <a class="topnav-menu-item" data-section="catrip">Plan a California Trip</a>
+            <a class="topnav-menu-item" data-section="caregions">Explore California Wine Country</a>
+            <a class="topnav-menu-item" data-section="events">Bay Area Wine Events</a>
+          </div>
+        </div>
+        <!-- Tasting Guide dropdown -->
+        <div class="topnav-dropdown">
+          <button class="topnav-link topnav-link--has-menu">My Wine Journey</button>
+          <div class="topnav-menu">
+            <a class="topnav-menu-item" data-section="analyzer">I Love This Wine</a>
+            <a class="topnav-menu-item" data-section="diary">My Wine Diary</a>
+            <a class="topnav-menu-item" data-section="vault">My Wine Vault</a>
+            <a class="topnav-menu-item" data-section="recs">Recommendations</a>
+          </div>
+        </div>
+        <a class="topnav-link" data-section="about">About</a>
+      </nav>
+
+      <!-- Right: Sign In -->
+      <div class="topnav-right">
+        <div id="topnav-auth">
+          <button class="topnav-signin" id="topnav-signin-btn" data-section="preferences">Sign In</button>
+        </div>
+        <!-- Hamburger (mobile) -->
+        <button class="topnav-hamburger" id="hamburger-btn" aria-label="Open menu">
+          <span></span><span></span><span></span>
+        </button>
+      </div>
+
     </div>
+  </header>
 
-    <ul class="nav-list">
+  <!-- Mobile Slide-Out Nav -->
+  <div class="mobile-nav-overlay" id="mobile-nav-overlay"></div>
+  <aside class="mobile-nav" id="mobile-nav" role="dialog" aria-label="Navigation menu">
+    <div class="mobile-nav-header">
+      <span class="mobile-nav-brand">sommplicity</span>
+      <button class="mobile-nav-close" id="mobile-nav-close" aria-label="Close menu">&times;</button>
+    </div>
+    <nav class="mobile-nav-links">
+      <span class="mobile-nav-group">Wine Education</span>
+      <a class="mobile-nav-link" data-section="dailywine">Daily Wine Emails</a>
+      <a class="mobile-nav-link" data-section="wheel">Flavor Wheel</a>
+      <a class="mobile-nav-link" data-section="pairing">Food Pairing</a>
+      <a class="mobile-nav-link" data-section="regions">Wine Regions of the World</a>
 
-      <li class="nav-group-label">Travel to Wine Country</li>
+      <span class="mobile-nav-group">Wine Country</span>
+      <a class="mobile-nav-link" data-section="catrip">Plan a California Trip</a>
+      <a class="mobile-nav-link" data-section="caregions">Explore California Wine Country</a>
+      <a class="mobile-nav-link" data-section="events">Bay Area Wine Events</a>
 
-      <li class="nav-item active" data-section="catrip">
-        <span class="nav-icon">
-          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-            <path d="M3 9l9-7 9 7v11a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z"/>
-            <polyline points="9 22 9 12 15 12 15 22"/>
-          </svg>
-        </span>
-        <span class="nav-label">Plan California Trip</span>
-      </li>
-      <li class="nav-item" data-section="caregions">
-        <span class="nav-icon">
-          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-            <polygon points="1 6 1 22 8 18 16 22 23 18 23 2 16 6 8 2 1 6"/>
-            <line x1="8" y1="2" x2="8" y2="18"/>
-            <line x1="16" y1="6" x2="16" y2="22"/>
-          </svg>
-        </span>
-        <span class="nav-label">Explore California Wine Country</span>
-      </li>
-      <li class="nav-item" data-section="regions">
-        <span class="nav-icon">
-          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-            <circle cx="12" cy="12" r="10"/>
-            <line x1="2" y1="12" x2="22" y2="12"/>
-            <path d="M12 2a15.3 15.3 0 0 1 4 10 15.3 15.3 0 0 1-4 10 15.3 15.3 0 0 1-4-10 15.3 15.3 0 0 1 4-10z"/>
-          </svg>
-        </span>
-        <span class="nav-label">Wine Regions of the World</span>
-      </li>
-      <li class="nav-item" data-section="events">
-        <span class="nav-icon">
-          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-            <rect x="3" y="4" width="18" height="18" rx="2" ry="2"/><line x1="16" y1="2" x2="16" y2="6"/><line x1="8" y1="2" x2="8" y2="6"/><line x1="3" y1="10" x2="21" y2="10"/>
-          </svg>
-        </span>
-        <span class="nav-label">Bay Area Wine Events</span>
-      </li>
+      <span class="mobile-nav-group">My Wine Journey</span>
+      <a class="mobile-nav-link" data-section="analyzer">I Love This Wine</a>
+      <a class="mobile-nav-link" data-section="diary">My Wine Diary</a>
+      <a class="mobile-nav-link" data-section="vault">My Wine Vault</a>
+      <a class="mobile-nav-link" data-section="recs">Recommendations</a>
 
-      <li class="nav-group-label">Learn About Wine</li>
+      <span class="mobile-nav-group">About</span>
+      <a class="mobile-nav-link" data-section="about">About Sommplicity</a>
+      <a class="mobile-nav-link" data-section="preferences">My Account</a>
+    </nav>
+  </aside>
 
-      <li class="nav-item" data-section="dailywine">
-        <span class="nav-icon">
-          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-            <path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/>
-            <polyline points="22,6 12,13 2,6"/>
-          </svg>
-        </span>
-        <span class="nav-label">Daily Wine Emails</span>
-      </li>
-      <li class="nav-item" data-section="wheel">
-        <span class="nav-icon">
-          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-            <circle cx="12" cy="12" r="10"/>
-            <circle cx="12" cy="12" r="4"/>
-            <line x1="12" y1="2" x2="12" y2="8"/>
-            <line x1="12" y1="16" x2="12" y2="22"/>
-            <line x1="2" y1="12" x2="8" y2="12"/>
-            <line x1="16" y1="12" x2="22" y2="12"/>
-          </svg>
-        </span>
-        <span class="nav-label">Flavor Wheel</span>
-      </li>
-      <li class="nav-item" data-section="pairing">
-        <span class="nav-icon">
-          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-            <path d="M18 8h1a4 4 0 0 1 0 8h-1"/>
-            <path d="M2 8h16v9a4 4 0 0 1-4 4H6a4 4 0 0 1-4-4V8z"/>
-            <line x1="6" y1="1" x2="6" y2="4"/>
-            <line x1="10" y1="1" x2="10" y2="4"/>
-            <line x1="14" y1="1" x2="14" y2="4"/>
-          </svg>
-        </span>
-        <span class="nav-label">Food Pairing</span>
-      </li>
-
-      <li class="nav-group-label">My Wine Journey</li>
-
-      <li class="nav-item" data-section="analyzer">
-        <span class="nav-icon">
-          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-            <path d="M20.84 4.61a5.5 5.5 0 0 0-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 0 0-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 0 0 0-7.78z"/>
-          </svg>
-        </span>
-        <span class="nav-label">I Love This Wine</span>
-      </li>
-      <li class="nav-item" data-section="preferences">
-        <span class="nav-icon">
-          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-            <path d="M20 21v-2a4 4 0 0 0-4-4H8a4 4 0 0 0-4 4v2"/><circle cx="12" cy="7" r="4"/>
-          </svg>
-        </span>
-        <span class="nav-label">My Account</span>
-      </li>
-      <li class="nav-item" data-section="diary">
-        <span class="nav-icon">
-          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-            <path d="M4 19.5A2.5 2.5 0 0 1 6.5 17H20"/>
-            <path d="M6.5 2H20v20H6.5A2.5 2.5 0 0 1 4 19.5v-15A2.5 2.5 0 0 1 6.5 2z"/>
-            <line x1="8" y1="7" x2="16" y2="7"/><line x1="8" y1="11" x2="13" y2="11"/>
-          </svg>
-        </span>
-        <span class="nav-label">My Wine Diary</span>
-      </li>
-      <li class="nav-item" data-section="vault">
-        <span class="nav-icon">
-          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-            <rect x="3" y="3" width="18" height="18" rx="2" ry="2"/>
-            <path d="M3 9h18"/><path d="M9 21V9"/>
-          </svg>
-        </span>
-        <span class="nav-label">My Wine Vault</span>
-      </li>
-      <li class="nav-item" data-section="recs">
-        <span class="nav-icon">
-          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-            <polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/>
-          </svg>
-        </span>
-        <span class="nav-label">Recommendations</span>
-      </li>
-
-      <li class="nav-group-label">About</li>
-
-      <li class="nav-item" data-section="about">
-        <span class="nav-icon">
-          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-            <circle cx="12" cy="12" r="10"/>
-            <line x1="12" y1="16" x2="12" y2="12"/>
-            <line x1="12" y1="8" x2="12.01" y2="8"/>
-          </svg>
-        </span>
-        <span class="nav-label">About Sommplicity</span>
-      </li>
-
-    </ul>
-  </nav>
+  <!-- Breadcrumb -->
+  <div class="breadcrumb" id="breadcrumb"></div>
 
 
   <!-- Main Content -->
   <main class="main-content" id="main-content">
+
+    <!-- Home Page -->
+    <div class="home" id="home-page">
+
+      <!-- Hero -->
+      <section class="hero">
+        <div class="hero-overlay"></div>
+        <div class="hero-content">
+          <p class="hero-byline">by Gina Biernacki</p>
+          <h1 class="hero-tagline">sommplicity</h1>
+          <p class="hero-subtitle">Clarity, Curiosity, Connection</p>
+          <p class="hero-intro">Wine education tailored to your palate — from a certified sommelier who believes the best wine experiences emerge when people feel comfortable and curious.</p>
+          <button class="hero-cta" data-section="catrip">Explore the Site</button>
+        </div>
+        <div class="hero-scroll-hint">
+          <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M7 10l5 5 5-5"/></svg>
+        </div>
+      </section>
+
+      <!-- About Gina -->
+      <section class="home-about">
+        <div class="home-about-inner">
+          <span class="home-label">Your Sommelier</span>
+          <h2 class="home-heading">Meet Gina</h2>
+          <p class="home-about-text">Certified Sommelier through the Court of Master Sommeliers, WSET Level 3 with Distinction. I bring a blend of training and curiosity to everything I do — my focus is on clarity, sensory presence, and genuine connection, helping people discover and understand their own palates.</p>
+          <p class="home-about-text">My approach is guided by three principles: <strong>accessibility</strong>, <strong>presence</strong>, and <strong>connection</strong>. I believe wine becomes a bridge to deeper connection with others when you feel comfortable exploring it.</p>
+          <div class="home-about-creds">
+            <span class="home-cred">Court of Master Sommeliers — Certified Sommelier 2022</span>
+            <span class="home-cred">WSET Level 3 Award in Wines — Distinction 2021</span>
+          </div>
+        </div>
+      </section>
+
+      <!-- Features Grid -->
+      <section class="home-features">
+        <span class="home-label">What You Can Do Here</span>
+        <h2 class="home-heading">Your Wine Education, All in One Place</h2>
+        <div class="home-features-grid">
+
+          <a class="home-card" data-section="catrip">
+            <div class="home-card-icon">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M3 9l9-7 9 7v11a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z"/><polyline points="9 22 9 12 15 12 15 22"/></svg>
+            </div>
+            <h3>Plan a California Wine Trip</h3>
+            <p>280 hand-picked wineries across Napa, Sonoma, Paso Robles, and more. Match your vibe, budget, and interests — build a real itinerary with drive times and reservations.</p>
+          </a>
+
+          <a class="home-card" data-section="caregions">
+            <div class="home-card-icon">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><polygon points="1 6 1 22 8 18 16 22 23 18 23 2 16 6 8 2 1 6"/><line x1="8" y1="2" x2="8" y2="18"/><line x1="16" y1="6" x2="16" y2="22"/></svg>
+            </div>
+            <h3>Explore California Wine Country</h3>
+            <p>Interactive map of California's wine regions — from the fog-cooled Sonoma Coast to the sun-drenched vineyards of Paso Robles. Learn what makes each place special.</p>
+          </a>
+
+          <a class="home-card" data-section="regions">
+            <div class="home-card-icon">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><circle cx="12" cy="12" r="10"/><line x1="2" y1="12" x2="22" y2="12"/><path d="M12 2a15.3 15.3 0 0 1 4 10 15.3 15.3 0 0 1-4 10 15.3 15.3 0 0 1-4-10 15.3 15.3 0 0 1 4-10z"/></svg>
+            </div>
+            <h3>Wine Regions of the World</h3>
+            <p>From Burgundy to Barossa, explore the world's great wine regions — their grapes, styles, and what makes them worth knowing.</p>
+          </a>
+
+          <a class="home-card" data-section="dailywine">
+            <div class="home-card-icon">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/><polyline points="22,6 12,13 2,6"/></svg>
+            </div>
+            <h3>Daily Wine Emails</h3>
+            <p>A short wine lesson in your inbox every morning — curated by a certified sommelier from trusted sources. Choose your level and topics.</p>
+          </a>
+
+          <a class="home-card" data-section="wheel">
+            <div class="home-card-icon">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><circle cx="12" cy="12" r="10"/><circle cx="12" cy="12" r="4"/><line x1="12" y1="2" x2="12" y2="8"/><line x1="12" y1="16" x2="12" y2="22"/><line x1="2" y1="12" x2="8" y2="12"/><line x1="16" y1="12" x2="22" y2="12"/></svg>
+            </div>
+            <h3>Flavor Wheel</h3>
+            <p>Explore the aromas and flavors found in wine — from dark fruit to wet stone. Build your tasting vocabulary one descriptor at a time.</p>
+          </a>
+
+          <a class="home-card" data-section="pairing">
+            <div class="home-card-icon">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M18 8h1a4 4 0 0 1 0 8h-1"/><path d="M2 8h16v9a4 4 0 0 1-4 4H6a4 4 0 0 1-4-4V8z"/><line x1="6" y1="1" x2="6" y2="4"/><line x1="10" y1="1" x2="10" y2="4"/><line x1="14" y1="1" x2="14" y2="4"/></svg>
+            </div>
+            <h3>Food Pairing</h3>
+            <p>Find the perfect wine for tonight's dinner — or discover new dishes that bring out the best in what you're drinking.</p>
+          </a>
+
+          <a class="home-card" data-section="analyzer">
+            <div class="home-card-icon">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M20.84 4.61a5.5 5.5 0 0 0-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 0 0-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 0 0 0-7.78z"/></svg>
+            </div>
+            <h3>I Love This Wine</h3>
+            <p>Snap a photo of a bottle you love — I'll tell you what's in it, why you like it, and what to try next.</p>
+          </a>
+
+          <a class="home-card" data-section="diary">
+            <div class="home-card-icon">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M4 19.5A2.5 2.5 0 0 1 6.5 17H20"/><path d="M6.5 2H20v20H6.5A2.5 2.5 0 0 1 4 19.5v-15A2.5 2.5 0 0 1 6.5 2z"/><line x1="8" y1="7" x2="16" y2="7"/><line x1="8" y1="11" x2="13" y2="11"/></svg>
+            </div>
+            <h3>My Wine Diary</h3>
+            <p>Keep a personal journal of wines you've tasted — photos, notes, ratings. Your palate story, all in one place.</p>
+          </a>
+
+          <a class="home-card" data-section="events">
+            <div class="home-card-icon">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><rect x="3" y="4" width="18" height="18" rx="2" ry="2"/><line x1="16" y1="2" x2="16" y2="6"/><line x1="8" y1="2" x2="8" y2="6"/><line x1="3" y1="10" x2="21" y2="10"/></svg>
+            </div>
+            <h3>Bay Area Wine Events</h3>
+            <p>Tastings, harvest festivals, winemaker dinners — find what's happening in the Bay Area wine scene this month.</p>
+          </a>
+
+        </div>
+      </section>
+
+      <!-- Closing CTA -->
+      <!-- Photo Collage Gallery -->
+      <section class="home-gallery">
+        <span class="home-label">Moments</span>
+        <h2 class="home-heading">From Our Events</h2>
+        <div class="home-gallery-grid">
+          <div class="home-gallery-item" data-size="wide"><img src="https://sommplicity.lovable.app/assets/gallery-crowd-tasting-DEeZn3ky.jpg" alt="Crowd wine tasting at a Sommplicity event" loading="lazy" /></div>
+          <div class="home-gallery-item"><img src="https://sommplicity.lovable.app/assets/gallery-gina-speaking-DfHmtiak.jpg" alt="Gina speaking about wine at an event" loading="lazy" /></div>
+          <div class="home-gallery-item"><img src="https://sommplicity.lovable.app/assets/gallery-bread-butter-D5FFtH_6.jpg" alt="Fresh sourdough and butter paired with wine" loading="lazy" /></div>
+          <div class="home-gallery-item" data-size="tall"><img src="https://sommplicity.lovable.app/assets/gallery-wine-display-rmPeLSSk.jpg" alt="Wine bottles on display at a tasting event" loading="lazy" /></div>
+          <div class="home-gallery-item"><img src="https://sommplicity.lovable.app/assets/gallery-group-tasting-CjiTc8Rm.jpeg" alt="Group of guests tasting wine together" loading="lazy" /></div>
+          <div class="home-gallery-item"><img src="https://sommplicity.lovable.app/assets/gallery-heirloom-menu-C-N6qJVE.jpg" alt="Tasting menu at Heirloom Cafe" loading="lazy" /></div>
+          <div class="home-gallery-item" data-size="wide"><img src="https://sommplicity.lovable.app/assets/gallery-venue-overhead-B98Q0zLX.jpg" alt="Overhead view of a wine event venue" loading="lazy" /></div>
+          <div class="home-gallery-item"><img src="https://sommplicity.lovable.app/assets/farming-hope-wine-CZhXkJqJ.png" alt="Farming Hope wine and food pairing event" loading="lazy" /></div>
+          <div class="home-gallery-item"><img src="https://sommplicity.lovable.app/assets/gallery-bread-wine-w6dTx9xn.png" alt="Bread and wine pairing spread" loading="lazy" /></div>
+          <div class="home-gallery-item"><img src="https://sommplicity.lovable.app/assets/gallery-holiday-menu-bKQf5XXN.png" alt="Holiday pairing menu" loading="lazy" /></div>
+          <div class="home-gallery-item"><img src="https://sommplicity.lovable.app/assets/gallery-xfinity-event-CUtEJIMH.png" alt="Corporate wine event at Xfinity" loading="lazy" /></div>
+          <div class="home-gallery-item"><img src="https://sommplicity.lovable.app/assets/gallery-google-presentation-CVl-naFO.png" alt="Gina presenting at Google" loading="lazy" /></div>
+        </div>
+      </section>
+
+      <!-- Lightbox -->
+      <div class="lightbox" id="lightbox">
+        <button class="lightbox-close" id="lightbox-close" aria-label="Close">&times;</button>
+        <img class="lightbox-img" id="lightbox-img" alt="" />
+      </div>
+
+      <section class="home-closing">
+        <h2 class="home-closing-tagline">Wine is better when you understand it.</h2>
+        <p class="home-closing-text">Whether you're planning your first wine country trip or deepening a lifelong passion, Sommplicity is here to make wine feel approachable, personal, and genuinely enjoyable.</p>
+        <div class="home-closing-links">
+          <a href="mailto:gina@somm-plicity.com" class="home-closing-link">gina@somm-plicity.com</a>
+          <a href="https://www.instagram.com/somm_plicity/" target="_blank" rel="noopener" class="home-closing-link">@somm_plicity</a>
+        </div>
+      </section>
+
+    </div>
 
     <!-- ═══════════════════════════════════════════
          SECTION 1: Sommelier AI Chatbot
@@ -233,124 +331,107 @@
         <div class="section-header">
           <h1>Daily Bite-Size Wine Emails</h1>
           <span class="section-tagline">Learn something new about wine every morning</span>
-          <p>Subscribe to receive short, curated lessons on wine — tailored to your level and interests. Built from the most trusted sources in wine education.</p>
+          <p>A short wine lesson in your inbox every day, curated by a certified sommelier from the most trusted sources in wine education.</p>
         </div>
 
         <div class="dailywine-body">
 
-          <!-- Value prop -->
-          <div class="dailywine-intro">
-            <div class="dailywine-intro-card">
-              <div class="dailywine-intro-icon">📬</div>
-              <h2>What You'll Get</h2>
-              <p>A short, beautifully written email every day covering one wine topic — a grape variety, a region, a tasting technique, a food pairing tip, or a piece of wine history. Each email takes 2–3 minutes to read and is designed to build your knowledge over time.</p>
-            </div>
-          </div>
+          <!-- 2-column layout: benefits left, form right -->
+          <div class="dw-two-col">
 
-          <!-- Trusted sources -->
-          <div class="dailywine-sources">
-            <h3>Sourced From the Best in Wine Education</h3>
-            <p class="dailywine-sources-sub">Every email is curated from the most respected and trusted wine references in the world:</p>
-            <div class="dailywine-source-grid">
-              <div class="dailywine-source">
-                <span class="source-name">GuildSomm</span>
-                <span class="source-desc">Professional sommelier education</span>
+            <!-- Left: Benefits + Testimonials -->
+            <div class="dw-benefits">
+              <h2 class="dw-benefits-heading">What You'll Get</h2>
+              <ul class="dw-benefits-list">
+                <li>A beautifully written 2-3 minute lesson every morning</li>
+                <li>Topics from grape varieties to tasting technique to food pairing</li>
+                <li>Tailored to your level: beginner, intermediate, or advanced</li>
+                <li>Sourced from GuildSomm, Oxford Companion, Jancis Robinson, and more</li>
+                <li>Curated by a Court of Master Sommeliers certified sommelier</li>
+              </ul>
+
+              <div class="dw-testimonials">
+                <h3 class="dw-testimonials-heading">What Subscribers Say</h3>
+                <blockquote class="dw-testimonial">
+                  <p>"I look forward to this every morning with my coffee. Finally learning wine in a way that sticks."</p>
+                  <cite>— Sarah M., San Francisco</cite>
+                </blockquote>
+                <blockquote class="dw-testimonial">
+                  <p>"As someone studying for the CMS exam, these daily bites are the perfect supplement to my flashcards."</p>
+                  <cite>— David K., Oakland</cite>
+                </blockquote>
+                <blockquote class="dw-testimonial">
+                  <p>"I bought my first 'real' bottle of wine after a week of these emails. My partner was impressed."</p>
+                  <cite>— Jess L., Palo Alto</cite>
+                </blockquote>
               </div>
-              <div class="dailywine-source">
-                <span class="source-name">Wine Scholar Guild</span>
-                <span class="source-desc">In-depth regional wine study</span>
-              </div>
-              <div class="dailywine-source">
-                <span class="source-name">The Oxford Companion to Wine</span>
-                <span class="source-desc">The definitive wine encyclopedia</span>
-              </div>
-              <div class="dailywine-source">
-                <span class="source-name">JancisRobinson.com</span>
-                <span class="source-desc">World's most respected wine critic</span>
-              </div>
-              <div class="dailywine-source">
-                <span class="source-name">Wine Folly</span>
-                <span class="source-desc">Visual wine education &amp; guides</span>
-              </div>
-              <div class="dailywine-source">
-                <span class="source-name">Decanter</span>
-                <span class="source-desc">World-class wine journalism</span>
-              </div>
-              <div class="dailywine-source">
-                <span class="source-name">Wine Spectator</span>
-                <span class="source-desc">Ratings, reviews &amp; industry insight</span>
-              </div>
-              <div class="dailywine-source">
-                <span class="source-name">The World Atlas of Wine</span>
-                <span class="source-desc">Essential reference for wine geography</span>
+
+              <!-- Trusted sources compact -->
+              <div class="dw-sources-compact">
+                <span class="dw-sources-label">Sourced from:</span>
+                <span class="dw-sources-names">GuildSomm, Wine Scholar Guild, The Oxford Companion to Wine, JancisRobinson.com, Wine Folly, Decanter, Wine Spectator, The World Atlas of Wine</span>
               </div>
             </div>
-          </div>
 
-          <!-- Sign-up form -->
-          <div class="dailywine-form-section">
-            <h2>Customize Your Daily Emails</h2>
+            <!-- Right: Sign-up Form -->
+            <div class="dw-form-panel">
+              <div class="dailywine-form-section">
+                <h2 class="dw-form-title">Start Your Subscription</h2>
 
-            <div class="dailywine-form">
+                <div class="dailywine-form">
 
-              <!-- Email -->
-              <div class="dw-field">
-                <label class="dw-label">Your email</label>
-                <input type="email" class="dw-input" id="dw-email" placeholder="you@example.com" />
-              </div>
+                  <div class="dw-field">
+                    <label class="dw-label">Email address</label>
+                    <input type="email" class="dw-input" id="dw-email" placeholder="you@example.com" />
+                  </div>
 
-              <!-- Name -->
-              <div class="dw-field">
-                <label class="dw-label">First name</label>
-                <input type="text" class="dw-input" id="dw-name" placeholder="e.g. Gina" />
-              </div>
+                  <div class="dw-field">
+                    <label class="dw-label">First name <span class="dw-hint">(optional)</span></label>
+                    <input type="text" class="dw-input" id="dw-name" placeholder="e.g. Gina" />
+                  </div>
 
-              <!-- Level -->
-              <div class="dw-field">
-                <label class="dw-label">What's your wine knowledge level?</label>
-                <div class="dw-level-options" id="dw-level">
-                  <button class="dw-level-btn" data-level="beginner">
-                    <span class="dw-level-emoji">🌱</span>
-                    <span class="dw-level-title">Beginner</span>
-                    <span class="dw-level-desc">I'm new to wine and want to learn the basics — grapes, regions, how to taste</span>
-                  </button>
-                  <button class="dw-level-btn" data-level="intermediate">
-                    <span class="dw-level-emoji">🍇</span>
-                    <span class="dw-level-title">Intermediate</span>
-                    <span class="dw-level-desc">I know the basics and want to go deeper — terroir, winemaking, blind tasting</span>
-                  </button>
-                  <button class="dw-level-btn" data-level="advanced">
-                    <span class="dw-level-emoji">🏆</span>
-                    <span class="dw-level-title">Advanced / Studying</span>
-                    <span class="dw-level-desc">I'm preparing for WSET, CMS, or want expert-level detail on appellations and producers</span>
-                  </button>
+                  <div class="dw-field">
+                    <label class="dw-label">Your wine knowledge level</label>
+                    <div class="dw-level-options" id="dw-level">
+                      <button class="dw-level-btn" data-level="beginner">
+                        <span class="dw-level-title">Beginner</span>
+                        <span class="dw-level-desc">New to wine — grapes, regions, basics</span>
+                      </button>
+                      <button class="dw-level-btn" data-level="intermediate">
+                        <span class="dw-level-title">Intermediate</span>
+                        <span class="dw-level-desc">Going deeper — terroir, winemaking, tasting</span>
+                      </button>
+                      <button class="dw-level-btn" data-level="advanced">
+                        <span class="dw-level-title">Advanced</span>
+                        <span class="dw-level-desc">WSET, CMS, expert-level detail</span>
+                      </button>
+                    </div>
+                  </div>
+
+                  <div class="dw-field">
+                    <label class="dw-label">Topics <span class="dw-hint">(select all that apply)</span></label>
+                    <div class="dw-topics" id="dw-topics">
+                      <button class="dw-topic-btn" data-topic="grapes">Grape Varieties</button>
+                      <button class="dw-topic-btn" data-topic="regions">Wine Regions</button>
+                      <button class="dw-topic-btn" data-topic="tasting">Tasting Technique</button>
+                      <button class="dw-topic-btn" data-topic="pairing">Food Pairing</button>
+                      <button class="dw-topic-btn" data-topic="winemaking">Winemaking</button>
+                      <button class="dw-topic-btn" data-topic="history">Wine History</button>
+                      <button class="dw-topic-btn" data-topic="buying">Buying &amp; Value</button>
+                      <button class="dw-topic-btn" data-topic="cellar">Cellaring &amp; Aging</button>
+                      <button class="dw-topic-btn" data-topic="exam">Exam Prep</button>
+                    </div>
+                  </div>
+
+                  <button class="dw-subscribe-btn" id="dw-subscribe-btn">Subscribe</button>
+
+                  <p class="dw-footer-note">One email per day. Unsubscribe anytime. We never share your email.</p>
+
                 </div>
               </div>
-
-              <!-- Topics -->
-              <div class="dw-field">
-                <label class="dw-label">Topics you're most interested in <span class="dw-hint">(select all that apply)</span></label>
-                <div class="dw-topics" id="dw-topics">
-                  <button class="dw-topic-btn" data-topic="grapes">🍇 Grape Varieties</button>
-                  <button class="dw-topic-btn" data-topic="regions">🗺️ Wine Regions</button>
-                  <button class="dw-topic-btn" data-topic="tasting">👃 Tasting Technique</button>
-                  <button class="dw-topic-btn" data-topic="pairing">🍽️ Food Pairing</button>
-                  <button class="dw-topic-btn" data-topic="winemaking">🏭 Winemaking</button>
-                  <button class="dw-topic-btn" data-topic="history">📜 Wine History</button>
-                  <button class="dw-topic-btn" data-topic="buying">💰 Buying &amp; Value</button>
-                  <button class="dw-topic-btn" data-topic="cellar">🍾 Cellaring &amp; Aging</button>
-                  <button class="dw-topic-btn" data-topic="exam">📝 Exam Prep (CMS/WSET)</button>
-                </div>
-              </div>
-
-              <!-- Submit -->
-              <button class="dw-subscribe-btn" id="dw-subscribe-btn">Subscribe — It's Free</button>
-
-              <p class="dw-footer-note">You'll receive one email per day. Unsubscribe anytime. Curated by a certified sommelier and reviewed for accuracy.</p>
-
             </div>
-          </div>
 
+          </div>
         </div>
       </div>
     </section>
@@ -367,18 +448,25 @@
 
       <div class="wheel-container">
         <div class="wheel-canvas-wrap">
-          <canvas id="flavor-wheel" width="560" height="560"></canvas>
+          <span class="wheel-instruction">Click any segment to explore flavors</span>
+          <canvas id="flavor-wheel" width="640" height="640"></canvas>
+          <button class="wheel-reset-btn" id="wheel-reset-btn">Reset</button>
         </div>
         <div class="wheel-info-panel" id="wheel-info-panel">
           <div class="wheel-info-default">
-            <div class="wheel-hint-icon">👆</div>
-            <h3>Click a Segment</h3>
+            <h3>Flavor Wheel</h3>
             <p>Click any section of the wheel to learn about that flavor category — what causes it, which wines express it, and specific examples.</p>
             <div class="wheel-legend" id="wheel-legend"></div>
           </div>
           <div class="wheel-info-detail" id="wheel-info-detail" style="display:none">
             <button class="back-btn" id="wheel-back-btn">← Back to overview</button>
             <div id="wheel-detail-content"></div>
+          </div>
+          <div class="wheel-profile-card" id="wheel-profile-card">
+            <h4>Your Flavor Profile</h4>
+            <div class="wheel-profile-flavors" id="wheel-profile-flavors">
+              <span class="wheel-profile-empty">Click flavors to build your profile</span>
+            </div>
           </div>
         </div>
       </div>
@@ -624,13 +712,13 @@
           <div class="catrip-map-state" id="catrip-map-state">
             <div class="catrip-collage">
               <div class="collage-img collage-main">
-                <img src="https://images.unsplash.com/photo-1506377247377-2a5b3b417ebb?w=800&h=600&fit=crop" alt="Vineyard rows" onerror="this.parentElement.style.background='var(--cream-mid)'"/>
+                <img src="https://images.unsplash.com/photo-1506377247377-2a5b3b417ebb?w=800&h=600&fit=crop" alt="Vineyard rows" onerror="this.parentElement.style.background='var(--cream-mid)'"loading="lazy" />
               </div>
               <div class="collage-img collage-top-right">
-                <img src="https://images.unsplash.com/photo-1474722883778-792e7990302f?w=400&h=300&fit=crop" alt="Wine barrels" onerror="this.parentElement.style.background='var(--cream-mid)'"/>
+                <img src="https://images.unsplash.com/photo-1474722883778-792e7990302f?w=400&h=300&fit=crop" alt="Wine barrels" onerror="this.parentElement.style.background='var(--cream-mid)'"loading="lazy" />
               </div>
               <div class="collage-img collage-bottom-right">
-                <img src="https://images.unsplash.com/photo-1510812431401-41d2bd2722f3?w=400&h=300&fit=crop" alt="Wine tasting" onerror="this.parentElement.style.background='var(--cream-mid)'"/>
+                <img src="https://images.unsplash.com/photo-1510812431401-41d2bd2722f3?w=400&h=300&fit=crop" alt="Wine tasting" onerror="this.parentElement.style.background='var(--cream-mid)'"loading="lazy" />
               </div>
             </div>
             <div class="catrip-map-overlay">
@@ -820,7 +908,7 @@
           <h1 class="caregions-title">Explore California Wine Country</h1>
           <p class="caregions-subtitle">From Napa's storied hillsides to Sonoma's hidden valleys — understand what makes each region distinct, and which one calls to you.</p>
         </div>
-        <img class="caregions-hero-photo" src="https://images.unsplash.com/photo-1506377247377-2a5b3b417ebb?w=480&h=320&fit=crop" alt="Wine country vineyard" />
+        <img class="caregions-hero-photo" src="https://images.unsplash.com/photo-1506377247377-2a5b3b417ebb?w=480&h=320&fit=crop" alt="Wine country vineyard" loading="lazy" />
       </div>
 
       <!-- Map + callouts -->
@@ -919,19 +1007,19 @@
             <div class="tip-card-icon">🗓️</div>
             <h3>Best Seasons to Visit</h3>
             <div class="season-item">
-              <img class="season-img" src="https://images.unsplash.com/photo-1523531294919-4bcd7c65ef8a?w=100&h=100&fit=crop" alt="Spring vineyard with new green buds" />
+              <img class="season-img" src="https://images.unsplash.com/photo-1523531294919-4bcd7c65ef8a?w=100&h=100&fit=crop" alt="Spring vineyard with new green buds" loading="lazy" />
               <p><strong>Spring (Mar–May)</strong> — Mustard season in Napa. Vineyards are bright yellow, crowds are lighter, and prices are lower. Weather can be unpredictable.</p>
             </div>
             <div class="season-item">
-              <img class="season-img" src="https://images.unsplash.com/photo-1560493676-04071c5f467b?w=100&h=100&fit=crop" alt="Summer vineyard with full green leaf canopy" />
+              <img class="season-img" src="https://images.unsplash.com/photo-1560493676-04071c5f467b?w=100&h=100&fit=crop" alt="Summer vineyard with full green leaf canopy" loading="lazy" />
               <p><strong>Summer (Jun–Aug)</strong> — Peak tourist season. Long warm days, everything is open, but wineries and restaurants book up fast. Reserve 2–4 weeks ahead.</p>
             </div>
             <div class="season-item">
-              <img class="season-img" src="https://images.unsplash.com/photo-1596142813210-0da03ce613fb?w=100&h=100&fit=crop" alt="Harvest ripe purple grapes on vine" />
+              <img class="season-img" src="https://images.unsplash.com/photo-1596142813210-0da03ce613fb?w=100&h=100&fit=crop" alt="Harvest ripe purple grapes on vine" loading="lazy" />
               <p><strong>Harvest (Sep–Oct)</strong> — The most exciting time to visit. Grapes being picked, wineries buzzing with activity. Called "crush" — you can smell fermentation in the air. Book everything far in advance.</p>
             </div>
             <div class="season-item">
-              <img class="season-img" src="https://images.unsplash.com/photo-1542601906990-b4d3fb778b09?w=100&h=100&fit=crop" alt="Winter bare dormant vine rows" />
+              <img class="season-img" src="https://images.unsplash.com/photo-1542601906990-b4d3fb778b09?w=100&h=100&fit=crop" alt="Winter bare dormant vine rows" loading="lazy" />
               <p><strong>Fall/Winter (Nov–Feb)</strong> — Quieter, more intimate. Many wineries offer library tastings and special events. Rainy days are great for caves and barrel rooms. Best prices on hotels.</p>
             </div>
           </div>
@@ -1002,76 +1090,88 @@
          SECTION: My Account (blank)
     ════════════════════════════════════════════ -->
     <section class="section" id="preferences-section">
-      <div class="section-header">
-        <h1>My Account</h1>
-        <span class="section-tagline">Your profile and preferences</span>
-        <p>Manage your account, set your palate preferences, and personalize your experience.</p>
-      </div>
       <div class="account-scroll">
-        <div class="account-body">
 
-          <!-- Not signed in state -->
-          <div class="account-card" id="account-not-signed-in">
-            <div class="account-card-icon">🔒</div>
-            <h2>Sign in to view your account</h2>
-            <p>Sign in with Google to save preferences, manage email subscriptions, and personalize your experience.</p>
-            <button class="auth-signin-btn" id="account-google-signin-btn">
-              <svg class="auth-google-icon" viewBox="0 0 24 24"><path d="M22.56 12.25c0-.78-.07-1.53-.2-2.25H12v4.26h5.92a5.06 5.06 0 0 1-2.2 3.32v2.77h3.57c2.08-1.92 3.27-4.74 3.27-8.1z" fill="#4285F4"/><path d="M12 23c2.97 0 5.46-.98 7.28-2.66l-3.57-2.77c-.98.66-2.23 1.06-3.71 1.06-2.86 0-5.29-1.93-6.16-4.53H2.18v2.84C3.99 20.53 7.7 23 12 23z" fill="#34A853"/><path d="M5.84 14.09c-.22-.66-.35-1.36-.35-2.09s.13-1.43.35-2.09V7.07H2.18A10.96 10.96 0 0 0 1 12c0 1.77.42 3.45 1.18 4.93l3.66-2.84z" fill="#FBBC05"/><path d="M12 5.38c1.62 0 3.06.56 4.21 1.64l3.15-3.15C17.45 2.09 14.97 1 12 1 7.7 1 3.99 3.47 2.18 7.07l3.66 2.84c.87-2.6 3.3-4.53 6.16-4.53z" fill="#EA4335"/></svg>
-              Sign in with Google
-            </button>
+        <!-- Not signed in -->
+        <div class="account-signin-hero" id="account-not-signed-in">
+          <h1 class="account-signin-title">My Account</h1>
+          <p class="account-signin-desc">Sign in to save preferences, manage subscriptions, and personalize your experience.</p>
+          <button class="auth-signin-btn" id="account-google-signin-btn">
+            <svg class="auth-google-icon" viewBox="0 0 24 24"><path d="M22.56 12.25c0-.78-.07-1.53-.2-2.25H12v4.26h5.92a5.06 5.06 0 0 1-2.2 3.32v2.77h3.57c2.08-1.92 3.27-4.74 3.27-8.1z" fill="#4285F4"/><path d="M12 23c2.97 0 5.46-.98 7.28-2.66l-3.57-2.77c-.98.66-2.23 1.06-3.71 1.06-2.86 0-5.29-1.93-6.16-4.53H2.18v2.84C3.99 20.53 7.7 23 12 23z" fill="#34A853"/><path d="M5.84 14.09c-.22-.66-.35-1.36-.35-2.09s.13-1.43.35-2.09V7.07H2.18A10.96 10.96 0 0 0 1 12c0 1.77.42 3.45 1.18 4.93l3.66-2.84z" fill="#FBBC05"/><path d="M12 5.38c1.62 0 3.06.56 4.21 1.64l3.15-3.15C17.45 2.09 14.97 1 12 1 7.7 1 3.99 3.47 2.18 7.07l3.66 2.84c.87-2.6 3.3-4.53 6.16-4.53z" fill="#EA4335"/></svg>
+            Sign in with Google
+          </button>
+        </div>
+
+        <!-- Signed in: Dashboard -->
+        <div id="account-signed-in" style="display:none">
+
+          <!-- Greeting header -->
+          <div class="account-greeting">
+            <h1 class="account-greeting-text">Welcome back, <span id="account-greeting-name">there</span></h1>
           </div>
 
-          <!-- Signed in state -->
-          <div id="account-signed-in" style="display:none">
+          <div class="account-dashboard">
 
-            <!-- Profile -->
-            <div class="account-card">
-              <h2>Profile</h2>
-              <div class="account-profile-row">
-                <img class="account-avatar" id="account-avatar" src="" alt="" />
-                <div class="account-profile-info">
-                  <div class="account-field">
-                    <span class="account-field-label">Name</span>
-                    <span class="account-field-value" id="account-name">—</span>
-                  </div>
-                  <div class="account-field">
-                    <span class="account-field-label">Email</span>
-                    <span class="account-field-value" id="account-email">—</span>
-                  </div>
-                </div>
+            <!-- Left: Profile sidebar -->
+            <aside class="account-sidebar">
+              <div class="account-sidebar-profile">
+                <img class="account-avatar" id="account-avatar" src="" alt="Your profile photo" />
+                <div class="account-sidebar-name" id="account-name">—</div>
+                <div class="account-sidebar-email" id="account-email">—</div>
               </div>
+              <nav class="account-sidebar-links">
+                <a data-section="diary">My Wine Diary</a>
+                <a data-section="vault">My Wine Vault</a>
+                <a data-section="recs">Recommendations</a>
+              </nav>
               <button class="account-signout-btn" id="account-signout-btn">Sign out</button>
-            </div>
+            </aside>
 
-            <!-- Email preferences -->
-            <div class="account-card">
-              <h2>Daily Wine Email</h2>
-              <div id="account-email-not-subscribed">
-                <p class="account-card-desc">You haven't subscribed to daily wine emails yet.</p>
-                <button class="account-action-btn" id="account-go-to-emails">Set up daily emails →</button>
-              </div>
-              <div id="account-email-subscribed" style="display:none">
-                <div class="account-email-status">
-                  <span class="account-status-badge active">Active</span>
-                  <span class="account-status-text">You're receiving daily emails</span>
-                </div>
-                <div class="account-field">
-                  <span class="account-field-label">Level</span>
-                  <span class="account-field-value" id="account-sub-level">—</span>
-                </div>
-                <div class="account-field">
-                  <span class="account-field-label">Topics</span>
-                  <span class="account-field-value" id="account-sub-topics">—</span>
-                </div>
-                <div class="account-email-actions">
-                  <button class="account-action-btn" id="account-edit-emails">Edit preferences →</button>
-                  <button class="account-action-btn secondary" id="account-unsub-btn">Unsubscribe</button>
-                </div>
-              </div>
-            </div>
+            <!-- Center: Dashboard cards -->
+            <div class="account-main">
 
+              <!-- Email subscription card -->
+              <div class="account-card">
+                <h2>Daily Wine Email</h2>
+                <div id="account-email-not-subscribed">
+                  <p class="account-card-desc">You haven't subscribed to daily wine emails yet.</p>
+                  <button class="account-action-btn" id="account-go-to-emails">Set up daily emails</button>
+                </div>
+                <div id="account-email-subscribed" style="display:none">
+                  <div class="account-email-status">
+                    <span class="account-status-badge active">Active</span>
+                    <span class="account-status-text">You're receiving daily emails</span>
+                  </div>
+                  <div class="account-field">
+                    <span class="account-field-label">Level</span>
+                    <span class="account-field-value" id="account-sub-level">—</span>
+                  </div>
+                  <div class="account-field">
+                    <span class="account-field-label">Topics</span>
+                    <span class="account-field-value" id="account-sub-topics">—</span>
+                  </div>
+                  <div class="account-email-actions">
+                    <button class="account-action-btn" id="account-edit-emails">Edit preferences</button>
+                    <button class="account-action-btn secondary" id="account-unsub-btn">Unsubscribe</button>
+                  </div>
+                </div>
+              </div>
+
+              <!-- Quick actions card -->
+              <div class="account-card">
+                <h2>Quick Actions</h2>
+                <div class="account-quick-grid">
+                  <a class="account-quick-item" data-section="analyzer">Analyze a Wine</a>
+                  <a class="account-quick-item" data-section="catrip">Plan a Trip</a>
+                  <a class="account-quick-item" data-section="events">Browse Events</a>
+                  <a class="account-quick-item" data-section="dailywine">Manage Subscription</a>
+                </div>
+              </div>
+
+            </div>
           </div>
         </div>
+
       </div>
     </section>
 
@@ -1140,7 +1240,7 @@
                 <label class="diary-photo-upload" id="diary-photo-label">
                   <input type="file" accept="image/*" id="diary-photo" style="display:none" />
                   <span class="diary-photo-placeholder" id="diary-photo-placeholder">Click to upload a photo</span>
-                  <img class="diary-photo-preview" id="diary-photo-preview" style="display:none" />
+                  <img class="diary-photo-preview" id="diary-photo-preview" alt="Wine photo preview" style="display:none" />
                 </label>
               </div>
               <button class="diary-submit-btn" id="diary-submit-btn">Add to Diary</button>
@@ -1358,7 +1458,7 @@
             <div class="gina-event-cards">
               <div class="gina-event-card">
                 <div class="gina-event-photo">
-                  <img src="https://sommplicity.lovable.app/assets/heirloom-jan-wines-rmICOB-v.jpg" alt="Wine tasting at Heirloom Cafe" />
+                  <img src="https://sommplicity.lovable.app/assets/heirloom-jan-wines-rmICOB-v.jpg" alt="Wine tasting at Heirloom Cafe" loading="lazy" />
                 </div>
                 <div class="gina-event-info">
                   <div class="gina-event-date">Sat, Jan 17, 2026 · 11 AM – 2 PM</div>
@@ -1375,7 +1475,7 @@
 
               <div class="gina-event-card past">
                 <div class="gina-event-photo">
-                  <img src="https://sommplicity.lovable.app/assets/gallery-wine-bottles-1LjCNlwc.png" alt="Styles of Champagne at K&L" />
+                  <img src="https://sommplicity.lovable.app/assets/gallery-wine-bottles-1LjCNlwc.png" alt="Styles of Champagne at K&L" loading="lazy" />
                 </div>
                 <div class="gina-event-info">
                   <div class="gina-event-date">Dec 29, 2025</div>
@@ -1388,7 +1488,7 @@
 
               <div class="gina-event-card past">
                 <div class="gina-event-photo">
-                  <img src="https://sommplicity.lovable.app/assets/event-bread-wine-Da64uybC.png" alt="Bread and wine pairing" />
+                  <img src="https://sommplicity.lovable.app/assets/event-bread-wine-Da64uybC.png" alt="Bread and wine pairing" loading="lazy" />
                 </div>
                 <div class="gina-event-info">
                   <div class="gina-event-date">Dec 14, 2025</div>
@@ -1401,7 +1501,7 @@
 
               <div class="gina-event-card past">
                 <div class="gina-event-photo">
-                  <img src="https://sommplicity.lovable.app/assets/event-holiday-pairing-DHn4LJLR.jpg" alt="Holiday wine pairing" />
+                  <img src="https://sommplicity.lovable.app/assets/event-holiday-pairing-DHn4LJLR.jpg" alt="Holiday wine pairing" loading="lazy" />
                 </div>
                 <div class="gina-event-info">
                   <div class="gina-event-date">Dec 11, 2025</div>
@@ -1414,7 +1514,7 @@
 
               <div class="gina-event-card past">
                 <div class="gina-event-photo">
-                  <img src="https://sommplicity.lovable.app/assets/event-time-wine-DUByMmsU.png" alt="Time and Wine tasting" />
+                  <img src="https://sommplicity.lovable.app/assets/event-time-wine-DUByMmsU.png" alt="Time and Wine tasting" loading="lazy" />
                 </div>
                 <div class="gina-event-info">
                   <div class="gina-event-date">Past Event</div>
@@ -1430,18 +1530,18 @@
             <!-- Photo gallery -->
             <h3 class="gina-events-sub">Event Gallery</h3>
             <div class="gina-gallery">
-              <img src="https://sommplicity.lovable.app/assets/gallery-crowd-tasting-DEeZn3ky.jpg" alt="Crowd wine tasting" />
-              <img src="https://sommplicity.lovable.app/assets/gallery-gina-speaking-DfHmtiak.jpg" alt="Gina speaking" />
-              <img src="https://sommplicity.lovable.app/assets/gallery-heirloom-menu-C-N6qJVE.jpg" alt="Heirloom menu" />
-              <img src="https://sommplicity.lovable.app/assets/gallery-group-tasting-CjiTc8Rm.jpeg" alt="Group tasting" />
-              <img src="https://sommplicity.lovable.app/assets/gallery-bread-butter-D5FFtH_6.jpg" alt="Sourdough and butter" />
-              <img src="https://sommplicity.lovable.app/assets/gallery-wine-display-rmPeLSSk.jpg" alt="Wine display" />
-              <img src="https://sommplicity.lovable.app/assets/gallery-venue-overhead-B98Q0zLX.jpg" alt="Event venue" />
-              <img src="https://sommplicity.lovable.app/assets/gallery-holiday-menu-bKQf5XXN.png" alt="Holiday menu" />
-              <img src="https://sommplicity.lovable.app/assets/farming-hope-wine-CZhXkJqJ.png" alt="Farming Hope event" />
-              <img src="https://sommplicity.lovable.app/assets/gallery-bread-wine-w6dTx9xn.png" alt="Bread and wine" />
-              <img src="https://sommplicity.lovable.app/assets/gallery-xfinity-event-CUtEJIMH.png" alt="Xfinity event" />
-              <img src="https://sommplicity.lovable.app/assets/gallery-google-presentation-CVl-naFO.png" alt="Google presentation" />
+              <img src="https://sommplicity.lovable.app/assets/gallery-crowd-tasting-DEeZn3ky.jpg" alt="Crowd wine tasting" loading="lazy" />
+              <img src="https://sommplicity.lovable.app/assets/gallery-gina-speaking-DfHmtiak.jpg" alt="Gina speaking" loading="lazy" />
+              <img src="https://sommplicity.lovable.app/assets/gallery-heirloom-menu-C-N6qJVE.jpg" alt="Heirloom menu" loading="lazy" />
+              <img src="https://sommplicity.lovable.app/assets/gallery-group-tasting-CjiTc8Rm.jpeg" alt="Group tasting" loading="lazy" />
+              <img src="https://sommplicity.lovable.app/assets/gallery-bread-butter-D5FFtH_6.jpg" alt="Sourdough and butter" loading="lazy" />
+              <img src="https://sommplicity.lovable.app/assets/gallery-wine-display-rmPeLSSk.jpg" alt="Wine display" loading="lazy" />
+              <img src="https://sommplicity.lovable.app/assets/gallery-venue-overhead-B98Q0zLX.jpg" alt="Event venue" loading="lazy" />
+              <img src="https://sommplicity.lovable.app/assets/gallery-holiday-menu-bKQf5XXN.png" alt="Holiday menu" loading="lazy" />
+              <img src="https://sommplicity.lovable.app/assets/farming-hope-wine-CZhXkJqJ.png" alt="Farming Hope event" loading="lazy" />
+              <img src="https://sommplicity.lovable.app/assets/gallery-bread-wine-w6dTx9xn.png" alt="Bread and wine" loading="lazy" />
+              <img src="https://sommplicity.lovable.app/assets/gallery-xfinity-event-CUtEJIMH.png" alt="Xfinity event" loading="lazy" />
+              <img src="https://sommplicity.lovable.app/assets/gallery-google-presentation-CVl-naFO.png" alt="Google presentation" loading="lazy" />
             </div>
           </div>
 
@@ -1462,37 +1562,54 @@
     <section class="section" id="about-section">
       <div class="about-scroll">
 
-        <!-- Header -->
+        <!-- Hero: Full-width image with text overlay -->
         <div class="about-hero">
-          <div class="about-hero-eyebrow">The Story</div>
-          <h1 class="about-hero-title">About Sommplicity</h1>
-          <p class="about-hero-subtitle">Certified Sommelier &amp; Wine Educator</p>
+          <img class="about-hero-img" src="https://sommplicity.lovable.app/assets/gina-sommelier-BA_5xRDS.png" alt="Gina Biernacki" loading="lazy" />
+          <div class="about-hero-overlay"></div>
+          <div class="about-hero-text">
+            <div class="about-hero-eyebrow">The Story</div>
+            <h1 class="about-hero-title">About Gina</h1>
+            <p class="about-hero-subtitle">Certified Sommelier &amp; Wine Educator, San Francisco</p>
+          </div>
+        </div>
+
+        <!-- Bio: 2-column (left = main bio, right = credentials/links) -->
+        <div class="about-bio">
+          <div class="about-bio-text">
+            <h2 class="about-bio-name">Meet the Sommelier</h2>
+            <p>I'm a Certified Sommelier who discovered my love for wine by sharing it with others. What began as informal tastings with friends and colleagues at Google evolved into dedicated study through WSET Level 3 with Distinction and the Court of Master Sommeliers Certified exam, as well as hands-on work in vineyards and cellars in France.</p>
+            <p>Today, I bring that blend of training and curiosity to tastings throughout the Bay Area. My focus is on clarity, sensory presence, and genuine connection &mdash; helping people discover and understand their own palates.</p>
+          </div>
+          <div class="about-bio-sidebar">
+            <div class="about-cred-badge">
+              <span class="about-cred-label">CMS</span>
+              <span class="about-cred-title">Certified Sommelier</span>
+              <span class="about-cred-year">2022</span>
+            </div>
+            <div class="about-cred-badge">
+              <span class="about-cred-label">WSET</span>
+              <span class="about-cred-title">Level 3 &mdash; Distinction</span>
+              <span class="about-cred-year">2021</span>
+            </div>
+            <div class="about-sidebar-links">
+              <a href="https://www.instagram.com/somm_plicity/" target="_blank" rel="noopener">Instagram</a>
+              <a href="https://www.linkedin.com/in/gina-biernacki-1029901b/" target="_blank" rel="noopener">LinkedIn</a>
+              <a href="mailto:gina@somm-plicity.com">gina@somm-plicity.com</a>
+            </div>
+          </div>
         </div>
 
         <!-- Philosophy -->
         <div class="about-philosophy">
           <div class="about-philosophy-card">
-            <p>My approach blends deep technical understanding with emotional and sensory focus, creating grounded moments where people reconnect with themselves and with each other. Wine is not meant to be mastered; it is meant to be experienced. In a world that only grows busier, wine remains one of the purest products of the earth and invites us to slow down and be present.</p>
-          </div>
-        </div>
-
-        <!-- Bio -->
-        <div class="about-bio">
-          <div class="about-bio-photo">
-            <img src="https://sommplicity.lovable.app/assets/gina-sommelier-BA_5xRDS.png" alt="Gina Biernacki, Certified Sommelier" />
-          </div>
-          <div class="about-bio-text">
-            <div class="about-bio-eyebrow">Meet the Sommelier</div>
-            <h2 class="about-bio-name">About Gina</h2>
-            <p>I'm a Certified Sommelier who discovered my love for wine by sharing it with others. What began as informal tastings with friends and colleagues at Google evolved into dedicated study through WSET Level 3 with Distinction and the Court of Master Sommeliers Certified exam, as well as hands-on work in vineyards and cellars in France.</p>
-            <p>Today, I bring that blend of training and curiosity to tastings throughout the Bay Area. My focus is on clarity, sensory presence, and genuine connection &mdash; helping people discover and understand their own palates.</p>
+            <h3 class="about-philosophy-tagline">Wine is not meant to be mastered. It is meant to be experienced.</h3>
+            <p>My approach blends deep technical understanding with emotional and sensory focus, creating grounded moments where people reconnect with themselves and with each other. In a world that only grows busier, wine remains one of the purest products of the earth and invites us to slow down and be present.</p>
           </div>
         </div>
 
         <!-- AI + Sommelier -->
         <div class="about-ai-note">
           <div class="about-ai-card">
-            <div class="about-ai-icon">🤖 + 🍷</div>
             <h3>Powered by AI, Guided by a Sommelier</h3>
             <p>This platform is powered by AI, but every recommendation, tasting note, and regional guide is reviewed, maintained, curated, and tested by a certified sommelier. Technology amplifies the experience &mdash; the human palate ensures it's trustworthy.</p>
           </div>
@@ -1506,55 +1623,55 @@
           <div class="about-timeline">
 
             <div class="timeline-entry timeline-left">
-              <div class="timeline-node"><img src="https://sommplicity.lovable.app/images/brand-google.png" alt="Google" /></div>
+              <div class="timeline-node"><img src="https://sommplicity.lovable.app/images/brand-google.png" alt="Google" loading="lazy" /></div>
               <div class="timeline-card">
                 <div class="timeline-date">2013 &ndash; 2025</div>
                 <h3>MBA &amp; Product Manager at Google</h3>
                 <p>Started in consulting before earning an MBA from Chicago Booth. At Google, learned to distill complexity into clarity and found every opportunity to teach colleagues about wine.</p>
                 <div class="timeline-photos">
-                  <img src="https://sommplicity.lovable.app/assets/bay-area-events-8oTvLXKu.jpg" alt="Teaching wine tasting at Google" />
-                  <img src="https://sommplicity.lovable.app/assets/google-presenting-7gdo-2Up.png" alt="Presenting at Google" />
+                  <img src="https://sommplicity.lovable.app/assets/bay-area-events-8oTvLXKu.jpg" alt="Teaching wine tasting at Google" loading="lazy" />
+                  <img src="https://sommplicity.lovable.app/assets/google-presenting-7gdo-2Up.png" alt="Presenting at Google" loading="lazy" />
                 </div>
               </div>
             </div>
 
             <div class="timeline-entry timeline-right">
-              <div class="timeline-node"><img src="https://sommplicity.lovable.app/images/brand-wset.png" alt="WSET" /></div>
+              <div class="timeline-node"><img src="https://sommplicity.lovable.app/images/brand-wset.png" alt="WSET" loading="lazy" /></div>
               <div class="timeline-card">
                 <div class="timeline-date">2021</div>
                 <h3>WSET Level 3 with Distinction</h3>
                 <p>Completed with distinction, demonstrating advanced knowledge of wines and winemaking from around the world.</p>
                 <div class="timeline-photos">
-                  <img src="https://sommplicity.lovable.app/images/journey-wset.jpg" alt="WSET Level 3 training" />
-                  <img src="https://sommplicity.lovable.app/assets/wset-classroom-ChyX1IpH.png" alt="WSET classroom" />
+                  <img src="https://sommplicity.lovable.app/images/journey-wset.jpg" alt="WSET Level 3 training" loading="lazy" />
+                  <img src="https://sommplicity.lovable.app/assets/wset-classroom-ChyX1IpH.png" alt="WSET classroom" loading="lazy" />
                 </div>
               </div>
             </div>
 
             <div class="timeline-entry timeline-left">
-              <div class="timeline-node"><img src="https://sommplicity.lovable.app/images/brand-cms.png" alt="CMS" /></div>
+              <div class="timeline-node"><img src="https://sommplicity.lovable.app/images/brand-cms.png" alt="CMS" loading="lazy" /></div>
               <div class="timeline-card">
                 <div class="timeline-date">2022</div>
                 <h3>Court of Master Sommeliers &mdash; Certified</h3>
                 <p>Completed the Certified Sommelier examination, joining a select group of wine professionals recognized for advanced expertise in wine knowledge, service, and blind tasting.</p>
                 <div class="timeline-photos">
-                  <img src="https://sommplicity.lovable.app/assets/cms-certificate-C5vM-fhw.jpg" alt="CMS certificate" />
-                  <img src="https://sommplicity.lovable.app/assets/cms-celebration-BQL5L-q3.jpg" alt="Celebrating certification" />
-                  <img src="https://sommplicity.lovable.app/assets/cms-group-B98Gtq3S.png" alt="Certified class" />
+                  <img src="https://sommplicity.lovable.app/assets/cms-certificate-C5vM-fhw.jpg" alt="CMS certificate" loading="lazy" />
+                  <img src="https://sommplicity.lovable.app/assets/cms-celebration-BQL5L-q3.jpg" alt="Celebrating certification" loading="lazy" />
+                  <img src="https://sommplicity.lovable.app/assets/cms-group-B98Gtq3S.png" alt="Certified class" loading="lazy" />
                 </div>
               </div>
             </div>
 
             <div class="timeline-entry timeline-right">
-              <div class="timeline-node"><img src="https://sommplicity.lovable.app/images/brand-vineyard.png" alt="Vineyard" /></div>
+              <div class="timeline-node"><img src="https://sommplicity.lovable.app/images/brand-vineyard.png" alt="Vineyard" loading="lazy" /></div>
               <div class="timeline-card">
                 <div class="timeline-date">Summer 2025</div>
                 <h3>Working the Harvest in Bordeaux</h3>
                 <p>Fulfilled a lifelong dream working the harvest with Puy Savage, a small producer in Bordeaux. Worked closely with the winemaker, picking grapes and contributing to the winemaking process.</p>
                 <div class="timeline-photos">
-                  <img src="https://sommplicity.lovable.app/images/journey-harvest-1.jpg" alt="Picking grapes in Bordeaux" />
-                  <img src="https://sommplicity.lovable.app/images/journey-harvest-2.jpg" alt="Grape harvest" />
-                  <img src="https://sommplicity.lovable.app/images/journey-harvest-3.jpg" alt="French countryside winery" />
+                  <img src="https://sommplicity.lovable.app/images/journey-harvest-1.jpg" alt="Picking grapes in Bordeaux" loading="lazy" />
+                  <img src="https://sommplicity.lovable.app/images/journey-harvest-2.jpg" alt="Grape harvest" loading="lazy" />
+                  <img src="https://sommplicity.lovable.app/images/journey-harvest-3.jpg" alt="French countryside winery" loading="lazy" />
                 </div>
               </div>
             </div>
@@ -1566,8 +1683,8 @@
                 <h3>Wine Industry &amp; Events</h3>
                 <p>Contracting across SF wine, restaurant, and hospitality partners through pop-ups, private events, and corporate gatherings. Continued blind tasting practice with the SF sommeliers study group.</p>
                 <div class="timeline-photos">
-                  <img src="https://sommplicity.lovable.app/images/journey-event-1.png" alt="Wine tasting event" />
-                  <img src="https://sommplicity.lovable.app/images/journey-event-2.png" alt="Serving wine" />
+                  <img src="https://sommplicity.lovable.app/images/journey-event-1.png" alt="Wine tasting event" loading="lazy" />
+                  <img src="https://sommplicity.lovable.app/images/journey-event-2.png" alt="Serving wine" loading="lazy" />
                 </div>
               </div>
             </div>
@@ -1575,17 +1692,13 @@
           </div>
         </div>
 
-        <!-- Connect -->
-        <div class="about-connect">
-          <div class="about-connect-col">
-            <h3>Connect</h3>
-            <a href="https://www.instagram.com/somm_plicity/" target="_blank" rel="noopener">Instagram</a>
-            <a href="https://www.linkedin.com/in/gina-biernacki-1029901b/" target="_blank" rel="noopener">LinkedIn</a>
-          </div>
-          <div class="about-connect-col">
-            <h3>Contact</h3>
-            <a href="mailto:gina@somm-plicity.com">gina@somm-plicity.com</a>
-            <span>San Francisco Bay Area</span>
+        <!-- CTA -->
+        <div class="about-cta">
+          <h2 class="about-cta-heading">Work with Gina</h2>
+          <p class="about-cta-text">Private tastings, corporate events, bread and wine pairings, and wine consulting throughout the San Francisco Bay Area.</p>
+          <div class="about-cta-actions">
+            <a href="mailto:gina@somm-plicity.com" class="about-cta-btn">Book an Event</a>
+            <a href="https://sommplicity.lovable.app/contact" target="_blank" rel="noopener" class="about-cta-link">View all services</a>
           </div>
         </div>
 

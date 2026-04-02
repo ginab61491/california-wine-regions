@@ -17,10 +17,13 @@ document.addEventListener('DOMContentLoaded', () => {
 
     if (user) {
       notSignedIn.style.display = 'none';
-      signedIn.style.display = 'block';
+      signedIn.style.display = 'flex';
+      signedIn.style.flexDirection = 'column';
       document.getElementById('account-avatar').src = user.picture || '';
       document.getElementById('account-name').textContent = user.name || '—';
       document.getElementById('account-email').textContent = user.email || '—';
+      const greetEl = document.getElementById('account-greeting-name');
+      if (greetEl) greetEl.textContent = (user.name || 'there').split(' ')[0];
     } else {
       notSignedIn.style.display = 'block';
       signedIn.style.display = 'none';
