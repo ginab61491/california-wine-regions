@@ -14,7 +14,7 @@ const anthropic = new Anthropic({ apiKey: process.env.ANTHROPIC_API_KEY });
 app.use(compression());
 
 app.use(cors());
-app.use(express.json());
+app.use(express.json({ limit: '25mb' }));
 
 // Static assets with cache headers (CSS, JS, images cached 7 days; HTML no-cache)
 app.use(express.static(path.join(__dirname, 'public'), {
@@ -170,13 +170,21 @@ app.post('/api/scan-bottles', async (req, res) => {
   // Build content blocks: images + text prompt
   const content = [];
   for (const img of images.slice(0, 5)) {
-    const match = img.match(/^data:(image\/\w+);base64,(.+)$/);
+    // Handle various data URL formats: image/jpeg, image/png, image/webp, image/heic, etc.
+    const match = img.match(/^data:(image\/[^;,]+)[^,]*,(.+)$/);
     if (match) {
+      // Normalize media type (Claude accepts jpeg, png, gif, webp)
+      let mediaType = match[1].toLowerCase();
+      if (mediaType === 'image/jpg') mediaType = 'image/jpeg';
+      if (mediaType === 'image/heic' || mediaType === 'image/heif') mediaType = 'image/jpeg'; // HEIC gets re-encoded by browser
       content.push({
         type: 'image',
-        source: { type: 'base64', media_type: match[1], data: match[2] }
+        source: { type: 'base64', media_type: mediaType, data: match[2] }
       });
     }
+  }
+  if (content.length === 0) {
+    return res.status(400).json({ error: 'Could not process the uploaded images. Please try JPG or PNG format.' });
   }
   content.push({
     type: 'text',
