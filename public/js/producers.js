@@ -6,12 +6,33 @@ document.addEventListener('DOMContentLoaded', () => {
   let currentPage = 1;
   const perPage = 12;
   let selectedGrape = '';
-  let selectedRegions = new Set();
+  let selectedCountry = '';
+  let selectedRegion = '';
+  let selectedSubregion = '';
   let selectedPrice = '';
   let selectedTiers = new Set();
   let selectedTags = new Set();
   let searchQuery = '';
   let initialized = false;
+
+  // Subregion data for cascading drill-down
+  const REGION_SUBREGIONS = {
+    'Bordeaux': ['Pauillac', 'Margaux', 'Saint-Julien', 'Saint-Estephe', 'Pessac-Leognan', 'Graves', 'Pomerol', 'Saint-Emilion', 'Sauternes', 'Medoc', 'Haut-Medoc'],
+    'Burgundy': ['Cote de Nuits', 'Cote de Beaune', 'Chablis', 'Cote Chalonnaise', 'Maconnais', 'Beaujolais'],
+    'Rhone Valley': ['Northern Rhone', 'Southern Rhone', 'Hermitage', 'Cote-Rotie', 'Chateauneuf-du-Pape', 'Gigondas'],
+    'Champagne': ['Montagne de Reims', 'Cote des Blancs', 'Vallee de la Marne', 'Aube'],
+    'Loire Valley': ['Sancerre', 'Pouilly-Fume', 'Vouvray', 'Muscadet', 'Chinon', 'Saumur'],
+    'Piedmont': ['Barolo', 'Barbaresco', 'Langhe', 'Asti', 'Gavi'],
+    'Tuscany': ['Chianti Classico', 'Montalcino', 'Bolgheri', 'Montepulciano', 'Maremma'],
+    'Napa Valley': ['Oakville', 'Rutherford', 'Stags Leap District', 'St. Helena', 'Calistoga', 'Howell Mountain', 'Mount Veeder'],
+    'Sonoma County': ['Russian River Valley', 'Sonoma Coast', 'Alexander Valley', 'Dry Creek Valley', 'Sonoma Valley'],
+    'Rioja': ['Rioja Alta', 'Rioja Alavesa', 'Rioja Oriental'],
+    'Mosel': ['Bernkastel', 'Piesport', 'Wehlen', 'Urzig'],
+    'Wachau': ['Loiben', 'Spitz', 'Durnstein'],
+    'Mendoza': ['Lujan de Cuyo', 'Uco Valley', 'Maipu'],
+    'Barossa Valley': ['Barossa Valley', 'Eden Valley'],
+    'Stellenbosch': ['Stellenbosch', 'Helderberg', 'Simonsberg'],
+  };
 
   async function initProducers() {
     if (initialized) return;
@@ -26,6 +47,7 @@ document.addEventListener('DOMContentLoaded', () => {
       return;
     }
     buildGrapeSelect();
+    buildCountrySelect();
     wireFilters();
     applyFilters();
   }
@@ -33,48 +55,90 @@ document.addEventListener('DOMContentLoaded', () => {
   function buildGrapeSelect() {
     const grapes = new Set();
     allProducers.forEach(p => (p.grapes || []).forEach(g => grapes.add(g)));
-    const sorted = [...grapes].sort();
     const sel = document.getElementById('prod-grape-select');
-    sorted.forEach(g => {
-      const opt = document.createElement('option');
-      opt.value = g; opt.textContent = g;
-      sel.appendChild(opt);
-    });
+    [...grapes].sort().forEach(g => { const o = document.createElement('option'); o.value = g; o.textContent = g; sel.appendChild(o); });
   }
 
-  function buildRegionPills() {
+  function buildCountrySelect() {
+    const countries = new Set();
+    allProducers.forEach(p => { if (p.country) countries.add(p.country); });
+    const sel = document.getElementById('prod-country-select');
+    [...countries].sort().forEach(c => { const o = document.createElement('option'); o.value = c; o.textContent = c; sel.appendChild(o); });
+  }
+
+  function updateRegionSelect() {
+    const regionSec = document.getElementById('prod-region-section');
+    const regionSel = document.getElementById('prod-region-select');
+    const subSec = document.getElementById('prod-subregion-section');
+    selectedRegion = '';
+    selectedSubregion = '';
+
+    if (!selectedCountry) {
+      regionSec.style.display = 'none';
+      subSec.style.display = 'none';
+      return;
+    }
+
+    // Get regions for this country (optionally filtered by grape)
+    const source = selectedGrape ? allProducers.filter(p => (p.grapes || []).includes(selectedGrape)) : allProducers;
     const regions = new Set();
-    const source = selectedGrape
-      ? allProducers.filter(p => (p.grapes || []).includes(selectedGrape))
-      : allProducers;
-    source.forEach(p => { if (p.region) regions.add(p.region); });
+    source.filter(p => p.country === selectedCountry).forEach(p => { if (p.region) regions.add(p.region); });
     const sorted = [...regions].sort();
-    const container = document.getElementById('prod-region-pills');
-    container.innerHTML = '';
-    selectedRegions.clear();
-    sorted.slice(0, 30).forEach(r => {
-      const btn = document.createElement('button');
-      btn.className = 'prod-pill';
-      btn.textContent = r;
-      btn.addEventListener('click', () => {
-        btn.classList.toggle('active');
-        if (btn.classList.contains('active')) selectedRegions.add(r);
-        else selectedRegions.delete(r);
-        applyFilters();
-      });
-      container.appendChild(btn);
-    });
+
+    if (sorted.length <= 1) {
+      regionSec.style.display = 'none';
+      subSec.style.display = 'none';
+      if (sorted.length === 1) selectedRegion = sorted[0]; // auto-select sole region
+      return;
+    }
+
+    regionSel.innerHTML = '<option value="">All Regions</option>';
+    sorted.forEach(r => { const o = document.createElement('option'); o.value = r; o.textContent = r; regionSel.appendChild(o); });
+    regionSec.style.display = 'block';
+    subSec.style.display = 'none';
+  }
+
+  function updateSubregionSelect() {
+    const subSec = document.getElementById('prod-subregion-section');
+    const subSel = document.getElementById('prod-subregion-select');
+    selectedSubregion = '';
+
+    if (!selectedRegion || !REGION_SUBREGIONS[selectedRegion]) {
+      subSec.style.display = 'none';
+      return;
+    }
+
+    const subs = REGION_SUBREGIONS[selectedRegion];
+    subSel.innerHTML = '<option value="">All Appellations</option>';
+    subs.forEach(s => { const o = document.createElement('option'); o.value = s; o.textContent = s; subSel.appendChild(o); });
+    subSec.style.display = 'block';
   }
 
   function wireFilters() {
-    // Grape select
+    // Grape
     document.getElementById('prod-grape-select').addEventListener('change', (e) => {
       selectedGrape = e.target.value;
-      buildRegionPills();
+      updateRegionSelect();
       applyFilters();
     });
 
-    // Price buttons (single select)
+    // Country → Region → Subregion cascade
+    document.getElementById('prod-country-select').addEventListener('change', (e) => {
+      selectedCountry = e.target.value;
+      updateRegionSelect();
+      applyFilters();
+    });
+    document.getElementById('prod-region-select').addEventListener('change', (e) => {
+      selectedRegion = e.target.value;
+      updateSubregionSelect();
+      applyFilters();
+    });
+    document.getElementById('prod-subregion-select').addEventListener('change', (e) => {
+      selectedSubregion = e.target.value;
+      applyFilters();
+    });
+
+    // Price (single select)
     document.querySelectorAll('#prod-price-btns .prod-price-btn').forEach(btn => {
       btn.addEventListener('click', () => {
         const wasActive = btn.classList.contains('active');
@@ -120,24 +184,33 @@ document.addEventListener('DOMContentLoaded', () => {
       applyFilters();
     });
 
-    // Clear
-    document.getElementById('prod-clear-btn').addEventListener('click', () => {
-      selectedGrape = ''; selectedPrice = ''; searchQuery = '';
-      selectedRegions.clear(); selectedTiers.clear(); selectedTags.clear();
-      document.getElementById('prod-grape-select').value = '';
-      document.getElementById('prod-search').value = '';
-      document.querySelectorAll('.prod-pill, .prod-price-btn').forEach(b => b.classList.remove('active'));
-      buildRegionPills();
-      applyFilters();
+    // Show Results (mobile scroll to results)
+    document.getElementById('prod-show-results').addEventListener('click', () => {
+      const grid = document.getElementById('prod-grid');
+      if (grid) grid.scrollIntoView({ behavior: 'smooth', block: 'start' });
     });
 
-    buildRegionPills();
+    // Clear
+    document.getElementById('prod-clear-btn').addEventListener('click', () => {
+      selectedGrape = ''; selectedCountry = ''; selectedRegion = ''; selectedSubregion = '';
+      selectedPrice = ''; searchQuery = '';
+      selectedTiers.clear(); selectedTags.clear();
+      document.getElementById('prod-grape-select').value = '';
+      document.getElementById('prod-country-select').value = '';
+      document.getElementById('prod-search').value = '';
+      document.getElementById('prod-region-section').style.display = 'none';
+      document.getElementById('prod-subregion-section').style.display = 'none';
+      document.querySelectorAll('.prod-pill, .prod-price-btn').forEach(b => b.classList.remove('active'));
+      applyFilters();
+    });
   }
 
   function applyFilters() {
     filteredProducers = allProducers.filter(p => {
       if (selectedGrape && !(p.grapes || []).includes(selectedGrape)) return false;
-      if (selectedRegions.size && !selectedRegions.has(p.region)) return false;
+      if (selectedCountry && p.country !== selectedCountry) return false;
+      if (selectedRegion && p.region !== selectedRegion) return false;
+      if (selectedSubregion && p.subregion !== selectedSubregion) return false;
       if (selectedPrice && p.price !== selectedPrice) return false;
       if (selectedTiers.size && !selectedTiers.has(p.tier)) return false;
       if (selectedTags.size) {
@@ -152,8 +225,7 @@ document.addEventListener('DOMContentLoaded', () => {
     });
     currentPage = 1;
     renderResults();
-    // Show clear button
-    const hasFilters = selectedGrape || selectedPrice || selectedRegions.size || selectedTiers.size || selectedTags.size || searchQuery;
+    const hasFilters = selectedGrape || selectedCountry || selectedPrice || selectedTiers.size || selectedTags.size || searchQuery;
     document.getElementById('prod-clear-btn').style.display = hasFilters ? 'block' : 'none';
     document.getElementById('prod-result-count').textContent = `Showing ${filteredProducers.length} producer${filteredProducers.length !== 1 ? 's' : ''}`;
   }
@@ -192,7 +264,6 @@ document.addEventListener('DOMContentLoaded', () => {
       </div>`;
     }).join('');
 
-    // Wire card clicks
     grid.querySelectorAll('.prod-card').forEach(card => {
       const openDetail = () => {
         const p = allProducers.find(x => x.id === card.dataset.id);
@@ -202,7 +273,6 @@ document.addEventListener('DOMContentLoaded', () => {
       card.addEventListener('click', openDetail);
     });
 
-    // Pagination
     const pagEl = document.getElementById('prod-pagination');
     if (totalPages <= 1) { pagEl.innerHTML = ''; return; }
     let html = '';
@@ -251,8 +321,10 @@ document.addEventListener('DOMContentLoaded', () => {
     `;
     modal.style.display = 'flex';
     document.body.style.overflow = 'hidden';
-    document.getElementById('prod-modal-close').onclick = () => { modal.style.display = 'none'; document.body.style.overflow = ''; };
-    modal.addEventListener('click', (e) => { if (e.target === modal) { modal.style.display = 'none'; document.body.style.overflow = ''; } });
+
+    const closeModal = () => { modal.style.display = 'none'; document.body.style.overflow = ''; };
+    document.getElementById('prod-modal-close').onclick = closeModal;
+    modal.addEventListener('click', (e) => { if (e.target === modal) closeModal(); });
   }
 
   // Init when section becomes active

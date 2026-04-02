@@ -2949,17 +2949,42 @@ button {
   color: var(--ink-xlight);
   padding-top: 10px;
 }
+.prod-filter-actions {
+  display: flex;
+  gap: 8px;
+  padding-top: 12px;
+  border-top: 1px solid var(--cream-dark);
+}
 .prod-clear-btn {
   font-family: 'Montserrat', sans-serif;
-  font-size: 0.7rem;
+  font-size: 0.78rem;
   color: var(--ink-xlight);
   background: none;
-  border: none;
+  border: 1px solid var(--cream-dark);
+  border-radius: 6px;
+  padding: 10px 16px;
   cursor: pointer;
-  padding: 4px 0;
-  transition: color 0.2s;
+  transition: all 0.2s;
+  flex: 1;
 }
-.prod-clear-btn:hover { color: var(--maroon); }
+.prod-clear-btn:hover { border-color: var(--maroon); color: var(--maroon); }
+.prod-show-results-btn {
+  font-family: 'Montserrat', sans-serif;
+  font-size: 0.85rem;
+  font-weight: 500;
+  color: #fff;
+  background: var(--gold);
+  border: none;
+  border-radius: 6px;
+  padding: 12px 24px;
+  cursor: pointer;
+  transition: background 0.2s;
+  flex: 2;
+  min-height: 44px;
+}
+.prod-show-results-btn:hover { background: var(--gold-mid); }
+/* Hide Show Results on desktop (auto-filters) */
+@media (min-width: 768px) { .prod-show-results-btn { display: none; } }
 
 /* Main results */
 .prod-main {
@@ -3287,8 +3312,17 @@ button {
     font-size: 0.8rem;
   }
 
-  /* Clear button */
+  /* Filter actions: sticky at bottom on mobile */
+  .prod-filter-actions {
+    position: sticky;
+    bottom: 0;
+    background: var(--white);
+    padding: 12px 0;
+    z-index: 5;
+    border-top: 1px solid var(--cream-dark);
+  }
   .prod-clear-btn { min-height: 44px; font-size: 0.78rem; }
+  .prod-show-results-btn { display: block; min-height: 48px; font-size: 0.9rem; }
 
   /* Results: full-width single column */
   .prod-main { padding: 12px; }

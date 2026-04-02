@@ -1182,10 +1182,24 @@
               </select>
             </fieldset>
 
-            <!-- Region -->
+            <!-- Country → Region → Subregion -->
             <fieldset class="prod-filter-section">
+              <legend class="prod-filter-heading">Country</legend>
+              <select class="prod-select" id="prod-country-select">
+                <option value="">All Countries</option>
+              </select>
+            </fieldset>
+            <fieldset class="prod-filter-section" id="prod-region-section" style="display:none">
               <legend class="prod-filter-heading">Region</legend>
-              <div class="prod-region-pills" id="prod-region-pills"></div>
+              <select class="prod-select" id="prod-region-select">
+                <option value="">All Regions</option>
+              </select>
+            </fieldset>
+            <fieldset class="prod-filter-section" id="prod-subregion-section" style="display:none">
+              <legend class="prod-filter-heading">Appellation</legend>
+              <select class="prod-select" id="prod-subregion-select">
+                <option value="">All Appellations</option>
+              </select>
             </fieldset>
 
             <!-- Price -->
@@ -1229,8 +1243,11 @@
               </div>
             </div>
 
+            <div class="prod-filter-actions">
+              <button class="prod-clear-btn" id="prod-clear-btn" style="display:none">Clear All</button>
+              <button class="prod-show-results-btn" id="prod-show-results">Show Results</button>
+            </div>
             <div class="prod-result-count" id="prod-result-count">Showing 0 producers</div>
-            <button class="prod-clear-btn" id="prod-clear-btn" style="display:none">Clear All</button>
           </div>
         </aside>
 
