@@ -1,6 +1,143 @@
 // study-tools.js — Flashcards, quizzes, and podcast generator for wine exam prep
 
 document.addEventListener('DOMContentLoaded', () => {
+  // ── Master Flashcard Deck (500 pre-built cards) ──
+  let masterCards = [];
+  let filteredCards = [];
+  let deckIndex = 0;
+  let deckShowBack = false;
+  let deckKnown = new Set();   // card indices user marked "Got It"
+  let deckReview = new Set();  // card indices user marked "Review Again"
+  let deckFilter = 'all';
+  let deckInitialized = false;
+
+  // Load saved progress from localStorage
+  try {
+    const saved = JSON.parse(localStorage.getItem('sommplicity_deck_progress') || '{}');
+    if (saved.known) deckKnown = new Set(saved.known);
+    if (saved.review) deckReview = new Set(saved.review);
+  } catch {}
+
+  function saveDeckProgress() {
+    localStorage.setItem('sommplicity_deck_progress', JSON.stringify({
+      known: [...deckKnown],
+      review: [...deckReview],
+    }));
+  }
+
+  async function initMasterDeck() {
+    if (deckInitialized) return;
+    deckInitialized = true;
+
+    try {
+      const res = await fetch('/data/cms-flashcards.json');
+      if (!res.ok) throw new Error('Could not load flashcards');
+      const data = await res.json();
+      masterCards = data.cards || [];
+    } catch (err) {
+      document.getElementById('deck-card-text').textContent = 'Failed to load flashcards. Please refresh.';
+      return;
+    }
+
+    filterDeck('all');
+
+    // Difficulty filter buttons
+    document.querySelectorAll('.deck-diff-btn').forEach(btn => {
+      btn.addEventListener('click', () => {
+        document.querySelectorAll('.deck-diff-btn').forEach(b => b.classList.remove('active'));
+        btn.classList.add('active');
+        filterDeck(btn.dataset.diff);
+      });
+    });
+
+    // Flip
+    document.getElementById('deck-flip').addEventListener('click', () => { deckShowBack = !deckShowBack; renderDeckCard(); });
+    document.getElementById('deck-card').addEventListener('click', () => { deckShowBack = !deckShowBack; renderDeckCard(); });
+
+    // Nav
+    document.getElementById('deck-prev').addEventListener('click', () => { if (deckIndex > 0) { deckIndex--; deckShowBack = false; renderDeckCard(); } });
+    document.getElementById('deck-next').addEventListener('click', () => { if (deckIndex < filteredCards.length - 1) { deckIndex++; deckShowBack = false; renderDeckCard(); } });
+    document.getElementById('deck-shuffle').addEventListener('click', () => {
+      for (let i = filteredCards.length - 1; i > 0; i--) {
+        const j = Math.floor(Math.random() * (i + 1));
+        [filteredCards[i], filteredCards[j]] = [filteredCards[j], filteredCards[i]];
+      }
+      deckIndex = 0;
+      deckShowBack = false;
+      renderDeckCard();
+    });
+
+    // Mark known / review
+    document.getElementById('deck-mark-known').addEventListener('click', () => {
+      const card = filteredCards[deckIndex];
+      if (!card) return;
+      const idx = masterCards.indexOf(card);
+      deckKnown.add(idx);
+      deckReview.delete(idx);
+      saveDeckProgress();
+      updateDeckProgress();
+      // Auto-advance
+      if (deckIndex < filteredCards.length - 1) { deckIndex++; deckShowBack = false; renderDeckCard(); }
+    });
+
+    document.getElementById('deck-mark-review').addEventListener('click', () => {
+      const card = filteredCards[deckIndex];
+      if (!card) return;
+      const idx = masterCards.indexOf(card);
+      deckReview.add(idx);
+      deckKnown.delete(idx);
+      saveDeckProgress();
+      updateDeckProgress();
+      // Auto-advance
+      if (deckIndex < filteredCards.length - 1) { deckIndex++; deckShowBack = false; renderDeckCard(); }
+    });
+  }
+
+  function filterDeck(diff) {
+    deckFilter = diff;
+    if (diff === 'all') filteredCards = [...masterCards];
+    else filteredCards = masterCards.filter(c => c.diff === diff);
+    deckIndex = 0;
+    deckShowBack = false;
+    renderDeckCard();
+    updateDeckProgress();
+  }
+
+  function renderDeckCard() {
+    if (!filteredCards.length) {
+      document.getElementById('deck-card-text').textContent = 'No cards match this filter.';
+      document.getElementById('deck-counter').textContent = '0 / 0';
+      return;
+    }
+    const card = filteredCards[deckIndex];
+    const globalIdx = masterCards.indexOf(card);
+    document.getElementById('deck-counter').textContent = `${deckIndex + 1} / ${filteredCards.length}`;
+    const face = document.getElementById('deck-card-face');
+    const label = face.querySelector('.deck-card-side-label');
+    const text = document.getElementById('deck-card-text');
+    const diffEl = document.getElementById('deck-card-diff');
+
+    label.textContent = deckShowBack ? 'Answer' : 'Question';
+    text.textContent = deckShowBack ? card.back : card.front;
+    face.className = 'deck-card-face' + (deckShowBack ? ' is-back' : '');
+    diffEl.textContent = card.diff;
+    diffEl.setAttribute('data-d', card.diff);
+    document.getElementById('deck-flip').textContent = deckShowBack ? 'Show Question' : 'Flip';
+
+    // Show known/review state on card border
+    const cardEl = document.getElementById('deck-card');
+    cardEl.style.borderLeftWidth = '3px';
+    if (deckKnown.has(globalIdx)) cardEl.style.borderLeftColor = '#4a8a50';
+    else if (deckReview.has(globalIdx)) cardEl.style.borderLeftColor = 'var(--maroon)';
+    else cardEl.style.borderLeftColor = 'var(--border-ink)';
+  }
+
+  function updateDeckProgress() {
+    document.getElementById('deck-known-count').textContent = deckKnown.size;
+    document.getElementById('deck-review-count').textContent = deckReview.size;
+    document.getElementById('deck-total-count').textContent = masterCards.length;
+  }
+
   // Only init when the cmsprep section becomes active
   let initialized = false;
 
@@ -260,7 +397,7 @@ document.addEventListener('DOMContentLoaded', () => {
   // Init when cmsprep tab becomes visible
   const observer = new MutationObserver(() => {
     const section = document.getElementById('cmsprep-section');
-    if (section && section.classList.contains('active')) initStudyTools();
+    if (section && section.classList.contains('active')) { initMasterDeck(); initStudyTools(); }
   });
   const section = document.getElementById('cmsprep-section');
   if (section) observer.observe(section, { attributes: true, attributeFilter: ['class'] });

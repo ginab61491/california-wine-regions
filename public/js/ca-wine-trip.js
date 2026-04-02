@@ -865,7 +865,8 @@ class CaTripPlanner {
     this.renderResults(scored);
   }
 
-  _sortScored(scored, sortBy) {
+
+    _sortScored(scored, sortBy) {
     const SOMM_TAGS = ['sommelier-pick', 'cult-following', 'award-winning'];
     const PRICE_ORDER = { 'budget': 1, 'mid': 2, 'mid-splurge': 3, 'splurge': 4 };
     const copy = [...scored];

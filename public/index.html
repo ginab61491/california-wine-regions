@@ -104,6 +104,7 @@
             <a class="topnav-menu-item" data-section="wheel">Flavor Wheel</a>
             <a class="topnav-menu-item" data-section="pairing">Food Pairing</a>
             <a class="topnav-menu-item" data-section="regions">Wine Regions of the World</a>
+            <a class="topnav-menu-item" data-section="producers">Producer Profiles</a>
           </div>
         </div>
         <!-- Study dropdown -->
@@ -164,6 +165,7 @@
       <a class="mobile-nav-link" data-section="wheel">Flavor Wheel</a>
       <a class="mobile-nav-link" data-section="pairing">Food Pairing</a>
       <a class="mobile-nav-link" data-section="regions">Wine Regions of the World</a>
+      <a class="mobile-nav-link" data-section="producers">Producer Profiles</a>
 
       <span class="mobile-nav-group">Study</span>
       <a class="mobile-nav-link" data-section="study">Classes &amp; Certifications</a>
@@ -700,10 +702,55 @@
             </div>
           </div>
 
-          <!-- Study Tools -->
+          <!-- Master Flashcard Deck -->
+          <div class="master-deck">
+            <h2 class="study-section-heading">Certified Sommelier Flashcards</h2>
+            <p class="study-section-desc">500 exam-level cards verified across GuildSomm, The Oxford Companion to Wine, and WSET textbooks. Broad coverage of every topic area tested on the Certified Sommelier exam.</p>
+
+            <!-- Difficulty filter -->
+            <div class="deck-controls">
+              <div class="deck-filters">
+                <button class="deck-diff-btn active" data-diff="all">All Cards</button>
+                <button class="deck-diff-btn" data-diff="easy">Easy</button>
+                <button class="deck-diff-btn" data-diff="medium">Medium</button>
+                <button class="deck-diff-btn" data-diff="challenging">Challenging</button>
+              </div>
+              <div class="deck-progress" id="deck-progress">
+                <span class="deck-progress-known" id="deck-known-count">0</span> learned
+                <span class="deck-progress-sep">/</span>
+                <span class="deck-progress-review" id="deck-review-count">0</span> to review
+                <span class="deck-progress-sep">/</span>
+                <span class="deck-progress-total" id="deck-total-count">500</span> total
+              </div>
+            </div>
+
+            <!-- Card display -->
+            <div class="deck-card-area" id="deck-card-area">
+              <div class="deck-counter" id="deck-counter">1 / 500</div>
+              <div class="deck-card" id="deck-card">
+                <div class="deck-card-diff" id="deck-card-diff"></div>
+                <div class="deck-card-face" id="deck-card-face">
+                  <span class="deck-card-side-label">Question</span>
+                  <p id="deck-card-text">Loading flashcards...</p>
+                </div>
+              </div>
+              <div class="deck-actions">
+                <button class="deck-action-btn deck-action-review" id="deck-mark-review" title="Need more review">Review Again</button>
+                <button class="deck-action-btn deck-action-flip" id="deck-flip">Flip</button>
+                <button class="deck-action-btn deck-action-known" id="deck-mark-known" title="I know this">Got It</button>
+              </div>
+              <div class="deck-nav">
+                <button class="deck-nav-btn" id="deck-prev">Previous</button>
+                <button class="deck-nav-btn" id="deck-next">Next</button>
+                <button class="deck-nav-btn" id="deck-shuffle">Shuffle</button>
+              </div>
+            </div>
+          </div>
+
+          <!-- Custom Study Tools -->
           <div class="study-tools">
-            <h2 class="study-tools-title">Study Tools</h2>
-            <p class="study-tools-desc">AI-generated from trusted sources (GuildSomm, Oxford Companion, Wine Scholar Guild, Jancis Robinson). Certified Sommelier exam level. Factual only.</p>
+            <h2 class="study-tools-title">Custom Study Tools</h2>
+            <p class="study-tools-desc">Generate focused study material for specific topics. AI-powered from trusted sources — use these for deep dives on areas you want to strengthen.</p>
 
             <div class="study-tool-tabs">
               <button class="study-tool-tab active" data-tool="flashcards">Flashcards</button>
@@ -835,6 +882,103 @@
 
           </div>
 
+        </div>
+      </div>
+    </section>
+
+    <!-- ═══════════════════════════════════════════
+         SECTION: Producer Profiles
+    ════════════════════════════════════════════ -->
+    <section class="section" id="producers-section">
+      <div class="section-header">
+        <h1>Producer Profiles</h1>
+        <span class="section-tagline">The world's most important wine producers</span>
+        <p>Explore legendary estates, cult producers, and emerging stars — filtered by grape, region, and style.</p>
+      </div>
+      <div class="prod-layout">
+
+        <!-- Filters sidebar -->
+        <aside class="prod-sidebar">
+          <div class="prod-sidebar-inner">
+
+            <!-- Search -->
+            <div class="prod-filter-section">
+              <input type="text" class="prod-search" id="prod-search" placeholder="Search producers..." />
+            </div>
+
+            <!-- Grape -->
+            <fieldset class="prod-filter-section">
+              <legend class="prod-filter-heading">Grape Varietal</legend>
+              <select class="prod-select" id="prod-grape-select">
+                <option value="">All Grapes</option>
+              </select>
+            </fieldset>
+
+            <!-- Region -->
+            <fieldset class="prod-filter-section">
+              <legend class="prod-filter-heading">Region</legend>
+              <div class="prod-region-pills" id="prod-region-pills"></div>
+            </fieldset>
+
+            <!-- Price -->
+            <fieldset class="prod-filter-section">
+              <legend class="prod-filter-heading">Price</legend>
+              <div class="prod-price-row" id="prod-price-btns">
+                <button class="prod-price-btn" data-price="budget">Budget</button>
+                <button class="prod-price-btn" data-price="moderate">Moderate</button>
+                <button class="prod-price-btn" data-price="premium">Premium</button>
+                <button class="prod-price-btn" data-price="luxury">Luxury</button>
+              </div>
+            </fieldset>
+
+            <!-- Quality Tier -->
+            <fieldset class="prod-filter-section">
+              <legend class="prod-filter-heading">Quality</legend>
+              <div class="prod-pills" id="prod-tier-pills">
+                <button class="prod-pill" data-tier="legendary">Legendary</button>
+                <button class="prod-pill" data-tier="highly-acclaimed">Highly Acclaimed</button>
+                <button class="prod-pill" data-tier="well-regarded">Well-Regarded</button>
+                <button class="prod-pill" data-tier="emerging">Emerging</button>
+                <button class="prod-pill" data-tier="cult">Cult Status</button>
+              </div>
+            </fieldset>
+
+            <!-- Tags -->
+            <div class="prod-filter-section">
+              <button class="prod-tags-toggle" id="prod-tags-toggle">More Filters</button>
+              <div class="prod-tags-content" id="prod-tags-content" style="display:none">
+                <div class="prod-pills" id="prod-tag-pills">
+                  <button class="prod-pill" data-tag="sommelier-pick">Sommelier Pick</button>
+                  <button class="prod-pill" data-tag="best-value">Best Value</button>
+                  <button class="prod-pill" data-tag="biodynamic">Biodynamic</button>
+                  <button class="prod-pill" data-tag="organic">Organic</button>
+                  <button class="prod-pill" data-tag="natural-wine">Natural Wine</button>
+                  <button class="prod-pill" data-tag="family-owned">Family-Owned</button>
+                  <button class="prod-pill" data-tag="historic-estate">Historic Estate</button>
+                  <button class="prod-pill" data-tag="age-worthy">Age-Worthy</button>
+                  <button class="prod-pill" data-tag="hard-to-find">Hard to Find</button>
+                </div>
+              </div>
+            </div>
+
+            <div class="prod-result-count" id="prod-result-count">Showing 0 producers</div>
+            <button class="prod-clear-btn" id="prod-clear-btn" style="display:none">Clear All</button>
+          </div>
+        </aside>
+
+        <!-- Results grid -->
+        <div class="prod-main">
+          <div class="prod-grid" id="prod-grid"></div>
+          <div class="prod-pagination" id="prod-pagination"></div>
+        </div>
+
+      </div>
+
+      <!-- Producer Detail Modal -->
+      <div class="prod-modal-overlay" id="prod-modal" style="display:none">
+        <div class="prod-modal">
+          <button class="prod-modal-close" id="prod-modal-close">&times;</button>
+          <div id="prod-modal-content"></div>
         </div>
       </div>
     </section>
@@ -1292,12 +1436,12 @@
               <div id="trip-sliders"></div>
             </div>
 
-            <button class="trip-find-btn" id="find-wineries-btn">Find Wineries →</button>
+            <button class="trip-find-btn" id="find-wineries-btn">Find Wineries</button>
 
             <!-- Trip builder -->
             <div class="s-section s-trip-builder" id="trip-builder-section" style="display:none">
               <div id="trip-selected-list"></div>
-              <button class="trip-next-btn" id="go-to-step2-btn">↓ Go to Step 2</button>
+              <button class="trip-next-btn" id="go-to-step2-btn">Go to Step 2</button>
             </div>
 
           </div>
@@ -2334,6 +2478,7 @@
   <script src="js/daily-wine.js"></script>
   <script src="js/wine-diary.js"></script>
   <script src="js/account.js"></script>
+  <script src="js/producers.js"></script>
   <script src="js/study-tools.js"></script>
   <script src="js/app.js"></script>
 </body>

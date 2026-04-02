@@ -14,6 +14,7 @@ document.addEventListener('DOMContentLoaded', () => {
   // Section label map for breadcrumbs
   const sectionLabels = {
     grapes:      'Wine Grapes',
+    producers:   'Producer Profiles',
     study:       'Classes & Certifications',
     cmsprep:     'Certified Sommelier Prep',
     catrip:      'Plan a California Trip',
@@ -34,7 +35,7 @@ document.addEventListener('DOMContentLoaded', () => {
 
   // Section → parent group for dropdown active states
   const sectionGroups = {
-    grapes: 'Learn', dailywine: 'Learn', wheel: 'Learn', pairing: 'Learn', regions: 'Learn',
+    grapes: 'Learn', dailywine: 'Learn', wheel: 'Learn', pairing: 'Learn', regions: 'Learn', producers: 'Learn',
     study: 'Study', cmsprep: 'Study',
     catrip: 'Visit', caregions: 'Visit', events: 'Visit',
     analyzer: 'Sip', diary: 'Sip', vault: 'Sip', recs: 'Sip',
