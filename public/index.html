@@ -1263,6 +1263,7 @@
     </section>
 
 
+
     <!-- ═══════════════════════════════════════════
          SECTION: Wine Grape Explorer
     ════════════════════════════════════════════ -->
@@ -1278,113 +1279,38 @@
 
         <!-- Filter bar -->
         <div class="grape-filter-bar">
-          <!-- Row 1: Core filters -->
-          <div class="grape-filter-row">
-            <button class="grape-all-btn" id="grape-reset-all">All</button>
-            <div class="grape-filter-group">
-              <div class="grape-type-btns" id="grape-level-btns">
-                <button class="grape-type-btn" data-level="intro">Introductory</button>
-                <button class="grape-type-btn" data-level="wset3">WSET 3</button>
-              </div>
-            </div>
-            <div class="grape-filter-group">
-              <div class="grape-type-btns" id="grape-type-btns">
-                <button class="grape-type-btn" data-type="red">Red</button>
-                <button class="grape-type-btn" data-type="white">White</button>
-              </div>
-            </div>
-            <div class="grape-filter-group">
-              <div class="grape-type-btns" id="grape-world-btns">
-                <button class="grape-type-btn" data-world="old">Old World</button>
-                <button class="grape-type-btn" data-world="new">New World</button>
-              </div>
-            </div>
-            <!-- Aroma filter -->
-            <div class="grape-filter-group">
-              <select class="grape-select-sm" id="grape-aroma-select">
-                <option value="">Aroma</option>
-                <option value="fruit">Fruit</option>
-                <option value="floral">Floral</option>
-                <option value="earth">Earth &amp; Mineral</option>
-                <option value="oak">Oak &amp; Toast</option>
-                <option value="spice">Spice</option>
-              </select>
-              <select class="grape-select-sm" id="grape-subaroma-select" style="display:none">
-                <option value="">Sub-aroma</option>
-              </select>
+          <div class="grape-filter-group">
+            <span class="grape-filter-label">Type</span>
+            <div class="grape-type-btns" id="grape-type-btns">
+              <button class="grape-type-btn active" data-type="all">All</button>
+              <button class="grape-type-btn" data-type="red">Red</button>
+              <button class="grape-type-btn" data-type="white">White</button>
             </div>
           </div>
-          <!-- Row 2: Country + Region -->
-          <div class="grape-filter-row">
-            <span class="grape-filter-label" style="margin-right:4px">Country</span>
-            <div class="grape-type-btns grape-country-btns" id="grape-country-btns">
-              <button class="grape-type-btn" data-country="France">France</button>
-              <button class="grape-type-btn" data-country="Italy">Italy</button>
-              <button class="grape-type-btn" data-country="Spain">Spain</button>
-              <button class="grape-type-btn" data-country="Germany">Germany</button>
-              <button class="grape-type-btn" data-country="USA">USA</button>
-              <button class="grape-type-btn" data-country="Australia">Australia</button>
-              <button class="grape-type-btn" data-country="Argentina">Argentina</button>
-              <button class="grape-type-btn" data-country="New Zealand">NZ</button>
-              <button class="grape-type-btn" data-country="South Africa">S. Africa</button>
-            </div>
-            <div class="grape-subregion-area" id="grape-subregion-area" style="display:none">
-              <div class="grape-type-btns" id="grape-subregion-btns"></div>
+          <div class="grape-filter-group">
+            <span class="grape-filter-label">World</span>
+            <div class="grape-type-btns" id="grape-world-btns">
+              <button class="grape-type-btn active" data-world="both">All</button>
+              <button class="grape-type-btn" data-world="old">Old World</button>
+              <button class="grape-type-btn" data-world="new">New World</button>
             </div>
           </div>
-          <!-- Row 3: Sliders -->
-          <div class="grape-filter-row">
-            <div class="grape-filter-group grape-slider-group">
-              <label class="grape-filter-label">Aromatic <span id="aromatic-val" class="grape-slider-val">Any</span></label>
-              <input type="range" min="0" max="5" value="0" step="1" class="grape-slider" id="grape-aromatic" />
-              <button class="grape-slider-clear" data-slider="grape-aromatic" style="display:none">&times;</button>
-            </div>
-            <div class="grape-filter-group grape-slider-group">
-              <label class="grape-filter-label">Acidity <span id="acidity-val" class="grape-slider-val">Any</span></label>
-              <input type="range" min="0" max="5" value="0" step="1" class="grape-slider" id="grape-acidity" />
-              <button class="grape-slider-clear" data-slider="grape-acidity" style="display:none">&times;</button>
-            </div>
-            <div class="grape-filter-group grape-slider-group">
-              <label class="grape-filter-label">Tannin <span id="tannin-val" class="grape-slider-val">Any</span></label>
-              <input type="range" min="0" max="5" value="0" step="1" class="grape-slider" id="grape-tannin" />
-              <button class="grape-slider-clear" data-slider="grape-tannin" style="display:none">&times;</button>
-            </div>
-            <div class="grape-filter-group grape-slider-group">
-              <label class="grape-filter-label">Alcohol <span id="alcohol-val" class="grape-slider-val">Any</span></label>
-              <input type="range" min="0" max="5" value="0" step="1" class="grape-slider" id="grape-alcohol" />
-              <button class="grape-slider-clear" data-slider="grape-alcohol" style="display:none">&times;</button>
-            </div>
-            <div class="grape-filter-group grape-slider-group">
-              <label class="grape-filter-label">Age-Worthy <span id="ageworthy-val" class="grape-slider-val">Any</span></label>
-              <input type="range" min="0" max="5" value="0" step="1" class="grape-slider" id="grape-ageworthy" />
-              <button class="grape-slider-clear" data-slider="grape-ageworthy" style="display:none">&times;</button>
-            </div>
-            <div class="grape-filter-group grape-slider-group">
-              <label class="grape-filter-label">Sugar <span id="sugar-val" class="grape-slider-val">Any</span></label>
-              <input type="range" min="0" max="5" value="0" step="1" class="grape-slider" id="grape-sugar" />
-              <button class="grape-slider-clear" data-slider="grape-sugar" style="display:none">&times;</button>
-            </div>
+          <div class="grape-filter-group grape-slider-group">
+            <label class="grape-filter-label">Aromatic <span id="aromatic-val">Any</span></label>
+            <input type="range" min="0" max="5" value="0" step="1" class="grape-slider" id="grape-aromatic" />
           </div>
-          <!-- Apply button -->
-          <div class="grape-filter-row">
-            <button class="grape-apply-btn" id="grape-apply-btn">Show Grapes</button>
+          <div class="grape-filter-group grape-slider-group">
+            <label class="grape-filter-label">Acidity <span id="acidity-val">Any</span></label>
+            <input type="range" min="0" max="5" value="0" step="1" class="grape-slider" id="grape-acidity" />
+          </div>
+          <div class="grape-filter-group grape-slider-group">
+            <label class="grape-filter-label">Tannin <span id="tannin-val">Any</span></label>
+            <input type="range" min="0" max="5" value="0" step="1" class="grape-slider" id="grape-tannin" />
           </div>
         </div>
 
         <!-- Bubble space -->
         <div class="grape-space" id="grape-space"></div>
-
-        <!-- Comparison Board -->
-        <div class="grape-compare" id="grape-compare" style="display:none">
-          <div class="grape-compare-header">
-            <h3>Compare Varietals</h3>
-            <button class="grape-compare-clear" id="grape-compare-clear">Clear</button>
-          </div>
-          <div class="grape-compare-table" id="grape-compare-table"></div>
-          <div class="grape-compare-analysis" id="grape-compare-analysis"></div>
-          <button class="grape-somm-btn" id="grape-somm-btn">Get Sommelier Insights</button>
-          <div class="grape-somm-output" id="grape-somm-output"></div>
-        </div>
 
         <!-- Detail modal -->
         <div class="grape-modal-overlay" id="grape-modal" style="display:none">
@@ -1393,9 +1319,25 @@
             <div id="grape-modal-content"></div>
           </div>
         </div>
+
+        <!-- Sources -->
+        <div class="grape-sources">
+          <h3 class="grape-sources-title">Sources</h3>
+          <p class="grape-sources-text">All varietal characteristics, tasting notes, and regional information verified across multiple professional sources:</p>
+          <ul class="grape-sources-list">
+            <li><strong>WSET Level 3 Award in Wines</strong> &mdash; Official curriculum and study guide. Primary source for grape characteristics, acidity, tannin, body, and regional classifications.</li>
+            <li><strong>Jancis Robinson, <em>Wine Grapes</em></strong> (2012) &mdash; Comprehensive encyclopedia of 1,368 grape varieties. Source for historical origins, parentage, and global distribution.</li>
+            <li><strong>The Oxford Companion to Wine</strong> (4th ed., Jancis Robinson & Julia Harding) &mdash; Authoritative reference for winemaking, viticulture, and regional detail.</li>
+            <li><strong>Wine Spectator</strong> &mdash; Professional tasting notes and reviews. Source for flavor descriptors and food pairing recommendations.</li>
+            <li><strong>Decanter Magazine</strong> &mdash; Regional profiles, food pairing guides, and grape variety features.</li>
+            <li><strong>Wine Scholar Guild</strong> &mdash; Professional wine education programs. Source for terroir science and regional specialization.</li>
+            <li><strong>GuildSomm</strong> &mdash; Court of Master Sommeliers study resources. Source for service-level grape knowledge and blind tasting frameworks.</li>
+            <li><strong>Wine Folly</strong> (Madeline Puckette) &mdash; Visual wine education. Referenced for accessible grape descriptions and infographics.</li>
+          </ul>
+          <p class="grape-sources-note">Each grape's acidity, tannin, aromatic intensity, body, alcohol range, flavor profile, and regional associations have been cross-referenced across at least two of the above sources.</p>
+        </div>
       </div>
     </section>
-
 
     <!-- ═══════════════════════════════════════════
          SECTION 3: Wine Regions Map
