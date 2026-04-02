@@ -97,10 +97,12 @@ document.addEventListener('DOMContentLoaded', () => {
                 subBtns.querySelectorAll('.grape-type-btn').forEach(x => x.classList.remove('active'));
                 if (!wasSubActive) { sb.classList.add('active'); selectedSubregion = sb.dataset.subregion; }
                 else { selectedSubregion = ''; }
+                applyFilters();
               });
             });
           } else { subArea.style.display = 'none'; }
         }
+        applyFilters();
       });
     });
 
