@@ -663,6 +663,7 @@ class CaTripPlanner {
     const scored = WINERIES_DEDUPED.map(w => {
       let score = 0;
       const matchR = []; const filterN = [];
+      // Region/subregion
       if (this.selectedRegion) {
         if (w.region === this.selectedRegion) score += 3;
         else if (this.selectedRegion === 'Healdsburg' && w.region === 'Sonoma County' && ['Russian River Valley','Dry Creek Valley','Alexander Valley'].includes(w.subregion)) score += 2;
@@ -673,36 +674,44 @@ class CaTripPlanner {
         else { const neighbors = SUBREGION_NEIGHBORS[this.selectedSubregion] || {}; const d = neighbors[w.subregion]; if (d !== undefined) { w._neighborNote = `~${d} min from ${this.selectedSubregion}`; score += 1; } else return { winery: w, score: -999 }; }
       }
       const wTags = new Set(w.tags || []);
+      // Sliders — only report on sliders that user actually moved
+      const SLIDER_NAMES = { budget: 'Budget', vibe: 'Vibe', remoteness: 'Location', quality: 'Focus', learning: 'Experience' };
       TRIP_SLIDERS.forEach(slider => {
         const val = this.sliderValues[slider.id] || 50;
         if (val < 38) {
           let m = false;
           slider.leftTags.forEach(t => { if (wTags.has(t)) { score += 3; m = true; } });
-          if (m) matchR.push(slider.leftLabel);
-          slider.rightTags.forEach(t => { if (wTags.has(t)) { score -= 2; filterN.push(`More ${slider.rightLabel.toLowerCase()} than ${slider.leftLabel.toLowerCase()}`); } });
-          if (val < 20 && !m && slider.leftTags.length) { score -= 4; }
+          if (m && slider.id !== 'budget') matchR.push(slider.leftLabel);
+          slider.rightTags.forEach(t => { if (wTags.has(t)) { score -= 2; if (slider.id !== 'budget') filterN.push(`More ${slider.rightLabel.toLowerCase()} than ${slider.leftLabel.toLowerCase()}`); } });
+          if (val < 20 && !m && slider.leftTags.length) score -= 4;
         } else if (val > 62) {
           let m = false;
           slider.rightTags.forEach(t => { if (wTags.has(t)) { score += 3; m = true; } });
-          if (m) matchR.push(slider.rightLabel);
-          slider.leftTags.forEach(t => { if (wTags.has(t)) { score -= 2; filterN.push(`More ${slider.leftLabel.toLowerCase()} than ${slider.rightLabel.toLowerCase()}`); } });
-          if (val > 80 && !m && slider.rightTags.length) { score -= 4; }
+          if (m && slider.id !== 'budget') matchR.push(slider.rightLabel);
+          slider.leftTags.forEach(t => { if (wTags.has(t)) { score -= 2; if (slider.id !== 'budget') filterN.push(`More ${slider.leftLabel.toLowerCase()} than ${slider.rightLabel.toLowerCase()}`); } });
+          if (val > 80 && !m && slider.rightTags.length) score -= 4;
         }
       });
+      // Budget — use actual price field, not tags
       const budgetVal = this.sliderValues['budget'] || 50;
       if (budgetVal < 30) {
-        if (['budget','mid'].includes(w.price)) { score += 4; matchR.push(`Good value (${w.tastingCost || '$'})`); }
-        if (w.price === 'splurge') { score -= 7; filterN.push(`Pricier than preferred (${w.tastingCost || '$$$'})`); }
+        if (['budget','mid'].includes(w.price)) { score += 4; matchR.push(`Affordable (${w.tastingCost || 'under $40'})`); }
+        if (w.price === 'splurge') { score -= 7; filterN.push(`Expensive for your budget (${w.tastingCost || '$$$+'})`); }
+        if (w.price === 'mid-splurge') { score -= 3; filterN.push(`Mid-range pricing (${w.tastingCost || '$$–$$$'})`); }
       } else if (budgetVal > 70) {
-        if (['splurge','mid-splurge'].includes(w.price)) { score += 4; matchR.push('Premium tasting experience'); }
-        if (w.price === 'budget') { score -= 7; filterN.push('More budget-oriented than you specified'); }
+        if (['splurge','mid-splurge'].includes(w.price)) { score += 4; matchR.push(`Premium experience (${w.tastingCost || '$$$+'})`); }
+        if (w.price === 'budget') { score -= 7; filterN.push(`More budget-oriented (${w.tastingCost || '$'}) than you prefer`); }
       }
+      // Badge filters — name each specifically
+      const FILTER_LABELS = { 'walk-in-friendly': 'Walk-in friendly', 'last-minute': 'Last-minute friendly', 'sommelier-pick': 'Sommelier pick', 'cult-following': 'Cult following', 'historic-estate': 'Historic estate', 'family-owned': 'Family-owned', 'organic-biodynamic': 'Organic/biodynamic', 'cellar-tour': 'Has cellar tour', 'vineyard-tour': 'Has vineyard tour', 'food-pairing': 'Offers food pairing', 'mountain-views': 'Mountain views', 'picnic-friendly': 'Picnic-friendly', 'best-value': 'Best value', 'contemporary-design': 'Contemporary design', 'educational-tastings': 'Educational tastings' };
       if (this.badgeFilters.size > 0) {
         this.badgeFilters.forEach(f => {
-          if (wTags.has(f)) { score += 5; matchR.push(f === 'walk-in-friendly' ? 'Walk-ins accepted' : 'Easy last-minute booking'); }
-          else { score -= 6; filterN.push(f === 'walk-in-friendly' ? 'Requires a reservation' : 'Needs advance planning'); }
+          const label = FILTER_LABELS[f] || f;
+          if (wTags.has(f)) { score += 5; matchR.push(label); }
+          else { score -= 6; filterN.push(`Not ${label.toLowerCase()}`); }
         });
       }
+      // Proximity
       const proxInput = document.getElementById('proximity-input');
       const proxVal = proxInput ? proxInput.value.trim().toLowerCase() : '';
       if (proxVal) {
@@ -710,12 +719,8 @@ class CaTripPlanner {
         if (s.includes(proxVal) || (w.region||'').toLowerCase().includes(proxVal)) { score += 5; matchR.push(`Near ${proxInput.value.trim()}`); }
         else filterN.push(`Not near ${proxInput.value.trim()}`);
       }
-      // Add inherent qualities (only if not already covered by filter matches)
-      if (wTags.has('sommelier-pick') && !matchR.some(r => r.includes('Somm'))) matchR.push('Sommelier recommended');
-      if (wTags.has('organic-biodynamic')) matchR.push('Organic/biodynamic farming');
-      if (wTags.has('women-winemakers')) matchR.push('Women-led winemaking');
-      if (wTags.has('hands-on-winemaker')) matchR.push('You may meet the winemaker');
-      w._matchReasons = [...new Set(matchR)].slice(0, 4);
+      // Only show match reasons for things the user actually filtered for
+      w._matchReasons = [...new Set(matchR)].slice(0, 5);
       w._filterNotes = [...new Set(filterN)];
       return { winery: w, score };
     }).filter(s => s.score > -999).sort((a, b) => b.score - a.score);
