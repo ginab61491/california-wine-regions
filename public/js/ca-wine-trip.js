@@ -709,7 +709,7 @@ class CaTripPlanner {
 
   wineryCard(w, score, maxScore) {
     const priceLabel = { splurge: '$$$', 'mid-splurge': '$$–$$$', mid: '$$', budget: '$' }[w.price] || '$$';
-    const driveText = w.sfDrive >= 180 ? `${(w.sfDrive / 60).toFixed(1)} hrs` : `${w.sfDrive} min`;
+    const driveText = w.sfDrive >= 90 ? `${(w.sfDrive / 60).toFixed(1)} hrs` : `${w.sfDrive} min`;
     const isInTrip = this.tripSelected.some(t => t.id === w.id);
     const TAG_LABELS = { 'sommelier-pick': 'Sommelier Pick', 'historic-estate': 'Historic Estate', 'family-owned': 'Family-Owned', 'emerging-producer': 'Emerging Producer', 'best-value': 'Best Value', 'natural-wine': 'Natural Wine', 'organic-biodynamic': 'Organic/Biodynamic', 'small-batch': 'Small-Batch', 'mountain-views': 'Mountain Views', 'scenic-drive': 'Scenic Drive', 'secluded': 'Secluded', 'walk-in-friendly': 'Walk-In Friendly', 'dog-friendly': 'Dog-Friendly', 'food-pairing': 'Food Pairing', 'educational-tastings': 'Educational Tastings', 'hands-on-winemaker': 'Hands-On Winemaker', 'old-world-style': 'Old World Style', 'experimental': 'Experimental', 'estate-bottled': 'Estate-Bottled', 'cellar-tour': 'Cellar Tour', 'picnic-friendly': 'Picnic-Friendly', 'group-tastings': 'Great for Groups', 'contemporary-design': 'Contemporary Design', 'cult-following': 'Cult Following', 'hard-to-find': 'Hard to Find', 'boundary-pushing': 'Boundary-Pushing', 'off-beaten-path': 'Off the Beaten Path', 'fine-dining-nearby': 'Fine Dining Nearby', 'award-winning': 'Award-Winning', 'farm-to-table': 'Farm-to-Table', 'women-winemakers': 'Women Winemakers', 'sunset-views': 'Sunset Views', 'vineyard-tour': 'Vineyard Tour', 'music-venue': 'Music Venue', 'commercial': 'Well-Known Brand' };
     const TAG_PRIORITY = ['sommelier-pick','cult-following','historic-estate','award-winning','women-winemakers','organic-biodynamic','hands-on-winemaker','small-batch','sunset-views','secluded','cellar-tour','food-pairing','family-owned','boundary-pushing','best-value','walk-in-friendly'];
@@ -955,7 +955,7 @@ class CaTripPlanner {
     const scheduleErrors = [];
     const scheduleHtml = dayGroups.map((wineries, dayIdx) => {
       const firstW = wineries[0];
-      const firstDriveMin = firstW ? Math.max(15, Math.min(firstW.sfDrive, 120)) : 30;
+      const firstDriveMin = firstW ? Math.max(15, firstW.sfDrive) : 30;
       const startFrom = dayIdx === 0 ? start : (accommodation || start);
       let departHour = firstTastingHour;
       if (planBreakfast && dayIdx === 0) departHour -= 0.75;
@@ -982,7 +982,7 @@ class CaTripPlanner {
         const skipDrive = (i === 0 && initialDriveAdded);
         const prevW = lastScheduledWinery;
         const prevDrive = (!prevW || i === 0) ? w.sfDrive : Math.abs(w.sfDrive - prevW.sfDrive) + 15;
-        const driveMin = skipDrive ? 0 : Math.max(15, Math.min(prevDrive, 120));
+        const driveMin = skipDrive ? 0 : Math.max(15, prevDrive);
         const arrivalHour = currentHour + driveMin / 60;
         let scheduledHour = this._snapToSlot(arrivalHour);
         if (scheduledHour < w.openHour) scheduledHour = w.openHour;
@@ -1020,7 +1020,7 @@ class CaTripPlanner {
       // Return drive
       const returnTo = accommodation || start;
       const lastW = lastScheduledWinery || wineries[wineries.length - 1];
-      const returnMin = lastW ? Math.max(20, Math.min(lastW.sfDrive, 120)) : 45;
+      const returnMin = lastW ? Math.max(20, lastW.sfDrive) : 45;
       stops.push(`<div class="itinerary-stop itinerary-drive-stop"><div class="itinerary-drive-info"><span class="drive-icon">🚗</span><span class="drive-text">${returnMin} min drive to ${returnTo}</span></div></div>`);
       const arriveHome = this._snapToSlot(currentHour + returnMin / 60);
       stops.push(`<div class="itinerary-stop itinerary-start"><div class="itinerary-time">${this._formatTime(arriveHome)}</div><div class="itinerary-stop-info"><div class="itinerary-stop-name">Arrive at ${returnTo}</div></div></div>`);
