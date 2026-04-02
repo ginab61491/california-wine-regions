@@ -3398,16 +3398,96 @@ button {
   flex-shrink: 0;
 }
 .grape-filter-row { display: flex; align-items: center; gap: 20px; flex-wrap: wrap; }
-.grape-food-select {
+/* "All" reset button */
+.grape-all-btn {
   font-family: 'Montserrat', sans-serif;
-  font-size: 0.75rem;
-  padding: 5px 10px;
+  font-size: 0.6rem;
+  font-weight: 600;
+  color: var(--ink-xlight);
+  background: var(--cream);
+  border: 1px solid var(--cream-dark);
+  border-radius: 4px;
+  padding: 4px 10px;
+  cursor: pointer;
+  transition: all 0.2s;
+  flex-shrink: 0;
+}
+.grape-all-btn:hover { border-color: var(--gold); color: var(--gold); }
+/* Compact selects */
+.grape-select-sm {
+  font-family: 'Montserrat', sans-serif;
+  font-size: 0.72rem;
+  padding: 5px 8px;
   border: 1px solid var(--cream-dark);
   border-radius: 6px;
   background: var(--white);
   outline: none;
 }
-.grape-food-select:focus { border-color: var(--gold); }
+.grape-select-sm:focus { border-color: var(--gold); }
+/* Slider inactive = gray, active = gold */
+.grape-slider { opacity: 0.4; }
+.grape-slider.active { opacity: 1; }
+.grape-slider-val { color: var(--ink-xlight); }
+.grape-slider-val.active { color: var(--gold); font-weight: 600; }
+/* Clear X on sliders */
+.grape-slider-clear {
+  font-size: 0.7rem;
+  color: var(--ink-xlight);
+  background: none;
+  border: none;
+  cursor: pointer;
+  padding: 0 4px;
+  line-height: 1;
+}
+.grape-slider-clear:hover { color: var(--maroon); }
+/* Favorites button */
+.grape-modal-fav-btn {
+  font-family: 'Montserrat', sans-serif;
+  font-size: 0.78rem;
+  font-weight: 500;
+  color: var(--ink-mid);
+  background: none;
+  border: 1px solid var(--cream-dark);
+  border-radius: 4px;
+  padding: 8px 16px;
+  cursor: pointer;
+  transition: all 0.2s;
+}
+.grape-modal-fav-btn:hover { border-color: var(--maroon); color: var(--maroon); }
+.grape-modal-fav-btn.is-fav { background: var(--maroon); color: #fff; border-color: var(--maroon); }
+/* Tasting grid details */
+.grape-tasting-details {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+  margin-top: 10px;
+}
+.grape-tasting-item {
+  font-family: 'Montserrat', sans-serif;
+  font-size: 0.72rem;
+  color: var(--ink-mid);
+  background: var(--white);
+  border: 1px solid var(--cream-dark);
+  border-radius: 6px;
+  padding: 4px 10px;
+}
+.grape-tasting-item strong { color: var(--ink); font-size: 0.62rem; text-transform: uppercase; letter-spacing: 0.04em; }
+/* Aroma categories in modal */
+.grape-aroma-cat { margin-bottom: 6px; }
+.grape-aroma-cat-label {
+  font-family: 'Montserrat', sans-serif;
+  font-size: 0.6rem;
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 0.06em;
+  color: var(--gold);
+  margin-right: 6px;
+}
+.grape-aroma-cat-items {
+  font-family: 'Montserrat', sans-serif;
+  font-size: 0.78rem;
+  color: var(--ink-mid);
+}
 .grape-filter-group { display: flex; align-items: center; gap: 6px; }
 .grape-filter-label {
   font-family: 'Montserrat', sans-serif;

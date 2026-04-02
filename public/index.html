@@ -1284,60 +1284,73 @@
 
         <!-- Filter bar -->
         <div class="grape-filter-bar">
-          <!-- Row 1: Level + Type + World -->
+          <!-- Row 1: Core filters -->
           <div class="grape-filter-row">
+            <button class="grape-all-btn" id="grape-reset-all">All</button>
             <div class="grape-filter-group">
-              <span class="grape-filter-label">Level</span>
               <div class="grape-type-btns" id="grape-level-btns">
-                <button class="grape-type-btn active" data-level="all">All</button>
                 <button class="grape-type-btn" data-level="intro">Introductory</button>
                 <button class="grape-type-btn" data-level="wset3">WSET 3</button>
               </div>
             </div>
             <div class="grape-filter-group">
-              <span class="grape-filter-label">Type</span>
               <div class="grape-type-btns" id="grape-type-btns">
-                <button class="grape-type-btn active" data-type="all">All</button>
                 <button class="grape-type-btn" data-type="red">Red</button>
                 <button class="grape-type-btn" data-type="white">White</button>
               </div>
             </div>
             <div class="grape-filter-group">
-              <span class="grape-filter-label">World</span>
               <div class="grape-type-btns" id="grape-world-btns">
-                <button class="grape-type-btn active" data-world="both">All</button>
                 <button class="grape-type-btn" data-world="old">Old World</button>
                 <button class="grape-type-btn" data-world="new">New World</button>
               </div>
             </div>
+            <!-- Aroma filter -->
             <div class="grape-filter-group">
-              <span class="grape-filter-label">Pairs With</span>
-              <select class="grape-food-select" id="grape-food-select">
-                <option value="">Any food</option>
-                <option value="fish">Fish &amp; Seafood</option>
-                <option value="dark-meat">Dark Meat</option>
-                <option value="cheese">Cheese</option>
-                <option value="spicy">Spicy Food</option>
-                <option value="asian">Asian Cuisine</option>
-                <option value="vegetarian">Vegetarian</option>
-                <option value="dessert">Dessert</option>
-                <option value="charcuterie">Charcuterie</option>
+              <select class="grape-select-sm" id="grape-aroma-select">
+                <option value="">Aroma</option>
+                <option value="fruit">Fruit</option>
+                <option value="floral">Floral</option>
+                <option value="earth">Earth &amp; Mineral</option>
+                <option value="oak">Oak &amp; Toast</option>
+                <option value="spice">Spice</option>
+              </select>
+              <select class="grape-select-sm" id="grape-subaroma-select" style="display:none">
+                <option value="">Sub-aroma</option>
               </select>
             </div>
           </div>
           <!-- Row 2: Sliders -->
           <div class="grape-filter-row">
             <div class="grape-filter-group grape-slider-group">
-              <label class="grape-filter-label">Aromatic <span id="aromatic-val">Any</span></label>
+              <label class="grape-filter-label">Aromatic <span id="aromatic-val" class="grape-slider-val">Any</span></label>
               <input type="range" min="0" max="5" value="0" step="1" class="grape-slider" id="grape-aromatic" />
+              <button class="grape-slider-clear" data-slider="grape-aromatic" style="display:none">&times;</button>
             </div>
             <div class="grape-filter-group grape-slider-group">
-              <label class="grape-filter-label">Acidity <span id="acidity-val">Any</span></label>
+              <label class="grape-filter-label">Acidity <span id="acidity-val" class="grape-slider-val">Any</span></label>
               <input type="range" min="0" max="5" value="0" step="1" class="grape-slider" id="grape-acidity" />
+              <button class="grape-slider-clear" data-slider="grape-acidity" style="display:none">&times;</button>
             </div>
             <div class="grape-filter-group grape-slider-group">
-              <label class="grape-filter-label">Tannin <span id="tannin-val">Any</span></label>
+              <label class="grape-filter-label">Tannin <span id="tannin-val" class="grape-slider-val">Any</span></label>
               <input type="range" min="0" max="5" value="0" step="1" class="grape-slider" id="grape-tannin" />
+              <button class="grape-slider-clear" data-slider="grape-tannin" style="display:none">&times;</button>
+            </div>
+            <div class="grape-filter-group grape-slider-group">
+              <label class="grape-filter-label">Alcohol <span id="alcohol-val" class="grape-slider-val">Any</span></label>
+              <input type="range" min="0" max="5" value="0" step="1" class="grape-slider" id="grape-alcohol" />
+              <button class="grape-slider-clear" data-slider="grape-alcohol" style="display:none">&times;</button>
+            </div>
+            <div class="grape-filter-group grape-slider-group">
+              <label class="grape-filter-label">Age-Worthy <span id="ageworthy-val" class="grape-slider-val">Any</span></label>
+              <input type="range" min="0" max="5" value="0" step="1" class="grape-slider" id="grape-ageworthy" />
+              <button class="grape-slider-clear" data-slider="grape-ageworthy" style="display:none">&times;</button>
+            </div>
+            <div class="grape-filter-group grape-slider-group">
+              <label class="grape-filter-label">Sugar <span id="sugar-val" class="grape-slider-val">Any</span></label>
+              <input type="range" min="0" max="5" value="0" step="1" class="grape-slider" id="grape-sugar" />
+              <button class="grape-slider-clear" data-slider="grape-sugar" style="display:none">&times;</button>
             </div>
           </div>
         </div>
