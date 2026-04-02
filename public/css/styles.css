@@ -7373,6 +7373,70 @@ code {
   font-weight: 600;
 }
 
+/* ── Mobile Filter Toggle Button ── */
+.mobile-filter-toggle {
+  display: none;
+  font-family: 'Montserrat', sans-serif;
+  font-size: 0.75rem;
+  font-weight: 500;
+  color: var(--gold);
+  background: none;
+  border: 1px solid var(--gold);
+  border-radius: 4px;
+  padding: 6px 14px;
+  cursor: pointer;
+  transition: all 0.2s;
+  min-height: 36px;
+}
+.mobile-filter-toggle:hover { background: var(--gold); color: #fff; }
+
+/* ── Mobile Trip Planner ── */
+@media (max-width: 768px) {
+  .catrip-layout {
+    flex-direction: column;
+    min-height: auto;
+    overflow: visible;
+  }
+  .catrip-sidebar {
+    width: 100%;
+    min-height: auto;
+    border-right: none;
+    border-bottom: 1px solid var(--cream-dark);
+    transition: max-height 0.3s ease, padding 0.3s ease;
+    overflow: hidden;
+  }
+  .catrip-sidebar-inner {
+    padding: 14px 16px 18px;
+  }
+  /* When results are showing, collapse the sidebar */
+  .catrip-sidebar.collapsed {
+    max-height: 0;
+    padding: 0;
+    border-bottom: none;
+  }
+  .catrip-sidebar.collapsed .catrip-sidebar-inner {
+    display: none;
+  }
+  .catrip-main {
+    width: 100%;
+    min-height: 60vh;
+  }
+  .results-scroll {
+    grid-template-columns: 1fr;
+    padding: 12px;
+    gap: 12px;
+  }
+  .mobile-filter-toggle { display: block; }
+  .results-top-bar {
+    gap: 8px;
+    flex-wrap: wrap;
+  }
+  /* Step headers compact on mobile */
+  .catrip-step-header { padding: 14px 16px; }
+  .catrip-step-title { font-size: 1.2rem; }
+  .catrip-step-sub { font-size: 0.7rem; }
+}
+
 /* ── Wishlist heart button ─────────────────── */
 .winery-card-hero-actions {
   position: absolute;

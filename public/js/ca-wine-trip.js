@@ -682,7 +682,21 @@ class CaTripPlanner {
     document.getElementById('back-to-map-btn').addEventListener('click', () => {
       document.getElementById('catrip-results-state').style.display = 'none';
       document.getElementById('catrip-map-state').style.display = 'flex';
+      // Expand sidebar on mobile when going back
+      const sidebar = document.querySelector('.catrip-sidebar');
+      if (sidebar) sidebar.classList.remove('collapsed');
     });
+    // Mobile filter toggle
+    const mobileFilterToggle = document.getElementById('mobile-filter-toggle');
+    if (mobileFilterToggle) {
+      mobileFilterToggle.addEventListener('click', () => {
+        const sidebar = document.querySelector('.catrip-sidebar');
+        if (sidebar) {
+          sidebar.classList.toggle('collapsed');
+          mobileFilterToggle.textContent = sidebar.classList.contains('collapsed') ? 'Filters' : 'Hide Filters';
+        }
+      });
+    }
     document.getElementById('go-to-step2-btn').addEventListener('click', () => {
       document.getElementById('step2-section').scrollIntoView({ behavior: 'smooth', block: 'start' });
       this._updateStepIndicator(2);
@@ -797,6 +811,9 @@ class CaTripPlanner {
   findWineries() {
     document.getElementById('catrip-map-state').style.display = 'none';
     document.getElementById('catrip-results-state').style.display = 'flex';
+    // Collapse sidebar on mobile to show full results
+    const sidebar = document.querySelector('.catrip-sidebar');
+    if (sidebar && window.innerWidth <= 768) sidebar.classList.add('collapsed');
     const scored = WINERIES_DEDUPED.map(w => {
       let score = 0;
       const matchR = []; const filterN = [];
