@@ -198,42 +198,62 @@ document.addEventListener('DOMContentLoaded', () => {
     const dropzone = document.getElementById('diary-scan-dropzone');
     if (!scanInput || !scanBtn) return;
 
-    // Extract date from image EXIF (basic approach via file lastModified)
     function getPhotoDate(file) {
-      // Use file's lastModified as best proxy for photo date
-      if (file.lastModified) {
-        return new Date(file.lastModified).toISOString().split('T')[0];
-      }
+      if (file.lastModified) return new Date(file.lastModified).toISOString().split('T')[0];
       return new Date().toISOString().split('T')[0];
     }
 
+    // Resize image to max 1200px wide before converting to base64
+    // This prevents huge phone photos from causing request failures
+    function resizeImage(file) {
+      return new Promise((resolve) => {
+        const img = new Image();
+        const url = URL.createObjectURL(file);
+        img.onload = () => {
+          URL.revokeObjectURL(url);
+          const MAX = 1200;
+          let w = img.width, h = img.height;
+          if (w > MAX) { h = Math.round(h * MAX / w); w = MAX; }
+          if (h > MAX) { w = Math.round(w * MAX / h); h = MAX; }
+          const canvas = document.createElement('canvas');
+          canvas.width = w; canvas.height = h;
+          const ctx = canvas.getContext('2d');
+          ctx.drawImage(img, 0, 0, w, h);
+          resolve(canvas.toDataURL('image/jpeg', 0.85));
+        };
+        img.onerror = () => {
+          URL.revokeObjectURL(url);
+          // Fallback: read as-is
+          const reader = new FileReader();
+          reader.onload = (ev) => resolve(ev.target.result);
+          reader.readAsDataURL(file);
+        };
+        img.src = url;
+      });
+    }
+
     function addFiles(files) {
-      Array.from(files).forEach(file => {
+      Array.from(files).forEach(async (file) => {
         if (!file.type.startsWith('image/')) return;
         const photoDate = getPhotoDate(file);
-        const reader = new FileReader();
-        reader.onload = (ev) => {
-          const idx = scanImages.length;
-          scanImages.push(ev.target.result);
-          scanDates.push(photoDate);
+        const dataUrl = await resizeImage(file);
+        const idx = scanImages.length;
+        scanImages.push(dataUrl);
+        scanDates.push(photoDate);
 
-          // Create thumb with X button
-          const wrap = document.createElement('div');
-          wrap.className = 'diary-scan-thumb-wrap';
-          wrap.dataset.idx = idx;
-          wrap.innerHTML = `<img src="${ev.target.result}" class="diary-scan-thumb" alt="Wine bottle photo" /><button class="diary-scan-thumb-remove" title="Remove">&times;</button>`;
-          wrap.querySelector('.diary-scan-thumb-remove').addEventListener('click', (e) => {
-            e.stopPropagation();
-            scanImages[idx] = null;
-            scanDates[idx] = null;
-            wrap.remove();
-            // Disable scan if no images left
-            if (scanImages.filter(Boolean).length === 0) scanBtn.disabled = true;
-          });
-          scanPreviews.appendChild(wrap);
-          scanBtn.disabled = false;
-        };
-        reader.readAsDataURL(file);
+        const wrap = document.createElement('div');
+        wrap.className = 'diary-scan-thumb-wrap';
+        wrap.dataset.idx = idx;
+        wrap.innerHTML = `<img src="${dataUrl}" class="diary-scan-thumb" alt="Wine bottle photo" /><button class="diary-scan-thumb-remove" title="Remove">&times;</button>`;
+        wrap.querySelector('.diary-scan-thumb-remove').addEventListener('click', (e) => {
+          e.stopPropagation();
+          scanImages[idx] = null;
+          scanDates[idx] = null;
+          wrap.remove();
+          if (scanImages.filter(Boolean).length === 0) scanBtn.disabled = true;
+        });
+        scanPreviews.appendChild(wrap);
+        scanBtn.disabled = false;
       });
     }
 
@@ -255,36 +275,51 @@ document.addEventListener('DOMContentLoaded', () => {
 
     scanBtn.addEventListener('click', async () => {
       const activeImages = scanImages.filter(Boolean);
-      if (!activeImages.length) return;
+      if (!activeImages.length) { scanStatus.textContent = 'Please upload at least one photo first.'; return; }
 
       scanBtn.disabled = true;
       scanBtn.textContent = 'Scanning...';
-      scanStatus.textContent = 'Identifying bottles with AI — this may take a moment...';
+      scanStatus.textContent = 'Identifying bottles — this may take 10-15 seconds...';
       scanResults.innerHTML = '';
 
       try {
+        // Use AbortController for timeout
+        const controller = new AbortController();
+        const timeout = setTimeout(() => controller.abort(), 60000); // 60s timeout
+
         const res = await fetch('/api/scan-bottles', {
           method: 'POST',
           headers: { 'Content-Type': 'application/json' },
           body: JSON.stringify({ images: activeImages }),
+          signal: controller.signal,
         });
+        clearTimeout(timeout);
 
         if (!res.ok) {
-          const errData = await res.json().catch(() => ({ error: `Server error (${res.status})` }));
-          throw new Error(errData.error || 'Scan failed');
+          let errMsg = `Server error (${res.status})`;
+          try { const errData = await res.json(); errMsg = errData.error || errMsg; } catch {}
+          if (res.status === 413) errMsg = 'Image too large. Try a smaller photo.';
+          if (res.status === 500) errMsg = 'Server error — please try again in a moment.';
+          throw new Error(errMsg);
         }
 
-        const data = await res.json();
+        const text = await res.text();
+        let data;
+        try { data = JSON.parse(text); } catch { throw new Error('Unexpected response from server. Please try again.'); }
         const bottles = data.bottles || [];
 
         if (!bottles.length) {
-          scanStatus.textContent = 'No bottles could be identified. Try a clearer photo.';
+          scanStatus.textContent = 'No bottles could be identified. Try a photo with a clear, visible label.';
         } else {
           scanStatus.textContent = `Found ${bottles.length} bottle${bottles.length > 1 ? 's' : ''}.`;
           renderScanResults(bottles, scanResults);
         }
       } catch (err) {
-        scanStatus.textContent = 'Error: ' + err.message;
+        if (err.name === 'AbortError') {
+          scanStatus.textContent = 'Request timed out. Try with a single, smaller photo.';
+        } else {
+          scanStatus.textContent = 'Error: ' + err.message;
+        }
         console.error('Scan error:', err);
       }
 

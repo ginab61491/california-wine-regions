@@ -222,12 +222,27 @@ If you cannot identify a bottle clearly, include it with what you can determine 
 
     const raw = message.content[0].text.trim();
     const cleaned = raw.replace(/^```(?:json)?\s*/i, '').replace(/\s*```\s*$/i, '');
-    const data = JSON.parse(cleaned);
+    let data;
+    try {
+      data = JSON.parse(cleaned);
+    } catch (parseErr) {
+      console.error('JSON parse failed, raw response:', raw.substring(0, 200));
+      // Try to extract partial JSON
+      const match = cleaned.match(/\{"bottles"\s*:\s*\[[\s\S]*\]\s*\}/);
+      if (match) {
+        data = JSON.parse(match[0]);
+      } else {
+        return res.status(500).json({ error: 'Could not identify bottles. Try a clearer photo of the label.' });
+      }
+    }
     res.json(data);
   } catch (err) {
-    console.error('Scan bottles error:', err);
-    if (err instanceof SyntaxError) {
-      return res.status(500).json({ error: 'Failed to parse AI response. Please try again.' });
+    console.error('Scan bottles error:', err.message || err);
+    if (err.status === 401) {
+      return res.status(500).json({ error: 'API key issue. Please contact support.' });
+    }
+    if (err.status === 429) {
+      return res.status(500).json({ error: 'Too many requests. Please wait a moment and try again.' });
     }
     res.status(500).json({ error: 'Failed to scan bottles. Please try again.' });
   }
