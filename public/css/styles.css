@@ -10589,7 +10589,28 @@ img[loading="lazy"][complete] {
 .palate-fav-pill { font-family: 'Montserrat', sans-serif; font-size: 0.78rem; color: var(--ink); background: var(--white); border: 1px solid var(--border-ink); border-radius: 20px; padding: 4px 12px; }
 .palate-action { text-align: center; margin-bottom: 24px; }
 .palate-hint { font-family: 'Montserrat', sans-serif; font-size: 0.72rem; color: var(--ink-xlight); margin-top: 8px; }
-@media (max-width: 768px) { .palate-body { padding: 24px 16px; } }
+/* Confirmation */
+.palate-confirm { text-align: center; margin: 20px 0; }
+.palate-confirm-label { font-family: 'Montserrat', sans-serif; font-size: 0.85rem; color: var(--ink-light); margin-bottom: 12px; }
+.palate-confirm-btns { display: flex; gap: 12px; justify-content: center; }
+.palate-yes-btn { font-family: 'Montserrat', sans-serif; font-size: 0.85rem; font-weight: 500; background: var(--gold); color: #fff; border: none; border-radius: 6px; padding: 12px 28px; cursor: pointer; min-height: 48px; transition: background 0.2s; }
+.palate-yes-btn:hover { background: var(--gold-mid); }
+.palate-no-btn { font-family: 'Montserrat', sans-serif; font-size: 0.85rem; font-weight: 500; background: none; color: var(--ink-mid); border: 1px solid var(--cream-dark); border-radius: 6px; padding: 12px 28px; cursor: pointer; min-height: 48px; transition: all 0.2s; }
+.palate-no-btn:hover { border-color: var(--gold); color: var(--gold); }
+/* Refinement */
+.palate-refine { max-width: 500px; margin: 20px auto; }
+.palate-refine-label { font-family: 'Playfair Display', Georgia, serif; font-size: 1rem; color: var(--ink); display: block; margin-bottom: 8px; }
+.palate-refine-input { width: 100%; font-family: 'Montserrat', sans-serif; font-size: 0.88rem; padding: 12px; border: 1px solid var(--cream-dark); border-radius: 8px; resize: vertical; outline: none; }
+.palate-refine-input:focus { border-color: var(--gold); }
+.palate-refine-btn { margin-top: 10px; width: 100%; padding: 12px; background: var(--gold); color: #fff; border: none; border-radius: 6px; font-family: 'Montserrat', sans-serif; font-size: 0.85rem; font-weight: 500; cursor: pointer; }
+.palate-refine-btn:hover { background: var(--gold-mid); }
+/* Recommendations */
+.palate-recs { margin-top: 32px; padding-top: 24px; border-top: 2px solid var(--gold); }
+.palate-recs-title { font-family: 'Playfair Display', Georgia, serif; font-size: 1.3rem; font-weight: 400; color: var(--ink); margin-bottom: 4px; }
+.palate-recs-sub { font-family: 'Montserrat', sans-serif; font-size: 0.78rem; color: var(--ink-xlight); margin-bottom: 16px; }
+.palate-recs-card { background: var(--white); border-left: 3px solid var(--gold); border-radius: 0 10px 10px 0; padding: 24px; }
+.palate-recs-card p { font-family: 'Montserrat', sans-serif; font-size: 0.88rem; line-height: 1.65; color: var(--ink-mid); margin-bottom: 8px; }
+@media (max-width: 768px) { .palate-body { padding: 24px 16px; } .palate-confirm-btns { flex-direction: column; } }
 
 /* ═══════════════════════════════════════════
    MICRO-INTERACTIONS & ANIMATIONS

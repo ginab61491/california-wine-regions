@@ -2238,7 +2238,7 @@
       <div class="section-header">
         <h1>Understand My Palate</h1>
         <span class="section-tagline">Discover the words for what you love</span>
-        <p>Based on your favorite grapes, regions, and producers, our sommelier AI will analyze your taste preferences and give you language to describe your palate.</p>
+        <p>Based on your favorite grapes, regions, and producers, our sommelier AI will analyze your taste and suggest what to explore next.</p>
       </div>
       <div class="palate-scroll">
         <div class="palate-body">
@@ -2249,11 +2249,34 @@
           <!-- Analyze button -->
           <div class="palate-action">
             <button class="fav-palate-btn" id="fav-palate-btn">Analyze My Palate</button>
-            <p class="palate-hint">Save at least 3 favorites (grapes, regions, or producers) from across the site, then click to generate your personalized palate profile.</p>
+            <p class="palate-hint">Save at least 3 favorites from across the site, then click to generate your palate profile and recommendations.</p>
           </div>
 
-          <!-- Results -->
+          <!-- Interpretation results -->
           <div class="fav-palate-output" id="fav-palate-output"></div>
+
+          <!-- Confirmation buttons (hidden until analysis complete) -->
+          <div class="palate-confirm" id="palate-confirm" style="display:none">
+            <p class="palate-confirm-label">Does this resonate with your taste?</p>
+            <div class="palate-confirm-btns">
+              <button class="palate-yes-btn" id="palate-yes">Yes, That Resonates</button>
+              <button class="palate-no-btn" id="palate-no">Not Quite</button>
+            </div>
+          </div>
+
+          <!-- Refinement (hidden until "Not Quite" clicked) -->
+          <div class="palate-refine" id="palate-refine" style="display:none">
+            <label class="palate-refine-label">Help us understand better</label>
+            <textarea class="palate-refine-input" id="palate-refine-input" rows="3" maxlength="300" placeholder="e.g. I prefer New World fruit over Old World, these are too acidic for me, you missed the elegance..."></textarea>
+            <button class="palate-refine-btn" id="palate-refine-btn">Refine My Profile</button>
+          </div>
+
+          <!-- Recommendations (hidden until confirmed) -->
+          <div class="palate-recs" id="palate-recs" style="display:none">
+            <h2 class="palate-recs-title">What to Explore Next</h2>
+            <p class="palate-recs-sub">Based on your palate profile. No guarantees — your taste is unique.</p>
+            <div class="palate-recs-list" id="palate-recs-list"></div>
+          </div>
 
         </div>
       </div>

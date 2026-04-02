@@ -81,51 +81,105 @@ document.addEventListener('DOMContentLoaded', () => {
     });
   }
 
-  // ── AI Palate Analysis ──
+  // ── AI Palate Analysis with Confirm/Refine/Recommend ──
+  let lastPalateInfo = '';
+
+  function buildFavInfo() {
+    const grapes = getFavs('somm_fav_grapes');
+    const regions = getFavs('somm_fav_regions');
+    const producers = getFavs('somm_fav_producers');
+    const info = [];
+    if (grapes.length) info.push(`Favorite grapes: ${grapes.join(', ')}`);
+    if (regions.length) info.push(`Favorite regions: ${regions.join(', ')}`);
+    if (producers.length) info.push(`Favorite producers: ${producers.join(', ')}`);
+    return { info, total: grapes.length + regions.length + producers.length };
+  }
+
+  async function generatePalateAnalysis(extra) {
+    const { info, total } = buildFavInfo();
+    if (total < 3) {
+      document.getElementById('fav-palate-output').innerHTML = '<p class="fav-palate-hint">Save at least 3 favorites to get a palate analysis.</p>';
+      return;
+    }
+    lastPalateInfo = info.join('. ');
+    const palateBtn = document.getElementById('fav-palate-btn');
+    palateBtn.disabled = true; palateBtn.textContent = 'Analyzing...';
+    const output = document.getElementById('fav-palate-output');
+    output.innerHTML = '<p class="fav-palate-loading">Building your palate profile...</p>';
+
+    const refinement = extra ? ` The user gave this feedback on a previous analysis: "${extra}". Adjust your analysis accordingly.` : '';
+
+    try {
+      const res = await fetch('/api/study/podcast', {
+        method: 'POST',
+        headers: { 'Content-Type': 'application/json' },
+        body: JSON.stringify({
+          category: 'grape',
+          topic: `Palate analysis for a wine enthusiast. ${lastPalateInfo}.${refinement} Describe their palate in sommelier terms: what flavors and textures they gravitate toward, what style of wine defines them, give them vocabulary to describe their taste to a sommelier or wine shop. Be conversational, curious, not prescriptive.`,
+          duration: 3, style: 'lecture'
+        }),
+      });
+      if (!res.ok) throw new Error('Failed');
+      const data = await res.json();
+      const paragraphs = data.script.split('\n').filter(p => p.trim()).map(p => `<p>${p}</p>`).join('');
+      output.innerHTML = `<div class="fav-palate-card"><div class="fav-palate-title">Your Palate Profile</div>${paragraphs}</div>`;
+      // Show confirmation buttons
+      document.getElementById('palate-confirm').style.display = 'block';
+      document.getElementById('palate-refine').style.display = 'none';
+      document.getElementById('palate-recs').style.display = 'none';
+    } catch {
+      output.innerHTML = '<p class="fav-palate-hint">Could not generate analysis. Please try again.</p>';
+    }
+    palateBtn.disabled = false; palateBtn.textContent = 'Analyze My Palate';
+  }
+
   const palateBtn = document.getElementById('fav-palate-btn');
-  if (palateBtn) {
-    palateBtn.addEventListener('click', async () => {
-      const grapes = getFavs('somm_fav_grapes');
-      const regions = getFavs('somm_fav_regions');
-      const producers = getFavs('somm_fav_producers');
-      const total = grapes.length + regions.length + producers.length;
+  if (palateBtn) palateBtn.addEventListener('click', () => generatePalateAnalysis(''));
 
-      if (total < 3) {
-        document.getElementById('fav-palate-output').innerHTML = '<p class="fav-palate-hint">Save at least 3 favorites (grapes, regions, or producers) to get a palate analysis.</p>';
-        return;
-      }
+  // Yes - confirmed
+  const yesBtn = document.getElementById('palate-yes');
+  if (yesBtn) yesBtn.addEventListener('click', () => generateRecommendations());
 
-      palateBtn.disabled = true;
-      palateBtn.textContent = 'Analyzing...';
-      const output = document.getElementById('fav-palate-output');
-      output.innerHTML = '<p class="fav-palate-loading">Building your palate profile...</p>';
+  // Not Quite - show refinement
+  const noBtn = document.getElementById('palate-no');
+  if (noBtn) noBtn.addEventListener('click', () => {
+    document.getElementById('palate-confirm').style.display = 'none';
+    document.getElementById('palate-refine').style.display = 'block';
+  });
 
-      const info = [];
-      if (grapes.length) info.push(`Favorite grapes: ${grapes.join(', ')}`);
-      if (regions.length) info.push(`Favorite regions: ${regions.join(', ')}`);
-      if (producers.length) info.push(`Favorite producers: ${producers.join(', ')}`);
+  // Refine
+  const refineBtn = document.getElementById('palate-refine-btn');
+  if (refineBtn) refineBtn.addEventListener('click', () => {
+    const feedback = document.getElementById('palate-refine-input').value.trim();
+    document.getElementById('palate-refine').style.display = 'none';
+    generatePalateAnalysis(feedback);
+  });
 
-      try {
-        const res = await fetch('/api/study/podcast', {
-          method: 'POST',
-          headers: { 'Content-Type': 'application/json' },
-          body: JSON.stringify({
-            category: 'grape',
-            topic: `Palate analysis for a wine enthusiast. ${info.join('. ')}. Describe their palate in sommelier terms: what flavors and textures they gravitate toward, what style of wine defines them (Old World vs New World, fruit-forward vs terroir-driven, bold vs elegant), give them vocabulary to describe their taste to a sommelier or wine shop, and suggest 3 new things to try.`,
-            duration: 3,
-            style: 'lecture'
-          }),
-        });
-        if (!res.ok) throw new Error('Failed');
-        const data = await res.json();
-        const paragraphs = data.script.split('\n').filter(p => p.trim()).map(p => `<p>${p}</p>`).join('');
-        output.innerHTML = `<div class="fav-palate-card"><div class="fav-palate-title">Your Palate Profile</div>${paragraphs}</div>`;
-      } catch {
-        output.innerHTML = '<p class="fav-palate-hint">Could not generate analysis. Please try again.</p>';
-      }
-      palateBtn.disabled = false;
-      palateBtn.textContent = 'Analyze My Palate';
-    });
+  // Generate recommendations
+  async function generateRecommendations() {
+    document.getElementById('palate-confirm').style.display = 'none';
+    const recsEl = document.getElementById('palate-recs');
+    const recsList = document.getElementById('palate-recs-list');
+    recsEl.style.display = 'block';
+    recsList.innerHTML = '<p class="fav-palate-loading">Finding wines for you...</p>';
+
+    try {
+      const res = await fetch('/api/study/podcast', {
+        method: 'POST',
+        headers: { 'Content-Type': 'application/json' },
+        body: JSON.stringify({
+          category: 'grape',
+          topic: `Wine recommendations based on palate profile. ${lastPalateInfo}. Recommend exactly 5 wines: 3 "High Likelihood" (safe, similar to favorites), 1 "Good Match" (slightly different style), 1 "Worth Trying" (exploratory). For each: wine name, varietal, region, 2-sentence explanation connecting to their palate, and 3 characteristic tags. Format as numbered list with clear sections.`,
+          duration: 5, style: 'lecture'
+        }),
+      });
+      if (!res.ok) throw new Error('Failed');
+      const data = await res.json();
+      const paragraphs = data.script.split('\n').filter(p => p.trim()).map(p => `<p>${p}</p>`).join('');
+      recsList.innerHTML = `<div class="palate-recs-card">${paragraphs}</div>`;
+    } catch {
+      recsList.innerHTML = '<p class="fav-palate-hint">Could not generate recommendations. Please try again.</p>';
+    }
   }
 
   // Render palate page favorites summary
