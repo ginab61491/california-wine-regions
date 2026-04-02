@@ -2778,6 +2778,70 @@ button {
 .podcast-script p { margin-bottom: 12px; color: var(--ink-mid); font-size: 0.82rem; }
 
 /* ═══════════════════════════════════════════
+   WSET 3 PREP SECTION
+════════════════════════════════════════════ */
+#wset3prep-section { padding: 0; }
+.wset3-intro { margin-bottom: 32px; }
+.wset3-intro-text {
+  font-family: 'Crimson Text', Georgia, serif;
+  font-style: italic;
+  font-size: 0.95rem;
+  line-height: 1.7;
+  color: var(--ink-mid);
+  border-left: 3px solid var(--gold);
+  padding-left: 16px;
+  max-width: 700px;
+}
+.wset3-resources {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+  gap: 16px;
+  margin-bottom: 36px;
+}
+.wset3-resource-group {
+  background: var(--white);
+  border: 1px solid var(--border-ink);
+  border-radius: 10px;
+  padding: 20px;
+}
+.wset3-resource-title {
+  font-family: 'Playfair Display', Georgia, serif;
+  font-size: 1rem;
+  font-weight: 400;
+  color: var(--ink);
+  margin-bottom: 12px;
+}
+.wset3-resource-list {
+  list-style: none;
+  padding: 0;
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+.wset3-resource-list li {
+  font-family: 'Montserrat', sans-serif;
+  font-size: 0.78rem;
+  line-height: 1.55;
+  color: var(--ink-mid);
+}
+.wset3-resource-list li strong { color: var(--ink); }
+.wset3-resource-list a { color: var(--gold); text-decoration: none; font-weight: 500; }
+.wset3-resource-list a:hover { color: var(--maroon); }
+
+.wset3-enroll {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(260px, 1fr));
+  gap: 16px;
+  margin-bottom: 40px;
+}
+.wset3-enroll-group {
+  background: var(--white);
+  border: 1px solid var(--border-ink);
+  border-radius: 10px;
+  padding: 20px;
+}
+
+/* ═══════════════════════════════════════════
    PRODUCER PROFILES SECTION
 ════════════════════════════════════════════ */
 #producers-section { padding: 0; }

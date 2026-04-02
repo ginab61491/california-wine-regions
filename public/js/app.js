@@ -17,6 +17,7 @@ document.addEventListener('DOMContentLoaded', () => {
     producers:   'Producer Profiles',
     study:       'Classes & Certifications',
     cmsprep:     'Certified Sommelier Prep',
+    wset3prep:   'WSET Level 3 Prep',
     catrip:      'Plan a California Trip',
     caregions:   'Explore California Wine Country',
     regions:     'Wine Regions of the World',
@@ -36,7 +37,7 @@ document.addEventListener('DOMContentLoaded', () => {
   // Section → parent group for dropdown active states
   const sectionGroups = {
     grapes: 'Learn', dailywine: 'Learn', wheel: 'Learn', pairing: 'Learn', regions: 'Learn', producers: 'Learn',
-    study: 'Study', cmsprep: 'Study',
+    study: 'Study', cmsprep: 'Study', wset3prep: 'Study',
     catrip: 'Visit', caregions: 'Visit', events: 'Visit',
     analyzer: 'Sip', diary: 'Sip', vault: 'Sip', recs: 'Sip',
     preferences: 'Sip',

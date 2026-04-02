@@ -138,6 +138,112 @@ document.addEventListener('DOMContentLoaded', () => {
     document.getElementById('deck-total-count').textContent = masterCards.length;
   }
 
+  // ── WSET 3 Flashcard Deck ──
+  let w3Cards = [], w3Filtered = [], w3Index = 0, w3ShowBack = false;
+  let w3Known = new Set(), w3Review = new Set(), w3Init = false;
+  try { const s = JSON.parse(localStorage.getItem('sommplicity_w3deck') || '{}'); if (s.known) w3Known = new Set(s.known); if (s.review) w3Review = new Set(s.review); } catch {}
+
+  function saveW3() { localStorage.setItem('sommplicity_w3deck', JSON.stringify({ known: [...w3Known], review: [...w3Review] })); }
+
+  async function initW3Deck() {
+    if (w3Init) return; w3Init = true;
+    try { const r = await fetch('/data/wset3-flashcards.json'); const d = await r.json(); w3Cards = d.cards || []; } catch { document.getElementById('w3-deck-card-text').textContent = 'Flashcards loading...'; return; }
+    w3Filtered = [...w3Cards]; renderW3(); updateW3Progress();
+
+    document.querySelectorAll('[data-deck="wset3"]').forEach(btn => {
+      btn.addEventListener('click', () => { document.querySelectorAll('[data-deck="wset3"]').forEach(b => b.classList.remove('active')); btn.classList.add('active'); const d = btn.dataset.diff; w3Filtered = d === 'all' ? [...w3Cards] : w3Cards.filter(c => c.diff === d); w3Index = 0; w3ShowBack = false; renderW3(); });
+    });
+    document.getElementById('w3-deck-flip').addEventListener('click', () => { w3ShowBack = !w3ShowBack; renderW3(); });
+    document.getElementById('w3-deck-card').addEventListener('click', () => { w3ShowBack = !w3ShowBack; renderW3(); });
+    document.getElementById('w3-deck-prev').addEventListener('click', () => { if (w3Index > 0) { w3Index--; w3ShowBack = false; renderW3(); } });
+    document.getElementById('w3-deck-next').addEventListener('click', () => { if (w3Index < w3Filtered.length - 1) { w3Index++; w3ShowBack = false; renderW3(); } });
+    document.getElementById('w3-deck-shuffle').addEventListener('click', () => { for (let i = w3Filtered.length - 1; i > 0; i--) { const j = Math.floor(Math.random() * (i + 1)); [w3Filtered[i], w3Filtered[j]] = [w3Filtered[j], w3Filtered[i]]; } w3Index = 0; w3ShowBack = false; renderW3(); });
+    document.getElementById('w3-deck-mark-known').addEventListener('click', () => { const c = w3Filtered[w3Index]; if (!c) return; const i = w3Cards.indexOf(c); w3Known.add(i); w3Review.delete(i); saveW3(); updateW3Progress(); if (w3Index < w3Filtered.length - 1) { w3Index++; w3ShowBack = false; renderW3(); } });
+    document.getElementById('w3-deck-mark-review').addEventListener('click', () => { const c = w3Filtered[w3Index]; if (!c) return; const i = w3Cards.indexOf(c); w3Review.add(i); w3Known.delete(i); saveW3(); updateW3Progress(); if (w3Index < w3Filtered.length - 1) { w3Index++; w3ShowBack = false; renderW3(); } });
+  }
+
+  function renderW3() {
+    if (!w3Filtered.length) { document.getElementById('w3-deck-card-text').textContent = 'No cards.'; return; }
+    const c = w3Filtered[w3Index], gi = w3Cards.indexOf(c);
+    document.getElementById('w3-deck-counter').textContent = `${w3Index + 1} / ${w3Filtered.length}`;
+    document.getElementById('w3-deck-card-face').querySelector('.deck-card-side-label').textContent = w3ShowBack ? 'Answer' : 'Question';
+    document.getElementById('w3-deck-card-text').textContent = w3ShowBack ? c.back : c.front;
+    document.getElementById('w3-deck-card-face').className = 'deck-card-face' + (w3ShowBack ? ' is-back' : '');
+    document.getElementById('w3-deck-card-diff').textContent = c.diff;
+    document.getElementById('w3-deck-card-diff').setAttribute('data-d', c.diff);
+    document.getElementById('w3-deck-flip').textContent = w3ShowBack ? 'Show Question' : 'Flip';
+    const el = document.getElementById('w3-deck-card'); el.style.borderLeftWidth = '3px';
+    el.style.borderLeftColor = w3Known.has(gi) ? '#4a8a50' : w3Review.has(gi) ? 'var(--maroon)' : 'var(--border-ink)';
+  }
+
+  function updateW3Progress() {
+    document.getElementById('w3-deck-known-count').textContent = w3Known.size;
+    document.getElementById('w3-deck-review-count').textContent = w3Review.size;
+    document.getElementById('w3-deck-total-count').textContent = w3Cards.length;
+  }
+
+  // ── WSET 3 Custom Study Tools ──
+  function initW3StudyTools() {
+    const tabs = document.querySelectorAll('#wset3prep-section .study-tool-tab');
+    const panels = { 'w3-flashcards': document.getElementById('w3-panel-flashcards'), 'w3-quiz': document.getElementById('w3-panel-quiz'), 'w3-podcast': document.getElementById('w3-panel-podcast') };
+    const catSel = document.getElementById('w3-study-category');
+    const topicIn = document.getElementById('w3-study-topic');
+    if (!tabs.length || !catSel) return;
+
+    tabs.forEach(tab => { tab.addEventListener('click', () => { tabs.forEach(t => t.classList.remove('active')); tab.classList.add('active'); Object.values(panels).forEach(p => { if (p) p.style.display = 'none'; }); const p = panels[tab.dataset.tool]; if (p) p.style.display = 'block'; }); });
+    catSel.addEventListener('change', () => { document.querySelectorAll('#w3-presets-all .study-presets').forEach(g => { g.style.display = g.dataset.for === catSel.value ? 'flex' : 'none'; }); topicIn.value = ''; });
+    document.querySelectorAll('.w3-preset-btn').forEach(btn => { btn.addEventListener('click', () => { catSel.value = btn.dataset.cat; catSel.dispatchEvent(new Event('change')); topicIn.value = btn.dataset.topic; document.querySelectorAll('.w3-preset-btn').forEach(b => b.classList.remove('active')); btn.classList.add('active'); }); });
+
+    function getP() { return { category: catSel.value, topic: topicIn.value.trim() }; }
+
+    // Flashcards
+    let w3fc = [], w3fi = 0, w3fb = false;
+    document.getElementById('w3-generate-flashcards').addEventListener('click', async () => {
+      const { category, topic } = getP(); if (!topic) { alert('Pick a topic.'); return; }
+      const btn = document.getElementById('w3-generate-flashcards'), out = document.getElementById('w3-flashcard-output');
+      btn.disabled = true; btn.textContent = 'Generating...'; out.innerHTML = '<div class="study-loading">Creating WSET 3 flashcards...</div>';
+      try { const r = await fetch('/api/study/flashcards', { method: 'POST', headers: { 'Content-Type': 'application/json' }, body: JSON.stringify({ category, topic: topic + ' (WSET Level 3 exam level)' }) }); if (!r.ok) throw new Error((await r.json().catch(() => ({}))).error || 'Failed'); const d = await r.json(); w3fc = d.cards || []; w3fi = 0; w3fb = false; renderW3FC(out); }
+      catch (e) { out.innerHTML = `<div class="study-error">Error: ${e.message}</div>`; }
+      btn.disabled = false; btn.textContent = 'Generate Flashcards';
+    });
+    function renderW3FC(out) {
+      if (!w3fc.length) { out.innerHTML = '<div class="study-output-empty">No cards.</div>'; return; }
+      const c = w3fc[w3fi];
+      out.innerHTML = `<div class="flashcard-container"><div class="flashcard-counter">${w3fi+1} / ${w3fc.length}</div><div class="flashcard" id="w3fc-card"><div class="flashcard-face ${w3fb?'flashcard-back':'flashcard-front'}"><span class="flashcard-side-label">${w3fb?'Answer':'Question'}</span><p>${w3fb?c.back:c.front}</p></div></div><div class="flashcard-controls"><button class="flashcard-btn" id="w3fc-prev" ${w3fi===0?'disabled':''}>Previous</button><button class="flashcard-btn flashcard-btn-flip" id="w3fc-flip">${w3fb?'Show Question':'Show Answer'}</button><button class="flashcard-btn" id="w3fc-next" ${w3fi>=w3fc.length-1?'disabled':''}>Next</button></div></div>`;
+      document.getElementById('w3fc-flip').addEventListener('click', () => { w3fb = !w3fb; renderW3FC(out); });
+      document.getElementById('w3fc-prev').addEventListener('click', () => { if (w3fi > 0) { w3fi--; w3fb = false; renderW3FC(out); } });
+      document.getElementById('w3fc-next').addEventListener('click', () => { if (w3fi < w3fc.length - 1) { w3fi++; w3fb = false; renderW3FC(out); } });
+      document.getElementById('w3fc-card').addEventListener('click', () => { w3fb = !w3fb; renderW3FC(out); });
+    }
+
+    // Quiz
+    let w3qq = [], w3qa = {}, w3qs = false;
+    document.getElementById('w3-generate-quiz').addEventListener('click', async () => {
+      const { category, topic } = getP(); if (!topic) { alert('Pick a topic.'); return; }
+      const btn = document.getElementById('w3-generate-quiz'), out = document.getElementById('w3-quiz-output');
+      btn.disabled = true; btn.textContent = 'Generating...'; out.innerHTML = '<div class="study-loading">Creating WSET 3 quiz...</div>';
+      try { const r = await fetch('/api/study/quiz', { method: 'POST', headers: { 'Content-Type': 'application/json' }, body: JSON.stringify({ category, topic: topic + ' (WSET Level 3 exam level)' }) }); if (!r.ok) throw new Error('Failed'); const d = await r.json(); w3qq = d.questions || []; w3qa = {}; w3qs = false; renderW3Q(out); }
+      catch (e) { out.innerHTML = `<div class="study-error">Error: ${e.message}</div>`; }
+      btn.disabled = false; btn.textContent = 'Generate Quiz';
+    });
+    function renderW3Q(out) {
+      if (!w3qq.length) { out.innerHTML = '<div class="study-output-empty">No questions.</div>'; return; }
+      out.innerHTML = `<div class="quiz-container">${w3qq.map((q, qi) => `<div class="quiz-question"><div class="quiz-q-num">${qi+1}.</div><div class="quiz-q-text">${q.question}</div><div class="quiz-options">${q.options.map((o,oi) => { let cl='quiz-option'; if (w3qs&&w3qa[qi]===oi&&q.correct===oi) cl+=' correct'; else if (w3qs&&w3qa[qi]===oi) cl+=' wrong'; else if (w3qs&&q.correct===oi) cl+=' correct-reveal'; if (w3qa[qi]===oi&&!w3qs) cl+=' selected'; return `<button class="${cl}" data-qi="${qi}" data-oi="${oi}" ${w3qs?'disabled':''}>${o}</button>`; }).join('')}</div>${w3qs&&q.explanation?`<div class="quiz-explanation">${q.explanation}</div>`:''}</div>`).join('')}${!w3qs?'<button class="study-generate-btn" id="w3-quiz-submit">Check Answers</button>':`<div class="quiz-score">Score: ${Object.keys(w3qa).filter(qi=>w3qa[qi]===w3qq[qi].correct).length} / ${w3qq.length}</div>`}</div>`;
+      if (!w3qs) { out.querySelectorAll('.quiz-option').forEach(b => { b.addEventListener('click', () => { w3qa[parseInt(b.dataset.qi)] = parseInt(b.dataset.oi); b.closest('.quiz-options').querySelectorAll('.quiz-option').forEach(x=>x.classList.remove('selected')); b.classList.add('selected'); }); }); const sb = document.getElementById('w3-quiz-submit'); if (sb) sb.addEventListener('click', () => { w3qs = true; renderW3Q(out); }); }
+    }
+
+    // Podcast
+    document.getElementById('w3-generate-podcast').addEventListener('click', async () => {
+      const { category, topic } = getP(); if (!topic) { alert('Pick a topic.'); return; }
+      const dur = document.getElementById('w3-podcast-duration').value, sty = document.getElementById('w3-podcast-style').value;
+      const btn = document.getElementById('w3-generate-podcast'), out = document.getElementById('w3-podcast-output');
+      btn.disabled = true; btn.textContent = 'Generating...'; out.innerHTML = `<div class="study-loading">Writing podcast...</div>`;
+      try { const r = await fetch('/api/study/podcast', { method: 'POST', headers: { 'Content-Type': 'application/json' }, body: JSON.stringify({ category, topic: topic + ' (WSET Level 3)', duration: parseInt(dur), style: sty }) }); if (!r.ok) throw new Error('Failed'); const d = await r.json(); const paras = d.script.split('\n').filter(p=>p.trim()).map(p=>`<p>${p}</p>`).join(''); out.innerHTML = `<div class="podcast-container"><div class="podcast-header"><h3 class="podcast-title">${d.topic}</h3><span class="podcast-meta">${d.duration} min · ${d.style}</span></div><div class="podcast-player"><button class="podcast-play-btn" id="w3-pod-play">Listen</button><button class="podcast-stop-btn" id="w3-pod-stop" style="display:none">Stop</button></div><div class="podcast-script">${paras}</div></div>`; if ('speechSynthesis' in window) { document.getElementById('w3-pod-play').addEventListener('click', () => { speechSynthesis.cancel(); const u = new SpeechSynthesisUtterance(d.script); u.rate = 0.95; u.onend = () => { document.getElementById('w3-pod-play').style.display=''; document.getElementById('w3-pod-stop').style.display='none'; }; speechSynthesis.speak(u); document.getElementById('w3-pod-play').style.display='none'; document.getElementById('w3-pod-stop').style.display=''; }); document.getElementById('w3-pod-stop').addEventListener('click', () => { speechSynthesis.cancel(); document.getElementById('w3-pod-play').style.display=''; document.getElementById('w3-pod-stop').style.display='none'; }); } }
+      catch (e) { out.innerHTML = `<div class="study-error">Error: ${e.message}</div>`; }
+      btn.disabled = false; btn.textContent = 'Generate Podcast';
+    });
+  }
+
   // Only init when the cmsprep section becomes active
   let initialized = false;
 
@@ -394,13 +500,17 @@ document.addEventListener('DOMContentLoaded', () => {
     }
   }
 
-  // Init when cmsprep tab becomes visible
+  // Init when cmsprep or wset3prep tab becomes visible
   const observer = new MutationObserver(() => {
-    const section = document.getElementById('cmsprep-section');
-    if (section && section.classList.contains('active')) { initMasterDeck(); initStudyTools(); }
+    const cms = document.getElementById('cmsprep-section');
+    if (cms && cms.classList.contains('active')) { initMasterDeck(); initStudyTools(); }
+    const w3 = document.getElementById('wset3prep-section');
+    if (w3 && w3.classList.contains('active')) { initW3Deck(); initW3StudyTools(); }
   });
-  const section = document.getElementById('cmsprep-section');
-  if (section) observer.observe(section, { attributes: true, attributeFilter: ['class'] });
+  const cmsSection = document.getElementById('cmsprep-section');
+  if (cmsSection) observer.observe(cmsSection, { attributes: true, attributeFilter: ['class'] });
+  const w3Section = document.getElementById('wset3prep-section');
+  if (w3Section) observer.observe(w3Section, { attributes: true, attributeFilter: ['class'] });
 
   // Also handle "Certified Exam Prep" links from study page
   document.querySelectorAll('.study-go-to-prep').forEach(link => {
