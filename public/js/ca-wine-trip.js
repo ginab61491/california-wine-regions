@@ -614,11 +614,11 @@ class CaTripPlanner {
       secondaryList.style.display = isHidden ? 'flex' : 'none';
       secondaryWrap.querySelector('#toggle-secondary').textContent = isHidden ? 'Fewer preferences ▴' : 'More preferences ▾';
     });
-    // Filter tags — comprehensive list below preferences
+    // Filter tags — inside the collapsible "More preferences" section
     const filterSection = document.createElement('div');
     filterSection.className = 'filter-tags-section';
     filterSection.innerHTML = `
-      <div class="s-label" style="margin-bottom:6px">Filter by</div>
+      <div class="s-label" style="margin-bottom:6px;margin-top:8px">Filter by</div>
       <div class="filter-tags-grid">
         <label class="toggle-chip"><input type="checkbox" class="badge-toggle" data-filter="walk-in-friendly" /> Walk-In Friendly</label>
         <label class="toggle-chip"><input type="checkbox" class="badge-toggle" data-filter="last-minute" /> Last Minute Friendly</label>
@@ -630,19 +630,14 @@ class CaTripPlanner {
         <label class="toggle-chip"><input type="checkbox" class="badge-toggle" data-filter="cellar-tour" /> Cellar Tour</label>
         <label class="toggle-chip"><input type="checkbox" class="badge-toggle" data-filter="vineyard-tour" /> Vineyard Tour</label>
         <label class="toggle-chip"><input type="checkbox" class="badge-toggle" data-filter="food-pairing" /> Food Pairing</label>
-        <label class="toggle-chip"><input type="checkbox" class="badge-toggle" data-filter="sunset-views" /> Sunset Views</label>
         <label class="toggle-chip"><input type="checkbox" class="badge-toggle" data-filter="mountain-views" /> Mountain Views</label>
         <label class="toggle-chip"><input type="checkbox" class="badge-toggle" data-filter="picnic-friendly" /> Picnic-Friendly</label>
         <label class="toggle-chip"><input type="checkbox" class="badge-toggle" data-filter="best-value" /> Best Value</label>
-        <label class="toggle-chip"><input type="checkbox" class="badge-toggle" data-filter="hands-on-winemaker" /> Meet the Winemaker</label>
-        <label class="toggle-chip"><input type="checkbox" class="badge-toggle" data-filter="women-winemakers" /> Women Winemakers</label>
         <label class="toggle-chip"><input type="checkbox" class="badge-toggle" data-filter="contemporary-design" /> Contemporary Design</label>
         <label class="toggle-chip"><input type="checkbox" class="badge-toggle" data-filter="educational-tastings" /> Educational</label>
-        <label class="toggle-chip"><input type="checkbox" class="badge-toggle" data-filter="award-winning" /> Award-Winning</label>
-        <label class="toggle-chip"><input type="checkbox" class="badge-toggle" data-filter="small-batch" /> Small-Batch</label>
       </div>
     `;
-    container.appendChild(filterSection);
+    secondaryList.appendChild(filterSection);
     filterSection.querySelectorAll('.badge-toggle').forEach(cb => {
       cb.addEventListener('change', () => { if (cb.checked) this.badgeFilters.add(cb.dataset.filter); else this.badgeFilters.delete(cb.dataset.filter); });
     });
