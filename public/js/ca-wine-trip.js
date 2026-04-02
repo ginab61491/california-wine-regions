@@ -939,7 +939,7 @@ class CaTripPlanner {
         const body = encodeURIComponent(
 `Hello!
 
-I'm planning a visit to wine country and would love to dine at ${rec.name}. I'm looking for a reservation on [INSERT DATE] around ${timeStr} for 2 guests.
+I'm planning a visit to wine country and would love to dine at ${rec.name}. I'm looking for a reservation on [INSERT DATE] around ${timeStr} for [INSERT NUMBER] guests.
 
 Please let me know if this is possible to accommodate — happy to be flexible on timing if needed.
 
@@ -1145,9 +1145,11 @@ Warm regards,
         const emailBody = encodeURIComponent(
 `Hello!
 
-I'm planning a trip to wine country and would love to visit ${w.name}. I'm looking for a reservation on [INSERT DATE] around ${timeStr} for 2 guests.
+I'm planning a trip to wine country and would love to visit ${w.name}. I'm looking for a reservation on [INSERT DATE] around ${timeStr} for [INSERT NUMBER] guests.
 
-Please let me know if this is possible to accommodate — we're flexible on timing if that helps.${w.tastingCost ? '\n\nWe\'d love to do the ' + w.tastingCost + ' tasting if available.' : ''}
+Please let me know if this is possible to accommodate — we're flexible on timing if that helps.
+
+Could you also share details on the tasting experiences you offer and pricing?
 
 Looking forward to the visit!
 
