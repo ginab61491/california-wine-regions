@@ -2100,12 +2100,19 @@
               <p class="diary-scan-desc">Take a photo or upload from your gallery. We'll identify the wine, pull tasting notes, ratings, pricing, and more — then log it to your tasting history.</p>
             </div>
             <div class="diary-scan-upload">
-              <label class="diary-scan-dropzone" id="diary-scan-dropzone">
-                <input type="file" accept="image/*" multiple id="diary-scan-input" style="display:none" />
-                <svg viewBox="0 0 24 24" width="28" height="28" fill="none" stroke="currentColor" stroke-width="1.2"><rect x="3" y="3" width="18" height="18" rx="2"/><circle cx="8.5" cy="8.5" r="1.5"/><polyline points="21 15 16 10 5 21"/></svg>
-                <span class="diary-scan-dropzone-text">Drop photos here or click to upload</span>
-                <span class="diary-scan-dropzone-hint">Accepts JPG, PNG, HEIC</span>
-              </label>
+              <div class="diary-scan-buttons">
+                <label class="diary-scan-camera-btn">
+                  <input type="file" accept="image/*" capture="environment" id="diary-camera-input" style="display:none" />
+                  <svg viewBox="0 0 24 24" width="18" height="18" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M23 19a2 2 0 0 1-2 2H3a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h4l2-3h6l2 3h4a2 2 0 0 1 2 2z"/><circle cx="12" cy="13" r="4"/></svg>
+                  Take a Photo
+                </label>
+                <label class="diary-scan-gallery-btn" id="diary-scan-dropzone">
+                  <input type="file" accept="image/*" multiple id="diary-scan-input" style="display:none" />
+                  <svg viewBox="0 0 24 24" width="18" height="18" fill="none" stroke="currentColor" stroke-width="1.5"><rect x="3" y="3" width="18" height="18" rx="2"/><circle cx="8.5" cy="8.5" r="1.5"/><polyline points="21 15 16 10 5 21"/></svg>
+                  Choose from Gallery
+                </label>
+              </div>
+              <p class="diary-scan-tip">Clear photo of the label gives the best results</p>
               <div class="diary-scan-previews" id="diary-scan-previews"></div>
             </div>
             <button class="diary-scan-btn" id="diary-scan-btn" disabled>Scan Bottles</button>
@@ -2152,8 +2159,31 @@
                 </div>
                 <div class="diary-field">
                   <label class="diary-label">Occasion</label>
-                  <input type="text" class="diary-input" id="diary-occasion" placeholder="e.g. Anniversary dinner, Tuesday night" />
+                  <select class="diary-input" id="diary-occasion">
+                    <option value="">Select occasion...</option>
+                    <option value="Personal tasting">Personal tasting</option>
+                    <option value="Dinner at home">Dinner at home</option>
+                    <option value="Restaurant">Restaurant</option>
+                    <option value="Wine tasting event">Wine tasting event</option>
+                    <option value="Special celebration">Special celebration</option>
+                    <option value="Casual hangout">Casual hangout</option>
+                    <option value="Business dinner">Business dinner</option>
+                  </select>
                 </div>
+              </div>
+              <div class="diary-form-row">
+                <div class="diary-field diary-field-grow">
+                  <label class="diary-label">Food Pairing</label>
+                  <input type="text" class="diary-input" id="diary-food" placeholder="What did you eat with this?" />
+                </div>
+                <div class="diary-field">
+                  <label class="diary-label">Price Paid</label>
+                  <input type="number" class="diary-input" id="diary-price" placeholder="$" min="0" step="0.01" />
+                </div>
+              </div>
+              <div class="diary-field">
+                <label class="diary-label">Location</label>
+                <input type="text" class="diary-input" id="diary-location" placeholder="Restaurant, wine shop, home..." />
               </div>
               <div class="diary-field">
                 <label class="diary-label">Tasting Notes</label>

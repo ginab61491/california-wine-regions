@@ -101,7 +101,10 @@ document.addEventListener('DOMContentLoaded', () => {
       region: document.getElementById('diary-region').value.trim(),
       date: dateInput.value,
       rating: selectedRating,
-      occasion: document.getElementById('diary-occasion').value.trim(),
+      occasion: document.getElementById('diary-occasion').value,
+      food: (document.getElementById('diary-food') || {}).value || '',
+      price: (document.getElementById('diary-price') || {}).value || '',
+      location: (document.getElementById('diary-location') || {}).value || '',
       notes: document.getElementById('diary-notes').value.trim(),
       review: document.getElementById('diary-review').value.trim(),
       photo: photoData
@@ -118,6 +121,9 @@ document.addEventListener('DOMContentLoaded', () => {
     document.getElementById('diary-producer').value = '';
     document.getElementById('diary-region').value = '';
     document.getElementById('diary-occasion').value = '';
+    if (document.getElementById('diary-food')) document.getElementById('diary-food').value = '';
+    if (document.getElementById('diary-price')) document.getElementById('diary-price').value = '';
+    if (document.getElementById('diary-location')) document.getElementById('diary-location').value = '';
     document.getElementById('diary-notes').value = '';
     document.getElementById('diary-review').value = '';
     dateInput.value = new Date().toISOString().split('T')[0];
@@ -198,6 +204,7 @@ document.addEventListener('DOMContentLoaded', () => {
           </div>
           ${e.rating ? `<div class="diary-entry-stars">${'★'.repeat(e.rating)}${'☆'.repeat(5 - e.rating)}</div>` : ''}
           ${e.occasion ? `<div class="diary-entry-occasion">${e.occasion}</div>` : ''}
+          ${e.food || e.price || e.location ? `<div class="diary-entry-details">${e.food ? `<span>${e.food}</span>` : ''}${e.price ? `<span>$${e.price}</span>` : ''}${e.location ? `<span>${e.location}</span>` : ''}</div>` : ''}
           ${e.notes ? `<div class="diary-entry-notes">${e.notes}</div>` : ''}
           ${e.review ? `<div class="diary-entry-review">${e.review}</div>` : ''}
           <button class="diary-entry-delete" data-id="${e.id}">Remove</button>
@@ -233,7 +240,16 @@ document.addEventListener('DOMContentLoaded', () => {
     const scanStatus = document.getElementById('diary-scan-status');
     const scanResults = document.getElementById('diary-scan-results');
     const dropzone = document.getElementById('diary-scan-dropzone');
+    const cameraInput = document.getElementById('diary-camera-input');
     if (!scanInput || !scanBtn) return;
+
+    // Camera input feeds into the same scan flow
+    if (cameraInput) {
+      cameraInput.addEventListener('change', (e) => {
+        addFiles(e.target.files);
+        cameraInput.value = '';
+      });
+    }
 
     function getPhotoDate(file) {
       if (file.lastModified) return new Date(file.lastModified).toISOString().split('T')[0];

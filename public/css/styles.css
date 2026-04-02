@@ -9955,6 +9955,36 @@ code {
 }
 @media (max-width: 600px) { .diary-history-controls { flex-direction: column; } }
 
+/* Upload buttons */
+.diary-scan-buttons { display: flex; gap: 10px; justify-content: center; margin-bottom: 12px; }
+.diary-scan-camera-btn, .diary-scan-gallery-btn {
+  display: flex; align-items: center; gap: 8px; justify-content: center;
+  font-family: 'Montserrat', sans-serif; font-size: 0.85rem; font-weight: 500;
+  padding: 12px 24px; border-radius: 6px; cursor: pointer; transition: all 0.2s;
+  min-height: 44px;
+}
+.diary-scan-camera-btn {
+  background: var(--gold); color: #fff; border: none;
+}
+.diary-scan-camera-btn:hover { background: var(--gold-mid); }
+.diary-scan-gallery-btn {
+  background: none; color: var(--ink-mid); border: 1px solid var(--cream-dark);
+}
+.diary-scan-gallery-btn:hover { border-color: var(--gold); color: var(--gold); }
+.diary-scan-tip {
+  font-family: 'Montserrat', sans-serif; font-size: 0.68rem;
+  color: var(--ink-xlight); text-align: center; margin-bottom: 12px;
+}
+/* Entry details row */
+.diary-entry-details {
+  display: flex; gap: 12px; flex-wrap: wrap;
+  font-family: 'Montserrat', sans-serif; font-size: 0.7rem; color: var(--ink-xlight);
+}
+@media (max-width: 480px) {
+  .diary-scan-buttons { flex-direction: column; }
+  .diary-scan-camera-btn, .diary-scan-gallery-btn { width: 100%; }
+}
+
 .diary-scan-card {
   background: var(--white);
   border: 1px solid var(--border-ink);
