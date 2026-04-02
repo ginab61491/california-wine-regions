@@ -3208,10 +3208,112 @@ button {
 }
 .prod-modal-link:hover { background: var(--gold); color: #fff; }
 
-@media (max-width: 768px) {
-  .prod-layout { flex-direction: column; }
-  .prod-sidebar { width: 100%; max-height: 50vh; border-right: none; border-bottom: 1px solid var(--cream-dark); }
-  .prod-grid { grid-template-columns: 1fr; }
+/* ── Producer Mobile Optimization ── */
+@media (max-width: 767px) {
+  .prod-layout { flex-direction: column; overflow-y: auto; }
+
+  /* Sidebar becomes full-width stacked filter panel */
+  .prod-sidebar {
+    width: 100%;
+    max-height: none;
+    overflow: visible;
+    border-right: none;
+    border-bottom: 1px solid var(--cream-dark);
+  }
+  .prod-sidebar-inner { padding: 16px; gap: 12px; }
+
+  /* Prevent iOS zoom on inputs */
+  .prod-search,
+  .prod-select {
+    font-size: 16px;
+    padding: 12px 14px;
+    border-radius: 10px;
+  }
+
+  /* Filter headings */
+  .prod-filter-heading { font-size: 1.05rem; }
+
+  /* Region pills: full-width stacked */
+  .prod-region-pills { gap: 6px; }
+  .prod-region-pills .prod-pill {
+    flex: 1 1 auto;
+    min-width: calc(50% - 4px);
+    text-align: center;
+    padding: 10px 8px;
+    min-height: 44px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  /* Price: 2x2 grid */
+  .prod-price-row {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 6px;
+  }
+  .prod-price-btn {
+    padding: 10px;
+    min-height: 44px;
+    font-size: 0.75rem;
+  }
+
+  /* Tier and tag pills: full width, stacked */
+  .prod-pills {
+    flex-direction: column;
+    gap: 6px;
+  }
+  .prod-pill {
+    width: 100%;
+    text-align: center;
+    padding: 10px 12px;
+    min-height: 44px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  /* Tags toggle */
+  .prod-tags-toggle { min-height: 44px; font-size: 0.95rem; }
+
+  /* Result count sticky */
+  .prod-result-count {
+    position: sticky;
+    top: 0;
+    background: var(--cream);
+    padding: 10px 16px;
+    z-index: 5;
+    border-bottom: 1px solid var(--cream-dark);
+    font-size: 0.8rem;
+  }
+
+  /* Clear button */
+  .prod-clear-btn { min-height: 44px; font-size: 0.78rem; }
+
+  /* Results: full-width single column */
+  .prod-main { padding: 12px; }
+  .prod-grid { grid-template-columns: 1fr; gap: 12px; }
+
+  /* Cards: ensure no truncation */
+  .prod-card-body { padding: 10px 14px 14px; }
+  .prod-card-name { font-size: 1.1rem; }
+  .prod-card-philo { font-size: 0.8rem; }
+
+  /* Modal: full screen on mobile */
+  .prod-modal-overlay { padding: 0; align-items: stretch; }
+  .prod-modal {
+    max-width: 100%;
+    width: 100%;
+    max-height: 100vh;
+    height: 100vh;
+    border-radius: 0;
+    padding: 20px;
+  }
+  .prod-modal-header h2 { font-size: 1.5rem; }
+  .prod-modal-close { top: 16px; right: 16px; font-size: 1.6rem; min-width: 44px; min-height: 44px; }
+
+  /* Pagination */
+  .prod-pagination { padding: 16px 0; gap: 6px; }
 }
 
 /* ═══════════════════════════════════════════
