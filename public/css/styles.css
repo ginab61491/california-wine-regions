@@ -3087,7 +3087,23 @@ code {
   font-size: 0.75rem;
   font-weight: 600;
   color: var(--ink);
+  display: flex;
+  align-items: center;
+  gap: 10px;
 }
+.sort-select {
+  font-family: 'Montserrat', sans-serif;
+  font-size: 0.65rem;
+  font-weight: 500;
+  color: var(--ink-mid);
+  background: var(--white);
+  border: 1px solid rgba(46,26,20,0.08);
+  border-radius: 20px;
+  padding: 4px 10px;
+  cursor: pointer;
+  outline: none;
+}
+.sort-select:focus { border-color: var(--gold); }
 .adjust-prefs-btn {
   font-family: 'Lora', serif;
   font-size: 0.68rem;

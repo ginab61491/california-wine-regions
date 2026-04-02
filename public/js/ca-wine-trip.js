@@ -507,13 +507,42 @@ class CaTripPlanner {
       w._filterNotes = [...new Set(w._filterNotes)];
       return { winery: w, score };
     }).filter(s => s.score > -999).sort((a, b) => b.score - a.score);
+    this._lastScored = scored;
     this.renderResults(scored);
+  }
+
+  _sortScored(scored, sortBy) {
+    const SOMM_TAGS = ['sommelier-fave', 'cult-fave', 'prestigious'];
+    const PRICE_ORDER = { 'budget': 1, 'mid': 2, 'mid-splurge': 3, 'splurge': 4 };
+    const copy = [...scored];
+    if (sortBy === 'somm') {
+      copy.sort((a, b) => {
+        const aS = SOMM_TAGS.filter(t => (a.winery.tags || []).includes(t)).length;
+        const bS = SOMM_TAGS.filter(t => (b.winery.tags || []).includes(t)).length;
+        if (bS !== aS) return bS - aS;
+        return (parseFloat(b.winery.googleRating) || 0) - (parseFloat(a.winery.googleRating) || 0);
+      });
+    } else if (sortBy === 'price') {
+      copy.sort((a, b) => (PRICE_ORDER[a.winery.price] || 2) - (PRICE_ORDER[b.winery.price] || 2));
+    }
+    // default: already sorted by score
+    return copy;
   }
 
   renderResults(scored) {
     const resultsEl = document.getElementById('trip-results');
     const countEl = document.getElementById('winery-count-label');
-    countEl.textContent = `${scored.length} winer${scored.length === 1 ? 'y' : 'ies'} found`;
+    // Add sort dropdown next to count
+    countEl.innerHTML = `${scored.length} winer${scored.length === 1 ? 'y' : 'ies'} found <select id="sort-results" class="sort-select"><option value="match" selected>Best Match</option><option value="somm">Somm's Favorite</option><option value="price">Price: Low → High</option></select>`;
+    const sortSelect = document.getElementById('sort-results');
+    sortSelect.addEventListener('change', () => {
+      const sorted = this._sortScored(this._lastScored, sortSelect.value);
+      this._renderCards(sorted, resultsEl);
+    });
+    this._renderCards(scored, resultsEl);
+  }
+
+  _renderCards(scored, resultsEl) {
     const maxScore = Math.max(...scored.map(s => s.score), 1);
     resultsEl.innerHTML = scored.map(({ winery: w, score }) => this.wineryCard(w, score, maxScore)).join('');
     resultsEl.querySelectorAll('.winery-add-btn').forEach(btn => {
