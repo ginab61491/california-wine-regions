@@ -137,25 +137,55 @@ document.addEventListener('DOMContentLoaded', () => {
 
   function renderEntries() {
     const container = document.getElementById('diary-entries');
-    const title = document.getElementById('diary-entries-title');
+    const header = document.getElementById('diary-history-header');
     const empty = document.getElementById('diary-empty');
 
     if (!entries.length) {
-      title.style.display = 'none';
+      if (header) header.style.display = 'none';
       empty.style.display = 'block';
       container.innerHTML = '';
       return;
     }
 
-    title.style.display = 'block';
+    if (header) header.style.display = 'block';
     empty.style.display = 'none';
 
-    container.innerHTML = entries.map(e => `
+    // Search and sort
+    const searchEl = document.getElementById('diary-search');
+    const sortEl = document.getElementById('diary-sort');
+    const query = searchEl ? searchEl.value.trim().toLowerCase() : '';
+    const sortBy = sortEl ? sortEl.value : 'newest';
+
+    let display = [...entries];
+
+    // Filter by search
+    if (query) {
+      display = display.filter(e => {
+        const hay = `${e.name} ${e.producer} ${e.region} ${e.notes} ${e.review} ${e.occasion}`.toLowerCase();
+        return hay.includes(query);
+      });
+    }
+
+    // Sort
+    if (sortBy === 'newest') display.sort((a, b) => (b.date || '').localeCompare(a.date || ''));
+    else if (sortBy === 'oldest') display.sort((a, b) => (a.date || '').localeCompare(b.date || ''));
+    else if (sortBy === 'highest') display.sort((a, b) => (b.rating || 0) - (a.rating || 0));
+    else if (sortBy === 'name') display.sort((a, b) => (a.name || '').localeCompare(b.name || ''));
+
+    // Stats
+    const statsEl = document.getElementById('diary-stats');
+    if (statsEl) {
+      const rated = entries.filter(e => e.rating > 0);
+      const avgRating = rated.length ? (rated.reduce((s, e) => s + e.rating, 0) / rated.length).toFixed(1) : '—';
+      statsEl.innerHTML = `<span>${entries.length} wine${entries.length !== 1 ? 's' : ''} logged</span><span>Avg rating: ${avgRating}/5</span>`;
+    }
+
+    container.innerHTML = display.map(e => `
       <div class="diary-entry" data-id="${e.id}">
         <div class="diary-entry-photo">
           ${e.photo
-            ? `<img src="${e.photo}" alt="${e.name}" />`
-            : `<span class="diary-entry-photo-empty">🍷</span>`
+            ? `<img src="${e.photo}" alt="${e.name}" loading="lazy" />`
+            : `<span class="diary-entry-photo-empty"><svg viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M8 22h8M12 15v7M12 15a5 5 0 0 0 5-5c0-2-.5-4-2-8H9c-1.5 4-2 6-2 8a5 5 0 0 0 5 5Z"/></svg></span>`
           }
         </div>
         <div class="diary-entry-content">
@@ -177,6 +207,7 @@ document.addEventListener('DOMContentLoaded', () => {
 
     container.querySelectorAll('.diary-entry-delete').forEach(btn => {
       btn.addEventListener('click', async () => {
+        if (!confirm('Remove this entry?')) return;
         const id = parseInt(btn.dataset.id);
         entries = entries.filter(e => e.id !== id);
         await saveEntries();
@@ -184,6 +215,12 @@ document.addEventListener('DOMContentLoaded', () => {
       });
     });
   }
+
+  // Wire search and sort
+  const diarySearch = document.getElementById('diary-search');
+  const diarySort = document.getElementById('diary-sort');
+  if (diarySearch) diarySearch.addEventListener('input', () => renderEntries());
+  if (diarySort) diarySort.addEventListener('change', () => renderEntries());
 
   // ── Quick Scan ──────────────────────────────────────────
   let scanImages = [];

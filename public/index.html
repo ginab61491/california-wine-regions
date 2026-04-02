@@ -129,7 +129,7 @@
           <button class="topnav-link topnav-link--has-menu">Sip</button>
           <div class="topnav-menu">
             <a class="topnav-menu-item" data-section="analyzer">My Favorites</a>
-            <a class="topnav-menu-item" data-section="diary">My Wine Diary</a>
+            <a class="topnav-menu-item" data-section="diary">Log Your Wine</a>
             <a class="topnav-menu-item" data-section="vault">My Wine Vault</a>
             <a class="topnav-menu-item" data-section="recs">Recommendations</a>
           </div>
@@ -178,7 +178,7 @@
 
       <span class="mobile-nav-group">Sip</span>
       <a class="mobile-nav-link" data-section="analyzer">My Favorites</a>
-      <a class="mobile-nav-link" data-section="diary">My Wine Diary</a>
+      <a class="mobile-nav-link" data-section="diary">Log Your Wine</a>
       <a class="mobile-nav-link" data-section="vault">My Wine Vault</a>
       <a class="mobile-nav-link" data-section="recs">Recommendations</a>
 
@@ -298,8 +298,8 @@
               <p>Save your favorite grapes, regions, and producers. Get AI-powered palate insights based on what you love.</p>
             </a>
             <a class="home-card" data-section="diary">
-              <h4>My Wine Diary</h4>
-              <p>Keep a personal journal of wines you've tasted — photos, notes, ratings. Your palate story, all in one place.</p>
+              <h4>Log Your Wine</h4>
+              <p>Upload a photo of any bottle. AI identifies the wine, pulls details, and logs it to your searchable tasting history.</p>
             </a>
           </div>
         </div>
@@ -2030,7 +2030,7 @@
                 <div class="account-sidebar-email" id="account-email">—</div>
               </div>
               <nav class="account-sidebar-links">
-                <a data-section="diary">My Wine Diary</a>
+                <a data-section="diary">Log Your Wine</a>
                 <a data-section="vault">My Wine Vault</a>
                 <a data-section="recs">Recommendations</a>
               </nav>
@@ -2086,22 +2086,23 @@
     </section>
 
     <!-- ═══════════════════════════════════════════
-         SECTION: My Wine Diary (blank)
+         SECTION: Log Your Wine (blank)
     ════════════════════════════════════════════ -->
     <section class="section" id="diary-section">
       <div class="section-header">
-        <h1>My Wine Diary</h1>
-        <span class="section-tagline">Your personal tasting journal</span>
-        <p>Log wines you've tried, rate them, and track how your palate evolves over time.</p>
+        <h1>Log Your Wine</h1>
+        <span class="section-tagline">Upload a photo. We'll identify the bottle.</span>
+        <p>Photograph your bottles, get instant identification, and build a searchable tasting history.</p>
       </div>
       <div class="diary-scroll">
         <div class="diary-body">
 
-          <!-- Quick Scan -->
-          <div class="diary-scan-card" id="diary-scan-card">
+          <!-- Upload a Photo -->
+          <div class="diary-scan-card diary-scan-hero" id="diary-scan-card">
             <div class="diary-scan-header">
-              <h2>Quick Scan</h2>
-              <p class="diary-scan-desc">Upload a photo of one or more wine bottles. We'll identify each wine and pull tasting notes, ratings, pricing, and more.</p>
+              <svg viewBox="0 0 24 24" width="36" height="36" fill="none" stroke="currentColor" stroke-width="1"><rect x="3" y="3" width="18" height="18" rx="2"/><circle cx="8.5" cy="8.5" r="1.5"/><polyline points="21 15 16 10 5 21"/></svg>
+              <h2>Upload a Photo of Your Bottle</h2>
+              <p class="diary-scan-desc">Take a photo or upload from your gallery. We'll identify the wine, pull tasting notes, ratings, pricing, and more — then log it to your tasting history.</p>
             </div>
             <div class="diary-scan-upload">
               <label class="diary-scan-dropzone" id="diary-scan-dropzone">
@@ -2181,7 +2182,19 @@
 
           <!-- Entries list -->
           <div id="diary-entries-section">
-            <h2 class="diary-entries-title" id="diary-entries-title" style="display:none">Your Journal</h2>
+            <div class="diary-history-header" id="diary-history-header" style="display:none">
+              <h2 class="diary-entries-title">Tasting History</h2>
+              <div class="diary-history-controls">
+                <input type="text" class="diary-search" id="diary-search" placeholder="Search wines, producers, notes..." />
+                <select class="diary-sort" id="diary-sort">
+                  <option value="newest">Newest First</option>
+                  <option value="oldest">Oldest First</option>
+                  <option value="highest">Highest Rated</option>
+                  <option value="name">Name A-Z</option>
+                </select>
+              </div>
+              <div class="diary-stats" id="diary-stats"></div>
+            </div>
             <div class="diary-entries" id="diary-entries"></div>
             <div class="diary-empty" id="diary-empty">
               <div class="diary-empty-icon"><svg viewBox="0 0 24 24" width="28" height="28" fill="none" stroke="currentColor" stroke-width="1.2"><path d="M4 19.5A2.5 2.5 0 0 1 6.5 17H20"/><path d="M6.5 2H20v20H6.5A2.5 2.5 0 0 1 4 19.5v-15A2.5 2.5 0 0 1 6.5 2z"/></svg></div>

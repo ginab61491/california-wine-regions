@@ -9928,6 +9928,33 @@ code {
 .diary-body { max-width: 700px; margin: 0 auto; padding: 32px 40px 56px; }
 
 /* ── Quick Scan ── */
+/* Hero scan card */
+.diary-scan-hero { text-align: center; }
+.diary-scan-hero .diary-scan-header { display: flex; flex-direction: column; align-items: center; }
+.diary-scan-hero .diary-scan-header svg { color: var(--gold); margin-bottom: 12px; }
+.diary-scan-hero h2 { font-family: 'Playfair Display', Georgia, serif; font-size: 1.4rem; font-weight: 400; color: var(--ink); }
+
+/* History controls */
+.diary-history-header { margin-bottom: 16px; }
+.diary-history-controls { display: flex; gap: 10px; margin: 12px 0 8px; }
+.diary-search {
+  flex: 1; font-family: 'Montserrat', sans-serif; font-size: 0.82rem;
+  padding: 9px 14px; border: 1px solid var(--cream-dark); border-radius: 8px;
+  background: var(--white); outline: none;
+}
+.diary-search:focus { border-color: var(--gold); }
+.diary-sort {
+  font-family: 'Montserrat', sans-serif; font-size: 0.78rem;
+  padding: 8px 12px; border: 1px solid var(--cream-dark); border-radius: 8px;
+  background: var(--white); outline: none;
+}
+.diary-sort:focus { border-color: var(--gold); }
+.diary-stats {
+  display: flex; gap: 16px;
+  font-family: 'Montserrat', sans-serif; font-size: 0.72rem; color: var(--ink-xlight);
+}
+@media (max-width: 600px) { .diary-history-controls { flex-direction: column; } }
+
 .diary-scan-card {
   background: var(--white);
   border: 1px solid var(--border-ink);

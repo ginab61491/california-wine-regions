@@ -26,7 +26,7 @@ document.addEventListener('DOMContentLoaded', () => {
     pairing:     'Food Pairing',
     analyzer:    'My Favorites',
     preferences: 'My Account',
-    diary:       'My Wine Diary',
+    diary:       'Log Your Wine',
     vault:       'My Wine Vault',
     recs:        'Recommendations',
     about:       'About Sommplicity',
