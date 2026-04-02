@@ -128,11 +128,40 @@ document.addEventListener('DOMContentLoaded', () => {
     });
   }
 
+  // Render palate page favorites summary
+  function renderPalateSummary() {
+    const el = document.getElementById('palate-fav-summary');
+    if (!el) return;
+    const grapes = getFavs('somm_fav_grapes');
+    const regions = getFavs('somm_fav_regions');
+    const producers = getFavs('somm_fav_producers');
+    const total = grapes.length + regions.length + producers.length;
+
+    if (total === 0) {
+      el.innerHTML = '<p class="palate-empty">No favorites saved yet. Visit <a data-section="grapes" class="fav-link">Wine Grapes</a>, <a data-section="producers" class="fav-link">Producer Profiles</a>, or <a data-section="analyzer" class="fav-link">My Favorites</a> to start saving.</p>';
+    } else {
+      let html = '<div class="palate-fav-pills">';
+      if (grapes.length) html += `<div class="palate-fav-group"><span class="palate-fav-label">Grapes:</span> ${grapes.map(g => `<span class="palate-fav-pill">${g}</span>`).join('')}</div>`;
+      if (regions.length) html += `<div class="palate-fav-group"><span class="palate-fav-label">Regions:</span> ${regions.map(r => `<span class="palate-fav-pill">${r}</span>`).join('')}</div>`;
+      if (producers.length) html += `<div class="palate-fav-group"><span class="palate-fav-label">Producers:</span> ${producers.map(p => `<span class="palate-fav-pill">${p}</span>`).join('')}</div>`;
+      html += '</div>';
+      el.innerHTML = html;
+    }
+    // Wire links
+    el.querySelectorAll('.fav-link').forEach(link => {
+      link.addEventListener('click', (e) => { e.preventDefault(); const nav = document.querySelector(`[data-section="${link.dataset.section}"]`); if (nav) nav.click(); });
+    });
+  }
+
   // Init on section visible
   const observer = new MutationObserver(() => {
-    const section = document.getElementById('analyzer-section');
-    if (section && section.classList.contains('active')) renderFavorites();
+    const favSection = document.getElementById('analyzer-section');
+    if (favSection && favSection.classList.contains('active')) renderFavorites();
+    const palateSection = document.getElementById('palate-section');
+    if (palateSection && palateSection.classList.contains('active')) renderPalateSummary();
   });
-  const section = document.getElementById('analyzer-section');
-  if (section) observer.observe(section, { attributes: true, attributeFilter: ['class'] });
+  const favSection = document.getElementById('analyzer-section');
+  if (favSection) observer.observe(favSection, { attributes: true, attributeFilter: ['class'] });
+  const palateSection = document.getElementById('palate-section');
+  if (palateSection) observer.observe(palateSection, { attributes: true, attributeFilter: ['class'] });
 });

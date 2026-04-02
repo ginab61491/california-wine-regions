@@ -130,6 +130,7 @@
           <div class="topnav-menu">
             <a class="topnav-menu-item" data-section="analyzer">My Favorites</a>
             <a class="topnav-menu-item" data-section="diary">Log Your Wine</a>
+            <a class="topnav-menu-item" data-section="palate">Understand My Palate</a>
             <a class="topnav-menu-item" data-section="vault">My Wine Vault</a>
             <a class="topnav-menu-item" data-section="recs">Recommendations</a>
           </div>
@@ -179,6 +180,7 @@
       <span class="mobile-nav-group">Sip</span>
       <a class="mobile-nav-link" data-section="analyzer">My Favorites</a>
       <a class="mobile-nav-link" data-section="diary">Log Your Wine</a>
+      <a class="mobile-nav-link" data-section="palate">Understand My Palate</a>
       <a class="mobile-nav-link" data-section="vault">My Wine Vault</a>
       <a class="mobile-nav-link" data-section="recs">Recommendations</a>
 
@@ -1540,13 +1542,6 @@
             </div>
           </div>
 
-          <!-- AI Palate Analysis -->
-          <div class="fav-section fav-palate">
-            <h2 class="fav-section-title">Understand Your Palate</h2>
-            <p class="fav-palate-desc">Based on your saved favorites, our sommelier AI will analyze your taste preferences and give you words to describe your palate.</p>
-            <button class="fav-palate-btn" id="fav-palate-btn">Analyze My Palate</button>
-            <div class="fav-palate-output" id="fav-palate-output"></div>
-          </div>
 
         </div>
       </div>
@@ -2201,6 +2196,34 @@
               <p>Your wine diary is empty. Log your first wine above to start your journal.</p>
             </div>
           </div>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- ═══════════════════════════════════════════
+         SECTION: Understand My Palate
+    ════════════════════════════════════════════ -->
+    <section class="section" id="palate-section">
+      <div class="section-header">
+        <h1>Understand My Palate</h1>
+        <span class="section-tagline">Discover the words for what you love</span>
+        <p>Based on your favorite grapes, regions, and producers, our sommelier AI will analyze your taste preferences and give you language to describe your palate.</p>
+      </div>
+      <div class="palate-scroll">
+        <div class="palate-body">
+
+          <!-- Favorites summary -->
+          <div class="palate-favorites-summary" id="palate-fav-summary"></div>
+
+          <!-- Analyze button -->
+          <div class="palate-action">
+            <button class="fav-palate-btn" id="fav-palate-btn">Analyze My Palate</button>
+            <p class="palate-hint">Save at least 3 favorites (grapes, regions, or producers) from across the site, then click to generate your personalized palate profile.</p>
+          </div>
+
+          <!-- Results -->
+          <div class="fav-palate-output" id="fav-palate-output"></div>
 
         </div>
       </div>

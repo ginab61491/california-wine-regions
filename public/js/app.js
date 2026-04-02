@@ -27,6 +27,7 @@ document.addEventListener('DOMContentLoaded', () => {
     analyzer:    'My Favorites',
     preferences: 'My Account',
     diary:       'Log Your Wine',
+    palate:      'Understand My Palate',
     vault:       'My Wine Vault',
     recs:        'Recommendations',
     about:       'About Sommplicity',
@@ -38,7 +39,7 @@ document.addEventListener('DOMContentLoaded', () => {
     grapes: 'Learn', dailywine: 'Learn', pairing: 'Learn', regions: 'Learn', producers: 'Learn',
     study: 'Study', cmsprep: 'Study', wset3prep: 'Study',
     catrip: 'Visit', caregions: 'Visit', events: 'Visit',
-    analyzer: 'Sip', diary: 'Sip', vault: 'Sip', recs: 'Sip',
+    analyzer: 'Sip', diary: 'Sip', palate: 'Sip', vault: 'Sip', recs: 'Sip',
     preferences: 'Sip',
     about: 'About',
   };

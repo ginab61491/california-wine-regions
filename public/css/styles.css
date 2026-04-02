@@ -10548,6 +10548,19 @@ img[loading="lazy"][complete] {
 .prod-modal-actions { display: flex; gap: 10px; margin-top: 12px; align-items: center; }
 @media (max-width: 768px) { .favorites-body { padding: 24px 16px; } }
 
+/* Palate page */
+.palate-scroll { flex: 1; overflow-y: auto; background: var(--cream); }
+.palate-body { max-width: 700px; margin: 0 auto; padding: 32px 40px 56px; }
+.palate-favorites-summary { margin-bottom: 24px; }
+.palate-empty { font-family: 'Crimson Text', Georgia, serif; font-style: italic; font-size: 0.88rem; color: var(--ink-xlight); }
+.palate-fav-pills { display: flex; flex-direction: column; gap: 10px; }
+.palate-fav-group { display: flex; flex-wrap: wrap; gap: 6px; align-items: center; }
+.palate-fav-label { font-family: 'Montserrat', sans-serif; font-size: 0.62rem; font-weight: 600; text-transform: uppercase; letter-spacing: 0.08em; color: var(--gold); margin-right: 4px; }
+.palate-fav-pill { font-family: 'Montserrat', sans-serif; font-size: 0.78rem; color: var(--ink); background: var(--white); border: 1px solid var(--border-ink); border-radius: 20px; padding: 4px 12px; }
+.palate-action { text-align: center; margin-bottom: 24px; }
+.palate-hint { font-family: 'Montserrat', sans-serif; font-size: 0.72rem; color: var(--ink-xlight); margin-top: 8px; }
+@media (max-width: 768px) { .palate-body { padding: 24px 16px; } }
+
 /* ═══════════════════════════════════════════
    MICRO-INTERACTIONS & ANIMATIONS
 ════════════════════════════════════════════ */
