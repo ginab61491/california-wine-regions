@@ -322,7 +322,9 @@ app.post('/api/pairing', async (req, res) => {
   const direction = type === 'wine-to-food' ? 'food dishes' : 'wines';
   const input = type === 'wine-to-food' ? 'wine' : 'dish/food';
 
-  const prompt = `You are a certified sommelier providing food and wine pairing recommendations. The user has a ${input}: "${query}". Recommend 4 ${direction} that pair well with it.
+  const prompt = `You are a certified sommelier providing food and wine pairing recommendations. The user has a ${input}: "${query}". If a recipe URL is included, use the recipe name and likely ingredients to inform your pairing. Recommend 4 ${direction} that pair well with it.
+
+For wine recommendations: recommend the GRAPE VARIETAL broadly, then list 2-3 regions where great examples can be found (e.g. "Pinot Noir — Burgundy, Willamette Valley, or Central Otago"). Do NOT lock to one specific region. Give the person a range to choose from.
 
 For each recommendation, explain WHY the pairing works using professional sommelier principles (acidity, tannin-fat interaction, flavor echoing, weight matching, contrast, regional harmony).
 
@@ -334,12 +336,12 @@ Respond ONLY with valid JSON:
     {
       "rank": 1,
       "label": "Best Pairing",
-      "name": "Name of wine or dish",
-      "region": "Region if wine, or cuisine if food",
+      "name": "Grape varietal or dish name",
+      "region": "2-3 regions to look for this wine, or cuisine type if food",
       "why": "2-3 sentence explanation of why this pairing works, referencing specific flavors, textures, and pairing principles.",
       "principles": ["Acidity balances richness", "Flavor echoing with herbs"],
       "tips": "One practical sommelier tip for this pairing.",
-      "price": "$15-30 (if wine recommendation)"
+      "price": "$15-30 (if wine recommendation, give a broad range)"
     }
   ]
 }

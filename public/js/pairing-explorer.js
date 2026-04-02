@@ -8,13 +8,19 @@ document.addEventListener('DOMContentLoaded', () => {
   const resultsEl = document.getElementById('pairing-results');
   if (!foodBtn || !wineBtn) return;
 
+  const recipeInput = document.getElementById('pairing-recipe-input');
+
   // Food → Wine
   foodBtn.addEventListener('click', async () => {
-    const query = foodInput.value.trim();
-    if (!query) { foodInput.focus(); return; }
+    const food = foodInput.value.trim();
+    const recipe = recipeInput ? recipeInput.value.trim() : '';
+    if (!food && !recipe) { foodInput.focus(); return; }
+    let query = food;
+    if (recipe) query += (food ? '. Recipe link: ' : 'Recipe: ') + recipe;
     await fetchPairings('food-to-wine', query);
   });
   foodInput.addEventListener('keydown', (e) => { if (e.key === 'Enter') foodBtn.click(); });
+  if (recipeInput) recipeInput.addEventListener('keydown', (e) => { if (e.key === 'Enter') foodBtn.click(); });
 
   // Wine → Food
   wineBtn.addEventListener('click', async () => {
@@ -83,6 +89,7 @@ document.addEventListener('DOMContentLoaded', () => {
       resultsEl.innerHTML = '<div class="pairing-placeholder"><p>Enter a dish or wine above to get sommelier-curated pairing recommendations.</p></div>';
       foodInput.value = '';
       wineInput.value = '';
+      if (recipeInput) recipeInput.value = '';
     });
   }
 });
