@@ -16,8 +16,8 @@ jobs:
     steps:
       - name: Checkout repository
         uses: actions/checkout@v4
-        env:
-          FORCE_JAVASCRIPT_ACTIONS_TO_NODE24: true
+        with:
+          token: ${{ secrets.GITHUB_TOKEN }}
 
       - name: Setup Node.js
         uses: actions/setup-node@v4
@@ -34,7 +34,9 @@ jobs:
         run: node run-daily.js
 
       - name: Save topic history
-        uses: stefanzweifel/git-auto-commit-action@v5
-        with:
-          commit_message: "chore: update daily email topic rotation history"
-          file_pattern: email-pipeline/topic-history.json
+        continue-on-error: true
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add email-pipeline/topic-history.json 2>/dev/null || true
+          git diff --staged --quiet || git commit -m "chore: update topic rotation history" && git push || true
