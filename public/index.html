@@ -1424,33 +1424,71 @@
     <section class="section" id="pairing-section">
       <div class="section-header">
         <h1>Food &amp; Wine Pairing</h1>
-        <span class="section-tagline">"elevating your wine experience with curated selections and expert guidance"</span>
-        <p>Discover perfect matches — start with a wine and find foods, or start with a dish and find wines.</p>
+        <span class="section-tagline">Discover perfect pairings. Learn why they work.</span>
+        <p>Start with a dish to find the right wine, or start with a wine to find the perfect food.</p>
       </div>
 
-      <div class="pairing-container">
-        <div class="pairing-controls">
-          <div class="pairing-mode-tabs">
-            <button class="pairing-tab active" data-mode="wine-to-food">Wine → Food</button>
-            <button class="pairing-tab" data-mode="food-to-wine">Food → Wine</button>
+      <div class="pairing-explorer">
+        <!-- Dual columns -->
+        <div class="pairing-columns">
+
+          <!-- Food → Wine -->
+          <div class="pairing-col">
+            <div class="pairing-col-icon"><svg viewBox="0 0 24 24" width="32" height="32" fill="none" stroke="currentColor" stroke-width="1.2"><path d="M3 2l3 14h12l3-14"/><circle cx="12" cy="21" r="1.5"/><path d="M12 18v3"/></svg></div>
+            <h2 class="pairing-col-title">I Have a Dish</h2>
+            <p class="pairing-col-desc">Describe your food and we'll recommend the best wines to pair with it.</p>
+            <input type="text" class="pairing-input" id="pairing-food-input" placeholder="e.g. Grilled salmon with dill, Pasta carbonara, Spicy Thai curry" />
+            <button class="pairing-submit-btn" id="pairing-food-btn">Find Wine Pairings</button>
           </div>
 
-          <div class="pairing-selector" id="wine-selector">
-            <h3>Select a Wine Style</h3>
-            <div class="selector-grid" id="wine-grid"></div>
+          <div class="pairing-divider"><span>or</span></div>
+
+          <!-- Wine → Food -->
+          <div class="pairing-col">
+            <div class="pairing-col-icon"><svg viewBox="0 0 24 24" width="32" height="32" fill="none" stroke="currentColor" stroke-width="1.2"><path d="M8 22h8M12 15v7M12 15a5 5 0 0 0 5-5c0-2-.5-4-2-8H9c-1.5 4-2 6-2 8a5 5 0 0 0 5 5Z"/></svg></div>
+            <h2 class="pairing-col-title">I Have a Wine</h2>
+            <p class="pairing-col-desc">Tell us what you're drinking and we'll suggest the best dishes to pair with it.</p>
+            <input type="text" class="pairing-input" id="pairing-wine-input" placeholder="e.g. Pinot Noir, Barolo, Sancerre, Chablis" />
+            <button class="pairing-submit-btn" id="pairing-wine-btn">Find Food Pairings</button>
           </div>
 
-          <div class="pairing-selector" id="food-selector" style="display:none">
-            <h3>Select a Dish or Ingredient</h3>
-            <div class="selector-grid" id="food-grid"></div>
+        </div>
+
+        <!-- Results -->
+        <div class="pairing-results" id="pairing-results">
+          <div class="pairing-placeholder">
+            <p>Enter a dish or wine above to get sommelier-curated pairing recommendations with explanations of why they work.</p>
           </div>
         </div>
 
-        <div class="pairing-results" id="pairing-results">
-          <div class="pairing-placeholder">
-            <div class="placeholder-icon"><svg viewBox="0 0 24 24" width="28" height="28" fill="none" stroke="currentColor" stroke-width="1.2"><path d="M8 22h8M12 15v7M12 15a5 5 0 0 0 5-5c0-2-.5-4-2-8H9c-1.5 4-2 6-2 8a5 5 0 0 0 5 5Z"/></svg></div>
-            <h3>Make a Selection</h3>
-            <p>Choose a wine style or food to see pairing suggestions with explanations of why they work.</p>
+        <!-- Pairing Principles -->
+        <div class="pairing-principles">
+          <h3 class="pairing-principles-title">Pairing Principles</h3>
+          <div class="pairing-principles-grid">
+            <div class="pairing-principle">
+              <strong>Acidity Balances Richness</strong>
+              <p>High-acidity wines cut through rich, fatty foods — preventing palate fatigue.</p>
+            </div>
+            <div class="pairing-principle">
+              <strong>Tannin Meets Fat</strong>
+              <p>Wine tannins bind with fat molecules, creating structure. More tannins work with richer meats.</p>
+            </div>
+            <div class="pairing-principle">
+              <strong>Match Weight</strong>
+              <p>Light wines with delicate dishes, full-bodied wines with rich food. Mismatched weights create imbalance.</p>
+            </div>
+            <div class="pairing-principle">
+              <strong>Echo Flavors</strong>
+              <p>When wine and food share flavor notes (herbs, citrus, earth), both are elevated.</p>
+            </div>
+            <div class="pairing-principle">
+              <strong>Contrast Creates Excitement</strong>
+              <p>Sweet wine with spicy food, crisp wine with creamy dishes — opposites can create dynamic tension.</p>
+            </div>
+            <div class="pairing-principle">
+              <strong>Regional Harmony</strong>
+              <p>Wines and foods from the same region pair naturally — they evolved together over centuries.</p>
+            </div>
           </div>
         </div>
       </div>
@@ -2615,6 +2653,7 @@
   <script src="https://cdn.jsdelivr.net/npm/topojson-client@3/dist/topojson-client.min.js"></script>
   <script src="js/wine-regions.js"></script>
   <script src="js/food-pairing.js"></script>
+  <script src="js/pairing-explorer.js"></script>
   <script src="js/chatbot.js"></script>
   <script src="js/wine-analyzer.js"></script>
   <script src="js/ca-wine-trip.js"></script>

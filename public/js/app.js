@@ -78,7 +78,7 @@ document.addEventListener('DOMContentLoaded', () => {
     }
     if (sectionId === 'pairing' && !window._pairingInit) {
       window._pairingInit = true;
-      window.foodPairing && window.foodPairing.init();
+      // Food pairing now handled by pairing-explorer.js
     }
     if (sectionId === 'analyzer' && !window._analyzerInit) {
       window._analyzerInit = true;
@@ -183,7 +183,7 @@ document.addEventListener('DOMContentLoaded', () => {
   // ── Initialize all components on load ──────────────────
   window.chatBot       = new ChatBot();
   window.wineRegions   = new WineRegions();
-  window.foodPairing   = new FoodPairing();
+  // FoodPairing replaced by pairing-explorer.js
   window.wineAnalyzer  = new WineAnalyzer();
   window.caTripPlanner = new CaTripPlanner();
 

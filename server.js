@@ -313,6 +313,53 @@ app.post('/api/study/podcast', async (req, res) => {
   }
 });
 
+// Food & Wine Pairing recommendations
+app.post('/api/pairing', async (req, res) => {
+  const { type, query } = req.body; // type: 'food-to-wine' or 'wine-to-food'
+  if (!query) return res.status(400).json({ error: 'Query is required' });
+  if (!process.env.ANTHROPIC_API_KEY) return res.status(500).json({ error: 'API key not configured' });
+
+  const direction = type === 'wine-to-food' ? 'food dishes' : 'wines';
+  const input = type === 'wine-to-food' ? 'wine' : 'dish/food';
+
+  const prompt = `You are a certified sommelier providing food and wine pairing recommendations. The user has a ${input}: "${query}". Recommend 4 ${direction} that pair well with it.
+
+For each recommendation, explain WHY the pairing works using professional sommelier principles (acidity, tannin-fat interaction, flavor echoing, weight matching, contrast, regional harmony).
+
+Respond ONLY with valid JSON:
+{
+  "input": "${query}",
+  "type": "${type}",
+  "recommendations": [
+    {
+      "rank": 1,
+      "label": "Best Pairing",
+      "name": "Name of wine or dish",
+      "region": "Region if wine, or cuisine if food",
+      "why": "2-3 sentence explanation of why this pairing works, referencing specific flavors, textures, and pairing principles.",
+      "principles": ["Acidity balances richness", "Flavor echoing with herbs"],
+      "tips": "One practical sommelier tip for this pairing.",
+      "price": "$15-30 (if wine recommendation)"
+    }
+  ]
+}
+
+Labels for rank 1-4: "Best Pairing", "Classic Alternative", "Best Value", "Adventurous Pick".
+Only recommend pairings documented in professional sources (CMS, WSET, Wine Spectator, Decanter). Be specific about flavors and textures.`;
+
+  try {
+    const message = await anthropic.messages.create({
+      model: 'claude-sonnet-4-6', max_tokens: 2048, temperature: 0,
+      messages: [{ role: 'user', content: prompt }],
+    });
+    const raw = message.content[0].text.trim().replace(/^```(?:json)?\s*/i, '').replace(/\s*```\s*$/i, '');
+    res.json(JSON.parse(raw));
+  } catch (err) {
+    console.error('Pairing error:', err.message);
+    res.status(500).json({ error: 'Failed to generate pairings. Please try again.' });
+  }
+});
+
 // Subscribe to daily wine emails — adds contact to Mailchimp
 app.post('/api/subscribe', async (req, res) => {
   const { email, name, level, topics } = req.body;
