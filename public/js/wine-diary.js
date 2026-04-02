@@ -186,35 +186,76 @@ document.addEventListener('DOMContentLoaded', () => {
   }
 
   // ── Quick Scan ──────────────────────────────────────────
-  const scanInput = document.getElementById('diary-scan-input');
-  const scanPreviews = document.getElementById('diary-scan-previews');
-  const scanBtn = document.getElementById('diary-scan-btn');
-  const scanStatus = document.getElementById('diary-scan-status');
-  const scanResults = document.getElementById('diary-scan-results');
   let scanImages = [];
+  let scanDates = []; // extracted from EXIF or file metadata
 
-  if (scanInput) {
-    scanInput.addEventListener('change', (e) => {
-      const files = Array.from(e.target.files);
-      if (!files.length) return;
+  function initScan() {
+    const scanInput = document.getElementById('diary-scan-input');
+    const scanPreviews = document.getElementById('diary-scan-previews');
+    const scanBtn = document.getElementById('diary-scan-btn');
+    const scanStatus = document.getElementById('diary-scan-status');
+    const scanResults = document.getElementById('diary-scan-results');
+    const dropzone = document.getElementById('diary-scan-dropzone');
+    if (!scanInput || !scanBtn) return;
 
-      files.forEach(file => {
+    // Extract date from image EXIF (basic approach via file lastModified)
+    function getPhotoDate(file) {
+      // Use file's lastModified as best proxy for photo date
+      if (file.lastModified) {
+        return new Date(file.lastModified).toISOString().split('T')[0];
+      }
+      return new Date().toISOString().split('T')[0];
+    }
+
+    function addFiles(files) {
+      Array.from(files).forEach(file => {
+        if (!file.type.startsWith('image/')) return;
+        const photoDate = getPhotoDate(file);
         const reader = new FileReader();
         reader.onload = (ev) => {
+          const idx = scanImages.length;
           scanImages.push(ev.target.result);
-          const img = document.createElement('img');
-          img.src = ev.target.result;
-          img.className = 'diary-scan-thumb';
-          img.alt = 'Wine bottle photo';
-          scanPreviews.appendChild(img);
+          scanDates.push(photoDate);
+
+          // Create thumb with X button
+          const wrap = document.createElement('div');
+          wrap.className = 'diary-scan-thumb-wrap';
+          wrap.dataset.idx = idx;
+          wrap.innerHTML = `<img src="${ev.target.result}" class="diary-scan-thumb" alt="Wine bottle photo" /><button class="diary-scan-thumb-remove" title="Remove">&times;</button>`;
+          wrap.querySelector('.diary-scan-thumb-remove').addEventListener('click', (e) => {
+            e.stopPropagation();
+            scanImages[idx] = null;
+            scanDates[idx] = null;
+            wrap.remove();
+            // Disable scan if no images left
+            if (scanImages.filter(Boolean).length === 0) scanBtn.disabled = true;
+          });
+          scanPreviews.appendChild(wrap);
           scanBtn.disabled = false;
         };
         reader.readAsDataURL(file);
       });
+    }
+
+    scanInput.addEventListener('change', (e) => {
+      addFiles(e.target.files);
+      scanInput.value = ''; // reset so same file can be re-selected
     });
 
+    // Drag and drop
+    if (dropzone) {
+      dropzone.addEventListener('dragover', (e) => { e.preventDefault(); dropzone.style.borderColor = 'var(--gold)'; });
+      dropzone.addEventListener('dragleave', () => { dropzone.style.borderColor = ''; });
+      dropzone.addEventListener('drop', (e) => {
+        e.preventDefault();
+        dropzone.style.borderColor = '';
+        addFiles(e.dataTransfer.files);
+      });
+    }
+
     scanBtn.addEventListener('click', async () => {
-      if (!scanImages.length) return;
+      const activeImages = scanImages.filter(Boolean);
+      if (!activeImages.length) return;
 
       scanBtn.disabled = true;
       scanBtn.textContent = 'Scanning...';
@@ -225,12 +266,12 @@ document.addEventListener('DOMContentLoaded', () => {
         const res = await fetch('/api/scan-bottles', {
           method: 'POST',
           headers: { 'Content-Type': 'application/json' },
-          body: JSON.stringify({ images: scanImages }),
+          body: JSON.stringify({ images: activeImages }),
         });
 
         if (!res.ok) {
-          const err = await res.json();
-          throw new Error(err.error || 'Scan failed');
+          const errData = await res.json().catch(() => ({ error: `Server error (${res.status})` }));
+          throw new Error(errData.error || 'Scan failed');
         }
 
         const data = await res.json();
@@ -240,33 +281,30 @@ document.addEventListener('DOMContentLoaded', () => {
           scanStatus.textContent = 'No bottles could be identified. Try a clearer photo.';
         } else {
           scanStatus.textContent = `Found ${bottles.length} bottle${bottles.length > 1 ? 's' : ''}.`;
-          renderScanResults(bottles);
+          renderScanResults(bottles, scanResults);
         }
       } catch (err) {
         scanStatus.textContent = 'Error: ' + err.message;
+        console.error('Scan error:', err);
       }
 
       scanBtn.textContent = 'Scan Bottles';
-      scanBtn.disabled = scanImages.length === 0;
-    });
-
-    // Drag and drop
-    const dropzone = document.getElementById('diary-scan-dropzone');
-    dropzone.addEventListener('dragover', (e) => { e.preventDefault(); dropzone.style.borderColor = 'var(--gold)'; });
-    dropzone.addEventListener('dragleave', () => { dropzone.style.borderColor = ''; });
-    dropzone.addEventListener('drop', (e) => {
-      e.preventDefault();
-      dropzone.style.borderColor = '';
-      scanInput.files = e.dataTransfer.files;
-      scanInput.dispatchEvent(new Event('change'));
+      scanBtn.disabled = scanImages.filter(Boolean).length === 0;
     });
   }
 
-  function renderScanResults(bottles) {
+  function renderScanResults(bottles, scanResults) {
+    // Use earliest photo date as default
+    const defaultDate = scanDates.filter(Boolean)[0] || new Date().toISOString().split('T')[0];
+
     scanResults.innerHTML = bottles.map((b, i) => `
       <div class="scan-bottle-card">
         <div class="scan-bottle-name">${b.name || 'Unknown Wine'}</div>
         <div class="scan-bottle-meta">${[b.producer, b.vintage, b.region, b.grape, b.type].filter(Boolean).join(' · ')}</div>
+        <div class="scan-bottle-date-row">
+          <label class="scan-bottle-date-label">Date tasted</label>
+          <input type="date" class="scan-bottle-date" data-scan-idx="${i}" value="${defaultDate}" />
+        </div>
         <div class="scan-bottle-grid">
           ${b.price_range ? `<div class="scan-bottle-field"><span class="scan-bottle-field-label">Price</span><span class="scan-bottle-field-value">${b.price_range}</span></div>` : ''}
           ${b.rating ? `<div class="scan-bottle-field"><span class="scan-bottle-field-label">Rating</span><span class="scan-bottle-field-value">${b.rating}</span></div>` : ''}
@@ -286,17 +324,19 @@ document.addEventListener('DOMContentLoaded', () => {
       btn.addEventListener('click', () => {
         const idx = parseInt(btn.dataset.scanIdx);
         const b = bottles[idx];
+        const dateInput = scanResults.querySelector(`.scan-bottle-date[data-scan-idx="${idx}"]`);
+        const date = dateInput ? dateInput.value : defaultDate;
         const entry = {
           id: Date.now() + idx,
           name: b.name || 'Unknown Wine',
           producer: b.producer || '',
           region: b.region || '',
-          date: new Date().toISOString().split('T')[0],
+          date: date,
           rating: 0,
           occasion: '',
           notes: b.tasting_notes || '',
           review: [b.rating, b.price_range, b.sommelier_note].filter(Boolean).join(' · '),
-          photo: scanImages[0] || null,
+          photo: scanImages.filter(Boolean)[0] || null,
         };
         entries.unshift(entry);
         saveEntries();
@@ -308,6 +348,9 @@ document.addEventListener('DOMContentLoaded', () => {
       });
     });
   }
+
+  // Init scan on load and also when diary tab becomes active
+  initScan();
 
   // Reload when user signs in/out
   window.addEventListener('sommplicity-auth-change', () => loadEntries());

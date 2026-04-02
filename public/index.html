@@ -106,8 +106,14 @@
             <a class="topnav-menu-item" data-section="regions">Wine Regions of the World</a>
           </div>
         </div>
-        <!-- Study -->
-        <a class="topnav-link" data-section="study">Study</a>
+        <!-- Study dropdown -->
+        <div class="topnav-dropdown">
+          <button class="topnav-link topnav-link--has-menu">Study</button>
+          <div class="topnav-menu">
+            <a class="topnav-menu-item" data-section="study">Classes &amp; Certifications</a>
+            <a class="topnav-menu-item" data-section="cmsprep">Certified Sommelier Prep</a>
+          </div>
+        </div>
         <!-- Wine Country dropdown -->
         <div class="topnav-dropdown">
           <button class="topnav-link topnav-link--has-menu">Visit</button>
@@ -161,6 +167,7 @@
 
       <span class="mobile-nav-group">Study</span>
       <a class="mobile-nav-link" data-section="study">Classes &amp; Certifications</a>
+      <a class="mobile-nav-link" data-section="cmsprep">Certified Sommelier Prep</a>
 
       <span class="mobile-nav-group">Visit</span>
       <a class="mobile-nav-link" data-section="catrip">Plan a California Trip</a>
@@ -519,53 +526,19 @@
       <div class="section-header">
         <h1>Explore Classes &amp; Certifications</h1>
         <span class="section-tagline">Find the right path for your wine education</span>
-        <p>Whether you're studying for an exam, sharpening your blind tasting, or exploring wine casually — here's how the major programs compare.</p>
+        <p>Compare the major certification programs or jump into study tools for your next exam.</p>
       </div>
       <div class="study-scroll">
         <div class="study-body">
 
-          <!-- Track Cards -->
-          <div class="study-tracks">
+          <!-- Formal Education: 3 columns -->
+          <h2 class="study-section-heading">Formal Education</h2>
+          <p class="study-section-desc">The three globally recognized wine certification bodies, side by side.</p>
+          <div class="study-tracks study-tracks-3col">
 
-            <!-- 1. Online & Local Classes -->
+            <!-- WSET -->
             <div class="study-track">
               <div class="study-track-header">
-                <span class="study-track-number">01</span>
-                <h2 class="study-track-title">Online &amp; Local Classes</h2>
-                <span class="study-track-tag">Short-term &amp; Flexible</span>
-              </div>
-              <p class="study-track-who"><strong>Best for:</strong> Enthusiasts, casual learners, anyone wanting to deepen knowledge without a formal certification commitment.</p>
-              <p class="study-track-desc">Focused, short-term classes on specific topics — blind tasting, regional deep dives, food pairing, sensory training. Varying commitment levels from one-evening workshops to multi-week courses. Available online and in-person at wine schools, shops, and community education centers.</p>
-              <div class="study-track-details">
-                <div class="study-detail">
-                  <span class="study-detail-label">Time Commitment</span>
-                  <span class="study-detail-value">1 evening to 6 weeks, depending on the class</span>
-                </div>
-                <div class="study-detail">
-                  <span class="study-detail-label">Cost</span>
-                  <span class="study-detail-value">$30 &ndash; $300 per class</span>
-                </div>
-                <div class="study-detail">
-                  <span class="study-detail-label">Exam</span>
-                  <span class="study-detail-value">None &mdash; learning for the sake of learning</span>
-                </div>
-                <div class="study-detail">
-                  <span class="study-detail-label">Study Approach</span>
-                  <span class="study-detail-value">Attend, taste, take notes. No formal study required.</span>
-                </div>
-              </div>
-              <div class="study-track-links">
-                <a href="https://www.guildsomm.com/" target="_blank" rel="noopener">GuildSomm (online)</a>
-                <a href="https://winefolly.com/wine-101/" target="_blank" rel="noopener">Wine Folly courses</a>
-                <a href="https://www.localwineevents.com/" target="_blank" rel="noopener">Find local tastings &amp; classes</a>
-                <a href="https://www.masterclass.com/" target="_blank" rel="noopener">MasterClass wine courses</a>
-              </div>
-            </div>
-
-            <!-- 2. WSET -->
-            <div class="study-track">
-              <div class="study-track-header">
-                <span class="study-track-number">02</span>
                 <h2 class="study-track-title">WSET</h2>
                 <span class="study-track-tag">Structured &amp; Global</span>
               </div>
@@ -608,84 +581,29 @@
               </div>
             </div>
 
-            <!-- 3. Court of Master Sommeliers -->
-            <div class="study-track study-track-full">
+            <!-- Court of Master Sommeliers -->
+            <div class="study-track">
               <div class="study-track-header">
-                <span class="study-track-number">03</span>
                 <h2 class="study-track-title">Court of Master Sommeliers</h2>
                 <span class="study-track-tag">Industry &amp; Service</span>
               </div>
-              <p class="study-track-who"><strong>Best for:</strong> Industry professionals working in restaurants, hotels, and hospitality. The CMS emphasizes real-world service skills alongside wine knowledge.</p>
-              <p class="study-track-desc">Less structured curriculum than WSET &mdash; there is no official textbook or coursework. You learn by tasting, working the floor, studying independently, and joining tasting groups. The culture is apprenticeship-driven: you learn from other sommeliers, not from a classroom.</p>
-
-              <h3 class="study-exam-area-title">The Certified Sommelier Exam: 3 Areas</h3>
-              <div class="study-exam-areas">
-
-                <!-- Theory -->
-                <div class="study-exam-area">
-                  <h4>Theory</h4>
-                  <p>25-minute verbal Q&amp;A covering wine regions, grape varieties, classification systems, winemaking, spirits, beer, sake, and service knowledge. Questions are direct and factual &mdash; no multiple choice.</p>
-                  <div class="study-prep">
-                    <span class="study-prep-label">How to Prepare</span>
-                    <ul>
-                      <li>Study GuildSomm's Certified Sommelier study guide cover to cover</li>
-                      <li>Memorize key appellations, allowed grapes, and classification hierarchies (AOC, DOC, AVA)</li>
-                      <li>Make flashcards by region: France, Italy, Spain, Germany, New World</li>
-                      <li>Practice answering questions out loud (the exam is verbal, not written)</li>
-                      <li>Know spirits categories, classic cocktails, beer styles, and sake grades</li>
-                      <li>Study maps &mdash; be able to locate every major wine region on a blank map</li>
-                    </ul>
-                  </div>
-                </div>
-
-                <!-- Blind Tasting -->
-                <div class="study-exam-area">
-                  <h4>Blind Tasting</h4>
-                  <p>Deductive analysis of two wines (one red, one white) using the CMS Deductive Tasting Method. You must describe appearance, nose, palate, and provide an initial and final conclusion identifying the grape, region, and vintage.</p>
-                  <div class="study-prep">
-                    <span class="study-prep-label">How to Prepare</span>
-                    <ul>
-                      <li>Taste blind 3&ndash;5 times per week in a structured tasting group</li>
-                      <li>Use the <a href="https://www.mastersommeliers.org/sites/default/files/Deductive%20Tasting%20Format%202017_0.pdf" target="_blank" rel="noopener">CMS Deductive Tasting Grid</a> every time you taste</li>
-                      <li>Build a reference library of classic grapes: Cabernet, Pinot Noir, Syrah, Chardonnay, Sauvignon Blanc, Riesling</li>
-                      <li>Calibrate with tasting partners &mdash; compare descriptors and conclusions</li>
-                      <li>Focus on structural markers: acidity, tannin, alcohol, body, finish length</li>
-                      <li>Taste the same wine at different temperatures and in different glasses</li>
-                    </ul>
-                  </div>
-                </div>
-
-                <!-- Service -->
-                <div class="study-exam-area">
-                  <h4>Service</h4>
-                  <p>Live tableside service scenario: open and present a bottle of still wine and a bottle of sparkling wine, handle guest questions, make pairing recommendations, and manage the table with professionalism and poise.</p>
-                  <div class="study-prep">
-                    <span class="study-prep-label">How to Prepare</span>
-                    <ul>
-                      <li>Practice opening wine and sparkling tableside until it's automatic</li>
-                      <li>Rehearse the full sequence: greet, present, open, pour, check back</li>
-                      <li>Practice handling objections (corked wine, wrong temperature, guest doesn't like the wine)</li>
-                      <li>Know classic food and wine pairings and be ready to suggest alternatives</li>
-                      <li>Work the floor in a restaurant if possible &mdash; real service experience is invaluable</li>
-                      <li>Study beverage menu construction, wine list organization, and by-the-glass programs</li>
-                    </ul>
-                  </div>
-                </div>
-
+              <p class="study-track-who"><strong>Best for:</strong> Industry professionals in restaurants, hotels, and hospitality. Emphasizes service skills alongside wine knowledge.</p>
+              <p class="study-track-desc">Apprenticeship-driven — no official textbook. You learn by tasting, working the floor, and joining tasting groups. Exam tests theory (verbal), blind tasting, and tableside service.</p>
+              <div class="study-levels">
+                <div class="study-level"><h3>Introductory</h3><span class="study-level-meta">2 days &middot; ~$600 &middot; Multiple choice</span></div>
+                <div class="study-level"><h3>Certified Sommelier</h3><span class="study-level-meta">Self-study &middot; ~$600 &middot; Theory + blind + service</span></div>
+                <div class="study-level"><h3>Advanced</h3><span class="study-level-meta">1&ndash;2 yrs &middot; ~$900 &middot; Essay + 6-wine blind + service</span></div>
+                <div class="study-level"><h3>Master Sommelier</h3><span class="study-level-meta">Years &middot; ~$1,200 &middot; Only ~270 have ever passed</span></div>
               </div>
-
               <div class="study-track-links">
-                <a href="https://www.mastersommeliers.org/courses-and-schedules" target="_blank" rel="noopener">CMS courses &amp; exam schedule</a>
-                <a href="https://www.mastersommeliers.org/sites/default/files/Deductive%20Tasting%20Format%202017_0.pdf" target="_blank" rel="noopener">CMS Blind Tasting Grid (PDF)</a>
-                <a href="https://www.guildsomm.com/" target="_blank" rel="noopener">GuildSomm &mdash; study resources</a>
-                <a href="https://www.sommsayapp.com/" target="_blank" rel="noopener">SommSay blind tasting app</a>
+                <a href="https://www.mastersommeliers.org/courses-and-schedules" target="_blank" rel="noopener">CMS courses &amp; schedule</a>
+                <a href="#" class="study-go-to-prep" data-section="cmsprep">Certified Exam Prep &amp; Study Tools</a>
               </div>
             </div>
 
-            <!-- 4. Society of Wine Educators -->
+            <!-- Society of Wine Educators -->
             <div class="study-track">
               <div class="study-track-header">
-                <span class="study-track-number">04</span>
                 <h2 class="study-track-title">Society of Wine Educators</h2>
                 <span class="study-track-tag">Knowledge &amp; Teaching</span>
               </div>
@@ -720,70 +638,174 @@
 
           </div>
 
-          <!-- ── Study Tools ── -->
-          <div class="study-tools">
-            <h2 class="study-tools-title">Theory Practice</h2>
-            <p class="study-tools-desc">All content generated from trusted wine sources (GuildSomm, The Oxford Companion to Wine, Wine Scholar Guild, Jancis Robinson) at Certified Sommelier exam level. Factual, verified, no creative embellishment.</p>
+        </div>
+      </div>
+    </section>
 
-            <!-- Tool Selector -->
+    <!-- ═══════════════════════════════════════════
+         SECTION: Certified Sommelier Exam Prep
+    ════════════════════════════════════════════ -->
+    <section class="section" id="cmsprep-section">
+      <div class="section-header">
+        <h1>Certified Sommelier Prep</h1>
+        <span class="section-tagline">Study tools for the Court of Master Sommeliers Certified exam</span>
+        <p>Theory, blind tasting, and service — exam details, preparation guides, and AI-powered study tools from trusted sources.</p>
+      </div>
+      <div class="study-scroll">
+        <div class="study-body">
+
+          <!-- Exam Areas -->
+          <h2 class="study-section-heading">The Certified Exam: 3 Areas</h2>
+          <div class="study-exam-areas">
+            <div class="study-exam-area">
+              <h4>Theory</h4>
+              <p>25-minute verbal Q&amp;A covering wine regions, grape varieties, classification systems, winemaking, spirits, beer, sake, and service knowledge.</p>
+              <div class="study-prep">
+                <span class="study-prep-label">How to Prepare</span>
+                <ul>
+                  <li>Study GuildSomm's Certified Sommelier study guide cover to cover</li>
+                  <li>Memorize key appellations, allowed grapes, and classification hierarchies</li>
+                  <li>Make flashcards by region: France, Italy, Spain, Germany, New World</li>
+                  <li>Practice answering questions out loud (the exam is verbal)</li>
+                  <li>Know spirits categories, classic cocktails, beer styles, and sake grades</li>
+                  <li>Study maps &mdash; locate every major wine region on a blank map</li>
+                </ul>
+              </div>
+            </div>
+            <div class="study-exam-area">
+              <h4>Blind Tasting</h4>
+              <p>Deductive analysis of two wines (one red, one white) using the CMS Deductive Tasting Method. Describe appearance, nose, palate, and provide conclusions.</p>
+              <div class="study-prep">
+                <span class="study-prep-label">How to Prepare</span>
+                <ul>
+                  <li>Taste blind 3&ndash;5 times per week in a tasting group</li>
+                  <li>Use the <a href="https://www.mastersommeliers.org/sites/default/files/Deductive%20Tasting%20Format%202017_0.pdf" target="_blank" rel="noopener">CMS Deductive Tasting Grid</a></li>
+                  <li>Build a reference library: Cabernet, Pinot Noir, Syrah, Chardonnay, Sauvignon Blanc, Riesling</li>
+                  <li>Focus on structural markers: acidity, tannin, alcohol, body, finish</li>
+                </ul>
+              </div>
+            </div>
+            <div class="study-exam-area">
+              <h4>Service</h4>
+              <p>Tableside service: open still and sparkling wine, handle guest questions, make pairing recommendations, manage the table with professionalism.</p>
+              <div class="study-prep">
+                <span class="study-prep-label">How to Prepare</span>
+                <ul>
+                  <li>Practice opening wine and sparkling tableside until automatic</li>
+                  <li>Rehearse the full sequence: greet, present, open, pour, check back</li>
+                  <li>Practice handling objections and know classic food pairings</li>
+                  <li>Work the floor in a restaurant if possible</li>
+                </ul>
+              </div>
+            </div>
+          </div>
+
+          <!-- Study Tools -->
+          <div class="study-tools">
+            <h2 class="study-tools-title">Study Tools</h2>
+            <p class="study-tools-desc">AI-generated from trusted sources (GuildSomm, Oxford Companion, Wine Scholar Guild, Jancis Robinson). Certified Sommelier exam level. Factual only.</p>
+
             <div class="study-tool-tabs">
               <button class="study-tool-tab active" data-tool="flashcards">Flashcards</button>
               <button class="study-tool-tab" data-tool="quiz">Quiz</button>
               <button class="study-tool-tab" data-tool="podcast">Podcast</button>
             </div>
 
-            <!-- Topic Selector (shared) -->
+            <!-- Topic: pick from presets OR type custom -->
             <div class="study-topic-selector">
               <div class="study-topic-row">
                 <label class="study-topic-label">Category</label>
                 <select class="study-select" id="study-category">
                   <option value="region">Wine Region</option>
                   <option value="grape">Grape Varietal</option>
-                  <option value="concept">Concept (Terroir, Oak, Fermentation...)</option>
-                  <option value="producers">Producers &amp; Ch&acirc;teaux</option>
+                  <option value="concept">Concept</option>
+                  <option value="producers">Producers</option>
                   <option value="service">Service &amp; Pairing</option>
                   <option value="spirits">Spirits, Beer &amp; Sake</option>
                 </select>
               </div>
               <div class="study-topic-row">
-                <label class="study-topic-label">Specific Topic</label>
+                <label class="study-topic-label">Topic <span style="font-weight:300;font-style:italic;text-transform:none;letter-spacing:0">&mdash; pick below or type your own</span></label>
                 <input type="text" class="study-input" id="study-topic" placeholder="e.g. Burgundy, Nebbiolo, Malolactic Fermentation" />
+              </div>
+            </div>
+
+            <!-- Clickable topic presets by category -->
+            <div class="study-presets-all" id="study-presets-all">
+              <div class="study-presets" data-for="region">
+                <button class="study-preset-btn" data-cat="region" data-topic="Bordeaux">Bordeaux</button>
+                <button class="study-preset-btn" data-cat="region" data-topic="Burgundy">Burgundy</button>
+                <button class="study-preset-btn" data-cat="region" data-topic="Northern Rhône">N. Rh&ocirc;ne</button>
+                <button class="study-preset-btn" data-cat="region" data-topic="Southern Rhône">S. Rh&ocirc;ne</button>
+                <button class="study-preset-btn" data-cat="region" data-topic="Champagne">Champagne</button>
+                <button class="study-preset-btn" data-cat="region" data-topic="Loire Valley">Loire</button>
+                <button class="study-preset-btn" data-cat="region" data-topic="Alsace">Alsace</button>
+                <button class="study-preset-btn" data-cat="region" data-topic="Piedmont">Piedmont</button>
+                <button class="study-preset-btn" data-cat="region" data-topic="Tuscany">Tuscany</button>
+                <button class="study-preset-btn" data-cat="region" data-topic="Rioja &amp; Spain">Spain</button>
+                <button class="study-preset-btn" data-cat="region" data-topic="Germany (Mosel, Rheingau)">Germany</button>
+                <button class="study-preset-btn" data-cat="region" data-topic="Napa Valley">Napa</button>
+                <button class="study-preset-btn" data-cat="region" data-topic="Sonoma County">Sonoma</button>
+                <button class="study-preset-btn" data-cat="region" data-topic="Oregon (Willamette Valley)">Oregon</button>
+                <button class="study-preset-btn" data-cat="region" data-topic="Australia (Barossa, McLaren Vale)">Australia</button>
+                <button class="study-preset-btn" data-cat="region" data-topic="New Zealand (Marlborough, Central Otago)">New Zealand</button>
+                <button class="study-preset-btn" data-cat="region" data-topic="Argentina (Mendoza)">Argentina</button>
+                <button class="study-preset-btn" data-cat="region" data-topic="South Africa (Stellenbosch)">South Africa</button>
+              </div>
+              <div class="study-presets" data-for="grape" style="display:none">
+                <button class="study-preset-btn" data-cat="grape" data-topic="Cabernet Sauvignon">Cab Sauv</button>
+                <button class="study-preset-btn" data-cat="grape" data-topic="Pinot Noir">Pinot Noir</button>
+                <button class="study-preset-btn" data-cat="grape" data-topic="Syrah / Shiraz">Syrah</button>
+                <button class="study-preset-btn" data-cat="grape" data-topic="Merlot">Merlot</button>
+                <button class="study-preset-btn" data-cat="grape" data-topic="Nebbiolo">Nebbiolo</button>
+                <button class="study-preset-btn" data-cat="grape" data-topic="Sangiovese">Sangiovese</button>
+                <button class="study-preset-btn" data-cat="grape" data-topic="Tempranillo">Tempranillo</button>
+                <button class="study-preset-btn" data-cat="grape" data-topic="Chardonnay">Chardonnay</button>
+                <button class="study-preset-btn" data-cat="grape" data-topic="Sauvignon Blanc">Sauv Blanc</button>
+                <button class="study-preset-btn" data-cat="grape" data-topic="Riesling">Riesling</button>
+                <button class="study-preset-btn" data-cat="grape" data-topic="Chenin Blanc">Chenin Blanc</button>
+                <button class="study-preset-btn" data-cat="grape" data-topic="Grenache / Garnacha">Grenache</button>
+              </div>
+              <div class="study-presets" data-for="concept" style="display:none">
+                <button class="study-preset-btn" data-cat="concept" data-topic="Classification Systems (AOC, DOC, AVA)">Classifications</button>
+                <button class="study-preset-btn" data-cat="concept" data-topic="Terroir and Climate">Terroir</button>
+                <button class="study-preset-btn" data-cat="concept" data-topic="Oak Aging and Barrel Types">Oak Aging</button>
+                <button class="study-preset-btn" data-cat="concept" data-topic="Malolactic Fermentation">MLF</button>
+                <button class="study-preset-btn" data-cat="concept" data-topic="Sparkling Wine Production Methods">Sparkling</button>
+                <button class="study-preset-btn" data-cat="concept" data-topic="Fortified Wines (Port, Sherry, Madeira)">Fortified</button>
+              </div>
+              <div class="study-presets" data-for="service" style="display:none">
+                <button class="study-preset-btn" data-cat="service" data-topic="Wine Service and Tableside Presentation">Tableside</button>
+                <button class="study-preset-btn" data-cat="service" data-topic="Classic Food and Wine Pairing Principles">Pairings</button>
+                <button class="study-preset-btn" data-cat="service" data-topic="Wine Storage, Temperature, and Glassware">Service Temp</button>
+              </div>
+              <div class="study-presets" data-for="spirits" style="display:none">
+                <button class="study-preset-btn" data-cat="spirits" data-topic="Spirits Categories and Production">Spirits</button>
+                <button class="study-preset-btn" data-cat="spirits" data-topic="Beer Styles and Brewing">Beer</button>
+                <button class="study-preset-btn" data-cat="spirits" data-topic="Sake Types and Service">Sake</button>
+                <button class="study-preset-btn" data-cat="spirits" data-topic="Classic Cocktails">Cocktails</button>
+              </div>
+              <div class="study-presets" data-for="producers" style="display:none">
+                <button class="study-preset-btn" data-cat="producers" data-topic="First Growth Bordeaux Châteaux">1st Growths</button>
+                <button class="study-preset-btn" data-cat="producers" data-topic="Grand Cru Burgundy Producers">Burgundy GC</button>
+                <button class="study-preset-btn" data-cat="producers" data-topic="Super Tuscan Producers">Super Tuscans</button>
+                <button class="study-preset-btn" data-cat="producers" data-topic="Top Napa Valley Cabernet Producers">Napa Cabs</button>
               </div>
             </div>
 
             <!-- Flashcards Panel -->
             <div class="study-panel" id="study-panel-flashcards">
-              <div class="study-presets">
-                <span class="study-presets-label">Quick Start</span>
-                <button class="study-preset-btn" data-cat="region" data-topic="Bordeaux">Bordeaux</button>
-                <button class="study-preset-btn" data-cat="region" data-topic="Burgundy">Burgundy</button>
-                <button class="study-preset-btn" data-cat="region" data-topic="Northern Rhône">N. Rh&ocirc;ne</button>
-                <button class="study-preset-btn" data-cat="region" data-topic="Piedmont">Piedmont</button>
-                <button class="study-preset-btn" data-cat="region" data-topic="Champagne">Champagne</button>
-                <button class="study-preset-btn" data-cat="grape" data-topic="Cabernet Sauvignon">Cab Sauv</button>
-                <button class="study-preset-btn" data-cat="grape" data-topic="Pinot Noir">Pinot Noir</button>
-                <button class="study-preset-btn" data-cat="concept" data-topic="Classification Systems">Classifications</button>
-              </div>
               <button class="study-generate-btn" id="generate-flashcards">Generate Flashcards</button>
               <div class="study-output" id="flashcard-output">
-                <div class="study-output-empty">Select a topic and generate flashcards to begin studying.</div>
+                <div class="study-output-empty">Pick a topic above, then generate flashcards.</div>
               </div>
             </div>
 
             <!-- Quiz Panel -->
             <div class="study-panel" id="study-panel-quiz" style="display:none">
-              <div class="study-presets">
-                <span class="study-presets-label">Quick Start</span>
-                <button class="study-preset-btn" data-cat="region" data-topic="Italy">Italy</button>
-                <button class="study-preset-btn" data-cat="region" data-topic="Spain">Spain</button>
-                <button class="study-preset-btn" data-cat="region" data-topic="Germany &amp; Alsace">Germany</button>
-                <button class="study-preset-btn" data-cat="grape" data-topic="Riesling">Riesling</button>
-                <button class="study-preset-btn" data-cat="concept" data-topic="Winemaking Techniques">Winemaking</button>
-                <button class="study-preset-btn" data-cat="spirits" data-topic="Spirits Categories">Spirits</button>
-              </div>
               <button class="study-generate-btn" id="generate-quiz">Generate Quiz</button>
               <div class="study-output" id="quiz-output">
-                <div class="study-output-empty">Select a topic and generate a quiz to test your knowledge.</div>
+                <div class="study-output-empty">Pick a topic above, then generate a quiz.</div>
               </div>
             </div>
 
@@ -800,14 +822,14 @@
               <div class="study-topic-row">
                 <label class="study-topic-label">Style</label>
                 <select class="study-select" id="podcast-style">
-                  <option value="lecture">Lecture (focused teaching)</option>
-                  <option value="conversational">Conversational (two hosts discussing)</option>
-                  <option value="quiz-show">Quiz Show (questions &amp; answers)</option>
+                  <option value="lecture">Lecture</option>
+                  <option value="conversational">Conversational</option>
+                  <option value="quiz-show">Quiz Show</option>
                 </select>
               </div>
               <button class="study-generate-btn" id="generate-podcast">Generate Podcast</button>
               <div class="study-output" id="podcast-output">
-                <div class="study-output-empty">Customize your podcast settings and generate an episode.</div>
+                <div class="study-output-empty">Pick a topic and settings, then generate a podcast.</div>
               </div>
             </div>
 
@@ -1315,10 +1337,7 @@
           <div class="catrip-results-state" id="catrip-results-state" style="display:none">
             <div class="results-top-bar">
               <span id="winery-count-label" class="results-count"></span>
-              <div class="results-top-actions">
-                <select class="sort-select" id="sort-select"><option value="match">Best Match</option><option value="somm">Sommelier Pick</option><option value="price-low">Price: Low to High</option><option value="price-high">Price: High to Low</option></select>
-                <button class="adjust-prefs-btn" id="back-to-map-btn">Adjust Preferences</button>
-              </div>
+              <button class="adjust-prefs-btn" id="back-to-map-btn">Adjust Preferences</button>
             </div>
             <div class="results-scroll" id="trip-results"></div>
             <div class="results-show-more" id="results-show-more" style="display:none"></div>
