@@ -2797,6 +2797,12 @@ code {
 .toggle-chip:hover { border-color: rgba(46,26,20,0.2); }
 .toggle-chip input { accent-color: var(--maroon); cursor: pointer; width: 12px; height: 12px; }
 
+.filter-tags-section { margin-top: 6px; }
+.filter-tags-grid {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 4px;
+}
 .filters-extra { margin-top: 6px; }
 /* Inline layout: label — track — label all on one line */
 .slider-inline-row {

@@ -4,8 +4,8 @@
 // ─── Filter Sliders ─────────────────────────────────────
 // PRIMARY FILTERS — always visible
 const TRIP_SLIDERS_PRIMARY = [
+  { id: 'budget', leftLabel: '$', rightLabel: '$$$$$', leftTags: ['best-value'], rightTags: ['splurge-price', 'award-winning'] },
   { id: 'vibe', leftLabel: 'Intimate & Family-Owned', rightLabel: 'Polished & Established', leftTags: ['small-batch', 'family-owned', 'hands-on-winemaker'], rightTags: ['group-tastings', 'award-winning', 'contemporary-design'] },
-  { id: 'budget', leftLabel: 'Budget-Friendly', rightLabel: 'Splurge-Worthy', leftTags: ['budget-price'], rightTags: ['splurge-price'] },
   { id: 'remoteness', leftLabel: 'Close to Town', rightLabel: 'Remote & Scenic', leftTags: ['fine-dining-nearby', 'walk-in-friendly'], rightTags: ['secluded', 'scenic-drive', 'mountain-views'] },
 ];
 // SECONDARY FILTERS — collapsible
@@ -614,20 +614,47 @@ class CaTripPlanner {
       secondaryList.style.display = isHidden ? 'flex' : 'none';
       secondaryWrap.querySelector('#toggle-secondary').textContent = isHidden ? 'Fewer preferences ▴' : 'More preferences ▾';
     });
-    const toggleSection = document.createElement('div');
-    toggleSection.className = 'practical-toggles';
-    toggleSection.innerHTML = '<div class="s-label" style="margin-bottom:4px">Practical</div><div class="toggle-row"><label class="toggle-chip"><input type="checkbox" class="badge-toggle" data-filter="walk-in" /> Allows Walk-Ins</label><label class="toggle-chip"><input type="checkbox" class="badge-toggle" data-filter="last-minute" /> Last Minute Friendly</label></div>';
-    container.appendChild(toggleSection);
-    toggleSection.querySelectorAll('.badge-toggle').forEach(cb => {
+    // Filter tags — comprehensive list below preferences
+    const filterSection = document.createElement('div');
+    filterSection.className = 'filter-tags-section';
+    filterSection.innerHTML = `
+      <div class="s-label" style="margin-bottom:6px">Filter by</div>
+      <div class="filter-tags-grid">
+        <label class="toggle-chip"><input type="checkbox" class="badge-toggle" data-filter="walk-in-friendly" /> Walk-In Friendly</label>
+        <label class="toggle-chip"><input type="checkbox" class="badge-toggle" data-filter="last-minute" /> Last Minute Friendly</label>
+        <label class="toggle-chip"><input type="checkbox" class="badge-toggle" data-filter="sommelier-pick" /> Sommelier Pick</label>
+        <label class="toggle-chip"><input type="checkbox" class="badge-toggle" data-filter="cult-following" /> Cult Following</label>
+        <label class="toggle-chip"><input type="checkbox" class="badge-toggle" data-filter="historic-estate" /> Historic Estate</label>
+        <label class="toggle-chip"><input type="checkbox" class="badge-toggle" data-filter="family-owned" /> Family-Owned</label>
+        <label class="toggle-chip"><input type="checkbox" class="badge-toggle" data-filter="organic-biodynamic" /> Organic/Biodynamic</label>
+        <label class="toggle-chip"><input type="checkbox" class="badge-toggle" data-filter="cellar-tour" /> Cellar Tour</label>
+        <label class="toggle-chip"><input type="checkbox" class="badge-toggle" data-filter="vineyard-tour" /> Vineyard Tour</label>
+        <label class="toggle-chip"><input type="checkbox" class="badge-toggle" data-filter="food-pairing" /> Food Pairing</label>
+        <label class="toggle-chip"><input type="checkbox" class="badge-toggle" data-filter="sunset-views" /> Sunset Views</label>
+        <label class="toggle-chip"><input type="checkbox" class="badge-toggle" data-filter="mountain-views" /> Mountain Views</label>
+        <label class="toggle-chip"><input type="checkbox" class="badge-toggle" data-filter="picnic-friendly" /> Picnic-Friendly</label>
+        <label class="toggle-chip"><input type="checkbox" class="badge-toggle" data-filter="best-value" /> Best Value</label>
+        <label class="toggle-chip"><input type="checkbox" class="badge-toggle" data-filter="hands-on-winemaker" /> Meet the Winemaker</label>
+        <label class="toggle-chip"><input type="checkbox" class="badge-toggle" data-filter="women-winemakers" /> Women Winemakers</label>
+        <label class="toggle-chip"><input type="checkbox" class="badge-toggle" data-filter="contemporary-design" /> Contemporary Design</label>
+        <label class="toggle-chip"><input type="checkbox" class="badge-toggle" data-filter="educational-tastings" /> Educational</label>
+        <label class="toggle-chip"><input type="checkbox" class="badge-toggle" data-filter="award-winning" /> Award-Winning</label>
+        <label class="toggle-chip"><input type="checkbox" class="badge-toggle" data-filter="small-batch" /> Small-Batch</label>
+      </div>
+    `;
+    container.appendChild(filterSection);
+    filterSection.querySelectorAll('.badge-toggle').forEach(cb => {
       cb.addEventListener('change', () => { if (cb.checked) this.badgeFilters.add(cb.dataset.filter); else this.badgeFilters.delete(cb.dataset.filter); });
     });
+
+    // Proximity + clear
     const extraSection = document.createElement('div');
     extraSection.innerHTML = '<div style="margin-top:6px"><div class="s-label" style="margin-bottom:4px">Close to</div><input type="text" id="proximity-input" class="logistics-input" placeholder="e.g. Healdsburg Plaza" style="font-size:0.68rem;padding:5px 10px" /></div><button class="clear-filters-btn" id="clear-all-filters">Clear all</button>';
     container.appendChild(extraSection);
     document.getElementById('clear-all-filters').addEventListener('click', () => {
       container.querySelectorAll('.trip-slider').forEach(s => { s.value = 50; this.sliderValues[s.dataset.sliderId] = 50; });
       this.badgeFilters.clear();
-      toggleSection.querySelectorAll('.badge-toggle').forEach(cb => { cb.checked = false; });
+      filterSection.querySelectorAll('.badge-toggle').forEach(cb => { cb.checked = false; });
       this.selectedRegion = null; this.selectedSubregion = null;
       document.querySelectorAll('.region-select-btn').forEach(b => b.classList.remove('active'));
       document.getElementById('subregion-panel').style.display = 'none';
