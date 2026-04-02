@@ -1,0 +1,2015 @@
+{
+  "producers": [
+    {
+      "id": "chateau-lafite-rothschild",
+      "name": "Chateau Lafite Rothschild",
+      "country": "France",
+      "region": "Bordeaux",
+      "subregion": "Pauillac",
+      "grapes": ["Cabernet Sauvignon", "Merlot", "Cabernet Franc", "Petit Verdot"],
+      "founded": "1234",
+      "philosophy": "Lafite pursues elegance above power, crafting wines of restraint and finesse from old vines on deep gravel soils. The estate favors long, gentle extraction and 18-20 months in mostly new French oak to achieve its signature silky texture.",
+      "wines": [
+        {"name": "Chateau Lafite Rothschild", "grape": "Cabernet Sauvignon", "notes": "Refined cassis, lead pencil, violet, and cedarwood. Ethereally textured with extraordinary length and precision."},
+        {"name": "Carruades de Lafite", "grape": "Cabernet Sauvignon", "notes": "Bright red fruit, graphite, and subtle spice. A more approachable echo of the Grand Vin with real depth."}
+      ],
+      "price": "luxury",
+      "tier": "legendary",
+      "tags": ["sommelier-pick", "historic-estate", "age-worthy", "elegant"],
+      "awards": "First Growth classification since 1855; consistently among the highest-scoring Bordeaux from Parker and Wine Spectator.",
+      "availability": "hard-to-find",
+      "website": "lafite.com"
+    },
+    {
+      "id": "chateau-latour",
+      "name": "Chateau Latour",
+      "country": "France",
+      "region": "Bordeaux",
+      "subregion": "Pauillac",
+      "grapes": ["Cabernet Sauvignon", "Merlot", "Cabernet Franc"],
+      "founded": "1331",
+      "philosophy": "Latour is the most powerful and structured of the First Growths, built for decades of cellaring. Since 2012, the estate withdrew from the en primeur system to release wines only when deemed ready to drink.",
+      "wines": [
+        {"name": "Chateau Latour", "grape": "Cabernet Sauvignon", "notes": "Intense blackcurrant, walnut, truffle, and iron. Massively structured with a tannic backbone that demands patience."},
+        {"name": "Les Forts de Latour", "grape": "Cabernet Sauvignon", "notes": "Dark plum, tobacco, and mineral. Firm and serious for a second wine, often outperforming many estates' grand vins."}
+      ],
+      "price": "luxury",
+      "tier": "legendary",
+      "tags": ["sommelier-pick", "historic-estate", "age-worthy", "bold", "organic"],
+      "awards": "First Growth since 1855; certified organic since 2018; routinely scores 95-100 from major critics.",
+      "availability": "hard-to-find",
+      "website": "chateau-latour.com"
+    },
+    {
+      "id": "chateau-margaux",
+      "name": "Chateau Margaux",
+      "country": "France",
+      "region": "Bordeaux",
+      "subregion": "Margaux",
+      "grapes": ["Cabernet Sauvignon", "Merlot", "Cabernet Franc", "Petit Verdot"],
+      "founded": "1590",
+      "philosophy": "Chateau Margaux is defined by perfumed elegance and textural refinement, often described as the most feminine of the First Growths. Under the late Paul Pontallier, the estate achieved a new level of consistency and purity.",
+      "wines": [
+        {"name": "Chateau Margaux", "grape": "Cabernet Sauvignon", "notes": "Violets, blackcurrant, licorice, and sweet oak spice. Supremely silky tannins with a long, fragrant finish."},
+        {"name": "Pavillon Rouge du Chateau Margaux", "grape": "Cabernet Sauvignon", "notes": "Red cherry, cedar, and dried herbs. Graceful and medium-bodied with fine-grained tannins."}
+      ],
+      "price": "luxury",
+      "tier": "legendary",
+      "tags": ["sommelier-pick", "historic-estate", "elegant", "age-worthy"],
+      "awards": "First Growth since 1855; the 2015 and 2016 vintages received perfect 100-point scores from multiple critics.",
+      "availability": "hard-to-find",
+      "website": "chateau-margaux.com"
+    },
+    {
+      "id": "chateau-mouton-rothschild",
+      "name": "Chateau Mouton Rothschild",
+      "country": "France",
+      "region": "Bordeaux",
+      "subregion": "Pauillac",
+      "grapes": ["Cabernet Sauvignon", "Merlot", "Cabernet Franc"],
+      "founded": "1853",
+      "philosophy": "Mouton combines opulence with intellectual complexity, famously commissioning original artwork for each vintage label. The estate is uncompromising in selection, often declassifying over half its production.",
+      "wines": [
+        {"name": "Chateau Mouton Rothschild", "grape": "Cabernet Sauvignon", "notes": "Crème de cassis, mocha, exotic spice, and graphite. Rich, hedonistic, and deeply layered with firm tannic architecture."},
+        {"name": "Le Petit Mouton", "grape": "Cabernet Sauvignon", "notes": "Blackberry, toasty oak, and subtle mint. Fleshy and generous with a polished finish."}
+      ],
+      "price": "luxury",
+      "tier": "legendary",
+      "tags": ["sommelier-pick", "historic-estate", "bold", "age-worthy"],
+      "awards": "Elevated to First Growth in 1973; artist labels by Picasso, Warhol, Chagall among others.",
+      "availability": "hard-to-find",
+      "website": "chateau-mouton-rothschild.com"
+    },
+    {
+      "id": "chateau-haut-brion",
+      "name": "Chateau Haut-Brion",
+      "country": "France",
+      "region": "Bordeaux",
+      "subregion": "Pessac-Leognan",
+      "grapes": ["Merlot", "Cabernet Sauvignon", "Cabernet Franc"],
+      "founded": "1533",
+      "philosophy": "The oldest of the First Growths and the only one from the Graves, Haut-Brion is known for its smoky, earthy complexity and remarkable consistency across vintages. Its warmer terroir yields earlier-maturing wines of unique character.",
+      "wines": [
+        {"name": "Chateau Haut-Brion", "grape": "Merlot", "notes": "Smoked meat, hot gravel, tobacco, and ripe red fruit. Velvety texture with haunting mineral depth and a long, earthy finish."},
+        {"name": "Chateau Haut-Brion Blanc", "grape": "Sauvignon Blanc", "notes": "Honeysuckle, lemon curd, beeswax, and white peach. Extraordinary richness balanced by racy acidity."}
+      ],
+      "price": "luxury",
+      "tier": "legendary",
+      "tags": ["sommelier-pick", "historic-estate", "age-worthy", "elegant"],
+      "awards": "The only estate classified as First Growth in both 1855 and the Graves classification; referenced by Samuel Pepys in 1663.",
+      "availability": "hard-to-find",
+      "website": "haut-brion.com"
+    },
+    {
+      "id": "chateau-petrus",
+      "name": "Petrus",
+      "country": "France",
+      "region": "Bordeaux",
+      "subregion": "Pomerol",
+      "grapes": ["Merlot"],
+      "founded": "1837",
+      "philosophy": "Petrus is almost entirely Merlot grown on a unique buttonhole of blue clay that gives the wine its extraordinary richness and mineral depth. Production is tiny, and the estate harvests only in the afternoon when morning dew has evaporated.",
+      "wines": [
+        {"name": "Petrus", "grape": "Merlot", "notes": "Black truffle, mulberry, plum, iron, and violet. Voluptuous and powerful with an almost otherworldly concentration and silky finish."}
+      ],
+      "price": "luxury",
+      "tier": "legendary",
+      "tags": ["sommelier-pick", "historic-estate", "bold", "age-worthy", "allocated"],
+      "awards": "One of the most expensive and sought-after wines on earth; consistently perfect or near-perfect scores from all major critics.",
+      "availability": "allocated",
+      "website": "petrus.com"
+    },
+    {
+      "id": "chateau-cheval-blanc",
+      "name": "Chateau Cheval Blanc",
+      "country": "France",
+      "region": "Bordeaux",
+      "subregion": "Saint-Emilion",
+      "grapes": ["Cabernet Franc", "Merlot"],
+      "founded": "1832",
+      "philosophy": "Cheval Blanc is unique among Bordeaux icons for its high proportion of Cabernet Franc, which lends exotic spice and floral complexity. Now under LVMH ownership, the estate built a stunning new winery focused on precision and gentle handling.",
+      "wines": [
+        {"name": "Chateau Cheval Blanc", "grape": "Cabernet Franc", "notes": "Raspberry, plum, exotic spice, dark chocolate, and violet. Opulent and multi-layered with extraordinary aromatic complexity."},
+        {"name": "Le Petit Cheval", "grape": "Merlot", "notes": "Fresh red fruits, spice, and floral notes. Silky and approachable with real charm and depth."}
+      ],
+      "price": "luxury",
+      "tier": "legendary",
+      "tags": ["sommelier-pick", "historic-estate", "elegant", "age-worthy"],
+      "awards": "Premier Grand Cru Classe A; the 1947 vintage is considered one of the greatest wines of the 20th century.",
+      "availability": "hard-to-find",
+      "website": "chateau-cheval-blanc.com"
+    },
+    {
+      "id": "chateau-dyquem",
+      "name": "Chateau d'Yquem",
+      "country": "France",
+      "region": "Bordeaux",
+      "subregion": "Sauternes",
+      "grapes": ["Semillon", "Sauvignon Blanc"],
+      "founded": "1593",
+      "philosophy": "d'Yquem is the undisputed pinnacle of sweet wine, harvested berry by berry over multiple passes through the vineyard. In poor years the estate declassifies the entire production, refusing to compromise on quality.",
+      "wines": [
+        {"name": "Chateau d'Yquem", "grape": "Semillon", "notes": "Saffron, apricot, creme brulee, pineapple, and candied orange peel. Luscious yet impeccably balanced by acidity, with near-immortal aging potential."},
+        {"name": "Y d'Yquem", "grape": "Sauvignon Blanc", "notes": "Citrus, white flowers, and toasted almond. A rare dry white from the estate with vibrancy and richness."}
+      ],
+      "price": "luxury",
+      "tier": "legendary",
+      "tags": ["sommelier-pick", "historic-estate", "age-worthy", "elegant"],
+      "awards": "The only Premier Cru Superieur in the 1855 Classification; vintages can age for over 100 years.",
+      "availability": "hard-to-find",
+      "website": "yquem.fr"
+    },
+    {
+      "id": "chateau-lynch-bages",
+      "name": "Chateau Lynch-Bages",
+      "country": "France",
+      "region": "Bordeaux",
+      "subregion": "Pauillac",
+      "grapes": ["Cabernet Sauvignon", "Merlot", "Cabernet Franc"],
+      "founded": "1749",
+      "philosophy": "Lynch-Bages consistently overdelivers for its Fifth Growth classification, offering rich, generous Pauillac at a relative value. The Cazes family has steadily elevated quality while maintaining the wine's hedonistic, crowd-pleasing style.",
+      "wines": [
+        {"name": "Chateau Lynch-Bages", "grape": "Cabernet Sauvignon", "notes": "Blackcurrant, roasted coffee, pencil lead, and dark chocolate. Generous and full-bodied with ripe tannins and a long finish."},
+        {"name": "Echo de Lynch-Bages", "grape": "Cabernet Sauvignon", "notes": "Plum, cedar, and subtle spice. Medium-bodied and approachable with soft tannins."}
+      ],
+      "price": "premium",
+      "tier": "highly-acclaimed",
+      "tags": ["best-value", "historic-estate", "bold", "award-winning"],
+      "awards": "Often called 'the poor man's Mouton'; regularly outperforms its Fifth Growth classification in blind tastings.",
+      "availability": "widely-available",
+      "website": "lynchbages.com"
+    },
+    {
+      "id": "chateau-cos-destournel",
+      "name": "Chateau Cos d'Estournel",
+      "country": "France",
+      "region": "Bordeaux",
+      "subregion": "Saint-Estephe",
+      "grapes": ["Cabernet Sauvignon", "Merlot", "Cabernet Franc"],
+      "founded": "1811",
+      "philosophy": "Known as 'the Sultan of Saint-Estephe' for its pagoda-inspired chai, Cos d'Estournel produces exotic, opulent wines that push the boundaries of the appellation. The estate invests heavily in technology to achieve parcel-by-parcel precision.",
+      "wines": [
+        {"name": "Chateau Cos d'Estournel", "grape": "Cabernet Sauvignon", "notes": "Blackberry, exotic spice, sandalwood, and dark plum. Rich and layered with polished tannins and impressive concentration."},
+        {"name": "Les Pagodes de Cos", "grape": "Cabernet Sauvignon", "notes": "Red and black fruit, sweet spice, and cedar. Accessible and well-structured for early drinking."}
+      ],
+      "price": "luxury",
+      "tier": "highly-acclaimed",
+      "tags": ["sommelier-pick", "historic-estate", "bold", "award-winning"],
+      "awards": "Super Second status; the 2009 and 2010 vintages achieved perfect 100-point scores.",
+      "availability": "widely-available",
+      "website": "cosestournel.com"
+    },
+    {
+      "id": "domaine-de-la-romanee-conti",
+      "name": "Domaine de la Romanee-Conti",
+      "country": "France",
+      "region": "Burgundy",
+      "subregion": "Vosne-Romanee",
+      "grapes": ["Pinot Noir", "Chardonnay"],
+      "founded": "1232",
+      "philosophy": "DRC practices biodynamic viticulture and believes in minimal intervention to let each monopole and Grand Cru vineyard speak with absolute purity. Whole-cluster fermentation and long elevage in oak create wines of transcendent complexity.",
+      "wines": [
+        {"name": "Romanee-Conti Grand Cru", "grape": "Pinot Noir", "notes": "Rose petal, exotic spice, dark cherry, and forest floor. Ethereally light yet profoundly deep, with an endless, haunting finish."},
+        {"name": "La Tache Grand Cru", "grape": "Pinot Noir", "notes": "Violet, blackberry, truffle, and iron. More powerful and brooding than Romanee-Conti with majestic structure."},
+        {"name": "Montrachet Grand Cru", "grape": "Chardonnay", "notes": "Honeyed citrus, hazelnut, white flowers, and crushed stone. Staggering richness with laser-like minerality."}
+      ],
+      "price": "luxury",
+      "tier": "legendary",
+      "tags": ["sommelier-pick", "biodynamic", "historic-estate", "age-worthy", "allocated"],
+      "awards": "The most celebrated and expensive wine estate on earth; sold exclusively in mixed cases by allocation.",
+      "availability": "allocated",
+      "website": "romanee-conti.com"
+    },
+    {
+      "id": "domaine-leroy",
+      "name": "Domaine Leroy",
+      "country": "France",
+      "region": "Burgundy",
+      "subregion": "Vosne-Romanee",
+      "grapes": ["Pinot Noir"],
+      "founded": "1988",
+      "philosophy": "Lalou Bize-Leroy is a pioneer of biodynamic viticulture in Burgundy, achieving minuscule yields that produce wines of extraordinary concentration and purity. Every wine, from village to Grand Cru, is crafted with obsessive attention.",
+      "wines": [
+        {"name": "Musigny Grand Cru", "grape": "Pinot Noir", "notes": "Rose, red cherry, iron, and subtle smoke. Weightless intensity with a finish that lasts for minutes."},
+        {"name": "Chambertin Grand Cru", "grape": "Pinot Noir", "notes": "Dark fruit, earth, licorice, and truffle. Powerful and brooding with immense depth and tannic structure."}
+      ],
+      "price": "luxury",
+      "tier": "legendary",
+      "tags": ["sommelier-pick", "biodynamic", "small-batch", "age-worthy", "allocated"],
+      "awards": "Prices rival DRC; Lalou Bize-Leroy is considered one of the greatest winemakers in history.",
+      "availability": "allocated",
+      "website": "domaine-leroy.com"
+    },
+    {
+      "id": "domaine-comte-georges-de-vogue",
+      "name": "Domaine Comte Georges de Vogue",
+      "country": "France",
+      "region": "Burgundy",
+      "subregion": "Chambolle-Musigny",
+      "grapes": ["Pinot Noir", "Chardonnay"],
+      "founded": "1450",
+      "philosophy": "The largest holder of Musigny Grand Cru, de Vogue produces Burgundy of exceptional purity and finesse. Under cellar master Francois Millet, the domaine returned to top form in the 1990s with a more precise, terroir-driven approach.",
+      "wines": [
+        {"name": "Musigny Vieilles Vignes Grand Cru", "grape": "Pinot Noir", "notes": "Red fruit, rose water, spice, and crushed stone. Effortlessly elegant with gossamer tannins and breathtaking length."},
+        {"name": "Bonnes-Mares Grand Cru", "grape": "Pinot Noir", "notes": "Darker fruit, earth, and wild herbs. More structured and masculine than the Musigny with impressive power."}
+      ],
+      "price": "luxury",
+      "tier": "legendary",
+      "tags": ["sommelier-pick", "historic-estate", "elegant", "age-worthy"],
+      "awards": "Owns over 70% of the Musigny Grand Cru vineyard; one of Burgundy's most storied domaines.",
+      "availability": "hard-to-find",
+      "website": "domaine-de-vogue.com"
+    },
+    {
+      "id": "domaine-armand-rousseau",
+      "name": "Domaine Armand Rousseau",
+      "country": "France",
+      "region": "Burgundy",
+      "subregion": "Gevrey-Chambertin",
+      "grapes": ["Pinot Noir"],
+      "founded": "1902",
+      "philosophy": "Rousseau is the reference point for Chambertin and Gevrey-Chambertin, producing classically structured wines that balance power with refinement. The domaine was among the first in Burgundy to estate-bottle, and its style remains timeless.",
+      "wines": [
+        {"name": "Chambertin Grand Cru", "grape": "Pinot Noir", "notes": "Black cherry, iron, licorice, and earth. Majestic structure with brooding depth and extraordinary persistence."},
+        {"name": "Clos de la Roche Grand Cru", "grape": "Pinot Noir", "notes": "Dark fruit, crushed rock, and exotic spice. Dense and powerful with a mineral-driven finish."}
+      ],
+      "price": "luxury",
+      "tier": "legendary",
+      "tags": ["sommelier-pick", "historic-estate", "family-owned", "age-worthy"],
+      "awards": "The benchmark for Chambertin; demand far exceeds the tiny production.",
+      "availability": "allocated",
+      "website": "domaine-rousseau.com"
+    },
+    {
+      "id": "domaine-coche-dury",
+      "name": "Domaine Coche-Dury",
+      "country": "France",
+      "region": "Burgundy",
+      "subregion": "Meursault",
+      "grapes": ["Chardonnay", "Pinot Noir"],
+      "founded": "1920",
+      "philosophy": "Jean-Francois Coche-Dury crafts the most sought-after white Burgundies through meticulous viticulture and minimal intervention in the cellar. The wines are fermented with indigenous yeast and aged in a modest percentage of new oak.",
+      "wines": [
+        {"name": "Corton-Charlemagne Grand Cru", "grape": "Chardonnay", "notes": "Lemon oil, hazelnut, crushed chalk, and white pepper. Searingly intense with electric acidity and monumental depth."},
+        {"name": "Meursault Perrieres Premier Cru", "grape": "Chardonnay", "notes": "Citrus, flint, almond, and sea salt. Taut and mineral-driven with extraordinary precision and length."}
+      ],
+      "price": "luxury",
+      "tier": "legendary",
+      "tags": ["sommelier-pick", "family-owned", "small-batch", "age-worthy", "allocated"],
+      "awards": "The most expensive and collectible white Burgundy; virtually impossible to obtain at retail.",
+      "availability": "allocated",
+      "website": "coche-dury.com"
+    },
+    {
+      "id": "louis-jadot",
+      "name": "Maison Louis Jadot",
+      "country": "France",
+      "region": "Burgundy",
+      "subregion": "Beaune",
+      "grapes": ["Pinot Noir", "Chardonnay"],
+      "founded": "1859",
+      "philosophy": "Jadot is the most important negociant house in Burgundy, owning significant Grand Cru vineyards while also sourcing grapes across the region. Under winemaker Frederic Barnier, quality is consistently high from Beaujolais to Grand Cru.",
+      "wines": [
+        {"name": "Clos de Vougeot Grand Cru", "grape": "Pinot Noir", "notes": "Dark cherry, earth, leather, and spice. Structured and serious with impressive depth."},
+        {"name": "Corton-Charlemagne Grand Cru", "grape": "Chardonnay", "notes": "Butter, lemon, toasted hazelnut, and mineral. Rich and powerful with fine acidity."},
+        {"name": "Beaune Clos des Ursules Premier Cru", "grape": "Pinot Noir", "notes": "Red fruit, violet, and subtle oak. A monopole of finesse and consistency."}
+      ],
+      "price": "premium",
+      "tier": "highly-acclaimed",
+      "tags": ["historic-estate", "old-world", "award-winning", "age-worthy"],
+      "awards": "Extensive Grand Cru portfolio; the Duc de Magenta wines are among the finest in Burgundy.",
+      "availability": "widely-available",
+      "website": "louisjadot.com"
+    },
+    {
+      "id": "domaine-leflaive",
+      "name": "Domaine Leflaive",
+      "country": "France",
+      "region": "Burgundy",
+      "subregion": "Puligny-Montrachet",
+      "grapes": ["Chardonnay"],
+      "founded": "1717",
+      "philosophy": "A pioneer of biodynamic viticulture in Burgundy under the late Anne-Claude Leflaive, the domaine produces white Burgundy of crystalline purity and mineral intensity. The wines are a benchmark for Puligny-Montrachet.",
+      "wines": [
+        {"name": "Chevalier-Montrachet Grand Cru", "grape": "Chardonnay", "notes": "Lime zest, white flowers, wet stone, and almond. Ethereal purity with razor-sharp acidity and stunning length."},
+        {"name": "Puligny-Montrachet Les Pucelles Premier Cru", "grape": "Chardonnay", "notes": "Citrus, pear, hazelnut, and chalk. Elegant and tensile with beautiful mineral precision."}
+      ],
+      "price": "luxury",
+      "tier": "legendary",
+      "tags": ["sommelier-pick", "biodynamic", "historic-estate", "elegant", "age-worthy"],
+      "awards": "The reference domaine for white Burgundy; biodynamic certification since 1997.",
+      "availability": "hard-to-find",
+      "website": "leflaive.fr"
+    },
+    {
+      "id": "e-guigal",
+      "name": "E. Guigal",
+      "country": "France",
+      "region": "Rhone Valley",
+      "subregion": "Cote-Rotie",
+      "grapes": ["Syrah", "Viognier"],
+      "founded": "1946",
+      "philosophy": "Marcel Guigal built a family negociant into the most acclaimed producer in the Northern Rhone. The single-vineyard La-Las (Mouline, Landonne, Turque) are aged for an astonishing 42 months in new oak, producing wines of decadent richness.",
+      "wines": [
+        {"name": "Cote-Rotie La Mouline", "grape": "Syrah", "notes": "Bacon fat, violet, apricot, and smoked meat. Opulently perfumed and seductive with silky texture."},
+        {"name": "Cote-Rotie La Landonne", "grape": "Syrah", "notes": "Black olive, iron, tar, and dark fruit. Massively structured and tannic with extraordinary concentration."},
+        {"name": "Hermitage Ex Voto", "grape": "Syrah", "notes": "Blackberry, leather, graphite, and roasted herbs. Dense and powerful with a long, savory finish."}
+      ],
+      "price": "luxury",
+      "tier": "legendary",
+      "tags": ["sommelier-pick", "family-owned", "bold", "age-worthy", "award-winning"],
+      "awards": "Multiple 100-point scores from Parker; the La-La wines are among the most celebrated Syrahs on earth.",
+      "availability": "hard-to-find",
+      "website": "guigal.com"
+    },
+    {
+      "id": "m-chapoutier",
+      "name": "M. Chapoutier",
+      "country": "France",
+      "region": "Rhone Valley",
+      "subregion": "Tain-l'Hermitage",
+      "grapes": ["Syrah", "Grenache", "Marsanne"],
+      "founded": "1808",
+      "philosophy": "Michel Chapoutier converted the entire estate to biodynamic farming and is a leading voice for terroir expression in the Rhone. His single-vineyard Hermitage wines, with Braille labels, are among the region's finest.",
+      "wines": [
+        {"name": "Hermitage Le Meal", "grape": "Syrah", "notes": "Dark fruit, smoked meat, graphite, and violets. Powerful and concentrated with majestic tannic structure."},
+        {"name": "Ermitage Le Pavillon", "grape": "Syrah", "notes": "Blackberry, ink, leather, and licorice. Enormously rich with velvety texture and astonishing length."}
+      ],
+      "price": "luxury",
+      "tier": "highly-acclaimed",
+      "tags": ["biodynamic", "historic-estate", "bold", "award-winning"],
+      "awards": "Multiple 100-point scores; Braille labels on every bottle reflect Chapoutier's commitment to inclusivity.",
+      "availability": "widely-available",
+      "website": "chapoutier.com"
+    },
+    {
+      "id": "chateau-beaucastel",
+      "name": "Chateau de Beaucastel",
+      "country": "France",
+      "region": "Rhone Valley",
+      "subregion": "Chateauneuf-du-Pape",
+      "grapes": ["Mourvedre", "Grenache", "Syrah", "Counoise"],
+      "founded": "1549",
+      "philosophy": "The Perrin family farms Beaucastel organically and is unique in using all 13 permitted Chateauneuf grape varieties. The estate is especially known for its high proportion of Mourvedre, giving the wine a distinctive savory, age-worthy character.",
+      "wines": [
+        {"name": "Chateauneuf-du-Pape", "grape": "Mourvedre", "notes": "Leather, game, dark fruit, herbs, and earth. Complex and savory with firm structure and great aging potential."},
+        {"name": "Hommage a Jacques Perrin", "grape": "Mourvedre", "notes": "Blackberry liqueur, smoked meat, licorice, and spice. Extraordinarily concentrated and deep with decades of life ahead."}
+      ],
+      "price": "premium",
+      "tier": "legendary",
+      "tags": ["sommelier-pick", "organic", "historic-estate", "age-worthy", "family-owned"],
+      "awards": "Parker called Hommage a Jacques Perrin one of the greatest wines he has ever tasted.",
+      "availability": "widely-available",
+      "website": "beaucastel.com"
+    },
+    {
+      "id": "domaine-zind-humbrecht",
+      "name": "Domaine Zind-Humbrecht",
+      "country": "France",
+      "region": "Alsace",
+      "subregion": "Turckheim",
+      "grapes": ["Riesling", "Gewurztraminer", "Pinot Gris"],
+      "founded": "1959",
+      "philosophy": "Olivier Humbrecht MW was among the first in Alsace to adopt biodynamic viticulture. His wines from Grand Cru sites like Rangen and Clos Windsbuhl are among the most concentrated and mineral-driven whites in the world.",
+      "wines": [
+        {"name": "Riesling Clos Windsbuhl", "grape": "Riesling", "notes": "Lime, wet stone, white pepper, and honeycomb. Intense and racy with searing minerality and great length."},
+        {"name": "Riesling Rangen de Thann Grand Cru", "grape": "Riesling", "notes": "Smoke, petrol, citrus, and volcanic mineral. Austere and powerful with extraordinary depth."}
+      ],
+      "price": "premium",
+      "tier": "highly-acclaimed",
+      "tags": ["sommelier-pick", "biodynamic", "family-owned", "age-worthy"],
+      "awards": "Olivier Humbrecht was the first French Master of Wine; consistently top-rated Alsatian producer.",
+      "availability": "widely-available",
+      "website": "zindhumbrecht.fr"
+    },
+    {
+      "id": "domaine-huet",
+      "name": "Domaine Huet",
+      "country": "France",
+      "region": "Loire Valley",
+      "subregion": "Vouvray",
+      "grapes": ["Chenin Blanc"],
+      "founded": "1928",
+      "philosophy": "The benchmark for Vouvray, Domaine Huet farms biodynamically and produces Chenin Blanc in every style from bone-dry to lusciously sweet. The three monopole vineyards each express distinct terroir characters.",
+      "wines": [
+        {"name": "Le Haut-Lieu Moelleux", "grape": "Chenin Blanc", "notes": "Quince, honey, lanolin, and chamomile. Luscious sweetness balanced by electric acidity and waxy depth."},
+        {"name": "Le Mont Sec", "grape": "Chenin Blanc", "notes": "Green apple, wet wool, chalk, and lemon. Bone-dry with incredible tension and mineral persistence."}
+      ],
+      "price": "moderate",
+      "tier": "highly-acclaimed",
+      "tags": ["sommelier-pick", "biodynamic", "best-value", "age-worthy", "family-owned"],
+      "awards": "The definitive Vouvray producer; old vintages age for 50+ years.",
+      "availability": "widely-available",
+      "website": "huet-echansonne.com"
+    },
+    {
+      "id": "louis-roederer",
+      "name": "Louis Roederer",
+      "country": "France",
+      "region": "Champagne",
+      "subregion": "Reims",
+      "grapes": ["Pinot Noir", "Chardonnay", "Pinot Meunier"],
+      "founded": "1776",
+      "philosophy": "Roederer is the largest family-owned Champagne house, producing estate-grown wines with biodynamic and organic practices. Under cellar master Jean-Baptiste Lecaillon, the house has moved toward lower dosage and more terroir-driven cuvees.",
+      "wines": [
+        {"name": "Cristal", "grape": "Pinot Noir", "notes": "White peach, chalk, brioche, and candied lemon. Magnificent purity and precision with a creamy, impossibly long finish."},
+        {"name": "Brut Premier", "grape": "Pinot Noir", "notes": "Apple, toast, and hazelnut. Consistently one of the best non-vintage Champagnes available."},
+        {"name": "Cristal Rose", "grape": "Pinot Noir", "notes": "Wild strawberry, blood orange, and chalky mineral. Exquisite and rare with vibrant acidity."}
+      ],
+      "price": "luxury",
+      "tier": "legendary",
+      "tags": ["sommelier-pick", "biodynamic", "historic-estate", "elegant"],
+      "awards": "Cristal was originally created for Tsar Alexander II in 1876; consistently among the top-rated Champagnes.",
+      "availability": "widely-available",
+      "website": "louis-roederer.com"
+    },
+    {
+      "id": "krug",
+      "name": "Krug",
+      "country": "France",
+      "region": "Champagne",
+      "subregion": "Reims",
+      "grapes": ["Pinot Noir", "Chardonnay", "Pinot Meunier"],
+      "founded": "1843",
+      "philosophy": "Krug is the most uncompromising Champagne house, fermenting every parcel in small oak casks and aging wines far longer than required. Every Krug, including the Grande Cuvee, is a multi-vintage blend of extraordinary complexity.",
+      "wines": [
+        {"name": "Grande Cuvee", "grape": "Pinot Noir", "notes": "Brioche, roasted hazelnut, honey, citrus, and dried fruit. Layered and complex with a deep, toasty richness."},
+        {"name": "Clos du Mesnil", "grape": "Chardonnay", "notes": "Lemon curd, chalk, white flowers, and almond. Breathtaking purity and precision from a single walled vineyard."},
+        {"name": "Krug Vintage", "grape": "Pinot Noir", "notes": "Ripe fruit, gingerbread, and candied peel. A single year's expression of the Krug style with stunning depth."}
+      ],
+      "price": "luxury",
+      "tier": "legendary",
+      "tags": ["sommelier-pick", "historic-estate", "small-batch", "elegant", "age-worthy"],
+      "awards": "Every bottle includes a Krug iD number for traceability; widely regarded as the greatest Champagne house.",
+      "availability": "hard-to-find",
+      "website": "krug.com"
+    },
+    {
+      "id": "dom-perignon",
+      "name": "Dom Perignon",
+      "country": "France",
+      "region": "Champagne",
+      "subregion": "Epernay",
+      "grapes": ["Pinot Noir", "Chardonnay"],
+      "founded": "1668",
+      "philosophy": "Dom Perignon is produced only in outstanding vintages and undergoes extended aging on the lees. Chef de Cave Vincent Chaperon guides the wine through multiple 'plenitudes' of evolution, releasing P2 and P3 at later stages of maturity.",
+      "wines": [
+        {"name": "Dom Perignon Vintage", "grape": "Pinot Noir", "notes": "White peach, toasted almond, smoke, and citrus. Vibrant and precise with a long, mineral-tinged finish."},
+        {"name": "Dom Perignon P2", "grape": "Pinot Noir", "notes": "Honey, brioche, dried flowers, and iodine. Deeper and more complex from extended lees aging, with extraordinary texture."}
+      ],
+      "price": "luxury",
+      "tier": "legendary",
+      "tags": ["sommelier-pick", "historic-estate", "elegant", "age-worthy"],
+      "awards": "Named for the Benedictine monk credited with refining Champagne production; one of the world's most iconic wines.",
+      "availability": "widely-available",
+      "website": "domperignon.com"
+    },
+    {
+      "id": "giacomo-conterno",
+      "name": "Giacomo Conterno",
+      "country": "Italy",
+      "region": "Piedmont",
+      "subregion": "Serralunga d'Alba",
+      "grapes": ["Nebbiolo", "Barbera"],
+      "founded": "1908",
+      "philosophy": "The most traditionalist producer in Barolo, Giacomo Conterno under Roberto Conterno produces Monfortino only in exceptional years with extraordinarily long maceration and aging. The wines are monuments of structure and longevity.",
+      "wines": [
+        {"name": "Monfortino Barolo Riserva", "grape": "Nebbiolo", "notes": "Tar, roses, dried cherry, leather, and truffle. Profoundly structured with ethereal aromatics and seemingly endless aging potential."},
+        {"name": "Cascina Francia Barolo", "grape": "Nebbiolo", "notes": "Red fruit, iron, dried herbs, and earth. Firm and classic with gorgeous perfume and fine-grained tannins."}
+      ],
+      "price": "luxury",
+      "tier": "legendary",
+      "tags": ["sommelier-pick", "historic-estate", "family-owned", "age-worthy", "bold"],
+      "awards": "Monfortino is considered one of Italy's greatest wines; the 2013 received a perfect 100 from multiple critics.",
+      "availability": "allocated",
+      "website": "giacomoconterno.com"
+    },
+    {
+      "id": "bruno-giacosa",
+      "name": "Bruno Giacosa",
+      "country": "Italy",
+      "region": "Piedmont",
+      "subregion": "Neive",
+      "grapes": ["Nebbiolo"],
+      "founded": "1890",
+      "philosophy": "The late Bruno Giacosa was a master of site selection, producing traditional Barolo and Barbaresco of breathtaking purity. The red label Riservas, produced only in outstanding years, are among Italy's most collectible wines.",
+      "wines": [
+        {"name": "Barbaresco Asili Riserva (Red Label)", "grape": "Nebbiolo", "notes": "Rose, tar, cherry, and white truffle. Graceful yet powerful with extraordinary aromatic complexity."},
+        {"name": "Barolo Falletto Riserva (Red Label)", "grape": "Nebbiolo", "notes": "Dried rose, dark cherry, licorice, and iron. Monumental structure with decades of aging potential."}
+      ],
+      "price": "luxury",
+      "tier": "legendary",
+      "tags": ["sommelier-pick", "historic-estate", "elegant", "age-worthy", "hard-to-find"],
+      "awards": "Red Label Riservas are among Italy's most sought-after wines; multiple 100-point scores.",
+      "availability": "hard-to-find",
+      "website": "brunogiacosa.it"
+    },
+    {
+      "id": "gaja",
+      "name": "Gaja",
+      "country": "Italy",
+      "region": "Piedmont",
+      "subregion": "Barbaresco",
+      "grapes": ["Nebbiolo", "Barbera", "Cabernet Sauvignon"],
+      "founded": "1859",
+      "philosophy": "Angelo Gaja modernized Piedmont winemaking and elevated Barbaresco to world-class status. A perfectionist and iconoclast, he controversially declassified his single-vineyard wines from DOCG to experiment freely with techniques and varieties.",
+      "wines": [
+        {"name": "Barbaresco", "grape": "Nebbiolo", "notes": "Red cherry, tar, rose, licorice, and spice. Refined and perfumed with polished tannins and impressive length."},
+        {"name": "Sori Tildin", "grape": "Nebbiolo", "notes": "Dark fruit, chocolate, dried herbs, and leather. Opulent and concentrated with a long, savory finish."},
+        {"name": "Sperss", "grape": "Nebbiolo", "notes": "Plum, tar, truffle, and tobacco. Powerful Barolo-area Nebbiolo with massive structure."}
+      ],
+      "price": "luxury",
+      "tier": "legendary",
+      "tags": ["sommelier-pick", "family-owned", "historic-estate", "bold", "age-worthy"],
+      "awards": "Angelo Gaja is widely credited with putting Barbaresco on the world map; Decanter Man of the Year.",
+      "availability": "hard-to-find",
+      "website": "gaja.com"
+    },
+    {
+      "id": "tenuta-san-guido",
+      "name": "Tenuta San Guido",
+      "country": "Italy",
+      "region": "Tuscany",
+      "subregion": "Bolgheri",
+      "grapes": ["Cabernet Sauvignon", "Cabernet Franc", "Merlot"],
+      "founded": "1944",
+      "philosophy": "Sassicaia, the original Super Tuscan, was born from Marchese Mario Incisa della Rocchetta's dream to make a Bordeaux-style wine on the Tuscan coast. The wine proved that Italy could produce world-class Cabernet.",
+      "wines": [
+        {"name": "Sassicaia", "grape": "Cabernet Sauvignon", "notes": "Blackcurrant, cedar, tobacco, and Mediterranean herbs. Elegant and structured with a long, mineral finish."},
+        {"name": "Guidalberto", "grape": "Cabernet Sauvignon", "notes": "Red and black fruit, sweet spice, and herbs. The approachable second wine with real character."}
+      ],
+      "price": "luxury",
+      "tier": "legendary",
+      "tags": ["sommelier-pick", "historic-estate", "family-owned", "age-worthy", "elegant"],
+      "awards": "The original Super Tuscan; won the legendary 1978 Decanter blind tasting against top Bordeaux.",
+      "availability": "widely-available",
+      "website": "tenutasanguido.com"
+    },
+    {
+      "id": "antinori",
+      "name": "Marchesi Antinori",
+      "country": "Italy",
+      "region": "Tuscany",
+      "subregion": "Chianti Classico",
+      "grapes": ["Sangiovese", "Cabernet Sauvignon", "Merlot"],
+      "founded": "1385",
+      "philosophy": "The Antinori family has been making wine for over 600 years and helped spark the Super Tuscan revolution with Tignanello. The house balances tradition with innovation across a vast portfolio spanning all of Italy.",
+      "wines": [
+        {"name": "Tignanello", "grape": "Sangiovese", "notes": "Cherry, plum, sweet tobacco, and spice. The original Sangiovese-Cabernet blend with polished tannins and complexity."},
+        {"name": "Solaia", "grape": "Cabernet Sauvignon", "notes": "Blackcurrant, dark chocolate, espresso, and cedar. Opulent and powerful with a long, structured finish."},
+        {"name": "Guado al Tasso", "grape": "Cabernet Sauvignon", "notes": "Dark fruit, Mediterranean herbs, and vanilla. Bolgheri elegance with ripe, generous fruit."}
+      ],
+      "price": "premium",
+      "tier": "legendary",
+      "tags": ["historic-estate", "family-owned", "award-winning", "old-world"],
+      "awards": "26 generations of winemaking; Solaia has received multiple 100-point scores from Wine Advocate.",
+      "availability": "widely-available",
+      "website": "antinori.it"
+    },
+    {
+      "id": "biondi-santi",
+      "name": "Biondi-Santi",
+      "country": "Italy",
+      "region": "Tuscany",
+      "subregion": "Montalcino",
+      "grapes": ["Sangiovese"],
+      "founded": "1888",
+      "philosophy": "The founding estate of Brunello di Montalcino, Biondi-Santi produces wines of extreme longevity from its Greppo estate. The Riserva is made only in exceptional years from old vines and aged for years before release.",
+      "wines": [
+        {"name": "Brunello di Montalcino Riserva", "grape": "Sangiovese", "notes": "Dried cherry, leather, tobacco, earth, and dried herbs. Austere and classically structured with extraordinary aging potential."},
+        {"name": "Brunello di Montalcino Annata", "grape": "Sangiovese", "notes": "Red cherry, iron, tea, and dried flowers. Elegant and restrained with fine tannins."}
+      ],
+      "price": "luxury",
+      "tier": "legendary",
+      "tags": ["sommelier-pick", "historic-estate", "family-owned", "age-worthy", "elegant"],
+      "awards": "Created the Brunello di Montalcino category; vintage Riservas from the 1950s are still drinking beautifully.",
+      "availability": "hard-to-find",
+      "website": "biondisanti.it"
+    },
+    {
+      "id": "masseto",
+      "name": "Masseto",
+      "country": "Italy",
+      "region": "Tuscany",
+      "subregion": "Bolgheri",
+      "grapes": ["Merlot"],
+      "founded": "1986",
+      "philosophy": "Italy's most acclaimed Merlot, Masseto comes from a single 7-hectare vineyard of blue clay on the Ornellaia estate. Now independent, the wine is produced in tiny quantities and aged in new French oak for 24 months.",
+      "wines": [
+        {"name": "Masseto", "grape": "Merlot", "notes": "Dark plum, chocolate, truffle, violets, and espresso. Extraordinarily rich and velvety with profound concentration and a never-ending finish."}
+      ],
+      "price": "luxury",
+      "tier": "cult",
+      "tags": ["sommelier-pick", "allocated", "bold", "age-worthy", "small-batch"],
+      "awards": "Italy's answer to Petrus; multiple 100-point scores; among the country's most expensive wines.",
+      "availability": "allocated",
+      "website": "masseto.com"
+    },
+    {
+      "id": "ornellaia",
+      "name": "Ornellaia",
+      "country": "Italy",
+      "region": "Tuscany",
+      "subregion": "Bolgheri",
+      "grapes": ["Cabernet Sauvignon", "Merlot", "Cabernet Franc", "Petit Verdot"],
+      "founded": "1981",
+      "philosophy": "Founded by Lodovico Antinori and now owned by Frescobaldi, Ornellaia produces a Bordeaux-inspired blend that ranks among Italy's finest. Each vintage is given an artistic identity through the Vendemmia d'Artista program.",
+      "wines": [
+        {"name": "Ornellaia", "grape": "Cabernet Sauvignon", "notes": "Blackcurrant, dark chocolate, sage, and graphite. Rich and structured with polished tannins and great depth."},
+        {"name": "Le Serre Nuove dell'Ornellaia", "grape": "Merlot", "notes": "Plum, cherry, sweet spice, and herbs. A generous, approachable second wine of real quality."}
+      ],
+      "price": "luxury",
+      "tier": "highly-acclaimed",
+      "tags": ["award-winning", "elegant", "age-worthy", "old-world"],
+      "awards": "Wine Spectator Wine of the Year 2001; consistently among Italy's top-scored wines.",
+      "availability": "widely-available",
+      "website": "ornellaia.com"
+    },
+    {
+      "id": "giuseppe-quintarelli",
+      "name": "Giuseppe Quintarelli",
+      "country": "Italy",
+      "region": "Veneto",
+      "subregion": "Valpolicella",
+      "grapes": ["Corvina", "Rondinella", "Corvinone"],
+      "founded": "1924",
+      "philosophy": "The legendary Quintarelli estate is the benchmark for traditional Amarone, using extended appassimento and incredibly long aging in large Slavonian oak. Wines are released only when the family deems them ready, often years behind schedule.",
+      "wines": [
+        {"name": "Amarone della Valpolicella Classico", "grape": "Corvina", "notes": "Dried fig, dark chocolate, cherry liqueur, tobacco, and spice. Enormously concentrated with velvety texture and endless complexity."},
+        {"name": "Alzero", "grape": "Cabernet Franc", "notes": "Dried fruit, herb, and leather. A passito-style Cabernet of stunning richness and originality."}
+      ],
+      "price": "luxury",
+      "tier": "legendary",
+      "tags": ["sommelier-pick", "family-owned", "small-batch", "age-worthy", "hard-to-find"],
+      "awards": "The undisputed king of Amarone; wines are released years after vintage with handwritten labels.",
+      "availability": "hard-to-find",
+      "website": "giuseppequintarelli.it"
+    },
+    {
+      "id": "vietti",
+      "name": "Vietti",
+      "country": "Italy",
+      "region": "Piedmont",
+      "subregion": "Castiglione Falletto",
+      "grapes": ["Nebbiolo", "Barbera", "Arneis"],
+      "founded": "1919",
+      "philosophy": "Vietti owns parcels in many of Barolo's finest crus and pioneered single-vineyard Barbera. Under Luca Currado, the wines balance tradition and modernity with meticulous vineyard work and careful oak management.",
+      "wines": [
+        {"name": "Barolo Ravera", "grape": "Nebbiolo", "notes": "Rose, cherry, iron, and dried herbs. Elegant and perfumed with incredible mineral depth."},
+        {"name": "Barolo Lazzarito", "grape": "Nebbiolo", "notes": "Dark cherry, tar, licorice, and earth. More powerful and structured with dense tannins."},
+        {"name": "Barbera d'Asti La Crena", "grape": "Barbera", "notes": "Blackberry, plum, and sweet spice. Rich and deep with vibrant acidity."}
+      ],
+      "price": "premium",
+      "tier": "highly-acclaimed",
+      "tags": ["family-owned", "historic-estate", "award-winning", "old-world"],
+      "awards": "Known for artist-designed labels; the Barolo Ravera is among the finest expressions of this cru.",
+      "availability": "widely-available",
+      "website": "vietti.com"
+    },
+    {
+      "id": "vega-sicilia",
+      "name": "Vega Sicilia",
+      "country": "Spain",
+      "region": "Castilla y Leon",
+      "subregion": "Ribera del Duero",
+      "grapes": ["Tempranillo", "Cabernet Sauvignon", "Merlot"],
+      "founded": "1864",
+      "philosophy": "Spain's most iconic estate, Vega Sicilia produces Unico with an extraordinary long aging regime of up to 10 years in oak and bottle before release. The wines blend Tempranillo with Bordeaux varieties for unique complexity.",
+      "wines": [
+        {"name": "Unico", "grape": "Tempranillo", "notes": "Dried fruit, leather, cedar, tobacco, and sweet spice. Hauntingly complex with incredible elegance and length after years of aging."},
+        {"name": "Valbuena 5", "grape": "Tempranillo", "notes": "Red cherry, plum, vanilla, and cedar. More accessible than Unico but with real depth and structure."}
+      ],
+      "price": "luxury",
+      "tier": "legendary",
+      "tags": ["sommelier-pick", "historic-estate", "age-worthy", "elegant"],
+      "awards": "Spain's most prestigious wine; Unico is only released in top vintages after a decade of aging.",
+      "availability": "hard-to-find",
+      "website": "vega-sicilia.com"
+    },
+    {
+      "id": "lopez-de-heredia",
+      "name": "R. Lopez de Heredia",
+      "country": "Spain",
+      "region": "Rioja",
+      "subregion": "Haro",
+      "grapes": ["Tempranillo", "Garnacha", "Graciano", "Viura"],
+      "founded": "1877",
+      "philosophy": "Lopez de Heredia is the most traditional producer in Rioja, aging wines in American oak for extraordinary periods. The wines are released only when the family considers them ready, preserving a winemaking philosophy unchanged for generations.",
+      "wines": [
+        {"name": "Vina Tondonia Gran Reserva", "grape": "Tempranillo", "notes": "Dried cherry, leather, tobacco, walnut, and dried herbs. Ethereally complex with silky texture from decades of aging."},
+        {"name": "Vina Tondonia Reserva Blanco", "grape": "Viura", "notes": "Oxidative notes of walnut, dried apple, and beeswax. A profoundly original and age-worthy white Rioja."}
+      ],
+      "price": "moderate",
+      "tier": "legendary",
+      "tags": ["sommelier-pick", "historic-estate", "family-owned", "age-worthy", "best-value"],
+      "awards": "The standard-bearer for traditional Rioja; the bodega contains some of the oldest wines in Spain.",
+      "availability": "widely-available",
+      "website": "lopezdeheredia.com"
+    },
+    {
+      "id": "pingus",
+      "name": "Dominio de Pingus",
+      "country": "Spain",
+      "region": "Castilla y Leon",
+      "subregion": "Ribera del Duero",
+      "grapes": ["Tempranillo"],
+      "founded": "1995",
+      "philosophy": "Peter Sisseck's cult estate produces tiny quantities of Tempranillo from ancient, ungrafted vines farmed biodynamically. Pingus is vinified with whole clusters and natural yeast in new French oak for a wine of immense concentration.",
+      "wines": [
+        {"name": "Pingus", "grape": "Tempranillo", "notes": "Blackberry, violet, graphite, chocolate, and wild herbs. Massively concentrated yet remarkably refined with searing length."},
+        {"name": "Flor de Pingus", "grape": "Tempranillo", "notes": "Red and dark fruit, spice, and mineral. The second wine with impressive depth at a fraction of the price."}
+      ],
+      "price": "luxury",
+      "tier": "cult",
+      "tags": ["sommelier-pick", "biodynamic", "small-batch", "bold", "allocated"],
+      "awards": "Multiple 100-point scores from Parker; Spain's most expensive wine.",
+      "availability": "allocated",
+      "website": "pingus.es"
+    },
+    {
+      "id": "alvaro-palacios",
+      "name": "Alvaro Palacios",
+      "country": "Spain",
+      "region": "Catalonia",
+      "subregion": "Priorat",
+      "grapes": ["Garnacha", "Carinena"],
+      "founded": "1989",
+      "philosophy": "Alvaro Palacios revived the ancient terraced vineyards of Priorat and now champions old-vine Garnacha across Spain. His approach combines biodynamic viticulture with a Burgundian focus on terroir expression.",
+      "wines": [
+        {"name": "L'Ermita", "grape": "Garnacha", "notes": "Kirsch, mineral, wild herbs, and incense. Breathtaking purity and finesse from 100-year-old vines on schist."},
+        {"name": "Finca Dofi", "grape": "Garnacha", "notes": "Ripe red fruit, spice, and garrigue. Generous and complex with polished tannins."},
+        {"name": "Les Terrasses", "grape": "Garnacha", "notes": "Dark fruit, herbs, and mineral. Accessible introduction to Priorat with real character."}
+      ],
+      "price": "luxury",
+      "tier": "highly-acclaimed",
+      "tags": ["sommelier-pick", "biodynamic", "old-world", "bold", "age-worthy"],
+      "awards": "L'Ermita is one of Spain's most acclaimed wines; Palacios is credited with Priorat's modern renaissance.",
+      "availability": "hard-to-find",
+      "website": "alvaropalacios.com"
+    },
+    {
+      "id": "marques-de-murrieta",
+      "name": "Marques de Murrieta",
+      "country": "Spain",
+      "region": "Rioja",
+      "subregion": "Ygay",
+      "grapes": ["Tempranillo", "Graciano", "Mazuelo"],
+      "founded": "1852",
+      "philosophy": "One of the two founding bodegas of Rioja, Murrieta produces from a single estate (Ygay) and combines tradition with careful modernization. The Castillo Ygay Gran Reserva Especial is released only after extended aging.",
+      "wines": [
+        {"name": "Castillo Ygay Gran Reserva Especial", "grape": "Tempranillo", "notes": "Dried cherry, leather, sweet spice, and cedar. Hauntingly complex with silky texture from decades of aging."},
+        {"name": "Dalmau Reserva", "grape": "Tempranillo", "notes": "Dark fruit, chocolate, and toasty oak. A modern-styled Rioja with concentration and polish."}
+      ],
+      "price": "premium",
+      "tier": "highly-acclaimed",
+      "tags": ["historic-estate", "family-owned", "age-worthy", "award-winning"],
+      "awards": "Castillo Ygay 2010 was Wine Spectator #1 Wine of the Year 2020.",
+      "availability": "widely-available",
+      "website": "marquesdemurrieta.com"
+    },
+    {
+      "id": "cune-cvne",
+      "name": "CVNE (Cune)",
+      "country": "Spain",
+      "region": "Rioja",
+      "subregion": "Haro",
+      "grapes": ["Tempranillo", "Graciano"],
+      "founded": "1879",
+      "philosophy": "CVNE is one of Rioja's oldest and most respected bodegas, producing a range from everyday Cune to the iconic Imperial and Vina Real. The historic cellars in Haro's Barrio de la Estacion house some of Spain's finest aged wines.",
+      "wines": [
+        {"name": "Imperial Gran Reserva", "grape": "Tempranillo", "notes": "Dried cherry, leather, tobacco, and sweet vanilla. Classically structured with seamless oak integration and long aging potential."},
+        {"name": "Vina Real Gran Reserva", "grape": "Tempranillo", "notes": "Red fruit, spice, and dried herbs. Elegant and refined with polished tannins."}
+      ],
+      "price": "moderate",
+      "tier": "highly-acclaimed",
+      "tags": ["historic-estate", "best-value", "old-world", "age-worthy"],
+      "awards": "Imperial Gran Reserva is consistently among Spain's highest-rated Riojas.",
+      "availability": "widely-available",
+      "website": "cvne.com"
+    },
+    {
+      "id": "gonzalez-byass",
+      "name": "Gonzalez Byass",
+      "country": "Spain",
+      "region": "Andalusia",
+      "subregion": "Jerez",
+      "grapes": ["Palomino Fino", "Pedro Ximenez"],
+      "founded": "1835",
+      "philosophy": "The most important Sherry house, Gonzalez Byass maintains one of the oldest solera systems in Jerez. Tio Pepe defined Fino Sherry for the world, while their VORS wines represent the pinnacle of the category.",
+      "wines": [
+        {"name": "Tio Pepe Fino", "grape": "Palomino Fino", "notes": "Almond, sea salt, green apple, and yeast. Bracingly dry and fresh under its protective layer of flor."},
+        {"name": "Apostoles Palo Cortado VORS", "grape": "Palomino Fino", "notes": "Walnut, dried apricot, coffee, and caramel. Incredibly complex with a long, nutty finish from 30+ years of aging."}
+      ],
+      "price": "moderate",
+      "tier": "highly-acclaimed",
+      "tags": ["sommelier-pick", "historic-estate", "best-value", "old-world"],
+      "awards": "Tio Pepe is the world's best-selling Fino Sherry; the VORS range is among the finest aged Sherries available.",
+      "availability": "widely-available",
+      "website": "gonzalezbyass.com"
+    },
+    {
+      "id": "equipo-navazos",
+      "name": "Equipo Navazos",
+      "country": "Spain",
+      "region": "Andalusia",
+      "subregion": "Jerez",
+      "grapes": ["Palomino Fino", "Pedro Ximenez", "Moscatel"],
+      "founded": "2005",
+      "philosophy": "A collaboration of Sherry experts who source exceptional single-cask and small-lot wines from the great bodegas of Jerez. Each release is numbered and represents a unique expression of the solera system at its best.",
+      "wines": [
+        {"name": "La Bota de Amontillado", "grape": "Palomino Fino", "notes": "Hazelnut, dried herbs, iodine, and caramel. Profoundly complex with searing concentration from decades in cask."},
+        {"name": "La Bota de Palo Cortado", "grape": "Palomino Fino", "notes": "Walnut, coffee, dried fruit, and sea breeze. Majestic and layered with extraordinary depth and length."}
+      ],
+      "price": "moderate",
+      "tier": "cult",
+      "tags": ["sommelier-pick", "small-batch", "hard-to-find", "old-world"],
+      "awards": "Each numbered release is a unique bottling; considered the ultimate source for exceptional Sherry.",
+      "availability": "hard-to-find",
+      "website": "equiponavazos.com"
+    },
+    {
+      "id": "jj-prum",
+      "name": "Joh. Jos. Prum",
+      "country": "Germany",
+      "region": "Mosel",
+      "subregion": "Wehlen",
+      "grapes": ["Riesling"],
+      "founded": "1911",
+      "philosophy": "J.J. Prum produces some of the most age-worthy Rieslings on earth from steep slate vineyards above the Mosel. The wines are fermented slowly and bottled with a touch of residual sugar that integrates beautifully over decades.",
+      "wines": [
+        {"name": "Wehlener Sonnenuhr Riesling Auslese", "grape": "Riesling", "notes": "Apricot, lime, slate, and honey. Ravishing sweetness balanced by electric acidity and piercing mineral intensity."},
+        {"name": "Wehlener Sonnenuhr Riesling Spatlese", "grape": "Riesling", "notes": "White peach, green apple, and wet stone. Delicate and precise with a feathery lightness."},
+        {"name": "Graacher Himmelreich Riesling Auslese", "grape": "Riesling", "notes": "Citrus blossom, honeycomb, and mineral. Ethereal and fine with extraordinary persistence."}
+      ],
+      "price": "moderate",
+      "tier": "legendary",
+      "tags": ["sommelier-pick", "historic-estate", "family-owned", "age-worthy", "elegant"],
+      "awards": "The benchmark for Mosel Riesling; Auslese wines can age for 50+ years.",
+      "availability": "widely-available",
+      "website": "jjprum.com"
+    },
+    {
+      "id": "egon-muller",
+      "name": "Egon Muller",
+      "country": "Germany",
+      "region": "Mosel",
+      "subregion": "Wiltingen",
+      "grapes": ["Riesling"],
+      "founded": "1797",
+      "philosophy": "Egon Muller's Scharzhofberger vineyard produces the most expensive Rieslings in the world. The estate practices meticulous, low-intervention viticulture on steep blue slate soils to achieve extraordinary purity and concentration.",
+      "wines": [
+        {"name": "Scharzhofberger Riesling Trockenbeerenauslese", "grape": "Riesling", "notes": "Apricot nectar, saffron, honey, and slate. Impossibly concentrated nectar with electrifying acidity. Among the rarest wines on earth."},
+        {"name": "Scharzhofberger Riesling Spatlese", "grape": "Riesling", "notes": "Green apple, lime blossom, and crushed slate. Weightless and crystalline with superb mineral finesse."}
+      ],
+      "price": "luxury",
+      "tier": "legendary",
+      "tags": ["sommelier-pick", "historic-estate", "family-owned", "age-worthy", "allocated"],
+      "awards": "Scharzhofberger TBA is the most expensive German wine; regularly fetches five-figure sums at auction.",
+      "availability": "allocated",
+      "website": "scharzhof.de"
+    },
+    {
+      "id": "f-x-pichler",
+      "name": "F.X. Pichler",
+      "country": "Austria",
+      "region": "Wachau",
+      "subregion": "Loiben",
+      "grapes": ["Gruner Veltliner", "Riesling"],
+      "founded": "1898",
+      "philosophy": "The most acclaimed producer in the Wachau, F.X. Pichler crafts dry whites of extraordinary power and concentration from terraced vineyards along the Danube. The 'M' designation marks the most monumental bottlings.",
+      "wines": [
+        {"name": "Gruner Veltliner Kellerberg Smaragd", "grape": "Gruner Veltliner", "notes": "White pepper, lentil, citrus, and stone fruit. Massive concentration with searing acidity and mineral depth."},
+        {"name": "Riesling Unendlich Smaragd", "grape": "Riesling", "notes": "Peach, lime, slate, and honeysuckle. Monumental richness balanced by breathtaking acidity and complexity."}
+      ],
+      "price": "premium",
+      "tier": "legendary",
+      "tags": ["sommelier-pick", "family-owned", "age-worthy", "elegant"],
+      "awards": "Austria's most celebrated wine estate; 'Unendlich' means 'infinite' and refers to the wine's endless finish.",
+      "availability": "hard-to-find",
+      "website": "fxpichler.at"
+    },
+    {
+      "id": "emmerich-knoll",
+      "name": "Emmerich Knoll",
+      "country": "Austria",
+      "region": "Wachau",
+      "subregion": "Loiben",
+      "grapes": ["Gruner Veltliner", "Riesling"],
+      "founded": "1825",
+      "philosophy": "Knoll is a traditionalist Wachau producer, crafting rich, powerful Smaragd wines that age beautifully for decades. The Vinothekfullung (library) releases are wines kept back and released at a later date with extra bottle age.",
+      "wines": [
+        {"name": "Riesling Schutt Smaragd", "grape": "Riesling", "notes": "Yellow peach, linden blossom, and mineral. Rich and concentrated with a long, savory finish."},
+        {"name": "Gruner Veltliner Loibenberg Smaragd", "grape": "Gruner Veltliner", "notes": "White pepper, stone fruit, and herbs. Powerful and layered with impressive depth."}
+      ],
+      "price": "premium",
+      "tier": "highly-acclaimed",
+      "tags": ["family-owned", "historic-estate", "age-worthy", "old-world"],
+      "awards": "One of the Wachau's most respected estates; Vinothekfullung wines are especially prized by collectors.",
+      "availability": "hard-to-find",
+      "website": "knoll.at"
+    },
+    {
+      "id": "nikolaihof",
+      "name": "Nikolaihof",
+      "country": "Austria",
+      "region": "Wachau",
+      "subregion": "Mautern",
+      "grapes": ["Riesling", "Gruner Veltliner"],
+      "founded": "985",
+      "philosophy": "The oldest winery in Austria and one of the world's first certified biodynamic estates. Nikolaihof ages its best wines in large old casks for years before release, producing whites of uncommon complexity and longevity.",
+      "wines": [
+        {"name": "Riesling Vinothek", "grape": "Riesling", "notes": "Honey, dried apricot, petrol, and herbal tea. Profoundly complex from years of cask aging with remarkable freshness."},
+        {"name": "Gruner Veltliner Im Weingebirge", "grape": "Gruner Veltliner", "notes": "Lentil, white pepper, apple, and mineral. Powerful and savory with great depth."}
+      ],
+      "price": "premium",
+      "tier": "highly-acclaimed",
+      "tags": ["biodynamic", "historic-estate", "family-owned", "age-worthy", "old-world"],
+      "awards": "The oldest winery in Austria dating to 985 AD; pioneer of biodynamic viticulture.",
+      "availability": "hard-to-find",
+      "website": "nikolaihof.at"
+    },
+    {
+      "id": "screaming-eagle",
+      "name": "Screaming Eagle",
+      "country": "USA",
+      "region": "California",
+      "subregion": "Oakville, Napa Valley",
+      "grapes": ["Cabernet Sauvignon"],
+      "founded": "1986",
+      "philosophy": "The most coveted cult Cabernet in Napa Valley, Screaming Eagle produces fewer than 600 cases from a small vineyard in Oakville. Under winemaker Nick Gislason, the wines show remarkable refinement and purity for their concentration.",
+      "wines": [
+        {"name": "Screaming Eagle Cabernet Sauvignon", "grape": "Cabernet Sauvignon", "notes": "Blackcurrant, graphite, violet, and dark chocolate. Extraordinarily pure and precise with seamless tannins and immense depth."},
+        {"name": "The Flight", "grape": "Cabernet Sauvignon", "notes": "Dark fruit, spice, and mineral. The second wine with real complexity and elegance."}
+      ],
+      "price": "luxury",
+      "tier": "cult",
+      "tags": ["sommelier-pick", "allocated", "bold", "age-worthy", "small-batch"],
+      "awards": "A 6-liter bottle sold for $500,000 at Napa Valley charity auction; waitlist stretches for years.",
+      "availability": "allocated",
+      "website": "screamingleagle.com"
+    },
+    {
+      "id": "harlan-estate",
+      "name": "Harlan Estate",
+      "country": "USA",
+      "region": "California",
+      "subregion": "Oakville, Napa Valley",
+      "grapes": ["Cabernet Sauvignon", "Merlot", "Cabernet Franc"],
+      "founded": "1984",
+      "philosophy": "Bill Harlan set out to create a California First Growth on the hillsides of Oakville. The estate is farmed with meticulous attention and produces a single Bordeaux-style blend of extraordinary complexity and aging potential.",
+      "wines": [
+        {"name": "Harlan Estate", "grape": "Cabernet Sauvignon", "notes": "Crème de cassis, espresso, graphite, and sweet earth. Monumentally concentrated yet remarkably refined with a seamless, never-ending finish."},
+        {"name": "The Maiden", "grape": "Cabernet Sauvignon", "notes": "Dark fruit, spice, and cedar. A graceful second wine with real depth and polish."}
+      ],
+      "price": "luxury",
+      "tier": "cult",
+      "tags": ["sommelier-pick", "allocated", "bold", "age-worthy", "elegant"],
+      "awards": "Multiple perfect 100-point scores from Parker; Bill Harlan's vision of a California First Growth realized.",
+      "availability": "allocated",
+      "website": "harlanestate.com"
+    },
+    {
+      "id": "opus-one",
+      "name": "Opus One",
+      "country": "USA",
+      "region": "California",
+      "subregion": "Oakville, Napa Valley",
+      "grapes": ["Cabernet Sauvignon", "Merlot", "Cabernet Franc", "Petit Verdot", "Malbec"],
+      "founded": "1978",
+      "philosophy": "A joint venture between Robert Mondavi and Baron Philippe de Rothschild, Opus One represents the marriage of Napa Valley fruit with Bordeaux winemaking tradition. The striking architecture and meticulous viticulture reflect the ambition of both founders.",
+      "wines": [
+        {"name": "Opus One", "grape": "Cabernet Sauvignon", "notes": "Blackcurrant, violet, graphite, and sweet oak. Polished and layered with fine tannins and a long, complex finish."},
+        {"name": "Overture", "grape": "Cabernet Sauvignon", "notes": "Red and black fruit, spice, and herbs. A multi-vintage blend that's approachable and generous."}
+      ],
+      "price": "luxury",
+      "tier": "highly-acclaimed",
+      "tags": ["historic-estate", "new-world", "elegant", "age-worthy"],
+      "awards": "The original Franco-American joint venture; an icon of Napa Valley since 1979.",
+      "availability": "widely-available",
+      "website": "opusonewinery.com"
+    },
+    {
+      "id": "ridge-vineyards",
+      "name": "Ridge Vineyards",
+      "country": "USA",
+      "region": "California",
+      "subregion": "Santa Cruz Mountains",
+      "grapes": ["Cabernet Sauvignon", "Zinfandel", "Merlot"],
+      "founded": "1962",
+      "philosophy": "Ridge is a beacon of pre-industrial winemaking in California, using native yeast, American oak, and minimal intervention under the legendary Paul Draper. Monte Bello consistently ranks among the world's finest Cabernets.",
+      "wines": [
+        {"name": "Monte Bello", "grape": "Cabernet Sauvignon", "notes": "Blackcurrant, iron, dried herbs, and limestone. Structured and mineral-driven with remarkable aging potential and terroir transparency."},
+        {"name": "Lytton Springs Zinfandel", "grape": "Zinfandel", "notes": "Boysenberry, black pepper, and earth. Rich and spicy with old-vine depth and complexity."},
+        {"name": "Geyserville", "grape": "Zinfandel", "notes": "Raspberry, spice, and dried herbs. A field blend of elegance and character."}
+      ],
+      "price": "premium",
+      "tier": "legendary",
+      "tags": ["sommelier-pick", "historic-estate", "age-worthy", "natural-wine"],
+      "awards": "Monte Bello placed 1st in the 2006 Judgment of Paris re-tasting, besting the top Bordeaux once again.",
+      "availability": "widely-available",
+      "website": "ridgewine.com"
+    },
+    {
+      "id": "robert-mondavi",
+      "name": "Robert Mondavi Winery",
+      "country": "USA",
+      "region": "California",
+      "subregion": "Oakville, Napa Valley",
+      "grapes": ["Cabernet Sauvignon", "Sauvignon Blanc"],
+      "founded": "1966",
+      "philosophy": "Robert Mondavi almost single-handedly elevated Napa Valley to world-class status. The Reserve Cabernet and Fume Blanc set standards that defined California winemaking for generations.",
+      "wines": [
+        {"name": "Reserve Cabernet Sauvignon", "grape": "Cabernet Sauvignon", "notes": "Blackcurrant, cedar, dark chocolate, and sweet oak. Rich and structured with polished tannins and impressive depth."},
+        {"name": "Reserve Fume Blanc", "grape": "Sauvignon Blanc", "notes": "Grapefruit, fig, melon, and toasty oak. The wine that put California Sauvignon Blanc on the map."}
+      ],
+      "price": "premium",
+      "tier": "highly-acclaimed",
+      "tags": ["historic-estate", "new-world", "award-winning", "approachable"],
+      "awards": "Founded the modern Napa Valley wine industry; the To Kalon vineyard is one of California's most famous.",
+      "availability": "widely-available",
+      "website": "robertmondaviwinery.com"
+    },
+    {
+      "id": "caymus-vineyards",
+      "name": "Caymus Vineyards",
+      "country": "USA",
+      "region": "California",
+      "subregion": "Rutherford, Napa Valley",
+      "grapes": ["Cabernet Sauvignon"],
+      "founded": "1972",
+      "philosophy": "The Wagner family's Caymus specializes entirely in rich, opulent Napa Cabernet. The Special Selection bottling is one of the most awarded wines in history, and the winery helped define the lush Napa style.",
+      "wines": [
+        {"name": "Special Selection Cabernet Sauvignon", "grape": "Cabernet Sauvignon", "notes": "Dark chocolate, cassis, vanilla, and ripe plum. Enormously rich and velvety with concentrated dark fruit."},
+        {"name": "Napa Valley Cabernet Sauvignon", "grape": "Cabernet Sauvignon", "notes": "Blackberry, cocoa, and sweet oak. Plush and crowd-pleasing with soft, ripe tannins."}
+      ],
+      "price": "premium",
+      "tier": "highly-acclaimed",
+      "tags": ["family-owned", "new-world", "bold", "award-winning"],
+      "awards": "Special Selection has won more Wine Spectator Top 100 appearances than almost any other wine.",
+      "availability": "widely-available",
+      "website": "caymus.com"
+    },
+    {
+      "id": "stags-leap-wine-cellars",
+      "name": "Stag's Leap Wine Cellars",
+      "country": "USA",
+      "region": "California",
+      "subregion": "Stags Leap District, Napa Valley",
+      "grapes": ["Cabernet Sauvignon"],
+      "founded": "1970",
+      "philosophy": "Warren Winiarski's estate famously won the 1976 Judgment of Paris, putting California on the world wine map. The CASK 23 blend from the SLV and FAY vineyards combines power with an iron-fist-in-velvet-glove elegance.",
+      "wines": [
+        {"name": "CASK 23 Cabernet Sauvignon", "grape": "Cabernet Sauvignon", "notes": "Blackcurrant, cherry, olive, and cedar. Elegant and complex with silky tannins and superb balance."},
+        {"name": "SLV Cabernet Sauvignon", "grape": "Cabernet Sauvignon", "notes": "Dark fruit, graphite, and herb. Structured and firm with the signature Stags Leap District finesse."}
+      ],
+      "price": "luxury",
+      "tier": "legendary",
+      "tags": ["sommelier-pick", "historic-estate", "elegant", "age-worthy", "new-world"],
+      "awards": "The 1973 SLV won the 1976 Judgment of Paris; a watershed moment for New World wine.",
+      "availability": "widely-available",
+      "website": "stagsleapwinecellars.com"
+    },
+    {
+      "id": "dominus-estate",
+      "name": "Dominus Estate",
+      "country": "USA",
+      "region": "California",
+      "subregion": "Yountville, Napa Valley",
+      "grapes": ["Cabernet Sauvignon", "Cabernet Franc", "Petit Verdot"],
+      "founded": "1983",
+      "philosophy": "Christian Moueix of Petrus fame brought his Bordeaux sensibility to the historic Napanook vineyard. Dominus is one of the most terroir-driven and elegant wines in Napa Valley, with a distinctly European sense of restraint.",
+      "wines": [
+        {"name": "Dominus", "grape": "Cabernet Sauvignon", "notes": "Dark fruit, herb, graphite, and earth. Elegant and structured with a Bordeaux-like restraint and mineral depth."},
+        {"name": "Napanook", "grape": "Cabernet Sauvignon", "notes": "Red and black fruit, spice, and herbs. The approachable second wine with real complexity."}
+      ],
+      "price": "luxury",
+      "tier": "highly-acclaimed",
+      "tags": ["sommelier-pick", "elegant", "age-worthy", "new-world"],
+      "awards": "Multiple 100-point scores; the Herzog & de Meuron-designed winery is an architectural landmark.",
+      "availability": "widely-available",
+      "website": "dominusestate.com"
+    },
+    {
+      "id": "sine-qua-non",
+      "name": "Sine Qua Non",
+      "country": "USA",
+      "region": "California",
+      "subregion": "Ventura County",
+      "grapes": ["Syrah", "Grenache", "Roussanne"],
+      "founded": "1994",
+      "philosophy": "Manfred Krankl's Sine Qua Non is California's most extreme cult wine, with every vintage receiving a unique name, label, and often a different blend. The wines push ripeness and concentration to extraordinary limits while maintaining remarkable balance.",
+      "wines": [
+        {"name": "SQN Syrah (varies by vintage)", "grape": "Syrah", "notes": "Blackberry, bacon fat, violet, espresso, and exotic spice. Outrageously rich and concentrated with layers of dark, hedonistic fruit."},
+        {"name": "SQN Grenache (varies by vintage)", "grape": "Grenache", "notes": "Kirsch, lavender, garrigue, and sweet spice. Powerful yet perfumed with incredible depth."}
+      ],
+      "price": "luxury",
+      "tier": "cult",
+      "tags": ["allocated", "small-batch", "bold", "hard-to-find"],
+      "awards": "More 100-point wines from Parker than almost any other California producer; mailing list with years-long wait.",
+      "availability": "allocated",
+      "website": "sinequanon.com"
+    },
+    {
+      "id": "peter-michael",
+      "name": "Peter Michael Winery",
+      "country": "USA",
+      "region": "California",
+      "subregion": "Knights Valley, Sonoma County",
+      "grapes": ["Chardonnay", "Pinot Noir", "Cabernet Sauvignon"],
+      "founded": "1982",
+      "philosophy": "Sir Peter Michael brought a European philosophy to mountain vineyards in Sonoma, producing Burgundy-inspired Chardonnay and Pinot Noir alongside Bordeaux-style reds. Winemaker Nicolas Morlet crafts wines of exceptional refinement.",
+      "wines": [
+        {"name": "Belle Cote Chardonnay", "grape": "Chardonnay", "notes": "Lemon curd, hazelnut, mineral, and white flowers. Rich and layered with Burgundian complexity and precision."},
+        {"name": "Les Pavots", "grape": "Cabernet Sauvignon", "notes": "Blackcurrant, violet, graphite, and sage. Elegant Bordeaux-style blend with firm structure and great depth."}
+      ],
+      "price": "luxury",
+      "tier": "highly-acclaimed",
+      "tags": ["family-owned", "elegant", "age-worthy", "award-winning"],
+      "awards": "Consistently among California's highest-rated Chardonnays; multiple 100-point scores.",
+      "availability": "hard-to-find",
+      "website": "petermichaelwinery.com"
+    },
+    {
+      "id": "kistler-vineyards",
+      "name": "Kistler Vineyards",
+      "country": "USA",
+      "region": "California",
+      "subregion": "Sonoma Coast",
+      "grapes": ["Chardonnay", "Pinot Noir"],
+      "founded": "1978",
+      "philosophy": "Steve Kistler produces Burgundy-inspired Chardonnay and Pinot Noir from cool-climate Sonoma vineyards. Vineyard-designate bottlings showcase distinct terroir expressions through meticulous farming and gentle winemaking.",
+      "wines": [
+        {"name": "Kistler Vineyard Chardonnay", "grape": "Chardonnay", "notes": "Lemon, pear, hazelnut, and crushed stone. Rich yet focused with beautiful mineral finesse."},
+        {"name": "Cuvee Catherine Pinot Noir", "grape": "Pinot Noir", "notes": "Dark cherry, rose petal, and spice. Silky and complex with a long, fragrant finish."}
+      ],
+      "price": "premium",
+      "tier": "highly-acclaimed",
+      "tags": ["family-owned", "elegant", "new-world", "award-winning"],
+      "awards": "Among California's most acclaimed Chardonnay producers; Parker called them 'world class.'",
+      "availability": "hard-to-find",
+      "website": "kistlervineyards.com"
+    },
+    {
+      "id": "williams-selyem",
+      "name": "Williams Selyem",
+      "country": "USA",
+      "region": "California",
+      "subregion": "Russian River Valley, Sonoma County",
+      "grapes": ["Pinot Noir", "Chardonnay"],
+      "founded": "1981",
+      "philosophy": "Williams Selyem pioneered the mailing-list model for cult California Pinot Noir. Founded by Burt Williams and Ed Selyem in a garage, the winery produces vineyard-designate Pinots of remarkable depth and complexity from Russian River Valley.",
+      "wines": [
+        {"name": "Rochioli Riverblock Pinot Noir", "grape": "Pinot Noir", "notes": "Dark cherry, cola, forest floor, and baking spice. Rich and layered with silky texture and great length."},
+        {"name": "Westside Road Neighbors Pinot Noir", "grape": "Pinot Noir", "notes": "Raspberry, rose, and earth. Elegant and perfumed with lovely finesse."}
+      ],
+      "price": "premium",
+      "tier": "highly-acclaimed",
+      "tags": ["family-owned", "small-batch", "elegant", "new-world"],
+      "awards": "Pioneered the mailing-list allocation model in California; among the finest Russian River Valley Pinots.",
+      "availability": "allocated",
+      "website": "williamsselyem.com"
+    },
+    {
+      "id": "domaine-drouhin-oregon",
+      "name": "Domaine Drouhin Oregon",
+      "country": "USA",
+      "region": "Oregon",
+      "subregion": "Dundee Hills, Willamette Valley",
+      "grapes": ["Pinot Noir", "Chardonnay"],
+      "founded": "1987",
+      "philosophy": "Veronique Drouhin brought Burgundian winemaking to Oregon's Dundee Hills, proving the Willamette Valley could produce world-class Pinot Noir. The estate uses Burgundian tight spacing and produces wines of elegant structure.",
+      "wines": [
+        {"name": "Laurene Pinot Noir", "grape": "Pinot Noir", "notes": "Black cherry, spice, earth, and subtle oak. Complex and structured with a silky, long finish."},
+        {"name": "Cuvee Classique Pinot Noir", "grape": "Pinot Noir", "notes": "Red fruit, floral notes, and forest floor. An approachable introduction to Oregon Pinot with real character."}
+      ],
+      "price": "moderate",
+      "tier": "highly-acclaimed",
+      "tags": ["family-owned", "elegant", "approachable", "new-world"],
+      "awards": "Proved Oregon's potential for Burgundy-quality Pinot Noir; the Drouhin name lends instant credibility.",
+      "availability": "widely-available",
+      "website": "domainedrouhin.com"
+    },
+    {
+      "id": "quilceda-creek",
+      "name": "Quilceda Creek",
+      "country": "USA",
+      "region": "Washington",
+      "subregion": "Columbia Valley",
+      "grapes": ["Cabernet Sauvignon"],
+      "founded": "1978",
+      "philosophy": "Washington State's most acclaimed Cabernet producer, Quilceda Creek sources from top vineyards across the Columbia Valley. The Golitzin family crafts powerful, concentrated wines that rival the best of Napa Valley.",
+      "wines": [
+        {"name": "Quilceda Creek Cabernet Sauvignon", "grape": "Cabernet Sauvignon", "notes": "Blackcurrant, espresso, graphite, and dark chocolate. Massively concentrated with velvety tannins and extraordinary depth."}
+      ],
+      "price": "luxury",
+      "tier": "cult",
+      "tags": ["family-owned", "bold", "age-worthy", "award-winning"],
+      "awards": "More 100-point scores from Wine Advocate than any other Washington producer.",
+      "availability": "hard-to-find",
+      "website": "quilcedacreek.com"
+    },
+    {
+      "id": "leonetti-cellar",
+      "name": "Leonetti Cellar",
+      "country": "USA",
+      "region": "Washington",
+      "subregion": "Walla Walla Valley",
+      "grapes": ["Cabernet Sauvignon", "Merlot", "Sangiovese"],
+      "founded": "1977",
+      "philosophy": "The first winery in the Walla Walla Valley, Leonetti Cellar helped establish Washington as a serious wine region. The estate combines Italian heritage with New World ambition, producing rich, generous reds from estate vineyards.",
+      "wines": [
+        {"name": "Leonetti Cellar Cabernet Sauvignon", "grape": "Cabernet Sauvignon", "notes": "Dark plum, cherry, sweet spice, and toasty oak. Opulent and generous with velvety texture."},
+        {"name": "Leonetti Cellar Merlot", "grape": "Merlot", "notes": "Blackberry, chocolate, and herbs. Plush and rich with soft, round tannins."}
+      ],
+      "price": "premium",
+      "tier": "highly-acclaimed",
+      "tags": ["family-owned", "historic-estate", "bold", "new-world"],
+      "awards": "The first winery in Walla Walla Valley; mailing list has a years-long waitlist.",
+      "availability": "allocated",
+      "website": "leonetticellar.com"
+    },
+    {
+      "id": "bond-estates",
+      "name": "Bond Estates",
+      "country": "USA",
+      "region": "California",
+      "subregion": "Napa Valley",
+      "grapes": ["Cabernet Sauvignon"],
+      "founded": "1997",
+      "philosophy": "Bill Harlan's second project produces single-vineyard Cabernets from five distinct hillside sites across Napa Valley. Each wine expresses its unique terroir while sharing a house style of power and refinement.",
+      "wines": [
+        {"name": "Vecina", "grape": "Cabernet Sauvignon", "notes": "Blackcurrant, iron, graphite, and lavender. Dense and powerful with extraordinary mineral intensity."},
+        {"name": "St. Eden", "grape": "Cabernet Sauvignon", "notes": "Dark fruit, sage, and chocolate. Silky and perfumed with elegant structure."}
+      ],
+      "price": "luxury",
+      "tier": "cult",
+      "tags": ["allocated", "bold", "age-worthy", "small-batch"],
+      "awards": "Multiple 100-point scores; sister project to Harlan Estate from Bill Harlan.",
+      "availability": "allocated",
+      "website": "bondestates.com"
+    },
+    {
+      "id": "marcassin",
+      "name": "Marcassin",
+      "country": "USA",
+      "region": "California",
+      "subregion": "Sonoma Coast",
+      "grapes": ["Pinot Noir", "Chardonnay"],
+      "founded": "1990",
+      "philosophy": "Helen Turley's Marcassin produces tiny quantities of Chardonnay and Pinot Noir from a remote vineyard on the extreme Sonoma Coast. The wines are among California's most concentrated and sought-after.",
+      "wines": [
+        {"name": "Marcassin Vineyard Chardonnay", "grape": "Chardonnay", "notes": "Lemon curd, hazelnut, crushed stone, and honey. Extraordinarily concentrated with layers of complexity."},
+        {"name": "Marcassin Vineyard Pinot Noir", "grape": "Pinot Noir", "notes": "Dark cherry, earth, spice, and wild mushroom. Dense and brooding with silky tannins."}
+      ],
+      "price": "luxury",
+      "tier": "cult",
+      "tags": ["allocated", "small-batch", "elegant", "hard-to-find"],
+      "awards": "Among the most allocated wines in California; Helen Turley is a legendary consulting winemaker.",
+      "availability": "allocated",
+      "website": "marcassin.com"
+    },
+    {
+      "id": "shafer-vineyards",
+      "name": "Shafer Vineyards",
+      "country": "USA",
+      "region": "California",
+      "subregion": "Stags Leap District, Napa Valley",
+      "grapes": ["Cabernet Sauvignon", "Merlot"],
+      "founded": "1972",
+      "philosophy": "The Shafer family produces powerful, polished wines from hillside vineyards in the Stags Leap District. Hillside Select is one of Napa's most consistent and celebrated single-vineyard Cabernets.",
+      "wines": [
+        {"name": "Hillside Select Cabernet Sauvignon", "grape": "Cabernet Sauvignon", "notes": "Blackberry, espresso, dark chocolate, and graphite. Massively structured yet refined with a very long finish."},
+        {"name": "One Point Five Cabernet Sauvignon", "grape": "Cabernet Sauvignon", "notes": "Dark fruit, sweet oak, and spice. Rich and approachable with polished tannins."}
+      ],
+      "price": "luxury",
+      "tier": "highly-acclaimed",
+      "tags": ["family-owned", "bold", "age-worthy", "award-winning"],
+      "awards": "Hillside Select has received multiple 100-point scores; certified sustainable farming.",
+      "availability": "hard-to-find",
+      "website": "shafervineyards.com"
+    },
+    {
+      "id": "hundred-acre",
+      "name": "Hundred Acre",
+      "country": "USA",
+      "region": "California",
+      "subregion": "Napa Valley",
+      "grapes": ["Cabernet Sauvignon"],
+      "founded": "2000",
+      "philosophy": "Jayson Woodbridge's Hundred Acre pursues extreme concentration and richness from old-vine Cabernet. The wines are unapologetically massive, with extended maceration and all-new French oak, representing the zenith of the hedonistic Napa style.",
+      "wines": [
+        {"name": "Kayli Morgan Vineyard Cabernet Sauvignon", "grape": "Cabernet Sauvignon", "notes": "Blackberry jam, espresso, dark chocolate, and exotic spice. Unbelievably concentrated and opulent with a huge, velvety finish."},
+        {"name": "Ark Vineyard Cabernet Sauvignon", "grape": "Cabernet Sauvignon", "notes": "Crème de cassis, mocha, and graphite. Powerful and dense with layers of dark fruit."}
+      ],
+      "price": "luxury",
+      "tier": "cult",
+      "tags": ["allocated", "bold", "small-batch", "new-world"],
+      "awards": "More 100-point Parker scores per production volume than almost any other Napa producer.",
+      "availability": "allocated",
+      "website": "hundredacre.com"
+    },
+    {
+      "id": "catena-zapata",
+      "name": "Catena Zapata",
+      "country": "Argentina",
+      "region": "Mendoza",
+      "subregion": "Lujan de Cuyo",
+      "grapes": ["Malbec", "Cabernet Sauvignon", "Chardonnay"],
+      "founded": "1902",
+      "philosophy": "Nicolas Catena revolutionized Argentine wine by proving that high-altitude Mendoza vineyards could produce world-class Malbec. The estate pioneered site-specific viticulture in Argentina and continues to push boundaries with high-elevation plantings.",
+      "wines": [
+        {"name": "Nicolas Catena Zapata", "grape": "Malbec", "notes": "Blackberry, violet, dark chocolate, and spice. Complex and structured with polished tannins and impressive depth."},
+        {"name": "Catena Alta Malbec", "grape": "Malbec", "notes": "Plum, cocoa, and sweet spice. Rich and velvety with ripe dark fruit and a long finish."},
+        {"name": "Adrianna Vineyard White Stones Chardonnay", "grape": "Chardonnay", "notes": "Citrus, crushed stone, and hazelnut. Extraordinary mineral precision from 5,000ft elevation."}
+      ],
+      "price": "premium",
+      "tier": "legendary",
+      "tags": ["family-owned", "new-world", "award-winning", "bold"],
+      "awards": "Decanter Man of the Year; Adrianna Vineyard recognized as a Grand Cru-quality site.",
+      "availability": "widely-available",
+      "website": "catenawines.com"
+    },
+    {
+      "id": "achaval-ferrer",
+      "name": "Achaval-Ferrer",
+      "country": "Argentina",
+      "region": "Mendoza",
+      "subregion": "Lujan de Cuyo",
+      "grapes": ["Malbec"],
+      "founded": "1998",
+      "philosophy": "Achaval-Ferrer produces single-vineyard Malbecs from old vines at high altitude, showcasing the diversity of Mendoza's terroirs. The wines are made with minimal intervention and careful oak management to preserve varietal purity.",
+      "wines": [
+        {"name": "Finca Altamira Malbec", "grape": "Malbec", "notes": "Violet, blackberry, mineral, and crushed stone. Elegant and refined with floral lift and fine tannins."},
+        {"name": "Finca Bella Vista Malbec", "grape": "Malbec", "notes": "Dark plum, chocolate, and sweet spice. Rich and concentrated with velvety texture."}
+      ],
+      "price": "premium",
+      "tier": "highly-acclaimed",
+      "tags": ["small-batch", "new-world", "bold", "award-winning"],
+      "awards": "Among the highest-rated Argentine wines from Parker and Wine Spectator.",
+      "availability": "widely-available",
+      "website": "achavalferrer.com"
+    },
+    {
+      "id": "almaviva",
+      "name": "Almaviva",
+      "country": "Chile",
+      "region": "Maipo Valley",
+      "subregion": "Puente Alto",
+      "grapes": ["Cabernet Sauvignon", "Carmenere", "Cabernet Franc"],
+      "founded": "1997",
+      "philosophy": "A joint venture between Concha y Toro and Baron Philippe de Rothschild, Almaviva aims to be Chile's First Growth. The Bordeaux-style blend from Puente Alto showcases the exceptional potential of Maipo Valley Cabernet.",
+      "wines": [
+        {"name": "Almaviva", "grape": "Cabernet Sauvignon", "notes": "Blackcurrant, tobacco, cedar, and dark chocolate. Elegant and powerful with fine-grained tannins and great depth."}
+      ],
+      "price": "luxury",
+      "tier": "highly-acclaimed",
+      "tags": ["new-world", "elegant", "age-worthy", "award-winning"],
+      "awards": "Chile's most prestigious wine; regularly scores 95+ from major critics.",
+      "availability": "widely-available",
+      "website": "almavivawinery.com"
+    },
+    {
+      "id": "concha-y-toro-don-melchor",
+      "name": "Concha y Toro (Don Melchor)",
+      "country": "Chile",
+      "region": "Maipo Valley",
+      "subregion": "Puente Alto",
+      "grapes": ["Cabernet Sauvignon"],
+      "founded": "1883",
+      "philosophy": "Don Melchor is the prestige cuvee of Chile's largest producer, made from a single vineyard in Puente Alto. The wine demonstrates that Chile can produce Cabernet Sauvignon of world-class complexity and aging potential.",
+      "wines": [
+        {"name": "Don Melchor Cabernet Sauvignon", "grape": "Cabernet Sauvignon", "notes": "Blackcurrant, graphite, dark chocolate, and dried herbs. Structured and complex with polished tannins and a mineral finish."},
+        {"name": "Carmín de Peumo Carmenere", "grape": "Carmenere", "notes": "Dark plum, green pepper, cocoa, and spice. Rich and exotic with fine-grained tannins."}
+      ],
+      "price": "premium",
+      "tier": "highly-acclaimed",
+      "tags": ["historic-estate", "new-world", "bold", "award-winning"],
+      "awards": "Don Melchor is Chile's most decorated wine; multiple Wine Spectator Top 100 appearances.",
+      "availability": "widely-available",
+      "website": "conchaytoro.com"
+    },
+    {
+      "id": "clos-apalta",
+      "name": "Clos Apalta",
+      "country": "Chile",
+      "region": "Colchagua Valley",
+      "subregion": "Apalta",
+      "grapes": ["Carmenere", "Cabernet Sauvignon", "Merlot"],
+      "founded": "1997",
+      "philosophy": "Produced by the Marnier-Lapostolle family (Grand Marnier) with consultation from Michel Rolland, Clos Apalta is a gravity-flow winery producing one of Chile's most opulent and acclaimed red blends from the warm Apalta Valley.",
+      "wines": [
+        {"name": "Clos Apalta", "grape": "Carmenere", "notes": "Blackberry, dark chocolate, espresso, and sweet spice. Enormously rich and concentrated with velvety tannins and a long finish."}
+      ],
+      "price": "luxury",
+      "tier": "highly-acclaimed",
+      "tags": ["new-world", "bold", "award-winning", "age-worthy"],
+      "awards": "Wine Spectator #1 Wine of the Year 2008; consistently among Chile's highest-scored wines.",
+      "availability": "widely-available",
+      "website": "closapalta.com"
+    },
+    {
+      "id": "sena",
+      "name": "Sena",
+      "country": "Chile",
+      "region": "Aconcagua Valley",
+      "subregion": "Aconcagua",
+      "grapes": ["Cabernet Sauvignon", "Carmenere", "Malbec", "Petit Verdot"],
+      "founded": "1995",
+      "philosophy": "Created by Eduardo Chadwick of Errazuriz, Sena is Chile's answer to the Super Tuscan concept. Biodynamically farmed, it proved Chile's elite potential by defeating top Bordeaux and Tuscans in the Berlin Tasting of 2004.",
+      "wines": [
+        {"name": "Sena", "grape": "Cabernet Sauvignon", "notes": "Cassis, graphite, Mediterranean herbs, and sweet spice. Polished and complex with firm structure and great elegance."}
+      ],
+      "price": "luxury",
+      "tier": "highly-acclaimed",
+      "tags": ["biodynamic", "new-world", "elegant", "age-worthy"],
+      "awards": "Won the 2004 Berlin Tasting against top Bordeaux; biodynamic since 2005.",
+      "availability": "widely-available",
+      "website": "sena.cl"
+    },
+    {
+      "id": "penfolds",
+      "name": "Penfolds",
+      "country": "Australia",
+      "region": "South Australia",
+      "subregion": "Multi-regional",
+      "grapes": ["Shiraz", "Cabernet Sauvignon"],
+      "founded": "1844",
+      "philosophy": "Australia's most famous wine house, Penfolds is built on the philosophy of multi-regional blending to create wines of consistent excellence. Grange, created by Max Schubert in 1951, is one of the world's great wines and Australia's First Growth.",
+      "wines": [
+        {"name": "Grange", "grape": "Shiraz", "notes": "Blackberry, dark chocolate, leather, tar, and sweet spice. Monumentally concentrated with layers of fruit and savory complexity that evolve over decades."},
+        {"name": "Bin 707 Cabernet Sauvignon", "grape": "Cabernet Sauvignon", "notes": "Cassis, cedar, dark chocolate, and mint. Powerful and structured with impressive depth."},
+        {"name": "St Henri Shiraz", "grape": "Shiraz", "notes": "Dark fruit, earth, and dried herbs. Made without new oak, offering an alternative expression of great Penfolds Shiraz."}
+      ],
+      "price": "luxury",
+      "tier": "legendary",
+      "tags": ["sommelier-pick", "historic-estate", "bold", "age-worthy", "award-winning"],
+      "awards": "Grange is Australia's most decorated wine with dozens of perfect scores; the 1951 original is legendary.",
+      "availability": "widely-available",
+      "website": "penfolds.com"
+    },
+    {
+      "id": "henschke",
+      "name": "Henschke",
+      "country": "Australia",
+      "region": "South Australia",
+      "subregion": "Eden Valley",
+      "grapes": ["Shiraz", "Cabernet Sauvignon", "Riesling"],
+      "founded": "1868",
+      "philosophy": "Fifth-generation winemaker Stephen Henschke and viticulturist Prue Henschke produce Hill of Grace from pre-phylloxera vines planted in the 1860s. The estate is a leader in biodynamic and organic viticulture in Australia.",
+      "wines": [
+        {"name": "Hill of Grace Shiraz", "grape": "Shiraz", "notes": "Blackberry, pepper, dark chocolate, dried herbs, and earth. Majestic and complex with silky tannins and extraordinary depth from ancient vines."},
+        {"name": "Mount Edelstone Shiraz", "grape": "Shiraz", "notes": "Dark plum, spice, licorice, and mineral. Elegant and structured with impressive concentration."}
+      ],
+      "price": "luxury",
+      "tier": "legendary",
+      "tags": ["sommelier-pick", "biodynamic", "family-owned", "age-worthy", "historic-estate"],
+      "awards": "Hill of Grace is Australia's most celebrated single-vineyard wine; vines are over 160 years old.",
+      "availability": "hard-to-find",
+      "website": "henschke.com.au"
+    },
+    {
+      "id": "torbreck",
+      "name": "Torbreck Vintners",
+      "country": "Australia",
+      "region": "South Australia",
+      "subregion": "Barossa Valley",
+      "grapes": ["Shiraz", "Grenache", "Mourvedre"],
+      "founded": "1994",
+      "philosophy": "David Powell founded Torbreck to champion the Barossa's old-vine heritage, sourcing from some of the oldest Shiraz, Grenache, and Mourvedre vineyards in the world. The wines are powerful and concentrated but show surprising finesse.",
+      "wines": [
+        {"name": "RunRig", "grape": "Shiraz", "notes": "Blackberry, dark chocolate, licorice, and exotic spice. Massively concentrated with a touch of Viognier adding floral lift."},
+        {"name": "The Laird", "grape": "Shiraz", "notes": "Black fruit, tar, leather, and graphite. One of Australia's most concentrated wines from ancient vines."}
+      ],
+      "price": "luxury",
+      "tier": "highly-acclaimed",
+      "tags": ["bold", "age-worthy", "new-world", "award-winning"],
+      "awards": "RunRig consistently scores 95+ from major critics; The Laird has received 100-point scores.",
+      "availability": "hard-to-find",
+      "website": "torbreck.com"
+    },
+    {
+      "id": "tyrells",
+      "name": "Tyrrell's Wines",
+      "country": "Australia",
+      "region": "New South Wales",
+      "subregion": "Hunter Valley",
+      "grapes": ["Semillon", "Shiraz", "Chardonnay"],
+      "founded": "1858",
+      "philosophy": "A Hunter Valley icon, Tyrrell's is the benchmark for Australian Semillon, a uniquely age-worthy style picked early and bottled without oak. The Vat 1 Semillon is one of Australia's greatest white wines.",
+      "wines": [
+        {"name": "Vat 1 Semillon", "grape": "Semillon", "notes": "Lemon, toast, lanolin, and honey. Bone-dry and intensely mineral when young, developing extraordinary complexity with a decade of age."},
+        {"name": "Vat 47 Chardonnay", "grape": "Chardonnay", "notes": "Peach, cashew, and citrus. One of Australia's original premium Chardonnays with fine oak integration."}
+      ],
+      "price": "moderate",
+      "tier": "highly-acclaimed",
+      "tags": ["family-owned", "historic-estate", "age-worthy", "best-value"],
+      "awards": "Vat 1 is Australia's most awarded white wine; Hunter Semillon is a unique national treasure.",
+      "availability": "widely-available",
+      "website": "tyrrells.com.au"
+    },
+    {
+      "id": "giaconda",
+      "name": "Giaconda",
+      "country": "Australia",
+      "region": "Victoria",
+      "subregion": "Beechworth",
+      "grapes": ["Chardonnay", "Pinot Noir", "Shiraz"],
+      "founded": "1985",
+      "philosophy": "Rick Kinzbrunner's Giaconda is a tiny cult estate producing Australia's most Burgundian Chardonnay and Pinot Noir. Meticulous viticulture and gentle winemaking yield wines of extraordinary refinement and complexity.",
+      "wines": [
+        {"name": "Giaconda Chardonnay", "grape": "Chardonnay", "notes": "Lemon curd, hazelnut, flint, and white peach. Magnificent complexity with Burgundian texture and mineral depth."},
+        {"name": "Giaconda Pinot Noir", "grape": "Pinot Noir", "notes": "Cherry, earth, spice, and subtle oak. Elegant and silky with real depth."}
+      ],
+      "price": "luxury",
+      "tier": "cult",
+      "tags": ["small-batch", "elegant", "allocated", "age-worthy"],
+      "awards": "Australia's most coveted Chardonnay; mailing list allocation only.",
+      "availability": "allocated",
+      "website": "giaconda.com.au"
+    },
+    {
+      "id": "vasse-felix",
+      "name": "Vasse Felix",
+      "country": "Australia",
+      "region": "Western Australia",
+      "subregion": "Margaret River",
+      "grapes": ["Cabernet Sauvignon", "Chardonnay"],
+      "founded": "1967",
+      "philosophy": "The founding estate of Margaret River, Vasse Felix set the template for the region's elegant Cabernet and Chardonnay. Under winemaker Virginia Willcock, the wines have reached new heights of precision and terroir expression.",
+      "wines": [
+        {"name": "Tom Cullity Cabernet Sauvignon Malbec", "grape": "Cabernet Sauvignon", "notes": "Blackcurrant, cedar, violet, and graphite. Refined and structured with impressive concentration and length."},
+        {"name": "Heytesbury Chardonnay", "grape": "Chardonnay", "notes": "Citrus, almond, and mineral. Elegant and precise with fine oak integration."}
+      ],
+      "price": "premium",
+      "tier": "highly-acclaimed",
+      "tags": ["historic-estate", "elegant", "new-world", "award-winning"],
+      "awards": "Margaret River's founding winery; Tom Cullity is among Western Australia's finest wines.",
+      "availability": "widely-available",
+      "website": "vassefelix.com.au"
+    },
+    {
+      "id": "cloudy-bay",
+      "name": "Cloudy Bay",
+      "country": "New Zealand",
+      "region": "Marlborough",
+      "subregion": "Wairau Valley",
+      "grapes": ["Sauvignon Blanc", "Pinot Noir", "Chardonnay"],
+      "founded": "1985",
+      "philosophy": "Cloudy Bay put New Zealand Sauvignon Blanc on the world map with its pungent, pristine style. The winery also produces excellent Pinot Noir and a sparkling wine, demonstrating Marlborough's wider potential.",
+      "wines": [
+        {"name": "Cloudy Bay Sauvignon Blanc", "grape": "Sauvignon Blanc", "notes": "Passionfruit, grapefruit, cut grass, and gooseberry. Vibrant and intensely aromatic with crisp, mouthwatering acidity."},
+        {"name": "Te Koko Sauvignon Blanc", "grape": "Sauvignon Blanc", "notes": "Stone fruit, herbs, and subtle oak. A more complex, barrel-fermented expression with texture and depth."}
+      ],
+      "price": "moderate",
+      "tier": "highly-acclaimed",
+      "tags": ["historic-estate", "new-world", "approachable", "award-winning"],
+      "awards": "Defined New Zealand Sauvignon Blanc for the world; one of the most recognized wine brands globally.",
+      "availability": "widely-available",
+      "website": "cloudybay.co.nz"
+    },
+    {
+      "id": "felton-road",
+      "name": "Felton Road",
+      "country": "New Zealand",
+      "region": "Central Otago",
+      "subregion": "Bannockburn",
+      "grapes": ["Pinot Noir", "Chardonnay", "Riesling"],
+      "founded": "1991",
+      "philosophy": "Felton Road is New Zealand's most acclaimed Pinot Noir producer, farming biodynamically in the extreme climate of Central Otago. The wines combine New World fruit intensity with Old World complexity and terroir specificity.",
+      "wines": [
+        {"name": "Block 5 Pinot Noir", "grape": "Pinot Noir", "notes": "Dark cherry, plum, spice, and mineral. Concentrated and complex with silky tannins and great depth."},
+        {"name": "Block 3 Pinot Noir", "grape": "Pinot Noir", "notes": "Red cherry, floral notes, and earth. More elegant and perfumed with fine-grained tannins."},
+        {"name": "Felton Road Chardonnay", "grape": "Chardonnay", "notes": "Citrus, white peach, and subtle oak. Focused and mineral with excellent acidity."}
+      ],
+      "price": "premium",
+      "tier": "highly-acclaimed",
+      "tags": ["sommelier-pick", "biodynamic", "elegant", "new-world"],
+      "awards": "New Zealand's most consistently acclaimed Pinot Noir; biodynamic certification since 2010.",
+      "availability": "hard-to-find",
+      "website": "feltonroad.com"
+    },
+    {
+      "id": "kumeu-river",
+      "name": "Kumeu River",
+      "country": "New Zealand",
+      "region": "Auckland",
+      "subregion": "Kumeu",
+      "grapes": ["Chardonnay", "Pinot Gris"],
+      "founded": "1944",
+      "philosophy": "Master of Wine Michael Brajkovich crafts New Zealand's finest Chardonnay using Burgundian techniques including wild yeast fermentation and extended lees aging. The wines rival top white Burgundy at a fraction of the price.",
+      "wines": [
+        {"name": "Mate's Vineyard Chardonnay", "grape": "Chardonnay", "notes": "Citrus, hazelnut, flint, and white peach. Burgundian complexity with remarkable mineral depth and precision."},
+        {"name": "Hunting Hill Chardonnay", "grape": "Chardonnay", "notes": "Lemon, cashew, and stone. Focused and elegant with fine texture and length."}
+      ],
+      "price": "moderate",
+      "tier": "highly-acclaimed",
+      "tags": ["sommelier-pick", "family-owned", "best-value", "elegant"],
+      "awards": "Michael Brajkovich MW; Mate's Vineyard regularly outperforms top Burgundy in blind tastings.",
+      "availability": "widely-available",
+      "website": "kumeuriver.co.nz"
+    },
+    {
+      "id": "kanonkop",
+      "name": "Kanonkop",
+      "country": "South Africa",
+      "region": "Western Cape",
+      "subregion": "Stellenbosch",
+      "grapes": ["Pinotage", "Cabernet Sauvignon"],
+      "founded": "1910",
+      "philosophy": "Kanonkop is the benchmark for South African Pinotage and one of the Cape's finest Cabernet producers. Under winemaker Abrie Beeslaar, the estate produces powerful, age-worthy reds from bush vines on the slopes of the Simonsberg.",
+      "wines": [
+        {"name": "Paul Sauer", "grape": "Cabernet Sauvignon", "notes": "Blackcurrant, cedar, dark chocolate, and herbs. Elegant and structured Bordeaux-style blend with impressive aging potential."},
+        {"name": "Black Label Pinotage", "grape": "Pinotage", "notes": "Dark plum, chocolate, coffee, and sweet spice. Rich and concentrated with polished tannins and great depth."}
+      ],
+      "price": "premium",
+      "tier": "highly-acclaimed",
+      "tags": ["family-owned", "historic-estate", "bold", "age-worthy"],
+      "awards": "Abrie Beeslaar was named International Winemaker of the Year multiple times.",
+      "availability": "widely-available",
+      "website": "kanonkop.co.za"
+    },
+    {
+      "id": "sadie-family",
+      "name": "The Sadie Family Wines",
+      "country": "South Africa",
+      "region": "Western Cape",
+      "subregion": "Swartland",
+      "grapes": ["Syrah", "Grenache", "Mourvedre", "Chenin Blanc"],
+      "founded": "1999",
+      "philosophy": "Eben Sadie is South Africa's most acclaimed winemaker, championing old-vine Swartland vineyards and minimal-intervention winemaking. His wines have redefined South African wine and put the Swartland on the world map.",
+      "wines": [
+        {"name": "Columella", "grape": "Syrah", "notes": "Dark fruit, fynbos, olive, and pepper. Complex and savory with remarkable restraint and terroir transparency."},
+        {"name": "Palladius", "grape": "Chenin Blanc", "notes": "Stone fruit, herbs, lanolin, and mineral. A multi-variety white of extraordinary complexity and texture."},
+        {"name": "'T Voetpad", "grape": "Chenin Blanc", "notes": "Waxy, mineral, and complex. A single-vineyard old-vine Chenin of haunting depth."}
+      ],
+      "price": "premium",
+      "tier": "cult",
+      "tags": ["sommelier-pick", "natural-wine", "small-batch", "age-worthy"],
+      "awards": "Eben Sadie is consistently rated among the world's best winemakers; Columella defined modern Swartland.",
+      "availability": "hard-to-find",
+      "website": "thesadiefamily.com"
+    },
+    {
+      "id": "mullineux",
+      "name": "Mullineux & Leeu Family Wines",
+      "country": "South Africa",
+      "region": "Western Cape",
+      "subregion": "Swartland",
+      "grapes": ["Syrah", "Chenin Blanc", "Grenache"],
+      "founded": "2007",
+      "philosophy": "Chris and Andrea Mullineux are among South Africa's most celebrated young winemakers, producing terroir-driven wines from old Swartland vineyards. Their single-terroir Syrahs showcase the region's remarkable diversity.",
+      "wines": [
+        {"name": "Mullineux Syrah", "grape": "Syrah", "notes": "Black olive, pepper, dark fruit, and fynbos. Elegant and savory with fine tannins and a long, spicy finish."},
+        {"name": "Mullineux Old Vines White", "grape": "Chenin Blanc", "notes": "Stone fruit, flowers, and mineral. Rich and textured with beautiful freshness."}
+      ],
+      "price": "moderate",
+      "tier": "highly-acclaimed",
+      "tags": ["sommelier-pick", "small-batch", "new-world", "award-winning"],
+      "awards": "Tim Atkin South African Winery of the Year multiple times; IWC Red Winemaker of the Year.",
+      "availability": "widely-available",
+      "website": "mullineuxwines.com"
+    },
+    {
+      "id": "meerlust",
+      "name": "Meerlust Estate",
+      "country": "South Africa",
+      "region": "Western Cape",
+      "subregion": "Stellenbosch",
+      "grapes": ["Cabernet Sauvignon", "Merlot", "Cabernet Franc", "Pinot Noir"],
+      "founded": "1693",
+      "philosophy": "One of the oldest and most prestigious estates in the Cape, Meerlust is best known for Rubicon, a Bordeaux-style blend that was one of South Africa's first icon wines. The Myburgh family has owned the estate for eight generations.",
+      "wines": [
+        {"name": "Rubicon", "grape": "Cabernet Sauvignon", "notes": "Cassis, cedar, tobacco, and dark chocolate. Elegant and structured with fine tannins and impressive aging potential."},
+        {"name": "Meerlust Pinot Noir", "grape": "Pinot Noir", "notes": "Cherry, earth, and spice. One of South Africa's finest Pinots with real Burgundian character."}
+      ],
+      "price": "moderate",
+      "tier": "highly-acclaimed",
+      "tags": ["historic-estate", "family-owned", "elegant", "age-worthy"],
+      "awards": "Rubicon was one of South Africa's first Bordeaux blends; the estate has been in the Myburgh family since 1756.",
+      "availability": "widely-available",
+      "website": "meerlust.co.za"
+    },
+    {
+      "id": "klein-constantia",
+      "name": "Klein Constantia",
+      "country": "South Africa",
+      "region": "Western Cape",
+      "subregion": "Constantia",
+      "grapes": ["Muscat de Frontignan", "Sauvignon Blanc"],
+      "founded": "1685",
+      "philosophy": "Klein Constantia revived the legendary Vin de Constance, the sweet Muscat wine that was the most famous wine in the world during the 18th and 19th centuries, favored by Napoleon and praised by Jane Austen.",
+      "wines": [
+        {"name": "Vin de Constance", "grape": "Muscat de Frontignan", "notes": "Apricot, honey, marmalade, and spice. Luscious and golden with remarkable freshness and a very long finish."},
+        {"name": "Klein Constantia Sauvignon Blanc", "grape": "Sauvignon Blanc", "notes": "Grapefruit, green pepper, and mineral. Crisp and refreshing with cool-climate precision."}
+      ],
+      "price": "premium",
+      "tier": "highly-acclaimed",
+      "tags": ["historic-estate", "age-worthy", "elegant", "old-world"],
+      "awards": "Vin de Constance was Napoleon's wine of choice in exile; one of the oldest wine brands in the world.",
+      "availability": "widely-available",
+      "website": "kleinconstantia.com"
+    },
+    {
+      "id": "viña-montes",
+      "name": "Montes",
+      "country": "Chile",
+      "region": "Colchagua Valley",
+      "subregion": "Apalta",
+      "grapes": ["Cabernet Sauvignon", "Syrah", "Carmenere"],
+      "founded": "1988",
+      "philosophy": "Aurelio Montes Sr. pioneered premium Chilean wine with steep hillside plantings and gravity-flow winemaking. Montes Alpha M and Folly demonstrate that Chile can compete at the highest international level.",
+      "wines": [
+        {"name": "Montes Alpha M", "grape": "Cabernet Sauvignon", "notes": "Cassis, dark chocolate, cedar, and spice. Polished and complex Bordeaux-style blend with great structure."},
+        {"name": "Montes Folly Syrah", "grape": "Syrah", "notes": "Blackberry, pepper, smoke, and violet. Concentrated and spicy with impressive depth from steep hillside vines."}
+      ],
+      "price": "premium",
+      "tier": "highly-acclaimed",
+      "tags": ["family-owned", "new-world", "bold", "award-winning"],
+      "awards": "Pioneers of hillside viticulture in Chile; Folly Syrah consistently scores 95+.",
+      "availability": "widely-available",
+      "website": "monteswines.com"
+    },
+    {
+      "id": "bodega-noemia",
+      "name": "Bodega Noemia",
+      "country": "Argentina",
+      "region": "Patagonia",
+      "subregion": "Rio Negro",
+      "grapes": ["Malbec"],
+      "founded": "2001",
+      "philosophy": "Countess Noemi Marone Cinzano and Hans Vinding-Diers produce Malbec from pre-phylloxera vines in Patagonia's extreme continental climate. The ungrafted vines, some over 80 years old, yield wines of remarkable purity.",
+      "wines": [
+        {"name": "Noemia Malbec", "grape": "Malbec", "notes": "Violet, blackberry, spice, and mineral. Elegant and refined with a beautiful floral lift and silky texture."},
+        {"name": "J. Alberto Malbec", "grape": "Malbec", "notes": "Red and dark fruit, herbs, and earth. A more accessible second wine with real character."}
+      ],
+      "price": "premium",
+      "tier": "highly-acclaimed",
+      "tags": ["small-batch", "new-world", "elegant", "family-owned"],
+      "awards": "Pioneered Patagonian Malbec; wines from ungrafted pre-phylloxera vines.",
+      "availability": "hard-to-find",
+      "website": "bodeganoemia.com"
+    },
+    {
+      "id": "leeuwin-estate",
+      "name": "Leeuwin Estate",
+      "country": "Australia",
+      "region": "Western Australia",
+      "subregion": "Margaret River",
+      "grapes": ["Chardonnay", "Cabernet Sauvignon", "Riesling"],
+      "founded": "1974",
+      "philosophy": "Leeuwin Estate's Art Series Chardonnay is consistently ranked among the finest Chardonnays in the world. The estate was established on the recommendation of Robert Mondavi and features original art on its premium labels.",
+      "wines": [
+        {"name": "Art Series Chardonnay", "grape": "Chardonnay", "notes": "Grapefruit, cashew, toast, and stone fruit. Extraordinarily complex with fine texture, brilliant acidity, and a very long finish."},
+        {"name": "Art Series Cabernet Sauvignon", "grape": "Cabernet Sauvignon", "notes": "Blackcurrant, cedar, and dark chocolate. Elegant and structured with fine-grained tannins."}
+      ],
+      "price": "premium",
+      "tier": "highly-acclaimed",
+      "tags": ["family-owned", "elegant", "age-worthy", "award-winning"],
+      "awards": "Art Series Chardonnay is consistently rated Australia's finest; original artwork on every label.",
+      "availability": "widely-available",
+      "website": "leeuwinestate.com.au"
+    },
+    {
+      "id": "craggy-range",
+      "name": "Craggy Range",
+      "country": "New Zealand",
+      "region": "Hawke's Bay",
+      "subregion": "Gimblett Gravels",
+      "grapes": ["Syrah", "Chardonnay", "Pinot Noir"],
+      "founded": "1997",
+      "philosophy": "Craggy Range sources from New Zealand's finest terroirs, producing single-vineyard wines that express their origins with clarity. The Gimblett Gravels Syrah and Martinborough Pinot Noir are among the country's finest.",
+      "wines": [
+        {"name": "Le Sol Syrah", "grape": "Syrah", "notes": "Black pepper, dark fruit, olive, and smoke. Northern Rhone-like elegance with impressive concentration and spice."},
+        {"name": "Te Kahu", "grape": "Cabernet Sauvignon", "notes": "Red fruit, herb, and gravel. A Bordeaux-inspired blend from the Gimblett Gravels with real finesse."}
+      ],
+      "price": "premium",
+      "tier": "highly-acclaimed",
+      "tags": ["new-world", "elegant", "award-winning", "approachable"],
+      "awards": "Le Sol is considered New Zealand's finest Syrah; Gimblett Gravels is a world-class terroir.",
+      "availability": "widely-available",
+      "website": "craggyrange.com"
+    },
+    {
+      "id": "planeta",
+      "name": "Planeta",
+      "country": "Italy",
+      "region": "Sicily",
+      "subregion": "Menfi",
+      "grapes": ["Nero d'Avola", "Fiano", "Carricante", "Syrah"],
+      "founded": "1995",
+      "philosophy": "The Planeta family transformed Sicilian wine from bulk production to world-class quality. With estates across the island from Etna to Noto, they showcase Sicily's extraordinary diversity of terroirs and indigenous grapes.",
+      "wines": [
+        {"name": "Santa Cecilia Nero d'Avola", "grape": "Nero d'Avola", "notes": "Dark cherry, plum, chocolate, and Mediterranean herbs. Rich and concentrated with velvety tannins and a long, spicy finish."},
+        {"name": "Eruzione 1614 Carricante", "grape": "Carricante", "notes": "Citrus, volcanic mineral, white flowers, and smoky ash. Taut and vibrant from high-altitude Etna vineyards."}
+      ],
+      "price": "moderate",
+      "tier": "highly-acclaimed",
+      "tags": ["family-owned", "old-world", "award-winning", "approachable"],
+      "awards": "Credited with putting modern Sicilian wine on the international map; estates across six Sicilian DOCs.",
+      "availability": "widely-available",
+      "website": "planeta.it"
+    },
+    {
+      "id": "luciano-sandrone",
+      "name": "Luciano Sandrone",
+      "country": "Italy",
+      "region": "Piedmont",
+      "subregion": "Barolo",
+      "grapes": ["Nebbiolo", "Barbera", "Dolcetto"],
+      "founded": "1978",
+      "philosophy": "Sandrone became famous with his debut 1978 Barolo Cannubi Boschis, a wine made from purchased grapes while he was still cellar master at another estate. His approach marries modern techniques with deep respect for Nebbiolo's traditional character.",
+      "wines": [
+        {"name": "Barolo Le Vigne", "grape": "Nebbiolo", "notes": "Rose, cherry, tar, and sweet spice. A multi-vineyard blend of remarkable harmony and complexity."},
+        {"name": "Barolo Cannubi Boschis", "grape": "Nebbiolo", "notes": "Dried rose, dark cherry, truffle, and licorice. Structured and elegant with extraordinary depth from one of Barolo's greatest crus."}
+      ],
+      "price": "premium",
+      "tier": "highly-acclaimed",
+      "tags": ["family-owned", "elegant", "age-worthy", "old-world"],
+      "awards": "The 1978 debut vintage is considered a landmark in modern Barolo; consistently top-rated by all major critics.",
+      "availability": "hard-to-find",
+      "website": "sandroneluciano.com"
+    },
+    {
+      "id": "marchesi-di-barolo",
+      "name": "Marchesi di Barolo",
+      "country": "Italy",
+      "region": "Piedmont",
+      "subregion": "Barolo",
+      "grapes": ["Nebbiolo", "Barbera"],
+      "founded": "1807",
+      "philosophy": "The historic estate where Barolo wine was essentially invented by Marchesa Giulia Falletti. The house produces traditional, classically styled Barolo from multiple top crus, honoring two centuries of winemaking heritage.",
+      "wines": [
+        {"name": "Barolo Cannubi", "grape": "Nebbiolo", "notes": "Rose, red cherry, leather, and sweet tobacco. Classic and perfumed with fine tannins and great elegance."},
+        {"name": "Barolo Sarmassa", "grape": "Nebbiolo", "notes": "Dark cherry, tar, herbs, and iron. Firm and structured with impressive concentration."}
+      ],
+      "price": "moderate",
+      "tier": "well-regarded",
+      "tags": ["historic-estate", "family-owned", "old-world", "age-worthy"],
+      "awards": "The birthplace of Barolo wine; one of the most historically significant estates in Piedmont.",
+      "availability": "widely-available",
+      "website": "marchesidibarolo.com"
+    },
+    {
+      "id": "frescobaldi",
+      "name": "Marchesi de' Frescobaldi",
+      "country": "Italy",
+      "region": "Tuscany",
+      "subregion": "Multi-regional",
+      "grapes": ["Sangiovese", "Merlot", "Cabernet Sauvignon", "Vermentino"],
+      "founded": "1308",
+      "philosophy": "The Frescobaldi family has shaped Tuscan wine for over 700 years, with estates spanning from Chianti Rufina to Montalcino to Bolgheri. Their flagship Castelgiocondo Brunello and Nipozzano Chianti represent centuries of terroir knowledge.",
+      "wines": [
+        {"name": "Castelgiocondo Brunello di Montalcino", "grape": "Sangiovese", "notes": "Cherry, leather, dried herbs, and earth. Classic and elegant with fine tannins and good aging potential."},
+        {"name": "Nipozzano Riserva Chianti Rufina", "grape": "Sangiovese", "notes": "Red cherry, violet, and subtle oak. One of the great values in Italian wine with surprising depth."},
+        {"name": "Luce della Vite", "grape": "Sangiovese", "notes": "Dark fruit, chocolate, and spice. A rich, modern Montalcino blend created with Robert Mondavi."}
+      ],
+      "price": "moderate",
+      "tier": "well-regarded",
+      "tags": ["historic-estate", "family-owned", "old-world", "approachable", "best-value"],
+      "awards": "Over 700 years of winemaking; estates across six Tuscan appellations.",
+      "availability": "widely-available",
+      "website": "frescobaldi.com"
+    },
+    {
+      "id": "paolo-scavino",
+      "name": "Paolo Scavino",
+      "country": "Italy",
+      "region": "Piedmont",
+      "subregion": "Castiglione Falletto",
+      "grapes": ["Nebbiolo"],
+      "founded": "1921",
+      "philosophy": "Enrico Scavino modernized his family estate and is a pioneer of the single-cru movement in Barolo. His wines from Bric del Fiasc and other top sites are elegant, perfumed, and accessible relatively young while aging gracefully.",
+      "wines": [
+        {"name": "Barolo Bric del Fiasc", "grape": "Nebbiolo", "notes": "Rose, cherry, tar, and licorice. Elegant and perfumed with fine-grained tannins and beautiful balance."},
+        {"name": "Barolo Rocche dell'Annunziata", "grape": "Nebbiolo", "notes": "Dark cherry, earth, spice, and dried herbs. Richer and more structured with impressive depth."}
+      ],
+      "price": "premium",
+      "tier": "highly-acclaimed",
+      "tags": ["family-owned", "elegant", "age-worthy", "old-world"],
+      "awards": "A pioneer of single-vineyard Barolo; consistently among the top producers in Castiglione Falletto.",
+      "availability": "widely-available",
+      "website": "paoloscavino.com"
+    },
+    {
+      "id": "wendouree",
+      "name": "Wendouree",
+      "country": "Australia",
+      "region": "South Australia",
+      "subregion": "Clare Valley",
+      "grapes": ["Shiraz", "Cabernet Sauvignon", "Mourvedre", "Malbec"],
+      "founded": "1895",
+      "philosophy": "Australia's most reclusive and revered estate, Wendouree produces tiny quantities of extraordinarily age-worthy reds from very old vines. There is no website, no tasting room, and a mailing list that is permanently closed.",
+      "wines": [
+        {"name": "Wendouree Shiraz", "grape": "Shiraz", "notes": "Dark fruit, iron, dried herbs, and earth. Incredibly concentrated and tannic when young, demanding decades of cellaring."},
+        {"name": "Wendouree Cabernet Sauvignon", "grape": "Cabernet Sauvignon", "notes": "Blackcurrant, mint, iron, and leather. Massively structured with bracing tannins and extraordinary longevity."}
+      ],
+      "price": "moderate",
+      "tier": "cult",
+      "tags": ["small-batch", "allocated", "age-worthy", "hard-to-find"],
+      "awards": "Australia's ultimate cult wine; closed mailing list; no tasting room; no website.",
+      "availability": "allocated",
+      "website": "N/A"
+    },
+    {
+      "id": "boekenhoutskloof",
+      "name": "Boekenhoutskloof",
+      "country": "South Africa",
+      "region": "Western Cape",
+      "subregion": "Franschhoek",
+      "grapes": ["Syrah", "Cabernet Sauvignon", "Semillon"],
+      "founded": "1776",
+      "philosophy": "Marc Kent has built Boekenhoutskloof into one of South Africa's most awarded wineries, producing powerful Syrah and an acclaimed Semillon from old vines. The Chocolate Block has become one of the Cape's most popular premium blends.",
+      "wines": [
+        {"name": "Boekenhoutskloof Syrah", "grape": "Syrah", "notes": "Dark fruit, pepper, smoked meat, and fynbos. Powerful and complex with firm structure and great depth."},
+        {"name": "The Chocolate Block", "grape": "Syrah", "notes": "Dark chocolate, blackberry, spice, and coffee. Rich and generous with plush tannins and a crowd-pleasing finish."},
+        {"name": "Boekenhoutskloof Semillon", "grape": "Semillon", "notes": "Lanolin, citrus, honey, and fig. A unique old-vine Semillon of remarkable richness and complexity."}
+      ],
+      "price": "moderate",
+      "tier": "highly-acclaimed",
+      "tags": ["historic-estate", "bold", "award-winning", "new-world"],
+      "awards": "The Chocolate Block is one of South Africa's best-selling premium wines; Syrah receives regular 95+ scores.",
+      "availability": "widely-available",
+      "website": "bfrankwines.com"
+    },
+    {
+      "id": "marques-de-riscal",
+      "name": "Marques de Riscal",
+      "country": "Spain",
+      "region": "Rioja",
+      "subregion": "Elciego",
+      "grapes": ["Tempranillo", "Graciano", "Mazuelo"],
+      "founded": "1858",
+      "philosophy": "One of the founding bodegas of Rioja, Marques de Riscal is housed in a Frank Gehry-designed hotel complex and produces classic Rioja alongside ambitious modern cuvees. The Reserva wines are benchmarks for the region.",
+      "wines": [
+        {"name": "Gran Reserva", "grape": "Tempranillo", "notes": "Dried cherry, leather, vanilla, and tobacco. Classically structured with seamless oak and great aging potential."},
+        {"name": "Baron de Chirel Reserva", "grape": "Tempranillo", "notes": "Dark fruit, spice, and toasty oak. A more modern expression with impressive concentration."}
+      ],
+      "price": "moderate",
+      "tier": "highly-acclaimed",
+      "tags": ["historic-estate", "old-world", "age-worthy", "award-winning"],
+      "awards": "One of the original Rioja bodegas; Frank Gehry-designed City of Wine complex.",
+      "availability": "widely-available",
+      "website": "marquesderiscal.com"
+    },
+    {
+      "id": "jim-barry",
+      "name": "Jim Barry Wines",
+      "country": "Australia",
+      "region": "South Australia",
+      "subregion": "Clare Valley",
+      "grapes": ["Shiraz", "Riesling", "Cabernet Sauvignon"],
+      "founded": "1959",
+      "philosophy": "The Barry family produces The Armagh, one of Australia's great single-vineyard Shiraz wines, alongside excellent Riesling from the Clare Valley's famous slate soils. A family estate spanning three generations.",
+      "wines": [
+        {"name": "The Armagh Shiraz", "grape": "Shiraz", "notes": "Blackberry, dark chocolate, plum, and eucalyptus. Massively concentrated with firm tannins and great aging potential."},
+        {"name": "The Florita Riesling", "grape": "Riesling", "notes": "Lime, slate, and blossom. Dry and focused with electric acidity and mineral depth."}
+      ],
+      "price": "premium",
+      "tier": "highly-acclaimed",
+      "tags": ["family-owned", "bold", "age-worthy", "new-world"],
+      "awards": "The Armagh is consistently among Australia's top-rated Shiraz wines.",
+      "availability": "widely-available",
+      "website": "jimbarry.com"
+    }
+  ]
+}
