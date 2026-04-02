@@ -76,11 +76,17 @@ const FOOD_RECS = {
       { name: 'Farmstead at Long Meadow Ranch', location: 'St. Helena', note: "Working farm and restaurant. The fried chicken with honey is legendary. Patio overlooks the garden they pick from.", durationMin: 90, rating: 4.5, priceRange: '$$', specialty: 'Farm-to-fork, fried chicken', minutesOffRoute: 0, url: 'https://www.longmeadowranch.com/farmstead', reservationUrl: 'https://www.opentable.com/farmstead-at-long-meadow-ranch', bookingLead: 'Book a few days ahead. Lunch is easier than dinner.' },
       { name: 'Solbar at Solage', location: 'Calistoga', note: "Michelin-starred resort restaurant with a pool-side atmosphere. Best for a long, lazy lunch after morning tastings.", durationMin: 100, rating: 4.5, priceRange: '$$$', specialty: 'Resort dining, pool-adjacent', minutesOffRoute: 0, bookingLead: 'Book 1 week ahead for weekends.' },
     ],
+    splurge: [
+      { name: 'The French Laundry', location: 'Yountville', note: "Three Michelin stars — widely considered the best restaurant in America. Nine courses of perfection.", durationMin: 240, rating: 4.7, priceRange: '$$$$', specialty: 'Nine-course tasting menu', minutesOffRoute: 0, url: 'https://www.thomaskeller.com/tfl', reservationUrl: 'https://www.exploretock.com/thefrenchlaundry', bookingLead: 'Book exactly 60 days ahead at midnight PT. Sells out in seconds.' },
+      { name: 'Auberge du Soleil', location: 'Rutherford', note: "The single best view in Napa Valley. The terrace at golden hour is unforgettable.", durationMin: 120, rating: 4.7, priceRange: '$$$$', specialty: 'Valley views, terrace brunch', minutesOffRoute: 10, url: 'https://aubergedusoleil.aubergeresorts.com/dining', reservationUrl: 'https://www.opentable.com/auberge-du-soleil', bookingLead: 'Book 2–3 weeks ahead for terrace.' },
+      { name: 'Meadowood', location: 'St. Helena', note: "Three Michelin stars in a resort setting. Christopher Kostow creates a multi-course experience from the estate garden.", durationMin: 180, rating: 4.8, priceRange: '$$$$', specialty: 'Multi-course garden-driven tasting menu', minutesOffRoute: 5, bookingLead: 'Book 3–4 weeks ahead.' },
+      { name: 'Press', location: 'St. Helena', note: "Napa's definitive steakhouse. The wine list has every iconic Napa Cab. Dry-aged USDA prime.", durationMin: 120, rating: 4.6, priceRange: '$$$$', specialty: 'Dry-aged steak, legendary wine list', minutesOffRoute: 5, url: 'https://www.pressnapavalley.com', reservationUrl: 'https://www.opentable.com/press-st-helena', bookingLead: 'Book 1–2 weeks ahead.' },
+      { name: 'La Calenda', location: 'Yountville', note: "Thomas Keller's Oaxacan Mexican restaurant. Elevated mole, handmade tortillas, mezcal. Surprisingly accessible.", durationMin: 90, rating: 4.5, priceRange: '$$$', specialty: 'Elevated Oaxacan, mole, mezcal', minutesOffRoute: 0, bookingLead: 'Book 1 week ahead.' },
+    ],
   },
   'Sonoma County': {
     quick: [
       { name: 'Shed', location: 'Healdsburg', note: "Farm-to-counter café and fermentation bar in a stunning industrial space. Grain bowls, shrubs, and house-fermented everything.", durationMin: 40, rating: 4.5, priceRange: '$$', specialty: 'Fermented foods, grain bowls', minutesOffRoute: 0 },
-      { name: 'Noble Folk Ice Cream', location: 'Healdsburg', note: "Artisan ice cream made with local fruit and wine country ingredients. The salted caramel is legendary.", durationMin: 15, rating: 4.8, priceRange: '$', specialty: 'Seasonal wine country ice cream', minutesOffRoute: 0 },
       { name: 'Estero Café', location: 'Valley Ford', note: "Tiny roadside café in a former gas station. The biscuits and gravy are the best in Sonoma County. Cash only.", durationMin: 30, rating: 4.7, priceRange: '$', specialty: 'Biscuits and gravy, country breakfast', minutesOffRoute: 15 },
       { name: 'Costeaux French Bakery', location: 'Healdsburg', note: "Classic French bakery and café on the plaza. Pain au chocolat, quiche, and espresso. Open early.", durationMin: 25, rating: 4.5, priceRange: '$', specialty: 'French pastries, quiche, espresso', minutesOffRoute: 0, url: 'https://www.costeaux.com', bookingLead: 'Walk in — no reservation.' },
       { name: 'Diavola Pizzeria', location: 'Geyserville', note: "Wood-fired Neapolitan pizza in the tiny town of Geyserville. The Calabrese with spicy salami is the move.", durationMin: 45, rating: 4.6, priceRange: '$$', specialty: 'Neapolitan pizza, salumi', minutesOffRoute: 5, url: 'https://www.diavolapizzeria.com', bookingLead: 'Walk in — but fills up at peak lunch.' },
@@ -99,11 +105,17 @@ const FOOD_RECS = {
       { name: 'Willi\'s Seafood', location: 'Healdsburg', note: "Lively raw bar with excellent oysters, ceviche, and Latin-inspired small plates. Energetic and fun.", durationMin: 80, rating: 4.5, priceRange: '$$', specialty: 'Oysters, ceviche, Latin seafood', minutesOffRoute: 0, url: 'https://www.starkrestaurants.com/willis-seafood', bookingLead: 'Walk-in for bar. Book a few days for tables.' },
       { name: 'Cafe La Haye', location: 'Sonoma Plaza', note: "Tiny 10-table restaurant one block from Sonoma Plaza. Everything is local, seasonal, and exquisitely prepared. A hidden gem.", durationMin: 90, rating: 4.7, priceRange: '$$$', specialty: 'Hyper-local, seasonal, intimate', minutesOffRoute: 0, url: 'https://www.cafelahaye.com', bookingLead: 'Book 1–2 weeks. Only 10 tables so it fills fast.' },
     ],
+    splurge: [
+      { name: 'Single Thread', location: 'Healdsburg', note: "Three Michelin stars. 11-course kaiseki from a biodynamic farm. One of the top restaurants in the world.", durationMin: 240, rating: 4.8, priceRange: '$$$$', specialty: 'Kaiseki, on-site farm', minutesOffRoute: 0, url: 'https://www.singlethreadfarms.com', reservationUrl: 'https://www.exploretock.com/singlethread', bookingLead: 'Book 30–60 days ahead on Tock.' },
+      { name: 'Madrona Manor', location: 'Healdsburg hills', note: "Victorian inn with estate garden dining. Romantic, candlelit, exceptional for a special occasion.", durationMin: 120, rating: 4.6, priceRange: '$$$$', specialty: 'Victorian estate dining', minutesOffRoute: 10, bookingLead: 'Book 2+ weeks for special occasions.' },
+      { name: 'Hazel Hill at Montage', location: 'Healdsburg', note: "Resort restaurant with sweeping vineyard views. The sunset terrace is extraordinary.", durationMin: 100, rating: 4.6, priceRange: '$$$$', specialty: 'Sunset terrace, resort dining', minutesOffRoute: 8, bookingLead: 'Book 1–2 weeks ahead.' },
+      { name: 'Valette', location: 'Healdsburg', note: "Best Sonoma wine list in the county. Dustin Valette's seasonal tasting menu is a masterclass.", durationMin: 120, rating: 4.7, priceRange: '$$$', specialty: 'Tasting menu, Sonoma wines', minutesOffRoute: 0, url: 'https://www.valettehealdsburg.com', reservationUrl: 'https://www.opentable.com/valette', bookingLead: 'Book 1–2 weeks for weekends.' },
+      { name: 'Cafe La Haye', location: 'Sonoma Plaza', note: "Only 10 tables. Everything hyper-local and seasonal. The most intimate fine dining in Sonoma.", durationMin: 90, rating: 4.7, priceRange: '$$$', specialty: 'Intimate, seasonal', minutesOffRoute: 0, url: 'https://www.cafelahaye.com', bookingLead: 'Book 1–2 weeks. Fills fast.' },
+    ],
   },
   'Healdsburg': {
     quick: [
       { name: 'Costeaux French Bakery', location: 'Healdsburg Plaza', note: "Classic French bakery open since 1923. Pain au chocolat, quiche, espresso. The morning bun is a signature.", durationMin: 25, rating: 4.5, priceRange: '$', specialty: 'French pastries, morning bun', minutesOffRoute: 0, url: 'https://www.costeaux.com', bookingLead: 'Walk in — opens early.' },
-      { name: 'Noble Folk Ice Cream', location: 'Healdsburg Plaza', note: "Small-batch ice cream using wine country ingredients — the lavender honey and Meyer lemon are perfect mid-day.", durationMin: 15, rating: 4.8, priceRange: '$', specialty: 'Artisan ice cream', minutesOffRoute: 0 },
       { name: 'Shed', location: 'Healdsburg', note: "Farm-to-counter café and fermentation bar. Grain bowls, shrubs, and house-fermented everything.", durationMin: 40, rating: 4.5, priceRange: '$$', specialty: 'Grain bowls, fermented foods', minutesOffRoute: 0 },
       { name: 'Dry Creek General Store', location: 'Dry Creek Valley', note: "130-year-old general store with sandwiches and local character. Sit on the porch and watch the vineyard world go by.", durationMin: 30, rating: 4.7, priceRange: '$', specialty: 'Deli sandwiches, local charm', minutesOffRoute: 0, url: 'https://www.drycreekgeneralstore.com', bookingLead: 'Walk in.' },
       { name: 'Diavola Pizzeria', location: 'Geyserville', note: "Wood-fired Neapolitan pizza in tiny Geyserville. The Calabrese with spicy salami is the move.", durationMin: 45, rating: 4.6, priceRange: '$$', specialty: 'Neapolitan pizza', minutesOffRoute: 5, url: 'https://www.diavolapizzeria.com', bookingLead: 'Walk in — fills up at peak lunch.' },
@@ -121,6 +133,13 @@ const FOOD_RECS = {
       { name: 'Hazel Hill', location: 'Montage Healdsburg', note: "Resort restaurant overlooking vineyards. The sunset terrace is extraordinary.", durationMin: 100, rating: 4.6, priceRange: '$$$$', specialty: 'Sunset terrace, resort dining', minutesOffRoute: 8, bookingLead: 'Book 1–2 weeks.' },
       { name: 'Willi\'s Seafood', location: 'Healdsburg', note: "Energetic raw bar with excellent oysters and Latin-inspired plates.", durationMin: 80, rating: 4.5, priceRange: '$$', specialty: 'Oysters, ceviche', minutesOffRoute: 0, bookingLead: 'Walk-in bar. Book a few days for tables.' },
       { name: 'Jordan Estate', location: 'Alexander Valley', note: "Jordan offers a chateau lunch experience on the estate with paired wines. The most elegant lunch in the region.", durationMin: 150, rating: 4.7, priceRange: '$$$$', specialty: 'Estate lunch, Cab pairings', minutesOffRoute: 10, url: 'https://www.jordanwinery.com', bookingLead: 'Book 2–4 weeks ahead. Limited seats.' },
+    ],
+    splurge: [
+      { name: 'Single Thread', location: 'Healdsburg', note: "Three Michelin stars. 11-course kaiseki from a biodynamic farm.", durationMin: 240, rating: 4.8, priceRange: '$$$$', specialty: 'Kaiseki, on-site farm', minutesOffRoute: 0, url: 'https://www.singlethreadfarms.com', reservationUrl: 'https://www.exploretock.com/singlethread', bookingLead: 'Book 30–60 days ahead on Tock.' },
+      { name: 'Jordan Chateau Lunch', location: 'Alexander Valley', note: "Multi-course lunch at the Bordeaux-style chateau with estate wine pairings. Limited to small groups.", durationMin: 150, rating: 4.7, priceRange: '$$$$', specialty: 'Chateau dining, estate wines', minutesOffRoute: 10, url: 'https://www.jordanwinery.com', bookingLead: 'Book 2–4 weeks ahead.' },
+      { name: 'Madrona Manor', location: 'Healdsburg', note: "Victorian inn with candlelit estate dining. Romantic and exceptional.", durationMin: 120, rating: 4.6, priceRange: '$$$$', specialty: 'Victorian estate dining', minutesOffRoute: 10, bookingLead: 'Book 2+ weeks ahead.' },
+      { name: 'Valette', location: 'Healdsburg', note: "Dustin Valette's tasting menu with the best Sonoma wine list.", durationMin: 120, rating: 4.7, priceRange: '$$$', specialty: 'Seasonal tasting menu', minutesOffRoute: 0, url: 'https://www.valettehealdsburg.com', reservationUrl: 'https://www.opentable.com/valette', bookingLead: 'Book 1–2 weeks.' },
+      { name: 'Hazel Hill at Montage', location: 'Healdsburg', note: "Luxury resort dining overlooking vineyards. Sunset is extraordinary.", durationMin: 100, rating: 4.6, priceRange: '$$$$', specialty: 'Resort terrace', minutesOffRoute: 8, bookingLead: 'Book 1–2 weeks.' },
     ],
   },
   'Paso Robles': {
@@ -144,6 +163,13 @@ const FOOD_RECS = {
       { name: 'Niner Wine Estates Restaurant', location: 'Niner Winery', note: "On-site restaurant with panoramic westside views. The Heart Hill Cabernet pairs perfectly with the steak.", durationMin: 90, rating: 4.7, priceRange: '$$', specialty: 'Winery restaurant, vineyard views', minutesOffRoute: 0, url: 'https://www.ninerwine.com', bookingLead: 'Walk-in for lunch. Book dinner.' },
       { name: 'TIN City', location: 'Paso Robles', note: "Industrial food and wine district — multiple tasting rooms, breweries, and food vendors in converted warehouses.", durationMin: 60, rating: 4.5, priceRange: '$$', specialty: 'Wine + food district, multiple vendors', minutesOffRoute: 5, bookingLead: 'Walk in — it\'s a district, not a single restaurant.' },
       { name: 'Allegretto Resort Dining', location: 'Paso Robles', note: "Mediterranean-inspired resort with a beautiful courtyard and pool. The most luxurious dining setting in Paso.", durationMin: 100, rating: 4.5, priceRange: '$$$', specialty: 'Resort dining, Mediterranean courtyard', minutesOffRoute: 5, bookingLead: 'Book 1 week ahead.' },
+    ],
+    splurge: [
+      { name: 'The Restaurant at JUSTIN', location: 'JUSTIN Winery', note: "Estate dining surrounded by Adelaida vineyards. Multi-course seasonal menu with estate wine pairings.", durationMin: 120, rating: 4.7, priceRange: '$$$$', specialty: 'Estate farm-to-table', minutesOffRoute: 15, url: 'https://www.justinwine.com/restaurant', bookingLead: 'Book 1–2 weeks ahead.' },
+      { name: 'Les Petites Canailles', location: 'Downtown Paso', note: "Authentic French bistro run by a young couple from Burgundy. The cassoulet and steak frites are the real thing.", durationMin: 120, rating: 4.7, priceRange: '$$$', specialty: 'French bistro, cassoulet', minutesOffRoute: 5, bookingLead: 'Book 1 week ahead for dinner.' },
+      { name: 'Allegretto Resort', location: 'Paso Robles', note: "Mediterranean courtyard dining with pool views. The most luxurious setting in Paso.", durationMin: 100, rating: 4.5, priceRange: '$$$', specialty: 'Resort courtyard', minutesOffRoute: 5, bookingLead: 'Book 1 week ahead.' },
+      { name: 'Il Cortile', location: 'Downtown Paso', note: "Best Italian in Paso. House-made pasta, gorgeous courtyard. The truffle pasta is outstanding.", durationMin: 100, rating: 4.6, priceRange: '$$$', specialty: 'House-made pasta, courtyard', minutesOffRoute: 5, bookingLead: 'Book a few days for courtyard.' },
+      { name: 'Six Test Kitchen', location: 'Paso Robles', note: "Intimate 16-seat chef's counter. Multi-course tasting menu with local wines. Paso's most ambitious dining.", durationMin: 150, rating: 4.8, priceRange: '$$$$', specialty: 'Tasting menu, chef\'s counter', minutesOffRoute: 5, bookingLead: 'Book 2–3 weeks ahead. Only 16 seats.' },
     ],
   },
 };
@@ -896,6 +922,42 @@ class CaTripPlanner {
 
   _getSelectedMealSpot(meal) { return this.selectedMealSpots[meal] || null; }
 
+  _mealBookAction(rec, timeStr) {
+    const actions = [];
+    if (rec.reservationUrl) {
+      actions.push(`<a href="${rec.reservationUrl}" target="_blank" class="book-btn" onclick="event.stopPropagation()">Reserve ↗</a>`);
+    }
+    if (rec.url) {
+      actions.push(`<a href="${rec.url}" target="_blank" class="book-btn book-email" onclick="event.stopPropagation()">Website</a>`);
+    }
+    // Draft email for restaurants that need reservations
+    if (rec.bookingLead && !rec.bookingLead.toLowerCase().includes('walk in')) {
+      const domain = rec.url ? rec.url.replace('https://','').replace('http://','').replace('www.','').split('/')[0] : '';
+      const emailAddr = domain ? `info@${domain}` : '';
+      if (emailAddr) {
+        const subj = encodeURIComponent(`Reservation Request — ${rec.name}`);
+        const body = encodeURIComponent(
+`Hello,
+
+I would like to make a reservation at ${rec.name}.
+
+Date: [INSERT YOUR PREFERRED DATE]
+Time: ${timeStr}
+Party size: 2 guests
+
+Please let me know availability.
+
+Thank you,
+[YOUR NAME]`);
+        actions.push(`<a href="mailto:${emailAddr}?subject=${subj}&body=${body}" class="book-btn book-email" onclick="event.stopPropagation()">Draft Email ✉️</a>`);
+      }
+    }
+    if (!actions.length && rec.bookingLead && rec.bookingLead.toLowerCase().includes('walk in')) {
+      return '<span class="book-status book-walkin">Walk-in OK</span>';
+    }
+    return actions.length ? `<div class="book-actions">${actions.join('')}</div>` : '';
+  }
+
   _populateSpotPicker(meal, type) {
     const picker = document.getElementById(`${meal}-spot-picker`);
     if (!picker) return;
@@ -1079,15 +1141,33 @@ class CaTripPlanner {
         const leaveByHour = this._snapToSlot(scheduledHour + 1.5);
         // Build reservation action
         const timeStr = this._formatTime(scheduledHour);
-        const dateStr = '(insert date)';
-        const emailSubject = encodeURIComponent(`Tasting Reservation Request — ${w.name}`);
-        const emailBody = encodeURIComponent(`Hi,\n\nI would like to make a reservation for a wine tasting at ${w.name}.\n\nPreferred date: ${dateStr}\nPreferred time: ${timeStr}\nNumber of guests: 2\n\nPlease let me know availability and any details about the tasting experience.\n\nThank you!`);
+        const leaveStr = this._formatTime(leaveByHour);
         const emailAddr = w.website ? `reservations@${w.website}` : '';
+        const emailSubject = encodeURIComponent(`Wine Tasting Reservation — ${w.name}`);
+        const emailBody = encodeURIComponent(
+`Hello,
+
+I would like to request a tasting reservation at ${w.name}.
+
+Date: [INSERT YOUR PREFERRED DATE]
+Arrival time: ${timeStr}
+Departure by: ${leaveStr}
+Party size: 2 guests
+
+${w.tastingCost ? 'We are interested in the ' + w.tastingCost + ' tasting experience.' : ''}
+${w.bookingNote ? 'Note: I understand ' + w.bookingNote.toLowerCase() + '.' : ''}
+
+Could you please confirm availability and share any details about what to expect?
+
+Thank you,
+[YOUR NAME]`);
         let bookAction = '';
         if (w.bookingNote && w.bookingNote.toLowerCase().includes('walk-in')) {
-          bookAction = '<span class="book-status book-walkin">Walk-in OK</span>';
+          bookAction = `<div class="book-actions"><span class="book-status book-walkin">Walk-in OK — no reservation needed</span></div>`;
         } else if (w.website) {
-          bookAction = `<div class="book-actions"><a href="https://${w.website}" target="_blank" class="book-btn" onclick="event.stopPropagation()">Book Online ↗</a><a href="mailto:${emailAddr}?subject=${emailSubject}&body=${emailBody}" class="book-btn book-email" onclick="event.stopPropagation()">Draft Email</a></div>`;
+          bookAction = `<div class="book-actions"><a href="https://${w.website}" target="_blank" class="book-btn" onclick="event.stopPropagation()">Book Online ↗</a><a href="mailto:${emailAddr}?subject=${emailSubject}&body=${emailBody}" class="book-btn book-email" onclick="event.stopPropagation()">Draft Email ✉️</a></div>`;
+        } else {
+          bookAction = '<div class="book-actions"><span class="book-status" style="color:var(--ink-xlight)">Contact winery directly</span></div>';
         }
         stops.push(`<div class="itinerary-stop itinerary-winery-stop" style="min-height:75px" data-winery-id="${w.id}" draggable="true">
           <div class="stop-time-range"><input type="time" class="stop-time-input" value="${this._toTimeValue(scheduledHour)}" /><span class="stop-time-dash">–</span><input type="time" class="stop-end-input" value="${this._toTimeValue(leaveByHour)}" /></div>
@@ -1119,7 +1199,7 @@ class CaTripPlanner {
               <div class="itinerary-stop-name">🍽️ Lunch${rec ? ': ' + rec.name : ''}</div>
               <div class="itinerary-stop-sub">${rec ? (rec.location || '') + ' · ' + (rec.priceRange || '') + ' · ~' + lDur + ' min' : '~60 min'}</div>
               ${rec && rec.bookingLead ? '<div class="itinerary-booking-note">📅 ' + rec.bookingLead + '</div>' : ''}
-              ${rec && rec.reservationUrl ? '<a href="' + rec.reservationUrl + '" target="_blank" class="itinerary-book-link" onclick="event.stopPropagation()">Reserve ↗</a>' : ''}
+              ${rec ? this._mealBookAction(rec, this._formatTime(currentHour)) : ''}
             </div>
             <div class="stop-actions"><button class="stop-lock-btn ${lLocked ? 'locked' : ''}" data-lock-key="${lLockKey}" data-lock-time="${currentHour}">${lLocked ? '🔒' : '🔓'}</button><button class="stop-remove-btn" data-stop-type="meal" data-stop-id="lunch">×</button></div>
           </div>`);
@@ -1142,7 +1222,7 @@ class CaTripPlanner {
             <div class="itinerary-stop-name">🍽️ Dinner${rec ? ': ' + rec.name : ''}</div>
             <div class="itinerary-stop-sub">${rec ? (rec.location || '') + ' · ' + (rec.priceRange || '') + ' · ~' + dDur + ' min' : '~90 min'}</div>
             ${rec && rec.bookingLead ? '<div class="itinerary-booking-note">📅 ' + rec.bookingLead + '</div>' : ''}
-            ${rec && rec.reservationUrl ? '<a href="' + rec.reservationUrl + '" target="_blank" class="itinerary-book-link" onclick="event.stopPropagation()">Reserve ↗</a>' : ''}
+            ${rec ? this._mealBookAction(rec, this._formatTime(currentHour)) : ''}
           </div>
           <div class="stop-actions"><button class="stop-lock-btn ${dLocked ? 'locked' : ''}" data-lock-key="${dLockKey}" data-lock-time="${currentHour}">${dLocked ? '🔒' : '🔓'}</button><button class="stop-remove-btn" data-stop-type="meal" data-stop-id="dinner">×</button></div>
         </div>`);
