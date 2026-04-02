@@ -937,17 +937,15 @@ class CaTripPlanner {
       if (emailAddr) {
         const subj = encodeURIComponent(`Reservation Request — ${rec.name}`);
         const body = encodeURIComponent(
-`Hello,
+`Hello!
 
-I would like to make a reservation at ${rec.name}.
+I'm planning a visit to wine country and would love to dine at ${rec.name}. I'm looking for a reservation on [INSERT DATE] around ${timeStr} for 2 guests.
 
-Date: [INSERT YOUR PREFERRED DATE]
-Time: ${timeStr}
-Party size: 2 guests
+Please let me know if this is possible to accommodate — happy to be flexible on timing if needed.
 
-Please let me know availability.
+Thank you so much!
 
-Thank you,
+Warm regards,
 [YOUR NAME]`);
         actions.push(`<a href="mailto:${emailAddr}?subject=${subj}&body=${body}" class="book-btn book-email" onclick="event.stopPropagation()">Draft Email ✉️</a>`);
       }
@@ -1143,23 +1141,17 @@ Thank you,
         const timeStr = this._formatTime(scheduledHour);
         const leaveStr = this._formatTime(leaveByHour);
         const emailAddr = w.website ? `reservations@${w.website}` : '';
-        const emailSubject = encodeURIComponent(`Wine Tasting Reservation — ${w.name}`);
+        const emailSubject = encodeURIComponent(`Reservation Request — ${w.name}`);
         const emailBody = encodeURIComponent(
-`Hello,
+`Hello!
 
-I would like to request a tasting reservation at ${w.name}.
+I'm planning a trip to wine country and would love to visit ${w.name}. I'm looking for a reservation on [INSERT DATE] around ${timeStr} for 2 guests.
 
-Date: [INSERT YOUR PREFERRED DATE]
-Arrival time: ${timeStr}
-Departure by: ${leaveStr}
-Party size: 2 guests
+Please let me know if this is possible to accommodate — we're flexible on timing if that helps.${w.tastingCost ? '\n\nWe\'d love to do the ' + w.tastingCost + ' tasting if available.' : ''}
 
-${w.tastingCost ? 'We are interested in the ' + w.tastingCost + ' tasting experience.' : ''}
-${w.bookingNote ? 'Note: I understand ' + w.bookingNote.toLowerCase() + '.' : ''}
+Looking forward to the visit!
 
-Could you please confirm availability and share any details about what to expect?
-
-Thank you,
+Warm regards,
 [YOUR NAME]`);
         let bookAction = '';
         if (w.bookingNote && w.bookingNote.toLowerCase().includes('walk-in')) {
