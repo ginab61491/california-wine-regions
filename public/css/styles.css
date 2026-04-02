@@ -10462,6 +10462,66 @@ img[loading="lazy"][complete] {
 }
 
 /* ═══════════════════════════════════════════
+   MY FAVORITES SECTION
+════════════════════════════════════════════ */
+.favorites-scroll { flex: 1; overflow-y: auto; background: var(--cream); }
+.favorites-body { max-width: 800px; margin: 0 auto; padding: 32px 40px 56px; }
+.fav-section { margin-bottom: 32px; padding-bottom: 24px; border-bottom: 1px solid var(--cream-dark); }
+.fav-section:last-child { border-bottom: none; }
+.fav-section-header { display: flex; justify-content: space-between; align-items: center; margin-bottom: 12px; }
+.fav-section-title { font-family: 'Playfair Display', Georgia, serif; font-size: 1.2rem; font-weight: 400; color: var(--ink); margin: 0; }
+.fav-count { font-family: 'Montserrat', sans-serif; font-size: 0.72rem; color: var(--ink-xlight); }
+.fav-list { display: flex; flex-wrap: wrap; gap: 8px; }
+.fav-item {
+  display: flex; align-items: center; gap: 6px;
+  background: var(--white); border: 1px solid var(--border-ink);
+  border-radius: 20px; padding: 6px 14px;
+  font-family: 'Montserrat', sans-serif; font-size: 0.82rem; color: var(--ink);
+}
+.fav-item-remove {
+  background: none; border: none; color: var(--ink-xlight);
+  cursor: pointer; font-size: 0.85rem; padding: 0 2px;
+}
+.fav-item-remove:hover { color: var(--maroon); }
+.fav-empty {
+  font-family: 'Crimson Text', Georgia, serif; font-style: italic;
+  font-size: 0.88rem; color: var(--ink-xlight); margin: 0;
+}
+.fav-link { color: var(--gold); text-decoration: none; cursor: pointer; font-style: normal; }
+.fav-link:hover { color: var(--maroon); }
+
+/* Palate Analysis */
+.fav-palate { text-align: center; }
+.fav-palate-desc { font-family: 'Montserrat', sans-serif; font-size: 0.85rem; color: var(--ink-light); margin-bottom: 16px; line-height: 1.6; }
+.fav-palate-btn {
+  padding: 12px 32px; background: var(--gold); color: #fff; border: none;
+  border-radius: 6px; font-family: 'Montserrat', sans-serif; font-size: 0.85rem;
+  font-weight: 500; cursor: pointer; transition: background 0.2s; margin-bottom: 16px;
+}
+.fav-palate-btn:hover:not(:disabled) { background: var(--gold-mid); }
+.fav-palate-btn:disabled { background: var(--cream-dark); color: var(--ink-xlight); cursor: wait; }
+.fav-palate-card {
+  background: var(--white); border-left: 3px solid var(--gold);
+  border-radius: 0 10px 10px 0; padding: 24px; text-align: left;
+}
+.fav-palate-title { font-family: 'Playfair Display', Georgia, serif; font-size: 1.1rem; color: var(--ink); margin-bottom: 12px; }
+.fav-palate-card p { font-family: 'Montserrat', sans-serif; font-size: 0.85rem; line-height: 1.65; color: var(--ink-mid); margin-bottom: 8px; }
+.fav-palate-loading, .fav-palate-hint {
+  font-family: 'Crimson Text', Georgia, serif; font-style: italic;
+  font-size: 0.88rem; color: var(--ink-xlight); padding: 16px;
+}
+/* Favorite buttons (shared) */
+.grape-modal-fav-btn, .prod-modal-fav-btn {
+  font-family: 'Montserrat', sans-serif; font-size: 0.78rem; font-weight: 500;
+  color: var(--ink-mid); background: none; border: 1px solid var(--cream-dark);
+  border-radius: 4px; padding: 8px 16px; cursor: pointer; transition: all 0.2s;
+}
+.grape-modal-fav-btn:hover, .prod-modal-fav-btn:hover { border-color: var(--maroon); color: var(--maroon); }
+.grape-modal-fav-btn.is-fav, .prod-modal-fav-btn.is-fav { background: var(--maroon); color: #fff; border-color: var(--maroon); }
+.prod-modal-actions { display: flex; gap: 10px; margin-top: 12px; align-items: center; }
+@media (max-width: 768px) { .favorites-body { padding: 24px 16px; } }
+
+/* ═══════════════════════════════════════════
    MICRO-INTERACTIONS & ANIMATIONS
 ════════════════════════════════════════════ */
 

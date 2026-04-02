@@ -24,7 +24,7 @@ document.addEventListener('DOMContentLoaded', () => {
     events:      'Bay Area Wine Events',
     dailywine:   'Daily Wine Emails',
     pairing:     'Food Pairing',
-    analyzer:    'I Love This Wine',
+    analyzer:    'My Favorites',
     preferences: 'My Account',
     diary:       'My Wine Diary',
     vault:       'My Wine Vault',

@@ -317,7 +317,10 @@ document.addEventListener('DOMContentLoaded', () => {
         <div class="prod-modal-label">Availability</div>
         <p class="prod-modal-text">${(p.availability || '').replace(/-/g, ' ')}</p>
       </div>
-      ${p.website ? `<a href="https://${p.website}" target="_blank" rel="noopener" class="prod-modal-link">Visit ${p.website}</a>` : ''}
+      <div class="prod-modal-actions">
+        <button class="prod-modal-fav-btn ${window.sommplicityFavorites && window.sommplicityFavorites.hasProducer(p.name) ? 'is-fav' : ''}" id="prod-fav-btn">${window.sommplicityFavorites && window.sommplicityFavorites.hasProducer(p.name) ? 'Favorited' : 'Add to Favorites'}</button>
+        ${p.website ? `<a href="https://${p.website}" target="_blank" rel="noopener" class="prod-modal-link">Visit ${p.website}</a>` : ''}
+      </div>
     `;
     modal.style.display = 'flex';
     document.body.style.overflow = 'hidden';
@@ -325,6 +328,22 @@ document.addEventListener('DOMContentLoaded', () => {
     const closeModal = () => { modal.style.display = 'none'; document.body.style.overflow = ''; };
     document.getElementById('prod-modal-close').onclick = closeModal;
     modal.addEventListener('click', (e) => { if (e.target === modal) closeModal(); });
+
+    // Favorite producer
+    const favBtn = document.getElementById('prod-fav-btn');
+    if (favBtn && window.sommplicityFavorites) {
+      favBtn.addEventListener('click', () => {
+        if (window.sommplicityFavorites.hasProducer(p.name)) {
+          window.sommplicityFavorites.removeProducer(p.name);
+          favBtn.textContent = 'Add to Favorites';
+          favBtn.classList.remove('is-fav');
+        } else {
+          window.sommplicityFavorites.addProducer(p.name);
+          favBtn.textContent = 'Favorited';
+          favBtn.classList.add('is-fav');
+        }
+      });
+    }
   }
 
   // Init when section becomes active

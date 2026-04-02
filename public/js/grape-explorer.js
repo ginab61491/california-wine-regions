@@ -171,6 +171,7 @@ document.addEventListener('DOMContentLoaded', () => {
 
       <div class="grape-modal-actions">
         <button class="grape-modal-compare-btn" id="grape-add-compare">${compareList.some(c => c.id === g.id) ? 'In Comparison' : 'Add to Compare'}</button>
+        <button class="grape-modal-fav-btn ${window.sommplicityFavorites && window.sommplicityFavorites.hasGrape(g.name) ? 'is-fav' : ''}" id="grape-fav-btn">${window.sommplicityFavorites && window.sommplicityFavorites.hasGrape(g.name) ? 'Favorited' : 'Add to Favorites'}</button>
       </div>
     `;
 
@@ -191,6 +192,22 @@ document.addEventListener('DOMContentLoaded', () => {
       addBtn.disabled = true;
       renderCompare();
     });
+
+    // Favorite grape
+    const favBtn = document.getElementById('grape-fav-btn');
+    if (favBtn && window.sommplicityFavorites) {
+      favBtn.addEventListener('click', () => {
+        if (window.sommplicityFavorites.hasGrape(g.name)) {
+          window.sommplicityFavorites.removeGrape(g.name);
+          favBtn.textContent = 'Add to Favorites';
+          favBtn.classList.remove('is-fav');
+        } else {
+          window.sommplicityFavorites.addGrape(g.name);
+          favBtn.textContent = 'Favorited';
+          favBtn.classList.add('is-fav');
+        }
+      });
+    }
 
     // Similar grape navigation
     content.querySelectorAll('.grape-similar-btn').forEach(btn => {

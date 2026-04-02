@@ -128,7 +128,7 @@
         <div class="topnav-dropdown">
           <button class="topnav-link topnav-link--has-menu">Sip</button>
           <div class="topnav-menu">
-            <a class="topnav-menu-item" data-section="analyzer">I Love This Wine</a>
+            <a class="topnav-menu-item" data-section="analyzer">My Favorites</a>
             <a class="topnav-menu-item" data-section="diary">My Wine Diary</a>
             <a class="topnav-menu-item" data-section="vault">My Wine Vault</a>
             <a class="topnav-menu-item" data-section="recs">Recommendations</a>
@@ -177,7 +177,7 @@
       <a class="mobile-nav-link" data-section="events">Bay Area Wine Events</a>
 
       <span class="mobile-nav-group">Sip</span>
-      <a class="mobile-nav-link" data-section="analyzer">I Love This Wine</a>
+      <a class="mobile-nav-link" data-section="analyzer">My Favorites</a>
       <a class="mobile-nav-link" data-section="diary">My Wine Diary</a>
       <a class="mobile-nav-link" data-section="vault">My Wine Vault</a>
       <a class="mobile-nav-link" data-section="recs">Recommendations</a>
@@ -294,8 +294,8 @@
           <p class="home-category-desc">Your personal wine journey — analyze bottles, keep a diary, and build your palate over time.</p>
           <div class="home-features-grid">
             <a class="home-card" data-section="analyzer">
-              <h4>I Love This Wine</h4>
-              <p>Snap a photo of a bottle you love — I'll tell you what's in it, why you like it, and what to try next.</p>
+              <h4>My Favorites</h4>
+              <p>Save your favorite grapes, regions, and producers. Get AI-powered palate insights based on what you love.</p>
             </a>
             <a class="home-card" data-section="diary">
               <h4>My Wine Diary</h4>
@@ -1496,69 +1496,58 @@
     </section>
 
     <!-- ═══════════════════════════════════════════
-         SECTION 5: I Love This Wine Analyzer
+         SECTION 5: My Favorites
     ════════════════════════════════════════════ -->
     <section class="section" id="analyzer-section">
       <div class="section-header">
-        <h1>I Love This Wine</h1>
-        <span class="section-tagline">"helping people discover and understand their own palates"</span>
-        <p>Search for a wine you love and discover exactly why — every tasting note explained in plain language.</p>
+        <h1>My Favorites</h1>
+        <span class="section-tagline">Your personal wine palate, curated by you</span>
+        <p>Save grapes, regions, and producers you love. Get AI-powered insights into your palate and personalized recommendations.</p>
       </div>
+      <div class="favorites-scroll">
+        <div class="favorites-body">
 
-      <div class="analyzer-container">
-        <div class="analyzer-search-panel">
-          <h3>Tell us your wine</h3>
-
-          <div class="wine-field-group">
-            <label class="wine-field-label" for="wine-name-input">Wine Name</label>
-            <input
-              type="text"
-              id="wine-name-input"
-              class="wine-text-input"
-              placeholder="e.g. Opus One, Barolo, Sassicaia"
-              autocomplete="off"
-            />
+          <!-- Favorite Grapes -->
+          <div class="fav-section">
+            <div class="fav-section-header">
+              <h2 class="fav-section-title">Favorite Grapes</h2>
+              <span class="fav-count" id="fav-grapes-count">0 saved</span>
+            </div>
+            <div class="fav-list" id="fav-grapes-list">
+              <p class="fav-empty">No favorite grapes yet. Explore the <a data-section="grapes" class="fav-link">Grape Explorer</a> and click the heart to save.</p>
+            </div>
           </div>
 
-          <div class="wine-field-group">
-            <label class="wine-field-label" for="wine-producer-input">Producer / Winery <span class="wine-field-optional">(optional)</span></label>
-            <input
-              type="text"
-              id="wine-producer-input"
-              class="wine-text-input"
-              placeholder="e.g. Giacomo Conterno, Penfolds"
-              autocomplete="off"
-            />
+          <!-- Favorite Regions -->
+          <div class="fav-section">
+            <div class="fav-section-header">
+              <h2 class="fav-section-title">Favorite Regions</h2>
+              <span class="fav-count" id="fav-regions-count">0 saved</span>
+            </div>
+            <div class="fav-list" id="fav-regions-list">
+              <p class="fav-empty">No favorite regions yet. Browse <a data-section="regions" class="fav-link">Wine Regions</a> or <a data-section="caregions" class="fav-link">California Wine Country</a> to add favorites.</p>
+            </div>
           </div>
 
-          <div class="wine-field-group">
-            <label class="wine-field-label" for="wine-vintage-input">Vintage <span class="wine-field-optional">(optional)</span></label>
-            <input
-              type="text"
-              id="wine-vintage-input"
-              class="wine-text-input wine-text-input--short"
-              placeholder="e.g. 2018"
-              autocomplete="off"
-              maxlength="4"
-            />
+          <!-- Favorite Producers -->
+          <div class="fav-section">
+            <div class="fav-section-header">
+              <h2 class="fav-section-title">Favorite Producers</h2>
+              <span class="fav-count" id="fav-producers-count">0 saved</span>
+            </div>
+            <div class="fav-list" id="fav-producers-list">
+              <p class="fav-empty">No favorite producers yet. Explore <a data-section="producers" class="fav-link">Producer Profiles</a> to discover and save producers.</p>
+            </div>
           </div>
 
-          <div class="analyzer-actions">
-            <button class="analyzer-clear-btn" id="wine-clear-btn">Clear</button>
-            <button class="analyzer-btn" id="wine-analyze-btn" disabled>Analyze</button>
+          <!-- AI Palate Analysis -->
+          <div class="fav-section fav-palate">
+            <h2 class="fav-section-title">Understand Your Palate</h2>
+            <p class="fav-palate-desc">Based on your saved favorites, our sommelier AI will analyze your taste preferences and give you words to describe your palate.</p>
+            <button class="fav-palate-btn" id="fav-palate-btn">Analyze My Palate</button>
+            <div class="fav-palate-output" id="fav-palate-output"></div>
           </div>
 
-          <div class="analyzer-source-note">
-            <p>Descriptors sourced from Wine Spectator, Decanter, Vinous, Robert Parker, and Jancis Robinson.</p>
-          </div>
-        </div>
-
-        <div class="analyzer-results" id="wine-analyzer-results">
-          <div class="analyzer-empty">
-            <div class="analyzer-empty-icon"><svg viewBox="0 0 24 24" width="28" height="28" fill="none" stroke="currentColor" stroke-width="1.2"><path d="M20.84 4.61a5.5 5.5 0 0 0-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 0 0-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 0 0 0-7.78z"/></svg></div>
-            <h3>Enter a Wine</h3>
-            <p>Type any wine you love — name the bottle, add the producer if you know it, then click Analyze to discover what makes it special.</p>
-          </div>
         </div>
       </div>
     </section>
@@ -2082,7 +2071,7 @@
               <div class="account-card">
                 <h2>Quick Actions</h2>
                 <div class="account-quick-grid">
-                  <a class="account-quick-item" data-section="analyzer">Analyze a Wine</a>
+                  <a class="account-quick-item" data-section="analyzer">My Favorites</a>
                   <a class="account-quick-item" data-section="catrip">Plan a Trip</a>
                   <a class="account-quick-item" data-section="events">Browse Events</a>
                   <a class="account-quick-item" data-section="dailywine">Manage Subscription</a>
@@ -2657,6 +2646,7 @@
   <script src="js/pairing-explorer.js"></script>
   <script src="js/chatbot.js"></script>
   <script src="js/wine-analyzer.js"></script>
+  <script src="js/favorites.js"></script>
   <script src="js/ca-wine-trip.js"></script>
   <script src="js/auth.js"></script>
   <script src="js/daily-wine.js"></script>
