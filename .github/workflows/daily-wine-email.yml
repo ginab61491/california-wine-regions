@@ -1,0 +1,35 @@
+name: Daily Wine Email
+
+on:
+  schedule:
+    # Runs every day at 6:00 AM Pacific (1:00 PM UTC)
+    - cron: '0 13 * * *'
+  workflow_dispatch: # Allow manual trigger from GitHub UI
+
+jobs:
+  send-daily-email:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4
+
+      - name: Setup Node.js
+        uses: actions/setup-node@v4
+        with:
+          node-version: '20'
+
+      - name: Generate and send emails
+        working-directory: ./email-pipeline
+        env:
+          ANTHROPIC_API_KEY: ${{ secrets.ANTHROPIC_API_KEY }}
+          MAILCHIMP_API_KEY: ${{ secrets.MAILCHIMP_API_KEY }}
+          MAILCHIMP_SERVER: ${{ secrets.MAILCHIMP_SERVER }}
+          MAILCHIMP_LIST_ID: ${{ secrets.MAILCHIMP_LIST_ID }}
+        run: node run-daily.js
+
+      - name: Save topic history
+        uses: stefanzweifel/git-auto-commit-action@v5
+        with:
+          commit_message: "chore: update daily email topic rotation history"
+          file_pattern: email-pipeline/topic-history.json
