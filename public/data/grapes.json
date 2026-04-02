@@ -1144,6 +1144,726 @@
 "syrah",
 "grenache"
 ]
+},
+{
+"id": "barbera",
+"name": "Barbera",
+"type": "red",
+"aromatic": 2,
+"acidity": 5,
+"tannin": 2,
+"alcohol": "12.5-14",
+"body": 3,
+"popularity": 3,
+"regions": [
+"Piedmont",
+"Lombardy",
+"California"
+],
+"world": "both",
+"flavors": [
+"Tart Cherry",
+"Plum",
+"Blackberry",
+"Licorice",
+"Herbs"
+],
+"description": "Piedmont's most planted red grape. High acidity and low tannins make it supremely food-friendly. Ranges from simple, fresh everyday wines to serious, oak-aged expressions from Asti and Alba.",
+"food": [
+"Pasta with tomato sauce",
+"Pizza",
+"Grilled meats",
+"Aged cheeses"
+],
+"aging": "2-8 years for premium",
+"similar": [
+"sangiovese",
+"dolcetto",
+"grenache"
+]
+},
+{
+"id": "nero-davola",
+"name": "Nero d'Avola",
+"type": "red",
+"aromatic": 2,
+"acidity": 3,
+"tannin": 3,
+"alcohol": "13-14.5",
+"body": 4,
+"popularity": 2,
+"regions": [
+"Sicily"
+],
+"world": "old",
+"flavors": [
+"Black Cherry",
+"Plum",
+"Chocolate",
+"Spice",
+"Mediterranean Herbs"
+],
+"description": "Sicily's signature red grape. Rich, dark-fruited wines with a distinctly Mediterranean character. Named after the town of Avola in southeastern Sicily. Has been called 'the Syrah of the Mediterranean.'",
+"food": [
+"Grilled lamb",
+"Eggplant parmigiana",
+"Hard cheeses",
+"Spicy sausage"
+],
+"aging": "3-10 years",
+"similar": [
+"syrah",
+"sangiovese",
+"mourvedre"
+]
+},
+{
+"id": "aglianico",
+"name": "Aglianico",
+"type": "red",
+"aromatic": 3,
+"acidity": 5,
+"tannin": 5,
+"alcohol": "13-14.5",
+"body": 5,
+"popularity": 2,
+"regions": [
+"Campania",
+"Basilicata"
+],
+"world": "old",
+"flavors": [
+"Dark Cherry",
+"Smoke",
+"Leather",
+"Tar",
+"Chocolate"
+],
+"description": "Southern Italy's noblest red grape. Produces Taurasi and Aglianico del Vulture \u2014 powerful, tannic wines that rival Barolo for aging potential. Named from 'Hellenikon' (Greek), reflecting its ancient origins.",
+"food": [
+"Braised beef",
+"Aged hard cheeses",
+"Game",
+"Rich stews"
+],
+"aging": "10-25+ years",
+"similar": [
+"nebbiolo",
+"tannat",
+"mourvedre"
+]
+},
+{
+"id": "tannat",
+"name": "Tannat",
+"type": "red",
+"aromatic": 2,
+"acidity": 3,
+"tannin": 5,
+"alcohol": "13-14.5",
+"body": 5,
+"popularity": 2,
+"regions": [
+"Madiran",
+"Uruguay",
+"Argentina"
+],
+"world": "both",
+"flavors": [
+"Blackberry",
+"Dark Plum",
+"Leather",
+"Spice",
+"Tobacco"
+],
+"description": "Massively tannic \u2014 the name literally comes from 'tannin.' Originally from southwest France (Madiran), it found a second home in Uruguay where it's the national grape. Softened by micro-oxygenation.",
+"food": [
+"Grilled steak",
+"Cassoulet",
+"Hard aged cheeses",
+"Dark chocolate"
+],
+"aging": "5-20 years",
+"similar": [
+"malbec",
+"petite-sirah",
+"mourvedre"
+]
+},
+{
+"id": "touriga-nacional",
+"name": "Touriga Nacional",
+"type": "red",
+"aromatic": 4,
+"acidity": 3,
+"tannin": 4,
+"alcohol": "13-14.5",
+"body": 5,
+"popularity": 2,
+"regions": [
+"Douro Valley",
+"D\u00e3o",
+"Alentejo"
+],
+"world": "old",
+"flavors": [
+"Violets",
+"Blackberry",
+"Plum",
+"Rock Rose",
+"Dark Chocolate"
+],
+"description": "Portugal's finest red grape and the backbone of premium Port wine. Intensely aromatic with floral violet notes uncommon in such a tannic grape. Also produces outstanding dry reds from the Douro and D\u00e3o.",
+"food": [
+"Roast lamb",
+"Rich stews",
+"Dark chocolate",
+"Aged cheese"
+],
+"aging": "5-20 years",
+"similar": [
+"syrah",
+"nebbiolo",
+"malbec"
+]
+},
+{
+"id": "corvina",
+"name": "Corvina",
+"type": "red",
+"aromatic": 3,
+"acidity": 3,
+"tannin": 2,
+"alcohol": "12-16",
+"body": 3,
+"popularity": 2,
+"regions": [
+"Veneto"
+],
+"world": "old",
+"flavors": [
+"Sour Cherry",
+"Almond",
+"Cinnamon",
+"Dried Herbs",
+"Raisin"
+],
+"description": "The principal grape of Valpolicella, Ripasso, and Amarone. Light and cherry-fresh in basic Valpolicella; concentrated and raisined in Amarone where grapes are dried for months before fermentation (appassimento).",
+"food": [
+"Risotto",
+"Veal",
+"Medium cheeses",
+"Pasta with meat sauce"
+],
+"aging": "2-15 years (Amarone much longer)",
+"similar": [
+"sangiovese",
+"gamay",
+"barbera"
+]
+},
+{
+"id": "dolcetto",
+"name": "Dolcetto",
+"type": "red",
+"aromatic": 2,
+"acidity": 3,
+"tannin": 3,
+"alcohol": "12-13.5",
+"body": 3,
+"popularity": 1,
+"regions": [
+"Piedmont"
+],
+"world": "old",
+"flavors": [
+"Black Cherry",
+"Licorice",
+"Almond",
+"Plum",
+"Bitter Chocolate"
+],
+"description": "Piedmont's everyday red \u2014 'dolcetto' means 'little sweet one' though the wines are dry. Low acidity and moderate tannins make it supremely drinkable young. Overshadowed by Nebbiolo and Barbera but beloved locally.",
+"food": [
+"Pasta",
+"Salumi",
+"Light meats",
+"Fresh cheeses"
+],
+"aging": "1-5 years",
+"similar": [
+"barbera",
+"gamay",
+"grenache"
+]
+},
+{
+"id": "gruner-veltliner",
+"name": "Gr\u00fcner Veltliner",
+"type": "white",
+"aromatic": 3,
+"acidity": 4,
+"tannin": 0,
+"alcohol": "11.5-13.5",
+"body": 2,
+"popularity": 2,
+"regions": [
+"Wachau",
+"Kremstal",
+"Kamptal",
+"Weinviertel"
+],
+"world": "old",
+"flavors": [
+"White Pepper",
+"Green Lentil",
+"Lime Zest",
+"Arugula",
+"Stone Fruit"
+],
+"description": "Austria's national grape. Crisp and mineral-driven with distinctive white pepper character. Perfect with Wiener Schnitzel. Increasingly popular among sommeliers worldwide.",
+"food": [
+"Wiener Schnitzel",
+"Asparagus",
+"Sushi",
+"Light salads"
+],
+"aging": "1-10 years for Smaragd",
+"similar": [
+"riesling",
+"sauvignon-blanc",
+"albarino"
+]
+},
+{
+"id": "fiano",
+"name": "Fiano",
+"type": "white",
+"aromatic": 3,
+"acidity": 4,
+"tannin": 0,
+"alcohol": "12.5-13.5",
+"body": 3,
+"popularity": 1,
+"regions": [
+"Campania",
+"Puglia",
+"Sicily"
+],
+"world": "old",
+"flavors": [
+"Hazelnut",
+"Pear",
+"Honey",
+"White Flowers",
+"Spice"
+],
+"description": "One of southern Italy's finest white grapes. Fiano di Avellino is the benchmark \u2014 mineral, nutty, complex. Nearly extinct in the 20th century before a revival led by Mastroberardino. Ages surprisingly well.",
+"food": [
+"Seafood pasta",
+"Grilled fish",
+"Risotto",
+"Soft cheeses"
+],
+"aging": "2-8 years",
+"similar": [
+"chardonnay",
+"viognier",
+"greco"
+]
+},
+{
+"id": "greco",
+"name": "Greco",
+"type": "white",
+"aromatic": 2,
+"acidity": 4,
+"tannin": 0,
+"alcohol": "12-13.5",
+"body": 3,
+"popularity": 1,
+"regions": [
+"Campania"
+],
+"world": "old",
+"flavors": [
+"Citrus",
+"Almond",
+"Peach",
+"Mineral",
+"Herbs"
+],
+"description": "Ancient Greek-origin grape of Campania. Greco di Tufo is the flagship \u2014 mineral, taut, and age-worthy. One of Italy's most underrated whites with real complexity and structure.",
+"food": [
+"Grilled seafood",
+"White pizza",
+"Risotto",
+"Light pasta"
+],
+"aging": "2-6 years",
+"similar": [
+"fiano",
+"vermentino",
+"albarino"
+]
+},
+{
+"id": "arneis",
+"name": "Arneis",
+"type": "white",
+"aromatic": 3,
+"acidity": 3,
+"tannin": 0,
+"alcohol": "12-13",
+"body": 2,
+"popularity": 1,
+"regions": [
+"Piedmont"
+],
+"world": "old",
+"flavors": [
+"Pear",
+"Peach",
+"Almond",
+"White Flowers",
+"Herbs"
+],
+"description": "Piedmont's 'little rascal' \u2014 the name means difficult in local dialect. Nearly extinct before revival in the 1980s. Roero Arneis is the benchmark: delicate, aromatic, with a hint of bitter almond on the finish.",
+"food": [
+"Light fish",
+"Risotto",
+"Salads",
+"Fresh cheeses"
+],
+"aging": "1-3 years",
+"similar": [
+"pinot-grigio",
+"viognier",
+"cortese"
+]
+},
+{
+"id": "roussanne",
+"name": "Roussanne",
+"type": "white",
+"aromatic": 3,
+"acidity": 3,
+"tannin": 0,
+"alcohol": "13-14.5",
+"body": 4,
+"popularity": 1,
+"regions": [
+"Northern Rh\u00f4ne",
+"Languedoc",
+"California"
+],
+"world": "both",
+"flavors": [
+"Herbal Tea",
+"Pear",
+"Honey",
+"Floral",
+"Hazelnut"
+],
+"description": "The aromatic partner to Marsanne in white Rh\u00f4ne blends. More fragrant and acidic than Marsanne but lower-yielding and harder to grow. Often blended; rare as a single varietal. Ages into honeyed complexity.",
+"food": [
+"Rich fish",
+"Poultry in cream",
+"Soft cheeses",
+"Herb dishes"
+],
+"aging": "3-10 years",
+"similar": [
+"marsanne",
+"viognier",
+"chardonnay"
+]
+},
+{
+"id": "picpoul",
+"name": "Picpoul de Pinet",
+"type": "white",
+"aromatic": 2,
+"acidity": 5,
+"tannin": 0,
+"alcohol": "12-13",
+"body": 1,
+"popularity": 1,
+"regions": [
+"Languedoc"
+],
+"world": "old",
+"flavors": [
+"Lemon",
+"Green Apple",
+"Sea Salt",
+"Herbs",
+"Grapefruit"
+],
+"description": "'Lip-stinger' \u2014 named for its bracing acidity. The classic oyster wine of southern France. Lean, saline, and refreshing from vineyards near the Mediterranean coast in Pinet. One of the best-value whites.",
+"food": [
+"Oysters",
+"Shellfish",
+"Grilled fish",
+"Light salads"
+],
+"aging": "1-2 years",
+"similar": [
+"muscadet",
+"albarino",
+"vermentino"
+]
+},
+{
+"id": "muscadet",
+"name": "Muscadet (Melon de Bourgogne)",
+"type": "white",
+"aromatic": 1,
+"acidity": 5,
+"tannin": 0,
+"alcohol": "11.5-12.5",
+"body": 1,
+"popularity": 2,
+"regions": [
+"Loire Valley"
+],
+"world": "old",
+"flavors": [
+"Lemon",
+"Green Apple",
+"Sea Salt",
+"Yeast",
+"Mineral"
+],
+"description": "The ultimate seafood wine. Bone-dry, briny, mineral \u2014 aged on its lees (sur lie) for creamy texture. From the Nantais region at the mouth of the Loire. Despite the name, made from Melon de Bourgogne, not Muscat.",
+"food": [
+"Oysters",
+"Mussels",
+"Shrimp",
+"Light fish"
+],
+"aging": "1-5 years (sur lie crus)",
+"similar": [
+"picpoul",
+"albarino",
+"chablis"
+]
+},
+{
+"id": "nerello-mascalese",
+"name": "Nerello Mascalese",
+"type": "red",
+"aromatic": 3,
+"acidity": 4,
+"tannin": 3,
+"alcohol": "12.5-14",
+"body": 3,
+"popularity": 1,
+"regions": [
+"Sicily"
+],
+"world": "old",
+"flavors": [
+"Red Cherry",
+"Blood Orange",
+"Herbs",
+"Smoke",
+"Volcanic Mineral"
+],
+"description": "The Pinot Noir of Mount Etna. Grows on volcanic soils at elevation, producing ethereal, pale-colored reds with remarkable complexity. Sicily's most exciting grape \u2014 transparent, perfumed, and age-worthy.",
+"food": [
+"Grilled fish",
+"Light meats",
+"Mushrooms",
+"Fresh pasta"
+],
+"aging": "5-15 years",
+"similar": [
+"pinot-noir",
+"nebbiolo",
+"gamay"
+]
+},
+{
+"id": "sagrantino",
+"name": "Sagrantino",
+"type": "red",
+"aromatic": 2,
+"acidity": 4,
+"tannin": 5,
+"alcohol": "14-15",
+"body": 5,
+"popularity": 1,
+"regions": [
+"Umbria"
+],
+"world": "old",
+"flavors": [
+"Blackberry",
+"Plum",
+"Dark Chocolate",
+"Leather",
+"Dried Herbs"
+],
+"description": "The world's most tannic grape. Sagrantino di Montefalco produces massive, structured wines that need years to soften. Originally used for sweet passito wines; now primarily dry. One of Italy's most powerful reds.",
+"food": [
+"Rich braised meats",
+"Game",
+"Aged hard cheeses",
+"Stews"
+],
+"aging": "10-25 years",
+"similar": [
+"nebbiolo",
+"aglianico",
+"tannat"
+]
+},
+{
+"id": "graciano",
+"name": "Graciano",
+"type": "red",
+"aromatic": 3,
+"acidity": 4,
+"tannin": 4,
+"alcohol": "12.5-13.5",
+"body": 4,
+"popularity": 1,
+"regions": [
+"Rioja",
+"Navarra"
+],
+"world": "old",
+"flavors": [
+"Blackberry",
+"Violet",
+"Licorice",
+"Spice",
+"Herbs"
+],
+"description": "Rioja's secret weapon. Small quantities add color, acidity, and aromatic complexity to Tempranillo blends. Rarely bottled solo due to low yields, but single-varietal Graciano is becoming sought-after.",
+"food": [
+"Grilled lamb",
+"Chorizo",
+"Aged Manchego",
+"Stewed meats"
+],
+"aging": "5-15 years",
+"similar": [
+"tempranillo",
+"mourvedre",
+"syrah"
+]
+},
+{
+"id": "malvasia",
+"name": "Malvasia",
+"type": "white",
+"aromatic": 4,
+"acidity": 2,
+"tannin": 0,
+"alcohol": "12-15",
+"body": 3,
+"popularity": 2,
+"regions": [
+"Italy",
+"Madeira",
+"Spain",
+"Croatia"
+],
+"world": "old",
+"flavors": [
+"Peach",
+"Apricot",
+"Honey",
+"Orange Blossom",
+"Almond"
+],
+"description": "A large family of grapes (not one variety) found across the Mediterranean. Made dry, sweet, sparkling, and fortified. Malvasia di Candia, Malvasia delle Lipari, and Malmsey Madeira are all different expressions of this ancient grape group.",
+"food": [
+"Appetizers",
+"Light fish",
+"Fruit desserts",
+"Soft cheeses"
+],
+"aging": "Varies by style",
+"similar": [
+"muscat",
+"gewurztraminer",
+"viognier"
+]
+},
+{
+"id": "bonarda",
+"name": "Bonarda",
+"type": "red",
+"aromatic": 2,
+"acidity": 3,
+"tannin": 2,
+"alcohol": "12.5-14",
+"body": 3,
+"popularity": 1,
+"regions": [
+"Mendoza",
+"Piedmont"
+],
+"world": "both",
+"flavors": [
+"Plum",
+"Cherry",
+"Raspberry",
+"Herbs",
+"Soft Spice"
+],
+"description": "Argentina's second most planted red after Malbec, though far less famous. Produces soft, fruity, approachable reds. Actually two different grapes: Bonarda Piemontese in Italy and Douce Noir in Argentina.",
+"food": [
+"Grilled meats",
+"Empanadas",
+"Pizza",
+"Casual dining"
+],
+"aging": "1-5 years",
+"similar": [
+"malbec",
+"merlot",
+"dolcetto"
+]
+},
+{
+"id": "ribolla-gialla",
+"name": "Ribolla Gialla",
+"type": "white",
+"aromatic": 2,
+"acidity": 4,
+"tannin": 0,
+"alcohol": "12-13",
+"body": 2,
+"popularity": 1,
+"regions": [
+"Friuli",
+"Slovenia"
+],
+"world": "old",
+"flavors": [
+"Green Apple",
+"Citrus",
+"Mineral",
+"Almond",
+"Herbs"
+],
+"description": "Ancient grape of northeastern Italy and Slovenia. Best known for orange/amber wines made with extended skin contact. Conventional versions are crisp and mineral; skin-contact versions are golden, textured, and complex.",
+"food": [
+"Cured meats",
+"Aged cheeses",
+"Rich fish",
+"Asian cuisine"
+],
+"aging": "2-10 years (orange wine ages well)",
+"similar": [
+"pinot-grigio",
+"vermentino",
+"gruner-veltliner"
+]
 }
 ]
 }

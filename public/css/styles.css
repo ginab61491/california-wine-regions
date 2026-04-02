@@ -3776,6 +3776,25 @@ button {
   cursor: pointer; transition: all 0.2s;
 }
 .grape-similar-btn:hover { background: var(--gold); color: #fff; }
+/* Modal actions */
+.grape-modal-actions { display: flex; gap: 10px; margin-top: 16px; padding-top: 14px; border-top: 1px solid var(--cream-dark); }
+.grape-modal-compare-btn { font-family: 'Montserrat', sans-serif; font-size: 0.78rem; font-weight: 500; color: var(--gold); background: none; border: 1px solid var(--gold); border-radius: 4px; padding: 8px 16px; cursor: pointer; transition: all 0.2s; }
+.grape-modal-compare-btn:hover:not(:disabled) { background: var(--gold); color: #fff; }
+.grape-modal-compare-btn:disabled { opacity: 0.5; cursor: default; }
+/* Comparison Board */
+.grape-compare { padding: 24px 40px; background: var(--white); border-top: 2px solid var(--gold); }
+.grape-compare-header { display: flex; justify-content: space-between; align-items: center; margin-bottom: 16px; }
+.grape-compare-header h3 { font-family: 'Playfair Display', Georgia, serif; font-size: 1.1rem; font-weight: 400; color: var(--ink); margin: 0; }
+.grape-compare-clear { font-family: 'Montserrat', sans-serif; font-size: 0.7rem; color: var(--ink-xlight); background: none; border: none; cursor: pointer; }
+.grape-compare-clear:hover { color: var(--maroon); }
+.compare-table { width: 100%; border-collapse: collapse; font-family: 'Montserrat', sans-serif; font-size: 0.75rem; margin-bottom: 14px; }
+.compare-table th { font-family: 'Playfair Display', Georgia, serif; font-size: 0.85rem; font-weight: 400; padding: 8px 10px; border-bottom: 2px solid var(--cream-dark); text-align: left; }
+.compare-table td { padding: 5px 10px; border-bottom: 1px solid var(--cream-dark); color: var(--ink-mid); }
+.compare-table td:first-child { font-weight: 600; font-size: 0.6rem; text-transform: uppercase; letter-spacing: 0.06em; color: var(--ink-xlight); width: 70px; }
+.compare-remove { background: none; border: none; color: var(--ink-xlight); cursor: pointer; font-size: 0.85rem; margin-left: 4px; }
+.compare-remove:hover { color: var(--maroon); }
+.compare-analysis-text { font-family: 'Crimson Text', Georgia, serif; font-style: italic; font-size: 0.85rem; line-height: 1.55; color: var(--ink-mid); border-left: 2px solid var(--gold); padding-left: 12px; margin: 0 0 8px; }
+@media (max-width: 768px) { .grape-compare { padding: 16px; } .compare-table { font-size: 0.65rem; } }
 
 /* Sources */
 .grape-sources {

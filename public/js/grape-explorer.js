@@ -3,6 +3,7 @@
 document.addEventListener('DOMContentLoaded', () => {
   let allGrapes = [];
   let filtered = [];
+  let compareList = [];
   let selectedType = 'all';
   let selectedWorld = 'both';
   let sliderAromatic = 0;
@@ -58,6 +59,9 @@ document.addEventListener('DOMContentLoaded', () => {
       document.getElementById('tannin-val').textContent = labels[sliderTannin];
       applyFilters();
     });
+    // Comparison board
+    const clearCompare = document.getElementById('grape-compare-clear');
+    if (clearCompare) clearCompare.addEventListener('click', () => { compareList = []; renderCompare(); });
   }
 
   function applyFilters() {
@@ -164,15 +168,29 @@ document.addEventListener('DOMContentLoaded', () => {
         <div class="grape-modal-label">Similar Grapes</div>
         <div class="grape-similar-list">${similar}</div>
       </div>` : ''}
+
+      <div class="grape-modal-actions">
+        <button class="grape-modal-compare-btn" id="grape-add-compare">${compareList.some(c => c.id === g.id) ? 'In Comparison' : 'Add to Compare'}</button>
+      </div>
     `;
 
     modal.style.display = 'flex';
     document.body.style.overflow = 'hidden';
 
-    // Close
     const close = () => { modal.style.display = 'none'; document.body.style.overflow = ''; };
     document.getElementById('grape-modal-close').onclick = close;
     modal.addEventListener('click', (e) => { if (e.target === modal) close(); });
+
+    // Add to compare
+    const addBtn = document.getElementById('grape-add-compare');
+    if (compareList.some(c => c.id === g.id)) addBtn.disabled = true;
+    addBtn.addEventListener('click', () => {
+      if (compareList.length >= 6 || compareList.some(c => c.id === g.id)) return;
+      compareList.push(g);
+      addBtn.textContent = 'In Comparison';
+      addBtn.disabled = true;
+      renderCompare();
+    });
 
     // Similar grape navigation
     content.querySelectorAll('.grape-similar-btn').forEach(btn => {
@@ -181,6 +199,50 @@ document.addEventListener('DOMContentLoaded', () => {
         if (sg) showGrapeModal(sg);
       });
     });
+  }
+
+  // ── Comparison Board ──
+  function renderCompare() {
+    const panel = document.getElementById('grape-compare');
+    const table = document.getElementById('grape-compare-table');
+    const analysis = document.getElementById('grape-compare-analysis');
+    if (!compareList.length) { panel.style.display = 'none'; return; }
+    panel.style.display = 'block';
+    const d = (v) => '●'.repeat(v) + '○'.repeat(5 - v);
+    table.innerHTML = `<table class="compare-table">
+      <thead><tr><th></th>${compareList.map(g => `<th>${g.name}<button class="compare-remove" data-id="${g.id}">&times;</button></th>`).join('')}</tr></thead>
+      <tbody>
+        <tr><td>Type</td>${compareList.map(g => `<td>${g.type}</td>`).join('')}</tr>
+        <tr><td>Acidity</td>${compareList.map(g => `<td>${d(g.acidity)}</td>`).join('')}</tr>
+        <tr><td>Tannin</td>${compareList.map(g => `<td>${d(g.tannin)}</td>`).join('')}</tr>
+        <tr><td>Aromatic</td>${compareList.map(g => `<td>${d(g.aromatic)}</td>`).join('')}</tr>
+        <tr><td>Body</td>${compareList.map(g => `<td>${d(g.body)}</td>`).join('')}</tr>
+        <tr><td>Alcohol</td>${compareList.map(g => `<td>${g.alcohol}%</td>`).join('')}</tr>
+        <tr><td>Flavors</td>${compareList.map(g => `<td>${(g.flavors||[]).slice(0,3).join(', ')}</td>`).join('')}</tr>
+        <tr><td>Regions</td>${compareList.map(g => `<td>${(g.regions||[]).slice(0,2).join(', ')}</td>`).join('')}</tr>
+      </tbody></table>`;
+    table.querySelectorAll('.compare-remove').forEach(btn => {
+      btn.addEventListener('click', () => { compareList = compareList.filter(g => g.id !== btn.dataset.id); renderCompare(); });
+    });
+    // Analysis
+    if (compareList.length >= 2) {
+      const range = (k) => { const v = compareList.map(g => g[k]||0); return { min: Math.min(...v), max: Math.max(...v) }; };
+      const LABELS = { 0:'Any',1:'Low',2:'Low-Med',3:'Medium',4:'Med-High',5:'High' };
+      let sims = [], diffs = [];
+      if (range('acidity').max - range('acidity').min <= 1) sims.push('similar acidity levels');
+      if (range('tannin').max - range('tannin').min <= 1) sims.push('similar tannin structure');
+      if (range('aromatic').max - range('aromatic').min <= 1) sims.push('similar aromatic intensity');
+      if (compareList.every(g => g.type === 'red')) sims.push('all red grapes');
+      if (compareList.every(g => g.type === 'white')) sims.push('all white grapes');
+      if (range('acidity').max - range('acidity').min >= 3) diffs.push(`acidity ranges from ${LABELS[range('acidity').min]} to ${LABELS[range('acidity').max]}`);
+      if (range('tannin').max - range('tannin').min >= 3) diffs.push('tannin levels differ significantly');
+      if (range('body').max - range('body').min >= 3) diffs.push('body ranges from light to full');
+      let html = '';
+      if (sims.length) html += `<p class="compare-analysis-text"><strong>In common:</strong> ${sims.join(', ')}.</p>`;
+      if (diffs.length) html += `<p class="compare-analysis-text"><strong>Key differences:</strong> ${diffs.join('; ')}.</p>`;
+      if (!html) html = '<p class="compare-analysis-text">These grapes have a mix of shared and differing characteristics.</p>';
+      analysis.innerHTML = html;
+    } else { analysis.innerHTML = ''; }
   }
 
   // Init when section becomes active
