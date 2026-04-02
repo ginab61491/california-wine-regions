@@ -4,14 +4,14 @@
 // ─── Filter Sliders ─────────────────────────────────────
 // PRIMARY FILTERS — always visible
 const TRIP_SLIDERS_PRIMARY = [
-  { id: 'vibe', leftLabel: 'Intimate & Family-Owned', rightLabel: 'Polished & Established', leftTags: ['intimate', 'family-owned'], rightTags: ['commercial', 'prestigious'] },
+  { id: 'vibe', leftLabel: 'Intimate & Family-Owned', rightLabel: 'Polished & Established', leftTags: ['small-batch', 'family-owned', 'hands-on-winemaker'], rightTags: ['group-tastings', 'award-winning', 'contemporary-design'] },
   { id: 'budget', leftLabel: 'Budget-Friendly', rightLabel: 'Splurge-Worthy', leftTags: ['budget-price'], rightTags: ['splurge-price'] },
-  { id: 'remoteness', leftLabel: 'Close to Town', rightLabel: 'Remote & Scenic', leftTags: ['near-town'], rightTags: ['remote', 'scenic'] },
+  { id: 'remoteness', leftLabel: 'Close to Town', rightLabel: 'Remote & Scenic', leftTags: ['fine-dining-nearby', 'walk-in-friendly'], rightTags: ['secluded', 'scenic-drive', 'mountain-views'] },
 ];
 // SECONDARY FILTERS — collapsible
 const TRIP_SLIDERS_SECONDARY = [
-  { id: 'quality', leftLabel: 'Wine Focused', rightLabel: 'Vibe Focused', leftTags: ['sommelier-fave'], rightTags: ['tour', 'scenic'] },
-  { id: 'learning', leftLabel: 'Educational', rightLabel: 'Casual & Fun', leftTags: ['educational', 'tour'], rightTags: ['social', 'casual'] },
+  { id: 'quality', leftLabel: 'Wine Focused', rightLabel: 'Vibe Focused', leftTags: ['sommelier-pick', 'old-world-style'], rightTags: ['sunset-views', 'picnic-friendly', 'contemporary-design'] },
+  { id: 'learning', leftLabel: 'Educational', rightLabel: 'Casual & Fun', leftTags: ['educational-tastings', 'cellar-tour', 'vineyard-tour'], rightTags: ['walk-in-friendly', 'picnic-friendly'] },
 ];
 const TRIP_SLIDERS = [...TRIP_SLIDERS_PRIMARY, ...TRIP_SLIDERS_SECONDARY];
 
@@ -540,38 +540,61 @@ class CaTripPlanner {
     document.getElementById('catrip-results-state').style.display = 'flex';
     const scored = WINERIES_DEDUPED.map(w => {
       let score = 0;
-      w._matchReasons = []; w._filterNotes = [];
+      const matchR = []; const filterN = [];
       if (this.selectedRegion) {
         if (w.region === this.selectedRegion) score += 3;
         else if (this.selectedRegion === 'Healdsburg' && w.region === 'Sonoma County' && ['Russian River Valley','Dry Creek Valley','Alexander Valley'].includes(w.subregion)) score += 2;
         else return { winery: w, score: -999 };
       }
       if (this.selectedSubregion) {
-        if (w.subregion === this.selectedSubregion) score += 4;
+        if (w.subregion === this.selectedSubregion) { score += 4; matchR.push(`In ${this.selectedSubregion}`); }
         else { const neighbors = SUBREGION_NEIGHBORS[this.selectedSubregion] || {}; const d = neighbors[w.subregion]; if (d !== undefined) { w._neighborNote = `~${d} min from ${this.selectedSubregion}`; score += 1; } else return { winery: w, score: -999 }; }
       }
-      const wTags = new Set(w.tags || []); const wGrapes = new Set(w.grapes || []);
+      const wTags = new Set(w.tags || []);
       TRIP_SLIDERS.forEach(slider => {
         const val = this.sliderValues[slider.id] || 50;
-        if (val < 38) { let m = false; slider.leftTags.forEach(t => { if (wTags.has(t)) { score += 3; m = true; w._matchReasons.push(`Matches "${slider.leftLabel}"`); } }); slider.rightTags.forEach(t => { if (wTags.has(t)) { score -= 2; w._filterNotes.push(`Leans toward "${slider.rightLabel}"`); } }); if (val < 20 && !m && slider.leftTags.length) { score -= 4; w._filterNotes.push(`Not known for "${slider.leftLabel}"`); } }
-        else if (val > 62) { let m = false; slider.rightTags.forEach(t => { if (wTags.has(t)) { score += 3; m = true; w._matchReasons.push(`Matches "${slider.rightLabel}"`); } }); slider.leftTags.forEach(t => { if (wTags.has(t)) { score -= 2; w._filterNotes.push(`Leans toward "${slider.leftLabel}"`); } }); if (val > 80 && !m && slider.rightTags.length) { score -= 4; w._filterNotes.push(`Not known for "${slider.rightLabel}"`); } }
+        if (val < 38) {
+          let m = false;
+          slider.leftTags.forEach(t => { if (wTags.has(t)) { score += 3; m = true; } });
+          if (m) matchR.push(slider.leftLabel);
+          slider.rightTags.forEach(t => { if (wTags.has(t)) { score -= 2; filterN.push(`More ${slider.rightLabel.toLowerCase()} than ${slider.leftLabel.toLowerCase()}`); } });
+          if (val < 20 && !m && slider.leftTags.length) { score -= 4; }
+        } else if (val > 62) {
+          let m = false;
+          slider.rightTags.forEach(t => { if (wTags.has(t)) { score += 3; m = true; } });
+          if (m) matchR.push(slider.rightLabel);
+          slider.leftTags.forEach(t => { if (wTags.has(t)) { score -= 2; filterN.push(`More ${slider.leftLabel.toLowerCase()} than ${slider.rightLabel.toLowerCase()}`); } });
+          if (val > 80 && !m && slider.rightTags.length) { score -= 4; }
+        }
       });
       const budgetVal = this.sliderValues['budget'] || 50;
-      if (budgetVal < 30) { if (['budget','mid'].includes(w.price)) { score += 4; w._matchReasons.push('Fits budget preference'); } if (w.price === 'splurge') { score -= 7; w._filterNotes.push('Splurge-level tasting — above budget preference'); } }
-      else if (budgetVal > 70) { if (['splurge','mid-splurge'].includes(w.price)) { score += 4; w._matchReasons.push('Premium experience'); } if (w.price === 'budget') { score -= 7; w._filterNotes.push('Budget-oriented'); } }
+      if (budgetVal < 30) {
+        if (['budget','mid'].includes(w.price)) { score += 4; matchR.push(`Good value (${w.tastingCost || '$'})`); }
+        if (w.price === 'splurge') { score -= 7; filterN.push(`Pricier than preferred (${w.tastingCost || '$$$'})`); }
+      } else if (budgetVal > 70) {
+        if (['splurge','mid-splurge'].includes(w.price)) { score += 4; matchR.push('Premium tasting experience'); }
+        if (w.price === 'budget') { score -= 7; filterN.push('More budget-oriented than you specified'); }
+      }
       if (this.badgeFilters.size > 0) {
-        const bn = {'walk-in':'Walk-Ins','last-minute':'Last Minute Friendly'};
-        this.badgeFilters.forEach(f => { if (wTags.has(f)) { score += 5; w._matchReasons.push(`Tagged "${bn[f]||f}"`); } else { score -= 6; w._filterNotes.push(`Not tagged "${bn[f]||f}"`); } });
+        this.badgeFilters.forEach(f => {
+          if (wTags.has(f)) { score += 5; matchR.push(f === 'walk-in-friendly' ? 'Walk-ins accepted' : 'Easy last-minute booking'); }
+          else { score -= 6; filterN.push(f === 'walk-in-friendly' ? 'Requires a reservation' : 'Needs advance planning'); }
+        });
       }
       const proxInput = document.getElementById('proximity-input');
       const proxVal = proxInput ? proxInput.value.trim().toLowerCase() : '';
-      if (proxVal) { const s = (w.subregion||'').toLowerCase(); if (s.includes(proxVal) || (w.region||'').toLowerCase().includes(proxVal)) { score += 5; w._matchReasons.push(`Close to "${proxInput.value.trim()}"`); } else w._filterNotes.push(`Not close to "${proxInput.value.trim()}"`); }
-      if (wTags.has('sommelier-fave')) w._matchReasons.push('Sommelier-recommended');
-      if (wTags.has('historic')) w._matchReasons.push('Historic estate');
-      if (wTags.has('family-owned')) w._matchReasons.push('Family-owned, personal experience');
-      if (wTags.has('walk-in') && !w._matchReasons.some(r => r.includes('Walk'))) w._matchReasons.push('Walk-ins welcome');
-      w._matchReasons = [...new Set(w._matchReasons)].slice(0, 5);
-      w._filterNotes = [...new Set(w._filterNotes)];
+      if (proxVal) {
+        const s = (w.subregion||'').toLowerCase();
+        if (s.includes(proxVal) || (w.region||'').toLowerCase().includes(proxVal)) { score += 5; matchR.push(`Near ${proxInput.value.trim()}`); }
+        else filterN.push(`Not near ${proxInput.value.trim()}`);
+      }
+      // Add inherent qualities (only if not already covered by filter matches)
+      if (wTags.has('sommelier-pick') && !matchR.some(r => r.includes('Somm'))) matchR.push('Sommelier recommended');
+      if (wTags.has('organic-biodynamic')) matchR.push('Organic/biodynamic farming');
+      if (wTags.has('women-winemakers')) matchR.push('Women-led winemaking');
+      if (wTags.has('hands-on-winemaker')) matchR.push('You may meet the winemaker');
+      w._matchReasons = [...new Set(matchR)].slice(0, 4);
+      w._filterNotes = [...new Set(filterN)];
       return { winery: w, score };
     }).filter(s => s.score > -999).sort((a, b) => b.score - a.score);
     this._lastScored = scored;
@@ -629,14 +652,15 @@ class CaTripPlanner {
     const priceLabel = { splurge: '$$$', 'mid-splurge': '$$–$$$', mid: '$$', budget: '$' }[w.price] || '$$';
     const driveText = w.sfDrive >= 180 ? `${(w.sfDrive / 60).toFixed(1)} hrs` : `${w.sfDrive} min`;
     const isInTrip = this.tripSelected.some(t => t.id === w.id);
-    const TAG_LABELS = { 'sommelier-pick': 'Sommelier Pick', 'historic-estate': 'Historic Estate', 'family-owned': 'Family-Owned', 'emerging-producer': 'Emerging Producer', 'best-value': 'Best Value', 'natural-wine': 'Natural Wine', 'organic-biodynamic': 'Organic/Biodynamic', 'small-batch': 'Small-Batch', 'mountain-views': 'Mountain Views', 'scenic-drive': 'Scenic Drive', 'secluded': 'Secluded', 'walk-in-friendly': 'Walk-In Friendly', 'dog-friendly': 'Dog-Friendly', 'food-pairing': 'Food Pairing', 'educational-tastings': 'Educational Tastings', 'hands-on-winemaker': 'Hands-On Winemaker', 'old-world-style': 'Old World Style', 'experimental': 'Experimental', 'estate-bottled': 'Estate-Bottled', 'cellar-tour': 'Cellar Tour', 'picnic-friendly': 'Picnic-Friendly', 'group-tastings': 'Group Tastings', 'contemporary-design': 'Contemporary Design', 'cult-following': 'Cult Following', 'hard-to-find': 'Hard to Find', 'boundary-pushing': 'Boundary-Pushing', 'off-beaten-path': 'Off the Beaten Path', 'fine-dining-nearby': 'Fine Dining Nearby', 'award-winning': 'Award-Winning', 'farm-to-table': 'Farm-to-Table', 'women-winemakers': 'Women Winemakers', 'sunset-views': 'Sunset Views', 'vineyard-tour': 'Vineyard Tour', 'music-venue': 'Music Venue' };
+    const TAG_LABELS = { 'sommelier-pick': 'Sommelier Pick', 'historic-estate': 'Historic Estate', 'family-owned': 'Family-Owned', 'emerging-producer': 'Emerging Producer', 'best-value': 'Best Value', 'natural-wine': 'Natural Wine', 'organic-biodynamic': 'Organic/Biodynamic', 'small-batch': 'Small-Batch', 'mountain-views': 'Mountain Views', 'scenic-drive': 'Scenic Drive', 'secluded': 'Secluded', 'walk-in-friendly': 'Walk-In Friendly', 'dog-friendly': 'Dog-Friendly', 'food-pairing': 'Food Pairing', 'educational-tastings': 'Educational Tastings', 'hands-on-winemaker': 'Hands-On Winemaker', 'old-world-style': 'Old World Style', 'experimental': 'Experimental', 'estate-bottled': 'Estate-Bottled', 'cellar-tour': 'Cellar Tour', 'picnic-friendly': 'Picnic-Friendly', 'group-tastings': 'Great for Groups', 'contemporary-design': 'Contemporary Design', 'cult-following': 'Cult Following', 'hard-to-find': 'Hard to Find', 'boundary-pushing': 'Boundary-Pushing', 'off-beaten-path': 'Off the Beaten Path', 'fine-dining-nearby': 'Fine Dining Nearby', 'award-winning': 'Award-Winning', 'farm-to-table': 'Farm-to-Table', 'women-winemakers': 'Women Winemakers', 'sunset-views': 'Sunset Views', 'vineyard-tour': 'Vineyard Tour', 'music-venue': 'Music Venue', 'commercial': 'Well-Known Brand' };
     const TAG_PRIORITY = ['sommelier-pick','cult-following','historic-estate','award-winning','women-winemakers','organic-biodynamic','hands-on-winemaker','small-batch','sunset-views','secluded','cellar-tour','food-pairing','family-owned','boundary-pushing','best-value','walk-in-friendly'];
     const topTags = TAG_PRIORITY.filter(t => (w.tags||[]).includes(t)).slice(0, 3).map(t => `<span class="winery-top-tag">${TAG_LABELS[t]||t}</span>`).join('');
     const sentences = w.description.match(/[^.!]+[.!]+/g) || [w.description];
     const tagline = sentences.slice(0, 2).join(' ').trim();
+    const reviewInfo = w.googleRating ? `⭐${w.googleRating}${w.reviewCount ? ` (${w.reviewCount})` : ''}` : '';
     return `<div class="winery-result-card" data-winery-id="${w.id}">
       <div class="winery-card-top"><div class="winery-card-info">
-        <div class="winery-name">${w.name}<span class="winery-name-meta">${w.tastingCost || priceLabel}${w.googleRating ? ` · ⭐${w.googleRating}` : ''}${w.website ? ` · <a href="https://${w.website}" target="_blank" class="winery-name-link" onclick="event.stopPropagation()">Visit ↗</a>` : ''}</span></div>
+        <div class="winery-name">${w.name}<span class="winery-name-meta">${w.tastingCost || priceLabel}${reviewInfo ? ` · ${reviewInfo}` : ''}${w.website ? ` · <a href="https://${w.website}" target="_blank" class="winery-name-link" onclick="event.stopPropagation()">Visit ↗</a>` : ''}</span></div>
         <div class="winery-location">${w.subregion} · ${driveText}</div>
       </div><button class="winery-add-btn ${isInTrip ? 'added' : ''}" data-winery-id="${w.id}">${isInTrip ? '✓' : '+'}</button></div>
       ${topTags ? `<div class="winery-top-tags">${topTags}</div>` : ''}
