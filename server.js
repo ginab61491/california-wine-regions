@@ -233,6 +233,71 @@ If you cannot identify a bottle clearly, include it with what you can determine 
   }
 });
 
+// Study tools — generate flashcards, quizzes, or podcast scripts
+const STUDY_SYSTEM = `You are a certified sommelier and wine educator. All responses must be:
+- Factual and verifiable across multiple trusted wine sources (GuildSomm, The Oxford Companion to Wine, Wine Scholar Guild, Jancis Robinson, WSET textbooks)
+- At the level expected on the Court of Master Sommeliers Certified Sommelier exam
+- No creative embellishment, speculation, or opinion — only established wine facts
+- If a fact cannot be confirmed across multiple sources, do not include it`;
+
+app.post('/api/study/flashcards', async (req, res) => {
+  const { category, topic } = req.body;
+  if (!topic) return res.status(400).json({ error: 'Topic is required' });
+  try {
+    const message = await anthropic.messages.create({
+      model: 'claude-sonnet-4-6',
+      max_tokens: 2048,
+      temperature: 0,
+      system: STUDY_SYSTEM,
+      messages: [{ role: 'user', content: `Generate 12 flashcards for studying ${category || 'wine topic'}: "${topic}" at Certified Sommelier exam level. Respond ONLY with valid JSON:\n{"cards":[{"front":"Question or term","back":"Answer — concise, factual, exam-level detail"}]}` }],
+    });
+    const raw = message.content[0].text.trim().replace(/^```(?:json)?\s*/i, '').replace(/\s*```\s*$/i, '');
+    res.json(JSON.parse(raw));
+  } catch (err) {
+    console.error('Flashcard error:', err);
+    res.status(500).json({ error: 'Failed to generate flashcards' });
+  }
+});
+
+app.post('/api/study/quiz', async (req, res) => {
+  const { category, topic } = req.body;
+  if (!topic) return res.status(400).json({ error: 'Topic is required' });
+  try {
+    const message = await anthropic.messages.create({
+      model: 'claude-sonnet-4-6',
+      max_tokens: 2048,
+      temperature: 0,
+      system: STUDY_SYSTEM,
+      messages: [{ role: 'user', content: `Generate 8 multiple-choice questions about ${category || 'wine topic'}: "${topic}" at Certified Sommelier exam level. Each question should have 4 options with exactly one correct answer. Respond ONLY with valid JSON:\n{"questions":[{"question":"...","options":["A","B","C","D"],"correct":0,"explanation":"1 sentence explaining the correct answer with source reference"}]}` }],
+    });
+    const raw = message.content[0].text.trim().replace(/^```(?:json)?\s*/i, '').replace(/\s*```\s*$/i, '');
+    res.json(JSON.parse(raw));
+  } catch (err) {
+    console.error('Quiz error:', err);
+    res.status(500).json({ error: 'Failed to generate quiz' });
+  }
+});
+
+app.post('/api/study/podcast', async (req, res) => {
+  const { category, topic, duration, style } = req.body;
+  if (!topic) return res.status(400).json({ error: 'Topic is required' });
+  const wordCount = (duration || 10) * 150; // ~150 words per minute
+  const styleDesc = { lecture: 'a focused educational lecture by a sommelier instructor', conversational: 'a conversation between two sommelier hosts discussing the topic', 'quiz-show': 'a quiz-show format where a host asks questions and explains answers' }[style] || 'an educational lecture';
+  try {
+    const message = await anthropic.messages.create({
+      model: 'claude-sonnet-4-6',
+      max_tokens: 4096,
+      temperature: 0,
+      system: STUDY_SYSTEM,
+      messages: [{ role: 'user', content: `Write a ${duration || 10}-minute wine education podcast script (~${wordCount} words) about ${category || 'wine topic'}: "${topic}" in the style of ${styleDesc}. Target audience: Certified Sommelier exam candidates. Be detailed, factual, and engaging. Include specific appellations, producers, and technical details. Format as plain text with speaker labels if conversational. Do not include stage directions or sound effects.` }],
+    });
+    res.json({ script: message.content[0].text.trim(), topic, duration, style });
+  } catch (err) {
+    console.error('Podcast error:', err);
+    res.status(500).json({ error: 'Failed to generate podcast' });
+  }
+});
+
 // Subscribe to daily wine emails — adds contact to Mailchimp
 app.post('/api/subscribe', async (req, res) => {
   const { email, name, level, topics } = req.body;

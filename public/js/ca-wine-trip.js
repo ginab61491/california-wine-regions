@@ -575,6 +575,7 @@ class CaTripPlanner {
     });
     document.getElementById('go-to-step2-btn').addEventListener('click', () => {
       document.getElementById('step2-section').scrollIntoView({ behavior: 'smooth', block: 'start' });
+      this._updateStepIndicator(2);
     });
     this.buildItinerary();
   }
@@ -787,12 +788,58 @@ class CaTripPlanner {
 
   _renderCards(scored, resultsEl) {
     const maxScore = Math.max(...scored.map(s => s.score), 1);
-    resultsEl.innerHTML = scored.map(({ winery: w, score }) => this.wineryCard(w, score, maxScore)).join('');
+    this._allScored = scored;
+    this._currentPage = 1;
+    this._perPage = 9;
+    this._renderPage(resultsEl);
+  }
+
+  _renderPage(resultsEl) {
+    const scored = this._allScored || [];
+    const totalPages = Math.ceil(scored.length / this._perPage);
+    const start = (this._currentPage - 1) * this._perPage;
+    const page = scored.slice(start, start + this._perPage);
+    const maxScore = Math.max(...scored.map(s => s.score), 1);
+
+    resultsEl.innerHTML = page.map(({ winery: w, score }) => this.wineryCard(w, score, maxScore)).join('');
+
+    // Pagination controls
+    const paginationEl = document.getElementById('results-show-more');
+    if (paginationEl && totalPages > 1) {
+      paginationEl.style.display = 'flex';
+      let paginationHtml = '';
+      if (this._currentPage > 1) paginationHtml += `<button class="page-btn" data-page="${this._currentPage - 1}">Previous</button>`;
+      for (let p = 1; p <= totalPages; p++) {
+        paginationHtml += `<button class="page-num ${p === this._currentPage ? 'active' : ''}" data-page="${p}">${p}</button>`;
+      }
+      if (this._currentPage < totalPages) paginationHtml += `<button class="page-btn" data-page="${this._currentPage + 1}">Next</button>`;
+      paginationEl.innerHTML = paginationHtml;
+      paginationEl.querySelectorAll('[data-page]').forEach(btn => {
+        btn.addEventListener('click', () => {
+          this._currentPage = parseInt(btn.dataset.page);
+          this._renderPage(resultsEl);
+          resultsEl.scrollTop = 0;
+        });
+      });
+    } else if (paginationEl) {
+      paginationEl.style.display = 'none';
+    }
+
+    this._wireCardEvents(resultsEl);
+  }
+
+  _wireCardEvents(resultsEl) {
     resultsEl.querySelectorAll('.winery-add-btn').forEach(btn => {
       btn.addEventListener('click', (e) => { e.stopPropagation(); this.toggleTrip(btn.dataset.wineryId, btn); });
     });
+    // Wishlist hearts
+    resultsEl.querySelectorAll('.winery-wish-btn').forEach(btn => {
+      btn.addEventListener('click', (e) => {
+        e.stopPropagation();
+        this._toggleWishList(btn.dataset.wineryId, btn);
+      });
+    });
     resultsEl.querySelectorAll('.winery-result-card').forEach(card => {
-      // "Learn More" button and card body open popup
       const openPopup = () => {
         const w = WINERIES_DEDUPED.find(x => x.id === card.dataset.wineryId);
         if (w) this._showWineryPopup(w);
@@ -801,10 +848,37 @@ class CaTripPlanner {
       if (cta) cta.addEventListener('click', (e) => { e.stopPropagation(); openPopup(); });
       card.style.cursor = 'pointer';
       card.addEventListener('click', (e) => {
-        if (e.target.closest('.winery-add-btn') || e.target.closest('a') || e.target.closest('.winery-card-cta')) return;
+        if (e.target.closest('.winery-add-btn') || e.target.closest('.winery-wish-btn') || e.target.closest('a') || e.target.closest('.winery-card-cta')) return;
         openPopup();
       });
     });
+  }
+
+  // Step indicator
+  _updateStepIndicator(step) {
+    document.querySelectorAll('.catrip-step-dot').forEach(dot => {
+      const s = parseInt(dot.dataset.step);
+      dot.classList.toggle('active', s <= step);
+    });
+  }
+
+  // Wishlist (saved to localStorage, shows in Vault)
+  _getWishList() {
+    try { return JSON.parse(localStorage.getItem('sommplicity_wishlist') || '[]'); } catch { return []; }
+  }
+  _isWishListed(id) { return this._getWishList().includes(id); }
+  _toggleWishList(id, btn) {
+    let list = this._getWishList();
+    if (list.includes(id)) {
+      list = list.filter(x => x !== id);
+      btn.classList.remove('saved');
+      btn.querySelector('svg').setAttribute('fill', 'none');
+    } else {
+      list.push(id);
+      btn.classList.add('saved');
+      btn.querySelector('svg').setAttribute('fill', 'currentColor');
+    }
+    localStorage.setItem('sommplicity_wishlist', JSON.stringify(list));
   }
 
   wineryCard(w, score, maxScore) {
@@ -816,18 +890,22 @@ class CaTripPlanner {
     const visibleTags = TAG_PRIORITY.filter(t => (w.tags||[]).includes(t)).slice(0, 4);
     const tagPills = visibleTags.map(t => `<span class="winery-tag-pill">${TAG_LABELS[t]||t}</span>`).join('');
     const sentences = w.description.match(/[^.!]+[.!]+/g) || [w.description];
-    const tagline = sentences.slice(0, 1).join(' ').trim();
+    const tagline = sentences.slice(0, 3).join(' ').trim();
     const reviewInfo = w.googleRating ? `${w.googleRating} ★` : '';
     // Gradient hue based on region for visual variety
     const hues = { 'Napa Valley': '340,30%', 'Sonoma County': '25,35%', 'Paso Robles': '35,40%', 'Santa Barbara': '210,25%', 'Livermore Valley': '45,30%', 'Mendocino': '160,20%', 'Santa Cruz Mountains': '280,20%', 'Sierra Foothills': '30,35%', 'Lodi': '50,35%', 'Monterey': '195,20%' };
     const hue = hues[w.region] || '340,25%';
+    const saved = this._isWishListed(w.id);
     return `<div class="winery-result-card" data-winery-id="${w.id}">
       <div class="winery-card-hero" style="background: linear-gradient(135deg, hsla(${hue},18%,1) 0%, hsla(${hue},28%,1) 100%);">
         <div class="winery-card-hero-overlay">
           <span class="winery-card-price">${w.tastingCost || priceLabel}</span>
           <h3 class="winery-card-name">${w.name}</h3>
         </div>
-        <button class="winery-add-btn ${isInTrip ? 'added' : ''}" data-winery-id="${w.id}" title="${isInTrip ? 'Remove from trip' : 'Add to trip'}">${isInTrip ? '✓' : '+'}</button>
+        <div class="winery-card-hero-actions">
+          <button class="winery-wish-btn ${saved ? 'saved' : ''}" data-winery-id="${w.id}" title="Save to Vault"><svg viewBox="0 0 24 24" width="16" height="16" fill="${saved ? 'currentColor' : 'none'}" stroke="currentColor" stroke-width="2"><path d="M20.84 4.61a5.5 5.5 0 0 0-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 0 0-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 0 0 0-7.78z"/></svg></button>
+          <button class="winery-add-btn ${isInTrip ? 'added' : ''}" data-winery-id="${w.id}" title="${isInTrip ? 'Remove from trip' : 'Add to trip'}">${isInTrip ? '✓' : '+'}</button>
+        </div>
       </div>
       <div class="winery-card-body">
         <div class="winery-card-region">${w.subregion} · ${driveText}${reviewInfo ? ` · ${reviewInfo}` : ''}</div>
