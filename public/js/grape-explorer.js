@@ -163,23 +163,42 @@ document.addEventListener('DOMContentLoaded', () => {
     return true;
   }
 
+  // Old World countries for the world filter
+  const OLD_WORLD = ['France','Italy','Spain','Portugal','Germany','Austria','Greece','Switzerland'];
+  const NEW_WORLD = ['USA','Australia','New Zealand','Argentina','Chile','South Africa'];
+
   function applyFilters() {
     filtered = allGrapes.filter(g => {
+      // Type: red/white
       if (selectedType && g.type !== selectedType) return false;
-      if (selectedWorld && g.world !== 'both' && g.world !== selectedWorld) return false;
+
+      // World: check if grape's countries include old/new world countries
+      if (selectedWorld === 'old') {
+        if (!(g.countries || []).some(c => OLD_WORLD.includes(c))) return false;
+      }
+      if (selectedWorld === 'new') {
+        if (!(g.countries || []).some(c => NEW_WORLD.includes(c))) return false;
+      }
+
+      // Level
       if (selectedLevel === 'wset3' && !g.wset3) return false;
       if (selectedLevel === 'intro' && !g.intro) return false;
+
+      // Country: check the countries array directly
       if (selectedCountry) {
-        const gRegions = (g.regions || []).join(' ').toLowerCase();
-        const countryRegions = COUNTRY_REGIONS[selectedCountry] || [];
-        const matchesCountry = countryRegions.some(r => gRegions.includes(r.toLowerCase())) || gRegions.includes(selectedCountry.toLowerCase());
-        if (!matchesCountry) return false;
+        if (!(g.countries || []).includes(selectedCountry)) return false;
       }
+
+      // Subregion: check against regions list
       if (selectedSubregion) {
-        const gRegions = (g.regions || []).join(' ').toLowerCase();
-        if (!gRegions.includes(selectedSubregion.toLowerCase())) return false;
+        const gRegions = (g.regions || []).map(r => r.toLowerCase());
+        if (!gRegions.some(r => r.includes(selectedSubregion.toLowerCase()))) return false;
       }
+
+      // Aroma
       if (!matchesAroma(g)) return false;
+
+      // Sliders (tolerance of 1)
       if (sliders.aromatic > 0 && Math.abs(g.aromatic - sliders.aromatic) > 1) return false;
       if (sliders.acidity > 0 && Math.abs(g.acidity - sliders.acidity) > 1) return false;
       if (sliders.tannin > 0 && Math.abs(g.tannin - sliders.tannin) > 1) return false;
