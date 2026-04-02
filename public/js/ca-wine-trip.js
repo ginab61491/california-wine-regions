@@ -936,10 +936,8 @@ class CaTripPlanner {
     if (paginationEl && totalPages > 1) {
       paginationEl.style.display = 'flex';
       let paginationHtml = '';
-      if (this._currentPage > 1) paginationHtml += `<button class="page-btn" data-page="${this._currentPage - 1}">Previous</button>`;
-      for (let p = 1; p <= totalPages; p++) {
-        paginationHtml += `<button class="page-num ${p === this._currentPage ? 'active' : ''}" data-page="${p}">${p}</button>`;
-      }
+      if (this._currentPage > 1) paginationHtml += `<button class="page-btn" data-page="${this._currentPage - 1}">Back</button>`;
+      paginationHtml += `<span class="page-info">Page ${this._currentPage} of ${totalPages}</span>`;
       if (this._currentPage < totalPages) paginationHtml += `<button class="page-btn" data-page="${this._currentPage + 1}">Next</button>`;
       paginationEl.innerHTML = paginationHtml;
       paginationEl.querySelectorAll('[data-page]').forEach(btn => {

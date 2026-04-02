@@ -7755,6 +7755,12 @@ code {
   transition: all 0.2s;
 }
 .page-btn:hover { background: var(--gold); color: #fff; }
+.page-info {
+  font-family: 'Montserrat', sans-serif;
+  font-size: 0.72rem;
+  color: var(--ink-xlight);
+  padding: 6px 12px;
+}
 .page-num {
   font-family: 'Montserrat', sans-serif;
   font-size: 0.75rem;

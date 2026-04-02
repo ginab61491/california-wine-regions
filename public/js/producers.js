@@ -276,8 +276,8 @@ document.addEventListener('DOMContentLoaded', () => {
     const pagEl = document.getElementById('prod-pagination');
     if (totalPages <= 1) { pagEl.innerHTML = ''; return; }
     let html = '';
-    if (currentPage > 1) html += `<button class="page-btn" data-p="${currentPage - 1}">Previous</button>`;
-    for (let i = 1; i <= totalPages; i++) html += `<button class="page-num ${i === currentPage ? 'active' : ''}" data-p="${i}">${i}</button>`;
+    if (currentPage > 1) html += `<button class="page-btn" data-p="${currentPage - 1}">Back</button>`;
+    html += `<span class="page-info">Page ${currentPage} of ${totalPages}</span>`;
     if (currentPage < totalPages) html += `<button class="page-btn" data-p="${currentPage + 1}">Next</button>`;
     pagEl.innerHTML = html;
     pagEl.querySelectorAll('[data-p]').forEach(btn => {
