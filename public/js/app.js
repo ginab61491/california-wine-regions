@@ -23,7 +23,6 @@ document.addEventListener('DOMContentLoaded', () => {
     regions:     'Wine Regions of the World',
     events:      'Bay Area Wine Events',
     dailywine:   'Daily Wine Emails',
-    wheel:       'Flavor Wheel',
     pairing:     'Food Pairing',
     analyzer:    'I Love This Wine',
     preferences: 'My Account',
@@ -36,7 +35,7 @@ document.addEventListener('DOMContentLoaded', () => {
 
   // Section → parent group for dropdown active states
   const sectionGroups = {
-    grapes: 'Learn', dailywine: 'Learn', wheel: 'Learn', pairing: 'Learn', regions: 'Learn', producers: 'Learn',
+    grapes: 'Learn', dailywine: 'Learn', pairing: 'Learn', regions: 'Learn', producers: 'Learn',
     study: 'Study', cmsprep: 'Study', wset3prep: 'Study',
     catrip: 'Visit', caregions: 'Visit', events: 'Visit',
     analyzer: 'Sip', diary: 'Sip', vault: 'Sip', recs: 'Sip',
@@ -73,10 +72,6 @@ document.addEventListener('DOMContentLoaded', () => {
     closeMobileNav();
 
     // Lazy-init components
-    if (sectionId === 'wheel' && !window._wheelInit) {
-      window._wheelInit = true;
-      window.flavorWheel && window.flavorWheel.init();
-    }
     if (sectionId === 'regions' && !window._regionsInit) {
       window._regionsInit = true;
       window.wineRegions && window.wineRegions.init();
@@ -187,7 +182,6 @@ document.addEventListener('DOMContentLoaded', () => {
 
   // ── Initialize all components on load ──────────────────
   window.chatBot       = new ChatBot();
-  window.flavorWheel   = new FlavorWheel();
   window.wineRegions   = new WineRegions();
   window.foodPairing   = new FoodPairing();
   window.wineAnalyzer  = new WineAnalyzer();

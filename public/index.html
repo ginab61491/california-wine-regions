@@ -101,7 +101,6 @@
           <div class="topnav-menu">
             <a class="topnav-menu-item" data-section="dailywine">Daily Wine Emails</a>
             <a class="topnav-menu-item" data-section="grapes">Wine Grapes</a>
-            <a class="topnav-menu-item" data-section="wheel">Flavor Wheel</a>
             <a class="topnav-menu-item" data-section="pairing">Food Pairing</a>
             <a class="topnav-menu-item" data-section="regions">Wine Regions of the World</a>
             <a class="topnav-menu-item" data-section="producers">Producer Profiles</a>
@@ -163,7 +162,6 @@
       <span class="mobile-nav-group">Learn</span>
       <a class="mobile-nav-link" data-section="dailywine">Daily Wine Emails</a>
       <a class="mobile-nav-link" data-section="grapes">Wine Grapes</a>
-      <a class="mobile-nav-link" data-section="wheel">Flavor Wheel</a>
       <a class="mobile-nav-link" data-section="pairing">Food Pairing</a>
       <a class="mobile-nav-link" data-section="regions">Wine Regions of the World</a>
       <a class="mobile-nav-link" data-section="producers">Producer Profiles</a>
@@ -246,10 +244,6 @@
             <a class="home-card" data-section="dailywine">
               <h4>Daily Wine Emails</h4>
               <p>A short wine lesson every morning, curated by a certified sommelier from trusted sources. Choose your level and topics.</p>
-            </a>
-            <a class="home-card" data-section="wheel">
-              <h4>Flavor Wheel</h4>
-              <p>Explore the aromas and flavors found in wine — from dark fruit to wet stone. Build your tasting vocabulary one descriptor at a time.</p>
             </a>
             <a class="home-card" data-section="pairing">
               <h4>Food Pairing</h4>
@@ -1402,41 +1396,6 @@
       </div>
     </section>
 
-    <!-- ═══════════════════════════════════════════
-         SECTION 2: Flavor Wheel
-    ════════════════════════════════════════════ -->
-    <section class="section" id="wheel-section">
-      <div class="section-header">
-        <h1>Wine Flavor Wheel</h1>
-        <span class="section-tagline">"clarity, sensory presence, and genuine connection"</span>
-        <p>Click any segment to explore flavor categories and discover tasting notes.</p>
-      </div>
-
-      <div class="wheel-container">
-        <div class="wheel-canvas-wrap">
-          <span class="wheel-instruction">Click any segment to explore flavors</span>
-          <canvas id="flavor-wheel" width="640" height="640"></canvas>
-          <button class="wheel-reset-btn" id="wheel-reset-btn">Reset</button>
-        </div>
-        <div class="wheel-info-panel" id="wheel-info-panel">
-          <div class="wheel-info-default">
-            <h3>Flavor Wheel</h3>
-            <p>Click any section of the wheel to learn about that flavor category — what causes it, which wines express it, and specific examples.</p>
-            <div class="wheel-legend" id="wheel-legend"></div>
-          </div>
-          <div class="wheel-info-detail" id="wheel-info-detail" style="display:none">
-            <button class="back-btn" id="wheel-back-btn">← Back to overview</button>
-            <div id="wheel-detail-content"></div>
-          </div>
-          <div class="wheel-profile-card" id="wheel-profile-card">
-            <h4>Your Flavor Profile</h4>
-            <div class="wheel-profile-flavors" id="wheel-profile-flavors">
-              <span class="wheel-profile-empty">Click flavors to build your profile</span>
-            </div>
-          </div>
-        </div>
-      </div>
-    </section>
 
     <!-- ═══════════════════════════════════════════
          SECTION 3: Wine Regions Map
@@ -2702,7 +2661,6 @@
 
   <script src="https://cdn.jsdelivr.net/npm/d3@7/dist/d3.min.js"></script>
   <script src="https://cdn.jsdelivr.net/npm/topojson-client@3/dist/topojson-client.min.js"></script>
-  <script src="js/flavor-wheel.js"></script>
   <script src="js/wine-regions.js"></script>
   <script src="js/food-pairing.js"></script>
   <script src="js/chatbot.js"></script>
