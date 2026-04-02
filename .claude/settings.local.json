@@ -37,7 +37,9 @@
       "Bash(grep -E \"region: ''''\\(Santa Cruz|Livermore|Anderson|San Benito\\)\" /Users/ginabiernacki/wine-education-site/public/js/ca-wine-trip.js)",
       "Bash(sed -i '' 's/Math.max\\(15, Math.min\\(firstW.sfDrive, 120\\)\\)/Math.max\\(15, firstW.sfDrive\\)/g' /Users/ginabiernacki/wine-education-site/public/js/ca-wine-trip.js)",
       "Bash(sed -i '' 's/Math.max\\(15, Math.min\\(prevDrive, 120\\)\\)/Math.max\\(15, prevDrive\\)/g' /Users/ginabiernacki/wine-education-site/public/js/ca-wine-trip.js)",
-      "Bash(sed -i '' 's/Math.max\\(20, Math.min\\(lastW.sfDrive, 120\\)\\)/Math.max\\(20, lastW.sfDrive\\)/g' /Users/ginabiernacki/wine-education-site/public/js/ca-wine-trip.js)"
+      "Bash(sed -i '' 's/Math.max\\(20, Math.min\\(lastW.sfDrive, 120\\)\\)/Math.max\\(20, lastW.sfDrive\\)/g' /Users/ginabiernacki/wine-education-site/public/js/ca-wine-trip.js)",
+      "Bash(git pull:*)",
+      "Bash(git stash:*)"
     ]
   }
 }
