@@ -3784,17 +3784,19 @@ button {
   background: var(--white);
 }
 .grape-sources-title {
-  font-family: 'Playfair Display', Georgia, serif;
-  font-size: 1.1rem;
-  font-weight: 400;
-  color: var(--ink);
-  margin-bottom: 8px;
+  font-family: 'Montserrat', sans-serif;
+  font-size: 0.65rem;
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 0.1em;
+  color: var(--ink-xlight);
+  margin-bottom: 6px;
 }
 .grape-sources-text {
   font-family: 'Montserrat', sans-serif;
-  font-size: 0.78rem;
-  color: var(--ink-light);
-  margin-bottom: 12px;
+  font-size: 0.65rem;
+  color: var(--ink-xlight);
+  margin-bottom: 8px;
   line-height: 1.5;
 }
 .grape-sources-list {
@@ -3807,29 +3809,27 @@ button {
 }
 .grape-sources-list li {
   font-family: 'Montserrat', sans-serif;
-  font-size: 0.75rem;
-  line-height: 1.55;
-  color: var(--ink-mid);
-  padding-left: 14px;
+  font-size: 0.62rem;
+  line-height: 1.5;
+  color: var(--ink-xlight);
+  padding-left: 10px;
   position: relative;
 }
 .grape-sources-list li::before {
   content: '';
   position: absolute;
-  left: 0; top: 7px;
-  width: 5px; height: 5px;
+  left: 0; top: 5px;
+  width: 3px; height: 3px;
   border-radius: 50%;
-  background: var(--gold);
+  background: var(--cream-dark);
 }
-.grape-sources-list li strong { color: var(--ink); }
-.grape-sources-list li em { color: var(--ink-mid); }
+.grape-sources-list li a { color: var(--gold); text-decoration: none; font-weight: 500; }
+.grape-sources-list li a:hover { color: var(--maroon); text-decoration: underline; }
 .grape-sources-note {
-  font-family: 'Crimson Text', Georgia, serif;
-  font-style: italic;
-  font-size: 0.82rem;
+  font-family: 'Montserrat', sans-serif;
+  font-size: 0.58rem;
   color: var(--ink-xlight);
-  border-left: 2px solid var(--gold);
-  padding-left: 12px;
+  margin-top: 8px;
 }
 @media (max-width: 768px) {
   .grape-sources { padding: 20px 16px; }
