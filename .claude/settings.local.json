@@ -28,7 +28,13 @@
       "Bash(git remote:*)",
       "Bash(git push:*)",
       "Bash(git rm:*)",
-      "Bash(/tmp/fix-descriptions.py:*)"
+      "Bash(/tmp/fix-descriptions.py:*)",
+      "Bash(grep \"region: ''''Napa Valley''''\" /Users/ginabiernacki/wine-education-site/public/js/ca-wine-trip.js)",
+      "Bash(grep \"region: ''''Sonoma County''''\" /Users/ginabiernacki/wine-education-site/public/js/ca-wine-trip.js)",
+      "Bash(grep \"region: ''''Healdsburg''''\" /Users/ginabiernacki/wine-education-site/public/js/ca-wine-trip.js)",
+      "Bash(grep \"region: ''''Paso Robles''''\" /Users/ginabiernacki/wine-education-site/public/js/ca-wine-trip.js)",
+      "Bash(grep \"region: ''''Santa Barbara''''\" /Users/ginabiernacki/wine-education-site/public/js/ca-wine-trip.js)",
+      "Bash(grep -E \"region: ''''\\(Santa Cruz|Livermore|Anderson|San Benito\\)\" /Users/ginabiernacki/wine-education-site/public/js/ca-wine-trip.js)"
     ]
   }
 }
