@@ -1077,10 +1077,29 @@ class CaTripPlanner {
         }
         currentHour = scheduledHour; lastScheduledWinery = w;
         const leaveByHour = this._snapToSlot(scheduledHour + 1.5);
-        const bookLink = w.website ? `<a href="https://${w.website}" target="_blank" class="itinerary-book-link" onclick="event.stopPropagation()">Reserve ↗</a>` : '';
+        // Build reservation action
+        const timeStr = this._formatTime(scheduledHour);
+        const dateStr = '(insert date)';
+        const emailSubject = encodeURIComponent(`Tasting Reservation Request — ${w.name}`);
+        const emailBody = encodeURIComponent(`Hi,\n\nI would like to make a reservation for a wine tasting at ${w.name}.\n\nPreferred date: ${dateStr}\nPreferred time: ${timeStr}\nNumber of guests: 2\n\nPlease let me know availability and any details about the tasting experience.\n\nThank you!`);
+        const emailAddr = w.website ? `reservations@${w.website}` : '';
+        let bookAction = '';
+        if (w.bookingNote && w.bookingNote.toLowerCase().includes('walk-in')) {
+          bookAction = '<span class="book-status book-walkin">Walk-in OK</span>';
+        } else if (w.website) {
+          bookAction = `<div class="book-actions"><a href="https://${w.website}" target="_blank" class="book-btn" onclick="event.stopPropagation()">Book Online ↗</a><a href="mailto:${emailAddr}?subject=${emailSubject}&body=${emailBody}" class="book-btn book-email" onclick="event.stopPropagation()">Draft Email</a></div>`;
+        }
         stops.push(`<div class="itinerary-stop itinerary-winery-stop" style="min-height:75px" data-winery-id="${w.id}" draggable="true">
           <div class="stop-time-range"><input type="time" class="stop-time-input" value="${this._toTimeValue(scheduledHour)}" /><span class="stop-time-dash">–</span><input type="time" class="stop-end-input" value="${this._toTimeValue(leaveByHour)}" /></div>
-          <div class="itinerary-stop-info"><div class="itinerary-stop-name"><span class="winery-stop-icon">🍷</span> ${w.name}</div><div class="itinerary-stop-sub">${w.subregion} · ${w.tastingCost||'varies'} ${bookLink}</div><div class="itinerary-duration">~90 min · Leave by ${this._formatTime(leaveByHour)}</div><div class="itinerary-hours">Open ${w.tastingHours}</div>${w.lowCell ? '<div class="itinerary-signal-flag">📵 Low cell</div>' : ''}</div>
+          <div class="itinerary-stop-info">
+            <div class="itinerary-stop-name"><span class="winery-stop-icon">🍷</span> ${w.name}</div>
+            <div class="itinerary-stop-sub">${w.subregion} · ${w.tastingCost||'varies'}</div>
+            <div class="itinerary-duration">~90 min · Leave by ${this._formatTime(leaveByHour)}</div>
+            <div class="itinerary-hours">Open ${w.tastingHours}</div>
+            ${w.bookingNote ? '<div class="itinerary-booking-note">📅 ' + w.bookingNote + '</div>' : ''}
+            ${bookAction}
+            ${w.lowCell ? '<div class="itinerary-signal-flag">📵 Low cell</div>' : ''}
+          </div>
           <div class="stop-actions"><button class="stop-lock-btn ${this.lockedStops['winery-'+w.id] !== undefined ? 'locked' : ''}" data-lock-key="winery-${w.id}" data-lock-time="${scheduledHour}">${this.lockedStops['winery-'+w.id] !== undefined ? '🔒' : '🔓'}</button><button class="stop-remove-btn" data-stop-type="winery" data-stop-id="${w.id}">×</button></div>
         </div>`);
         currentHour = this._snapToSlot(scheduledHour + 1.5);

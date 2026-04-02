@@ -5040,6 +5040,45 @@ code {
   font-style: italic;
   margin-top: 2px;
 }
+.book-actions {
+  display: flex;
+  gap: 6px;
+  margin-top: 4px;
+}
+.book-btn {
+  font-family: 'Montserrat', sans-serif;
+  font-size: 0.6rem;
+  font-weight: 600;
+  padding: 3px 10px;
+  border-radius: 12px;
+  text-decoration: none;
+  transition: var(--transition);
+  cursor: pointer;
+  background: var(--maroon);
+  color: var(--gold-light);
+  border: none;
+}
+.book-btn:hover { opacity: 0.85; }
+.book-btn.book-email {
+  background: none;
+  border: 1px solid var(--maroon);
+  color: var(--maroon);
+}
+.book-btn.book-email:hover { background: rgba(107,30,46,0.06); }
+.book-status {
+  font-family: 'Montserrat', sans-serif;
+  font-size: 0.58rem;
+  font-weight: 600;
+  padding: 2px 8px;
+  border-radius: 10px;
+  display: inline-block;
+  margin-top: 4px;
+}
+.book-walkin {
+  background: rgba(58,122,64,0.08);
+  color: #3A7A40;
+  border: 1px solid rgba(58,122,64,0.2);
+}
 /* Tasting hours */
 .itinerary-hours {
   font-family: 'Montserrat', sans-serif;
