@@ -1,8 +1,8 @@
 /* ═══════════════════════════════════════════
-   Google Fonts — Sommplicity Typography Stack
-   Playfair Display · Cormorant Garamond · Montserrat · Crimson Text
+   Google Fonts — loaded via <link> in HTML for performance
+   Playfair Display · Cormorant Garamond · Montserrat · Lora · Crimson Text
+   All use font-display: swap via the &display=swap URL parameter
 ════════════════════════════════════════════ */
-@import url('https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;0,600;1,300;1,400;1,500;1,600&family=Lora:ital,wght@0,400;0,500;1,400;1,500&family=Montserrat:wght@300;400;500;600&display=swap');
 
 /* ═══════════════════════════════════════════
    Design Tokens
@@ -277,6 +277,13 @@ button {
   color: var(--maroon);
   font-weight: 500;
 }
+.home-about-link {
+  color: var(--gold);
+  text-decoration: none;
+  font-weight: 500;
+  transition: color 0.2s;
+}
+.home-about-link:hover { color: var(--maroon); }
 .home-about-creds {
   display: flex;
   flex-direction: column;

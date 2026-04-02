@@ -2,6 +2,7 @@ require('dotenv').config();
 const express = require('express');
 const Anthropic = require('@anthropic-ai/sdk');
 const cors = require('cors');
+const compression = require('compression');
 const path = require('path');
 
 const app = express();
@@ -9,9 +10,21 @@ const PORT = process.env.PORT || 3000;
 
 const anthropic = new Anthropic({ apiKey: process.env.ANTHROPIC_API_KEY });
 
+// GZIP compression for all responses
+app.use(compression());
+
 app.use(cors());
 app.use(express.json());
-app.use(express.static(path.join(__dirname, 'public')));
+
+// Static assets with cache headers (CSS, JS, images cached 7 days; HTML no-cache)
+app.use(express.static(path.join(__dirname, 'public'), {
+  maxAge: '7d',
+  setHeaders(res, filePath) {
+    if (filePath.endsWith('.html')) {
+      res.setHeader('Cache-Control', 'no-cache');
+    }
+  },
+}));
 
 const SYSTEM_PROMPT = `You are an expert wine sommelier and educator with decades of experience.
 You have deep knowledge of:

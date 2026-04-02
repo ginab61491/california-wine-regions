@@ -3,13 +3,80 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Sommplicity — Wine Education</title>
+  <title>Sommplicity — Wine Education by Gina Biernacki</title>
+  <meta name="description" content="Wine education tailored to your palate. Plan California wine trips, explore regions, learn tasting techniques, and get daily wine lessons — all curated by Certified Sommelier Gina Biernacki." />
+  <meta name="author" content="Gina Biernacki" />
+  <meta name="theme-color" content="#1A1A1A" />
+
+  <!-- Open Graph -->
+  <meta property="og:type" content="website" />
+  <meta property="og:title" content="Sommplicity — Wine Education by Gina Biernacki" />
+  <meta property="og:description" content="Wine education tailored to your palate. Plan trips, explore regions, learn tasting — curated by a Certified Sommelier." />
+  <meta property="og:image" content="https://sommplicity.lovable.app/assets/hero-wine-BVxfFN1K.jpg" />
+  <meta property="og:url" content="https://somm-plicity.com" />
+  <meta property="og:site_name" content="Sommplicity" />
+
+  <!-- Twitter Card -->
+  <meta name="twitter:card" content="summary_large_image" />
+  <meta name="twitter:title" content="Sommplicity — Wine Education" />
+  <meta name="twitter:description" content="Wine education tailored to your palate, curated by Certified Sommelier Gina Biernacki." />
+  <meta name="twitter:image" content="https://sommplicity.lovable.app/assets/hero-wine-BVxfFN1K.jpg" />
+
+  <!-- Favicon -->
   <link rel="icon" href="/favicon.jpg" type="image/jpeg" />
+  <link rel="apple-touch-icon" href="/favicon.jpg" />
+
+  <!-- Preconnect to font / asset origins -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link rel="preconnect" href="https://sommplicity.lovable.app" />
+
+  <!-- Fonts with display=swap (all in one request) -->
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;0,600;1,300;1,400&family=Crimson+Text:ital,wght@0,400;0,600;1,400&family=Lora:ital,wght@0,400;0,500;1,400&family=Montserrat:wght@300;400;500;600&family=Playfair+Display:ital,wght@0,400;0,600;0,700;1,400&display=swap" rel="stylesheet" />
+
+  <!-- Stylesheets -->
   <link rel="stylesheet" href="css/styles.css" />
-  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,600;0,700;1,400&family=Crimson+Text:ital,wght@0,400;0,600;1,400&display=swap" rel="stylesheet" />
   <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css" />
+
+  <!-- Scripts (defer where possible) -->
   <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"></script>
   <script src="https://accounts.google.com/gsi/client" async defer></script>
+
+  <!-- JSON-LD Structured Data -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "WebSite",
+    "name": "Sommplicity",
+    "url": "https://somm-plicity.com",
+    "description": "Wine education tailored to your palate, curated by Certified Sommelier Gina Biernacki.",
+    "author": {
+      "@type": "Person",
+      "name": "Gina Biernacki",
+      "jobTitle": "Certified Sommelier",
+      "url": "https://sommplicity.lovable.app/about",
+      "sameAs": [
+        "https://www.instagram.com/somm_plicity/",
+        "https://www.linkedin.com/in/gina-biernacki-1029901b/"
+      ]
+    }
+  }
+  </script>
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "EducationalOrganization",
+    "name": "Sommplicity",
+    "description": "AI-powered wine education platform curated by a Certified Sommelier",
+    "url": "https://somm-plicity.com",
+    "founder": {
+      "@type": "Person",
+      "name": "Gina Biernacki"
+    },
+    "areaServed": "San Francisco Bay Area",
+    "knowsAbout": ["Wine Education", "Wine Tasting", "Sommelier Services", "California Wine Country"]
+  }
+  </script>
 </head>
 <body>
 
@@ -30,7 +97,7 @@
       <nav class="topnav-links" id="topnav-links">
         <!-- Wine Education dropdown -->
         <div class="topnav-dropdown">
-          <button class="topnav-link topnav-link--has-menu">Wine Education</button>
+          <button class="topnav-link topnav-link--has-menu">Learn</button>
           <div class="topnav-menu">
             <a class="topnav-menu-item" data-section="dailywine">Daily Wine Emails</a>
             <a class="topnav-menu-item" data-section="wheel">Flavor Wheel</a>
@@ -40,7 +107,7 @@
         </div>
         <!-- Wine Country dropdown -->
         <div class="topnav-dropdown">
-          <button class="topnav-link topnav-link--has-menu">Wine Country</button>
+          <button class="topnav-link topnav-link--has-menu">Visit</button>
           <div class="topnav-menu">
             <a class="topnav-menu-item" data-section="catrip">Plan a California Trip</a>
             <a class="topnav-menu-item" data-section="caregions">Explore California Wine Country</a>
@@ -49,7 +116,7 @@
         </div>
         <!-- Tasting Guide dropdown -->
         <div class="topnav-dropdown">
-          <button class="topnav-link topnav-link--has-menu">My Wine Journey</button>
+          <button class="topnav-link topnav-link--has-menu">Sip</button>
           <div class="topnav-menu">
             <a class="topnav-menu-item" data-section="analyzer">I Love This Wine</a>
             <a class="topnav-menu-item" data-section="diary">My Wine Diary</a>
@@ -82,18 +149,18 @@
       <button class="mobile-nav-close" id="mobile-nav-close" aria-label="Close menu">&times;</button>
     </div>
     <nav class="mobile-nav-links">
-      <span class="mobile-nav-group">Wine Education</span>
+      <span class="mobile-nav-group">Learn</span>
       <a class="mobile-nav-link" data-section="dailywine">Daily Wine Emails</a>
       <a class="mobile-nav-link" data-section="wheel">Flavor Wheel</a>
       <a class="mobile-nav-link" data-section="pairing">Food Pairing</a>
       <a class="mobile-nav-link" data-section="regions">Wine Regions of the World</a>
 
-      <span class="mobile-nav-group">Wine Country</span>
+      <span class="mobile-nav-group">Visit</span>
       <a class="mobile-nav-link" data-section="catrip">Plan a California Trip</a>
       <a class="mobile-nav-link" data-section="caregions">Explore California Wine Country</a>
       <a class="mobile-nav-link" data-section="events">Bay Area Wine Events</a>
 
-      <span class="mobile-nav-group">My Wine Journey</span>
+      <span class="mobile-nav-group">Sip</span>
       <a class="mobile-nav-link" data-section="analyzer">I Love This Wine</a>
       <a class="mobile-nav-link" data-section="diary">My Wine Diary</a>
       <a class="mobile-nav-link" data-section="vault">My Wine Vault</a>
@@ -135,8 +202,9 @@
         <div class="home-about-inner">
           <span class="home-label">Your Sommelier</span>
           <h2 class="home-heading">Meet Gina</h2>
-          <p class="home-about-text">Certified Sommelier through the Court of Master Sommeliers, WSET Level 3 with Distinction. I bring a blend of training and curiosity to everything I do — my focus is on clarity, sensory presence, and genuine connection, helping people discover and understand their own palates.</p>
-          <p class="home-about-text">My approach is guided by three principles: <strong>accessibility</strong>, <strong>presence</strong>, and <strong>connection</strong>. I believe wine becomes a bridge to deeper connection with others when you feel comfortable exploring it.</p>
+          <p class="home-about-text">I'm a Level 2 Certified Sommelier with a background in tech — a combination that led me to build Sommplicity. After years at Google as a product manager, I brought the same rigor for clarity and user experience to the world of wine, creating tools that make wine education genuinely accessible and personal.</p>
+          <p class="home-about-text">Sommplicity sits at the intersection of <strong>AI</strong> and <strong>sommelier expertise</strong>. Every tool on this site is powered by artificial intelligence, but shaped by a real palate. I've personally tested, vetted, and refined each recommendation, framework, and data source to ensure what you see here is trustworthy and actually useful. Only respected references within the wine world — GuildSomm, The Oxford Companion to Wine, Jancis Robinson, Wine Scholar Guild, and others — are sourced, so the information is accurate, current, and reviewed by a working sommelier.</p>
+          <p class="home-about-text">The result: the highest-quality wine education tools available, built to meet you wherever you are in your journey — whether you're choosing your first bottle or studying for your next certification. <a href="https://sommplicity.lovable.app/" target="_blank" rel="noopener" class="home-about-link">Learn more about Sommplicity</a></p>
           <div class="home-about-creds">
             <span class="home-cred">Court of Master Sommeliers — Certified Sommelier 2022</span>
             <span class="home-cred">WSET Level 3 Award in Wines — Distinction 2021</span>
@@ -1577,8 +1645,8 @@
         <div class="about-bio">
           <div class="about-bio-text">
             <h2 class="about-bio-name">Meet the Sommelier</h2>
-            <p>I'm a Certified Sommelier who discovered my love for wine by sharing it with others. What began as informal tastings with friends and colleagues at Google evolved into dedicated study through WSET Level 3 with Distinction and the Court of Master Sommeliers Certified exam, as well as hands-on work in vineyards and cellars in France.</p>
-            <p>Today, I bring that blend of training and curiosity to tastings throughout the Bay Area. My focus is on clarity, sensory presence, and genuine connection &mdash; helping people discover and understand their own palates.</p>
+            <p>I'm a Level 2 Certified Sommelier with a background in tech. What began as informal wine tastings with friends and colleagues at Google evolved into dedicated study through WSET Level 3 with Distinction and the Court of Master Sommeliers Certified exam, as well as hands-on work in vineyards and cellars in France.</p>
+            <p>Today, I bring that blend of training and curiosity to tastings throughout the Bay Area and to Sommplicity &mdash; where AI meets sommelier expertise. Every tool, recommendation, and data point on this site has been personally tested, vetted, and built on frameworks I trust, drawing exclusively from respected sources within the wine world. Technology powers the experience; a real palate ensures it's worthy of your trust.</p>
           </div>
           <div class="about-bio-sidebar">
             <div class="about-cred-badge">

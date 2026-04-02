@@ -31,10 +31,10 @@ document.addEventListener('DOMContentLoaded', () => {
 
   // Section → parent group for dropdown active states
   const sectionGroups = {
-    dailywine: 'Wine Education', wheel: 'Wine Education', pairing: 'Wine Education', regions: 'Wine Education',
-    catrip: 'Wine Country', caregions: 'Wine Country', events: 'Wine Country',
-    analyzer: 'My Wine Journey', diary: 'My Wine Journey', vault: 'My Wine Journey', recs: 'My Wine Journey',
-    preferences: 'My Wine Journey',
+    dailywine: 'Learn', wheel: 'Learn', pairing: 'Learn', regions: 'Learn',
+    catrip: 'Visit', caregions: 'Visit', events: 'Visit',
+    analyzer: 'Sip', diary: 'Sip', vault: 'Sip', recs: 'Sip',
+    preferences: 'Sip',
     about: 'About',
   };
 
