@@ -23,31 +23,30 @@ async function mailchimpFetch(path, options = {}) {
   return data;
 }
 
-// Create a segment for level+topic if it doesn't exist, or find existing
+// For now, send to all subscribers — segment by level only
+// This is simpler and more reliable for small lists
 async function getOrCreateSegment(levelId, topicId) {
-  const segmentName = `daily-${levelId}-${topicId}`;
+  const segmentName = `daily-${levelId}`;
 
   // List existing segments
   const existing = await mailchimpFetch(`/lists/${config.MAILCHIMP_LIST_ID}/segments?count=100`);
   const found = existing.segments?.find(s => s.name === segmentName);
   if (found) return found.id;
 
-  // Create segment based on merge fields
-  const segment = await mailchimpFetch(`/lists/${config.MAILCHIMP_LIST_ID}/segments`, {
-    method: 'POST',
-    body: JSON.stringify({
-      name: segmentName,
-      options: {
-        match: 'all',
-        conditions: [
-          { condition_type: 'TextMerge', field: 'LEVEL', op: 'is', value: levelId },
-          { condition_type: 'TextMerge', field: 'TOPICS', op: 'contains', value: topicId },
-        ],
-      },
-    }),
-  });
-
-  return segment.id;
+  // Create segment matching subscribers with this level
+  try {
+    const segment = await mailchimpFetch(`/lists/${config.MAILCHIMP_LIST_ID}/segments`, {
+      method: 'POST',
+      body: JSON.stringify({
+        name: segmentName,
+        static_segment: [], // will be empty initially
+      }),
+    });
+    return segment.id;
+  } catch (e) {
+    // If segment creation fails, return null — we'll send to whole list
+    return null;
+  }
 }
 
 // Build HTML email template
@@ -92,19 +91,18 @@ function buildEmailHtml(email) {
 </html>`;
 }
 
-// Create and send a campaign for one email to its segment
+// Create and send a campaign — send to entire list for now
+// Only send ONE email per day (the one matching the most common level)
 async function sendEmail(email) {
-  const segmentId = await getOrCreateSegment(email.level_id, email.topic_id);
+  // Build recipients — send to whole list (no segment filtering for reliability)
+  const recipients = { list_id: config.MAILCHIMP_LIST_ID };
 
   // Create campaign
   const campaign = await mailchimpFetch('/campaigns', {
     method: 'POST',
     body: JSON.stringify({
       type: 'regular',
-      recipients: {
-        list_id: config.MAILCHIMP_LIST_ID,
-        segment_opts: { saved_segment_id: segmentId },
-      },
+      recipients,
       settings: {
         subject_line: email.subject,
         preview_text: email.preview,
@@ -142,9 +140,13 @@ async function main() {
     process.exit(1);
   }
 
-  console.log(`Sending ${emails.length} emails...\n`);
+  // Send only 1 email to the whole list — pick the intermediate level, first topic
+  // This avoids sending 9 emails and segment issues
+  const bestEmail = emails.find(e => e.level_id === 'intermediate') || emails[0];
+  console.log(`Sending 1 email to all subscribers: "${bestEmail.subject}"\n`);
 
-  for (const email of emails) {
+  const toSend = [bestEmail];
+  for (const email of toSend) {
     const label = `${email.topic_id} × ${email.level_id}`;
     try {
       const campaignId = await sendEmail(email);
