@@ -1320,7 +1320,25 @@
               </select>
             </div>
           </div>
-          <!-- Row 2: Sliders -->
+          <!-- Row 2: Country + Region -->
+          <div class="grape-filter-row">
+            <span class="grape-filter-label" style="margin-right:4px">Country</span>
+            <div class="grape-type-btns grape-country-btns" id="grape-country-btns">
+              <button class="grape-type-btn" data-country="France">France</button>
+              <button class="grape-type-btn" data-country="Italy">Italy</button>
+              <button class="grape-type-btn" data-country="Spain">Spain</button>
+              <button class="grape-type-btn" data-country="Germany">Germany</button>
+              <button class="grape-type-btn" data-country="USA">USA</button>
+              <button class="grape-type-btn" data-country="Australia">Australia</button>
+              <button class="grape-type-btn" data-country="Argentina">Argentina</button>
+              <button class="grape-type-btn" data-country="New Zealand">NZ</button>
+              <button class="grape-type-btn" data-country="South Africa">S. Africa</button>
+            </div>
+            <div class="grape-subregion-area" id="grape-subregion-area" style="display:none">
+              <div class="grape-type-btns" id="grape-subregion-btns"></div>
+            </div>
+          </div>
+          <!-- Row 3: Sliders -->
           <div class="grape-filter-row">
             <div class="grape-filter-group grape-slider-group">
               <label class="grape-filter-label">Aromatic <span id="aromatic-val" class="grape-slider-val">Any</span></label>
@@ -1352,6 +1370,10 @@
               <input type="range" min="0" max="5" value="0" step="1" class="grape-slider" id="grape-sugar" />
               <button class="grape-slider-clear" data-slider="grape-sugar" style="display:none">&times;</button>
             </div>
+          </div>
+          <!-- Apply button -->
+          <div class="grape-filter-row">
+            <button class="grape-apply-btn" id="grape-apply-btn">Show Grapes</button>
           </div>
         </div>
 

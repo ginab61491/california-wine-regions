@@ -2,10 +2,23 @@
 
 document.addEventListener('DOMContentLoaded', () => {
   let allGrapes = [], filtered = [], compareList = [], favorites = [];
-  let selectedType = '', selectedWorld = '', selectedLevel = '';
+  let selectedType = '', selectedWorld = '', selectedLevel = '', selectedCountry = '', selectedSubregion = '';
   let selectedAroma = '', selectedSubAroma = '';
   let sliders = { aromatic: 0, acidity: 0, tannin: 0, alcohol: 0, ageworthy: 0, sugar: 0 };
   let initialized = false;
+
+  // Country → subregion mapping
+  const COUNTRY_REGIONS = {
+    'France': ['Bordeaux','Burgundy','Rhône Valley','Loire Valley','Alsace','Champagne','Languedoc','Provence'],
+    'Italy': ['Piedmont','Tuscany','Veneto','Sicily','Alto Adige','Sardinia'],
+    'Spain': ['Rioja','Ribera del Duero','Priorat','Rias Baixas','Sherry'],
+    'Germany': ['Mosel','Rheingau','Pfalz','Baden'],
+    'USA': ['Napa Valley','Sonoma','Willamette Valley','Washington State','Paso Robles','Finger Lakes'],
+    'Australia': ['Barossa Valley','McLaren Vale','Clare Valley','Hunter Valley','Margaret River','Adelaide Hills'],
+    'Argentina': ['Mendoza','Salta','Patagonia'],
+    'New Zealand': ['Marlborough','Central Otago','Hawke\'s Bay'],
+    'South Africa': ['Stellenbosch','Swartland','Walker Bay'],
+  };
 
   // Load favorites from localStorage
   try { favorites = JSON.parse(localStorage.getItem('sommplicity_grape_favs') || '[]'); } catch {}
@@ -32,8 +45,9 @@ document.addEventListener('DOMContentLoaded', () => {
   function wireFilters() {
     // Reset all
     document.getElementById('grape-reset-all').addEventListener('click', () => {
-      selectedType = ''; selectedWorld = ''; selectedLevel = ''; selectedAroma = ''; selectedSubAroma = '';
+      selectedType = ''; selectedWorld = ''; selectedLevel = ''; selectedCountry = ''; selectedSubregion = ''; selectedAroma = ''; selectedSubAroma = '';
       Object.keys(sliders).forEach(k => sliders[k] = 0);
+      document.getElementById('grape-subregion-area').style.display = 'none';
       document.querySelectorAll('.grape-type-btn').forEach(b => b.classList.remove('active'));
       document.querySelectorAll('.grape-slider').forEach(s => { s.value = 0; });
       document.querySelectorAll('.grape-slider-val').forEach(s => s.textContent = 'Any');
@@ -57,6 +71,41 @@ document.addEventListener('DOMContentLoaded', () => {
         });
       });
     });
+
+    // Country toggles
+    document.querySelectorAll('#grape-country-btns .grape-type-btn').forEach(btn => {
+      btn.addEventListener('click', () => {
+        const wasActive = btn.classList.contains('active');
+        document.querySelectorAll('#grape-country-btns .grape-type-btn').forEach(b => b.classList.remove('active'));
+        const subArea = document.getElementById('grape-subregion-area');
+        const subBtns = document.getElementById('grape-subregion-btns');
+        selectedSubregion = '';
+        if (wasActive) {
+          selectedCountry = '';
+          subArea.style.display = 'none';
+        } else {
+          btn.classList.add('active');
+          selectedCountry = btn.dataset.country;
+          // Show subregions
+          const regions = COUNTRY_REGIONS[selectedCountry] || [];
+          if (regions.length) {
+            subBtns.innerHTML = regions.map(r => `<button class="grape-type-btn" data-subregion="${r}">${r}</button>`).join('');
+            subArea.style.display = 'block';
+            subBtns.querySelectorAll('.grape-type-btn').forEach(sb => {
+              sb.addEventListener('click', () => {
+                const wasSubActive = sb.classList.contains('active');
+                subBtns.querySelectorAll('.grape-type-btn').forEach(x => x.classList.remove('active'));
+                if (!wasSubActive) { sb.classList.add('active'); selectedSubregion = sb.dataset.subregion; }
+                else { selectedSubregion = ''; }
+              });
+            });
+          } else { subArea.style.display = 'none'; }
+        }
+      });
+    });
+
+    // Show Grapes button
+    document.getElementById('grape-apply-btn').addEventListener('click', () => applyFilters());
 
     // Aroma → sub-aroma cascade
     document.getElementById('grape-aroma-select').addEventListener('change', (e) => {
@@ -120,6 +169,16 @@ document.addEventListener('DOMContentLoaded', () => {
       if (selectedWorld && g.world !== 'both' && g.world !== selectedWorld) return false;
       if (selectedLevel === 'wset3' && !g.wset3) return false;
       if (selectedLevel === 'intro' && !g.intro) return false;
+      if (selectedCountry) {
+        const gRegions = (g.regions || []).join(' ').toLowerCase();
+        const countryRegions = COUNTRY_REGIONS[selectedCountry] || [];
+        const matchesCountry = countryRegions.some(r => gRegions.includes(r.toLowerCase())) || gRegions.includes(selectedCountry.toLowerCase());
+        if (!matchesCountry) return false;
+      }
+      if (selectedSubregion) {
+        const gRegions = (g.regions || []).join(' ').toLowerCase();
+        if (!gRegions.includes(selectedSubregion.toLowerCase())) return false;
+      }
       if (!matchesAroma(g)) return false;
       if (sliders.aromatic > 0 && Math.abs(g.aromatic - sliders.aromatic) > 1) return false;
       if (sliders.acidity > 0 && Math.abs(g.acidity - sliders.acidity) > 1) return false;

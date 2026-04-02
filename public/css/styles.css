@@ -3424,6 +3424,28 @@ button {
   outline: none;
 }
 .grape-select-sm:focus { border-color: var(--gold); }
+/* Country buttons */
+.grape-country-btns { flex-wrap: wrap; }
+.grape-subregion-area {
+  margin-top: 6px;
+  padding-top: 6px;
+  border-top: 1px solid var(--cream-dark);
+}
+.grape-subregion-area .grape-type-btn { font-size: 0.65rem; padding: 4px 10px; }
+/* Apply/Show Grapes button */
+.grape-apply-btn {
+  font-family: 'Montserrat', sans-serif;
+  font-size: 0.82rem;
+  font-weight: 500;
+  color: #fff;
+  background: var(--gold);
+  border: none;
+  border-radius: 6px;
+  padding: 10px 28px;
+  cursor: pointer;
+  transition: background 0.2s;
+}
+.grape-apply-btn:hover { background: var(--gold-mid); }
 /* Slider inactive = gray, active = gold */
 .grape-slider { opacity: 0.4; }
 .grape-slider.active { opacity: 1; }
