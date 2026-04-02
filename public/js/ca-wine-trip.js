@@ -702,10 +702,17 @@ class CaTripPlanner {
     if (startSelect) startSelect.addEventListener('change', () => { startCustom.style.display = startSelect.value === 'custom' ? 'block' : 'none'; });
     document.getElementById('build-itinerary-btn').addEventListener('click', () => { this.buildItinerary(); const el = document.getElementById('trip-itinerary'); if (el.innerHTML.trim()) el.scrollIntoView({ behavior: 'smooth', block: 'start' }); });
     const mapsBtn = document.getElementById('open-maps-btn'); if (mapsBtn) mapsBtn.addEventListener('click', () => this.openMaps());
-    document.querySelectorAll('.meal-style-btn').forEach(btn => { btn.addEventListener('click', () => { const m = btn.dataset.meal; document.querySelectorAll(`.meal-style-btn[data-meal="${m}"]`).forEach(b => b.classList.remove('active')); btn.classList.add('active'); }); });
+    document.querySelectorAll('.meal-style-btn').forEach(btn => { btn.addEventListener('click', () => { const m = btn.dataset.meal; document.querySelectorAll(`.meal-style-btn[data-meal="${m}"]`).forEach(b => b.classList.remove('active')); btn.classList.add('active'); this._populateSpotPicker(m, btn.dataset.type); }); });
     ['breakfast','lunch','dinner'].forEach(meal => {
       const cb = document.getElementById(`plan-${meal}`);
-      if (cb) cb.addEventListener('change', () => { const wrap = document.getElementById(`${meal}-style-wrap`); if (wrap) wrap.style.display = cb.checked ? 'block' : 'none'; });
+      if (cb) cb.addEventListener('change', () => {
+        const wrap = document.getElementById(`${meal}-style-wrap`);
+        if (wrap) wrap.style.display = cb.checked ? 'block' : 'none';
+        if (cb.checked) {
+          const defaultType = meal === 'dinner' ? 'sitdown' : 'quick';
+          this._populateSpotPicker(meal, defaultType);
+        }
+      });
     });
     this.customActivities = [];
     const actBtn = document.getElementById('custom-activity-add-btn');
@@ -737,6 +744,111 @@ class CaTripPlanner {
   }
 
   _getSelectedMealSpot(meal) { return this.selectedMealSpots[meal] || null; }
+
+  _populateSpotPicker(meal, type) {
+    const picker = document.getElementById(`${meal}-spot-picker`);
+    if (!picker) return;
+    const region = this.selectedRegion || (this.tripSelected[0] && this.tripSelected[0].region) || 'Napa Valley';
+    const recs = (FOOD_RECS[region] || FOOD_RECS['Napa Valley'])[type] || [];
+    if (!recs.length) { picker.innerHTML = '<div class="meal-spot-meta">No options for this style</div>'; return; }
+    this.selectedMealSpots[meal] = null;
+    picker.innerHTML = recs.map((r, i) => {
+      const detour = r.minutesOffRoute === 0 ? 'On route' : (r.minutesOffRoute ? `${r.minutesOffRoute} min off route` : '');
+      return `<label class="meal-spot-option" data-meal="${meal}" data-idx="${i}"><input type="radio" name="${meal}-spot" value="${i}" /><div>
+        <div class="meal-spot-name">${r.name} ${r.rating ? '<span class="meal-spot-rating">⭐ ' + r.rating + '</span>' : ''}</div>
+        <div class="meal-spot-meta">${r.location || ''}${r.priceRange ? ' · ' + r.priceRange : ''}${detour ? ' · ' + detour : ''}</div>
+        ${r.specialty ? '<div class="meal-spot-meta" style="font-style:italic">Known for: ' + r.specialty + '</div>' : ''}
+        ${r.bookingLead ? '<div class="meal-spot-meta" style="color:var(--maroon)">📅 ' + r.bookingLead + '</div>' : ''}
+        ${r.typicalWait ? '<div class="meal-spot-meta" style="color:var(--gold-mid)">' + r.typicalWait + '</div>' : ''}
+        <div class="meal-spot-links">${r.url ? '<a href="' + r.url + '" target="_blank" class="meal-spot-link" onclick="event.stopPropagation()">Website</a>' : ''}${r.reservationUrl ? '<a href="' + r.reservationUrl + '" target="_blank" class="meal-spot-link" onclick="event.stopPropagation()">Reserve ↗</a>' : ''}</div>
+      </div></label>`;
+    }).join('');
+    picker.querySelectorAll('.meal-spot-option').forEach(opt => {
+      opt.addEventListener('click', () => {
+        picker.querySelectorAll('.meal-spot-option').forEach(o => o.classList.remove('selected'));
+        opt.classList.add('selected');
+        this.selectedMealSpots[meal] = recs[parseInt(opt.dataset.idx)];
+      });
+    });
+  }
+
+  _populateRecsSidebar() {
+    const sidebar = document.getElementById('step2-recs-sidebar');
+    const listEl = document.getElementById('recs-sidebar-list');
+    const tipsEl = document.getElementById('recs-sidebar-tips');
+    if (!sidebar || !this.tripSelected.length) { if (sidebar) sidebar.style.display = 'none'; return; }
+    sidebar.style.display = 'block';
+    const tripSubregions = new Set(this.tripSelected.map(w => w.subregion));
+    const tripRegions = new Set(this.tripSelected.map(w => w.region));
+
+    const ALL_RECS = [
+      { name: 'Oxbow Public Market', desc: 'Gourmet food hall with 20+ vendors — oysters, tacos, coffee, olive oil tastings. Perfect quick stop between wineries.', type: 'food', rating: 4.5, url: 'https://oxbowpublicmarket.com', why: 'The best bite-size food experience in Napa — skip a full lunch and graze here instead.', near: { 'Napa Valley': 5, 'Stags Leap District': 10, 'Yountville': 10, 'Carneros': 12 } },
+      { name: 'Yountville Town Walk', desc: 'Thomas Keller\'s restaurants, art galleries, wine shops. Everything is walkable within 3 blocks.', type: 'activity', rating: 4.7, url: 'https://www.yountville.com', why: 'The most concentrated dining street in wine country — French Laundry, Bouchon, Ad Hoc all within walking distance.', near: { 'Yountville': 0, 'Stags Leap District': 8, 'Napa Valley': 10 } },
+      { name: 'Model Bakery, St. Helena', desc: 'English muffins that Oprah put on her Favorite Things list. House-roasted coffee.', type: 'coffee', rating: 4.5, url: 'https://www.themodelbakery.com', why: 'The English muffins are genuinely famous — crispy outside, fluffy inside. Best morning stop in Napa.', near: { 'St. Helena': 0, 'Rutherford': 5, 'Spring Mountain District': 10, 'Napa Valley': 20 } },
+      { name: 'Silverado Trail Viewpoint', desc: 'Pull-off viewpoints along the Silverado Trail with vineyard panoramas stretching to the Mayacamas range.', type: 'scenic', rating: 4.8, why: 'Free, no reservation needed, and the golden hour light across the valley floor is extraordinary.', near: { 'Stags Leap District': 5, 'Napa Valley': 15 } },
+      { name: 'Bale Grist Mill', desc: '1846 waterwheel mill — the largest still operating in North America. Quick 15 min stop.', type: 'activity', rating: 4.4, url: 'https://www.parks.ca.gov/?page_id=482', why: 'A piece of California history that predates the wine industry. Kids love the waterwheel.', near: { 'St. Helena': 3, 'Spring Mountain District': 10, 'Napa Valley': 18 } },
+      { name: 'Calistoga Main Street', desc: 'Hot springs, mud baths, boutique shops, great coffee. The most relaxed town in Napa.', type: 'activity', rating: 4.6, url: 'https://www.visitcalistoga.com', why: 'Skip the wine for an hour and do a mud bath — Calistoga has had hot springs since the 1860s.', near: { 'Calistoga': 0, 'Diamond Mountain': 8, 'Napa Valley': 30 } },
+      { name: 'Sonoma Plaza', desc: 'California\'s largest plaza — tasting rooms, cheese shops, restaurants, and a historic mission all around a central park.', type: 'activity', rating: 4.7, url: 'https://www.sonomaplaza.com', why: 'You can taste 5+ producers, eat artisan cheese, and sit in the park — all without moving your car.', near: { 'Sonoma Valley': 0, 'Carneros': 12, 'Sonoma County': 15 } },
+      { name: 'Barlow District, Sebastopol', desc: 'Converted apple-processing plant with craft breweries, distilleries, coffee roasters, and wine tasting rooms.', type: 'activity', rating: 4.5, url: 'https://thebarlow.net', why: 'The most interesting food/drink cluster in Sonoma. You could spend 3 hours here and not get bored.', near: { 'Russian River Valley': 10, 'Sonoma Coast': 20, 'Sonoma County': 15 } },
+      { name: 'Taylor Maid Farms', desc: 'Single-origin organic coffee roasted on-site in Sebastopol. The pour-over is excellent.', type: 'coffee', rating: 4.6, url: 'https://www.taylormaidfarms.com', why: 'The best coffee in Sonoma wine country. Serious roasting, beautiful space.', near: { 'Russian River Valley': 8, 'Sonoma Coast': 18, 'Sonoma County': 12 } },
+      { name: 'Healdsburg Plaza', desc: 'The heart of wine country\'s best town — ice cream at Noble Folk, browsing boutiques, tasting rooms on every corner.', type: 'activity', rating: 4.8, url: 'https://www.healdsburg.com', why: 'The single best town square in California wine country. Walk-in tastings, world-class dining, all on foot.', near: { 'Dry Creek Valley': 5, 'Alexander Valley': 10, 'Russian River Valley': 12, 'Healdsburg': 0 } },
+      { name: 'Dry Creek General Store', desc: '130-year-old general store with deli sandwiches, local character, and a porch perfect for people-watching.', type: 'food', rating: 4.7, url: 'https://www.drycreekgeneralstore.com', why: 'A sandwich on the porch here is the most authentic Dry Creek Valley experience possible.', near: { 'Dry Creek Valley': 0, 'Healdsburg': 8 } },
+      { name: 'Flying Goat Coffee', desc: 'Specialty coffee roaster on the Healdsburg Plaza. The cortado is perfectly balanced.', type: 'coffee', rating: 4.7, url: 'https://www.flyinggoatcoffee.com', why: 'Best espresso in Healdsburg. Fuel up before your first tasting.', near: { 'Dry Creek Valley': 5, 'Alexander Valley': 10, 'Healdsburg': 0 } },
+      { name: 'Lake Sonoma Overlook', desc: 'A 15-minute drive north of Healdsburg to a stunning viewpoint over the lake and surrounding hills.', type: 'scenic', rating: 4.6, why: 'Completely free, uncrowded, and the view is expansive. Great for stretching your legs between tastings.', near: { 'Dry Creek Valley': 10, 'Alexander Valley': 15, 'Healdsburg': 15 } },
+      { name: 'Paso Robles Town Square', desc: 'Charming downtown with tasting rooms, antique shops, restaurants, and a park with a fountain.', type: 'activity', rating: 4.5, url: 'https://www.travelpaso.com', why: 'Walk-in tasting rooms let you try 5+ producers without driving. Good restaurants for lunch.', near: { 'Adelaida District (Westside)': 15, 'Templeton Gap': 10, 'Downtown Paso': 0, 'Eastside': 5 } },
+    ];
+
+    const relevant = [];
+    ALL_RECS.forEach(r => {
+      let bestMin = Infinity, bestWinery = null;
+      this.tripSelected.forEach(w => {
+        const min = r.near[w.subregion] ?? r.near[w.region] ?? null;
+        if (min !== null && min < bestMin) { bestMin = min; bestWinery = w.name; }
+      });
+      if (bestWinery) relevant.push({ ...r, minAway: bestMin, nearestWinery: bestWinery });
+    });
+    relevant.sort((a, b) => a.minAway - b.minAway);
+    const recs = relevant.slice(0, 5);
+    const icons = { food: '🍴', activity: '🚶', scenic: '🌄', coffee: '☕' };
+
+    listEl.innerHTML = recs.map((r, i) => `
+      <div class="rec-stop-card">
+        <div class="rec-stop-name">${icons[r.type] || '📍'} ${r.name} ${r.rating ? '<span class="rec-stop-rating">⭐ ' + r.rating + '</span>' : ''}</div>
+        <div class="rec-stop-proximity">${r.minAway} min from ${r.nearestWinery}</div>
+        <div class="rec-stop-desc">${r.desc}</div>
+        <div class="rec-stop-why">${r.why}</div>
+        ${r.url ? '<a href="' + r.url + '" target="_blank" class="rec-stop-link" onclick="event.stopPropagation()">Visit website ↗</a>' : ''}
+        <button class="rec-stop-add" data-idx="${i}">+ Add to schedule</button>
+      </div>
+    `).join('');
+
+    listEl.querySelectorAll('.rec-stop-add').forEach(btn => {
+      btn.addEventListener('click', () => {
+        const idx = parseInt(btn.dataset.idx);
+        const rec = recs[idx]; if (!rec) return;
+        const nearestIdx = this.tripSelected.findIndex(w => w.name === rec.nearestWinery);
+        this.customActivities.push({
+          name: rec.name, afterWineryIdx: nearestIdx >= 0 ? nearestIdx : this.tripSelected.length - 1,
+          durationMin: rec.type === 'coffee' ? 20 : rec.type === 'scenic' ? 30 : 45,
+          detourMin: rec.minAway || 0, type: rec.type
+        });
+        this._renderCustomActivities();
+        this.buildItinerary();
+      });
+    });
+
+    // Tips
+    const tips = [];
+    const wineryCount = this.tripSelected.length;
+    const days = this.tripDays || 1;
+    if (wineryCount > 3 && days === 1) tips.push(`${wineryCount} wineries in one day is ambitious. We recommend 3 to savor each.`);
+    const apptOnly = this.tripSelected.filter(w => (w.bookingNote || '').toLowerCase().includes('appointment only'));
+    if (apptOnly.length) tips.push(`Book ahead: ${apptOnly.map(w => w.name).join(', ')}.`);
+    const walkIns = this.tripSelected.filter(w => (w.bookingNote || '').toLowerCase().includes('walk-in'));
+    if (walkIns.length) tips.push(`No reservation: ${walkIns.map(w => w.name).join(', ')}.`);
+    tips.push('Hover over 🚗 segments for route-specific tips.');
+    tipsEl.innerHTML = tips.map(t => `<div class="rec-tip">${t}</div>`).join('');
+  }
 
   buildItinerary() {
     const el = document.getElementById('trip-itinerary');
@@ -868,6 +980,7 @@ class CaTripPlanner {
       });
     });
     this._wireCommandBar();
+    this._populateRecsSidebar();
   }
 
   _wireCommandBar() {

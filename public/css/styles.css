@@ -4523,7 +4523,15 @@ code {
   font-size: 0.62rem;
   color: var(--ink-light);
   line-height: 1.4;
-  margin-bottom: 6px;
+  margin-bottom: 4px;
+}
+.rec-stop-why {
+  font-family: 'Lora', serif;
+  font-size: 0.6rem;
+  font-style: italic;
+  color: var(--maroon);
+  line-height: 1.4;
+  margin-bottom: 4px;
 }
 .rec-stop-add {
   background: none;
