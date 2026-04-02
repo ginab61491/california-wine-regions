@@ -846,14 +846,14 @@ class CaTripPlanner {
     const pl = {splurge:'$$$','mid-splurge':'$$–$$$',mid:'$$',budget:'$'}[w.price]||'$$';
     const popup = document.createElement('div'); popup.id = 'winery-popup'; popup.className = 'winery-popup-overlay';
     popup.innerHTML = `<div class="winery-popup"><button class="winery-popup-close">×</button>
-      <div class="winery-popup-header"><h2>${w.name}</h2><div class="winery-popup-meta">${w.subregion} · ${w.region} · ${pl}${w.googleRating ? ` · ⭐ ${w.googleRating} (${w.reviewCount})` : ''}</div></div>
+      <div class="winery-popup-header"><h2>${w.name}</h2><div class="winery-popup-meta">${w.subregion} · ${w.region} · ${pl}${w.googleRating ? ` · ${w.googleRating} stars (${w.reviewCount})` : ''}</div></div>
       <p class="winery-popup-desc">${tagline}</p><div class="winery-popup-tags">${tags}</div>
       <div class="winery-popup-details">
         <div class="winery-popup-row"><strong>Must taste:</strong> ${w.mustTaste}</div>
         ${w.tastingCost ? `<div class="winery-popup-row"><strong>Tasting:</strong> ${w.tastingCost}</div>` : ''}
         ${w.bookingNote ? `<div class="winery-popup-row"><strong>Booking:</strong> ${w.bookingNote}</div>` : ''}
-        <div class="winery-popup-row">💡 ${w.tip}</div>
-        ${w.funFact ? `<div class="winery-popup-row">⭐ ${w.funFact}</div>` : ''}
+        <div class="winery-popup-row">Tip: ${w.tip}</div>
+        ${w.funFact ? `<div class="winery-popup-row">Note: ${w.funFact}</div>` : ''}
       </div>
       ${w._matchReasons && w._matchReasons.length ? `<div class="winery-popup-match-reasons"><div class="match-reasons-label">Why this is a great match:</div>${w._matchReasons.map(r=>`<div class="match-reason-item">✓ ${r}</div>`).join('')}</div>` : ''}
       ${w._filterNotes && w._filterNotes.length ? `<div class="winery-popup-filter-notes"><div class="filter-notes-label">Potential gaps:</div>${w._filterNotes.map(n=>`<div class="filter-note-item">• ${n}</div>`).join('')}</div>` : `<div class="winery-popup-perfect-match">✓ Strong match across all preferences</div>`}
@@ -982,10 +982,10 @@ Warm regards,
     picker.innerHTML = recs.map((r, i) => {
       const detour = r.minutesOffRoute === 0 ? 'On route' : (r.minutesOffRoute ? `${r.minutesOffRoute} min off route` : '');
       return `<label class="meal-spot-option" data-meal="${meal}" data-idx="${i}"><input type="radio" name="${meal}-spot" value="${i}" /><div>
-        <div class="meal-spot-name">${r.name} ${r.rating ? '<span class="meal-spot-rating">⭐ ' + r.rating + '</span>' : ''}</div>
+        <div class="meal-spot-name">${r.name} ${r.rating ? '<span class="meal-spot-rating">' + r.rating + ' ★</span>' : ''}</div>
         <div class="meal-spot-meta">${r.location || ''}${r.priceRange ? ' · ' + r.priceRange : ''}${detour ? ' · ' + detour : ''}</div>
         ${r.specialty ? '<div class="meal-spot-meta" style="font-style:italic">Known for: ' + r.specialty + '</div>' : ''}
-        ${r.bookingLead ? '<div class="meal-spot-meta" style="color:var(--maroon)">📅 ' + r.bookingLead + '</div>' : ''}
+        ${r.bookingLead ? '<div class="meal-spot-meta" style="color:var(--maroon)">Booking: ' + r.bookingLead + '</div>' : ''}
         ${r.typicalWait ? '<div class="meal-spot-meta" style="color:var(--gold-mid)">' + r.typicalWait + '</div>' : ''}
         <div class="meal-spot-links">${r.url ? '<a href="' + r.url + '" target="_blank" class="meal-spot-link" onclick="event.stopPropagation()">Website</a>' : ''}${r.reservationUrl ? '<a href="' + r.reservationUrl + '" target="_blank" class="meal-spot-link" onclick="event.stopPropagation()">Reserve ↗</a>' : ''}</div>
       </div></label>`;
@@ -1036,11 +1036,11 @@ Warm regards,
     });
     relevant.sort((a, b) => a.minAway - b.minAway);
     const recs = relevant.slice(0, 5);
-    const icons = { food: '🍴', activity: '🚶', scenic: '🌄', coffee: '☕' };
+    const icons = { food: '', activity: '', scenic: '', coffee: '' };
 
     listEl.innerHTML = recs.map((r, i) => `
       <div class="rec-stop-card">
-        <div class="rec-stop-name">${icons[r.type] || '📍'} ${r.name} ${r.rating ? '<span class="rec-stop-rating">⭐ ' + r.rating + '</span>' : ''}</div>
+        <div class="rec-stop-name">${icons[r.type] || ''} ${r.name} ${r.rating ? '<span class="rec-stop-rating">' + r.rating + ' ★</span>' : ''}</div>
         <div class="rec-stop-proximity">${r.minAway} min from ${r.nearestWinery}</div>
         <div class="rec-stop-desc">${r.desc}</div>
         <div class="rec-stop-why">${r.why}</div>
@@ -1073,7 +1073,7 @@ Warm regards,
     if (apptOnly.length) tips.push(`Book ahead: ${apptOnly.map(w => w.name).join(', ')}.`);
     const walkIns = this.tripSelected.filter(w => (w.bookingNote || '').toLowerCase().includes('walk-in'));
     if (walkIns.length) tips.push(`No reservation: ${walkIns.map(w => w.name).join(', ')}.`);
-    tips.push('Hover over 🚗 segments for route-specific tips.');
+    tips.push('Hover over drive segments for route-specific tips.');
     tipsEl.innerHTML = tips.map(t => `<div class="rec-tip">${t}</div>`).join('');
   }
 
@@ -1084,7 +1084,7 @@ Warm regards,
     const accommodation = document.getElementById('accommodation-input') ? document.getElementById('accommodation-input').value.trim() : '';
     const days = this.tripDays || 1;
     if (!this.tripSelected.length) {
-      el.innerHTML = '<div class="itinerary-placeholder"><div class="itinerary-placeholder-icon">🗺️</div><div class="itinerary-placeholder-text">Select wineries in Step 1 to build your itinerary here</div></div>';
+      el.innerHTML = '<div class="itinerary-placeholder"><div class="itinerary-placeholder-icon"></div><div class="itinerary-placeholder-text">Select wineries in Step 1 to build your itinerary here</div></div>';
       if (actionsEl) actionsEl.style.display = 'none'; return;
     }
     if (actionsEl) actionsEl.style.display = 'flex';
@@ -1112,7 +1112,7 @@ Warm regards,
       let initialDriveAdded = false;
       if (!planBreakfast || dayIdx > 0) {
         if (firstW) {
-          stops.push(`<div class="itinerary-stop itinerary-drive-stop"><div class="itinerary-drive-info"><span class="drive-icon">🚗</span><span class="drive-text">${firstDriveMin} min drive to ${firstW.name}</span></div></div>`);
+          stops.push(`<div class="itinerary-stop itinerary-drive-stop"><div class="itinerary-drive-info"><span class="drive-icon">&rarr;</span><span class="drive-text">${firstDriveMin} min drive to ${firstW.name}</span></div></div>`);
           initialDriveAdded = true;
         }
       }
@@ -1126,11 +1126,11 @@ Warm regards,
         stops.push(`<div class="itinerary-stop itinerary-meal-stop ${bfLocked ? 'stop-locked' : ''}" style="min-height:55px" draggable="true">
           <div class="stop-time-range"><input type="time" class="stop-time-input" data-stop-type="meal" data-stop-id="breakfast" value="${this._toTimeValue(currentHour)}" ${bfLocked ? 'disabled' : ''} /><span class="stop-time-dash">–</span><input type="time" class="stop-end-input" value="${this._toTimeValue(bfEnd)}" /></div>
           <div class="itinerary-stop-info">
-            <div class="itinerary-stop-name">🍳 Breakfast${bfRec ? ': ' + bfRec.name : ''}</div>
+            <div class="itinerary-stop-name">Breakfast${bfRec ? ': ' + bfRec.name : ''}</div>
             <div class="itinerary-stop-sub">${bfRec ? (bfRec.location || '') + ' · ' + (bfRec.priceRange || '') + ' · ~' + bfDur + ' min' : '~30 min'}</div>
-            ${bfRec && bfRec.bookingLead ? '<div class="itinerary-booking-note">📅 ' + bfRec.bookingLead + '</div>' : ''}
+            ${bfRec && bfRec.bookingLead ? '<div class="itinerary-booking-note">Booking: ' + bfRec.bookingLead + '</div>' : ''}
           </div>
-          <div class="stop-actions"><button class="stop-lock-btn ${bfLocked ? 'locked' : ''}" data-lock-key="${bfLockKey}" data-lock-time="${currentHour}">${bfLocked ? '🔒' : '🔓'}</button><button class="stop-remove-btn" data-stop-type="meal" data-stop-id="breakfast">×</button></div>
+          <div class="stop-actions"><button class="stop-lock-btn ${bfLocked ? 'locked' : ''}" data-lock-key="${bfLockKey}" data-lock-time="${currentHour}">${bfLocked ? '&#x25C9;' : '&#x25CB;'}</button><button class="stop-remove-btn" data-stop-type="meal" data-stop-id="breakfast">×</button></div>
         </div>`);
         currentHour = this._snapToSlot(currentHour + bfDur / 60);
       }
@@ -1149,7 +1149,7 @@ Warm regards,
         }
         if (!skipDrive) {
           const prevName = prevW ? prevW.name : startFrom;
-          stops.push(`<div class="itinerary-stop itinerary-drive-stop"><div class="itinerary-drive-info"><span class="drive-icon">🚗</span><span class="drive-text">${driveMin} min drive to ${w.name}</span></div></div>`);
+          stops.push(`<div class="itinerary-stop itinerary-drive-stop"><div class="itinerary-drive-info"><span class="drive-icon">&rarr;</span><span class="drive-text">${driveMin} min drive to ${w.name}</span></div></div>`);
         }
         currentHour = scheduledHour; lastScheduledWinery = w;
         const leaveByHour = this._snapToSlot(scheduledHour + 1.5);
@@ -1182,15 +1182,15 @@ Warm regards,
         stops.push(`<div class="itinerary-stop itinerary-winery-stop" style="min-height:75px" data-winery-id="${w.id}" draggable="true">
           <div class="stop-time-range"><input type="time" class="stop-time-input" value="${this._toTimeValue(scheduledHour)}" /><span class="stop-time-dash">–</span><input type="time" class="stop-end-input" value="${this._toTimeValue(leaveByHour)}" /></div>
           <div class="itinerary-stop-info">
-            <div class="itinerary-stop-name"><span class="winery-stop-icon">🍷</span> ${w.name}</div>
+            <div class="itinerary-stop-name"><span class="winery-stop-icon"></span> ${w.name}</div>
             <div class="itinerary-stop-sub">${w.subregion} · ${w.tastingCost||'varies'}</div>
             <div class="itinerary-duration">~90 min · Leave by ${this._formatTime(leaveByHour)}</div>
             <div class="itinerary-hours">Open ${w.tastingHours}</div>
-            ${w.bookingNote ? '<div class="itinerary-booking-note">📅 ' + w.bookingNote + '</div>' : ''}
+            ${w.bookingNote ? '<div class="itinerary-booking-note">Booking: ' + w.bookingNote + '</div>' : ''}
             ${bookAction}
-            ${w.lowCell ? '<div class="itinerary-signal-flag">📵 Low cell</div>' : ''}
+            ${w.lowCell ? '<div class="itinerary-signal-flag">Low cell coverage</div>' : ''}
           </div>
-          <div class="stop-actions"><button class="stop-lock-btn ${this.lockedStops['winery-'+w.id] !== undefined ? 'locked' : ''}" data-lock-key="winery-${w.id}" data-lock-time="${scheduledHour}">${this.lockedStops['winery-'+w.id] !== undefined ? '🔒' : '🔓'}</button><button class="stop-remove-btn" data-stop-type="winery" data-stop-id="${w.id}">×</button></div>
+          <div class="stop-actions"><button class="stop-lock-btn ${this.lockedStops['winery-'+w.id] !== undefined ? 'locked' : ''}" data-lock-key="winery-${w.id}" data-lock-time="${scheduledHour}">${this.lockedStops['winery-'+w.id] !== undefined ? '&#x25C9;' : '&#x25CB;'}</button><button class="stop-remove-btn" data-stop-type="winery" data-stop-id="${w.id}">×</button></div>
         </div>`);
         currentHour = this._snapToSlot(scheduledHour + 1.5);
         if (planLunch && i === 1 && currentHour >= 12 && currentHour < 14.5) {
@@ -1200,18 +1200,18 @@ Warm regards,
           const lLockKey = 'meal-lunch';
           const lLocked = this.lockedStops[lLockKey] !== undefined;
           if (lLocked) currentHour = this.lockedStops[lLockKey];
-          if (lDetour > 0) stops.push(`<div class="itinerary-stop itinerary-drive-stop"><div class="itinerary-drive-info"><span class="drive-icon">🚗</span><span class="drive-text">${lDetour} min to ${rec ? rec.name : 'lunch'}</span></div></div>`);
+          if (lDetour > 0) stops.push(`<div class="itinerary-stop itinerary-drive-stop"><div class="itinerary-drive-info"><span class="drive-icon">&rarr;</span><span class="drive-text">${lDetour} min to ${rec ? rec.name : 'lunch'}</span></div></div>`);
           if (lDetour > 0) currentHour = this._snapToSlot(currentHour + lDetour / 60);
           const lEnd = this._snapToSlot(currentHour + lDur / 60);
           stops.push(`<div class="itinerary-stop itinerary-meal-stop ${lLocked ? 'stop-locked' : ''}" style="min-height:55px" draggable="true">
             <div class="stop-time-range"><input type="time" class="stop-time-input" data-stop-type="meal" data-stop-id="lunch" value="${this._toTimeValue(currentHour)}" ${lLocked ? 'disabled' : ''} /><span class="stop-time-dash">–</span><input type="time" class="stop-end-input" value="${this._toTimeValue(lEnd)}" /></div>
             <div class="itinerary-stop-info">
-              <div class="itinerary-stop-name">🍽️ Lunch${rec ? ': ' + rec.name : ''}</div>
+              <div class="itinerary-stop-name">Lunch${rec ? ': ' + rec.name : ''}</div>
               <div class="itinerary-stop-sub">${rec ? (rec.location || '') + ' · ' + (rec.priceRange || '') + ' · ~' + lDur + ' min' : '~60 min'}</div>
-              ${rec && rec.bookingLead ? '<div class="itinerary-booking-note">📅 ' + rec.bookingLead + '</div>' : ''}
+              ${rec && rec.bookingLead ? '<div class="itinerary-booking-note">Booking: ' + rec.bookingLead + '</div>' : ''}
               ${rec ? this._mealBookAction(rec, this._formatTime(currentHour)) : ''}
             </div>
-            <div class="stop-actions"><button class="stop-lock-btn ${lLocked ? 'locked' : ''}" data-lock-key="${lLockKey}" data-lock-time="${currentHour}">${lLocked ? '🔒' : '🔓'}</button><button class="stop-remove-btn" data-stop-type="meal" data-stop-id="lunch">×</button></div>
+            <div class="stop-actions"><button class="stop-lock-btn ${lLocked ? 'locked' : ''}" data-lock-key="${lLockKey}" data-lock-time="${currentHour}">${lLocked ? '&#x25C9;' : '&#x25CB;'}</button><button class="stop-remove-btn" data-stop-type="meal" data-stop-id="lunch">×</button></div>
           </div>`);
           currentHour = this._snapToSlot(currentHour + lDur / 60);
         }
@@ -1223,18 +1223,18 @@ Warm regards,
         const dLockKey = 'meal-dinner';
         const dLocked = this.lockedStops[dLockKey] !== undefined;
         if (dLocked) currentHour = this.lockedStops[dLockKey];
-        if (dDetour > 0) stops.push(`<div class="itinerary-stop itinerary-drive-stop"><div class="itinerary-drive-info"><span class="drive-icon">🚗</span><span class="drive-text">${dDetour} min to ${rec ? rec.name : 'dinner'}</span></div></div>`);
+        if (dDetour > 0) stops.push(`<div class="itinerary-stop itinerary-drive-stop"><div class="itinerary-drive-info"><span class="drive-icon">&rarr;</span><span class="drive-text">${dDetour} min to ${rec ? rec.name : 'dinner'}</span></div></div>`);
         if (dDetour > 0) currentHour = this._snapToSlot(currentHour + dDetour / 60);
         const dEnd = this._snapToSlot(currentHour + dDur / 60);
         stops.push(`<div class="itinerary-stop itinerary-meal-stop ${dLocked ? 'stop-locked' : ''}" style="min-height:55px" draggable="true">
           <div class="stop-time-range"><input type="time" class="stop-time-input" data-stop-type="meal" data-stop-id="dinner" value="${this._toTimeValue(currentHour)}" ${dLocked ? 'disabled' : ''} /><span class="stop-time-dash">–</span><input type="time" class="stop-end-input" value="${this._toTimeValue(dEnd)}" /></div>
           <div class="itinerary-stop-info">
-            <div class="itinerary-stop-name">🍽️ Dinner${rec ? ': ' + rec.name : ''}</div>
+            <div class="itinerary-stop-name">Dinner${rec ? ': ' + rec.name : ''}</div>
             <div class="itinerary-stop-sub">${rec ? (rec.location || '') + ' · ' + (rec.priceRange || '') + ' · ~' + dDur + ' min' : '~90 min'}</div>
-            ${rec && rec.bookingLead ? '<div class="itinerary-booking-note">📅 ' + rec.bookingLead + '</div>' : ''}
+            ${rec && rec.bookingLead ? '<div class="itinerary-booking-note">Booking: ' + rec.bookingLead + '</div>' : ''}
             ${rec ? this._mealBookAction(rec, this._formatTime(currentHour)) : ''}
           </div>
-          <div class="stop-actions"><button class="stop-lock-btn ${dLocked ? 'locked' : ''}" data-lock-key="${dLockKey}" data-lock-time="${currentHour}">${dLocked ? '🔒' : '🔓'}</button><button class="stop-remove-btn" data-stop-type="meal" data-stop-id="dinner">×</button></div>
+          <div class="stop-actions"><button class="stop-lock-btn ${dLocked ? 'locked' : ''}" data-lock-key="${dLockKey}" data-lock-time="${currentHour}">${dLocked ? '&#x25C9;' : '&#x25CB;'}</button><button class="stop-remove-btn" data-stop-type="meal" data-stop-id="dinner">×</button></div>
         </div>`);
         currentHour = this._snapToSlot(currentHour + dDur / 60);
       }
@@ -1246,7 +1246,7 @@ Warm regards,
       const returnTo = accommodation || start;
       const lastW = lastScheduledWinery || wineries[wineries.length - 1];
       const returnMin = lastW ? Math.max(20, lastW.sfDrive) : 45;
-      stops.push(`<div class="itinerary-stop itinerary-drive-stop"><div class="itinerary-drive-info"><span class="drive-icon">🚗</span><span class="drive-text">${returnMin} min drive to ${returnTo}</span></div></div>`);
+      stops.push(`<div class="itinerary-stop itinerary-drive-stop"><div class="itinerary-drive-info"><span class="drive-icon">&rarr;</span><span class="drive-text">${returnMin} min drive to ${returnTo}</span></div></div>`);
       const arriveHome = this._snapToSlot(currentHour + returnMin / 60);
       stops.push(`<div class="itinerary-stop itinerary-start"><div class="itinerary-time">${this._formatTime(arriveHome)}</div><div class="itinerary-stop-info"><div class="itinerary-stop-name">Arrive at ${returnTo}</div></div></div>`);
       return `${dayLabel}<div class="itinerary-timeline">${stops.join('')}</div>`;
@@ -1339,7 +1339,7 @@ Warm regards,
       const producers = REGION_PRODUCERS[region.id] || '';
       const bg = REGION_BG[region.id] || `linear-gradient(135deg, hsl(0,0%,20%) 0%, hsl(0,0%,30%) 100%)`;
       card.innerHTML = `<button class="rg-header" aria-expanded="false" style="background:${bg}"><div class="rg-header-left"><div class="rg-name">${region.name}</div><div class="rg-tagline">${region.tagline}</div>${producers ? `<div class="rg-producers">${producers}</div>` : ''}</div><span class="rg-chevron">Explore</span></button>
-        <div class="rg-body" hidden><div class="rg-meta-row"><span>🍇 ${region.bestFor}</span><span>🚗 ${region.sfDrive}</span></div><p class="rg-overview">${region.overview}</p>
+        <div class="rg-body" hidden><div class="rg-meta-row"><span>Grapes: ${region.bestFor}</span><span>Drive from SF: ${region.sfDrive}</span></div><p class="rg-overview">${region.overview}</p>
         <div class="rg-subregions">${region.subregions.map(sub=>`<div class="rg-sub" style="border-left:3px solid ${region.color}"><div class="rg-sub-name"><span class="rg-sub-dot" style="background:${region.color}"></span>${sub.name}</div><p class="rg-sub-desc">${sub.description}</p><div class="rg-sub-footer"><strong>Best for:</strong> ${sub.bestFor} · <strong>Know:</strong> ${sub.mustKnow}</div></div>`).join('')}</div></div>`;
       const header = card.querySelector('.rg-header'); const body = card.querySelector('.rg-body'); const chevron = card.querySelector('.rg-chevron');
       header.addEventListener('click', () => { const isOpen = !body.hidden; body.hidden = isOpen; chevron.textContent = isOpen ? 'Close' : 'Explore'; card.classList.toggle('open', !isOpen); });
@@ -1369,7 +1369,7 @@ Warm regards,
     regions.forEach(r => {
       const icon = L.divIcon({ html: `<span class="map-region-text" style="color:${r.color}">${r.name}</span>`, className: 'region-label-icon', iconAnchor: [50, 8] });
       const marker = L.marker(r.center, { icon }).addTo(map);
-      marker.bindTooltip(`<div style="font-family:'Cormorant Garamond',serif;font-size:1.1rem;font-weight:600;color:${r.color}">${r.name}</div><div style="font-family:'Lora',serif;font-size:0.75rem;font-style:italic;color:#5C3428">${r.tagline}</div><div style="font-family:'Montserrat',sans-serif;font-size:0.65rem;color:#8A6050">🍇 ${r.bestFor} · 🚗 ${r.sfDrive}</div>`, { className: 'wine-region-tooltip', direction: 'top', offset: [0, -12] });
+      marker.bindTooltip(`<div style="font-family:'Cormorant Garamond',serif;font-size:1.1rem;font-weight:600;color:${r.color}">${r.name}</div><div style="font-family:'Lora',serif;font-size:0.75rem;font-style:italic;color:#5C3428">${r.tagline}</div><div style="font-family:'Montserrat',sans-serif;font-size:0.65rem;color:#8A6050">${r.bestFor} · ${r.sfDrive}</div>`, { className: 'wine-region-tooltip', direction: 'top', offset: [0, -12] });
       marker.on('click', () => { const card = document.querySelector(`.rg-card[data-region-id="${r.id}"]`); if (card) { const h = card.querySelector('.rg-header'); const b = card.querySelector('.rg-body'); if (b.hidden) h.click(); card.scrollIntoView({ behavior: 'smooth', block: 'center' }); } });
     });
     const subLocs = [

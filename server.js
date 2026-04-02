@@ -156,6 +156,75 @@ Include exactly 6 descriptors. Choose the most defining attributes. Only include
   }
 });
 
+// Scan wine bottle photos — uses Claude vision to identify and research bottles
+app.post('/api/scan-bottles', async (req, res) => {
+  const { images } = req.body; // array of base64 data URLs
+
+  if (!images || !images.length) {
+    return res.status(400).json({ error: 'At least one image is required' });
+  }
+  if (!process.env.ANTHROPIC_API_KEY) {
+    return res.status(500).json({ error: 'ANTHROPIC_API_KEY not configured' });
+  }
+
+  // Build content blocks: images + text prompt
+  const content = [];
+  for (const img of images.slice(0, 5)) {
+    const match = img.match(/^data:(image\/\w+);base64,(.+)$/);
+    if (match) {
+      content.push({
+        type: 'image',
+        source: { type: 'base64', media_type: match[1], data: match[2] }
+      });
+    }
+  }
+  content.push({
+    type: 'text',
+    text: `You are a certified sommelier. Identify every wine bottle visible in the image(s).
+
+For EACH bottle, provide detailed information. Respond ONLY with valid JSON — no markdown fences:
+{
+  "bottles": [
+    {
+      "name": "Full wine name as it appears on the label",
+      "producer": "Producer / winery name",
+      "vintage": "Year if visible, or 'NV' for non-vintage, or null if unreadable",
+      "region": "Wine region and country (e.g. Napa Valley, California)",
+      "grape": "Primary grape variety or blend",
+      "type": "Red, White, Rosé, Sparkling, or Dessert",
+      "tasting_notes": "2-3 sentences describing typical aromas and flavors from professional reviews. Reference style from trusted critics (Wine Spectator, Decanter, Robert Parker, Vinous, Jancis Robinson).",
+      "food_pairing": "2-3 specific pairing suggestions",
+      "price_range": "Approximate retail price range in USD (e.g. '$25-35', '$60-80')",
+      "rating": "Average critic score if well-known (e.g. '92 pts Wine Spectator'), or null",
+      "where_to_buy": "1-2 common retailers or sources (e.g. 'Wine.com, Total Wine, winery direct')",
+      "sommelier_note": "1 sentence — a personal, expert-level insight about this wine that would be useful to know"
+    }
+  ]
+}
+
+If you cannot identify a bottle clearly, include it with what you can determine and set unknown fields to null. Be specific and accurate — only reference information you are confident about.`
+  });
+
+  try {
+    const message = await anthropic.messages.create({
+      model: 'claude-sonnet-4-6',
+      max_tokens: 4096,
+      messages: [{ role: 'user', content }],
+    });
+
+    const raw = message.content[0].text.trim();
+    const cleaned = raw.replace(/^```(?:json)?\s*/i, '').replace(/\s*```\s*$/i, '');
+    const data = JSON.parse(cleaned);
+    res.json(data);
+  } catch (err) {
+    console.error('Scan bottles error:', err);
+    if (err instanceof SyntaxError) {
+      return res.status(500).json({ error: 'Failed to parse AI response. Please try again.' });
+    }
+    res.status(500).json({ error: 'Failed to scan bottles. Please try again.' });
+  }
+});
+
 // Subscribe to daily wine emails — adds contact to Mailchimp
 app.post('/api/subscribe', async (req, res) => {
   const { email, name, level, topics } = req.body;

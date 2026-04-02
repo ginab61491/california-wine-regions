@@ -300,11 +300,41 @@ button {
   color: var(--ink-xlight);
 }
 
-/* ── Features Grid ── */
+/* ── Features by Category ── */
 .home-features {
   padding: 72px 40px;
-  text-align: center;
   background: var(--cream);
+}
+.home-features-title {
+  font-family: 'Playfair Display', Georgia, serif;
+  font-size: clamp(1.6rem, 3.5vw, 2.2rem);
+  font-weight: 400;
+  color: var(--ink);
+  text-align: center;
+  letter-spacing: 0.03em;
+  margin-bottom: 48px;
+}
+.home-category {
+  max-width: 960px;
+  margin: 0 auto 48px;
+}
+.home-category:last-child { margin-bottom: 0; }
+.home-category-label {
+  font-family: 'Montserrat', sans-serif;
+  font-size: 0.68rem;
+  font-weight: 600;
+  letter-spacing: 0.16em;
+  text-transform: uppercase;
+  color: var(--gold);
+  margin-bottom: 6px;
+}
+.home-category-desc {
+  font-family: 'Crimson Text', Georgia, serif;
+  font-style: italic;
+  font-size: 1rem;
+  color: var(--ink-light);
+  margin-bottom: 20px;
+  max-width: 560px;
 }
 .home-features-grid {
   display: grid;
@@ -339,12 +369,13 @@ button {
   margin-bottom: 16px;
 }
 .home-card-icon svg { width: 100%; height: 100%; }
-.home-card h3 {
+.home-card h3,
+.home-card h4 {
   font-family: 'Playfair Display', Georgia, serif;
-  font-size: 1.1rem;
+  font-size: 1.05rem;
   font-weight: 400;
   color: var(--ink);
-  margin-bottom: 10px;
+  margin-bottom: 8px;
   letter-spacing: 0.01em;
 }
 .home-card p {
@@ -2031,6 +2062,100 @@ button {
   color: var(--ink-xlight);
   margin-top: 6px;
   letter-spacing: 0.03em;
+}
+
+/* ═══════════════════════════════════════════
+   WINE GRAPES SECTION
+════════════════════════════════════════════ */
+#grapes-section { padding: 0; }
+#grapes-section .section-header { background: linear-gradient(135deg, rgba(114,47,55,0.05) 0%, var(--cream) 100%); }
+.grapes-scroll { flex: 1; overflow-y: auto; background: var(--cream); }
+.grapes-body { max-width: 1060px; margin: 0 auto; padding: 40px 40px 64px; }
+
+.grapes-group { margin-bottom: 48px; }
+.grapes-group:last-child { margin-bottom: 0; }
+
+.grapes-group-title {
+  font-family: 'Playfair Display', Georgia, serif;
+  font-size: 1.6rem;
+  font-weight: 400;
+  letter-spacing: 0.03em;
+  margin-bottom: 24px;
+  padding-bottom: 12px;
+  border-bottom: 1px solid var(--border-ink);
+}
+.grapes-red .grapes-group-title { color: var(--maroon); }
+.grapes-white .grapes-group-title { color: var(--gold-mid); }
+
+.grapes-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(220px, 1fr));
+  gap: 14px;
+}
+
+.grape-card {
+  border-radius: 10px;
+  padding: 20px 18px;
+  transition: transform 0.25s ease, box-shadow 0.25s ease;
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+}
+.grape-card:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 6px 24px rgba(26,26,26,0.08);
+}
+
+/* Red grape card — deep burgundy tint */
+.grape-red {
+  background: linear-gradient(135deg, rgba(114,47,55,0.08) 0%, rgba(114,47,55,0.03) 100%);
+  border: 1px solid rgba(114,47,55,0.12);
+}
+
+/* White grape card — golden/straw tint */
+.grape-white {
+  background: linear-gradient(135deg, rgba(201,169,97,0.10) 0%, rgba(201,169,97,0.04) 100%);
+  border: 1px solid rgba(201,169,97,0.15);
+}
+
+.grape-name {
+  font-family: 'Playfair Display', Georgia, serif;
+  font-size: 1.05rem;
+  font-weight: 400;
+  letter-spacing: 0.02em;
+}
+.grape-red .grape-name { color: var(--maroon); }
+.grape-white .grape-name { color: var(--gold-mid); }
+
+.grape-aka {
+  font-family: 'Crimson Text', Georgia, serif;
+  font-style: italic;
+  font-size: 0.78rem;
+  color: var(--ink-light);
+  margin: 0;
+}
+.grape-desc {
+  font-family: 'Montserrat', sans-serif;
+  font-size: 0.78rem;
+  line-height: 1.6;
+  color: var(--ink-mid);
+  margin: 0;
+  flex: 1;
+}
+.grape-regions {
+  font-family: 'Montserrat', sans-serif;
+  font-size: 0.62rem;
+  font-weight: 400;
+  color: var(--ink-xlight);
+  letter-spacing: 0.02em;
+  margin-top: 4px;
+  padding-top: 8px;
+  border-top: 1px solid rgba(26,26,26,0.06);
+}
+
+@media (max-width: 768px) {
+  .grapes-body { padding: 24px 20px 48px; }
+  .grapes-grid { grid-template-columns: 1fr; max-width: 400px; }
 }
 
 /* ═══════════════════════════════════════════
@@ -7485,6 +7610,189 @@ code {
 #diary-section { padding: 0; }
 .diary-scroll { flex: 1; overflow-y: auto; background: var(--cream); }
 .diary-body { max-width: 700px; margin: 0 auto; padding: 32px 40px 56px; }
+
+/* ── Quick Scan ── */
+.diary-scan-card {
+  background: var(--white);
+  border: 1px solid var(--border-ink);
+  border-radius: 12px;
+  padding: 28px 28px;
+  margin-bottom: 32px;
+}
+.diary-scan-card h2 {
+  font-family: 'Playfair Display', Georgia, serif;
+  font-size: 1.4rem;
+  font-weight: 400;
+  color: var(--ink);
+  margin-bottom: 6px;
+}
+.diary-scan-desc {
+  font-family: 'Montserrat', sans-serif;
+  font-size: 0.82rem;
+  color: var(--ink-light);
+  line-height: 1.6;
+  margin-bottom: 20px;
+}
+.diary-scan-dropzone {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 8px;
+  padding: 32px 24px;
+  border: 2px dashed var(--cream-dark);
+  border-radius: 10px;
+  cursor: pointer;
+  transition: border-color 0.2s, background 0.2s;
+  color: var(--ink-xlight);
+  text-align: center;
+}
+.diary-scan-dropzone:hover {
+  border-color: var(--gold);
+  background: rgba(201,169,97,0.03);
+}
+.diary-scan-dropzone-text {
+  font-family: 'Montserrat', sans-serif;
+  font-size: 0.85rem;
+  font-weight: 400;
+  color: var(--ink-mid);
+}
+.diary-scan-dropzone-hint {
+  font-family: 'Montserrat', sans-serif;
+  font-size: 0.65rem;
+  color: var(--ink-xlight);
+}
+.diary-scan-previews {
+  display: flex;
+  gap: 8px;
+  flex-wrap: wrap;
+  margin-top: 12px;
+}
+.diary-scan-thumb {
+  width: 80px;
+  height: 80px;
+  border-radius: 6px;
+  object-fit: cover;
+  border: 1px solid var(--cream-dark);
+}
+.diary-scan-btn {
+  margin-top: 16px;
+  width: 100%;
+  padding: 12px 24px;
+  background: var(--gold);
+  color: #fff;
+  border: none;
+  border-radius: 8px;
+  font-family: 'Montserrat', sans-serif;
+  font-size: 0.85rem;
+  font-weight: 500;
+  cursor: pointer;
+  transition: all 0.2s;
+}
+.diary-scan-btn:hover:not(:disabled) { background: var(--gold-mid); }
+.diary-scan-btn:disabled {
+  background: var(--cream-dark);
+  color: var(--ink-xlight);
+  cursor: not-allowed;
+}
+.diary-scan-status {
+  font-family: 'Montserrat', sans-serif;
+  font-size: 0.78rem;
+  color: var(--ink-light);
+  text-align: center;
+  margin-top: 12px;
+  min-height: 20px;
+}
+
+/* Scan Results */
+.diary-scan-results {
+  margin-top: 20px;
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+.scan-bottle-card {
+  background: var(--cream);
+  border: 1px solid var(--border-ink);
+  border-left: 3px solid var(--gold);
+  border-radius: 0 10px 10px 0;
+  padding: 20px 22px;
+}
+.scan-bottle-name {
+  font-family: 'Playfair Display', Georgia, serif;
+  font-size: 1.15rem;
+  font-weight: 400;
+  color: var(--ink);
+  margin-bottom: 2px;
+}
+.scan-bottle-meta {
+  font-family: 'Montserrat', sans-serif;
+  font-size: 0.72rem;
+  color: var(--ink-light);
+  margin-bottom: 12px;
+}
+.scan-bottle-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 10px;
+  margin-bottom: 12px;
+}
+@media (max-width: 480px) { .scan-bottle-grid { grid-template-columns: 1fr; } }
+.scan-bottle-field {
+  display: flex;
+  flex-direction: column;
+  gap: 2px;
+}
+.scan-bottle-field-label {
+  font-family: 'Montserrat', sans-serif;
+  font-size: 0.6rem;
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 0.08em;
+  color: var(--ink-xlight);
+}
+.scan-bottle-field-value {
+  font-family: 'Montserrat', sans-serif;
+  font-size: 0.82rem;
+  color: var(--ink);
+  line-height: 1.5;
+}
+.scan-bottle-notes {
+  font-family: 'Crimson Text', Georgia, serif;
+  font-style: italic;
+  font-size: 0.9rem;
+  line-height: 1.6;
+  color: var(--ink-mid);
+  padding: 12px 0;
+  border-top: 1px solid var(--cream-dark);
+}
+.scan-bottle-somm {
+  font-family: 'Montserrat', sans-serif;
+  font-size: 0.75rem;
+  color: var(--gold-mid);
+  font-weight: 500;
+  margin-top: 8px;
+}
+.scan-bottle-actions {
+  display: flex;
+  gap: 10px;
+  margin-top: 12px;
+}
+.scan-add-diary-btn {
+  font-family: 'Montserrat', sans-serif;
+  font-size: 0.75rem;
+  font-weight: 500;
+  color: var(--gold);
+  background: none;
+  border: 1px solid var(--gold);
+  border-radius: 4px;
+  padding: 6px 16px;
+  cursor: pointer;
+  transition: all 0.2s;
+}
+.scan-add-diary-btn:hover {
+  background: var(--gold);
+  color: #fff;
+}
 
 /* Form card */
 .diary-form-card {

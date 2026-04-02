@@ -79,8 +79,7 @@ document.addEventListener('DOMContentLoaded', () => {
       const formSection = document.querySelector('.dailywine-form-section');
       formSection.innerHTML = `
         <div class="dw-success">
-          <div class="dw-success-icon">🎉</div>
-          <h2>You're Subscribed!</h2>
+          <h2>You're Subscribed</h2>
           <p>Welcome${name ? ', ' + name : ''}! You'll start receiving daily bite-size wine lessons at <strong>${email}</strong>, tailored to your <strong>${selectedLevel}</strong> level.</p>
           <p style="margin-top:12px;font-size:0.8rem;color:var(--ink-xlight)">Each email is curated by a certified sommelier from trusted sources like GuildSomm, Wine Scholar Guild, The Oxford Companion to Wine, and more.</p>
         </div>

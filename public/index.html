@@ -100,9 +100,21 @@
           <button class="topnav-link topnav-link--has-menu">Learn</button>
           <div class="topnav-menu">
             <a class="topnav-menu-item" data-section="dailywine">Daily Wine Emails</a>
+            <a class="topnav-menu-item" data-section="grapes">Wine Grapes</a>
             <a class="topnav-menu-item" data-section="wheel">Flavor Wheel</a>
             <a class="topnav-menu-item" data-section="pairing">Food Pairing</a>
             <a class="topnav-menu-item" data-section="regions">Wine Regions of the World</a>
+          </div>
+        </div>
+        <!-- Study dropdown -->
+        <div class="topnav-dropdown">
+          <button class="topnav-link topnav-link--has-menu">Study</button>
+          <div class="topnav-menu">
+            <a class="topnav-menu-item" data-section="exam">Exam Prep Overview</a>
+            <a class="topnav-menu-item" href="https://www.wsetglobal.com/qualifications/wset-level-2-award-in-wines/" target="_blank" rel="noopener">WSET Level 2</a>
+            <a class="topnav-menu-item" href="https://www.wsetglobal.com/qualifications/wset-level-3-award-in-wines/" target="_blank" rel="noopener">WSET Level 3</a>
+            <a class="topnav-menu-item" href="https://www.mastersommeliers.org/courses-and-schedules" target="_blank" rel="noopener">Certified Sommelier (CMS)</a>
+            <a class="topnav-menu-item" href="https://www.guildsomm.com/" target="_blank" rel="noopener">Explore Classes &amp; Certifications</a>
           </div>
         </div>
         <!-- Wine Country dropdown -->
@@ -151,9 +163,17 @@
     <nav class="mobile-nav-links">
       <span class="mobile-nav-group">Learn</span>
       <a class="mobile-nav-link" data-section="dailywine">Daily Wine Emails</a>
+      <a class="mobile-nav-link" data-section="grapes">Wine Grapes</a>
       <a class="mobile-nav-link" data-section="wheel">Flavor Wheel</a>
       <a class="mobile-nav-link" data-section="pairing">Food Pairing</a>
       <a class="mobile-nav-link" data-section="regions">Wine Regions of the World</a>
+
+      <span class="mobile-nav-group">Study</span>
+      <a class="mobile-nav-link" data-section="exam">Exam Prep Overview</a>
+      <a class="mobile-nav-link" href="https://www.wsetglobal.com/qualifications/wset-level-2-award-in-wines/" target="_blank" rel="noopener">WSET Level 2</a>
+      <a class="mobile-nav-link" href="https://www.wsetglobal.com/qualifications/wset-level-3-award-in-wines/" target="_blank" rel="noopener">WSET Level 3</a>
+      <a class="mobile-nav-link" href="https://www.mastersommeliers.org/courses-and-schedules" target="_blank" rel="noopener">Certified Sommelier (CMS)</a>
+      <a class="mobile-nav-link" href="https://www.guildsomm.com/" target="_blank" rel="noopener">Explore Classes &amp; Certifications</a>
 
       <span class="mobile-nav-group">Visit</span>
       <a class="mobile-nav-link" data-section="catrip">Plan a California Trip</a>
@@ -212,85 +232,102 @@
         </div>
       </section>
 
-      <!-- Features Grid -->
+      <!-- Features by Category -->
       <section class="home-features">
-        <span class="home-label">What You Can Do Here</span>
-        <h2 class="home-heading">Your Wine Education, All in One Place</h2>
-        <div class="home-features-grid">
+        <h2 class="home-features-title">Explore Wine My Way</h2>
 
-          <a class="home-card" data-section="catrip">
-            <div class="home-card-icon">
-              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M3 9l9-7 9 7v11a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z"/><polyline points="9 22 9 12 15 12 15 22"/></svg>
-            </div>
-            <h3>Plan a California Wine Trip</h3>
-            <p>280 hand-picked wineries across Napa, Sonoma, Paso Robles, and more. Match your vibe, budget, and interests — build a real itinerary with drive times and reservations.</p>
-          </a>
-
-          <a class="home-card" data-section="caregions">
-            <div class="home-card-icon">
-              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><polygon points="1 6 1 22 8 18 16 22 23 18 23 2 16 6 8 2 1 6"/><line x1="8" y1="2" x2="8" y2="18"/><line x1="16" y1="6" x2="16" y2="22"/></svg>
-            </div>
-            <h3>Explore California Wine Country</h3>
-            <p>Interactive map of California's wine regions — from the fog-cooled Sonoma Coast to the sun-drenched vineyards of Paso Robles. Learn what makes each place special.</p>
-          </a>
-
-          <a class="home-card" data-section="regions">
-            <div class="home-card-icon">
-              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><circle cx="12" cy="12" r="10"/><line x1="2" y1="12" x2="22" y2="12"/><path d="M12 2a15.3 15.3 0 0 1 4 10 15.3 15.3 0 0 1-4 10 15.3 15.3 0 0 1-4-10 15.3 15.3 0 0 1 4-10z"/></svg>
-            </div>
-            <h3>Wine Regions of the World</h3>
-            <p>From Burgundy to Barossa, explore the world's great wine regions — their grapes, styles, and what makes them worth knowing.</p>
-          </a>
-
-          <a class="home-card" data-section="dailywine">
-            <div class="home-card-icon">
-              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/><polyline points="22,6 12,13 2,6"/></svg>
-            </div>
-            <h3>Daily Wine Emails</h3>
-            <p>A short wine lesson in your inbox every morning — curated by a certified sommelier from trusted sources. Choose your level and topics.</p>
-          </a>
-
-          <a class="home-card" data-section="wheel">
-            <div class="home-card-icon">
-              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><circle cx="12" cy="12" r="10"/><circle cx="12" cy="12" r="4"/><line x1="12" y1="2" x2="12" y2="8"/><line x1="12" y1="16" x2="12" y2="22"/><line x1="2" y1="12" x2="8" y2="12"/><line x1="16" y1="12" x2="22" y2="12"/></svg>
-            </div>
-            <h3>Flavor Wheel</h3>
-            <p>Explore the aromas and flavors found in wine — from dark fruit to wet stone. Build your tasting vocabulary one descriptor at a time.</p>
-          </a>
-
-          <a class="home-card" data-section="pairing">
-            <div class="home-card-icon">
-              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M18 8h1a4 4 0 0 1 0 8h-1"/><path d="M2 8h16v9a4 4 0 0 1-4 4H6a4 4 0 0 1-4-4V8z"/><line x1="6" y1="1" x2="6" y2="4"/><line x1="10" y1="1" x2="10" y2="4"/><line x1="14" y1="1" x2="14" y2="4"/></svg>
-            </div>
-            <h3>Food Pairing</h3>
-            <p>Find the perfect wine for tonight's dinner — or discover new dishes that bring out the best in what you're drinking.</p>
-          </a>
-
-          <a class="home-card" data-section="analyzer">
-            <div class="home-card-icon">
-              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M20.84 4.61a5.5 5.5 0 0 0-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 0 0-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 0 0 0-7.78z"/></svg>
-            </div>
-            <h3>I Love This Wine</h3>
-            <p>Snap a photo of a bottle you love — I'll tell you what's in it, why you like it, and what to try next.</p>
-          </a>
-
-          <a class="home-card" data-section="diary">
-            <div class="home-card-icon">
-              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M4 19.5A2.5 2.5 0 0 1 6.5 17H20"/><path d="M6.5 2H20v20H6.5A2.5 2.5 0 0 1 4 19.5v-15A2.5 2.5 0 0 1 6.5 2z"/><line x1="8" y1="7" x2="16" y2="7"/><line x1="8" y1="11" x2="13" y2="11"/></svg>
-            </div>
-            <h3>My Wine Diary</h3>
-            <p>Keep a personal journal of wines you've tasted — photos, notes, ratings. Your palate story, all in one place.</p>
-          </a>
-
-          <a class="home-card" data-section="events">
-            <div class="home-card-icon">
-              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><rect x="3" y="4" width="18" height="18" rx="2" ry="2"/><line x1="16" y1="2" x2="16" y2="6"/><line x1="8" y1="2" x2="8" y2="6"/><line x1="3" y1="10" x2="21" y2="10"/></svg>
-            </div>
-            <h3>Bay Area Wine Events</h3>
-            <p>Tastings, harvest festivals, winemaker dinners — find what's happening in the Bay Area wine scene this month.</p>
-          </a>
-
+        <!-- Learn -->
+        <div class="home-category">
+          <h3 class="home-category-label">Learn</h3>
+          <p class="home-category-desc">Build your wine knowledge from the ground up — flavors, regions, pairings, and a daily lesson in your inbox.</p>
+          <div class="home-features-grid">
+            <a class="home-card" data-section="grapes">
+              <h4>Wine Grapes</h4>
+              <p>Know the major red and white varietals — their origins, flavors, and the wines they produce.</p>
+            </a>
+            <a class="home-card" data-section="dailywine">
+              <h4>Daily Wine Emails</h4>
+              <p>A short wine lesson every morning, curated by a certified sommelier from trusted sources. Choose your level and topics.</p>
+            </a>
+            <a class="home-card" data-section="wheel">
+              <h4>Flavor Wheel</h4>
+              <p>Explore the aromas and flavors found in wine — from dark fruit to wet stone. Build your tasting vocabulary one descriptor at a time.</p>
+            </a>
+            <a class="home-card" data-section="pairing">
+              <h4>Food Pairing</h4>
+              <p>Discover what to drink with dinner tonight — or find new dishes that bring out the best in what you're pouring.</p>
+            </a>
+            <a class="home-card" data-section="regions">
+              <h4>Wine Regions of the World</h4>
+              <p>From Burgundy to Barossa — explore the world's great wine regions, their grapes, styles, and character.</p>
+            </a>
+          </div>
         </div>
+
+        <!-- Study -->
+        <div class="home-category">
+          <h3 class="home-category-label">Study</h3>
+          <p class="home-category-desc">Preparing for a certification or want structured learning? Resources for WSET, CMS, and beyond.</p>
+          <div class="home-features-grid">
+            <a class="home-card" data-section="exam">
+              <h4>Exam Prep</h4>
+              <p>Study tools and daily content designed for CMS and WSET candidates — appellations, blind tasting frameworks, and key facts.</p>
+            </a>
+            <a class="home-card" href="https://www.wsetglobal.com/qualifications/wset-level-2-award-in-wines/" target="_blank" rel="noopener">
+              <h4>WSET Level 2</h4>
+              <p>The foundation for understanding wine styles, grape varieties, and major regions. Ideal for enthusiasts and industry newcomers.</p>
+            </a>
+            <a class="home-card" href="https://www.wsetglobal.com/qualifications/wset-level-3-award-in-wines/" target="_blank" rel="noopener">
+              <h4>WSET Level 3</h4>
+              <p>Advanced knowledge of wine production, key regions, and quality assessment. The standard for serious professionals.</p>
+            </a>
+            <a class="home-card" href="https://www.mastersommeliers.org/courses-and-schedules" target="_blank" rel="noopener">
+              <h4>Certified Sommelier (CMS)</h4>
+              <p>The Court of Master Sommeliers' Level 2 exam — theory, service, and blind tasting. The sommelier's benchmark.</p>
+            </a>
+            <a class="home-card" href="https://www.guildsomm.com/" target="_blank" rel="noopener">
+              <h4>Explore Classes &amp; Certifications</h4>
+              <p>Browse programs from GuildSomm, WSET, CMS, and independent wine schools to find the right path for you.</p>
+            </a>
+          </div>
+        </div>
+
+        <!-- Visit -->
+        <div class="home-category">
+          <h3 class="home-category-label">Visit</h3>
+          <p class="home-category-desc">Plan your trip to California wine country — from finding the right wineries to building a real itinerary.</p>
+          <div class="home-features-grid">
+            <a class="home-card" data-section="catrip">
+              <h4>Plan a California Wine Trip</h4>
+              <p>280 hand-picked wineries across Napa, Sonoma, Paso Robles, and more. Match your vibe, budget, and interests — build an itinerary with drive times and reservations.</p>
+            </a>
+            <a class="home-card" data-section="caregions">
+              <h4>Explore California Wine Country</h4>
+              <p>Interactive map of California's wine regions — from the fog-cooled Sonoma Coast to the sun-drenched vineyards of Paso Robles.</p>
+            </a>
+            <a class="home-card" data-section="events">
+              <h4>Bay Area Wine Events</h4>
+              <p>Tastings, harvest festivals, winemaker dinners — find what's happening in the Bay Area wine scene this month.</p>
+            </a>
+          </div>
+        </div>
+
+        <!-- Sip -->
+        <div class="home-category">
+          <h3 class="home-category-label">Sip</h3>
+          <p class="home-category-desc">Your personal wine journey — analyze bottles, keep a diary, and build your palate over time.</p>
+          <div class="home-features-grid">
+            <a class="home-card" data-section="analyzer">
+              <h4>I Love This Wine</h4>
+              <p>Snap a photo of a bottle you love — I'll tell you what's in it, why you like it, and what to try next.</p>
+            </a>
+            <a class="home-card" data-section="diary">
+              <h4>My Wine Diary</h4>
+              <p>Keep a personal journal of wines you've tasted — photos, notes, ratings. Your palate story, all in one place.</p>
+            </a>
+          </div>
+        </div>
+
       </section>
 
       <!-- Closing CTA -->
@@ -361,7 +398,7 @@
         <div class="chat-main">
           <div class="messages-area" id="messages-area">
             <div class="message assistant-message welcome-message">
-              <div class="message-avatar">🍷</div>
+              <div class="message-avatar"><svg viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M8 22h8M12 15v7M12 15a5 5 0 0 0 5-5c0-2-.5-4-2-8H9c-1.5 4-2 6-2 8a5 5 0 0 0 5 5Z"/></svg></div>
               <div class="message-content">
                 <p>Welcome to <strong>Sommplicity</strong>. I'm here to help you experience wine differently — with clarity, curiosity, and genuine connection.</p>
                 <p>Whether you're just beginning your wine journey or deepening your knowledge, ask me about any region, grape, tasting note, food pairing, or winemaking question. The best wine experiences emerge when people feel comfortable and curious.</p>
@@ -505,6 +542,192 @@
     </section>
 
     <!-- ═══════════════════════════════════════════
+         SECTION: Wine Grapes / Varietals
+    ════════════════════════════════════════════ -->
+    <section class="section" id="grapes-section">
+      <div class="section-header">
+        <h1>Know Your Grapes</h1>
+        <span class="section-tagline">The varietals behind every bottle</span>
+        <p>The world's most important wine grapes — where they grow, what they taste like, and why they matter.</p>
+      </div>
+      <div class="grapes-scroll">
+        <div class="grapes-body">
+
+          <!-- Red Grapes -->
+          <div class="grapes-group grapes-red">
+            <h2 class="grapes-group-title">Red Varietals</h2>
+            <div class="grapes-grid">
+
+              <div class="grape-card grape-red">
+                <h3 class="grape-name">Cabernet Sauvignon</h3>
+                <p class="grape-aka">The King of Red Wine</p>
+                <p class="grape-desc">Full-bodied with firm tannins, dark fruit, and cassis. The backbone of Bordeaux and Napa Valley. Ages beautifully for decades.</p>
+                <span class="grape-regions">Napa Valley, Bordeaux, Coonawarra, Maipo Valley</span>
+              </div>
+
+              <div class="grape-card grape-red">
+                <h3 class="grape-name">Merlot</h3>
+                <p class="grape-aka">The Approachable One</p>
+                <p class="grape-desc">Softer tannins, plum and cherry fruit, velvety texture. Bordeaux's Right Bank star. Often blended with Cabernet for roundness.</p>
+                <span class="grape-regions">Bordeaux (Pomerol, St-Emilion), Washington State, Tuscany</span>
+              </div>
+
+              <div class="grape-card grape-red">
+                <h3 class="grape-name">Pinot Noir</h3>
+                <p class="grape-aka">The Heartbreak Grape</p>
+                <p class="grape-desc">Ethereal, transparent, endlessly complex. Red berry, earth, spice. Thin-skinned and difficult to grow — when it's great, nothing compares.</p>
+                <span class="grape-regions">Burgundy, Sonoma Coast, Willamette Valley, Central Otago</span>
+              </div>
+
+              <div class="grape-card grape-red">
+                <h3 class="grape-name">Syrah / Shiraz</h3>
+                <p class="grape-aka">Dark, Peppery, Bold</p>
+                <p class="grape-desc">Inky dark fruit, black pepper, smoked meat, violets. Called Syrah in France and Shiraz in Australia — same grape, different styles.</p>
+                <span class="grape-regions">Northern Rh&ocirc;ne, Barossa Valley, Washington State, Stellenbosch</span>
+              </div>
+
+              <div class="grape-card grape-red">
+                <h3 class="grape-name">Zinfandel</h3>
+                <p class="grape-aka">California's Own</p>
+                <p class="grape-desc">Jammy, brambly, high-alcohol warmth. Blackberry, spice, sometimes a hint of sweetness. Genetically identical to Italy's Primitivo.</p>
+                <span class="grape-regions">Sonoma (Dry Creek), Paso Robles, Lodi, Puglia (Italy)</span>
+              </div>
+
+              <div class="grape-card grape-red">
+                <h3 class="grape-name">Tempranillo</h3>
+                <p class="grape-aka">Spain's Noble Grape</p>
+                <p class="grape-desc">Leather, tobacco, cherry, dried fig. The soul of Rioja and Ribera del Duero. Often oak-aged extensively, gaining vanilla and spice complexity.</p>
+                <span class="grape-regions">Rioja, Ribera del Duero, Toro, Douro Valley</span>
+              </div>
+
+              <div class="grape-card grape-red">
+                <h3 class="grape-name">Sangiovese</h3>
+                <p class="grape-aka">The Heart of Tuscany</p>
+                <p class="grape-desc">Tart cherry, dried herbs, leather, tomato leaf. High acidity makes it a natural with Italian cuisine. The grape behind Chianti and Brunello.</p>
+                <span class="grape-regions">Chianti, Montalcino, Montepulciano, Romagna</span>
+              </div>
+
+              <div class="grape-card grape-red">
+                <h3 class="grape-name">Grenache / Garnacha</h3>
+                <p class="grape-aka">Sun-Loving &amp; Generous</p>
+                <p class="grape-desc">Ripe strawberry, white pepper, cinnamon. High alcohol, low tannin, generous fruit. The most planted red grape in the southern Rh&ocirc;ne.</p>
+                <span class="grape-regions">Ch&acirc;teauneuf-du-Pape, Priorat, Sardinia, McLaren Vale</span>
+              </div>
+
+              <div class="grape-card grape-red">
+                <h3 class="grape-name">Nebbiolo</h3>
+                <p class="grape-aka">The Fog Grape</p>
+                <p class="grape-desc">Rose petals, tar, truffle, cherry. Deceptively light in color but powerfully tannic. The noble grape of Barolo and Barbaresco.</p>
+                <span class="grape-regions">Barolo, Barbaresco, Langhe, Valtellina</span>
+              </div>
+
+              <div class="grape-card grape-red">
+                <h3 class="grape-name">Malbec</h3>
+                <p class="grape-aka">Argentina's Flagship</p>
+                <p class="grape-desc">Plush, dark-fruited, velvety. Plum, blackberry, chocolate, violet. Once a Bordeaux blender, now a standalone star at high altitude.</p>
+                <span class="grape-regions">Mendoza, Cahors, Salta, Colchagua</span>
+              </div>
+
+              <div class="grape-card grape-red">
+                <h3 class="grape-name">Cabernet Franc</h3>
+                <p class="grape-aka">The Elegant Parent</p>
+                <p class="grape-desc">Raspberry, graphite, green bell pepper, violets. More herbaceous and lighter than its offspring Cabernet Sauvignon. Shines in the Loire Valley.</p>
+                <span class="grape-regions">Loire Valley (Chinon), Bordeaux, Friuli, Finger Lakes</span>
+              </div>
+
+              <div class="grape-card grape-red">
+                <h3 class="grape-name">Gamay</h3>
+                <p class="grape-aka">Beaujolais in a Glass</p>
+                <p class="grape-desc">Fresh, crunchy, vibrant. Sour cherry, banana, crushed rocks. Best served slightly chilled. A perfect sommelier's weeknight wine.</p>
+                <span class="grape-regions">Beaujolais (Morgon, Fleurie), Loire Valley, Oregon</span>
+              </div>
+
+            </div>
+          </div>
+
+          <!-- White Grapes -->
+          <div class="grapes-group grapes-white">
+            <h2 class="grapes-group-title">White Varietals</h2>
+            <div class="grapes-grid">
+
+              <div class="grape-card grape-white">
+                <h3 class="grape-name">Chardonnay</h3>
+                <p class="grape-aka">The Blank Canvas</p>
+                <p class="grape-desc">The most versatile white grape. Ranges from lean, mineral Chablis to rich, buttery Napa. Takes on the character of where it's grown and how it's made.</p>
+                <span class="grape-regions">Burgundy, Napa Valley, Champagne, Margaret River</span>
+              </div>
+
+              <div class="grape-card grape-white">
+                <h3 class="grape-name">Sauvignon Blanc</h3>
+                <p class="grape-aka">Bright &amp; Electric</p>
+                <p class="grape-desc">Grapefruit, gooseberry, fresh-cut grass, jalape&ntilde;o. Razor-sharp acidity that wakes up the palate. A sommelier's go-to for seafood and salads.</p>
+                <span class="grape-regions">Loire Valley (Sancerre), Marlborough, Bordeaux, Napa</span>
+              </div>
+
+              <div class="grape-card grape-white">
+                <h3 class="grape-name">Riesling</h3>
+                <p class="grape-aka">The Sommelier's Darling</p>
+                <p class="grape-desc">Petrol, lime, honeycomb, white peach. Ranges from bone-dry to lusciously sweet. One of the greatest food wines ever made. Ages magnificently.</p>
+                <span class="grape-regions">Mosel, Alsace, Clare Valley, Finger Lakes</span>
+              </div>
+
+              <div class="grape-card grape-white">
+                <h3 class="grape-name">Pinot Grigio / Pinot Gris</h3>
+                <p class="grape-aka">Two Personalities</p>
+                <p class="grape-desc">Light and crisp as Italian Pinot Grigio, or rich and honeyed as Alsatian Pinot Gris. Same grape, wildly different expressions depending on origin.</p>
+                <span class="grape-regions">Veneto, Alsace, Willamette Valley, Alto Adige</span>
+              </div>
+
+              <div class="grape-card grape-white">
+                <h3 class="grape-name">Gew&uuml;rztraminer</h3>
+                <p class="grape-aka">The Perfumed One</p>
+                <p class="grape-desc">Lychee, rose petal, ginger, Turkish delight. Intensely aromatic with a rich, oily texture. "Gew&uuml;rz" means spice in German.</p>
+                <span class="grape-regions">Alsace, Alto Adige, Pfalz, New Zealand</span>
+              </div>
+
+              <div class="grape-card grape-white">
+                <h3 class="grape-name">Viognier</h3>
+                <p class="grape-aka">Opulent &amp; Floral</p>
+                <p class="grape-desc">Peach, apricot, honeysuckle, orange blossom. Full-bodied and low in acidity. Nearly went extinct before its revival in Condrieu.</p>
+                <span class="grape-regions">Condrieu, Paso Robles, Lodi, Languedoc</span>
+              </div>
+
+              <div class="grape-card grape-white">
+                <h3 class="grape-name">Chenin Blanc</h3>
+                <p class="grape-aka">Endlessly Versatile</p>
+                <p class="grape-desc">Apple, quince, honey, wet wool. Made dry, sparkling, or dessert-sweet. South Africa's most planted white variety. One of the world's most underrated grapes.</p>
+                <span class="grape-regions">Loire Valley (Vouvray), Stellenbosch, Savennieres</span>
+              </div>
+
+              <div class="grape-card grape-white">
+                <h3 class="grape-name">Semillon</h3>
+                <p class="grape-aka">Bordeaux's Golden Secret</p>
+                <p class="grape-desc">Lanolin, beeswax, lemon curd, fig. Develops richly with age. The key grape in Sauternes dessert wines and Hunter Valley dry whites.</p>
+                <span class="grape-regions">Bordeaux (Sauternes), Hunter Valley, Margaret River</span>
+              </div>
+
+              <div class="grape-card grape-white">
+                <h3 class="grape-name">Gr&uuml;ner Veltliner</h3>
+                <p class="grape-aka">Austria's National Grape</p>
+                <p class="grape-desc">White pepper, green lentil, lime zest. Crisp and mineral-driven. Perfect with Wiener Schnitzel — and increasingly popular among sommeliers worldwide.</p>
+                <span class="grape-regions">Wachau, Kremstal, Kamptal, Weinviertel</span>
+              </div>
+
+              <div class="grape-card grape-white">
+                <h3 class="grape-name">Albari&ntilde;o</h3>
+                <p class="grape-aka">Atlantic &amp; Saline</p>
+                <p class="grape-desc">Peach, apricot, saline, citrus zest. Bright acidity with a sea-spray mineral edge. The perfect match for shellfish and ceviche.</p>
+                <span class="grape-regions">R&iacute;as Baixas, Vinho Verde (as Alvarinho), Napa</span>
+              </div>
+
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- ═══════════════════════════════════════════
          SECTION 2: Flavor Wheel
     ════════════════════════════════════════════ -->
     <section class="section" id="wheel-section">
@@ -639,7 +862,7 @@
 
         <div class="pairing-results" id="pairing-results">
           <div class="pairing-placeholder">
-            <div class="placeholder-icon">🥂</div>
+            <div class="placeholder-icon"><svg viewBox="0 0 24 24" width="28" height="28" fill="none" stroke="currentColor" stroke-width="1.2"><path d="M8 22h8M12 15v7M12 15a5 5 0 0 0 5-5c0-2-.5-4-2-8H9c-1.5 4-2 6-2 8a5 5 0 0 0 5 5Z"/></svg></div>
             <h3>Make a Selection</h3>
             <p>Choose a wine style or food to see pairing suggestions with explanations of why they work.</p>
           </div>
@@ -707,7 +930,7 @@
 
         <div class="analyzer-results" id="wine-analyzer-results">
           <div class="analyzer-empty">
-            <div class="analyzer-empty-icon">🍷</div>
+            <div class="analyzer-empty-icon"><svg viewBox="0 0 24 24" width="28" height="28" fill="none" stroke="currentColor" stroke-width="1.2"><path d="M20.84 4.61a5.5 5.5 0 0 0-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 0 0-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 0 0 0-7.78z"/></svg></div>
             <h3>Enter a Wine</h3>
             <p>Type any wine you love — name the bottle, add the producer if you know it, then click Analyze to discover what makes it special.</p>
           </div>
@@ -743,10 +966,10 @@
             <div class="s-section" id="region-panel">
               <div class="s-label">Region</div>
               <div class="region-select-btns" id="region-select-btns">
-                <button class="region-select-btn" data-region="Napa Valley">🏔️ Napa</button>
-                <button class="region-select-btn" data-region="Sonoma County">🌲 Sonoma</button>
-                <button class="region-select-btn" data-region="Healdsburg">🏡 Healdsburg</button>
-                <button class="region-select-btn" data-region="Paso Robles">☀️ Paso</button>
+                <button class="region-select-btn" data-region="Napa Valley">Napa</button>
+                <button class="region-select-btn" data-region="Sonoma County">Sonoma</button>
+                <button class="region-select-btn" data-region="Healdsburg">Healdsburg</button>
+                <button class="region-select-btn" data-region="Paso Robles">Paso Robles</button>
               </div>
             </div>
 
@@ -947,7 +1170,7 @@
             <div class="step2-main">
               <div class="trip-itinerary" id="trip-itinerary"></div>
               <div class="logistics-actions" id="itinerary-actions" style="display:none">
-                <button class="logistics-action-btn" id="open-maps-btn">🗺️ Preview Route in Google Maps</button>
+                <button class="logistics-action-btn" id="open-maps-btn">Preview Route in Google Maps</button>
               </div>
             </div>
             <aside class="step2-recs-sidebar" id="step2-recs-sidebar" style="display:none">
@@ -1072,7 +1295,6 @@
         <div class="caregions-tips-grid">
 
           <div class="caregions-tip-card">
-            <div class="tip-card-icon">🗓️</div>
             <h3>Best Seasons to Visit</h3>
             <div class="season-item">
               <img class="season-img" src="https://images.unsplash.com/photo-1523531294919-4bcd7c65ef8a?w=100&h=100&fit=crop" alt="Spring vineyard with new green buds" loading="lazy" />
@@ -1093,7 +1315,6 @@
           </div>
 
           <div class="caregions-tip-card">
-            <div class="tip-card-icon">🍇</div>
             <h3>Harvest Calendar</h3>
             <p><strong>Late August</strong> — Sparkling wine grapes (Pinot Noir, Chardonnay) harvested first for lower sugar.</p>
             <p><strong>September</strong> — Pinot Noir, Chardonnay, Sauvignon Blanc. Sonoma Coast and Russian River start early.</p>
@@ -1103,7 +1324,6 @@
           </div>
 
           <div class="caregions-tip-card">
-            <div class="tip-card-icon">🚗</div>
             <h3>Getting Around</h3>
             <p><strong>Rent a car</strong> — Essential for Sonoma, Healdsburg, and Paso Robles. Most flexible option. Budget $60–$100/day from SFO. <em>Designate a driver or rotate.</em></p>
             <p><strong>Hire a driver</strong> — Best for groups of 4+. $300–$600/full day. No one has to skip tasting. Search "Napa wine country driver" or "Sonoma limo service."</p>
@@ -1121,8 +1341,7 @@
           </div>
 
           <div class="caregions-tip-card">
-            <div class="tip-card-icon">📱</div>
-            <h3>Where Uber/Lyft Works (and Doesn't)</h3>
+            <h3>Where Rideshare Works (and Doesn't)</h3>
             <p><strong>Works well:</strong> Downtown Napa, Yountville, St. Helena, town of Sonoma. Short hops between tasting rooms.</p>
             <p><strong>Unreliable:</strong> Russian River Valley, Dry Creek Valley, Alexander Valley — too rural. Expect 15–30 min waits or no drivers at all.</p>
             <p><strong>Doesn't work:</strong> Sonoma Coast, Howell Mountain, Spring Mountain, Paso Robles — don't count on it. Cell service is spotty in these areas too.</p>
@@ -1130,7 +1349,6 @@
           </div>
 
           <div class="caregions-tip-card">
-            <div class="tip-card-icon">🏨</div>
             <h3>Where to Stay</h3>
             <p><strong>Napa:</strong> Yountville for walkability and dining. Calistoga for a more relaxed, hot-springs vibe. Downtown Napa for nightlife and Oxbow Market.</p>
             <p><strong>Sonoma:</strong> Healdsburg is the best base — central to Russian River, Dry Creek, and Alexander Valley. The town of Sonoma for a more affordable, quieter option.</p>
@@ -1139,8 +1357,7 @@
           </div>
 
           <div class="caregions-tip-card">
-            <div class="tip-card-icon">💡</div>
-            <h3>Pro Tips</h3>
+            <h3>A Sommelier's Advice</h3>
             <p><strong>3 wineries max per day.</strong> More than that and your palate fatigues. Savor each one.</p>
             <p><strong>Eat before you taste.</strong> A solid breakfast makes the difference between a great day and a short one.</p>
             <p><strong>Use the spit bucket.</strong> Seriously — sommeliers do it, and it lets you taste more without the effects.</p>
@@ -1255,9 +1472,31 @@
       <div class="diary-scroll">
         <div class="diary-body">
 
-          <!-- Add entry form -->
+          <!-- Quick Scan -->
+          <div class="diary-scan-card" id="diary-scan-card">
+            <div class="diary-scan-header">
+              <h2>Quick Scan</h2>
+              <p class="diary-scan-desc">Upload a photo of one or more wine bottles. We'll identify each wine and pull tasting notes, ratings, pricing, and more.</p>
+            </div>
+            <div class="diary-scan-upload">
+              <label class="diary-scan-dropzone" id="diary-scan-dropzone">
+                <input type="file" accept="image/*" multiple id="diary-scan-input" style="display:none" />
+                <svg viewBox="0 0 24 24" width="28" height="28" fill="none" stroke="currentColor" stroke-width="1.2"><rect x="3" y="3" width="18" height="18" rx="2"/><circle cx="8.5" cy="8.5" r="1.5"/><polyline points="21 15 16 10 5 21"/></svg>
+                <span class="diary-scan-dropzone-text">Drop photos here or click to upload</span>
+                <span class="diary-scan-dropzone-hint">Accepts JPG, PNG, HEIC</span>
+              </label>
+              <div class="diary-scan-previews" id="diary-scan-previews"></div>
+            </div>
+            <button class="diary-scan-btn" id="diary-scan-btn" disabled>Scan Bottles</button>
+            <div class="diary-scan-status" id="diary-scan-status"></div>
+
+            <!-- Scan Results -->
+            <div class="diary-scan-results" id="diary-scan-results"></div>
+          </div>
+
+          <!-- Manual entry form -->
           <div class="diary-form-card">
-            <h2>Log a Wine</h2>
+            <h2>Log a Wine Manually</h2>
             <div class="diary-form">
               <div class="diary-form-row">
                 <div class="diary-field diary-field-grow">
@@ -1320,7 +1559,7 @@
             <h2 class="diary-entries-title" id="diary-entries-title" style="display:none">Your Journal</h2>
             <div class="diary-entries" id="diary-entries"></div>
             <div class="diary-empty" id="diary-empty">
-              <div class="diary-empty-icon">📓</div>
+              <div class="diary-empty-icon"><svg viewBox="0 0 24 24" width="28" height="28" fill="none" stroke="currentColor" stroke-width="1.2"><path d="M4 19.5A2.5 2.5 0 0 1 6.5 17H20"/><path d="M6.5 2H20v20H6.5A2.5 2.5 0 0 1 4 19.5v-15A2.5 2.5 0 0 1 6.5 2z"/></svg></div>
               <p>Your wine diary is empty. Log your first wine above to start your journal.</p>
             </div>
           </div>
@@ -1745,7 +1984,7 @@
             </div>
 
             <div class="timeline-entry timeline-left">
-              <div class="timeline-node"><span class="timeline-node-icon">🍷</span></div>
+              <div class="timeline-node"><svg viewBox="0 0 24 24" width="18" height="18" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M8 22h8M12 15v7M12 15a5 5 0 0 0 5-5c0-2-.5-4-2-8H9c-1.5 4-2 6-2 8a5 5 0 0 0 5 5Z"/></svg></div>
               <div class="timeline-card">
                 <div class="timeline-date">Ongoing</div>
                 <h3>Wine Industry &amp; Events</h3>

@@ -185,6 +185,130 @@ document.addEventListener('DOMContentLoaded', () => {
     });
   }
 
+  // ── Quick Scan ──────────────────────────────────────────
+  const scanInput = document.getElementById('diary-scan-input');
+  const scanPreviews = document.getElementById('diary-scan-previews');
+  const scanBtn = document.getElementById('diary-scan-btn');
+  const scanStatus = document.getElementById('diary-scan-status');
+  const scanResults = document.getElementById('diary-scan-results');
+  let scanImages = [];
+
+  if (scanInput) {
+    scanInput.addEventListener('change', (e) => {
+      const files = Array.from(e.target.files);
+      if (!files.length) return;
+
+      files.forEach(file => {
+        const reader = new FileReader();
+        reader.onload = (ev) => {
+          scanImages.push(ev.target.result);
+          const img = document.createElement('img');
+          img.src = ev.target.result;
+          img.className = 'diary-scan-thumb';
+          img.alt = 'Wine bottle photo';
+          scanPreviews.appendChild(img);
+          scanBtn.disabled = false;
+        };
+        reader.readAsDataURL(file);
+      });
+    });
+
+    scanBtn.addEventListener('click', async () => {
+      if (!scanImages.length) return;
+
+      scanBtn.disabled = true;
+      scanBtn.textContent = 'Scanning...';
+      scanStatus.textContent = 'Identifying bottles with AI — this may take a moment...';
+      scanResults.innerHTML = '';
+
+      try {
+        const res = await fetch('/api/scan-bottles', {
+          method: 'POST',
+          headers: { 'Content-Type': 'application/json' },
+          body: JSON.stringify({ images: scanImages }),
+        });
+
+        if (!res.ok) {
+          const err = await res.json();
+          throw new Error(err.error || 'Scan failed');
+        }
+
+        const data = await res.json();
+        const bottles = data.bottles || [];
+
+        if (!bottles.length) {
+          scanStatus.textContent = 'No bottles could be identified. Try a clearer photo.';
+        } else {
+          scanStatus.textContent = `Found ${bottles.length} bottle${bottles.length > 1 ? 's' : ''}.`;
+          renderScanResults(bottles);
+        }
+      } catch (err) {
+        scanStatus.textContent = 'Error: ' + err.message;
+      }
+
+      scanBtn.textContent = 'Scan Bottles';
+      scanBtn.disabled = scanImages.length === 0;
+    });
+
+    // Drag and drop
+    const dropzone = document.getElementById('diary-scan-dropzone');
+    dropzone.addEventListener('dragover', (e) => { e.preventDefault(); dropzone.style.borderColor = 'var(--gold)'; });
+    dropzone.addEventListener('dragleave', () => { dropzone.style.borderColor = ''; });
+    dropzone.addEventListener('drop', (e) => {
+      e.preventDefault();
+      dropzone.style.borderColor = '';
+      scanInput.files = e.dataTransfer.files;
+      scanInput.dispatchEvent(new Event('change'));
+    });
+  }
+
+  function renderScanResults(bottles) {
+    scanResults.innerHTML = bottles.map((b, i) => `
+      <div class="scan-bottle-card">
+        <div class="scan-bottle-name">${b.name || 'Unknown Wine'}</div>
+        <div class="scan-bottle-meta">${[b.producer, b.vintage, b.region, b.grape, b.type].filter(Boolean).join(' · ')}</div>
+        <div class="scan-bottle-grid">
+          ${b.price_range ? `<div class="scan-bottle-field"><span class="scan-bottle-field-label">Price</span><span class="scan-bottle-field-value">${b.price_range}</span></div>` : ''}
+          ${b.rating ? `<div class="scan-bottle-field"><span class="scan-bottle-field-label">Rating</span><span class="scan-bottle-field-value">${b.rating}</span></div>` : ''}
+          ${b.where_to_buy ? `<div class="scan-bottle-field"><span class="scan-bottle-field-label">Where to Buy</span><span class="scan-bottle-field-value">${b.where_to_buy}</span></div>` : ''}
+          ${b.food_pairing ? `<div class="scan-bottle-field"><span class="scan-bottle-field-label">Pairs With</span><span class="scan-bottle-field-value">${b.food_pairing}</span></div>` : ''}
+        </div>
+        ${b.tasting_notes ? `<div class="scan-bottle-notes">${b.tasting_notes}</div>` : ''}
+        ${b.sommelier_note ? `<div class="scan-bottle-somm">${b.sommelier_note}</div>` : ''}
+        <div class="scan-bottle-actions">
+          <button class="scan-add-diary-btn" data-scan-idx="${i}">Add to Diary</button>
+        </div>
+      </div>
+    `).join('');
+
+    // Wire "Add to Diary" buttons
+    scanResults.querySelectorAll('.scan-add-diary-btn').forEach(btn => {
+      btn.addEventListener('click', () => {
+        const idx = parseInt(btn.dataset.scanIdx);
+        const b = bottles[idx];
+        const entry = {
+          id: Date.now() + idx,
+          name: b.name || 'Unknown Wine',
+          producer: b.producer || '',
+          region: b.region || '',
+          date: new Date().toISOString().split('T')[0],
+          rating: 0,
+          occasion: '',
+          notes: b.tasting_notes || '',
+          review: [b.rating, b.price_range, b.sommelier_note].filter(Boolean).join(' · '),
+          photo: scanImages[0] || null,
+        };
+        entries.unshift(entry);
+        saveEntries();
+        renderEntries();
+        btn.textContent = 'Added';
+        btn.disabled = true;
+        btn.style.background = 'var(--gold)';
+        btn.style.color = '#fff';
+      });
+    });
+  }
+
   // Reload when user signs in/out
   window.addEventListener('sommplicity-auth-change', () => loadEntries());
 
