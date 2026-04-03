@@ -1,0 +1,3947 @@
+[
+  {
+    "id": "TS-001",
+    "domain": "tasting_sensory",
+    "difficulty": 150,
+    "level": 1,
+    "format": "multiple_choice",
+    "question": "What does the term 'dry' mean when describing a wine?",
+    "options": [
+      "The wine has no alcohol",
+      "The wine has no residual sugar perceptible on the palate",
+      "The wine causes a drying sensation from tannin",
+      "The wine was aged without oak"
+    ],
+    "correct": 1,
+    "explanation": "In wine terminology, 'dry' indicates that the wine has little to no perceptible residual sugar. This is distinct from the drying sensation caused by tannins, which is described as 'astringent' rather than 'dry.'",
+    "sources": "WSET Level 2 Award in Wines Study Guide; The Wine Bible by Karen MacNeil",
+    "confidence": "established",
+    "tags": [
+      "sweetness",
+      "basic-terminology",
+      "WSET-SAT"
+    ]
+  },
+  {
+    "id": "TS-002",
+    "domain": "tasting_sensory",
+    "difficulty": 200,
+    "level": 1,
+    "format": "multiple_choice",
+    "question": "In wine tasting, what does 'body' refer to?",
+    "options": [
+      "The color intensity of the wine",
+      "The overall weight and texture of the wine in the mouth",
+      "The length of the finish",
+      "The aroma intensity"
+    ],
+    "correct": 1,
+    "explanation": "Body refers to the overall weight and mouthfeel of the wine, influenced primarily by alcohol, sugar, and extract. Wines are typically categorized as light-, medium-, or full-bodied in the WSET Systematic Approach to Tasting.",
+    "sources": "WSET Level 3 Award in Wines Study Guide; Oxford Companion to Wine (4th ed.)",
+    "confidence": "established",
+    "tags": [
+      "body",
+      "mouthfeel",
+      "basic-terminology"
+    ]
+  },
+  {
+    "id": "TS-003",
+    "domain": "tasting_sensory",
+    "difficulty": 250,
+    "level": 1,
+    "format": "odd_one_out",
+    "question": "Which of the following is NOT a standard component assessed on the palate in the WSET Systematic Approach to Tasting?",
+    "options": [
+      "Sweetness",
+      "Acidity",
+      "Terroir",
+      "Tannin"
+    ],
+    "correct": 2,
+    "explanation": "The WSET SAT palate assessment includes sweetness, acidity, tannin, alcohol, body, flavor intensity, and finish. Terroir is a viticultural concept, not a palate component assessed during structured tasting.",
+    "sources": "WSET Level 3 Award in Wines Study Guide; GuildSomm Tasting Grid",
+    "confidence": "established",
+    "tags": [
+      "WSET-SAT",
+      "palate-assessment",
+      "basic-terminology"
+    ]
+  },
+  {
+    "id": "TS-004",
+    "domain": "tasting_sensory",
+    "difficulty": 180,
+    "level": 1,
+    "format": "multiple_choice",
+    "question": "What does 'finish' or 'length' refer to in wine tasting?",
+    "options": [
+      "How long the wine can age in a cellar",
+      "How long the flavors linger on the palate after swallowing",
+      "The final stage of fermentation",
+      "The time between pouring and first sip"
+    ],
+    "correct": 1,
+    "explanation": "Finish (or length) describes how long the flavors and sensations persist on the palate after the wine is swallowed or spat. A long finish is generally considered a mark of quality. The WSET SAT categorizes finish as short, medium(-), medium, medium(+), or long.",
+    "sources": "WSET Level 2 Award in Wines Study Guide; The Wine Bible by Karen MacNeil",
+    "confidence": "established",
+    "tags": [
+      "finish",
+      "length",
+      "quality-assessment"
+    ]
+  },
+  {
+    "id": "TS-005",
+    "domain": "tasting_sensory",
+    "difficulty": 280,
+    "level": 1,
+    "format": "multiple_choice",
+    "question": "Which of the following is a primary aroma in wine?",
+    "options": [
+      "Toast from oak aging",
+      "Mushroom from bottle aging",
+      "Lychee from Gewürztraminer grapes",
+      "Butter from malolactic fermentation"
+    ],
+    "correct": 2,
+    "explanation": "Primary aromas are derived from the grape variety itself. Lychee is a classic varietal aroma of Gewürztraminer caused by terpene compounds (particularly linalool and geraniol). Toast is a secondary aroma from oak, butter from MLF, and mushroom is tertiary from bottle aging.",
+    "sources": "Wine Grapes by Jancis Robinson, Julia Harding & José Vouillamoz; WSET Level 3 Award in Wines Study Guide",
+    "confidence": "established",
+    "tags": [
+      "primary-aromas",
+      "terpenes",
+      "Gewürztraminer"
+    ]
+  },
+  {
+    "id": "TS-006",
+    "domain": "tasting_sensory",
+    "difficulty": 350,
+    "level": 2,
+    "format": "multiple_choice",
+    "question": "Which flavor is most typical of unoaked Chardonnay from a cool climate?",
+    "options": [
+      "Tropical mango and pineapple",
+      "Green apple and citrus",
+      "Vanilla and butterscotch",
+      "Black cherry and plum"
+    ],
+    "correct": 1,
+    "explanation": "Cool-climate unoaked Chardonnay typically displays green apple, citrus (lemon, grapefruit), and sometimes mineral notes. Tropical flavors appear more in warm climates, vanilla/butterscotch come from oak aging, and dark fruit is associated with red varieties.",
+    "sources": "WSET Level 3 Award in Wines Study Guide; The Wine Bible by Karen MacNeil",
+    "confidence": "established",
+    "tags": [
+      "Chardonnay",
+      "cool-climate",
+      "varietal-character"
+    ]
+  },
+  {
+    "id": "TS-007",
+    "domain": "tasting_sensory",
+    "difficulty": 400,
+    "level": 2,
+    "format": "odd_one_out",
+    "question": "Which of these is NOT a secondary aroma/flavor (derived from winemaking)?",
+    "options": [
+      "Brioche from lees aging",
+      "Vanilla from oak maturation",
+      "Blackcurrant from Cabernet Sauvignon grapes",
+      "Butter from malolactic fermentation"
+    ],
+    "correct": 2,
+    "explanation": "Blackcurrant (cassis) is a primary aroma derived from the Cabernet Sauvignon grape itself, linked to the compound methoxypyrazine and thiol precursors. Brioche, vanilla, and butter are all secondary aromas resulting from winemaking processes.",
+    "sources": "WSET Level 3 Award in Wines Study Guide; Wine Science by Jamie Goode",
+    "confidence": "established",
+    "tags": [
+      "secondary-aromas",
+      "primary-aromas",
+      "aroma-categories"
+    ]
+  },
+  {
+    "id": "TS-008",
+    "domain": "tasting_sensory",
+    "difficulty": 450,
+    "level": 2,
+    "format": "multiple_choice",
+    "question": "A pale lemon color in a white wine most likely indicates what?",
+    "options": [
+      "The wine is heavily oaked",
+      "The wine is young and possibly from a cool climate",
+      "The wine has undergone extensive oxidative aging",
+      "The wine is sweet"
+    ],
+    "correct": 1,
+    "explanation": "In the WSET SAT, a pale lemon color in white wine suggests youth and minimal oxidative exposure. Cool-climate whites and those made in stainless steel tend to retain pale hues. Deeper gold or amber tones indicate age, oak, or oxidative winemaking.",
+    "sources": "WSET Level 3 Award in Wines Study Guide; Oxford Companion to Wine (4th ed.)",
+    "confidence": "established",
+    "tags": [
+      "color-assessment",
+      "white-wine",
+      "age-indicators"
+    ]
+  },
+  {
+    "id": "TS-009",
+    "domain": "tasting_sensory",
+    "difficulty": 480,
+    "level": 2,
+    "format": "match_pairs",
+    "question": "Match each aroma compound to its characteristic descriptor.",
+    "pairs": {
+      "left": [
+        "Methoxypyrazines",
+        "Rotundone",
+        "Linalool",
+        "Ethyl acetate"
+      ],
+      "right": [
+        "Bell pepper/herbaceous",
+        "Black pepper",
+        "Floral/rose",
+        "Nail polish remover"
+      ]
+    },
+    "correct": [
+      0,
+      1,
+      2,
+      3
+    ],
+    "explanation": "Methoxypyrazines produce green, herbaceous, bell pepper aromas (common in Sauvignon Blanc and Cabernet Franc). Rotundone is responsible for the peppery character in Syrah/Shiraz. Linalool is a terpene producing floral notes in Muscat and Riesling. Ethyl acetate at high levels smells like nail polish remover and is a volatile acidity indicator.",
+    "sources": "Wine Science by Jamie Goode; Oxford Companion to Wine (4th ed.)",
+    "confidence": "established",
+    "tags": [
+      "aroma-compounds",
+      "chemistry",
+      "varietal-character"
+    ]
+  },
+  {
+    "id": "TS-010",
+    "domain": "tasting_sensory",
+    "difficulty": 380,
+    "level": 2,
+    "format": "multiple_choice",
+    "question": "What sensation does high tannin create in the mouth?",
+    "options": [
+      "A tingling, fizzy feeling",
+      "A drying, astringent, gripping sensation",
+      "A burning warmth at the back of the throat",
+      "A slippery, oily texture"
+    ],
+    "correct": 1,
+    "explanation": "Tannins are polyphenolic compounds that bind with salivary proteins, creating a drying, astringent sensation. This is distinct from the warmth of alcohol or the tingling of carbonation. The WSET SAT assesses tannin level as low, medium(-), medium, medium(+), or high.",
+    "sources": "WSET Level 3 Award in Wines Study Guide; Wine Science by Jamie Goode",
+    "confidence": "established",
+    "tags": [
+      "tannin",
+      "mouthfeel",
+      "astringency"
+    ]
+  },
+  {
+    "id": "TS-011",
+    "domain": "tasting_sensory",
+    "difficulty": 550,
+    "level": 3,
+    "format": "multiple_choice",
+    "question": "In the WSET Systematic Approach to Tasting, which term describes a wine with flavors that are easily identified and pronounced?",
+    "options": [
+      "Light",
+      "Medium(+) intensity",
+      "Pronounced intensity",
+      "Complex"
+    ],
+    "correct": 2,
+    "explanation": "In the WSET SAT, flavor/aroma intensity is rated as light, medium(-), medium, medium(+), or pronounced. 'Pronounced' indicates the aromas and flavors are powerful and easily identified. Complexity refers to the range of different flavors, not their intensity.",
+    "sources": "WSET Level 3 Award in Wines Study Guide; GuildSomm Deductive Tasting Format",
+    "confidence": "established",
+    "tags": [
+      "WSET-SAT",
+      "intensity",
+      "tasting-vocabulary"
+    ]
+  },
+  {
+    "id": "TS-012",
+    "domain": "tasting_sensory",
+    "difficulty": 600,
+    "level": 3,
+    "format": "odd_one_out",
+    "question": "Which of the following is NOT a tertiary aroma associated with bottle aging?",
+    "options": [
+      "Dried fruit",
+      "Mushroom and forest floor",
+      "Crushed stone minerality",
+      "Leather and tobacco"
+    ],
+    "correct": 2,
+    "explanation": "Dried fruit, mushroom/forest floor, and leather/tobacco are all recognized tertiary aromas that develop during bottle maturation. Crushed stone minerality is debated but generally classified as a primary or site-driven characteristic rather than a product of bottle aging.",
+    "sources": "WSET Level 3 Award in Wines Study Guide; Oxford Companion to Wine (4th ed.)",
+    "confidence": "established",
+    "tags": [
+      "tertiary-aromas",
+      "bottle-aging",
+      "aroma-categories"
+    ]
+  },
+  {
+    "id": "TS-013",
+    "domain": "tasting_sensory",
+    "difficulty": 650,
+    "level": 3,
+    "format": "multiple_choice",
+    "question": "What does the term 'volatile acidity' (VA) refer to, and at what point is it considered a fault?",
+    "options": [
+      "CO2 dissolved in wine; a fault above 2 g/L",
+      "Acetic acid and ethyl acetate in wine; a fault when producing vinegar-like or nail polish aromas",
+      "The pH level of wine dropping below 2.8",
+      "Sulfur compounds reacting with oxygen during aging"
+    ],
+    "correct": 1,
+    "explanation": "Volatile acidity refers primarily to acetic acid (vinegar smell) and its ester, ethyl acetate (nail polish remover). Small amounts can add complexity, but at elevated levels (typically above 1.2 g/L for reds, 1.1 g/L for whites by EU regulations), it becomes a recognized wine fault.",
+    "sources": "Wine Science by Jamie Goode; Oxford Companion to Wine (4th ed.)",
+    "confidence": "established",
+    "tags": [
+      "wine-faults",
+      "volatile-acidity",
+      "acetic-acid"
+    ]
+  },
+  {
+    "id": "TS-014",
+    "domain": "tasting_sensory",
+    "difficulty": 580,
+    "level": 3,
+    "format": "match_pairs",
+    "question": "Match each wine fault to its characteristic aroma/indicator.",
+    "pairs": {
+      "left": [
+        "TCA (cork taint)",
+        "Brettanomyces",
+        "Reduction",
+        "Oxidation"
+      ],
+      "right": [
+        "Wet cardboard/musty basement",
+        "Barnyard/band-aid/sweaty saddle",
+        "Struck match/rotten egg",
+        "Bruised apple/sherry-like nuttiness"
+      ]
+    },
+    "correct": [
+      0,
+      1,
+      2,
+      3
+    ],
+    "explanation": "TCA (2,4,6-trichloroanisole) produces wet cardboard and musty aromas. Brettanomyces yeast creates barnyard, band-aid, and sweaty saddle characters. Reduction produces sulfur-related off-odors like struck match or rotten egg. Oxidation leads to browning and flat, bruised apple or sherry-like aromas in still wines.",
+    "sources": "Wine Science by Jamie Goode; WSET Level 3 Award in Wines Study Guide",
+    "confidence": "established",
+    "tags": [
+      "wine-faults",
+      "TCA",
+      "Brettanomyces",
+      "reduction",
+      "oxidation"
+    ]
+  },
+  {
+    "id": "TS-015",
+    "domain": "tasting_sensory",
+    "difficulty": 620,
+    "level": 3,
+    "format": "multiple_choice",
+    "question": "An orange-tinged rim on a red wine most likely indicates what?",
+    "options": [
+      "High residual sugar",
+      "Significant bottle age or oxidative aging",
+      "High acidity levels",
+      "Use of carbonic maceration"
+    ],
+    "correct": 1,
+    "explanation": "As red wines age, anthocyanin pigments polymerize and precipitate, causing the color to shift from purple/ruby toward garnet, brick, and eventually orange-brown at the rim. This color evolution is a key indicator of age in the WSET SAT and CMS deductive grid.",
+    "sources": "WSET Level 3 Award in Wines Study Guide; Oxford Companion to Wine (4th ed.)",
+    "confidence": "established",
+    "tags": [
+      "color-assessment",
+      "red-wine",
+      "age-indicators"
+    ]
+  },
+  {
+    "id": "TS-016",
+    "domain": "tasting_sensory",
+    "difficulty": 700,
+    "level": 4,
+    "format": "multiple_choice",
+    "question": "In the CMS deductive tasting grid, what does assessing 'structural' components on the palate help determine?",
+    "options": [
+      "The vintage of the wine",
+      "The grape variety, climate, and winemaking style",
+      "The specific producer and vineyard",
+      "The retail price of the wine"
+    ],
+    "correct": 1,
+    "explanation": "In the CMS deductive method, analyzing structural components (acidity, tannin, alcohol, body, sweetness) helps narrow the possible grape variety, growing climate, and winemaking approach. High acid with low tannin suggests a cool-climate white variety, while high tannin with full body suggests warm-climate reds or specific tannic varieties.",
+    "sources": "GuildSomm Deductive Tasting Format; How to Taste by Jancis Robinson",
+    "confidence": "established",
+    "tags": [
+      "CMS-grid",
+      "deductive-tasting",
+      "structure"
+    ]
+  },
+  {
+    "id": "TS-017",
+    "domain": "tasting_sensory",
+    "difficulty": 780,
+    "level": 4,
+    "format": "odd_one_out",
+    "question": "Which of these descriptors does NOT belong to the WSET SAT category of secondary aromas?",
+    "options": [
+      "Toast",
+      "Vanilla",
+      "Petrol/kerosene",
+      "Cream/yogurt"
+    ],
+    "correct": 2,
+    "explanation": "Petrol or kerosene is a primary varietal aroma associated with aged Riesling, caused by the compound TDN (1,1,6-trimethyl-1,2-dihydronaphthalene). Toast, vanilla, and cream/yogurt are all secondary aromas derived from winemaking: oak aging (toast, vanilla) and lees contact or malolactic fermentation (cream, yogurt).",
+    "sources": "WSET Level 3 Award in Wines Study Guide; Wine Science by Jamie Goode",
+    "confidence": "established",
+    "tags": [
+      "WSET-SAT",
+      "secondary-aromas",
+      "TDN",
+      "Riesling"
+    ]
+  },
+  {
+    "id": "TS-018",
+    "domain": "tasting_sensory",
+    "difficulty": 850,
+    "level": 4,
+    "format": "multiple_choice",
+    "question": "Which compound is primarily responsible for the 'cat pee' or boxwood descriptor in Sauvignon Blanc?",
+    "options": [
+      "3-mercaptohexanol (3MH)",
+      "4-mercapto-4-methylpentan-2-one (4MMP)",
+      "Isoamyl acetate",
+      "Beta-damascenone"
+    ],
+    "correct": 1,
+    "explanation": "4MMP (4-mercapto-4-methylpentan-2-one) is a volatile thiol responsible for the distinctive boxwood and 'cat pee' descriptors in Sauvignon Blanc. 3MH contributes grapefruit and passion fruit notes. These thiols are released from odorless precursors during fermentation by yeast enzymes.",
+    "sources": "Wine Science by Jamie Goode; Oxford Companion to Wine (4th ed.)",
+    "confidence": "established",
+    "tags": [
+      "thiols",
+      "Sauvignon-Blanc",
+      "aroma-compounds"
+    ]
+  },
+  {
+    "id": "TS-019",
+    "domain": "tasting_sensory",
+    "difficulty": 750,
+    "level": 4,
+    "format": "match_pairs",
+    "question": "Match each wine color observation to its most likely interpretation.",
+    "pairs": {
+      "left": [
+        "Deep purple/violet in a red",
+        "Pale lemon-green in a white",
+        "Deep gold in a white",
+        "Garnet with tawny rim in a red"
+      ],
+      "right": [
+        "Young wine, possibly warm climate or thick-skinned grape",
+        "Young, cool climate, unoaked",
+        "Aged, oaked, or botrytis-affected",
+        "Mature wine with several years of age"
+      ]
+    },
+    "correct": [
+      0,
+      1,
+      2,
+      3
+    ],
+    "explanation": "Deep purple/violet indicates youth and high anthocyanin concentration from warm climates or thick-skinned varieties like Syrah or Malbec. Pale lemon-green suggests a young, cool-climate white. Deep gold in whites indicates age, oak contact, or botrytis. Garnet with a tawny rim indicates significant maturation in a red wine.",
+    "sources": "WSET Level 3 Award in Wines Study Guide; GuildSomm Deductive Tasting Format",
+    "confidence": "established",
+    "tags": [
+      "color-assessment",
+      "age-indicators",
+      "climate-indicators"
+    ]
+  },
+  {
+    "id": "TS-020",
+    "domain": "tasting_sensory",
+    "difficulty": 900,
+    "level": 5,
+    "format": "multiple_choice",
+    "question": "At what threshold concentration is TCA (2,4,6-trichloroanisole) generally detectable by most tasters?",
+    "options": [
+      "Around 50 parts per billion",
+      "Around 2-5 parts per trillion",
+      "Around 100 parts per million",
+      "Around 1 part per billion"
+    ],
+    "correct": 1,
+    "explanation": "TCA is detectable at extraordinarily low concentrations, with most studies placing the sensory threshold at approximately 2-5 parts per trillion (ng/L). This makes it one of the most potent off-flavor compounds known. Even sub-threshold levels can suppress fruit character without producing obvious musty aromas.",
+    "sources": "Wine Science by Jamie Goode; Oxford Companion to Wine (4th ed.)",
+    "confidence": "established",
+    "tags": [
+      "TCA",
+      "cork-taint",
+      "detection-thresholds",
+      "wine-faults"
+    ]
+  },
+  {
+    "id": "TS-021",
+    "domain": "tasting_sensory",
+    "difficulty": 950,
+    "level": 5,
+    "format": "multiple_choice",
+    "question": "Which compound is responsible for the 'reduced' aroma of rotten egg in wine?",
+    "options": [
+      "Mercaptans (thiols)",
+      "Hydrogen sulfide (H₂S)",
+      "Dimethyl sulfide (DMS)",
+      "Sulfur dioxide (SO₂)"
+    ],
+    "correct": 1,
+    "explanation": "Hydrogen sulfide (H₂S) is the primary compound responsible for rotten egg aromas in wine. It forms during fermentation when yeast lacks sufficient nitrogen (YAN) or when elemental sulfur residues from vineyard spraying are present. If not addressed, H₂S can further react to form mercaptans and disulfides, which are harder to remove.",
+    "sources": "Wine Science by Jamie Goode; Oxford Companion to Wine (4th ed.)",
+    "confidence": "established",
+    "tags": [
+      "reduction",
+      "hydrogen-sulfide",
+      "wine-faults",
+      "fermentation"
+    ]
+  },
+  {
+    "id": "TS-022",
+    "domain": "tasting_sensory",
+    "difficulty": 1000,
+    "level": 5,
+    "format": "odd_one_out",
+    "question": "Which of the following is NOT produced by Brettanomyces yeast?",
+    "options": [
+      "4-ethylphenol",
+      "4-ethylguaiacol",
+      "Isovaleric acid",
+      "Isoamyl acetate"
+    ],
+    "correct": 3,
+    "explanation": "Isoamyl acetate (banana aroma) is an ester produced by Saccharomyces cerevisiae during fermentation, not by Brettanomyces. 4-ethylphenol (barnyard, band-aid), 4-ethylguaiacol (smoky, spicy), and isovaleric acid (sweaty, cheesy) are all volatile phenols and acids associated with Brettanomyces contamination.",
+    "sources": "Wine Science by Jamie Goode; Oxford Companion to Wine (4th ed.)",
+    "confidence": "established",
+    "tags": [
+      "Brettanomyces",
+      "wine-faults",
+      "volatile-phenols"
+    ]
+  },
+  {
+    "id": "TS-023",
+    "domain": "tasting_sensory",
+    "difficulty": 1050,
+    "level": 5,
+    "format": "match_pairs",
+    "question": "Match each aroma family to its chemical class.",
+    "pairs": {
+      "left": [
+        "Floral (rose, lychee)",
+        "Fruity (banana, pear drop)",
+        "Herbaceous (bell pepper)",
+        "Spicy (clove from oak)"
+      ],
+      "right": [
+        "Terpenes (linalool, geraniol)",
+        "Esters (isoamyl acetate, ethyl butyrate)",
+        "Methoxypyrazines (IBMP)",
+        "Volatile phenols (eugenol)"
+      ]
+    },
+    "correct": [
+      0,
+      1,
+      2,
+      3
+    ],
+    "explanation": "Floral aromas in wine come primarily from terpenes such as linalool and geraniol. Fruity aromas derive from esters formed during fermentation. Herbaceous, green pepper aromas are caused by methoxypyrazines, particularly IBMP (2-isobutyl-3-methoxypyrazine). Clove-like spice from oak is due to eugenol, a volatile phenol extracted during barrel aging.",
+    "sources": "Wine Science by Jamie Goode; Oxford Companion to Wine (4th ed.)",
+    "confidence": "established",
+    "tags": [
+      "aroma-compounds",
+      "chemistry",
+      "terpenes",
+      "esters",
+      "pyrazines"
+    ]
+  },
+  {
+    "id": "TS-024",
+    "domain": "tasting_sensory",
+    "difficulty": 1100,
+    "level": 6,
+    "format": "multiple_choice",
+    "question": "In advanced blind tasting, if a white wine shows pronounced aromas of petrol, lime, and wet slate with high acidity and low alcohol, which is the most likely identification?",
+    "options": [
+      "Aged Grüner Veltliner from Wachau",
+      "Aged Riesling from Mosel or Alsace",
+      "Young Vermentino from Sardinia",
+      "Aged Chenin Blanc from Vouvray"
+    ],
+    "correct": 1,
+    "explanation": "Petrol (kerosene) is a hallmark of aged Riesling, caused by TDN. Combined with high acidity, low alcohol, citrus notes, and mineral character, this profile strongly points to Riesling from cool-climate regions like Mosel or Alsace. Grüner Veltliner shows white pepper, Vermentino is typically young and Mediterranean, and Chenin shows honey and lanolin with age.",
+    "sources": "Wine Grapes by Robinson, Harding & Vouillamoz; GuildSomm Deductive Tasting Format",
+    "confidence": "established",
+    "tags": [
+      "blind-tasting",
+      "Riesling",
+      "TDN",
+      "deductive-method"
+    ]
+  },
+  {
+    "id": "TS-025",
+    "domain": "tasting_sensory",
+    "difficulty": 1200,
+    "level": 6,
+    "format": "multiple_choice",
+    "question": "Which structural feature most reliably distinguishes Nebbiolo from Sangiovese in a blind tasting of young wines?",
+    "options": [
+      "Nebbiolo typically has higher residual sugar",
+      "Nebbiolo shows high tannin with relatively pale garnet color, while Sangiovese has moderate tannin with ruby color",
+      "Sangiovese always has higher alcohol than Nebbiolo",
+      "Nebbiolo is always full-bodied while Sangiovese is always light-bodied"
+    ],
+    "correct": 1,
+    "explanation": "Nebbiolo is distinctive for combining very high tannin levels with relatively pale, garnet/brick-tinged color even when young, due to its unstable anthocyanins. Sangiovese typically shows ruby color with moderate (not extreme) tannins and higher acidity. Both can range in body and alcohol depending on appellation and style.",
+    "sources": "Wine Grapes by Robinson, Harding & Vouillamoz; GuildSomm Deductive Tasting Format",
+    "confidence": "established",
+    "tags": [
+      "blind-tasting",
+      "Nebbiolo",
+      "Sangiovese",
+      "tannin",
+      "color-assessment"
+    ]
+  },
+  {
+    "id": "TS-026",
+    "domain": "tasting_sensory",
+    "difficulty": 1150,
+    "level": 6,
+    "format": "odd_one_out",
+    "question": "Which descriptor is NOT typically associated with Brettanomyces at low levels that some consider a positive complexity contribution?",
+    "options": [
+      "Smoky bacon",
+      "Leather",
+      "Clove",
+      "Earthy/gamey"
+    ],
+    "correct": 2,
+    "explanation": "Clove aromas come from eugenol, a compound extracted from oak during barrel aging, not from Brettanomyces. At low levels, Brett can produce leather, smoky, earthy, and gamey notes that some tasters find adds complexity, particularly in traditional Old World reds. At higher levels, the barnyard and band-aid aromas become a clear fault.",
+    "sources": "Wine Science by Jamie Goode; Oxford Companion to Wine (4th ed.)",
+    "confidence": "established",
+    "tags": [
+      "Brettanomyces",
+      "oak-compounds",
+      "eugenol",
+      "wine-faults"
+    ]
+  },
+  {
+    "id": "TS-027",
+    "domain": "tasting_sensory",
+    "difficulty": 1250,
+    "level": 6,
+    "format": "match_pairs",
+    "question": "Match each tasting observation in a red wine to the deductive conclusion it supports.",
+    "pairs": {
+      "left": [
+        "Blue/purple hue with opaque core",
+        "High acid, high tannin, medium alcohol",
+        "Eucalyptus, mint, cassis aromas",
+        "Medium(+) tannin, dried cherry, earthy spice"
+      ],
+      "right": [
+        "Warm climate, thick-skinned grape, very young",
+        "Cool to moderate climate, structured variety",
+        "Cabernet Sauvignon, warm climate (e.g., Coonawarra, Napa)",
+        "Sangiovese, Tuscan origin"
+      ]
+    },
+    "correct": [
+      0,
+      1,
+      2,
+      3
+    ],
+    "explanation": "Blue/purple opacity indicates youth and warm-climate concentration. High acid with high tannin and moderate alcohol points to a structured, cooler-climate variety. Eucalyptus and cassis with intensity suggests warm-climate Cabernet Sauvignon. Medium(+) tannin with dried cherry and earthy spice is a classic Sangiovese/Tuscan profile.",
+    "sources": "GuildSomm Deductive Tasting Format; WSET Level 3 Award in Wines Study Guide",
+    "confidence": "established",
+    "tags": [
+      "deductive-tasting",
+      "blind-tasting",
+      "structural-analysis"
+    ]
+  },
+  {
+    "id": "TS-028",
+    "domain": "tasting_sensory",
+    "difficulty": 1300,
+    "level": 7,
+    "format": "multiple_choice",
+    "question": "In the CMS deductive tasting methodology, after assessing sight, nose, and palate, what is the recommended order for the 'initial conclusion'?",
+    "options": [
+      "Vintage, region, grape, quality",
+      "Grape variety, possible Old/New World, possible climate, possible age",
+      "Producer, appellation, vintage, price",
+      "Climate, soil type, elevation, winemaker"
+    ],
+    "correct": 1,
+    "explanation": "The CMS deductive method moves from the general to the specific. The initial conclusion starts with the most likely grape variety, then narrows to Old World vs. New World, climate (cool/moderate/warm), and possible age range. Only after establishing these parameters does the taster move to the final conclusion of specific region, appellation, and vintage.",
+    "sources": "GuildSomm Deductive Tasting Format; How to Taste by Jancis Robinson",
+    "confidence": "established",
+    "tags": [
+      "CMS-grid",
+      "deductive-method",
+      "blind-tasting"
+    ]
+  },
+  {
+    "id": "TS-029",
+    "domain": "tasting_sensory",
+    "difficulty": 1400,
+    "level": 7,
+    "format": "multiple_choice",
+    "question": "What is the primary sensory mechanism by which tannins cause astringency?",
+    "options": [
+      "Tannins stimulate bitter taste receptors on the tongue",
+      "Tannins bind to and precipitate proline-rich salivary proteins, reducing lubrication",
+      "Tannins increase the pH of saliva, causing a dry sensation",
+      "Tannins trigger trigeminal nerve pain receptors"
+    ],
+    "correct": 1,
+    "explanation": "Astringency from tannins is primarily a tactile sensation, not a taste. Condensed tannins (proanthocyanidins) bind to proline-rich proteins in saliva, causing them to aggregate and precipitate. This reduces the lubricating effect of saliva, creating the characteristic drying, gripping mouthfeel. The sensation is detected by mechanoreceptors, not taste buds.",
+    "sources": "Wine Science by Jamie Goode; Oxford Companion to Wine (4th ed.)",
+    "confidence": "established",
+    "tags": [
+      "tannin",
+      "astringency",
+      "mouthfeel",
+      "sensory-science"
+    ]
+  },
+  {
+    "id": "TS-030",
+    "domain": "tasting_sensory",
+    "difficulty": 1350,
+    "level": 7,
+    "format": "odd_one_out",
+    "question": "In advanced blind tasting of Pinot Noir, which aroma is LEAST likely to appear as a primary varietal marker?",
+    "options": [
+      "Red cherry",
+      "Violet and rose petal",
+      "Cassis and blackcurrant",
+      "Cranberry and raspberry"
+    ],
+    "correct": 2,
+    "explanation": "Cassis and blackcurrant are primary varietal markers of Cabernet Sauvignon, not Pinot Noir. Pinot Noir's varietal aromatics center on red fruits (cherry, raspberry, cranberry, strawberry) and floral notes (rose petal, violet). While some warm-climate Pinot Noir may show darker fruit, cassis/blackcurrant specifically signals Cabernet family grapes.",
+    "sources": "Wine Grapes by Robinson, Harding & Vouillamoz; GuildSomm Deductive Tasting Format",
+    "confidence": "established",
+    "tags": [
+      "Pinot-Noir",
+      "varietal-markers",
+      "blind-tasting"
+    ]
+  },
+  {
+    "id": "TS-031",
+    "domain": "tasting_sensory",
+    "difficulty": 1450,
+    "level": 7,
+    "format": "match_pairs",
+    "question": "Match each aging-derived compound to the aroma it contributes in mature wines.",
+    "pairs": {
+      "left": [
+        "TDN",
+        "Sotolon",
+        "Diacetyl",
+        "Dimethyl sulfide (DMS)"
+      ],
+      "right": [
+        "Petrol/kerosene (aged Riesling)",
+        "Curry/fenugreek (oxidized wines, Vin Jaune)",
+        "Butter (MLF wines)",
+        "Truffle/canned corn (aged red Bordeaux)"
+      ]
+    },
+    "correct": [
+      0,
+      1,
+      2,
+      3
+    ],
+    "explanation": "TDN (trimethyl-dihydronaphthalene) gives aged Riesling its petrol note. Sotolon produces curry and fenugreek aromas, especially in oxidative wines like Vin Jaune and aged Madeira. Diacetyl is the buttery compound from malolactic fermentation. DMS (dimethyl sulfide) at low levels contributes truffle and canned corn notes in aged Bordeaux.",
+    "sources": "Wine Science by Jamie Goode; Oxford Companion to Wine (4th ed.)",
+    "confidence": "established",
+    "tags": [
+      "aging-compounds",
+      "TDN",
+      "sotolon",
+      "DMS",
+      "diacetyl"
+    ]
+  },
+  {
+    "id": "TS-032",
+    "domain": "tasting_sensory",
+    "difficulty": 1550,
+    "level": 8,
+    "format": "multiple_choice",
+    "question": "In sensory science, what is 'cross-modal interaction' as it applies to wine tasting?",
+    "options": [
+      "The effect of wine glass shape on aroma perception",
+      "The phenomenon where one sensory modality (e.g., color) influences perception in another (e.g., aroma identification)",
+      "The interaction between different tannin types in the mouth",
+      "The way temperature changes flavor compounds during swirling"
+    ],
+    "correct": 1,
+    "explanation": "Cross-modal interaction in wine tasting occurs when information from one sense influences perception in another. The classic example is the study by Morrot et al. (2001) where adding odorless red dye to white wine caused expert tasters to use red wine descriptors. Color, texture, sound, and even label information can all modulate flavor and aroma perception.",
+    "sources": "Wine Science by Jamie Goode; Neuroenology: How the Brain Creates the Taste of Wine by Gordon Shepherd",
+    "confidence": "consensus",
+    "tags": [
+      "sensory-science",
+      "cross-modal",
+      "perception",
+      "advanced-tasting"
+    ]
+  },
+  {
+    "id": "TS-033",
+    "domain": "tasting_sensory",
+    "difficulty": 1600,
+    "level": 8,
+    "format": "multiple_choice",
+    "question": "What is the chemical basis for the 'minerality' perception that some tasters describe in certain wines?",
+    "options": [
+      "Direct taste of dissolved minerals from the soil absorbed through vine roots",
+      "A complex interaction of low pH, sulfur compounds, succinic acid, and absence of fruity esters, rather than actual dissolved minerals",
+      "The taste of flint and chalk leaching from terroir into the wine",
+      "High concentrations of iron and manganese ions in the wine"
+    ],
+    "correct": 1,
+    "explanation": "Research has shown that minerals from soil are present in wine at concentrations far below their taste thresholds. The perception of 'minerality' is more likely a complex sensory construct involving low pH (high acidity), certain sulfur-containing compounds (like benzenemethanethiol), succinic acid, reduced fruitiness, and textural elements rather than literal mineral content.",
+    "sources": "Wine Science by Jamie Goode; Oxford Companion to Wine (4th ed.)",
+    "confidence": "consensus",
+    "tags": [
+      "minerality",
+      "sensory-science",
+      "chemistry",
+      "perception"
+    ]
+  },
+  {
+    "id": "TS-034",
+    "domain": "tasting_sensory",
+    "difficulty": 1680,
+    "level": 8,
+    "format": "odd_one_out",
+    "question": "Which compound does NOT contribute to the 'reductive' spectrum of aromas in wine?",
+    "options": [
+      "Hydrogen sulfide (H₂S)",
+      "Methanethiol",
+      "Dimethyl disulfide",
+      "Geosmin"
+    ],
+    "correct": 3,
+    "explanation": "Geosmin is a compound produced by soil microorganisms (Streptomyces bacteria) that gives an earthy, beetroot-like aroma; it is unrelated to reductive sulfur chemistry. H₂S (rotten egg), methanethiol (cooked cabbage), and dimethyl disulfide (onion, garlic) are all part of the reductive spectrum, forming sequentially as reduction worsens.",
+    "sources": "Wine Science by Jamie Goode; Oxford Companion to Wine (4th ed.)",
+    "confidence": "consensus",
+    "tags": [
+      "reduction",
+      "sulfur-compounds",
+      "geosmin",
+      "wine-faults"
+    ]
+  },
+  {
+    "id": "TS-035",
+    "domain": "tasting_sensory",
+    "difficulty": 1500,
+    "level": 8,
+    "format": "match_pairs",
+    "question": "Match each sensory perception threshold concept to its definition.",
+    "pairs": {
+      "left": [
+        "Detection threshold",
+        "Recognition threshold",
+        "Difference threshold",
+        "Suppression effect"
+      ],
+      "right": [
+        "Lowest concentration at which a stimulus is perceived as different from water",
+        "Lowest concentration at which the specific nature of a stimulus can be identified",
+        "Smallest change in stimulus intensity that can be detected (JND)",
+        "One stimulus reducing the perceived intensity of another (e.g., sugar masking acidity)"
+      ]
+    },
+    "correct": [
+      0,
+      1,
+      2,
+      3
+    ],
+    "explanation": "The detection threshold is the minimum concentration that can be perceived at all. The recognition threshold is higher—the point at which you can identify what you are tasting. The difference threshold (just noticeable difference or JND) measures sensitivity to changes. Suppression occurs when one component reduces perception of another, such as sugar reducing perceived acidity.",
+    "sources": "Wine Science by Jamie Goode; Sensory Evaluation of Food: Principles and Practices by Lawless & Heymann",
+    "confidence": "consensus",
+    "tags": [
+      "sensory-science",
+      "thresholds",
+      "perception",
+      "psychophysics"
+    ]
+  },
+  {
+    "id": "TS-036",
+    "domain": "tasting_sensory",
+    "difficulty": 1750,
+    "level": 9,
+    "format": "multiple_choice",
+    "question": "In a Master Sommelier exam blind tasting context, which combination of structural cues would most strongly suggest a Grand Cru Burgundy (Pinot Noir) versus a high-quality Willamette Valley Pinot Noir?",
+    "options": [
+      "The Burgundy will always have higher alcohol and lower acidity",
+      "The Burgundy is more likely to show earth/iron/sous-bois complexity with a savory, high-acid framework, while Willamette often has brighter red fruit with softer acid and more overt spice",
+      "Willamette always has more tannin and deeper color",
+      "Grand Cru Burgundy is exclusively full-bodied while Oregon is light-bodied"
+    ],
+    "correct": 1,
+    "explanation": "Grand Cru Burgundy typically shows an earthy, iron-inflected, savory profile with sous-bois (forest floor) notes, firm acidity, and restrained fruit expression reflecting old vines and calcareous soils. Willamette Valley Pinot Noir tends toward brighter, more overt red fruit, softer acidity (slightly warmer growing conditions), and sometimes more baking spice from oak. Neither generalization is absolute, but this framework is commonly used at the MS exam level.",
+    "sources": "GuildSomm Advanced Deductive Tasting Guide; Wine Grapes by Robinson, Harding & Vouillamoz",
+    "confidence": "consensus",
+    "tags": [
+      "MS-exam",
+      "Pinot-Noir",
+      "Burgundy",
+      "Willamette-Valley",
+      "blind-tasting"
+    ]
+  },
+  {
+    "id": "TS-037",
+    "domain": "tasting_sensory",
+    "difficulty": 1800,
+    "level": 9,
+    "format": "multiple_choice",
+    "question": "What role does retronasal olfaction play in wine tasting, and how does it differ from orthonasal olfaction?",
+    "options": [
+      "Retronasal is smelling through the nose before sipping; orthonasal is the finish sensation",
+      "Both terms refer to the same process of sniffing the wine in the glass",
+      "Retronasal olfaction occurs when volatile compounds travel from the mouth to the olfactory epithelium via the nasopharynx during tasting, while orthonasal is direct sniffing through the nostrils",
+      "Retronasal refers to memory-based aroma recall after tasting"
+    ],
+    "correct": 2,
+    "explanation": "Retronasal olfaction occurs when wine is warmed in the mouth and volatile aroma compounds travel upward through the nasopharynx to reach the olfactory epithelium from behind. This is why wine 'tastes' different from how it 'smells.' Orthonasal olfaction is the standard route of sniffing through the nostrils. Research by Gordon Shepherd has shown the brain processes these two pathways differently, affecting overall flavor perception.",
+    "sources": "Neuroenology by Gordon Shepherd; Wine Science by Jamie Goode",
+    "confidence": "consensus",
+    "tags": [
+      "retronasal",
+      "orthonasal",
+      "olfaction",
+      "sensory-science"
+    ]
+  },
+  {
+    "id": "TS-038",
+    "domain": "tasting_sensory",
+    "difficulty": 1850,
+    "level": 9,
+    "format": "odd_one_out",
+    "question": "At the MS exam tasting level, which of these is NOT a recognized 'signpost' for identifying Syrah in a blind tasting?",
+    "options": [
+      "White and black pepper (rotundone)",
+      "Violet floral note",
+      "Bacon fat/charcuterie",
+      "Pronounced pyrazine-driven green bell pepper"
+    ],
+    "correct": 3,
+    "explanation": "Green bell pepper from pyrazines is a hallmark of Cabernet Sauvignon, Cabernet Franc, and Sauvignon Blanc—not Syrah. Syrah's key blind tasting signposts include black and white pepper (from rotundone), floral violet notes, dark fruit, bacon fat/charcuterie (particularly Northern Rhône), and often a savory, meaty quality. Pyrazine-driven aromas in a red wine would redirect a taster away from Syrah toward the Cabernet family.",
+    "sources": "GuildSomm Advanced Deductive Tasting Guide; Wine Grapes by Robinson, Harding & Vouillamoz",
+    "confidence": "consensus",
+    "tags": [
+      "MS-exam",
+      "Syrah",
+      "blind-tasting",
+      "rotundone",
+      "pyrazines"
+    ]
+  },
+  {
+    "id": "TS-039",
+    "domain": "tasting_sensory",
+    "difficulty": 1900,
+    "level": 10,
+    "format": "multiple_choice",
+    "question": "At Master Sommelier exam level, which analytical approach best distinguishes between a mature (15+ year) left-bank Bordeaux and a mature Napa Valley Cabernet Sauvignon?",
+    "options": [
+      "Only color can distinguish them reliably",
+      "The Bordeaux will typically retain higher acidity, show more graphite/pencil lead, cedar, and earth with a leaner structure; Napa will show more generosity, cassis fruit persistence, sweet vanilla/chocolate oak, and a rounder texture even with age",
+      "The Napa wine will always have lower alcohol",
+      "They cannot be reliably distinguished blind by any method"
+    ],
+    "correct": 1,
+    "explanation": "At the MS exam level, mature left-bank Bordeaux retains its hallmark structure: firm acidity, graphite/pencil lead minerality, cedar, tobacco, and an elegant, sometimes austere framework from the cooler maritime climate and Cabernet-Merlot blends. Mature Napa Cabernet tends to preserve more generous cassis fruit, show sweeter, more prominent oak influence (chocolate, vanilla from higher new oak percentage), and present a rounder, more voluptuous texture from warmer growing conditions and typically higher alcohol.",
+    "sources": "GuildSomm MS Exam Preparation Materials; The Wine Bible by Karen MacNeil",
+    "confidence": "consensus",
+    "tags": [
+      "MS-exam",
+      "Bordeaux",
+      "Napa-Valley",
+      "Cabernet-Sauvignon",
+      "blind-tasting"
+    ]
+  },
+  {
+    "id": "TS-040",
+    "domain": "tasting_sensory",
+    "difficulty": 2000,
+    "level": 10,
+    "format": "multiple_choice",
+    "question": "In the context of wine perception science, what is 'perceptual constancy' and why does it matter for expert blind tasters?",
+    "options": [
+      "The ability to taste the same wine consistently across different sessions",
+      "A cognitive phenomenon where the brain adjusts sensory input based on expectations, context, and experience, potentially causing experts to 'find' expected characteristics that may not objectively be present",
+      "The principle that wine flavors remain constant regardless of serving temperature",
+      "The fact that all tasters perceive the same compounds identically"
+    ],
+    "correct": 1,
+    "explanation": "Perceptual constancy is a cognitive phenomenon where the brain's top-down processing adjusts sensory perception based on prior experience, expectation, and context. For expert tasters, this means that knowledge of a wine's identity can unconsciously alter what they perceive—a form of confirmation bias. Research by Morrot, Brochet, and Dubourdieu demonstrated this when wine experts described a white wine dyed red using red-wine vocabulary. This is why blind tasting protocols and calibration exercises are critical at the MS exam level.",
+    "sources": "Wine Science by Jamie Goode; Neuroenology by Gordon Shepherd",
+    "confidence": "consensus",
+    "tags": [
+      "MS-exam",
+      "sensory-science",
+      "perception",
+      "cognitive-bias"
+    ]
+  },
+  {
+    "id": "TS-041",
+    "domain": "tasting_sensory",
+    "difficulty": 2100,
+    "level": 10,
+    "format": "odd_one_out",
+    "question": "At the MS exam level, which of these is NOT a recognized structural indicator of high-altitude viticulture when assessing a wine blind?",
+    "options": [
+      "Intensely saturated color (high anthocyanins from UV exposure)",
+      "Marked acidity retention (cool nights preserve acid)",
+      "Pronounced green/herbaceous pyrazine character",
+      "Concentration with fine-grained tannins"
+    ],
+    "correct": 2,
+    "explanation": "Pronounced green/pyrazine character is a sign of underripeness or cool-climate conditions, not typical high-altitude wine. High-altitude viticulture (e.g., Mendoza at 1000m+, Etna) is characterized by intense UV radiation that increases anthocyanin production (deep color), large diurnal temperature swings that preserve acidity while allowing phenolic ripeness, and concentrated flavors with fine-grained tannins. The UV stress and warm daytime temperatures typically achieve full phenolic ripeness, eliminating green character.",
+    "sources": "Oxford Companion to Wine (4th ed.); Wine Science by Jamie Goode",
+    "confidence": "consensus",
+    "tags": [
+      "MS-exam",
+      "altitude",
+      "viticulture",
+      "blind-tasting"
+    ]
+  },
+  {
+    "id": "TS-042",
+    "domain": "tasting_sensory",
+    "difficulty": 2200,
+    "level": 10,
+    "format": "match_pairs",
+    "question": "Match each advanced sensory concept to its practical application in Master Sommelier-level blind tasting.",
+    "pairs": {
+      "left": [
+        "Phenolic ripeness vs. sugar ripeness",
+        "Umami perception in wine",
+        "Salivary flow rate response",
+        "Aromatic precursor hydrolysis"
+      ],
+      "right": [
+        "Assessing whether tannins are green/harsh (sugar ripe but phenolically unripe) vs. silky/resolved",
+        "Detecting glutamate-related savory quality in aged wines from amino acid development",
+        "Using the body's astringency response to gauge tannin quantity and quality",
+        "Understanding how bound terpenes release over time, explaining aged Riesling petrol development"
+      ]
+    },
+    "correct": [
+      0,
+      1,
+      2,
+      3
+    ],
+    "explanation": "Phenolic vs. sugar ripeness is critical in evaluating tannin quality—wines can reach high sugar (alcohol) without achieving phenolic ripeness, leading to harsh tannins. Umami in wine comes from amino acids (glutamic acid) that develop during aging and lees contact. Salivary flow rate changes in response to tannin binding provide tactile data about tannin level and quality. Aromatic precursor hydrolysis explains how glycosidically bound terpenes release over time, producing TDN in aged Riesling.",
+    "sources": "Wine Science by Jamie Goode; Oxford Companion to Wine (4th ed.)",
+    "confidence": "consensus",
+    "tags": [
+      "MS-exam",
+      "phenolic-ripeness",
+      "umami",
+      "tannin-quality",
+      "precursors"
+    ]
+  },
+  {
+    "id": "TS-043",
+    "domain": "tasting_sensory",
+    "difficulty": 130,
+    "level": 1,
+    "format": "multiple_choice",
+    "question": "What is the term for the smell of a wine?",
+    "options": [
+      "Palate",
+      "Aroma or nose",
+      "Body",
+      "Legs"
+    ],
+    "correct": 1,
+    "explanation": "The smell of wine is referred to as its 'aroma' or 'nose.' In the WSET SAT, this is assessed systematically for intensity, development, and specific aroma characteristics. 'Bouquet' is sometimes used specifically for aged wines.",
+    "sources": "WSET Level 2 Award in Wines Study Guide; The Wine Bible by Karen MacNeil",
+    "confidence": "established",
+    "tags": [
+      "basic-terminology",
+      "nose",
+      "aroma"
+    ]
+  },
+  {
+    "id": "TS-044",
+    "domain": "tasting_sensory",
+    "difficulty": 220,
+    "level": 1,
+    "format": "odd_one_out",
+    "question": "Which of the following is NOT one of the basic tastes perceivable on the palate?",
+    "options": [
+      "Sweet",
+      "Sour",
+      "Aroma",
+      "Bitter"
+    ],
+    "correct": 2,
+    "explanation": "The basic tastes are sweet, sour (acid), salty, bitter, and umami. Aroma is perceived through the olfactory system (nose), not through taste buds on the tongue. In wine tasting, it is essential to distinguish between palate-based tastes and nose-based aromas.",
+    "sources": "WSET Level 2 Award in Wines Study Guide; Wine Science by Jamie Goode",
+    "confidence": "established",
+    "tags": [
+      "basic-terminology",
+      "taste",
+      "sensory-science"
+    ]
+  },
+  {
+    "id": "TS-045",
+    "domain": "tasting_sensory",
+    "difficulty": 320,
+    "level": 2,
+    "format": "multiple_choice",
+    "question": "Which aroma is most commonly associated with Sauvignon Blanc?",
+    "options": [
+      "Lychee and rose",
+      "Gooseberry and cut grass",
+      "Apricot and honey",
+      "Apple and pear"
+    ],
+    "correct": 1,
+    "explanation": "Gooseberry and cut grass are classic primary varietal aromas of Sauvignon Blanc, derived from thiol compounds (3MH) and methoxypyrazines. Lychee/rose is Gewürztraminer, apricot/honey suggests Viognier or botrytis, and apple/pear is more typical of unoaked Chardonnay or Pinot Grigio.",
+    "sources": "Wine Grapes by Robinson, Harding & Vouillamoz; WSET Level 2 Award in Wines Study Guide",
+    "confidence": "established",
+    "tags": [
+      "Sauvignon-Blanc",
+      "varietal-aromas",
+      "thiols"
+    ]
+  },
+  {
+    "id": "TS-046",
+    "domain": "tasting_sensory",
+    "difficulty": 420,
+    "level": 2,
+    "format": "match_pairs",
+    "question": "Match each grape variety to its most recognized primary aroma descriptor.",
+    "pairs": {
+      "left": [
+        "Muscat",
+        "Cabernet Sauvignon",
+        "Pinot Noir",
+        "Viognier"
+      ],
+      "right": [
+        "Grape/floral (terpenes)",
+        "Blackcurrant/cassis",
+        "Red cherry/strawberry",
+        "Apricot/peach"
+      ]
+    },
+    "correct": [
+      0,
+      1,
+      2,
+      3
+    ],
+    "explanation": "Muscat is known for its grapey, floral aromas from high terpene content. Cabernet Sauvignon is defined by blackcurrant/cassis. Pinot Noir classically shows red cherry and strawberry. Viognier is recognized for stone fruit aromas, especially apricot and peach.",
+    "sources": "Wine Grapes by Robinson, Harding & Vouillamoz; WSET Level 2 Award in Wines Study Guide",
+    "confidence": "established",
+    "tags": [
+      "varietal-aromas",
+      "grape-varieties",
+      "primary-aromas"
+    ]
+  },
+  {
+    "id": "TS-047",
+    "domain": "tasting_sensory",
+    "difficulty": 530,
+    "level": 3,
+    "format": "multiple_choice",
+    "question": "What does a 'green tinge' on the rim of a white wine typically indicate?",
+    "options": [
+      "The wine is faulty",
+      "The wine is very young",
+      "The wine has been aged in green glass",
+      "The wine has high residual sugar"
+    ],
+    "correct": 1,
+    "explanation": "A green tinge at the rim of a white wine is an indicator of extreme youth. As white wines age, they progress from green-tinged lemon to deeper gold and eventually amber. This color evolution is assessed in both the WSET SAT and CMS deductive tasting grid as part of the visual assessment.",
+    "sources": "WSET Level 3 Award in Wines Study Guide; Oxford Companion to Wine (4th ed.)",
+    "confidence": "established",
+    "tags": [
+      "color-assessment",
+      "white-wine",
+      "age-indicators"
+    ]
+  },
+  {
+    "id": "TS-048",
+    "domain": "tasting_sensory",
+    "difficulty": 680,
+    "level": 3,
+    "format": "multiple_choice",
+    "question": "What does 'development' refer to in the WSET SAT nose assessment?",
+    "options": [
+      "How quickly the wine's aroma dissipates in the glass",
+      "Whether the aromas are youthful/primary, developing (some secondary/tertiary), or fully developed/evolved",
+      "The degree to which a wine has been oaked",
+      "The intensity of the aroma on first pour"
+    ],
+    "correct": 1,
+    "explanation": "In the WSET SAT, 'development' on the nose assesses the wine's aromatic maturity: youthful (dominated by primary fruit aromas), developing (beginning to show secondary and/or tertiary characteristics), or fully developed/evolved (dominated by tertiary aromas with diminished primary fruit).",
+    "sources": "WSET Level 3 Award in Wines Study Guide; GuildSomm Deductive Tasting Format",
+    "confidence": "established",
+    "tags": [
+      "WSET-SAT",
+      "nose-assessment",
+      "development"
+    ]
+  },
+  {
+    "id": "TS-049",
+    "domain": "tasting_sensory",
+    "difficulty": 810,
+    "level": 4,
+    "format": "odd_one_out",
+    "question": "Which of these is NOT a recognized component of the WSET SAT palate assessment for red wines?",
+    "options": [
+      "Tannin level and nature (ripe vs. unripe, fine vs. coarse)",
+      "Acidity level",
+      "Phenolic ripeness index",
+      "Alcohol level"
+    ],
+    "correct": 2,
+    "explanation": "While phenolic ripeness is an important viticultural and winemaking concept, the WSET SAT does not include a specific 'phenolic ripeness index' as a palate assessment category. The SAT assesses sweetness, acidity, tannin (level and nature), alcohol, body, flavor intensity, flavor characteristics, and finish.",
+    "sources": "WSET Level 3 Award in Wines Study Guide; WSET Level 4 Diploma Study Guide",
+    "confidence": "established",
+    "tags": [
+      "WSET-SAT",
+      "palate-assessment",
+      "structure"
+    ]
+  },
+  {
+    "id": "TS-050",
+    "domain": "tasting_sensory",
+    "difficulty": 880,
+    "level": 4,
+    "format": "multiple_choice",
+    "question": "What does the term 'closed' mean when describing a wine's aromatic profile?",
+    "options": [
+      "The wine is corked and faulty",
+      "The wine is showing muted or restrained aromas, often indicating it is in a phase between youth and maturity",
+      "The wine has been sealed with a screw cap",
+      "The wine has no detectable aroma at all"
+    ],
+    "correct": 1,
+    "explanation": "A 'closed' wine has muted, restrained aromas that are difficult to detect or characterize. This often occurs in young wines of high quality that have shut down their primary fruit but have not yet developed secondary and tertiary complexity. Decanting or aging may help the wine open up.",
+    "sources": "Oxford Companion to Wine (4th ed.); How to Taste by Jancis Robinson",
+    "confidence": "established",
+    "tags": [
+      "tasting-vocabulary",
+      "development",
+      "aroma-assessment"
+    ]
+  },
+  {
+    "id": "TS-051",
+    "domain": "tasting_sensory",
+    "difficulty": 980,
+    "level": 5,
+    "format": "match_pairs",
+    "question": "Match each wine fault to the compound responsible.",
+    "pairs": {
+      "left": [
+        "Cork taint",
+        "Lightstrike",
+        "Mouse taint",
+        "Geranium taint"
+      ],
+      "right": [
+        "2,4,6-trichloroanisole (TCA)",
+        "Riboflavin-derived sulfur compounds",
+        "2-acetyltetrahydropyridine (ACTP)",
+        "2-ethoxyhexa-3,5-diene (from sorbate + LAB)"
+      ]
+    },
+    "correct": [
+      0,
+      1,
+      2,
+      3
+    ],
+    "explanation": "TCA causes musty, wet cardboard aromas in cork-tainted wine. Lightstrike in wine (especially Champagne in clear glass) involves riboflavin reacting with sulfur-containing amino acids to produce unpleasant sulfur compounds. Mouse taint (ACTP and related compounds) is associated with certain lactic acid bacteria and Brettanomyces, producing a persistent mousy aftertaste. Geranium taint occurs when sorbic acid is metabolized by lactic acid bacteria into 2-ethoxyhexa-3,5-diene.",
+    "sources": "Wine Science by Jamie Goode; Oxford Companion to Wine (4th ed.)",
+    "confidence": "established",
+    "tags": [
+      "wine-faults",
+      "TCA",
+      "lightstrike",
+      "mouse-taint",
+      "chemistry"
+    ]
+  },
+  {
+    "id": "TS-052",
+    "domain": "tasting_sensory",
+    "difficulty": 1080,
+    "level": 5,
+    "format": "multiple_choice",
+    "question": "What is the key difference between 'volatile acidity' and 'fixed acidity' in wine?",
+    "options": [
+      "Volatile acidity refers to acids that can be steam-distilled (primarily acetic acid); fixed acidity refers to non-volatile acids (tartaric, malic, citric)",
+      "Volatile acidity is the total acidity; fixed acidity is the pH",
+      "Fixed acidity comes from grapes; volatile acidity only comes from oak",
+      "There is no meaningful difference; they are interchangeable terms"
+    ],
+    "correct": 0,
+    "explanation": "Volatile acidity (VA) consists of acids that can be separated by steam distillation—primarily acetic acid and its esters. Fixed acidity includes non-volatile acids like tartaric, malic, citric, and succinic acids that come from the grape or fermentation. Total acidity equals fixed plus volatile acidity. High VA (above ~0.7 g/L acetic acid) can be perceived as a vinegary fault.",
+    "sources": "Wine Science by Jamie Goode; Oxford Companion to Wine (4th ed.)",
+    "confidence": "established",
+    "tags": [
+      "volatile-acidity",
+      "fixed-acidity",
+      "chemistry",
+      "wine-faults"
+    ]
+  },
+  {
+    "id": "TS-053",
+    "domain": "tasting_sensory",
+    "difficulty": 1180,
+    "level": 6,
+    "format": "multiple_choice",
+    "question": "When blind tasting a white wine that shows pronounced aromas of honey, dried apricot, and botrytis-like complexity with very high residual sugar but balanced by searing acidity, which of these is the most likely identification?",
+    "options": [
+      "Late harvest Muscat from Rutherglen",
+      "Sauternes or Tokaji Aszú",
+      "German Spätlese Riesling",
+      "Ice wine from Niagara Peninsula"
+    ],
+    "correct": 1,
+    "explanation": "The combination of honey, dried apricot, and botrytis complexity with very high residual sugar balanced by high acidity strongly suggests a botrytis-affected wine like Sauternes (Sémillon-based) or Tokaji Aszú (Furmint-based). Rutherglen Muscat is fortified and raisined, not botrytis. Spätlese is typically lighter in sweetness. Ice wine has high sugar but a different aromatic profile (more fresh tropical fruit than botrytis complexity).",
+    "sources": "WSET Level 3 Award in Wines Study Guide; The Wine Bible by Karen MacNeil",
+    "confidence": "established",
+    "tags": [
+      "blind-tasting",
+      "botrytis",
+      "Sauternes",
+      "Tokaji",
+      "sweet-wines"
+    ]
+  },
+  {
+    "id": "TS-054",
+    "domain": "tasting_sensory",
+    "difficulty": 1380,
+    "level": 7,
+    "format": "multiple_choice",
+    "question": "In the CMS deductive tasting method, what is the significance of describing tannin as 'ripe and fine-grained' versus 'green and stalky'?",
+    "options": [
+      "It indicates whether the wine is red or white",
+      "It provides information about phenolic ripeness at harvest, potential climate, and winemaking choices—ripe tannins suggest optimal phenolic maturity while green tannins suggest underripeness or stem inclusion",
+      "It only describes the wine's age",
+      "Fine-grained tannins always indicate new oak; green tannins indicate no oak"
+    ],
+    "correct": 1,
+    "explanation": "Tannin quality descriptors in the CMS grid are deductive tools. 'Ripe and fine-grained' tannins suggest the grapes achieved full phenolic maturity, indicating a warm enough growing season, optimal harvest timing, and potentially gentle extraction. 'Green and stalky' tannins suggest underripeness from a cool vintage, early harvest, or deliberate inclusion of stems (whole cluster). This distinction helps determine climate, vintage quality, and winemaking decisions.",
+    "sources": "GuildSomm Deductive Tasting Format; Wine Science by Jamie Goode",
+    "confidence": "established",
+    "tags": [
+      "CMS-grid",
+      "tannin-quality",
+      "deductive-tasting",
+      "phenolic-ripeness"
+    ]
+  },
+  {
+    "id": "TS-055",
+    "domain": "tasting_sensory",
+    "difficulty": 1650,
+    "level": 8,
+    "format": "multiple_choice",
+    "question": "What is the 'buffer capacity' of a wine, and how does it affect sensory perception of acidity?",
+    "options": [
+      "Buffer capacity is the wine's ability to resist pH change; wines with higher buffer capacity may taste less acidic than their titratable acidity suggests because the buffering salts moderate the perception of sourness",
+      "Buffer capacity refers to the amount of SO2 in the wine",
+      "It is the time between pouring and serving wine",
+      "Buffer capacity measures the tannin-acid balance"
+    ],
+    "correct": 0,
+    "explanation": "Buffer capacity is the wine's resistance to pH change, determined by the concentration of organic acid salts (potassium tartrate, potassium malate, etc.). A wine with high titratable acidity but also high buffer capacity may have a relatively high pH and taste less sharp than expected. This explains why some wines with identical titratable acidity taste different—their buffer capacities and thus their pH values differ, affecting the sensory experience of sourness.",
+    "sources": "Wine Science by Jamie Goode; Oxford Companion to Wine (4th ed.)",
+    "confidence": "consensus",
+    "tags": [
+      "buffer-capacity",
+      "pH",
+      "acidity",
+      "chemistry",
+      "sensory-science"
+    ]
+  },
+  {
+    "id": "TS-056",
+    "domain": "tasting_sensory",
+    "difficulty": 1720,
+    "level": 9,
+    "format": "odd_one_out",
+    "question": "In MS-level blind tasting of aged white Burgundy vs. aged white Rhône (Roussanne/Marsanne), which aromatic marker is NOT a reliable differentiator?",
+    "options": [
+      "Hazelnut and toasted almond (favoring Burgundy Chardonnay)",
+      "Herbal, waxy, honeyed character (favoring Rhône Roussanne/Marsanne)",
+      "Buttery diacetyl from MLF (present in both at similar rates)",
+      "Gunflint/struck match (favoring reductive Burgundy winemaking)"
+    ],
+    "correct": 2,
+    "explanation": "Buttery diacetyl from malolactic fermentation is commonly found in both aged white Burgundy and aged white Rhône wines, as both styles typically undergo full MLF. It is therefore NOT a reliable differentiator. Hazelnut/toasted almond is more characteristic of mature Chardonnay, herbal/waxy/honeyed notes favor Roussanne/Marsanne, and gunflint/struck match often appears in reductive Burgundy winemaking (Chablis, some Côte d'Or producers).",
+    "sources": "GuildSomm Advanced Deductive Tasting Guide; Oxford Companion to Wine (4th ed.)",
+    "confidence": "consensus",
+    "tags": [
+      "MS-exam",
+      "white-Burgundy",
+      "Rhône",
+      "blind-tasting",
+      "diacetyl"
+    ]
+  },
+  {
+    "id": "TS-057",
+    "domain": "tasting_sensory",
+    "difficulty": 1950,
+    "level": 10,
+    "format": "match_pairs",
+    "question": "Match each advanced tasting scenario to the key deductive reasoning step used at the MS exam level.",
+    "pairs": {
+      "left": [
+        "A red wine with medium ruby color but exceptionally high, drying tannin",
+        "A white wine with 14.5% alcohol, low acid, viscous texture, and stone fruit aromas",
+        "A red with black pepper, violets, and smoked meat from a warm region",
+        "A white with high acid, petrol, and lemon curd at 8% alcohol"
+      ],
+      "right": [
+        "Consider Nebbiolo (high tannin despite lighter color) or Tannat",
+        "Warm-climate Viognier or Roussanne—low acid/high alcohol/stone fruit profile",
+        "Syrah/Shiraz from a warm New World region (e.g., Barossa, McLaren Vale)",
+        "German Kabinett Riesling—high acid, low alcohol, petrol development"
+      ]
+    },
+    "correct": [
+      0,
+      1,
+      2,
+      3
+    ],
+    "explanation": "Medium ruby with extreme tannin is a classic Nebbiolo signature (or Tannat). Low acid, high alcohol, viscous white with stone fruit points to Viognier or Roussanne from a warm climate. Black pepper (rotundone), violets, and smoked meat in a warm-climate red is quintessential warm-climate Syrah/Shiraz. High acid, low alcohol (8%), petrol, and citrus is textbook German Kabinett Riesling.",
+    "sources": "GuildSomm MS Exam Preparation Materials; Wine Grapes by Robinson, Harding & Vouillamoz",
+    "confidence": "consensus",
+    "tags": [
+      "MS-exam",
+      "deductive-reasoning",
+      "blind-tasting"
+    ]
+  },
+  {
+    "id": "TS-058",
+    "domain": "tasting_sensory",
+    "difficulty": 560,
+    "level": 3,
+    "format": "multiple_choice",
+    "question": "What aroma descriptor is most associated with wines that have undergone malolactic fermentation?",
+    "options": [
+      "Green apple",
+      "Butter and cream",
+      "Grapefruit",
+      "Flint"
+    ],
+    "correct": 1,
+    "explanation": "Malolactic fermentation converts sharp malic acid to softer lactic acid and produces diacetyl, the compound responsible for buttery, creamy aromas. This is particularly evident in oaked Chardonnay. Green apple is associated with malic acid (pre-MLF), indicating MLF has NOT occurred.",
+    "sources": "WSET Level 3 Award in Wines Study Guide; Wine Science by Jamie Goode",
+    "confidence": "established",
+    "tags": [
+      "MLF",
+      "diacetyl",
+      "secondary-aromas",
+      "Chardonnay"
+    ]
+  },
+  {
+    "id": "TS-059",
+    "domain": "tasting_sensory",
+    "difficulty": 1480,
+    "level": 7,
+    "format": "multiple_choice",
+    "question": "What is 'typicity' in wine evaluation and why is it important for blind tasting?",
+    "options": [
+      "It refers to the typical alcohol level for a region",
+      "It describes how well a wine expresses the recognized characteristics of its grape variety, region, and style—essential for identifying wines blind",
+      "It measures the typographical accuracy of a wine label",
+      "It describes only the color typical for a grape variety"
+    ],
+    "correct": 1,
+    "explanation": "Typicity (typicité) is the degree to which a wine reflects the recognized, expected characteristics of its grape variety, region of origin, and/or production style. In blind tasting, a taster relies on typicity markers—such as Sauvignon Blanc's gooseberry and herbaceous character or Barolo's tar and roses—to identify the wine. Wines that deviate from typicity are harder to identify blind.",
+    "sources": "Oxford Companion to Wine (4th ed.); GuildSomm Deductive Tasting Format",
+    "confidence": "established",
+    "tags": [
+      "typicity",
+      "blind-tasting",
+      "deductive-method"
+    ]
+  },
+  {
+    "id": "TS-060",
+    "domain": "tasting_sensory",
+    "difficulty": 160,
+    "level": 1,
+    "format": "multiple_choice",
+    "question": "What are 'legs' or 'tears' on the side of a wine glass?",
+    "options": [
+      "Indicators of wine quality",
+      "The streams of wine that flow down the inside of the glass after swirling, related to alcohol and glycerol content",
+      "Signs that the wine is faulty",
+      "Residual sugar crystallizing on the glass"
+    ],
+    "correct": 1,
+    "explanation": "Legs (or tears) are the droplets that form and flow down the inside of a glass after swirling. They are caused by the Marangoni effect—the difference in surface tension between alcohol and water. More prominent legs typically indicate higher alcohol content, not necessarily higher quality.",
+    "sources": "WSET Level 2 Award in Wines Study Guide; Oxford Companion to Wine (4th ed.)",
+    "confidence": "established",
+    "tags": [
+      "basic-terminology",
+      "visual-assessment",
+      "alcohol"
+    ]
+  },
+  {
+    "id": "TS-061",
+    "domain": "tasting_sensory",
+    "difficulty": 470,
+    "level": 2,
+    "format": "odd_one_out",
+    "question": "Which of these is NOT a typical aroma of oak aging?",
+    "options": [
+      "Vanilla",
+      "Toast",
+      "Passion fruit",
+      "Coconut"
+    ],
+    "correct": 2,
+    "explanation": "Passion fruit is a primary varietal aroma associated with Sauvignon Blanc (from thiol compounds, specifically 3MH and 3MHA), not a secondary aroma from oak. Vanilla (from vanillin), toast, and coconut (from oak lactones, especially in American oak) are all classic oak-derived secondary aromas.",
+    "sources": "WSET Level 3 Award in Wines Study Guide; Wine Science by Jamie Goode",
+    "confidence": "established",
+    "tags": [
+      "oak-aromas",
+      "secondary-aromas",
+      "Sauvignon-Blanc"
+    ]
+  },
+  {
+    "id": "TS-062",
+    "domain": "tasting_sensory",
+    "difficulty": 720,
+    "level": 4,
+    "format": "multiple_choice",
+    "question": "In the WSET SAT, what does 'medium(+)' alcohol indicate as an approximate range?",
+    "options": [
+      "Below 10%",
+      "10-11.5%",
+      "12-13.5%",
+      "Above 14.5%"
+    ],
+    "correct": 2,
+    "explanation": "In the WSET SAT, alcohol levels are categorized as: low (below 10%), medium(-) (10-11.5%), medium (11.5-13%), medium(+) (13-14.5%), and high (above 14.5%). These categories help in deducing climate, grape variety, and winemaking style.",
+    "sources": "WSET Level 3 Award in Wines Study Guide; WSET Level 4 Diploma Study Guide",
+    "confidence": "established",
+    "tags": [
+      "WSET-SAT",
+      "alcohol",
+      "palate-assessment"
+    ]
+  },
+  {
+    "id": "TS-063",
+    "domain": "tasting_sensory",
+    "difficulty": 1020,
+    "level": 5,
+    "format": "multiple_choice",
+    "question": "What compound is primarily responsible for the 'smoky' or 'campfire' aroma found in wines affected by wildfire smoke exposure?",
+    "options": [
+      "Guaiacol and 4-methylguaiacol",
+      "Diacetyl",
+      "Acetaldehyde",
+      "Ethyl acetate"
+    ],
+    "correct": 0,
+    "explanation": "Guaiacol, 4-methylguaiacol, and related volatile phenols are the primary compounds responsible for smoke taint in wine. These compounds are absorbed by grape skins during wildfire smoke events and can be present in both free (immediately perceptible) and glycosidically bound forms (released during fermentation or aging, making the taint difficult to predict from grape analysis alone).",
+    "sources": "Wine Science by Jamie Goode; Oxford Companion to Wine (4th ed.)",
+    "confidence": "established",
+    "tags": [
+      "smoke-taint",
+      "guaiacol",
+      "wine-faults",
+      "volatile-phenols"
+    ]
+  },
+  {
+    "id": "TS-064",
+    "domain": "tasting_sensory",
+    "difficulty": 1280,
+    "level": 6,
+    "format": "match_pairs",
+    "question": "Match each white wine structural profile to its most likely grape variety in a blind tasting context.",
+    "pairs": {
+      "left": [
+        "High acid, bone-dry, mineral, no oak, low-medium alcohol",
+        "High acid, medium-sweet, floral, low alcohol",
+        "Low-medium acid, full body, high alcohol, stone fruit, oaked",
+        "High acid, medium body, honey, lanolin, wet wool"
+      ],
+      "right": [
+        "Chablis (Chardonnay) or Muscadet (Melon de Bourgogne)",
+        "Off-dry Mosel Riesling",
+        "Oaked warm-climate Chardonnay or Viognier",
+        "Chenin Blanc (Loire)"
+      ]
+    },
+    "correct": [
+      0,
+      1,
+      2,
+      3
+    ],
+    "explanation": "High acid, dry, mineral, unoaked whites at low-medium alcohol suggest Chablis or Muscadet. Medium-sweet with floral notes and low alcohol is classic off-dry Mosel Riesling. Low-medium acid, full body, high alcohol with oak and stone fruit points to warm-climate oaked Chardonnay or Viognier. High acid with honey, lanolin, and wet wool is a signature of Loire Chenin Blanc.",
+    "sources": "GuildSomm Deductive Tasting Format; Wine Grapes by Robinson, Harding & Vouillamoz",
+    "confidence": "established",
+    "tags": [
+      "blind-tasting",
+      "white-wines",
+      "structural-profiles"
+    ]
+  },
+  {
+    "id": "TS-065",
+    "domain": "tasting_sensory",
+    "difficulty": 1560,
+    "level": 8,
+    "format": "odd_one_out",
+    "question": "Which of these factors does NOT directly influence the perception threshold of volatile compounds in wine?",
+    "options": [
+      "The wine's matrix effect (alcohol, sugar, acid, and phenolic composition)",
+      "Individual genetic variation in olfactory receptors",
+      "The vintage year printed on the label",
+      "Serving temperature of the wine"
+    ],
+    "correct": 2,
+    "explanation": "The vintage year on the label does not directly affect the physical perception threshold of volatile compounds—though it could create expectation bias. The wine matrix (alcohol enhances volatility, sugar and phenolics can suppress or bind compounds), individual genetic variation (anosmias, super-tasters), and serving temperature (affects vapor pressure and volatilization rate) all directly influence whether a compound reaches its perception threshold.",
+    "sources": "Wine Science by Jamie Goode; Sensory Evaluation of Food by Lawless & Heymann",
+    "confidence": "consensus",
+    "tags": [
+      "perception-thresholds",
+      "sensory-science",
+      "matrix-effects"
+    ]
+  },
+  {
+    "id": "TS-066",
+    "domain": "tasting_sensory",
+    "difficulty": 1770,
+    "level": 9,
+    "format": "multiple_choice",
+    "question": "In a deductive tasting at the MS level, a red wine shows medium(+) ruby color, pronounced intensity of black cherry, dried herb, iron/blood, very high acid, high fine-grained tannin, medium(+) alcohol, and a long finish. Which of these is the most likely conclusion?",
+    "options": [
+      "Barossa Shiraz",
+      "Brunello di Montalcino (Sangiovese)",
+      "Ribera del Duero (Tempranillo)",
+      "Priorat (Garnacha-Carignan blend)"
+    ],
+    "correct": 1,
+    "explanation": "This profile is classic Brunello di Montalcino Sangiovese: medium(+) ruby (not deep purple), black cherry (the hallmark fruit), dried herb and iron/blood (terroir-driven), very high acidity (Sangiovese's signature), high fine-grained tannin (from long maceration and Montalcino's soils), and long finish. Barossa Shiraz would be fuller, darker, and lower acid. Tempranillo typically has less acid. Priorat would show more ripe, concentrated dark fruit.",
+    "sources": "GuildSomm MS Exam Preparation Materials; Wine Grapes by Robinson, Harding & Vouillamoz",
+    "confidence": "consensus",
+    "tags": [
+      "MS-exam",
+      "Sangiovese",
+      "Brunello",
+      "blind-tasting"
+    ]
+  },
+  {
+    "id": "TS-067",
+    "domain": "tasting_sensory",
+    "difficulty": 2050,
+    "level": 10,
+    "format": "multiple_choice",
+    "question": "In the most advanced blind tasting contexts, what is the concept of 'palate fatigue' and how do MS candidates strategically manage it?",
+    "options": [
+      "Palate fatigue only affects the sense of taste, not smell, so it is not relevant to wine tasting",
+      "Palate fatigue is the desensitization of olfactory and gustatory receptors during extended tasting sessions; MS candidates manage it through palate-cleansing techniques (water, plain bread), strategic tasting order (whites before reds, dry before sweet), and trained awareness of diminishing sensitivity to specific compounds",
+      "It refers to the physical fatigue of holding many wine glasses",
+      "Palate fatigue only occurs with sweet wines"
+    ],
+    "correct": 1,
+    "explanation": "Palate fatigue involves progressive desensitization of both olfactory and gustatory receptors during extended tasting. Olfactory adaptation (getting used to a smell) can occur within seconds. MS candidates manage this through palate cleansing between flights, strategic tasting order, short breaks, and trained metacognitive awareness—knowing when their sensitivity has diminished and adjusting their assessments accordingly. This is particularly important during multi-flight examination settings.",
+    "sources": "GuildSomm MS Exam Preparation Materials; Neuroenology by Gordon Shepherd",
+    "confidence": "consensus",
+    "tags": [
+      "MS-exam",
+      "palate-fatigue",
+      "sensory-science",
+      "tasting-technique"
+    ]
+  },
+  {
+    "id": "TS-068",
+    "domain": "tasting_sensory",
+    "difficulty": 300,
+    "level": 1,
+    "format": "match_pairs",
+    "question": "Match each wine tasting term to its meaning.",
+    "pairs": {
+      "left": [
+        "Tannin",
+        "Acidity",
+        "Body",
+        "Finish"
+      ],
+      "right": [
+        "Drying, astringent sensation from grape skins/seeds/oak",
+        "The tart, sour element that makes wine fresh",
+        "Weight and fullness of wine on the palate",
+        "How long flavors linger after swallowing"
+      ]
+    },
+    "correct": [
+      0,
+      1,
+      2,
+      3
+    ],
+    "explanation": "These are foundational tasting terms. Tannin causes astringency from polyphenols. Acidity provides freshness and tartness. Body is the overall weight and mouthfeel. Finish (length) is the duration of flavor persistence after swallowing or spitting.",
+    "sources": "WSET Level 2 Award in Wines Study Guide; The Wine Bible by Karen MacNeil",
+    "confidence": "established",
+    "tags": [
+      "basic-terminology",
+      "palate-assessment"
+    ]
+  },
+  {
+    "id": "TS-069",
+    "domain": "tasting_sensory",
+    "difficulty": 1130,
+    "level": 6,
+    "format": "multiple_choice",
+    "question": "How does the 'spritz' detection threshold work in still wines, and what can trace CO2 indicate?",
+    "options": [
+      "Any CO2 means the wine is sparkling and faulty",
+      "Low levels of dissolved CO2 (below ~1.5 g/L) are often undetectable visually but enhance the perception of freshness and lift on the palate, sometimes indicating a young wine or deliberate retention by the winemaker",
+      "CO2 in still wine always indicates refermentation in bottle",
+      "CO2 levels have no sensory impact below sparkling wine concentrations"
+    ],
+    "correct": 1,
+    "explanation": "Dissolved CO2 below approximately 1.5 g/L is often not visible as bubbles but can still be perceived as a subtle prickling or freshness on the palate. Many winemakers deliberately retain small amounts of CO2 in young whites and light reds (Muscadet, Vinho Verde, young Beaujolais) to enhance freshness. Above approximately 2 g/L, a visible spritz appears.",
+    "sources": "Wine Science by Jamie Goode; Oxford Companion to Wine (4th ed.)",
+    "confidence": "established",
+    "tags": [
+      "CO2",
+      "spritz",
+      "freshness",
+      "mouthfeel"
+    ]
+  },
+  {
+    "id": "TS-070",
+    "domain": "tasting_sensory",
+    "difficulty": 1870,
+    "level": 9,
+    "format": "match_pairs",
+    "question": "Match each advanced tasting concept to its application in MS exam-level deductive tasting.",
+    "pairs": {
+      "left": [
+        "Acid-tannin balance assessment",
+        "Oak integration evaluation",
+        "Aromatic lift vs. weight",
+        "Textural mid-palate analysis"
+      ],
+      "right": [
+        "Determines if structure suggests cool vs. warm climate and aging potential",
+        "Distinguishes subtle vs. overt oak; new vs. used; French vs. American",
+        "Differentiates aromatic/floral varieties (high lift) from rich/textural ones (weight)",
+        "Identifies grape variety through mouthfeel signature (glycerol, extract, phenolic density)"
+      ]
+    },
+    "correct": [
+      0,
+      1,
+      2,
+      3
+    ],
+    "explanation": "At the MS level, acid-tannin balance reveals climate and ageability. Oak integration assessment distinguishes subtle, well-integrated oak from dominant new wood, and can identify oak origin. Aromatic lift versus weight differentiates lighter, aromatic varieties from denser, richer ones. Textural mid-palate analysis uses mouthfeel signatures to identify varieties through their unique combinations of glycerol, extract, and phenolic density.",
+    "sources": "GuildSomm MS Exam Preparation Materials; How to Taste by Jancis Robinson",
+    "confidence": "consensus",
+    "tags": [
+      "MS-exam",
+      "deductive-tasting",
+      "advanced-analysis"
+    ]
+  },
+  {
+    "id": "TS-071",
+    "domain": "tasting_sensory",
+    "difficulty": 2300,
+    "level": 10,
+    "format": "odd_one_out",
+    "question": "At MS exam level, which of these is NOT a reliable indicator for distinguishing top Côte-Rôtie from top Hermitage in a blind tasting of Northern Rhône Syrah?",
+    "options": [
+      "Côte-Rôtie often shows more floral elegance, violet, and occasionally a hint of Viognier co-fermentation lift",
+      "Hermitage tends to be more dense, powerful, and tannic with black fruit, smoke, and leather",
+      "The alcohol levels are always significantly different between the two appellations",
+      "Côte-Rôtie's granitic soils can impart a fine-grained, elegant tannin profile compared to Hermitage's granite and clay power"
+    ],
+    "correct": 2,
+    "explanation": "Alcohol levels are NOT reliably different between Côte-Rôtie and Hermitage, as both can range from approximately 12.5% to 14%+ depending on vintage and producer. The reliable distinctions are: Côte-Rôtie's floral elegance and potential Viognier lift (up to 20% allowed), Hermitage's typically greater density, power, and tannic structure, and the textural differences from their respective terroirs (Côte-Rôtie's steep schistous granite vs. Hermitage's varied granite, clay, and alluvial soils).",
+    "sources": "GuildSomm MS Exam Preparation Materials; Wine Grapes by Robinson, Harding & Vouillamoz",
+    "confidence": "consensus",
+    "tags": [
+      "MS-exam",
+      "Northern-Rhône",
+      "Côte-Rôtie",
+      "Hermitage",
+      "Syrah"
+    ]
+  },
+  {
+    "id": "TS-072",
+    "domain": "tasting_sensory",
+    "difficulty": 640,
+    "level": 3,
+    "format": "odd_one_out",
+    "question": "Which of the following is NOT a recognized category in the WSET SAT visual assessment?",
+    "options": [
+      "Clarity",
+      "Intensity of color",
+      "Viscosity rating",
+      "Color (hue)"
+    ],
+    "correct": 2,
+    "explanation": "The WSET SAT visual assessment covers clarity, intensity, color, and other observations (such as legs/tears and bubbles for sparkling wines). There is no formal 'viscosity rating' category. While legs/tears can be observed, they are noted under 'other observations' rather than as a formal viscosity rating.",
+    "sources": "WSET Level 3 Award in Wines Study Guide; WSET Level 4 Diploma Study Guide",
+    "confidence": "established",
+    "tags": [
+      "WSET-SAT",
+      "visual-assessment"
+    ]
+  },
+  {
+    "id": "TS-073",
+    "domain": "tasting_sensory",
+    "difficulty": 920,
+    "level": 5,
+    "format": "odd_one_out",
+    "question": "Which of these compounds is NOT classified as a terpene responsible for floral aromas in wine?",
+    "options": [
+      "Linalool",
+      "Geraniol",
+      "Alpha-terpineol",
+      "Methoxypyrazine"
+    ],
+    "correct": 3,
+    "explanation": "Methoxypyrazines are nitrogen-containing heterocyclic compounds responsible for herbaceous/green pepper aromas (especially in Sauvignon Blanc and Cabernet Franc), not floral aromas. Linalool (rose/floral), geraniol (rose), and alpha-terpineol (floral/lilac) are all monoterpenes contributing to the floral aromatics of varieties like Muscat, Riesling, and Gewürztraminer.",
+    "sources": "Wine Science by Jamie Goode; Oxford Companion to Wine (4th ed.)",
+    "confidence": "established",
+    "tags": [
+      "terpenes",
+      "pyrazines",
+      "aroma-compounds",
+      "chemistry"
+    ]
+  },
+  {
+    "id": "TS-074",
+    "domain": "tasting_sensory",
+    "difficulty": 240,
+    "level": 1,
+    "format": "multiple_choice",
+    "question": "What does 'tannin' feel like in your mouth?",
+    "options": [
+      "Sweet and smooth",
+      "Fizzy and tingling",
+      "Drying and gripping, similar to over-steeped tea",
+      "Burning and hot"
+    ],
+    "correct": 2,
+    "explanation": "Tannin creates a drying, astringent, gripping sensation in the mouth, similar to the feeling from drinking over-steeped black tea. Tannins come from grape skins, seeds, stems, and oak barrels. They are mainly found in red wines.",
+    "sources": "WSET Level 2 Award in Wines Study Guide; The Wine Bible by Karen MacNeil",
+    "confidence": "established",
+    "tags": [
+      "tannin",
+      "basic-terminology",
+      "mouthfeel"
+    ]
+  },
+  {
+    "id": "TS-075",
+    "domain": "tasting_sensory",
+    "difficulty": 500,
+    "level": 3,
+    "format": "multiple_choice",
+    "question": "In the WSET SAT, what is meant by 'flavor intensity' on the palate?",
+    "options": [
+      "How sweet the wine tastes",
+      "The strength or concentration of the flavor characteristics experienced in the mouth",
+      "The number of different flavors detected",
+      "The alcohol level of the wine"
+    ],
+    "correct": 1,
+    "explanation": "Flavor intensity on the palate refers to how strong or concentrated the flavor characteristics are when the wine is in the mouth. It is rated from light to pronounced in the WSET SAT. This is distinct from complexity (the range of different flavors) and from specific structural components like sweetness or alcohol.",
+    "sources": "WSET Level 3 Award in Wines Study Guide; GuildSomm Deductive Tasting Format",
+    "confidence": "established",
+    "tags": [
+      "WSET-SAT",
+      "flavor-intensity",
+      "palate-assessment"
+    ]
+  },
+  {
+    "id": "WM-001",
+    "domain": "winemaking",
+    "difficulty": 150,
+    "level": 1,
+    "format": "multiple_choice",
+    "question": "What is alcoholic fermentation in winemaking?",
+    "options": [
+      "The process of adding alcohol to wine",
+      "The conversion of grape sugars into alcohol and carbon dioxide by yeast",
+      "The aging of wine in oak barrels",
+      "The blending of different grape varieties"
+    ],
+    "correct": 1,
+    "explanation": "Alcoholic fermentation is the biochemical process where yeast (primarily Saccharomyces cerevisiae) converts the sugars glucose and fructose in grape juice into ethanol (alcohol) and carbon dioxide. This is the fundamental process that transforms grape juice into wine.",
+    "sources": "WSET Level 2 Award in Wines Study Guide; Oxford Companion to Wine (4th ed.)",
+    "confidence": "established",
+    "tags": [
+      "fermentation",
+      "basic-winemaking",
+      "yeast"
+    ]
+  },
+  {
+    "id": "WM-002",
+    "domain": "winemaking",
+    "difficulty": 200,
+    "level": 1,
+    "format": "multiple_choice",
+    "question": "What is the primary purpose of oak barrels in winemaking?",
+    "options": [
+      "To add color to white wines",
+      "To add flavors (vanilla, toast, spice), allow controlled oxygen exposure, and soften tannins",
+      "To increase the alcohol content",
+      "To make the wine sparkle"
+    ],
+    "correct": 1,
+    "explanation": "Oak barrels serve multiple purposes: they contribute flavor compounds (vanillin, oak lactones, eugenol), allow slow, controlled oxygen exposure that helps soften tannins and stabilize color, and can add textural complexity. The specific flavors depend on oak origin (French vs. American), toast level, and whether the barrel is new or used.",
+    "sources": "WSET Level 3 Award in Wines Study Guide; Wine Science by Jamie Goode",
+    "confidence": "established",
+    "tags": [
+      "oak-aging",
+      "barrel",
+      "basic-winemaking"
+    ]
+  },
+  {
+    "id": "WM-003",
+    "domain": "winemaking",
+    "difficulty": 260,
+    "level": 1,
+    "format": "odd_one_out",
+    "question": "Which of the following is NOT a step in basic red winemaking?",
+    "options": [
+      "Crushing and destemming",
+      "Fermentation with grape skins",
+      "Distillation",
+      "Pressing"
+    ],
+    "correct": 2,
+    "explanation": "Distillation is the process of heating a liquid to separate components by boiling point—it is used to make spirits (brandy, grappa) but is NOT a standard step in still red wine production. Red winemaking typically involves harvesting, crushing/destemming, fermentation with skin contact, pressing, and aging.",
+    "sources": "WSET Level 2 Award in Wines Study Guide; The Wine Bible by Karen MacNeil",
+    "confidence": "established",
+    "tags": [
+      "basic-winemaking",
+      "red-wine-production"
+    ]
+  },
+  {
+    "id": "WM-004",
+    "domain": "winemaking",
+    "difficulty": 180,
+    "level": 1,
+    "format": "match_pairs",
+    "question": "Match each winemaking term to its basic definition.",
+    "pairs": {
+      "left": [
+        "Must",
+        "Lees",
+        "Pressing",
+        "Racking"
+      ],
+      "right": [
+        "Freshly crushed grape juice with skins, seeds, and stems",
+        "Dead yeast cells and grape particles that settle after fermentation",
+        "Separating juice or wine from grape solids",
+        "Transferring wine from one vessel to another, leaving sediment behind"
+      ]
+    },
+    "correct": [
+      0,
+      1,
+      2,
+      3
+    ],
+    "explanation": "Must is the mixture of grape juice, skins, seeds, and sometimes stems before or during fermentation. Lees are the sediment of dead yeast and grape particles. Pressing extracts juice or wine from grape solids. Racking is the careful transfer of wine off its sediment into a clean vessel.",
+    "sources": "WSET Level 2 Award in Wines Study Guide; Oxford Companion to Wine (4th ed.)",
+    "confidence": "established",
+    "tags": [
+      "basic-terminology",
+      "winemaking-process"
+    ]
+  },
+  {
+    "id": "WM-005",
+    "domain": "winemaking",
+    "difficulty": 300,
+    "level": 1,
+    "format": "multiple_choice",
+    "question": "What is malolactic fermentation (MLF)?",
+    "options": [
+      "A second alcoholic fermentation to increase alcohol",
+      "The conversion of sharp malic acid to softer lactic acid by bacteria",
+      "The process of adding tartaric acid to wine",
+      "Fermenting wine in bottles to create bubbles"
+    ],
+    "correct": 1,
+    "explanation": "Malolactic fermentation is a secondary fermentation (not truly a fermentation but a bacterial conversion) where Oenococcus oeni bacteria convert tart malic acid (the acid in green apples) into softer lactic acid (the acid in milk). This reduces perceived acidity and can add buttery, creamy notes from diacetyl production.",
+    "sources": "WSET Level 3 Award in Wines Study Guide; Wine Science by Jamie Goode",
+    "confidence": "established",
+    "tags": [
+      "MLF",
+      "bacteria",
+      "acidity"
+    ]
+  },
+  {
+    "id": "WM-006",
+    "domain": "winemaking",
+    "difficulty": 350,
+    "level": 2,
+    "format": "multiple_choice",
+    "question": "What is the main difference between French oak and American oak in winemaking?",
+    "options": [
+      "French oak is always cheaper",
+      "French oak imparts more subtle, spicy flavors while American oak imparts more pronounced vanilla and coconut",
+      "American oak cannot be used for red wines",
+      "French oak is used only for white wines"
+    ],
+    "correct": 1,
+    "explanation": "French oak (Quercus petraea/robur) is tighter-grained and imparts more subtle, spicy, and toasty notes. American oak (Quercus alba) is wider-grained with more oak lactones, giving more pronounced vanilla, coconut, and dill flavors. French oak is typically more expensive due to lower yield from splitting (vs. sawing for American) and longer seasoning.",
+    "sources": "Wine Science by Jamie Goode; Oxford Companion to Wine (4th ed.)",
+    "confidence": "established",
+    "tags": [
+      "oak-aging",
+      "French-oak",
+      "American-oak"
+    ]
+  },
+  {
+    "id": "WM-007",
+    "domain": "winemaking",
+    "difficulty": 400,
+    "level": 2,
+    "format": "odd_one_out",
+    "question": "Which of the following is NOT a method for producing sparkling wine?",
+    "options": [
+      "Traditional method (méthode traditionnelle)",
+      "Charmat (tank) method",
+      "Solera system",
+      "Transfer method"
+    ],
+    "correct": 2,
+    "explanation": "The solera system is a fractional blending method used for aging and blending sherry and some other fortified wines—not a method for producing sparkling wine. The traditional method (second fermentation in bottle), Charmat method (second fermentation in tank), and transfer method (second fermentation in bottle, then transferred to tank) are all sparkling wine production methods.",
+    "sources": "WSET Level 3 Award in Wines Study Guide; Oxford Companion to Wine (4th ed.)",
+    "confidence": "established",
+    "tags": [
+      "sparkling-wine",
+      "solera",
+      "production-methods"
+    ]
+  },
+  {
+    "id": "WM-008",
+    "domain": "winemaking",
+    "difficulty": 450,
+    "level": 2,
+    "format": "multiple_choice",
+    "question": "What is the purpose of sulfur dioxide (SO₂) in winemaking?",
+    "options": [
+      "To increase alcohol levels",
+      "To act as an antioxidant and antimicrobial agent, protecting wine from spoilage and oxidation",
+      "To add sweetness to dry wines",
+      "To create bubbles in sparkling wine"
+    ],
+    "correct": 1,
+    "explanation": "Sulfur dioxide (SO₂) serves dual purposes in winemaking: as an antioxidant (preventing browning and preserving freshness) and as an antimicrobial agent (inhibiting unwanted bacteria and wild yeasts). It has been used in winemaking for centuries. The amount used varies; 'free SO₂' is the active protective form, while 'bound SO₂' has reacted with other wine components.",
+    "sources": "Wine Science by Jamie Goode; WSET Level 3 Award in Wines Study Guide",
+    "confidence": "established",
+    "tags": [
+      "sulfur-dioxide",
+      "preservation",
+      "antioxidant"
+    ]
+  },
+  {
+    "id": "WM-009",
+    "domain": "winemaking",
+    "difficulty": 480,
+    "level": 2,
+    "format": "match_pairs",
+    "question": "Match each sparkling wine method to its key characteristic.",
+    "pairs": {
+      "left": [
+        "Traditional method",
+        "Charmat method",
+        "Méthode ancestrale",
+        "Transfer method"
+      ],
+      "right": [
+        "Second fermentation in bottle; riddling and disgorgement",
+        "Second fermentation in pressurized tank; preserves fresh fruit",
+        "Single fermentation completed in bottle; no dosage added",
+        "Second fermentation in bottle; transferred to tank for filtering"
+      ]
+    },
+    "correct": [
+      0,
+      1,
+      2,
+      3
+    ],
+    "explanation": "The traditional method (Champagne) involves second fermentation in the final bottle with riddling and disgorgement. Charmat (Prosecco, Asti) uses pressurized tanks to preserve primary fruit. Méthode ancestrale (Pétillant Naturel/Pet-Nat) bottles wine before primary fermentation finishes. The transfer method ferments in bottle but transfers to tank for dosage and filtration before rebottling.",
+    "sources": "WSET Level 3 Award in Wines Study Guide; Oxford Companion to Wine (4th ed.)",
+    "confidence": "established",
+    "tags": [
+      "sparkling-wine",
+      "production-methods",
+      "traditional-method",
+      "Charmat"
+    ]
+  },
+  {
+    "id": "WM-010",
+    "domain": "winemaking",
+    "difficulty": 520,
+    "level": 3,
+    "format": "multiple_choice",
+    "question": "What is 'cold soak' (cold maceration) and what is its primary purpose?",
+    "options": [
+      "Chilling wine to near-freezing for stability before bottling",
+      "Pre-fermentation skin contact at low temperatures to extract color and fruit aromas without extracting harsh tannins",
+      "Fermenting wine in cold storage rooms",
+      "A method of flash-freezing grapes for ice wine production"
+    ],
+    "correct": 1,
+    "explanation": "Cold soak is a pre-fermentation technique where crushed red grapes are held at cool temperatures (5-15°C) for several days before fermentation begins. The low temperature inhibits yeast activity while allowing water-soluble color pigments (anthocyanins) and aromatic compounds to be extracted from skins without extracting the harsher seed tannins that require alcohol as a solvent.",
+    "sources": "Wine Science by Jamie Goode; Oxford Companion to Wine (4th ed.)",
+    "confidence": "established",
+    "tags": [
+      "maceration",
+      "cold-soak",
+      "extraction",
+      "color"
+    ]
+  },
+  {
+    "id": "WM-011",
+    "domain": "winemaking",
+    "difficulty": 550,
+    "level": 3,
+    "format": "multiple_choice",
+    "question": "What is carbonic maceration and which wine region is it most associated with?",
+    "options": [
+      "Fermenting in stainless steel tanks; Chablis",
+      "Whole-cluster intracellular fermentation in a CO₂-filled vessel; Beaujolais",
+      "Adding carbon dioxide to still wine; Prosecco",
+      "Extended skin contact for rosé; Provence"
+    ],
+    "correct": 1,
+    "explanation": "Carbonic maceration involves placing whole, uncrushed grape clusters in a sealed vessel filled with carbon dioxide. Intracellular fermentation occurs within each intact berry, producing wines with bright fruit character, low tannin, and distinctive candy/banana aromas. It is most famously used in Beaujolais, particularly for Beaujolais Nouveau. Most producers use semi-carbonic maceration, where bottom grapes are crushed by weight.",
+    "sources": "WSET Level 3 Award in Wines Study Guide; Oxford Companion to Wine (4th ed.)",
+    "confidence": "established",
+    "tags": [
+      "carbonic-maceration",
+      "Beaujolais",
+      "fermentation-techniques"
+    ]
+  },
+  {
+    "id": "WM-012",
+    "domain": "winemaking",
+    "difficulty": 600,
+    "level": 3,
+    "format": "odd_one_out",
+    "question": "Which of the following is NOT a method of producing sweet wine?",
+    "options": [
+      "Late harvest (vendange tardive)",
+      "Botrytis cinerea (noble rot)",
+      "Carbonic maceration",
+      "Cryoextraction (ice wine)"
+    ],
+    "correct": 2,
+    "explanation": "Carbonic maceration is a fermentation technique for producing light, fruity red wines—not a method of producing sweet wines. Late harvest (leaving grapes on the vine to concentrate sugars), botrytis (noble rot dehydrating grapes), and cryoextraction (freezing grapes, as in ice wine) are all methods that concentrate grape sugars for sweet wine production.",
+    "sources": "WSET Level 3 Award in Wines Study Guide; The Wine Bible by Karen MacNeil",
+    "confidence": "established",
+    "tags": [
+      "sweet-wines",
+      "carbonic-maceration",
+      "production-methods"
+    ]
+  },
+  {
+    "id": "WM-013",
+    "domain": "winemaking",
+    "difficulty": 650,
+    "level": 3,
+    "format": "match_pairs",
+    "question": "Match each sweet wine production method to the wine most associated with it.",
+    "pairs": {
+      "left": [
+        "Noble rot (botrytis)",
+        "Ice wine (Eiswein)",
+        "Passito (dried grape)",
+        "Fortification (arrest fermentation)"
+      ],
+      "right": [
+        "Sauternes, Tokaji Aszú",
+        "Canadian Ice Wine, German Eiswein",
+        "Amarone della Valpolicella, Vin Santo",
+        "Port, Muscat de Beaumes-de-Venise"
+      ]
+    },
+    "correct": [
+      0,
+      1,
+      2,
+      3
+    ],
+    "explanation": "Noble rot produces Sauternes and Tokaji Aszú by concentrating sugars through botrytis-induced dehydration. Ice wine is produced when grapes freeze naturally on the vine, concentrating sugars (Canada, Germany). Passito involves drying harvested grapes (appassimento) to concentrate sugars (Amarone, Vin Santo). Fortification stops fermentation by adding spirit, preserving natural grape sugar (Port, VDN).",
+    "sources": "WSET Level 3 Award in Wines Study Guide; Oxford Companion to Wine (4th ed.)",
+    "confidence": "established",
+    "tags": [
+      "sweet-wines",
+      "botrytis",
+      "ice-wine",
+      "passito",
+      "fortification"
+    ]
+  },
+  {
+    "id": "WM-014",
+    "domain": "winemaking",
+    "difficulty": 700,
+    "level": 4,
+    "format": "multiple_choice",
+    "question": "In Port production, at what approximate sugar level is fermentation arrested by the addition of grape spirit (aguardente)?",
+    "options": [
+      "When all sugar has been converted to alcohol",
+      "When approximately half the sugar has been fermented, typically at 6-9% alcohol and around 100 g/L residual sugar",
+      "After malolactic fermentation is complete",
+      "At the same time as bottling"
+    ],
+    "correct": 1,
+    "explanation": "In Port production, grape spirit (aguardente at 77% ABV) is added during fermentation when approximately half the original sugar remains—typically when the fermenting must has reached 6-9% alcohol and retains around 80-110 g/L residual sugar. The spirit raises alcohol to approximately 19-22%, killing the yeast and preserving natural grape sweetness.",
+    "sources": "WSET Level 3 Award in Wines Study Guide; Oxford Companion to Wine (4th ed.)",
+    "confidence": "established",
+    "tags": [
+      "Port",
+      "fortification",
+      "aguardente",
+      "fermentation"
+    ]
+  },
+  {
+    "id": "WM-015",
+    "domain": "winemaking",
+    "difficulty": 750,
+    "level": 4,
+    "format": "multiple_choice",
+    "question": "What is the difference between 'biological aging' and 'oxidative aging' in Sherry production?",
+    "options": [
+      "Biological aging uses bacteria; oxidative aging uses chemicals",
+      "Biological aging occurs under a layer of flor yeast protecting the wine from oxygen (Fino/Manzanilla); oxidative aging exposes the wine to oxygen without flor protection (Oloroso)",
+      "Biological aging happens in bottles; oxidative aging in barrels",
+      "There is no difference; both terms describe the same process"
+    ],
+    "correct": 1,
+    "explanation": "Biological aging (crianza biológica) occurs under a protective layer of flor yeast (Saccharomyces cerevisiae film) that consumes glycerol and acetaldehyde, producing Fino and Manzanilla Sherries with a fresh, tangy, yeasty character. Oxidative aging (crianza oxidativa) occurs without flor protection, allowing controlled oxygen exposure that produces Oloroso Sherry with rich, nutty, caramel flavors. Amontillado bridges both: first biological, then oxidative.",
+    "sources": "WSET Level 3 Award in Wines Study Guide; Oxford Companion to Wine (4th ed.)",
+    "confidence": "established",
+    "tags": [
+      "Sherry",
+      "flor",
+      "biological-aging",
+      "oxidative-aging"
+    ]
+  },
+  {
+    "id": "WM-016",
+    "domain": "winemaking",
+    "difficulty": 800,
+    "level": 4,
+    "format": "odd_one_out",
+    "question": "Which of these is NOT a recognized toast level for oak barrels?",
+    "options": [
+      "Light toast",
+      "Medium toast",
+      "Heavy toast",
+      "Frozen toast"
+    ],
+    "correct": 3,
+    "explanation": "Oak barrel toast levels are light, medium, medium-plus, and heavy (or high). 'Frozen toast' does not exist. Toast level significantly affects the flavors imparted: light toast gives more raw wood and coconut lactone character, medium toast provides vanilla and spice, and heavy toast contributes smoky, coffee, and chocolate notes while reducing tannin extraction.",
+    "sources": "Wine Science by Jamie Goode; Oxford Companion to Wine (4th ed.)",
+    "confidence": "established",
+    "tags": [
+      "oak-aging",
+      "toast-levels",
+      "barrel"
+    ]
+  },
+  {
+    "id": "WM-017",
+    "domain": "winemaking",
+    "difficulty": 830,
+    "level": 4,
+    "format": "match_pairs",
+    "question": "Match each Sherry style to its aging method.",
+    "pairs": {
+      "left": [
+        "Fino",
+        "Oloroso",
+        "Amontillado",
+        "Palo Cortado"
+      ],
+      "right": [
+        "Entirely biological aging under flor",
+        "Entirely oxidative aging without flor",
+        "Biological aging then oxidative aging",
+        "Begins as Fino but loses flor unexpectedly; finishes oxidatively"
+      ]
+    },
+    "correct": [
+      0,
+      1,
+      2,
+      3
+    ],
+    "explanation": "Fino ages entirely under flor yeast in the solera. Oloroso is fortified to a higher level (17%+) that prevents flor growth, aging entirely oxidatively. Amontillado starts under flor (like Fino) but then the flor dies or is removed, continuing with oxidative aging. Palo Cortado is a rare style that begins developing as a Fino but spontaneously loses its flor, developing an Oloroso-like richness with Amontillado-like finesse.",
+    "sources": "WSET Level 3 Award in Wines Study Guide; Oxford Companion to Wine (4th ed.)",
+    "confidence": "established",
+    "tags": [
+      "Sherry",
+      "Fino",
+      "Oloroso",
+      "Amontillado",
+      "Palo-Cortado"
+    ]
+  },
+  {
+    "id": "WM-018",
+    "domain": "winemaking",
+    "difficulty": 900,
+    "level": 5,
+    "format": "multiple_choice",
+    "question": "What is the primary chemical reaction in malolactic fermentation, and which enzyme catalyzes it?",
+    "options": [
+      "Glucose is converted to ethanol by alcohol dehydrogenase",
+      "L-malic acid is decarboxylated to L-lactic acid and CO₂ by the malolactic enzyme (malate decarboxylase)",
+      "Tartaric acid is converted to citric acid by tartrate isomerase",
+      "Acetic acid is reduced to ethanol by acetaldehyde reductase"
+    ],
+    "correct": 1,
+    "explanation": "In malolactic fermentation, the enzyme malolactic enzyme (also called malate decarboxylase) in bacteria (primarily Oenococcus oeni) catalyzes the decarboxylation of L-malic acid to L-lactic acid, releasing CO₂. This reduces total acidity (diprotic malic acid is replaced by monoprotic lactic acid) and raises pH slightly.",
+    "sources": "Wine Science by Jamie Goode; Oxford Companion to Wine (4th ed.)",
+    "confidence": "established",
+    "tags": [
+      "MLF",
+      "chemistry",
+      "enzymes",
+      "acidity"
+    ]
+  },
+  {
+    "id": "WM-019",
+    "domain": "winemaking",
+    "difficulty": 950,
+    "level": 5,
+    "format": "multiple_choice",
+    "question": "What is 'bâtonnage' and what effect does it have on wine?",
+    "options": [
+      "The addition of egg whites for fining",
+      "The stirring of lees (dead yeast cells) during aging to increase mouthfeel, body, and flavor complexity",
+      "The process of blending wines from different barrels",
+      "The technique of heating must before fermentation"
+    ],
+    "correct": 1,
+    "explanation": "Bâtonnage is the periodic stirring of fine lees (dead yeast cells) during aging. This process releases mannoproteins and other yeast-derived compounds into the wine, increasing body, roundness, and textural richness. It also enhances integration of oak flavors and can improve wine stability. It is commonly used with Chardonnay, Muscadet (sur lie), and some Champagne base wines.",
+    "sources": "Wine Science by Jamie Goode; WSET Level 3 Award in Wines Study Guide",
+    "confidence": "established",
+    "tags": [
+      "bâtonnage",
+      "lees-contact",
+      "mouthfeel",
+      "winemaking-techniques"
+    ]
+  },
+  {
+    "id": "WM-020",
+    "domain": "winemaking",
+    "difficulty": 1000,
+    "level": 5,
+    "format": "odd_one_out",
+    "question": "Which of these is NOT a recognized fining agent used in winemaking?",
+    "options": [
+      "Bentonite (clay)",
+      "Egg whites (albumin)",
+      "Activated charcoal",
+      "Citric acid"
+    ],
+    "correct": 3,
+    "explanation": "Citric acid is an acidifying agent, not a fining agent. Fining agents work by binding to and removing unwanted particles through electrostatic attraction or adsorption. Bentonite (removes proteins in whites), egg whites (remove harsh tannins in reds), and activated charcoal (removes color and off-odors) are all recognized fining agents.",
+    "sources": "Wine Science by Jamie Goode; Oxford Companion to Wine (4th ed.)",
+    "confidence": "established",
+    "tags": [
+      "fining",
+      "clarification",
+      "winemaking-techniques"
+    ]
+  },
+  {
+    "id": "WM-021",
+    "domain": "winemaking",
+    "difficulty": 1050,
+    "level": 5,
+    "format": "match_pairs",
+    "question": "Match each fermentation vessel to its primary winemaking characteristic.",
+    "pairs": {
+      "left": [
+        "Stainless steel tank",
+        "New French oak barrel (225L)",
+        "Concrete egg",
+        "Amphora (clay vessel)"
+      ],
+      "right": [
+        "Inert, temperature-controlled, preserves fruit purity",
+        "Adds flavor (vanilla, toast), allows micro-oxygenation",
+        "Promotes natural convection of lees, no flavor addition, gentle oxygenation",
+        "Porous, allows oxygen exchange, no flavor addition, ancient technique"
+      ]
+    },
+    "correct": [
+      0,
+      1,
+      2,
+      3
+    ],
+    "explanation": "Stainless steel is inert and allows precise temperature control. New French oak (barrique) adds vanillin, toast, and spice while allowing micro-oxygenation through the wood. Concrete eggs have an oval shape that creates natural convection currents, keeping lees in suspension without stirring, and are flavor-neutral. Amphorae are porous clay vessels that allow gas exchange without adding flavor, used increasingly in natural winemaking.",
+    "sources": "Wine Science by Jamie Goode; Oxford Companion to Wine (4th ed.)",
+    "confidence": "established",
+    "tags": [
+      "fermentation-vessels",
+      "stainless-steel",
+      "oak",
+      "concrete",
+      "amphora"
+    ]
+  },
+  {
+    "id": "WM-022",
+    "domain": "winemaking",
+    "difficulty": 1100,
+    "level": 6,
+    "format": "multiple_choice",
+    "question": "In the traditional method of sparkling wine production, what is 'dosage' (liqueur d'expédition)?",
+    "options": [
+      "The initial addition of yeast and sugar for secondary fermentation",
+      "A mixture of wine and sugar added after disgorgement to adjust the sweetness level of the final wine",
+      "The base wine blend before secondary fermentation",
+      "The process of riddling bottles"
+    ],
+    "correct": 1,
+    "explanation": "Dosage (liqueur d'expédition) is the final addition to a sparkling wine after disgorgement. It consists of wine (from the same or a reserve supply) mixed with a measured amount of sugar. The dosage level determines the sweetness style: Brut Nature (0 g/L), Extra Brut (0-6 g/L), Brut (0-12 g/L), Extra Dry (12-17 g/L), Dry/Sec (17-32 g/L), Demi-Sec (32-50 g/L), or Doux (50+ g/L).",
+    "sources": "WSET Level 3 Award in Wines Study Guide; Oxford Companion to Wine (4th ed.)",
+    "confidence": "established",
+    "tags": [
+      "sparkling-wine",
+      "dosage",
+      "traditional-method",
+      "Champagne"
+    ]
+  },
+  {
+    "id": "WM-023",
+    "domain": "winemaking",
+    "difficulty": 1150,
+    "level": 6,
+    "format": "multiple_choice",
+    "question": "What is the difference between 'cross-flow filtration' and 'traditional pad (depth) filtration'?",
+    "options": [
+      "Cross-flow uses wine flowing parallel to the filter membrane to prevent clogging, while pad filtration pushes wine directly through filter sheets",
+      "There is no difference; they are the same process",
+      "Pad filtration is always gentler on wine than cross-flow",
+      "Cross-flow filtration adds flavor to wine"
+    ],
+    "correct": 0,
+    "explanation": "In cross-flow (tangential) filtration, wine flows parallel to the membrane surface, with permeate passing through while solids are swept away, preventing clogging. In pad (depth) filtration, wine is pushed directly through cellulose or diatomaceous earth filter sheets that trap particles. Cross-flow is more efficient for high-solids wines and produces less waste, but both methods can be gentle if properly calibrated.",
+    "sources": "Wine Science by Jamie Goode; Oxford Companion to Wine (4th ed.)",
+    "confidence": "established",
+    "tags": [
+      "filtration",
+      "cross-flow",
+      "clarification"
+    ]
+  },
+  {
+    "id": "WM-024",
+    "domain": "winemaking",
+    "difficulty": 1200,
+    "level": 6,
+    "format": "odd_one_out",
+    "question": "Which of the following is NOT a principle or practice associated with biodynamic viticulture?",
+    "options": [
+      "Use of preparation 500 (cow horn manure)",
+      "Planting and harvesting according to a lunar calendar",
+      "Systematic use of synthetic pesticides and herbicides",
+      "Viewing the vineyard as a self-sustaining ecosystem"
+    ],
+    "correct": 2,
+    "explanation": "Biodynamic viticulture, based on Rudolf Steiner's 1924 lectures, strictly prohibits synthetic pesticides and herbicides. It emphasizes natural preparations (like 500/cow horn manure and 501/silica), follows cosmic and lunar rhythms for vineyard activities, and views the farm as a holistic, self-sustaining organism. It goes beyond organic farming with its specific preparations and astronomical calendar.",
+    "sources": "Wine Science by Jamie Goode; Oxford Companion to Wine (4th ed.)",
+    "confidence": "established",
+    "tags": [
+      "biodynamic",
+      "viticulture",
+      "organic-farming"
+    ]
+  },
+  {
+    "id": "WM-025",
+    "domain": "winemaking",
+    "difficulty": 1250,
+    "level": 6,
+    "format": "match_pairs",
+    "question": "Match each viticultural practice to its primary purpose.",
+    "pairs": {
+      "left": [
+        "Green harvesting (crop thinning)",
+        "Canopy management (leaf removal)",
+        "Cover crops between rows",
+        "Lyre trellis system"
+      ],
+      "right": [
+        "Reducing yield to concentrate flavors in remaining fruit",
+        "Improving air circulation, sun exposure, and reducing disease pressure",
+        "Preventing erosion, managing vigor, promoting biodiversity",
+        "Splitting the canopy to increase leaf surface area and sun exposure"
+      ]
+    },
+    "correct": [
+      0,
+      1,
+      2,
+      3
+    ],
+    "explanation": "Green harvesting removes excess grape clusters during veraison to concentrate the vine's energy into fewer bunches. Canopy management (including leaf removal in the fruit zone) improves airflow and sunlight penetration, reducing rot risk and improving ripeness. Cover crops manage soil health, compete with vines for water (controlling vigor), and prevent erosion. The lyre trellis system splits the canopy into two vertical planes, maximizing photosynthesis.",
+    "sources": "WSET Level 3 Award in Wines Study Guide; Oxford Companion to Wine (4th ed.)",
+    "confidence": "established",
+    "tags": [
+      "viticulture",
+      "green-harvest",
+      "canopy-management",
+      "trellising"
+    ]
+  },
+  {
+    "id": "WM-026",
+    "domain": "winemaking",
+    "difficulty": 1300,
+    "level": 7,
+    "format": "multiple_choice",
+    "question": "What is the chemical role of SO₂ as an antioxidant in wine, specifically in its 'free' form?",
+    "options": [
+      "Free SO₂ directly combines with oxygen before it can react with wine components",
+      "Free SO₂ (as molecular SO₂ and bisulfite ion) reacts with hydrogen peroxide and quinones, preventing oxidative browning, and also inhibits oxidase enzymes (laccase, tyrosinase)",
+      "Free SO₂ increases the pH of wine to prevent oxidation",
+      "Free SO₂ reacts with tannins to create a protective layer"
+    ],
+    "correct": 1,
+    "explanation": "Free SO₂ exists in wine as molecular SO₂, bisulfite ion (HSO₃⁻), and sulfite ion (SO₃²⁻), in pH-dependent equilibrium. The bisulfite ion reacts with hydrogen peroxide (produced by polyphenol oxidation) and with quinones (the brown oxidation products), reversing browning. Molecular SO₂ inhibits oxidase enzymes like tyrosinase and the more SO₂-resistant laccase (from Botrytis-infected grapes). Only 'free' SO₂ is protective; 'bound' SO₂ has reacted with acetaldehyde or other compounds.",
+    "sources": "Wine Science by Jamie Goode; Oxford Companion to Wine (4th ed.)",
+    "confidence": "established",
+    "tags": [
+      "sulfur-dioxide",
+      "antioxidant",
+      "chemistry",
+      "free-SO2"
+    ]
+  },
+  {
+    "id": "WM-027",
+    "domain": "winemaking",
+    "difficulty": 1350,
+    "level": 7,
+    "format": "multiple_choice",
+    "question": "What is 'extended maceration' and how does it differ from post-fermentation maceration?",
+    "options": [
+      "They are the same technique",
+      "Extended maceration refers to any prolonged skin contact, while post-fermentation maceration specifically refers to continuing skin contact after alcoholic fermentation is complete, when the alcohol acts as a solvent for additional tannin and color extraction",
+      "Extended maceration occurs only before fermentation",
+      "Post-fermentation maceration uses water, not alcohol, for extraction"
+    ],
+    "correct": 1,
+    "explanation": "Post-fermentation maceration (a form of extended maceration) keeps the wine in contact with grape skins after fermentation is complete. The presence of alcohol (typically 12-15%) acts as a more effective solvent than water alone, extracting additional tannins, anthocyanins, and phenolic compounds. This technique can produce wines with greater structure and color stability, but risks over-extraction of harsh seed tannins if managed poorly. Duration ranges from days to months.",
+    "sources": "Wine Science by Jamie Goode; Oxford Companion to Wine (4th ed.)",
+    "confidence": "established",
+    "tags": [
+      "maceration",
+      "extended-maceration",
+      "tannin-extraction"
+    ]
+  },
+  {
+    "id": "WM-028",
+    "domain": "winemaking",
+    "difficulty": 1400,
+    "level": 7,
+    "format": "odd_one_out",
+    "question": "Which of these is NOT a characteristic of 'natural wine' as generally understood by the movement?",
+    "options": [
+      "Minimal or zero added SO₂",
+      "Spontaneous (indigenous/wild yeast) fermentation",
+      "Heavy fining with PVPP and casein",
+      "No added sugar (chaptalization) or acid adjustment"
+    ],
+    "correct": 2,
+    "explanation": "Natural wine philosophy generally advocates for minimal intervention, which excludes heavy fining with industrial agents like PVPP (polyvinylpolypyrrolidone) and casein. The movement emphasizes organic or biodynamic farming, spontaneous fermentation with native yeast, minimal or zero added sulfites, and no chaptalization or acidification. Filtration and fining are generally avoided or minimized.",
+    "sources": "Wine Science by Jamie Goode; Oxford Companion to Wine (4th ed.)",
+    "confidence": "established",
+    "tags": [
+      "natural-wine",
+      "minimal-intervention",
+      "fining"
+    ]
+  },
+  {
+    "id": "WM-029",
+    "domain": "winemaking",
+    "difficulty": 1450,
+    "level": 7,
+    "format": "match_pairs",
+    "question": "Match each fortification style to its production specifics.",
+    "pairs": {
+      "left": [
+        "Ruby Port",
+        "Tawny Port (aged)",
+        "Muscat de Beaumes-de-Venise (VDN)",
+        "Banyuls (VDN)"
+      ],
+      "right": [
+        "Fortified during fermentation; aged in large vessels to preserve fruit; deep ruby color",
+        "Fortified during fermentation; aged in small barrels with oxidative exposure for years",
+        "Fortified with neutral spirit at 5-10% of volume; Muscat blanc à petits grains",
+        "Fortified Grenache aged oxidatively; southern French Roussillon"
+      ]
+    },
+    "correct": [
+      0,
+      1,
+      2,
+      3
+    ],
+    "explanation": "Ruby Port is aged in large neutral vessels (pipes, vats) to minimize oxygen contact and preserve vibrant fruit character. Tawny Port ages in small 550-600L pipes (lodges), undergoing controlled oxidation that produces nutty, caramel flavors and tawny color. Muscat de Beaumes-de-Venise is a Vin Doux Naturel from Muscat blanc à petits grains fortified with neutral spirit. Banyuls is a Grenache-based VDN from Roussillon that can be aged oxidatively (tuilé/ambré) or reductively (rimage).",
+    "sources": "WSET Level 3 Award in Wines Study Guide; Oxford Companion to Wine (4th ed.)",
+    "confidence": "established",
+    "tags": [
+      "Port",
+      "VDN",
+      "fortification",
+      "Banyuls"
+    ]
+  },
+  {
+    "id": "WM-030",
+    "domain": "winemaking",
+    "difficulty": 1500,
+    "level": 8,
+    "format": "multiple_choice",
+    "question": "What is the 'Pasteur effect' and its relevance to wine fermentation?",
+    "options": [
+      "The sterilization of wine by heating",
+      "The observation that yeast cells shift from fermentation to aerobic respiration in the presence of oxygen, reducing alcohol production—relevant because winemakers must manage oxygen exposure during fermentation",
+      "The effect of pasteurized milk on wine taste",
+      "The process of adding Pasteur's original yeast strain to must"
+    ],
+    "correct": 1,
+    "explanation": "The Pasteur effect describes how yeast metabolism shifts from anaerobic fermentation (producing ethanol and CO₂) to aerobic respiration (producing CO₂ and water) when oxygen is available. In aerobic respiration, yeast generates more energy (ATP) per glucose molecule but produces no alcohol. Winemakers manage this by controlling oxygen exposure during fermentation to ensure efficient alcohol production while avoiding stuck fermentations from excessive aeration.",
+    "sources": "Wine Science by Jamie Goode; Oxford Companion to Wine (4th ed.)",
+    "confidence": "consensus",
+    "tags": [
+      "Pasteur-effect",
+      "fermentation",
+      "yeast-metabolism",
+      "oxygen"
+    ]
+  },
+  {
+    "id": "WM-031",
+    "domain": "winemaking",
+    "difficulty": 1550,
+    "level": 8,
+    "format": "multiple_choice",
+    "question": "What is the role of 'nitrogen nutrition' (YAN - Yeast Assimilable Nitrogen) during fermentation, and what happens when it is deficient?",
+    "options": [
+      "Nitrogen only affects wine color; deficiency causes browning",
+      "YAN is essential for yeast cell growth and fermentation vigor; deficiency can lead to stuck fermentations, production of H₂S (reduction), and off-flavors from stressed yeast metabolism",
+      "Nitrogen is only needed in red wine production",
+      "Low YAN always produces better quality wine"
+    ],
+    "correct": 1,
+    "explanation": "Yeast Assimilable Nitrogen (YAN) includes ammonium ions and alpha-amino acids that yeast needs for cell multiplication and protein synthesis during fermentation. Optimal YAN levels (typically 200-350 mg N/L) ensure healthy fermentation kinetics. Low YAN causes sluggish or stuck fermentations and can trigger yeast to produce hydrogen sulfide (H₂S) via the sulfate reduction pathway as cells scavenge for nitrogen. Winemakers may add diammonium phosphate (DAP) or organic nitrogen nutrients to supplement low YAN.",
+    "sources": "Wine Science by Jamie Goode; Oxford Companion to Wine (4th ed.)",
+    "confidence": "consensus",
+    "tags": [
+      "YAN",
+      "fermentation",
+      "nitrogen",
+      "H2S",
+      "yeast-nutrition"
+    ]
+  },
+  {
+    "id": "WM-032",
+    "domain": "winemaking",
+    "difficulty": 1600,
+    "level": 8,
+    "format": "odd_one_out",
+    "question": "Which of these is NOT a mechanism by which micro-oxygenation or controlled oxygen exposure benefits red wine during aging?",
+    "options": [
+      "Promotes polymerization of anthocyanins and tannins, stabilizing color",
+      "Softens harsh tannins through acetaldehyde-mediated bridging reactions",
+      "Increases residual sugar through aerobic yeast metabolism",
+      "Reduces reductive sulfur compounds (H₂S, mercaptans)"
+    ],
+    "correct": 2,
+    "explanation": "Oxygen exposure does not increase residual sugar—aerobic conditions would actually encourage yeast to consume sugar through respiration. The actual benefits of micro-oxygenation include: promoting anthocyanin-tannin polymerization (stabilizing color and softening mouthfeel), facilitating acetaldehyde-mediated tannin bridging (creating longer, softer polymer chains), and oxidizing reductive sulfur compounds like H₂S and mercaptans.",
+    "sources": "Wine Science by Jamie Goode; Oxford Companion to Wine (4th ed.)",
+    "confidence": "consensus",
+    "tags": [
+      "micro-oxygenation",
+      "tannin-polymerization",
+      "acetaldehyde",
+      "aging"
+    ]
+  },
+  {
+    "id": "WM-033",
+    "domain": "winemaking",
+    "difficulty": 1650,
+    "level": 8,
+    "format": "match_pairs",
+    "question": "Match each winemaking intervention to its specific chemical mechanism.",
+    "pairs": {
+      "left": [
+        "Cold stabilization",
+        "Bentonite fining",
+        "Reverse osmosis",
+        "Enzyme addition (pectinase)"
+      ],
+      "right": [
+        "Chilling wine to precipitate potassium bitartrate crystals",
+        "Negatively charged clay particles attract and remove positively charged proteins",
+        "Semi-permeable membrane separates water and small molecules from wine under pressure",
+        "Breaks down pectin in grape cell walls, improving juice yield and clarification"
+      ]
+    },
+    "correct": [
+      0,
+      1,
+      2,
+      3
+    ],
+    "explanation": "Cold stabilization involves chilling wine to near 0°C for several days, causing supersaturated potassium bitartrate to crystallize and precipitate out. Bentonite clay carries a negative charge that attracts and binds positively charged haze-forming proteins. Reverse osmosis uses pressure to force wine through a membrane, separating water and small molecules for concentration or alcohol adjustment. Pectinase enzymes hydrolyze pectin polysaccharides, releasing juice and improving clarity.",
+    "sources": "Wine Science by Jamie Goode; Oxford Companion to Wine (4th ed.)",
+    "confidence": "consensus",
+    "tags": [
+      "cold-stabilization",
+      "bentonite",
+      "reverse-osmosis",
+      "enzymes"
+    ]
+  },
+  {
+    "id": "WM-034",
+    "domain": "winemaking",
+    "difficulty": 1700,
+    "level": 9,
+    "format": "multiple_choice",
+    "question": "In the production of top-quality traditional method sparkling wine, what specific reactions occur during autolysis and how do they affect the wine?",
+    "options": [
+      "Autolysis only adds bubbles to the wine",
+      "During autolysis, yeast cell walls break down releasing mannoproteins, amino acids, and nucleotides; mannoproteins increase mouthfeel and mousse quality, amino acids contribute to umami and complexity, and Maillard-type reactions between amino acids and sugars develop toasty, biscuity, brioche flavors",
+      "Autolysis removes all yeast flavors from the wine",
+      "Autolysis is only relevant for wines aged less than 6 months on lees"
+    ],
+    "correct": 1,
+    "explanation": "Autolysis is the self-destruction of dead yeast cells by their own enzymes (beta-glucanases, proteases). As cell walls break down, mannoproteins are released, improving mouthfeel, mousse texture, and foam persistence. Amino acids and peptides contribute umami-like savory complexity. Over extended aging (years), Maillard-type reactions between released amino acids and residual sugars produce the characteristic toasty, biscuit, and brioche aromas prized in aged Champagne.",
+    "sources": "Wine Science by Jamie Goode; Oxford Companion to Wine (4th ed.)",
+    "confidence": "consensus",
+    "tags": [
+      "autolysis",
+      "Champagne",
+      "mannoproteins",
+      "traditional-method"
+    ]
+  },
+  {
+    "id": "WM-035",
+    "domain": "winemaking",
+    "difficulty": 1750,
+    "level": 9,
+    "format": "multiple_choice",
+    "question": "What is the biochemical pathway by which Saccharomyces cerevisiae produces ethanol from glucose during wine fermentation?",
+    "options": [
+      "The citric acid cycle (Krebs cycle)",
+      "Glycolysis converts glucose to pyruvate, then pyruvate decarboxylase removes CO₂ to form acetaldehyde, which is reduced to ethanol by alcohol dehydrogenase using NADH",
+      "The pentose phosphate pathway directly produces ethanol",
+      "Beta-oxidation of fatty acids generates ethanol as a byproduct"
+    ],
+    "correct": 1,
+    "explanation": "Alcoholic fermentation follows the Embden-Meyerhof-Parnas (glycolytic) pathway: glucose is converted to two molecules of pyruvate, generating 2 ATP and 2 NADH. Under anaerobic conditions, pyruvate decarboxylase removes CO₂ from pyruvate to form acetaldehyde, which is then reduced to ethanol by alcohol dehydrogenase, regenerating NAD+ to sustain glycolysis. The net equation: C₆H₁₂O₆ → 2C₂H₅OH + 2CO₂.",
+    "sources": "Wine Science by Jamie Goode; Oxford Companion to Wine (4th ed.)",
+    "confidence": "consensus",
+    "tags": [
+      "glycolysis",
+      "fermentation-chemistry",
+      "ethanol",
+      "yeast-metabolism"
+    ]
+  },
+  {
+    "id": "WM-036",
+    "domain": "winemaking",
+    "difficulty": 1800,
+    "level": 9,
+    "format": "odd_one_out",
+    "question": "Which of these is NOT a recognized mechanism by which oak tannins differ from grape seed tannins in their interaction with wine?",
+    "options": [
+      "Oak tannins (ellagitannins) are hydrolyzable, while grape tannins (proanthocyanidins) are condensed",
+      "Oak tannins have a higher molecular weight than grape tannins on average",
+      "Ellagitannins from oak can be hydrolyzed by acid to release ellagic acid and glucose",
+      "Ellagitannins contribute to antioxidant protection by scavenging reactive oxygen species in wine"
+    ],
+    "correct": 1,
+    "explanation": "Oak ellagitannins generally have LOWER molecular weight than grape condensed tannins (proanthocyanidins), not higher. Grape seed and skin tannins are condensed polymers of flavan-3-ol units that can reach very high molecular weights. Oak ellagitannins are hydrolyzable (broken down by acid or enzymes into ellagic acid and glucose) and contribute significant antioxidant activity in wine, consuming dissolved oxygen and helping protect against premature oxidation.",
+    "sources": "Wine Science by Jamie Goode; Oxford Companion to Wine (4th ed.)",
+    "confidence": "consensus",
+    "tags": [
+      "ellagitannins",
+      "proanthocyanidins",
+      "oak-chemistry",
+      "tannin-types"
+    ]
+  },
+  {
+    "id": "WM-037",
+    "domain": "winemaking",
+    "difficulty": 1900,
+    "level": 10,
+    "format": "multiple_choice",
+    "question": "In the context of reductive winemaking (e.g., some Chablis producers), what is the specific mechanism by which a reductive environment preserves thiol compounds in white wine?",
+    "options": [
+      "Reductive conditions have no effect on thiol preservation",
+      "In the absence of oxygen, thiols (like 3MH and 3MHA) are protected from oxidation to disulfides; copper fining must be carefully managed because Cu²⁺ catalyzes thiol-to-disulfide oxidation, and low dissolved oxygen prevents quinone formation that would otherwise react with and consume thiols",
+      "Reduction simply means adding more sulfites than usual",
+      "Reductive winemaking only works for red wines"
+    ],
+    "correct": 1,
+    "explanation": "Volatile thiols (3MH, 3MHA, 4MMP) are highly susceptible to oxidative loss. In aerobic conditions, they oxidize to non-volatile disulfides, losing their aroma. Quinones (from polyphenol oxidation) also readily react with thiols, eliminating them. Reductive winemaking minimizes oxygen exposure to prevent both pathways. Copper (Cu²⁺), often used to remove H₂S, must be applied judiciously because it catalyzes thiol oxidation to disulfides. This is why some producers accept a slight reductive character to preserve varietal thiol expression.",
+    "sources": "Wine Science by Jamie Goode; Oxford Companion to Wine (4th ed.)",
+    "confidence": "consensus",
+    "tags": [
+      "reductive-winemaking",
+      "thiols",
+      "oxidation-chemistry",
+      "Chablis"
+    ]
+  },
+  {
+    "id": "WM-038",
+    "domain": "winemaking",
+    "difficulty": 2000,
+    "level": 10,
+    "format": "multiple_choice",
+    "question": "What is the 'copigmentation' phenomenon and its importance for red wine color stability?",
+    "options": [
+      "Copigmentation is adding artificial coloring to wine",
+      "Copigmentation is the non-covalent stacking interaction between anthocyanins and cofactors (other phenolic compounds like flavonols, hydroxycinnamic acids) that enhances and stabilizes color in young red wines; it can account for 30-50% of the color in young reds and provides the pool of anthocyanins that will later form stable polymeric pigments",
+      "Copigmentation only occurs in rosé wine",
+      "It is the same as anthocyanin polymerization"
+    ],
+    "correct": 1,
+    "explanation": "Copigmentation involves non-covalent interactions (pi-pi stacking, hydrophobic effects) between free anthocyanin monomers and cofactor molecules (flavonols, hydroxycinnamic acids, amino acids). These complexes cause a bathochromic shift (bluer hue) and hyperchromic effect (enhanced intensity), significantly boosting color in young wines. Copigmentation can contribute 30-50% of observable color. Over time, these associated anthocyanins are more readily available to form covalent polymeric pigments (both directly and via acetaldehyde-mediated bridging), which provide long-term color stability.",
+    "sources": "Wine Science by Jamie Goode; Oxford Companion to Wine (4th ed.)",
+    "confidence": "consensus",
+    "tags": [
+      "copigmentation",
+      "anthocyanins",
+      "color-chemistry",
+      "phenolics"
+    ]
+  },
+  {
+    "id": "WM-039",
+    "domain": "winemaking",
+    "difficulty": 2100,
+    "level": 10,
+    "format": "odd_one_out",
+    "question": "At the highest level of winemaking understanding, which of these is NOT an accurate statement about the role of oxygen in barrel aging?",
+    "options": [
+      "Oxygen transmission through barrel staves occurs at approximately 2-5 mL O₂/L/month for a standard 225L barrique",
+      "Oxygen promotes acetaldehyde formation from ethanol oxidation, and acetaldehyde mediates tannin-anthocyanin polymerization",
+      "Oxygen ingress through the bung is the primary route, exceeding transmission through staves",
+      "Newer barrels transmit more oxygen than older barrels due to higher wood porosity"
+    ],
+    "correct": 3,
+    "explanation": "Newer barrels actually transmit LESS oxygen through their staves than older barrels, because ellagitannins in fresh oak actively consume oxygen (acting as antioxidants). As these ellagitannins become depleted over successive uses, the wood allows more oxygen transmission. The primary oxygen ingress route is indeed through the bung and bung-stave interface, not through the staves. Stave transmission rates are approximately 2-5 mL O₂/L/month, with acetaldehyde-mediated bridging being a key consequence of this controlled oxygenation.",
+    "sources": "Wine Science by Jamie Goode; Oxford Companion to Wine (4th ed.)",
+    "confidence": "consensus",
+    "tags": [
+      "barrel-aging",
+      "oxygen-transmission",
+      "ellagitannins",
+      "acetaldehyde"
+    ]
+  },
+  {
+    "id": "WM-040",
+    "domain": "winemaking",
+    "difficulty": 2200,
+    "level": 10,
+    "format": "match_pairs",
+    "question": "Match each advanced winemaking concept to its precise scientific mechanism.",
+    "pairs": {
+      "left": [
+        "Stuck fermentation recovery",
+        "Malolactic inhibition",
+        "Must hyperoxidation",
+        "Thermovinification"
+      ],
+      "right": [
+        "Adding fresh yeast with nutrients and acclimatization to high-alcohol, low-nutrient, high-SO₂ environment",
+        "Maintaining pH below 3.2, SO₂ above 30 mg/L free, and temperature below 15°C to inhibit Oenococcus oeni",
+        "Deliberately exposing must to oxygen pre-fermentation to oxidize and precipitate phenolics, producing more stable whites",
+        "Rapid heating of red must to 60-80°C to extract color and phenolics before fermentation"
+      ]
+    },
+    "correct": [
+      0,
+      1,
+      2,
+      3
+    ],
+    "explanation": "Stuck fermentation recovery requires acclimatizing fresh, healthy yeast to the hostile environment of partially fermented wine (high alcohol, osmotic stress, low nutrients, possible SO₂). MLF can be inhibited by maintaining low pH (<3.2), adequate free SO₂ (>30 mg/L), and cool temperatures (<15°C), conditions hostile to Oenococcus oeni. Must hyperoxidation deliberately oxidizes and precipitates oxidizable phenolics before fermentation, producing whites that are paradoxically more resistant to later oxidation. Thermovinification heats must to rapidly extract color and tannins before fermentation, used for deeply colored reds.",
+    "sources": "Wine Science by Jamie Goode; Oxford Companion to Wine (4th ed.)",
+    "confidence": "consensus",
+    "tags": [
+      "stuck-fermentation",
+      "MLF-inhibition",
+      "hyperoxidation",
+      "thermovinification"
+    ]
+  },
+  {
+    "id": "WM-041",
+    "domain": "winemaking",
+    "difficulty": 130,
+    "level": 1,
+    "format": "multiple_choice",
+    "question": "What is the main ingredient used to make wine?",
+    "options": [
+      "Barley",
+      "Grapes",
+      "Apples",
+      "Rice"
+    ],
+    "correct": 1,
+    "explanation": "Wine is produced by fermenting grapes of the species Vitis vinifera (or sometimes other Vitis species or hybrids). While other fruits can be fermented into 'fruit wines,' the unqualified term 'wine' refers to the product of grape fermentation.",
+    "sources": "WSET Level 1 Award in Wines; Oxford Companion to Wine (4th ed.)",
+    "confidence": "established",
+    "tags": [
+      "basic-winemaking",
+      "grapes"
+    ]
+  },
+  {
+    "id": "WM-042",
+    "domain": "winemaking",
+    "difficulty": 230,
+    "level": 1,
+    "format": "odd_one_out",
+    "question": "Which of the following is NOT a type of wine?",
+    "options": [
+      "Still wine",
+      "Sparkling wine",
+      "Fortified wine",
+      "Distilled wine"
+    ],
+    "correct": 3,
+    "explanation": "'Distilled wine' is not a standard wine category—distilling wine produces spirits such as brandy or cognac. The three main categories of wine are still (no bubbles), sparkling (with dissolved CO₂), and fortified (with added spirit to increase alcohol).",
+    "sources": "WSET Level 1 Award in Wines; The Wine Bible by Karen MacNeil",
+    "confidence": "established",
+    "tags": [
+      "basic-terminology",
+      "wine-categories"
+    ]
+  },
+  {
+    "id": "WM-043",
+    "domain": "winemaking",
+    "difficulty": 280,
+    "level": 1,
+    "format": "multiple_choice",
+    "question": "Why is rosé wine pink?",
+    "options": [
+      "Because white and red wines are blended together (in most cases)",
+      "Because red-skinned grapes are used with limited skin contact during maceration",
+      "Because pink grapes are used",
+      "Because food coloring is added"
+    ],
+    "correct": 1,
+    "explanation": "Most rosé wine gets its pink color from limited skin contact (maceration) with red-skinned grapes. The skins are in contact with the juice for a short time (typically 2-24 hours) before being removed, extracting some but not all of the red pigments (anthocyanins). Blending red and white wine is generally prohibited except in Champagne rosé.",
+    "sources": "WSET Level 2 Award in Wines Study Guide; The Wine Bible by Karen MacNeil",
+    "confidence": "established",
+    "tags": [
+      "rosé",
+      "maceration",
+      "basic-winemaking"
+    ]
+  },
+  {
+    "id": "WM-044",
+    "domain": "winemaking",
+    "difficulty": 340,
+    "level": 2,
+    "format": "multiple_choice",
+    "question": "What does 'chaptalization' mean in winemaking?",
+    "options": [
+      "Aging wine in a chapel",
+      "Adding sugar to grape must before or during fermentation to increase alcohol content",
+      "Removing sugar from grape must",
+      "Adding yeast to start fermentation"
+    ],
+    "correct": 1,
+    "explanation": "Chaptalization is the addition of sugar to grape must before or during fermentation to increase the potential alcohol level. Named after Jean-Antoine Chaptal, it is permitted in cooler wine regions where grapes may not achieve sufficient natural sugar levels. It is prohibited in many warm regions (Southern France, most of the New World, Italy).",
+    "sources": "WSET Level 3 Award in Wines Study Guide; Oxford Companion to Wine (4th ed.)",
+    "confidence": "established",
+    "tags": [
+      "chaptalization",
+      "sugar",
+      "fermentation"
+    ]
+  },
+  {
+    "id": "WM-045",
+    "domain": "winemaking",
+    "difficulty": 380,
+    "level": 2,
+    "format": "match_pairs",
+    "question": "Match each winemaking step to the correct production stage for white wine.",
+    "pairs": {
+      "left": [
+        "Pressing",
+        "Settling (débourbage)",
+        "Alcoholic fermentation",
+        "Racking and clarification"
+      ],
+      "right": [
+        "Separating juice from skins immediately after crushing",
+        "Allowing solids to settle from juice before fermentation",
+        "Yeast converts sugar to alcohol and CO₂",
+        "Removing wine from sediment and clarifying after fermentation"
+      ]
+    },
+    "correct": [
+      0,
+      1,
+      2,
+      3
+    ],
+    "explanation": "In white winemaking, grapes are typically pressed immediately to separate juice from skins (unlike reds, where fermentation occurs with skins). The juice is then settled (débourbage) to remove coarse solids before fermentation. After alcoholic fermentation, the wine is racked off its lees and clarified before bottling.",
+    "sources": "WSET Level 3 Award in Wines Study Guide; Oxford Companion to Wine (4th ed.)",
+    "confidence": "established",
+    "tags": [
+      "white-wine-production",
+      "winemaking-process"
+    ]
+  },
+  {
+    "id": "WM-046",
+    "domain": "winemaking",
+    "difficulty": 420,
+    "level": 2,
+    "format": "multiple_choice",
+    "question": "What is the difference between new oak and used (neutral) oak barrels?",
+    "options": [
+      "There is no difference",
+      "New oak imparts more flavor compounds (vanilla, toast, spice) and more tannin to the wine, while used/neutral oak provides micro-oxygenation and a vessel for aging without significant flavor addition",
+      "Used oak always makes better wine",
+      "New oak is only used for white wines"
+    ],
+    "correct": 1,
+    "explanation": "New oak barrels have the highest concentration of extractable compounds—vanillin, oak lactones, eugenol, furfural—and contribute the most flavor and tannin to wine. After 3-4 uses, most extractable compounds are depleted and the barrel becomes 'neutral,' still allowing beneficial micro-oxygenation and gentle aging but without adding significant oak flavor.",
+    "sources": "Wine Science by Jamie Goode; WSET Level 3 Award in Wines Study Guide",
+    "confidence": "established",
+    "tags": [
+      "oak-aging",
+      "new-oak",
+      "neutral-oak"
+    ]
+  },
+  {
+    "id": "WM-047",
+    "domain": "winemaking",
+    "difficulty": 560,
+    "level": 3,
+    "format": "multiple_choice",
+    "question": "What is 'lees aging' (élevage sur lies) and why is it used?",
+    "options": [
+      "Aging wine on dead leaves from the vineyard",
+      "Aging wine in contact with dead yeast cells (lees) to add body, complexity, and mouthfeel through mannoproteins and other yeast-derived compounds",
+      "A type of barrel aging used only in Bordeaux",
+      "Leaving wine exposed to air for extended periods"
+    ],
+    "correct": 1,
+    "explanation": "Lees aging involves keeping wine in contact with the spent yeast cells (lees) after fermentation. As the yeast cells undergo autolysis, they release mannoproteins, amino acids, and polysaccharides that enhance body, texture, and flavor complexity. This technique is widely used for Muscadet sur lie, Champagne, and premium Chardonnay. Fine lees contribute positively; gross lees can produce off-flavors if not managed.",
+    "sources": "Wine Science by Jamie Goode; WSET Level 3 Award in Wines Study Guide",
+    "confidence": "established",
+    "tags": [
+      "lees-aging",
+      "autolysis",
+      "sur-lie"
+    ]
+  },
+  {
+    "id": "WM-048",
+    "domain": "winemaking",
+    "difficulty": 610,
+    "level": 3,
+    "format": "odd_one_out",
+    "question": "Which of the following is NOT a method of concentrating grape must for sweet wine production?",
+    "options": [
+      "Botrytis cinerea infection (noble rot)",
+      "Freeze concentration (cryoextraction)",
+      "Saignée method",
+      "Sun-drying grapes (passito/appassimento)"
+    ],
+    "correct": 2,
+    "explanation": "The saignée ('bleeding') method is a technique for concentrating RED wine by drawing off a portion of juice from a red must to increase the skin-to-juice ratio—it is used for making rosé or concentrating red wines, not specifically for sweet wine production. Botrytis, cryoextraction, and passito all physically concentrate sugars through dehydration or freezing.",
+    "sources": "WSET Level 3 Award in Wines Study Guide; Oxford Companion to Wine (4th ed.)",
+    "confidence": "established",
+    "tags": [
+      "sweet-wines",
+      "saignée",
+      "concentration-methods"
+    ]
+  },
+  {
+    "id": "WM-049",
+    "domain": "winemaking",
+    "difficulty": 670,
+    "level": 3,
+    "format": "match_pairs",
+    "question": "Match each maceration technique to the wine style it typically produces.",
+    "pairs": {
+      "left": [
+        "Carbonic maceration",
+        "Cold soak",
+        "Extended post-fermentation maceration",
+        "Whole-cluster fermentation"
+      ],
+      "right": [
+        "Light, fruity, low-tannin reds (Beaujolais Nouveau)",
+        "Enhanced color and fruit aromas with softer tannins",
+        "Structured, tannic, age-worthy reds",
+        "Adds stem tannin, spice, and herbal complexity"
+      ]
+    },
+    "correct": [
+      0,
+      1,
+      2,
+      3
+    ],
+    "explanation": "Carbonic maceration creates light, fruity wines with low tannin and distinctive bubblegum/banana aromas. Cold soaking extracts color and aromatics before fermentation without harsh tannin extraction. Extended maceration increases structure and tannin for age-worthiness. Whole-cluster fermentation (including stems) adds structural tannin, aromatic spice, and herbal complexity, used by some top Pinot Noir and Syrah producers.",
+    "sources": "Wine Science by Jamie Goode; Oxford Companion to Wine (4th ed.)",
+    "confidence": "established",
+    "tags": [
+      "maceration-techniques",
+      "carbonic",
+      "cold-soak",
+      "whole-cluster"
+    ]
+  },
+  {
+    "id": "WM-050",
+    "domain": "winemaking",
+    "difficulty": 730,
+    "level": 4,
+    "format": "multiple_choice",
+    "question": "What is the solera system used in Sherry production?",
+    "options": [
+      "A single vintage aging system",
+      "A fractional blending system where wine passes through a series of barrels arranged by age, with the oldest layer (solera) being partially drawn off for bottling and replenished from younger layers (criaderas)",
+      "A method of adding sugar to sparkling wine",
+      "A type of grape pressing technique"
+    ],
+    "correct": 1,
+    "explanation": "The solera system is a fractional blending method using rows (scales) of barrels arranged by age. Wine for bottling is drawn from the oldest row (the solera, at floor level). This is replenished from the next oldest row (first criadera), which is topped up from the second criadera, and so on. Fresh wine enters the youngest criadera. This produces a consistent, multi-vintage blend where each bottle contains a proportion of very old wine.",
+    "sources": "WSET Level 3 Award in Wines Study Guide; Oxford Companion to Wine (4th ed.)",
+    "confidence": "established",
+    "tags": [
+      "Sherry",
+      "solera",
+      "fractional-blending"
+    ]
+  },
+  {
+    "id": "WM-051",
+    "domain": "winemaking",
+    "difficulty": 770,
+    "level": 4,
+    "format": "multiple_choice",
+    "question": "What is the key difference between organic and biodynamic viticulture?",
+    "options": [
+      "They are identical practices",
+      "Both prohibit synthetic chemicals, but biodynamic goes further with specific preparations (500, 501), a holistic ecosystem approach, and following astronomical/lunar calendars for vineyard activities",
+      "Organic farming is more restrictive than biodynamic",
+      "Biodynamic means the same as natural wine"
+    ],
+    "correct": 1,
+    "explanation": "Both organic and biodynamic viticulture prohibit synthetic pesticides, herbicides, and fertilizers. Biodynamic farming, based on Rudolf Steiner's principles, goes beyond organic by requiring specific preparations (e.g., 500/horn manure, 501/horn silica), treating the farm as a self-sustaining organism, and timing vineyard activities according to a biodynamic calendar influenced by lunar and planetary positions.",
+    "sources": "Wine Science by Jamie Goode; Oxford Companion to Wine (4th ed.)",
+    "confidence": "established",
+    "tags": [
+      "organic",
+      "biodynamic",
+      "viticulture"
+    ]
+  },
+  {
+    "id": "WM-052",
+    "domain": "winemaking",
+    "difficulty": 860,
+    "level": 4,
+    "format": "odd_one_out",
+    "question": "Which of these is NOT a common viticultural method for controlling vine vigor?",
+    "options": [
+      "Rootstock selection",
+      "Cover crops to compete for water and nutrients",
+      "Chaptalization",
+      "Dry farming (no irrigation)"
+    ],
+    "correct": 2,
+    "explanation": "Chaptalization is a winemaking technique (adding sugar to must to increase alcohol), not a viticultural method for controlling vine vigor. Rootstock selection directly controls vigor through the rootstock's growth characteristics. Cover crops compete with vines for water and nutrients, reducing vigor. Dry farming limits water availability, naturally restricting vine growth and encouraging deep root development.",
+    "sources": "WSET Level 3 Award in Wines Study Guide; Oxford Companion to Wine (4th ed.)",
+    "confidence": "established",
+    "tags": [
+      "viticulture",
+      "vine-vigor",
+      "rootstock",
+      "chaptalization"
+    ]
+  },
+  {
+    "id": "WM-053",
+    "domain": "winemaking",
+    "difficulty": 910,
+    "level": 5,
+    "format": "multiple_choice",
+    "question": "What is the optimal temperature range for red wine fermentation and why?",
+    "options": [
+      "Below 10°C to preserve fruit character",
+      "Typically 25-30°C; higher temperatures increase extraction of color, tannin, and flavor compounds but risk killing yeast or producing off-flavors above approximately 35°C",
+      "Above 40°C for maximum extraction",
+      "Temperature has no effect on fermentation"
+    ],
+    "correct": 1,
+    "explanation": "Red wine fermentation typically occurs between 25-30°C. Higher temperatures within this range promote greater extraction of anthocyanins (color), tannins, and flavor compounds from skins. However, temperatures above approximately 35°C can stress or kill yeast cells, leading to stuck fermentations and production of off-flavors. Some winemakers use temperature spikes (flash détente) or peaks carefully managed during fermentation to maximize extraction.",
+    "sources": "Wine Science by Jamie Goode; Oxford Companion to Wine (4th ed.)",
+    "confidence": "established",
+    "tags": [
+      "fermentation",
+      "temperature",
+      "extraction",
+      "red-winemaking"
+    ]
+  },
+  {
+    "id": "WM-054",
+    "domain": "winemaking",
+    "difficulty": 960,
+    "level": 5,
+    "format": "match_pairs",
+    "question": "Match each pruning/training system to its typical application.",
+    "pairs": {
+      "left": [
+        "Guyot (single or double)",
+        "Gobelet (bush vine)",
+        "Pergola/tendone",
+        "Cordon de Royat"
+      ],
+      "right": [
+        "Cane-pruned; widely used in Burgundy, Champagne",
+        "Free-standing bush; old vines in hot, dry Mediterranean climates",
+        "Overhead canopy; traditional in northern Italy (Trentino)",
+        "Spur-pruned cordon; common in warm regions and for mechanized harvesting"
+      ]
+    },
+    "correct": [
+      0,
+      1,
+      2,
+      3
+    ],
+    "explanation": "Guyot is a cane-pruned system (one or two canes retained) widely used in Burgundy and Champagne for fine wine. Gobelet (bush vine) is an ancient free-standing system suited to hot, dry climates (southern France, old-vine Barossa) where overhead shade protects fruit. Pergola trains vines overhead, common in Trentino and parts of Portugal. Cordon de Royat is a spur-pruned system on permanent cordons, favored where mechanization is important.",
+    "sources": "WSET Level 3 Award in Wines Study Guide; Oxford Companion to Wine (4th ed.)",
+    "confidence": "established",
+    "tags": [
+      "pruning",
+      "training-systems",
+      "viticulture"
+    ]
+  },
+  {
+    "id": "WM-055",
+    "domain": "winemaking",
+    "difficulty": 1030,
+    "level": 5,
+    "format": "multiple_choice",
+    "question": "What is 'flash détente' and when is it used?",
+    "options": [
+      "A method of rapidly cooling must after pressing",
+      "A thermovinification technique that rapidly heats crushed red grapes to 70-85°C under vacuum, causing cell walls to rupture and release color and tannin, followed by flash cooling; used for deeply colored, fruit-forward reds",
+      "A sparkling wine production method",
+      "A type of cold stabilization"
+    ],
+    "correct": 1,
+    "explanation": "Flash détente is an advanced extraction technique where red grape must is heated to 70-85°C for a very brief period, then placed under vacuum causing rapid evaporation and cooling. The thermal shock ruptures grape cell walls, releasing anthocyanins, tannins, and polysaccharides. The vacuum step also removes volatile off-flavors. It is used to produce deeply colored, richly extracted wines, though critics argue it can reduce complexity.",
+    "sources": "Wine Science by Jamie Goode; Oxford Companion to Wine (4th ed.)",
+    "confidence": "established",
+    "tags": [
+      "flash-détente",
+      "thermovinification",
+      "extraction"
+    ]
+  },
+  {
+    "id": "WM-056",
+    "domain": "winemaking",
+    "difficulty": 1120,
+    "level": 6,
+    "format": "multiple_choice",
+    "question": "What is the difference between 'riddling' (remuage) and 'disgorgement' (dégorgement) in Champagne production?",
+    "options": [
+      "They are the same process",
+      "Riddling gradually moves sediment into the bottle neck through incremental rotation and tilting; disgorgement removes the collected sediment by freezing the bottle neck and expelling the ice plug of sediment when the crown cap is removed",
+      "Riddling is only done by machine; disgorgement is always manual",
+      "Disgorgement occurs before riddling"
+    ],
+    "correct": 1,
+    "explanation": "After secondary fermentation and lees aging, riddling (remuage) gradually moves the yeast sediment into the bottle neck through progressive rotation and tilting—traditionally by hand on pupitres over weeks, now often by machine (gyropalette) in days. Disgorgement (dégorgement) follows: the bottle neck is frozen in brine, forming an ice plug containing the sediment, and when the crown cap is removed, pressure expels the plug. The bottle is then topped up with dosage and corked.",
+    "sources": "WSET Level 3 Award in Wines Study Guide; Oxford Companion to Wine (4th ed.)",
+    "confidence": "established",
+    "tags": [
+      "Champagne",
+      "riddling",
+      "disgorgement",
+      "traditional-method"
+    ]
+  },
+  {
+    "id": "WM-057",
+    "domain": "winemaking",
+    "difficulty": 1170,
+    "level": 6,
+    "format": "match_pairs",
+    "question": "Match each vessel material to the specific property it imparts to wine during aging.",
+    "pairs": {
+      "left": [
+        "New French oak barrique (225L)",
+        "Stainless steel",
+        "Concrete (traditional or egg-shaped)",
+        "Large old oak foudre (1000-5000L)"
+      ],
+      "right": [
+        "Vanillin, ellagitannins, toast compounds; high O₂ transmission per liter due to small size",
+        "Completely inert; no flavor addition; excellent temperature control; anaerobic",
+        "Micro-porous; gentle oxygenation; thermal mass for temperature stability; flavor-neutral",
+        "Minimal flavor extraction (neutral); low O₂ transmission per liter due to large volume-to-surface ratio"
+      ]
+    },
+    "correct": [
+      0,
+      1,
+      2,
+      3
+    ],
+    "explanation": "New French oak barriques have maximum extractable compounds and high oxygen transmission relative to wine volume. Stainless steel is completely inert with no oxygen transmission. Concrete (whether egg-shaped or traditional) is micro-porous, allowing gentle oxygenation while remaining flavor-neutral, with thermal mass providing natural temperature regulation. Large old foudres have minimal extractable flavor remaining and very low oxygen transmission per liter due to the favorable volume-to-surface ratio.",
+    "sources": "Wine Science by Jamie Goode; Oxford Companion to Wine (4th ed.)",
+    "confidence": "established",
+    "tags": [
+      "aging-vessels",
+      "oak",
+      "concrete",
+      "stainless-steel",
+      "foudre"
+    ]
+  },
+  {
+    "id": "WM-058",
+    "domain": "winemaking",
+    "difficulty": 1320,
+    "level": 7,
+    "format": "multiple_choice",
+    "question": "What is 'délestage' (rack and return) and how does it differ from pump-over (remontage)?",
+    "options": [
+      "They are identical techniques",
+      "Délestage involves draining the entire fermenting juice from the skins into another tank and then returning it over the cap, while pump-over circulates juice from the bottom over the cap without fully separating them; délestage provides more aggressive extraction and also aerates the must",
+      "Délestage is only used for white wines",
+      "Pump-over is more aggressive than délestage"
+    ],
+    "correct": 1,
+    "explanation": "Délestage (rack and return) involves completely draining the fermenting juice off the cap of skins into a separate vessel, allowing the cap to compact and drain under its own weight, then returning the juice over the top. This provides more thorough extraction than pump-over (remontage), which simply circulates juice from the bottom over the floating cap. Délestage also aerates the must, helps remove harsh seed tannins (seeds fall to the bottom when drained), and compacts the cap for better subsequent extraction.",
+    "sources": "Wine Science by Jamie Goode; Oxford Companion to Wine (4th ed.)",
+    "confidence": "established",
+    "tags": [
+      "délestage",
+      "pump-over",
+      "extraction-techniques",
+      "red-winemaking"
+    ]
+  },
+  {
+    "id": "WM-059",
+    "domain": "winemaking",
+    "difficulty": 1380,
+    "level": 7,
+    "format": "odd_one_out",
+    "question": "Which of these is NOT a recognized benefit of using wild/indigenous yeast for fermentation versus selected commercial strains?",
+    "options": [
+      "Greater aromatic complexity from multiple yeast species contributing different metabolites",
+      "Potentially more terroir expression due to site-specific microflora",
+      "Guaranteed faster, more predictable fermentation kinetics",
+      "Production of glycerol and other secondary metabolites in different proportions than single-strain fermentations"
+    ],
+    "correct": 2,
+    "explanation": "Wild/indigenous yeast fermentations are typically LESS predictable and SLOWER than commercial yeast fermentations, with higher risk of stuck fermentation or off-flavor production. The recognized benefits include greater aromatic complexity (multiple yeast species contribute different esters, higher alcohols, and other metabolites), potential terroir expression from site-specific microflora, and different glycerol and secondary metabolite production profiles.",
+    "sources": "Wine Science by Jamie Goode; Oxford Companion to Wine (4th ed.)",
+    "confidence": "established",
+    "tags": [
+      "indigenous-yeast",
+      "wild-yeast",
+      "fermentation",
+      "terroir"
+    ]
+  },
+  {
+    "id": "WM-060",
+    "domain": "winemaking",
+    "difficulty": 1420,
+    "level": 7,
+    "format": "match_pairs",
+    "question": "Match each oak origin/type to its characteristic flavor compound profile.",
+    "pairs": {
+      "left": [
+        "French oak (Quercus petraea)",
+        "American oak (Quercus alba)",
+        "Hungarian oak (Quercus petraea/robur)",
+        "Acacia wood"
+      ],
+      "right": [
+        "Higher ellagitannin content; subtle spice, clove (eugenol); fine grain",
+        "High cis-oak lactone (coconut); vanillin; dill; wider grain",
+        "Intermediate between French and American; moderate tannin and lactone",
+        "Lower tannin than oak; floral and honey aromatics; used for some whites"
+      ]
+    },
+    "correct": [
+      0,
+      1,
+      2,
+      3
+    ],
+    "explanation": "French oak is tighter-grained with higher ellagitannin content and more eugenol (clove). American oak has significantly more cis-oak lactone (coconut, dill) and can be more aggressively flavored. Hungarian oak (same species as French but from different forests) offers an intermediate profile. Acacia (Robinia pseudoacacia) is an alternative wood used especially in Italy, contributing floral and honey notes with lower tannin than oak.",
+    "sources": "Wine Science by Jamie Goode; Oxford Companion to Wine (4th ed.)",
+    "confidence": "established",
+    "tags": [
+      "oak-types",
+      "French-oak",
+      "American-oak",
+      "Hungarian-oak",
+      "acacia"
+    ]
+  },
+  {
+    "id": "WM-061",
+    "domain": "winemaking",
+    "difficulty": 1520,
+    "level": 8,
+    "format": "multiple_choice",
+    "question": "What is the chemical mechanism behind tartrate instability in wine, and how is it addressed?",
+    "options": [
+      "Tartrate instability is caused by excess sugar crystallizing out of solution",
+      "Potassium bitartrate (KHT) can crystallize out of wine when temperatures drop because its solubility decreases at lower temperatures and as alcohol content increases; cold stabilization, carboxymethylcellulose (CMC), or metatartaric acid addition prevent crystal formation",
+      "Tartrate instability only affects red wines",
+      "Tartrate crystals always indicate wine is faulty and must be discarded"
+    ],
+    "correct": 1,
+    "explanation": "Wine is a supersaturated solution of potassium bitartrate (KHT, cream of tartar). When wine cools (in shipping or refrigeration), KHT solubility decreases and crystals can form. Cold stabilization (chilling wine to near 0°C for days) forces crystallization before bottling. Alternatives include adding carboxymethylcellulose (CMC), which inhibits crystal growth, or metatartaric acid (though it degrades over time). Tartrate crystals are harmless and do not indicate a fault.",
+    "sources": "Wine Science by Jamie Goode; Oxford Companion to Wine (4th ed.)",
+    "confidence": "consensus",
+    "tags": [
+      "tartrate-stability",
+      "cold-stabilization",
+      "potassium-bitartrate",
+      "chemistry"
+    ]
+  },
+  {
+    "id": "WM-062",
+    "domain": "winemaking",
+    "difficulty": 1580,
+    "level": 8,
+    "format": "multiple_choice",
+    "question": "In the production of Tokaji Aszú, what is the significance of 'puttonyos' and how does the classification relate to residual sugar?",
+    "options": [
+      "Puttonyos measure acidity levels",
+      "Puttonyos historically referred to the number of baskets (puttony) of aszú berries added to a base wine (136L gönc barrel); since 2014, all Tokaji Aszú must contain a minimum of 120 g/L residual sugar (equivalent to the former 5 puttonyos), and the puttonyos system was simplified",
+      "Puttonyos refers to the number of years of aging",
+      "Puttonyos indicates the vineyard classification"
+    ],
+    "correct": 1,
+    "explanation": "Historically, puttonyos (3-6) indicated how many 25kg baskets of aszú (botrytis-affected) berries were added to a 136L gönc barrel of base wine. More puttonyos meant higher sugar concentration and sweetness. Since the 2014 regulations, the Hungarian authorities simplified the system: all Tokaji Aszú must now contain a minimum of 120 g/L residual sugar (previously the 5-puttonyos minimum), and lower levels are classified differently.",
+    "sources": "Oxford Companion to Wine (4th ed.); WSET Level 3 Award in Wines Study Guide",
+    "confidence": "consensus",
+    "tags": [
+      "Tokaji",
+      "puttonyos",
+      "botrytis",
+      "sweet-wines"
+    ]
+  },
+  {
+    "id": "WM-063",
+    "domain": "winemaking",
+    "difficulty": 1680,
+    "level": 8,
+    "format": "odd_one_out",
+    "question": "Which of these is NOT a scientifically established mechanism by which biodynamic preparation 500 (horn manure) could influence soil biology?",
+    "options": [
+      "Introducing diverse soil microorganisms through composted manure application",
+      "Stimulating mycorrhizal fungal activity through application of microbially rich compost",
+      "Quantum entanglement between the cow horn and the soil creating an energy field",
+      "Improving soil structure and organic matter content through humus formation"
+    ],
+    "correct": 2,
+    "explanation": "While biodynamic preparation 500 (cow manure composted in a buried cow horn) can introduce beneficial microorganisms, stimulate soil biology, and contribute to humus formation through established soil science mechanisms, the claim of quantum entanglement between the horn and soil has no scientific basis. Research supporting biodynamic farming typically attributes benefits to improved organic matter management and soil microbial diversity, not to pseudoscientific energy transfer concepts.",
+    "sources": "Wine Science by Jamie Goode; Oxford Companion to Wine (4th ed.)",
+    "confidence": "consensus",
+    "tags": [
+      "biodynamic",
+      "preparation-500",
+      "soil-biology",
+      "viticulture"
+    ]
+  },
+  {
+    "id": "WM-064",
+    "domain": "winemaking",
+    "difficulty": 1850,
+    "level": 9,
+    "format": "match_pairs",
+    "question": "Match each sparkling wine process detail to its technical specification.",
+    "pairs": {
+      "left": [
+        "Liqueur de tirage composition",
+        "Pressure in finished Champagne bottle",
+        "Gyropalette vs. manual riddling duration",
+        "Non-vintage Champagne minimum aging on lees"
+      ],
+      "right": [
+        "~24 g/L sugar + yeast + riddling adjuvant; produces ~1.2-1.3% additional alcohol",
+        "Approximately 5-6 atmospheres (500-600 kPa) at 10°C",
+        "Gyropalette: 3-7 days vs. manual: 6-8 weeks",
+        "Minimum 15 months total, including 12 months on lees after tirage"
+      ]
+    },
+    "correct": [
+      0,
+      1,
+      2,
+      3
+    ],
+    "explanation": "Liqueur de tirage typically contains approximately 24 g/L sugar plus selected yeast and a riddling adjuvant (bentonite), generating about 1.2-1.3% additional alcohol and 5-6 atmospheres of pressure. A finished Champagne bottle at 10°C contains approximately 5-6 atmospheres of pressure. Gyropalettes complete riddling in 3-7 days versus 6-8 weeks for manual riddling. NV Champagne requires a minimum 15 months of aging, including at least 12 months after tirage on lees.",
+    "sources": "Oxford Companion to Wine (4th ed.); WSET Level 3 Award in Wines Study Guide",
+    "confidence": "consensus",
+    "tags": [
+      "Champagne",
+      "tirage",
+      "pressure",
+      "riddling",
+      "aging-requirements"
+    ]
+  },
+  {
+    "id": "WM-065",
+    "domain": "winemaking",
+    "difficulty": 1780,
+    "level": 9,
+    "format": "multiple_choice",
+    "question": "What is the Crabtree effect and why is it important in wine fermentation?",
+    "options": [
+      "The Crabtree effect describes how grapes absorb minerals from soil",
+      "The Crabtree effect is the phenomenon where Saccharomyces cerevisiae ferments glucose to ethanol even in the presence of oxygen when glucose concentrations are above approximately 0.1%, suppressing aerobic respiration; this ensures wine fermentation proceeds to produce alcohol even when some oxygen is present",
+      "The Crabtree effect only applies to sparkling wine production",
+      "The Crabtree effect describes CO₂ toxicity to yeast"
+    ],
+    "correct": 1,
+    "explanation": "The Crabtree effect distinguishes Saccharomyces cerevisiae from many other organisms: even when oxygen is available, yeast will ferment (produce ethanol) rather than respire aerobically when glucose concentration exceeds approximately 0.1% (1 g/L)—well below grape must sugar levels (~200-250 g/L). This means that even brief oxygen exposure during wine fermentation does not stop alcohol production, which is why winemaking is practical despite imperfect anaerobic conditions.",
+    "sources": "Wine Science by Jamie Goode; Oxford Companion to Wine (4th ed.)",
+    "confidence": "consensus",
+    "tags": [
+      "Crabtree-effect",
+      "yeast-metabolism",
+      "fermentation-chemistry"
+    ]
+  },
+  {
+    "id": "WM-066",
+    "domain": "winemaking",
+    "difficulty": 1950,
+    "level": 10,
+    "format": "multiple_choice",
+    "question": "What is the specific biochemical mechanism by which flor yeast (Saccharomyces cerevisiae var. bayanus/capensis) modifies Fino Sherry during biological aging?",
+    "options": [
+      "Flor yeast only prevents oxidation by creating a physical barrier",
+      "Under the flor film, yeast metabolizes ethanol and glycerol as carbon sources (since no sugar remains), consuming dissolved oxygen and producing acetaldehyde as a key metabolite; it also consumes acetic acid and releases amino acids and other compounds that contribute to the distinctive tangy, yeasty, almond character of Fino",
+      "Flor yeast adds sugar to the wine",
+      "Flor yeast converts all alcohol to vinegar"
+    ],
+    "correct": 1,
+    "explanation": "Flor yeast forms a film on the wine surface in partially filled barrels. With no sugar available, the yeast metabolizes ethanol and glycerol aerobically as carbon sources (oxidative metabolism), consuming dissolved oxygen (protecting the wine from chemical oxidation). Key metabolite acetaldehyde gives Fino its pungent, tangy character. The yeast also metabolizes acetic acid (lowering VA), releases amino acids (contributing umami and complexity), and produces trace compounds that create the distinctive almond, bread dough, and chamomile notes of biologically aged Sherries.",
+    "sources": "Wine Science by Jamie Goode; Oxford Companion to Wine (4th ed.)",
+    "confidence": "consensus",
+    "tags": [
+      "flor-yeast",
+      "Sherry",
+      "biological-aging",
+      "acetaldehyde",
+      "Fino"
+    ]
+  },
+  {
+    "id": "WM-067",
+    "domain": "winemaking",
+    "difficulty": 2050,
+    "level": 10,
+    "format": "odd_one_out",
+    "question": "Which of the following is NOT an accurate statement about the chemistry of anthocyanin stabilization in red wine?",
+    "options": [
+      "Anthocyanins undergo cycloaddition with pyruvic acid to form vitisins (pyranoanthocyanins) that are more color-stable",
+      "Acetaldehyde mediates tannin-anthocyanin bridging by forming ethyl bridges between flavanols and anthocyanins",
+      "Anthocyanin color stability is enhanced at higher pH (above 4.0) where the flavylium cation form predominates",
+      "Over time, polymeric pigments formed through various reactions become the dominant source of red wine color, replacing free anthocyanins"
+    ],
+    "correct": 2,
+    "explanation": "This statement is INCORRECT: the flavylium cation (the red form of anthocyanins) actually predominates at LOW pH (below ~3.0), not high pH. At pH above 4.0, anthocyanins shift to colorless carbinol pseudobase and blue quinoidal forms. Wine pH (typically 3.2-3.8) means most free anthocyanins are actually in colorless forms—color is maintained through copigmentation and polymeric pigment formation. Vitisins, acetaldehyde-mediated bridges, and the eventual dominance of polymeric pigments are all accurately described.",
+    "sources": "Wine Science by Jamie Goode; Oxford Companion to Wine (4th ed.)",
+    "confidence": "consensus",
+    "tags": [
+      "anthocyanins",
+      "color-chemistry",
+      "pH",
+      "pyranoanthocyanins",
+      "polymerization"
+    ]
+  },
+  {
+    "id": "WM-068",
+    "domain": "winemaking",
+    "difficulty": 2150,
+    "level": 10,
+    "format": "match_pairs",
+    "question": "Match each advanced winemaking phenomenon to its precise chemical basis.",
+    "pairs": {
+      "left": [
+        "Ester formation during fermentation",
+        "Oak lactone extraction",
+        "Protein haze in white wine",
+        "Color evolution from ruby to tawny in aged red wine"
+      ],
+      "right": [
+        "Condensation reaction between alcohols and fatty acids catalyzed by yeast esterases",
+        "Beta-methyl-gamma-octalactone (cis and trans isomers) released by hydrolysis of wood precursors",
+        "Unstable grape proteins (thaumatin-like, chitinases) denaturing and aggregating when exposed to heat",
+        "Anthocyanin polymerization, precipitation of large polymers, and formation of orange-brown pyranoanthocyanins and polymeric pigments"
+      ]
+    },
+    "correct": [
+      0,
+      1,
+      2,
+      3
+    ],
+    "explanation": "Esters (fruity aromas) form via yeast esterases catalyzing condensation of alcohols with fatty acid-CoA substrates. Oak lactones (cis and trans beta-methyl-gamma-octalactone) are released from precursors in the wood during toasting and extraction. Protein haze is caused by grape pathogenesis-related proteins (thaumatin-like proteins and chitinases) that denature and aggregate at elevated temperatures. Color evolution in aging red wine involves gradual polymerization and precipitation of large anthocyanin-tannin polymers, plus formation of more stable, orange-toned pyranoanthocyanins.",
+    "sources": "Wine Science by Jamie Goode; Oxford Companion to Wine (4th ed.)",
+    "confidence": "consensus",
+    "tags": [
+      "esters",
+      "oak-lactones",
+      "protein-haze",
+      "color-evolution",
+      "chemistry"
+    ]
+  },
+  {
+    "id": "WM-069",
+    "domain": "winemaking",
+    "difficulty": 250,
+    "level": 1,
+    "format": "multiple_choice",
+    "question": "What organism converts grape juice into wine?",
+    "options": [
+      "Bacteria",
+      "Yeast",
+      "Mold",
+      "Virus"
+    ],
+    "correct": 1,
+    "explanation": "Yeast, primarily Saccharomyces cerevisiae, is the microorganism responsible for alcoholic fermentation—converting grape sugars into alcohol and carbon dioxide. While bacteria (Oenococcus oeni) play a role in malolactic fermentation, it is yeast that performs the primary transformation of juice to wine.",
+    "sources": "WSET Level 1 Award in Wines; Oxford Companion to Wine (4th ed.)",
+    "confidence": "established",
+    "tags": [
+      "yeast",
+      "fermentation",
+      "basic-winemaking"
+    ]
+  },
+  {
+    "id": "WM-070",
+    "domain": "winemaking",
+    "difficulty": 370,
+    "level": 2,
+    "format": "multiple_choice",
+    "question": "What is the main difference between how red wine and white wine are made?",
+    "options": [
+      "Red wine is always aged longer",
+      "Red wine is fermented with grape skins for color and tannin extraction, while white wine is typically pressed off skins before fermentation",
+      "White wine uses different yeast",
+      "Red wine requires higher temperatures to grow grapes"
+    ],
+    "correct": 1,
+    "explanation": "The fundamental difference is skin contact: red wine is fermented in contact with grape skins, extracting color (anthocyanins), tannins, and flavor compounds. White wine is typically pressed immediately after crushing, and the juice ferments without skin contact. This is why you can make white wine from red grapes (as with Champagne's blanc de noirs) but not the reverse.",
+    "sources": "WSET Level 2 Award in Wines Study Guide; The Wine Bible by Karen MacNeil",
+    "confidence": "established",
+    "tags": [
+      "red-vs-white",
+      "skin-contact",
+      "basic-winemaking"
+    ]
+  },
+  {
+    "id": "WM-071",
+    "domain": "winemaking",
+    "difficulty": 510,
+    "level": 3,
+    "format": "multiple_choice",
+    "question": "What is 'fining' in winemaking?",
+    "options": [
+      "Paying a fine for using illegal additives",
+      "The addition of a substance that binds to and removes unwanted particles (proteins, tannins, or color) from wine, improving clarity and stability",
+      "Straining wine through a fine mesh",
+      "Adding fine sugar to the wine"
+    ],
+    "correct": 1,
+    "explanation": "Fining is a clarification technique where a fining agent is added to wine to bind with specific unwanted components through electrical charge attraction or adsorption. Common fining agents include bentonite (removes proteins), egg whites (remove harsh tannins), isinglass (general clarification), and activated charcoal (removes color or off-odors). The agent and bound particles settle and are removed by racking.",
+    "sources": "Wine Science by Jamie Goode; WSET Level 3 Award in Wines Study Guide",
+    "confidence": "established",
+    "tags": [
+      "fining",
+      "clarification",
+      "winemaking-techniques"
+    ]
+  },
+  {
+    "id": "WM-072",
+    "domain": "winemaking",
+    "difficulty": 760,
+    "level": 4,
+    "format": "match_pairs",
+    "question": "Match each toast level to the primary flavors it imparts to wine.",
+    "pairs": {
+      "left": [
+        "Light toast",
+        "Medium toast",
+        "Medium-plus toast",
+        "Heavy toast"
+      ],
+      "right": [
+        "Coconut, raw wood, cedar, fresh oak",
+        "Vanilla, caramel, honey, sweet spice",
+        "Toasted bread, coffee, dark chocolate, roasted nut",
+        "Smoky, charred, espresso, dark toast, reduced tannin"
+      ]
+    },
+    "correct": [
+      0,
+      1,
+      2,
+      3
+    ],
+    "explanation": "Light toast retains more oak lactones (coconut) and raw wood character. Medium toast develops vanillin and caramelized sugars. Medium-plus toast produces Maillard reaction products like toasted bread and roasted notes. Heavy toast creates intense smoky, charred flavors while degrading some tannins and lactones, actually reducing astringency but adding bitterness.",
+    "sources": "Wine Science by Jamie Goode; Oxford Companion to Wine (4th ed.)",
+    "confidence": "established",
+    "tags": [
+      "toast-levels",
+      "oak-aging",
+      "flavor-compounds"
+    ]
+  },
+  {
+    "id": "WM-073",
+    "domain": "winemaking",
+    "difficulty": 1070,
+    "level": 5,
+    "format": "odd_one_out",
+    "question": "Which of the following is NOT a factor that determines harvest timing?",
+    "options": [
+      "Sugar levels (Brix/Baumé)",
+      "Phenolic ripeness of skins and seeds",
+      "The phase of the moon",
+      "Acidity levels (titratable acidity and pH)"
+    ],
+    "correct": 2,
+    "explanation": "While some biodynamic practitioners consider lunar phases, the phase of the moon is not a standard scientifically established factor in determining harvest timing. The key factors are sugar accumulation (measured in Brix, Baumé, or Oechsle), phenolic ripeness (tannin maturity in skins and seeds), and acidity levels (both titratable acidity and pH) to ensure proper balance in the finished wine.",
+    "sources": "WSET Level 3 Award in Wines Study Guide; Oxford Companion to Wine (4th ed.)",
+    "confidence": "established",
+    "tags": [
+      "harvest",
+      "sugar-levels",
+      "phenolic-ripeness",
+      "acidity"
+    ]
+  },
+  {
+    "id": "WM-074",
+    "domain": "winemaking",
+    "difficulty": 1230,
+    "level": 6,
+    "format": "multiple_choice",
+    "question": "What is the difference between 'passito' and 'appassimento' as winemaking techniques?",
+    "options": [
+      "They are completely unrelated processes",
+      "Both involve drying harvested grapes to concentrate sugars and flavors; 'appassimento' refers to the drying process itself (traditionally on straw mats or in drying lofts), while 'passito' refers to the resulting wine style made from dried grapes",
+      "Passito is a grape variety",
+      "Appassimento only applies to white grapes"
+    ],
+    "correct": 1,
+    "explanation": "Appassimento is the Italian term for the drying process where harvested grapes are laid on straw mats (stuoie), bamboo racks, or hung in well-ventilated drying rooms (fruttai) for weeks to months. This concentrates sugars, acids, and flavors through dehydration. Passito (or vino passito) refers to the wine made from these dried grapes. Famous examples include Amarone della Valpolicella (a dry passito) and Vin Santo (a sweet passito).",
+    "sources": "Oxford Companion to Wine (4th ed.); WSET Level 3 Award in Wines Study Guide",
+    "confidence": "established",
+    "tags": [
+      "passito",
+      "appassimento",
+      "dried-grape-wines",
+      "Italian-winemaking"
+    ]
+  },
+  {
+    "id": "WM-075",
+    "domain": "winemaking",
+    "difficulty": 1480,
+    "level": 7,
+    "format": "multiple_choice",
+    "question": "What is the role of 'tartaric acid' in winemaking, and why is it preferred over other acids for acidification?",
+    "options": [
+      "Tartaric acid is never added to wine",
+      "Tartaric acid is the strongest and most stable acid in wine that does not undergo MLF degradation; when acidification is needed, tartaric acid is preferred because it directly lowers pH, is not metabolized by lactic acid bacteria (unlike malic acid), and is the predominant natural acid in grapes",
+      "Tartaric acid is only used in sparkling wine",
+      "Tartaric acid increases the pH of wine"
+    ],
+    "correct": 1,
+    "explanation": "Tartaric acid is the dominant natural acid in grapes and the most important acid in wine. When winemakers need to acidify (add acid to) must or wine—common in warm regions where grapes can over-ripen with low acidity—tartaric acid is preferred because: (1) it is the grape's native acid, (2) it is not metabolized by Oenococcus oeni during MLF (unlike malic acid, which would be consumed), and (3) it effectively lowers pH. Citric acid is sometimes used but can be metabolized by bacteria to produce acetic acid.",
+    "sources": "Wine Science by Jamie Goode; Oxford Companion to Wine (4th ed.)",
+    "confidence": "established",
+    "tags": [
+      "tartaric-acid",
+      "acidification",
+      "pH",
+      "MLF"
+    ]
+  }
+]
