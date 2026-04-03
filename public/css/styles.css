@@ -10772,6 +10772,20 @@ img[loading="lazy"][complete] {
 .palate-fav-pill { font-family: 'Montserrat', sans-serif; font-size: 0.78rem; color: var(--ink); background: var(--white); border: 1px solid var(--border-ink); border-radius: 20px; padding: 4px 12px; }
 .palate-action { text-align: center; margin-bottom: 24px; }
 .palate-hint { font-family: 'Montserrat', sans-serif; font-size: 0.72rem; color: var(--ink-xlight); margin-top: 8px; }
+/* Reason selection */
+.palate-reasons { margin-bottom: 24px; }
+.palate-reasons-title { font-family: 'Playfair Display', Georgia, serif; font-size: 1.2rem; font-weight: 400; color: var(--ink); margin-bottom: 6px; }
+.palate-reasons-desc { font-family: 'Montserrat', sans-serif; font-size: 0.82rem; color: var(--ink-light); margin-bottom: 16px; line-height: 1.5; }
+.palate-reason-card { background: var(--white); border: 1px solid var(--border-ink); border-radius: 10px; padding: 18px 20px; margin-bottom: 12px; }
+.palate-reason-wine { font-family: 'Playfair Display', Georgia, serif; font-size: 1rem; font-weight: 400; color: var(--ink); margin-bottom: 10px; }
+.palate-reason-btns { display: flex; flex-wrap: wrap; gap: 6px; }
+.palate-reason-btn {
+  font-family: 'Montserrat', sans-serif; font-size: 0.72rem; font-weight: 400;
+  color: var(--ink-mid); background: var(--cream); border: 1px solid var(--cream-dark);
+  border-radius: 20px; padding: 6px 14px; cursor: pointer; transition: all 0.2s;
+}
+.palate-reason-btn:hover { border-color: var(--gold); color: var(--ink); }
+.palate-reason-btn.active { background: var(--gold); color: #fff; border-color: var(--gold); }
 /* Confirmation */
 .palate-confirm { text-align: center; margin: 20px 0; }
 .palate-confirm-label { font-family: 'Montserrat', sans-serif; font-size: 0.85rem; color: var(--ink-light); margin-bottom: 12px; }

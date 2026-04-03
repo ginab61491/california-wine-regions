@@ -88,8 +88,17 @@ document.addEventListener('DOMContentLoaded', () => {
     const grapes = getFavs('somm_fav_grapes');
     const regions = getFavs('somm_fav_regions');
     const producers = getFavs('somm_fav_producers');
+    let savedReasons = {};
+    try { savedReasons = JSON.parse(localStorage.getItem('somm_palate_reasons') || '{}'); } catch {}
+
     const info = [];
-    if (grapes.length) info.push(`Favorite grapes: ${grapes.join(', ')}`);
+    if (grapes.length) {
+      const grapeDetails = grapes.map(g => {
+        const reasons = savedReasons[g];
+        return reasons && reasons.length ? `${g} (loves: ${reasons.join(', ')})` : g;
+      });
+      info.push(`Favorite grapes: ${grapeDetails.join('; ')}`);
+    }
     if (regions.length) info.push(`Favorite regions: ${regions.join(', ')}`);
     if (producers.length) info.push(`Favorite producers: ${producers.join(', ')}`);
     return { info, total: grapes.length + regions.length + producers.length };
@@ -205,6 +214,46 @@ document.addEventListener('DOMContentLoaded', () => {
     el.querySelectorAll('.fav-link').forEach(link => {
       link.addEventListener('click', (e) => { e.preventDefault(); const nav = document.querySelector(`[data-section="${link.dataset.section}"]`); if (nav) nav.click(); });
     });
+
+    // Render reason selection for each grape
+    const reasonsSection = document.getElementById('palate-reasons');
+    const reasonsList = document.getElementById('palate-reasons-list');
+    if (reasonsSection && reasonsList && grapes.length >= 2) {
+      reasonsSection.style.display = 'block';
+      const REASONS = [
+        'Elegant and refined', 'Bold and powerful', 'Fruity and approachable',
+        'Earthy and complex', 'Crisp and refreshing', 'Smooth and velvety',
+        'Great with food', 'Interesting and unique', 'Good value',
+        'Aromatic and perfumed', 'Age-worthy and layered', 'Light and easy to drink'
+      ];
+      // Load saved reasons
+      let savedReasons = {};
+      try { savedReasons = JSON.parse(localStorage.getItem('somm_palate_reasons') || '{}'); } catch {}
+
+      reasonsList.innerHTML = grapes.map(g => {
+        const selected = savedReasons[g] || [];
+        return `<div class="palate-reason-card">
+          <h3 class="palate-reason-wine">${g}</h3>
+          <div class="palate-reason-btns" data-grape="${g}">
+            ${REASONS.map(r => `<button class="palate-reason-btn ${selected.includes(r) ? 'active' : ''}" data-reason="${r}">${r}</button>`).join('')}
+          </div>
+        </div>`;
+      }).join('');
+
+      // Wire reason buttons
+      reasonsList.querySelectorAll('.palate-reason-btn').forEach(btn => {
+        btn.addEventListener('click', () => {
+          btn.classList.toggle('active');
+          // Save
+          const grape = btn.closest('.palate-reason-btns').dataset.grape;
+          const active = [...btn.closest('.palate-reason-btns').querySelectorAll('.active')].map(b => b.dataset.reason);
+          savedReasons[grape] = active;
+          localStorage.setItem('somm_palate_reasons', JSON.stringify(savedReasons));
+        });
+      });
+    } else if (reasonsSection) {
+      reasonsSection.style.display = 'none';
+    }
   }
 
   // Init on section visible
