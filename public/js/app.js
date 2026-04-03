@@ -240,6 +240,17 @@ document.addEventListener('DOMContentLoaded', () => {
     else { img.addEventListener('load', () => img.classList.add('loaded')); }
   });
 
+  // ── Home feature tabs ──
+  document.querySelectorAll('.home-tab').forEach(tab => {
+    tab.addEventListener('click', () => {
+      document.querySelectorAll('.home-tab').forEach(t => t.classList.remove('active'));
+      document.querySelectorAll('.home-tab-panel').forEach(p => p.classList.remove('active'));
+      tab.classList.add('active');
+      const panel = document.getElementById('tab-' + tab.dataset.tab);
+      if (panel) panel.classList.add('active');
+    });
+  });
+
   // ── Scroll reveal: staggered fade-in for home cards ──
   const revealObserver = new IntersectionObserver((entries) => {
     entries.forEach((entry, i) => {
