@@ -1312,8 +1312,6 @@ button {
 
   .account-dashboard { padding: 16px 16px 40px; }
 
-  .dw-two-col { gap: 24px; }
-  .dw-form-panel { padding: 20px 16px; }
   .dw-benefits-heading { font-size: 1.4rem; }
 }
 
@@ -9919,134 +9917,97 @@ code {
 ════════════════════════════════════════════ */
 #dailywine-section { padding: 0; }
 .dailywine-scroll { flex: 1; overflow-y: auto; background: var(--cream); }
-.dailywine-body { max-width: 1000px; margin: 0 auto; padding: 40px 40px 56px; }
 
-/* ── 2-column layout ── */
-.dw-two-col {
-  display: grid;
-  grid-template-columns: 1fr 1fr;
-  gap: 48px;
-  align-items: start;
+/* Hero banner */
+.dw-hero {
+  background: var(--ink);
+  padding: 72px 40px 64px;
+  text-align: center;
 }
-@media (max-width: 800px) {
-  .dw-two-col { grid-template-columns: 1fr; gap: 32px; }
-}
-
-/* ── Left: Benefits ── */
-.dw-benefits-heading {
-  font-family: 'Playfair Display', Georgia, serif;
-  font-size: 1.8rem;
-  font-weight: 400;
-  color: var(--ink);
-  margin-bottom: 20px;
-  letter-spacing: 0.03em;
-}
-.dw-benefits-list {
-  list-style: none;
-  padding: 0;
-  margin: 0 0 32px;
-  display: flex;
-  flex-direction: column;
-  gap: 12px;
-}
-.dw-benefits-list li {
+.dw-hero-inner { max-width: 560px; margin: 0 auto; }
+.dw-hero-eyebrow {
   font-family: 'Montserrat', sans-serif;
-  font-size: 0.88rem;
-  line-height: 1.6;
-  color: var(--ink-mid);
-  padding-left: 20px;
-  position: relative;
-}
-.dw-benefits-list li::before {
-  content: '';
-  position: absolute;
-  left: 0;
-  top: 8px;
-  width: 8px;
-  height: 8px;
-  border-radius: 50%;
-  background: var(--gold);
-}
-
-/* Testimonials */
-.dw-testimonials { margin-bottom: 28px; }
-.dw-testimonials-heading {
-  font-family: 'Montserrat', sans-serif;
-  font-size: 0.68rem;
+  font-size: 0.65rem;
   font-weight: 600;
-  letter-spacing: 0.12em;
+  letter-spacing: 0.18em;
   text-transform: uppercase;
   color: var(--gold);
-  margin-bottom: 14px;
+  margin-bottom: 16px;
+  display: block;
 }
-.dw-testimonial {
-  margin: 0 0 16px;
-  padding: 14px 18px;
-  background: var(--white);
-  border-left: 3px solid var(--gold);
-  border-radius: 0 8px 8px 0;
+.dw-hero-title {
+  font-family: 'Playfair Display', Georgia, serif;
+  font-size: clamp(2rem, 5vw, 2.8rem);
+  font-weight: 400;
+  color: var(--white);
+  line-height: 1.2;
+  letter-spacing: 0.02em;
+  margin-bottom: 16px;
 }
-.dw-testimonial p {
+.dw-hero-sub {
   font-family: 'Crimson Text', Georgia, serif;
   font-style: italic;
-  font-size: 0.9rem;
-  line-height: 1.6;
+  font-size: 1.1rem;
+  color: rgba(255,255,255,0.6);
+}
+
+/* Body */
+.dailywine-body {
+  max-width: 600px;
+  margin: 0 auto;
+  padding: 0 40px 56px;
+}
+
+/* Value props row */
+.dw-value-row {
+  display: flex;
+  justify-content: center;
+  gap: 32px;
+  padding: 32px 0 36px;
+  border-bottom: 1px solid var(--cream-dark);
+  margin-bottom: 36px;
+}
+.dw-value-item {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 6px;
+}
+.dw-value-icon { font-size: 1.4rem; line-height: 1; }
+.dw-value-text {
+  font-family: 'Montserrat', sans-serif;
+  font-size: 0.72rem;
+  font-weight: 500;
   color: var(--ink-mid);
-  margin: 0;
-}
-.dw-testimonial cite {
-  font-family: 'Montserrat', sans-serif;
-  font-style: normal;
-  font-size: 0.68rem;
-  color: var(--ink-xlight);
-  display: block;
-  margin-top: 6px;
+  letter-spacing: 0.02em;
 }
 
-/* Compact sources */
-.dw-sources-compact {
-  padding-top: 20px;
-  border-top: 1px solid var(--cream-dark);
+/* Form card */
+.dw-form-card {
+  background: var(--white);
+  border: 1px solid var(--cream-dark);
+  border-radius: 16px;
+  padding: 32px 28px;
+  margin-bottom: 40px;
 }
-.dw-sources-label {
-  font-family: 'Montserrat', sans-serif;
-  font-size: 0.62rem;
-  font-weight: 600;
-  letter-spacing: 0.08em;
-  text-transform: uppercase;
-  color: var(--ink-xlight);
-  display: block;
-  margin-bottom: 4px;
-}
-.dw-sources-names {
-  font-family: 'Crimson Text', Georgia, serif;
-  font-style: italic;
-  font-size: 0.78rem;
-  color: var(--ink-light);
-  line-height: 1.6;
-}
-
-/* ── Right: Form Panel ── */
-.dw-form-panel {
-  background: var(--cream);
-  border: 2px solid var(--ink);
-  border-radius: 12px;
-  padding: 28px 24px;
-}
-.dw-form-title {
+.dw-form-heading {
   font-family: 'Playfair Display', Georgia, serif;
   font-size: 1.3rem;
   font-weight: 400;
   color: var(--ink);
-  margin-bottom: 20px;
+  margin-bottom: 24px;
   letter-spacing: 0.02em;
 }
-.dailywine-form-section h2 { display: none; }
 .dailywine-form {
   display: flex;
   flex-direction: column;
   gap: 20px;
 }
+.dw-field-row {
+  display: flex;
+  gap: 14px;
+}
+.dw-field-grow { flex: 1; }
 .dw-field {
   display: flex;
   flex-direction: column;
@@ -10071,52 +10032,42 @@ code {
   padding: 11px 14px;
   border: 1px solid var(--cream-dark);
   border-radius: 8px;
-  background: #fff;
+  background: var(--cream);
   outline: none;
   transition: var(--transition);
 }
 .dw-input:focus {
   border-color: var(--gold);
   box-shadow: 0 0 0 3px rgba(201,169,97,0.12);
+  background: #fff;
 }
 .dw-input::placeholder { color: var(--ink-xlight); }
 
-/* Level radio buttons */
+/* Level pills — horizontal */
 .dw-level-options {
   display: flex;
-  flex-direction: column;
-  gap: 6px;
+  gap: 8px;
 }
 .dw-level-btn {
-  display: flex;
-  flex-direction: column;
-  gap: 2px;
+  flex: 1;
   padding: 10px 14px;
-  background: #fff;
+  background: var(--cream);
   border: 1.5px solid var(--cream-dark);
   border-radius: 8px;
-  text-align: left;
+  text-align: center;
   cursor: pointer;
   transition: var(--transition);
+  font-family: 'Montserrat', sans-serif;
+  font-size: 0.78rem;
+  font-weight: 500;
+  color: var(--ink-mid);
 }
-.dw-level-btn:hover { border-color: var(--gold); }
+.dw-level-btn:hover { border-color: var(--gold); color: var(--ink); }
 .dw-level-btn.active {
   border-color: var(--gold);
-  background: rgba(201,169,97,0.06);
-}
-.dw-level-title {
-  font-family: 'Montserrat', sans-serif;
-  font-size: 0.82rem;
-  font-weight: 600;
+  background: rgba(201,169,97,0.1);
   color: var(--ink);
-  display: block;
-}
-.dw-level-desc {
-  font-family: 'Montserrat', sans-serif;
-  font-size: 0.7rem;
-  font-weight: 300;
-  color: var(--ink-light);
-  display: block;
+  font-weight: 600;
 }
 
 /* Topic pill buttons */
@@ -10127,8 +10078,8 @@ code {
 }
 .dw-topic-btn {
   padding: 7px 14px;
-  background: #fff;
-  border: 1px solid var(--gold);
+  background: var(--cream);
+  border: 1px solid var(--cream-dark);
   border-radius: 20px;
   font-family: 'Montserrat', sans-serif;
   font-size: 0.72rem;
@@ -10137,7 +10088,7 @@ code {
   cursor: pointer;
   transition: var(--transition);
 }
-.dw-topic-btn:hover { background: rgba(201,169,97,0.08); }
+.dw-topic-btn:hover { border-color: var(--gold); color: var(--ink); }
 .dw-topic-btn.active {
   background: var(--gold);
   border-color: var(--gold);
@@ -10148,7 +10099,7 @@ code {
 .dw-subscribe-btn {
   width: 100%;
   padding: 14px 32px;
-  background: var(--gold);
+  background: var(--maroon);
   color: #fff;
   border: none;
   border-radius: 8px;
@@ -10160,7 +10111,7 @@ code {
   transition: var(--transition);
 }
 .dw-subscribe-btn:hover {
-  background: var(--gold-mid);
+  background: #5e252c;
   transform: translateY(-1px);
   box-shadow: var(--shadow-md);
 }
@@ -10174,10 +10125,40 @@ code {
 
 .dw-footer-note {
   font-family: 'Montserrat', sans-serif;
-  font-size: 0.6rem;
+  font-size: 0.62rem;
   color: var(--ink-xlight);
   text-align: center;
   line-height: 1.5;
+}
+
+/* Social proof quotes */
+.dw-proof {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 16px;
+}
+.dw-quote {
+  margin: 0;
+  padding: 20px;
+  background: var(--white);
+  border-radius: 12px;
+  border: 1px solid var(--cream-dark);
+}
+.dw-quote p {
+  font-family: 'Crimson Text', Georgia, serif;
+  font-style: italic;
+  font-size: 0.88rem;
+  line-height: 1.55;
+  color: var(--ink-mid);
+  margin: 0 0 10px;
+}
+.dw-quote cite {
+  font-family: 'Montserrat', sans-serif;
+  font-style: normal;
+  font-size: 0.62rem;
+  font-weight: 500;
+  color: var(--ink-xlight);
+  letter-spacing: 0.02em;
 }
 
 /* Success state */
@@ -10198,6 +10179,20 @@ code {
   font-size: 0.88rem;
   color: var(--ink-mid);
   line-height: 1.7;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  .dw-hero { padding: 48px 24px 40px; }
+  .dailywine-body { padding: 0 20px 40px; }
+  .dw-field-row { flex-direction: column; gap: 16px; }
+  .dw-value-row { gap: 20px; }
+  .dw-proof { grid-template-columns: 1fr; }
+  .dw-level-options { flex-direction: column; }
+}
+@media (max-width: 480px) {
+  .dw-value-row { flex-direction: column; align-items: center; gap: 16px; }
+  .dw-form-card { padding: 24px 20px; }
 }
 
 /* ═══════════════════════════════════════════

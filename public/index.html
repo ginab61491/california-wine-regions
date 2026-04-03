@@ -513,110 +513,94 @@
     <section class="section" id="dailywine-section">
       <div class="dailywine-scroll">
 
-        <div class="section-header">
-          <h1>Daily Bite-Size Wine Emails</h1>
-          <span class="section-tagline">Learn something new about wine every morning</span>
-          <p>A short wine lesson in your inbox every day, curated by a certified sommelier from the most trusted sources in wine education.</p>
+        <!-- Hero banner -->
+        <div class="dw-hero">
+          <div class="dw-hero-inner">
+            <span class="dw-hero-eyebrow">Free Daily Emails</span>
+            <h1 class="dw-hero-title">A wine lesson<br>every morning.</h1>
+            <p class="dw-hero-sub">2 minutes. Sommelier-curated. Tailored to your level.</p>
+          </div>
         </div>
 
         <div class="dailywine-body">
 
-          <!-- 2-column layout: benefits left, form right -->
-          <div class="dw-two-col">
-
-            <!-- Left: Benefits + Testimonials -->
-            <div class="dw-benefits">
-              <h2 class="dw-benefits-heading">What You'll Get</h2>
-              <ul class="dw-benefits-list">
-                <li>A beautifully written 2-3 minute lesson every morning</li>
-                <li>Topics from grape varieties to tasting technique to food pairing</li>
-                <li>Tailored to your level: beginner, intermediate, or advanced</li>
-                <li>Sourced from GuildSomm, Oxford Companion, Jancis Robinson, and more</li>
-                <li>Curated by a Court of Master Sommeliers certified sommelier</li>
-              </ul>
-
-              <div class="dw-testimonials">
-                <h3 class="dw-testimonials-heading">What Subscribers Say</h3>
-                <blockquote class="dw-testimonial">
-                  <p>"I look forward to this every morning with my coffee. Finally learning wine in a way that sticks."</p>
-                  <cite>– Sarah M., San Francisco</cite>
-                </blockquote>
-                <blockquote class="dw-testimonial">
-                  <p>"As someone studying for the CMS exam, these daily bites are the perfect supplement to my flashcards."</p>
-                  <cite>– David K., Oakland</cite>
-                </blockquote>
-                <blockquote class="dw-testimonial">
-                  <p>"I bought my first 'real' bottle of wine after a week of these emails. My partner was impressed."</p>
-                  <cite>– Jess L., Palo Alto</cite>
-                </blockquote>
-              </div>
-
-              <!-- Trusted sources compact -->
-              <div class="dw-sources-compact">
-                <span class="dw-sources-label">Sourced from:</span>
-                <span class="dw-sources-names">GuildSomm, Wine Scholar Guild, The Oxford Companion to Wine, JancisRobinson.com, Wine Folly, Decanter, Wine Spectator, The World Atlas of Wine</span>
-              </div>
+          <!-- Value props -->
+          <div class="dw-value-row">
+            <div class="dw-value-item">
+              <span class="dw-value-icon">📚</span>
+              <span class="dw-value-text">Trusted sources only</span>
             </div>
+            <div class="dw-value-item">
+              <span class="dw-value-icon">🎯</span>
+              <span class="dw-value-text">Pick your level</span>
+            </div>
+            <div class="dw-value-item">
+              <span class="dw-value-icon">🍷</span>
+              <span class="dw-value-text">Choose your topics</span>
+            </div>
+          </div>
 
-            <!-- Right: Sign-up Form -->
-            <div class="dw-form-panel">
-              <div class="dailywine-form-section">
-                <h2 class="dw-form-title">Start Your Subscription</h2>
+          <!-- Sign-up form card -->
+          <div class="dw-form-card">
+            <h2 class="dw-form-heading">Get started</h2>
 
-                <div class="dailywine-form">
-
-                  <div class="dw-field">
-                    <label class="dw-label">Email address</label>
-                    <input type="email" class="dw-input" id="dw-email" placeholder="you@example.com" />
-                  </div>
-
-                  <div class="dw-field">
-                    <label class="dw-label">First name <span class="dw-hint">(optional)</span></label>
-                    <input type="text" class="dw-input" id="dw-name" placeholder="e.g. Gina" />
-                  </div>
-
-                  <div class="dw-field">
-                    <label class="dw-label">Your wine knowledge level</label>
-                    <div class="dw-level-options" id="dw-level">
-                      <button class="dw-level-btn" data-level="beginner">
-                        <span class="dw-level-title">Beginner</span>
-                        <span class="dw-level-desc">New to wine: grapes, regions, basics</span>
-                      </button>
-                      <button class="dw-level-btn" data-level="intermediate">
-                        <span class="dw-level-title">Intermediate</span>
-                        <span class="dw-level-desc">Going deeper: terroir, winemaking, tasting</span>
-                      </button>
-                      <button class="dw-level-btn" data-level="advanced">
-                        <span class="dw-level-title">Advanced</span>
-                        <span class="dw-level-desc">WSET, CMS, expert-level detail</span>
-                      </button>
-                    </div>
-                  </div>
-
-                  <div class="dw-field">
-                    <label class="dw-label">Topics <span class="dw-hint">(select all that apply)</span></label>
-                    <div class="dw-topics" id="dw-topics">
-                      <button class="dw-topic-btn" data-topic="grapes">Grape Varieties</button>
-                      <button class="dw-topic-btn" data-topic="regions">Wine Regions</button>
-                      <button class="dw-topic-btn" data-topic="tasting">Tasting Technique</button>
-                      <button class="dw-topic-btn" data-topic="pairing">Food Pairing</button>
-                      <button class="dw-topic-btn" data-topic="winemaking">Winemaking</button>
-                      <button class="dw-topic-btn" data-topic="history">Wine History</button>
-                      <button class="dw-topic-btn" data-topic="buying">Buying &amp; Value</button>
-                      <button class="dw-topic-btn" data-topic="cellar">Cellaring &amp; Aging</button>
-                      <button class="dw-topic-btn" data-topic="exam">Exam Prep</button>
-                    </div>
-                  </div>
-
-                  <button class="dw-subscribe-btn" id="dw-subscribe-btn">Subscribe</button>
-
-                  <p class="dw-footer-note">One email per day. Unsubscribe anytime. We never share your email.</p>
-
+            <div class="dailywine-form">
+              <div class="dw-field-row">
+                <div class="dw-field dw-field-grow">
+                  <label class="dw-label">Email</label>
+                  <input type="email" class="dw-input" id="dw-email" placeholder="you@example.com" />
+                </div>
+                <div class="dw-field">
+                  <label class="dw-label">First name <span class="dw-hint">(optional)</span></label>
+                  <input type="text" class="dw-input" id="dw-name" placeholder="e.g. Gina" />
                 </div>
               </div>
-            </div>
 
+              <div class="dw-field">
+                <label class="dw-label">Level</label>
+                <div class="dw-level-options" id="dw-level">
+                  <button class="dw-level-btn" data-level="beginner">Beginner</button>
+                  <button class="dw-level-btn" data-level="intermediate">Intermediate</button>
+                  <button class="dw-level-btn" data-level="advanced">Advanced</button>
+                </div>
+              </div>
+
+              <div class="dw-field">
+                <label class="dw-label">Topics <span class="dw-hint">(pick as many as you like)</span></label>
+                <div class="dw-topics" id="dw-topics">
+                  <button class="dw-topic-btn" data-topic="grapes">Grapes</button>
+                  <button class="dw-topic-btn" data-topic="regions">Regions</button>
+                  <button class="dw-topic-btn" data-topic="tasting">Tasting</button>
+                  <button class="dw-topic-btn" data-topic="pairing">Food Pairing</button>
+                  <button class="dw-topic-btn" data-topic="winemaking">Winemaking</button>
+                  <button class="dw-topic-btn" data-topic="history">History</button>
+                  <button class="dw-topic-btn" data-topic="buying">Buying &amp; Value</button>
+                  <button class="dw-topic-btn" data-topic="cellar">Cellaring</button>
+                  <button class="dw-topic-btn" data-topic="exam">Exam Prep</button>
+                </div>
+              </div>
+
+              <button class="dw-subscribe-btn" id="dw-subscribe-btn">Subscribe</button>
+              <p class="dw-footer-note">One email a day. Unsubscribe anytime.</p>
+            </div>
           </div>
+
+          <!-- Social proof -->
+          <div class="dw-proof">
+            <blockquote class="dw-quote">
+              <p>"I look forward to this every morning with my coffee."</p>
+              <cite>Sarah M., San Francisco</cite>
+            </blockquote>
+            <blockquote class="dw-quote">
+              <p>"The perfect supplement to my CMS flashcards."</p>
+              <cite>David K., Oakland</cite>
+            </blockquote>
+            <blockquote class="dw-quote">
+              <p>"Bought my first 'real' bottle after a week of these."</p>
+              <cite>Jess L., Palo Alto</cite>
+            </blockquote>
+          </div>
+
         </div>
       </div>
     </section>
