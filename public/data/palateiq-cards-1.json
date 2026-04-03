@@ -1,0 +1,3945 @@
+[
+  {
+    "id": "GV-001",
+    "domain": "grape_varieties",
+    "difficulty": 150,
+    "level": 1,
+    "format": "multiple_choice",
+    "question": "What color wine does Chardonnay typically produce?",
+    "options": [
+      "Red",
+      "White",
+      "Rosé",
+      "Orange"
+    ],
+    "correct": 1,
+    "explanation": "Chardonnay is a white grape variety that produces white wine. It is one of the most widely planted white grapes in the world.",
+    "sources": "Oxford Companion to Wine; WSET Level 2",
+    "confidence": "established",
+    "tags": [
+      "chardonnay",
+      "white-wine",
+      "beginner"
+    ]
+  },
+  {
+    "id": "GV-002",
+    "domain": "grape_varieties",
+    "difficulty": 200,
+    "level": 1,
+    "format": "multiple_choice",
+    "question": "Which of these is a red grape variety?",
+    "options": [
+      "Riesling",
+      "Sauvignon Blanc",
+      "Merlot",
+      "Pinot Grigio"
+    ],
+    "correct": 2,
+    "explanation": "Merlot is a red grape variety, widely planted in Bordeaux and around the world. Riesling, Sauvignon Blanc, and Pinot Grigio are all white grape varieties.",
+    "sources": "WSET Level 2; The Wine Bible (Karen MacNeil)",
+    "confidence": "established",
+    "tags": [
+      "merlot",
+      "red-wine",
+      "beginner"
+    ]
+  },
+  {
+    "id": "GV-003",
+    "domain": "grape_varieties",
+    "difficulty": 250,
+    "level": 1,
+    "format": "odd_one_out",
+    "question": "Which of these grapes does NOT belong with the others?",
+    "options": [
+      "Cabernet Sauvignon",
+      "Merlot",
+      "Chardonnay",
+      "Syrah"
+    ],
+    "correct": 2,
+    "explanation": "Chardonnay is a white grape, while Cabernet Sauvignon, Merlot, and Syrah are all red grape varieties.",
+    "sources": "Oxford Companion to Wine; WSET Level 2",
+    "confidence": "established",
+    "tags": [
+      "grape-colors",
+      "beginner"
+    ]
+  },
+  {
+    "id": "GV-004",
+    "domain": "grape_varieties",
+    "difficulty": 350,
+    "level": 2,
+    "format": "multiple_choice",
+    "question": "Which country is Malbec most associated with today?",
+    "options": [
+      "France",
+      "Argentina",
+      "Chile",
+      "Spain"
+    ],
+    "correct": 1,
+    "explanation": "While Malbec originated in southwestern France (Cahors), Argentina — particularly Mendoza — has become the country most associated with the variety, producing rich, fruit-forward styles.",
+    "sources": "Oxford Companion to Wine; World Atlas of Wine (Johnson & Robinson)",
+    "confidence": "established",
+    "tags": [
+      "malbec",
+      "argentina",
+      "mendoza"
+    ]
+  },
+  {
+    "id": "GV-005",
+    "domain": "grape_varieties",
+    "difficulty": 400,
+    "level": 2,
+    "format": "multiple_choice",
+    "question": "What is the primary aromatic characteristic of Sauvignon Blanc?",
+    "options": [
+      "Butter and vanilla",
+      "Gooseberry and herbaceous notes",
+      "Peach and apricot",
+      "Honey and petrol"
+    ],
+    "correct": 1,
+    "explanation": "Sauvignon Blanc is known for its distinctive gooseberry, green bell pepper, and herbaceous aromatics, driven by methoxypyrazines. The WSET Systematic Approach to Tasting identifies these as key markers.",
+    "sources": "WSET Level 3; Wine Science (Jamie Goode)",
+    "confidence": "established",
+    "tags": [
+      "sauvignon-blanc",
+      "aromas",
+      "tasting"
+    ]
+  },
+  {
+    "id": "GV-006",
+    "domain": "grape_varieties",
+    "difficulty": 450,
+    "level": 2,
+    "format": "odd_one_out",
+    "question": "Which grape does NOT belong with the others?",
+    "options": [
+      "Pinot Noir",
+      "Pinot Gris",
+      "Pinot Blanc",
+      "Pinot Meunier"
+    ],
+    "correct": 3,
+    "explanation": "Pinot Gris and Pinot Blanc are color mutations of Pinot Noir. Pinot Meunier, while related, is a distinct variety — a chimeric mutation rather than a simple color mutation.",
+    "sources": "Wine Grapes (Robinson/Harding/Vouillamoz); Oxford Companion to Wine",
+    "confidence": "established",
+    "tags": [
+      "pinot-family",
+      "mutations",
+      "grape-genetics"
+    ]
+  },
+  {
+    "id": "GV-007",
+    "domain": "grape_varieties",
+    "difficulty": 500,
+    "level": 3,
+    "format": "match_pairs",
+    "question": "Match each grape variety to its classic region.",
+    "pairs": {
+      "left": [
+        "Nebbiolo",
+        "Sangiovese",
+        "Tempranillo",
+        "Garnacha"
+      ],
+      "right": [
+        "Rioja",
+        "Chianti",
+        "Priorat",
+        "Barolo"
+      ]
+    },
+    "correct": [
+      3,
+      1,
+      0,
+      2
+    ],
+    "explanation": "Nebbiolo is the grape of Barolo and Barbaresco in Piedmont. Sangiovese is the backbone of Chianti in Tuscany. Tempranillo dominates Rioja in Spain. Garnacha (Grenache) is the key grape of Priorat in Catalonia.",
+    "sources": "World Atlas of Wine (Johnson & Robinson); Oxford Companion to Wine",
+    "confidence": "established",
+    "tags": [
+      "nebbiolo",
+      "sangiovese",
+      "tempranillo",
+      "garnacha"
+    ]
+  },
+  {
+    "id": "GV-008",
+    "domain": "grape_varieties",
+    "difficulty": 550,
+    "level": 3,
+    "format": "multiple_choice",
+    "question": "Which grape variety is the primary component of red Burgundy?",
+    "options": [
+      "Cabernet Sauvignon",
+      "Pinot Noir",
+      "Gamay",
+      "Syrah"
+    ],
+    "correct": 1,
+    "explanation": "Pinot Noir is the sole red grape permitted in Burgundy's village and Premier/Grand Cru appellations. Gamay, while grown in Beaujolais (technically part of greater Burgundy), is excluded from the Côte d'Or.",
+    "sources": "Oxford Companion to Wine; WSET Level 3",
+    "confidence": "established",
+    "tags": [
+      "burgundy",
+      "pinot-noir",
+      "french-wine"
+    ]
+  },
+  {
+    "id": "GV-009",
+    "domain": "grape_varieties",
+    "difficulty": 600,
+    "level": 3,
+    "format": "multiple_choice",
+    "question": "Which aromatic compound is responsible for the 'petrol' note in aged Riesling?",
+    "options": [
+      "Methoxypyrazines",
+      "Rotundone",
+      "TDN (1,1,6-trimethyl-1,2-dihydronaphthalene)",
+      "Linalool"
+    ],
+    "correct": 2,
+    "explanation": "TDN (1,1,6-trimethyl-1,2-dihydronaphthalene) is the compound responsible for the characteristic petrol or kerosene aroma in aged Riesling. It forms from carotenoid precursors during bottle aging.",
+    "sources": "Wine Science (Jamie Goode); Oxford Companion to Wine",
+    "confidence": "established",
+    "tags": [
+      "riesling",
+      "wine-chemistry",
+      "aging"
+    ]
+  },
+  {
+    "id": "GV-010",
+    "domain": "grape_varieties",
+    "difficulty": 650,
+    "level": 3,
+    "format": "odd_one_out",
+    "question": "Which grape is NOT typically part of a classic Bordeaux red blend?",
+    "options": [
+      "Merlot",
+      "Cabernet Franc",
+      "Petit Verdot",
+      "Mourvèdre"
+    ],
+    "correct": 3,
+    "explanation": "The classic Bordeaux red blend includes Cabernet Sauvignon, Merlot, Cabernet Franc, Petit Verdot, and Malbec. Mourvèdre is associated with the southern Rhône and Bandol in Provence, not Bordeaux.",
+    "sources": "WSET Level 3; Oxford Companion to Wine",
+    "confidence": "established",
+    "tags": [
+      "bordeaux-blend",
+      "grape-blends",
+      "french-wine"
+    ]
+  },
+  {
+    "id": "GV-011",
+    "domain": "grape_varieties",
+    "difficulty": 700,
+    "level": 4,
+    "format": "multiple_choice",
+    "question": "What is the DNA-confirmed parentage of Cabernet Sauvignon?",
+    "options": [
+      "Cabernet Franc × Merlot",
+      "Cabernet Franc × Sauvignon Blanc",
+      "Pinot Noir × Gouais Blanc",
+      "Cabernet Franc × Carmenère"
+    ],
+    "correct": 1,
+    "explanation": "DNA profiling by Carole Meredith at UC Davis in 1996 confirmed that Cabernet Sauvignon is a natural cross of Cabernet Franc and Sauvignon Blanc.",
+    "sources": "Wine Grapes (Robinson/Harding/Vouillamoz); Oxford Companion to Wine",
+    "confidence": "established",
+    "tags": [
+      "cabernet-sauvignon",
+      "parentage",
+      "dna",
+      "grape-genetics"
+    ]
+  },
+  {
+    "id": "GV-012",
+    "domain": "grape_varieties",
+    "difficulty": 750,
+    "level": 4,
+    "format": "multiple_choice",
+    "question": "Which soil type is traditionally considered ideal for Nebbiolo in the Langhe hills?",
+    "options": [
+      "Slate and schist",
+      "Calcareous marl",
+      "Volcanic basalt",
+      "Alluvial gravel"
+    ],
+    "correct": 1,
+    "explanation": "Nebbiolo thrives in the calcareous marl (clay-limestone) soils of the Langhe in Piedmont. The two main soil types are the Tortonian (sandier, in La Morra and Barolo) and Helvetian (more calcareous, in Serralunga and Monforte).",
+    "sources": "World Atlas of Wine (Johnson & Robinson); Oxford Companion to Wine",
+    "confidence": "established",
+    "tags": [
+      "nebbiolo",
+      "piedmont",
+      "soil",
+      "terroir"
+    ]
+  },
+  {
+    "id": "GV-013",
+    "domain": "grape_varieties",
+    "difficulty": 800,
+    "level": 4,
+    "format": "match_pairs",
+    "question": "Match each grape variety to its DNA-confirmed parentage.",
+    "pairs": {
+      "left": [
+        "Cabernet Sauvignon",
+        "Chardonnay",
+        "Pinotage",
+        "Müller-Thurgau"
+      ],
+      "right": [
+        "Riesling × Madeleine Royale",
+        "Pinot Noir × Cinsaut",
+        "Cabernet Franc × Sauvignon Blanc",
+        "Pinot Noir × Gouais Blanc"
+      ]
+    },
+    "correct": [
+      2,
+      3,
+      1,
+      0
+    ],
+    "explanation": "All four parentages are DNA-confirmed. Chardonnay's Pinot × Gouais Blanc origin was confirmed by Bowers et al. Pinotage was deliberately crossed in South Africa in 1925. Müller-Thurgau's parentage was clarified by DNA as Riesling × Madeleine Royale, not Riesling × Silvaner as once believed.",
+    "sources": "Wine Grapes (Robinson/Harding/Vouillamoz); Oxford Companion to Wine",
+    "confidence": "established",
+    "tags": [
+      "parentage",
+      "dna",
+      "grape-genetics"
+    ]
+  },
+  {
+    "id": "GV-014",
+    "domain": "grape_varieties",
+    "difficulty": 850,
+    "level": 4,
+    "format": "odd_one_out",
+    "question": "Which grape does NOT have Pinot Noir as a confirmed parent?",
+    "options": [
+      "Chardonnay",
+      "Gamay",
+      "Aligoté",
+      "Viognier"
+    ],
+    "correct": 3,
+    "explanation": "Viognier's parentage remains unclear. Chardonnay, Gamay, and Aligoté have all been DNA-confirmed as progeny of Pinot Noir crossed with Gouais Blanc.",
+    "sources": "Wine Grapes (Robinson/Harding/Vouillamoz); Oxford Companion to Wine",
+    "confidence": "established",
+    "tags": [
+      "pinot-noir",
+      "parentage",
+      "dna",
+      "grape-genetics"
+    ]
+  },
+  {
+    "id": "GV-015",
+    "domain": "grape_varieties",
+    "difficulty": 900,
+    "level": 5,
+    "format": "multiple_choice",
+    "question": "What is the aromatic compound rotundone responsible for in Syrah?",
+    "options": [
+      "Floral violet notes",
+      "Black pepper spice",
+      "Smoky bacon character",
+      "Blackberry fruit",
+      "Eucalyptus"
+    ],
+    "correct": 1,
+    "explanation": "Rotundone, a sesquiterpene, was identified in 2008 by the Australian Wine Research Institute as the compound responsible for the peppery character in Syrah/Shiraz, particularly from cooler climates like the northern Rhône.",
+    "sources": "Wine Science (Jamie Goode); Oxford Companion to Wine",
+    "confidence": "established",
+    "tags": [
+      "syrah",
+      "rotundone",
+      "wine-chemistry",
+      "aromas"
+    ]
+  },
+  {
+    "id": "GV-016",
+    "domain": "grape_varieties",
+    "difficulty": 950,
+    "level": 5,
+    "format": "multiple_choice",
+    "question": "Grüner Veltliner is a DNA-confirmed cross of Traminer and which other variety?",
+    "options": [
+      "Riesling",
+      "St. Georgen",
+      "Silvaner",
+      "Neuburger"
+    ],
+    "correct": 1,
+    "explanation": "DNA analysis confirmed Grüner Veltliner is a natural cross of Traminer and an obscure variety called St. Georgen (from the village of the same name in Burgenland, Austria).",
+    "sources": "Wine Grapes (Robinson/Harding/Vouillamoz); Oxford Companion to Wine",
+    "confidence": "established",
+    "tags": [
+      "gruner-veltliner",
+      "austria",
+      "parentage",
+      "dna"
+    ]
+  },
+  {
+    "id": "GV-017",
+    "domain": "grape_varieties",
+    "difficulty": 1000,
+    "level": 5,
+    "format": "match_pairs",
+    "question": "Match each grape variety to its characteristic aromatic compound or marker.",
+    "pairs": {
+      "left": [
+        "Muscat",
+        "Sauvignon Blanc",
+        "Gewürztraminer",
+        "Syrah"
+      ],
+      "right": [
+        "Rotundone",
+        "Methoxypyrazines",
+        "Linalool",
+        "Terpenes (monoterpenes)"
+      ]
+    },
+    "correct": [
+      3,
+      1,
+      2,
+      0
+    ],
+    "explanation": "Muscat varieties are rich in monoterpenes. Sauvignon Blanc's herbaceous character comes from methoxypyrazines. Gewürztraminer is notable for linalool (contributing floral, rose-like aromatics). Syrah's pepper note comes from rotundone.",
+    "sources": "Wine Science (Jamie Goode); WSET Level 3",
+    "confidence": "established",
+    "tags": [
+      "aromas",
+      "wine-chemistry",
+      "tasting"
+    ]
+  },
+  {
+    "id": "GV-018",
+    "domain": "grape_varieties",
+    "difficulty": 1050,
+    "level": 5,
+    "format": "odd_one_out",
+    "question": "Which variety is NOT classified as an aromatic grape?",
+    "options": [
+      "Muscat",
+      "Gewürztraminer",
+      "Torrontés",
+      "Chenin Blanc"
+    ],
+    "correct": 3,
+    "explanation": "Chenin Blanc is not typically classified as an aromatic variety. Muscat, Gewürztraminer, and Torrontés are all considered aromatic grapes due to their high levels of monoterpenes, particularly linalool and geraniol.",
+    "sources": "WSET Level 3; Oxford Companion to Wine",
+    "confidence": "established",
+    "tags": [
+      "aromatic-grapes",
+      "terpenes",
+      "tasting"
+    ]
+  },
+  {
+    "id": "GV-019",
+    "domain": "grape_varieties",
+    "difficulty": 1100,
+    "level": 6,
+    "format": "multiple_choice",
+    "question": "Carmenère was long confused with Merlot in Chilean vineyards. When was it officially re-identified?",
+    "options": [
+      "1988",
+      "1994",
+      "1998",
+      "2001"
+    ],
+    "correct": 1,
+    "explanation": "French ampelographer Jean-Michel Boursiquot identified what Chileans had been calling Merlot as Carmenère in 1994. The variety, once widespread in Bordeaux, had been virtually wiped out by phylloxera in Europe.",
+    "sources": "Oxford Companion to Wine; Wine Grapes (Robinson/Harding/Vouillamoz)",
+    "confidence": "established",
+    "tags": [
+      "carmenere",
+      "chile",
+      "ampelography",
+      "wine-history"
+    ]
+  },
+  {
+    "id": "GV-020",
+    "domain": "grape_varieties",
+    "difficulty": 1150,
+    "level": 6,
+    "format": "multiple_choice",
+    "question": "Which grape variety is known as Cot in its homeland of Cahors?",
+    "options": [
+      "Tannat",
+      "Malbec",
+      "Négrette",
+      "Fer Servadou"
+    ],
+    "correct": 1,
+    "explanation": "Malbec is officially known as Cot in France, particularly in its historical home of Cahors in southwestern France. Despite its Argentine fame, the grape originated in the Lot Valley.",
+    "sources": "Wine Grapes (Robinson/Harding/Vouillamoz); Oxford Companion to Wine",
+    "confidence": "established",
+    "tags": [
+      "malbec",
+      "cahors",
+      "synonyms",
+      "french-wine"
+    ]
+  },
+  {
+    "id": "GV-021",
+    "domain": "grape_varieties",
+    "difficulty": 1200,
+    "level": 6,
+    "format": "match_pairs",
+    "question": "Match each grape to its common synonym in another country.",
+    "pairs": {
+      "left": [
+        "Syrah (France)",
+        "Garnacha (Spain)",
+        "Pinot Grigio (Italy)",
+        "Tribidrag (Croatia)"
+      ],
+      "right": [
+        "Zinfandel",
+        "Grenache",
+        "Shiraz",
+        "Pinot Gris"
+      ]
+    },
+    "correct": [
+      2,
+      1,
+      3,
+      0
+    ],
+    "explanation": "Syrah becomes Shiraz in Australia. Garnacha is Grenache in France. Pinot Grigio is Pinot Gris in France/Alsace. DNA analysis confirmed Tribidrag (Croatia) is the same as Zinfandel (USA) and Primitivo (Italy).",
+    "sources": "Wine Grapes (Robinson/Harding/Vouillamoz); Oxford Companion to Wine",
+    "confidence": "established",
+    "tags": [
+      "synonyms",
+      "grape-identity",
+      "international"
+    ]
+  },
+  {
+    "id": "GV-022",
+    "domain": "grape_varieties",
+    "difficulty": 1250,
+    "level": 6,
+    "format": "odd_one_out",
+    "question": "Which variety is NOT a confirmed progeny of Gouais Blanc?",
+    "options": [
+      "Chardonnay",
+      "Gamay",
+      "Riesling",
+      "Auxerrois"
+    ],
+    "correct": 2,
+    "explanation": "Riesling is not a confirmed progeny of Gouais Blanc. Chardonnay, Gamay, and Auxerrois are all DNA-confirmed crosses involving Pinot Noir and Gouais Blanc. Riesling's parentage involves Traminer but Gouais Blanc has not been confirmed.",
+    "sources": "Wine Grapes (Robinson/Harding/Vouillamoz); Oxford Companion to Wine",
+    "confidence": "established",
+    "tags": [
+      "gouais-blanc",
+      "parentage",
+      "dna",
+      "grape-genetics"
+    ]
+  },
+  {
+    "id": "GV-023",
+    "domain": "grape_varieties",
+    "difficulty": 1300,
+    "level": 7,
+    "format": "multiple_choice",
+    "question": "Which Burgundy Grand Cru vineyard is permitted to grow both Pinot Noir and Chardonnay?",
+    "options": [
+      "Romanée-Conti",
+      "Musigny",
+      "Chambertin",
+      "Clos de Vougeot"
+    ],
+    "correct": 1,
+    "explanation": "Musigny is the only red Grand Cru in the Côte de Nuits that is also permitted to produce a white wine (Musigny Blanc) from Chardonnay. Domaine Comte Georges de Vogüé is the only producer currently making it.",
+    "sources": "World Atlas of Wine (Johnson & Robinson); Oxford Companion to Wine",
+    "confidence": "established",
+    "tags": [
+      "burgundy",
+      "grand-cru",
+      "musigny",
+      "french-wine"
+    ]
+  },
+  {
+    "id": "GV-024",
+    "domain": "grape_varieties",
+    "difficulty": 1350,
+    "level": 7,
+    "format": "multiple_choice",
+    "question": "Touriga Nacional is considered the finest grape variety for Port. In which Portuguese region has it become increasingly important for table wines?",
+    "options": [
+      "Vinho Verde",
+      "Dão",
+      "Alentejo",
+      "Bairrada"
+    ],
+    "correct": 1,
+    "explanation": "While Touriga Nacional is synonymous with Port production in the Douro, the Dão region of central Portugal is considered its homeland and has become a premier source of varietal Touriga Nacional table wines.",
+    "sources": "Oxford Companion to Wine; Wine Grapes (Robinson/Harding/Vouillamoz)",
+    "confidence": "established",
+    "tags": [
+      "touriga-nacional",
+      "portugal",
+      "dao",
+      "port"
+    ]
+  },
+  {
+    "id": "GV-025",
+    "domain": "grape_varieties",
+    "difficulty": 1400,
+    "level": 7,
+    "format": "odd_one_out",
+    "question": "Which grape is NOT one of the 13 varieties traditionally permitted in Châteauneuf-du-Pape?",
+    "options": [
+      "Grenache Blanc",
+      "Picardan",
+      "Carignan",
+      "Vaccarèse"
+    ],
+    "correct": 2,
+    "explanation": "Carignan is not among the 13 (now 18, after subdividing color variants) varieties permitted in Châteauneuf-du-Pape. Grenache Blanc, Picardan, and Vaccarèse (Brun Argenté) are all on the traditional list.",
+    "sources": "Oxford Companion to Wine; WSET Level 3",
+    "confidence": "established",
+    "tags": [
+      "chateauneuf-du-pape",
+      "rhone",
+      "french-wine",
+      "appellation-rules"
+    ]
+  },
+  {
+    "id": "GV-026",
+    "domain": "grape_varieties",
+    "difficulty": 1450,
+    "level": 7,
+    "format": "match_pairs",
+    "question": "Match each clone to its associated grape variety.",
+    "pairs": {
+      "left": [
+        "Dijon 115",
+        "Wädenswil",
+        "Pommard",
+        "Mariafeld"
+      ],
+      "right": [
+        "Pinot Noir (Oregon)",
+        "Pinot Noir (Burgundy)",
+        "Blauburgunder (Switzerland)",
+        "Pinot Noir (California)"
+      ]
+    },
+    "correct": [
+      1,
+      3,
+      0,
+      2
+    ],
+    "explanation": "Dijon 115 is a Burgundy Pinot Noir clone selected by Raymond Bernard. Wädenswil is a Swiss clone widely planted in Oregon. Pommard is a heritage Pinot Noir clone popular in Oregon and California. Mariafeld is a Swiss Blauburgunder (Pinot Noir) clone.",
+    "sources": "Oxford Companion to Wine; GuildSomm",
+    "confidence": "established",
+    "tags": [
+      "pinot-noir",
+      "clones",
+      "viticulture"
+    ]
+  },
+  {
+    "id": "GV-027",
+    "domain": "grape_varieties",
+    "difficulty": 1500,
+    "level": 8,
+    "format": "multiple_choice",
+    "question": "Savagnin and Traminer have been confirmed by DNA analysis to be what relationship?",
+    "options": [
+      "Parent and offspring",
+      "Siblings from the same cross",
+      "The same variety",
+      "Unrelated but morphologically similar"
+    ],
+    "correct": 2,
+    "explanation": "DNA analysis has confirmed that Savagnin (used for vin jaune in the Jura) and Traminer are in fact the same grape variety. Gewürztraminer is a pink-skinned aromatic mutation of this variety.",
+    "sources": "Wine Grapes (Robinson/Harding/Vouillamoz); Oxford Companion to Wine",
+    "confidence": "consensus",
+    "tags": [
+      "savagnin",
+      "traminer",
+      "jura",
+      "dna",
+      "grape-identity"
+    ]
+  },
+  {
+    "id": "GV-028",
+    "domain": "grape_varieties",
+    "difficulty": 1550,
+    "level": 8,
+    "format": "multiple_choice",
+    "question": "Which grape variety, widely planted in Australia's Barossa Valley, was long called 'Mataro' before being identified as which variety?",
+    "options": [
+      "Carignan",
+      "Mourvèdre",
+      "Cinsaut",
+      "Counoise"
+    ],
+    "correct": 1,
+    "explanation": "Mourvèdre was known as Mataro in Australia for over a century. Old-vine Barossa Mataro/Mourvèdre has gained recognition as a premium variety. The grape is also known as Monastrell in Spain.",
+    "sources": "Oxford Companion to Wine; Wine Grapes (Robinson/Harding/Vouillamoz)",
+    "confidence": "consensus",
+    "tags": [
+      "mourvedre",
+      "barossa",
+      "australia",
+      "synonyms"
+    ]
+  },
+  {
+    "id": "GV-029",
+    "domain": "grape_varieties",
+    "difficulty": 1600,
+    "level": 8,
+    "format": "odd_one_out",
+    "question": "Which grape is NOT a member of the Trebbiano/Ugni Blanc family as confirmed by DNA?",
+    "options": [
+      "Trebbiano Toscano",
+      "Trebbiano di Soave (Verdicchio)",
+      "Trebbiano Romagnolo",
+      "Trebbiano Spoletino"
+    ],
+    "correct": 1,
+    "explanation": "Despite its name, Trebbiano di Soave has been shown to be genetically identical to Verdicchio, a completely separate variety from the true Trebbiano family. Trebbiano Toscano, Romagnolo, and Spoletino are all distinct but part of the broader Trebbiano group.",
+    "sources": "Wine Grapes (Robinson/Harding/Vouillamoz); Oxford Companion to Wine",
+    "confidence": "consensus",
+    "tags": [
+      "trebbiano",
+      "verdicchio",
+      "italy",
+      "grape-identity"
+    ]
+  },
+  {
+    "id": "GV-030",
+    "domain": "grape_varieties",
+    "difficulty": 1700,
+    "level": 9,
+    "format": "multiple_choice",
+    "question": "The grape Petit Manseng is prized in Jurançon for sweet wines. What is its confirmed relationship to Gros Manseng?",
+    "options": [
+      "They are the same variety with different berry sizes",
+      "Gros Manseng is a parent of Petit Manseng",
+      "They are parent-offspring related",
+      "They share no confirmed parent-offspring relationship but are closely related"
+    ],
+    "correct": 2,
+    "explanation": "DNA analysis has confirmed a parent-offspring relationship between Petit Manseng and Gros Manseng, though which is the parent and which is the offspring remains undetermined.",
+    "sources": "Wine Grapes (Robinson/Harding/Vouillamoz); Oxford Companion to Wine",
+    "confidence": "consensus",
+    "tags": [
+      "petit-manseng",
+      "gros-manseng",
+      "jurancon",
+      "parentage"
+    ]
+  },
+  {
+    "id": "GV-031",
+    "domain": "grape_varieties",
+    "difficulty": 1750,
+    "level": 9,
+    "format": "match_pairs",
+    "question": "Match each Italian grape to its DNA-confirmed relationship.",
+    "pairs": {
+      "left": [
+        "Sangiovese",
+        "Aglianico",
+        "Corvina",
+        "Garganega"
+      ],
+      "right": [
+        "Parent of Biancone",
+        "Parent of Rondinella",
+        "Parent of several Tuscan varieties including Ciliegiolo",
+        "Greek origins debated, no confirmed parent"
+      ]
+    },
+    "correct": [
+      2,
+      3,
+      1,
+      0
+    ],
+    "explanation": "DNA has confirmed Sangiovese as a parent of multiple Tuscan varieties. Corvina is a confirmed parent of Rondinella. Garganega is a parent of Biancone. Aglianico's origins remain debated despite the Greek etymology theory.",
+    "sources": "Wine Grapes (Robinson/Harding/Vouillamoz); Oxford Companion to Wine",
+    "confidence": "consensus",
+    "tags": [
+      "italian-grapes",
+      "parentage",
+      "dna"
+    ]
+  },
+  {
+    "id": "GV-032",
+    "domain": "grape_varieties",
+    "difficulty": 1800,
+    "level": 9,
+    "format": "multiple_choice",
+    "question": "The grape Durif (Petite Sirah in the USA) was confirmed by DNA analysis to be a cross of which two varieties?",
+    "options": [
+      "Syrah × Mourvèdre",
+      "Syrah × Peloursin",
+      "Syrah × Viognier",
+      "Syrah × Grenache"
+    ],
+    "correct": 1,
+    "explanation": "DNA profiling confirmed that Durif is a cross of Syrah and Peloursin, a now-rare variety from the Isère department in southeastern France. The cross was first noted by Dr. François Durif in the 1880s.",
+    "sources": "Wine Grapes (Robinson/Harding/Vouillamoz); Oxford Companion to Wine",
+    "confidence": "consensus",
+    "tags": [
+      "durif",
+      "petite-sirah",
+      "parentage",
+      "dna"
+    ]
+  },
+  {
+    "id": "GV-033",
+    "domain": "grape_varieties",
+    "difficulty": 1900,
+    "level": 10,
+    "format": "multiple_choice",
+    "question": "Xinomavro, Greece's most important red grape, is grown primarily in which appellation?",
+    "options": [
+      "Nemea",
+      "Naoussa",
+      "Mantinia",
+      "Santorini"
+    ],
+    "correct": 1,
+    "explanation": "Xinomavro is the sole grape of the Naoussa appellation in Macedonia, northern Greece. It is often compared to Nebbiolo for its high acidity, firm tannins, and aging potential. Nemea uses Agiorgitiko, not Xinomavro.",
+    "sources": "Oxford Companion to Wine; The Wine Bible (Karen MacNeil)",
+    "confidence": "consensus",
+    "tags": [
+      "xinomavro",
+      "greece",
+      "naoussa",
+      "indigenous-grapes"
+    ]
+  },
+  {
+    "id": "GV-034",
+    "domain": "grape_varieties",
+    "difficulty": 1950,
+    "level": 10,
+    "format": "odd_one_out",
+    "question": "Which grape is NOT permitted in the DOC/DOCG regulations for Amarone della Valpolicella?",
+    "options": [
+      "Corvina",
+      "Rondinella",
+      "Oseleta",
+      "Raboso"
+    ],
+    "correct": 3,
+    "explanation": "Raboso is a grape of the Veneto's Piave area and is not permitted in Amarone. Corvina (45-95%), Rondinella (5-30%), and Oseleta (a permitted minority variety) are all allowed under Amarone della Valpolicella DOCG regulations.",
+    "sources": "Oxford Companion to Wine; GuildSomm",
+    "confidence": "consensus",
+    "tags": [
+      "amarone",
+      "valpolicella",
+      "italian-wine",
+      "appellation-rules"
+    ]
+  },
+  {
+    "id": "GV-035",
+    "domain": "grape_varieties",
+    "difficulty": 2000,
+    "level": 10,
+    "format": "match_pairs",
+    "question": "Match each rare grape variety to its region of primary cultivation.",
+    "pairs": {
+      "left": [
+        "Trousseau",
+        "Poulsard",
+        "Timorasso",
+        "Lagrein"
+      ],
+      "right": [
+        "Alto Adige",
+        "Colli Tortonesi (Piedmont)",
+        "Jura",
+        "Jura"
+      ]
+    },
+    "correct": [
+      2,
+      3,
+      1,
+      0
+    ],
+    "explanation": "Trousseau and Poulsard are both Jura specialties. Timorasso has been revived in the Colli Tortonesi area of southeastern Piedmont, championed by producer Walter Massa. Lagrein is indigenous to Alto Adige (Südtirol).",
+    "sources": "Wine Grapes (Robinson/Harding/Vouillamoz); Oxford Companion to Wine",
+    "confidence": "consensus",
+    "tags": [
+      "rare-grapes",
+      "jura",
+      "piedmont",
+      "alto-adige"
+    ]
+  },
+  {
+    "id": "GV-036",
+    "domain": "grape_varieties",
+    "difficulty": 300,
+    "level": 1,
+    "format": "multiple_choice",
+    "question": "Which grape variety is most associated with Champagne's white sparkling wines?",
+    "options": [
+      "Sauvignon Blanc",
+      "Riesling",
+      "Chardonnay",
+      "Chenin Blanc"
+    ],
+    "correct": 2,
+    "explanation": "Chardonnay is one of the three main grape varieties of Champagne, and the only white grape among them. A Champagne made entirely from Chardonnay is called Blanc de Blancs.",
+    "sources": "WSET Level 2; Oxford Companion to Wine",
+    "confidence": "established",
+    "tags": [
+      "chardonnay",
+      "champagne",
+      "sparkling-wine"
+    ]
+  },
+  {
+    "id": "GV-037",
+    "domain": "grape_varieties",
+    "difficulty": 180,
+    "level": 1,
+    "format": "odd_one_out",
+    "question": "Which of these is NOT a grape variety?",
+    "options": [
+      "Merlot",
+      "Chianti",
+      "Syrah",
+      "Riesling"
+    ],
+    "correct": 1,
+    "explanation": "Chianti is a wine region (and DOCG) in Tuscany, Italy, not a grape variety. Merlot, Syrah, and Riesling are all grape varieties.",
+    "sources": "WSET Level 2; Oxford Companion to Wine",
+    "confidence": "established",
+    "tags": [
+      "beginner",
+      "terminology"
+    ]
+  },
+  {
+    "id": "GV-038",
+    "domain": "grape_varieties",
+    "difficulty": 380,
+    "level": 2,
+    "format": "match_pairs",
+    "question": "Match each grape to the color of wine it typically produces.",
+    "pairs": {
+      "left": [
+        "Cabernet Sauvignon",
+        "Riesling",
+        "Pinot Noir",
+        "Chardonnay"
+      ],
+      "right": [
+        "White",
+        "Red",
+        "White",
+        "Red"
+      ]
+    },
+    "correct": [
+      3,
+      0,
+      1,
+      2
+    ],
+    "explanation": "Cabernet Sauvignon and Pinot Noir are red grapes producing red wines. Riesling and Chardonnay are white grapes producing white wines.",
+    "sources": "WSET Level 2; The Wine Bible (Karen MacNeil)",
+    "confidence": "established",
+    "tags": [
+      "beginner",
+      "grape-colors"
+    ]
+  },
+  {
+    "id": "GV-039",
+    "domain": "grape_varieties",
+    "difficulty": 480,
+    "level": 2,
+    "format": "multiple_choice",
+    "question": "Which grape variety is most commonly associated with New Zealand?",
+    "options": [
+      "Chardonnay",
+      "Pinot Noir",
+      "Sauvignon Blanc",
+      "Riesling"
+    ],
+    "correct": 2,
+    "explanation": "Sauvignon Blanc, particularly from Marlborough, put New Zealand on the world wine map. The variety accounts for the majority of the country's wine production and exports.",
+    "sources": "Oxford Companion to Wine; WSET Level 3",
+    "confidence": "established",
+    "tags": [
+      "sauvignon-blanc",
+      "new-zealand",
+      "marlborough"
+    ]
+  },
+  {
+    "id": "GV-040",
+    "domain": "grape_varieties",
+    "difficulty": 520,
+    "level": 3,
+    "format": "multiple_choice",
+    "question": "What is Tempranillo named after?",
+    "options": [
+      "A Spanish village",
+      "The Spanish word for 'early' (temprano)",
+      "A medieval winemaker",
+      "The temple-like shape of its leaves"
+    ],
+    "correct": 1,
+    "explanation": "Tempranillo derives its name from 'temprano,' the Spanish word for early, referring to the grape's tendency to ripen earlier than most other Spanish red varieties.",
+    "sources": "Oxford Companion to Wine; Wine Grapes (Robinson/Harding/Vouillamoz)",
+    "confidence": "established",
+    "tags": [
+      "tempranillo",
+      "spain",
+      "etymology"
+    ]
+  },
+  {
+    "id": "GV-041",
+    "domain": "grape_varieties",
+    "difficulty": 580,
+    "level": 3,
+    "format": "odd_one_out",
+    "question": "Which grape variety is NOT native to Italy?",
+    "options": [
+      "Nebbiolo",
+      "Sangiovese",
+      "Cabernet Franc",
+      "Barbera"
+    ],
+    "correct": 2,
+    "explanation": "Cabernet Franc originated in the Basque region of France/Spain and is primarily associated with France's Loire Valley and Bordeaux. Nebbiolo, Sangiovese, and Barbera are all indigenous Italian varieties.",
+    "sources": "Wine Grapes (Robinson/Harding/Vouillamoz); Oxford Companion to Wine",
+    "confidence": "established",
+    "tags": [
+      "italian-grapes",
+      "cabernet-franc",
+      "origins"
+    ]
+  },
+  {
+    "id": "GV-042",
+    "domain": "grape_varieties",
+    "difficulty": 680,
+    "level": 3,
+    "format": "match_pairs",
+    "question": "Match each grape variety to its primary aroma descriptor.",
+    "pairs": {
+      "left": [
+        "Gewürztraminer",
+        "Cabernet Sauvignon",
+        "Viognier",
+        "Pinot Noir"
+      ],
+      "right": [
+        "Red cherry and earth",
+        "Blackcurrant (cassis)",
+        "Lychee and rose petal",
+        "Peach and apricot"
+      ]
+    },
+    "correct": [
+      2,
+      1,
+      3,
+      0
+    ],
+    "explanation": "These are classic WSET SAT descriptors: Gewürztraminer shows lychee and rose; Cabernet Sauvignon is defined by cassis; Viognier is known for stone fruits; Pinot Noir shows red cherry and earthy notes.",
+    "sources": "WSET Level 3; Oxford Companion to Wine",
+    "confidence": "established",
+    "tags": [
+      "aromas",
+      "tasting",
+      "wset-sat"
+    ]
+  },
+  {
+    "id": "GV-043",
+    "domain": "grape_varieties",
+    "difficulty": 720,
+    "level": 4,
+    "format": "multiple_choice",
+    "question": "Albariño is the signature white grape of which Spanish wine region?",
+    "options": [
+      "Rueda",
+      "Penedès",
+      "Rías Baixas",
+      "Somontano"
+    ],
+    "correct": 2,
+    "explanation": "Albariño is the signature grape of Rías Baixas in Galicia, northwestern Spain. Its naturally high acidity and aromatic profile make it an ideal match for the region's seafood-centric cuisine.",
+    "sources": "Oxford Companion to Wine; WSET Level 3",
+    "confidence": "established",
+    "tags": [
+      "albarino",
+      "rias-baixas",
+      "spain",
+      "white-wine"
+    ]
+  },
+  {
+    "id": "GV-044",
+    "domain": "grape_varieties",
+    "difficulty": 780,
+    "level": 4,
+    "format": "odd_one_out",
+    "question": "Which grape is NOT considered a 'noble rot' variety (regularly used to make botrytized sweet wines)?",
+    "options": [
+      "Sémillon",
+      "Riesling",
+      "Chenin Blanc",
+      "Cabernet Sauvignon"
+    ],
+    "correct": 3,
+    "explanation": "Cabernet Sauvignon is a thick-skinned red variety not used for botrytized wines. Sémillon (Sauternes), Riesling (German TBA/Auslese), and Chenin Blanc (Coteaux du Layon, Vouvray) are all classic noble rot varieties.",
+    "sources": "WSET Level 3; Oxford Companion to Wine",
+    "confidence": "established",
+    "tags": [
+      "botrytis",
+      "sweet-wine",
+      "noble-rot"
+    ]
+  },
+  {
+    "id": "GV-045",
+    "domain": "grape_varieties",
+    "difficulty": 920,
+    "level": 5,
+    "format": "multiple_choice",
+    "question": "Chenin Blanc can produce virtually every style of white wine. In which Loire appellation can it produce dry, off-dry, sweet, and sparkling wines?",
+    "options": [
+      "Sancerre",
+      "Muscadet",
+      "Vouvray",
+      "Pouilly-Fumé"
+    ],
+    "correct": 2,
+    "explanation": "Vouvray in the Loire Valley produces Chenin Blanc in sec (dry), demi-sec (off-dry), moelleux (sweet), and pétillant/mousseux (sparkling) styles. Sancerre and Pouilly-Fumé use Sauvignon Blanc; Muscadet uses Melon de Bourgogne.",
+    "sources": "WSET Level 3; Oxford Companion to Wine",
+    "confidence": "established",
+    "tags": [
+      "chenin-blanc",
+      "vouvray",
+      "loire",
+      "french-wine"
+    ]
+  },
+  {
+    "id": "GV-046",
+    "domain": "grape_varieties",
+    "difficulty": 980,
+    "level": 5,
+    "format": "odd_one_out",
+    "question": "Which grape is NOT a teinturier (red-fleshed) variety?",
+    "options": [
+      "Alicante Bouschet",
+      "Saperavi",
+      "Tannat",
+      "Rubired"
+    ],
+    "correct": 2,
+    "explanation": "Tannat is not a teinturier — it has deeply pigmented skins but normal (clear) flesh. Alicante Bouschet, Saperavi, and Rubired all have red-colored flesh (pulp), making them true teinturier varieties.",
+    "sources": "Wine Grapes (Robinson/Harding/Vouillamoz); Oxford Companion to Wine",
+    "confidence": "established",
+    "tags": [
+      "teinturier",
+      "grape-physiology",
+      "tannat"
+    ]
+  },
+  {
+    "id": "GV-047",
+    "domain": "grape_varieties",
+    "difficulty": 1130,
+    "level": 6,
+    "format": "multiple_choice",
+    "question": "Which Greek grape variety is grown on the volcanic island of Santorini, often trained in basket-shaped 'kouloura' vines?",
+    "options": [
+      "Agiorgitiko",
+      "Xinomavro",
+      "Assyrtiko",
+      "Moschofilero"
+    ],
+    "correct": 2,
+    "explanation": "Assyrtiko is the principal grape of Santorini, where old bush vines are trained into kouloura (basket) shapes to protect from strong winds. The volcanic soils produce wines of remarkable minerality and acidity.",
+    "sources": "Oxford Companion to Wine; The Wine Bible (Karen MacNeil)",
+    "confidence": "established",
+    "tags": [
+      "assyrtiko",
+      "santorini",
+      "greece",
+      "viticulture"
+    ]
+  },
+  {
+    "id": "GV-048",
+    "domain": "grape_varieties",
+    "difficulty": 1180,
+    "level": 6,
+    "format": "match_pairs",
+    "question": "Match each grape to its signature South African expression.",
+    "pairs": {
+      "left": [
+        "Chenin Blanc",
+        "Pinotage",
+        "Cinsaut",
+        "Cabernet Sauvignon"
+      ],
+      "right": [
+        "Stellenbosch single-vineyard",
+        "Old bush vine (Swartland)",
+        "Paarl blending component",
+        "Stellenbosch & Swartland varietal"
+      ]
+    },
+    "correct": [
+      1,
+      3,
+      2,
+      0
+    ],
+    "explanation": "Old bush vine Chenin Blanc from Swartland has become South Africa's signature white style. Pinotage is most esteemed from Stellenbosch and Swartland. Cinsaut has found new life as a Paarl/Swartland component. Cabernet Sauvignon excels in Stellenbosch.",
+    "sources": "Oxford Companion to Wine; GuildSomm",
+    "confidence": "established",
+    "tags": [
+      "south-africa",
+      "chenin-blanc",
+      "pinotage"
+    ]
+  },
+  {
+    "id": "GV-049",
+    "domain": "grape_varieties",
+    "difficulty": 1320,
+    "level": 7,
+    "format": "multiple_choice",
+    "question": "Which grape variety has the highest number of identified clones in France?",
+    "options": [
+      "Cabernet Sauvignon",
+      "Pinot Noir",
+      "Chardonnay",
+      "Merlot"
+    ],
+    "correct": 1,
+    "explanation": "Pinot Noir is notoriously genetically unstable and prone to mutation, resulting in more identified clones than any other French variety. Over 50 clones are officially approved in France's catalogue.",
+    "sources": "Oxford Companion to Wine; Wine Grapes (Robinson/Harding/Vouillamoz)",
+    "confidence": "established",
+    "tags": [
+      "pinot-noir",
+      "clones",
+      "viticulture",
+      "mutations"
+    ]
+  },
+  {
+    "id": "GV-050",
+    "domain": "grape_varieties",
+    "difficulty": 1380,
+    "level": 7,
+    "format": "odd_one_out",
+    "question": "Which grape is NOT permitted in Barolo DOCG?",
+    "options": [
+      "Nebbiolo Lampia",
+      "Nebbiolo Michet",
+      "Nebbiolo Rosé",
+      "Barbera"
+    ],
+    "correct": 3,
+    "explanation": "Barolo must be 100% Nebbiolo. Lampia, Michet, and Rosé are all recognized subvarieties (biotypes) of Nebbiolo permitted in Barolo. Barbera is a separate variety with its own appellations in Piedmont.",
+    "sources": "Oxford Companion to Wine; World Atlas of Wine (Johnson & Robinson)",
+    "confidence": "established",
+    "tags": [
+      "barolo",
+      "nebbiolo",
+      "piedmont",
+      "appellation-rules"
+    ]
+  },
+  {
+    "id": "GV-051",
+    "domain": "grape_varieties",
+    "difficulty": 1520,
+    "level": 8,
+    "format": "multiple_choice",
+    "question": "Which compound class is primarily responsible for the color stability of Tannat wines?",
+    "options": [
+      "Anthocyanins with high acylation rates",
+      "Ellagitannins from oak",
+      "Copigmented flavonols",
+      "Polymeric pigments from oxidation"
+    ],
+    "correct": 0,
+    "explanation": "Tannat has an unusually high proportion of acylated anthocyanins, which are more stable and resistant to color loss than non-acylated forms. This contributes to the deep, age-worthy color of Madiran and Uruguayan Tannat wines.",
+    "sources": "Wine Science (Jamie Goode); Oxford Companion to Wine",
+    "confidence": "consensus",
+    "tags": [
+      "tannat",
+      "wine-chemistry",
+      "anthocyanins",
+      "color"
+    ]
+  },
+  {
+    "id": "GV-052",
+    "domain": "grape_varieties",
+    "difficulty": 1580,
+    "level": 8,
+    "format": "match_pairs",
+    "question": "Match each Austrian grape to its primary region.",
+    "pairs": {
+      "left": [
+        "Grüner Veltliner",
+        "Blaufränkisch",
+        "Zweigelt",
+        "St. Laurent"
+      ],
+      "right": [
+        "Neusiedlersee (Burgenland)",
+        "Wachau/Kamptal",
+        "Mittelburgenland",
+        "Thermenregion"
+      ]
+    },
+    "correct": [
+      1,
+      2,
+      0,
+      3
+    ],
+    "explanation": "Grüner Veltliner's greatest expressions come from Wachau and Kamptal. Blaufränkisch is the star of Mittelburgenland. Zweigelt is widely planted but concentrated in Neusiedlersee. St. Laurent finds a home in Thermenregion and northern Burgenland.",
+    "sources": "Oxford Companion to Wine; World Atlas of Wine (Johnson & Robinson)",
+    "confidence": "consensus",
+    "tags": [
+      "austria",
+      "gruner-veltliner",
+      "blaufrankisch"
+    ]
+  },
+  {
+    "id": "GV-053",
+    "domain": "grape_varieties",
+    "difficulty": 1720,
+    "level": 9,
+    "format": "multiple_choice",
+    "question": "Sagrantino, used in Montefalco Sagrantino DOCG, is notable for having exceptionally high levels of which phenolic compound?",
+    "options": [
+      "Anthocyanins",
+      "Tannins (proanthocyanidins)",
+      "Resveratrol",
+      "Quercetin"
+    ],
+    "correct": 1,
+    "explanation": "Sagrantino has been measured as having the highest tannin (proanthocyanidin) levels of any widely studied red grape variety, often significantly exceeding Tannat and Nebbiolo in phenolic concentration.",
+    "sources": "Wine Science (Jamie Goode); Oxford Companion to Wine",
+    "confidence": "consensus",
+    "tags": [
+      "sagrantino",
+      "montefalco",
+      "tannins",
+      "phenolics"
+    ]
+  },
+  {
+    "id": "GV-054",
+    "domain": "grape_varieties",
+    "difficulty": 1850,
+    "level": 9,
+    "format": "odd_one_out",
+    "question": "Which variety is NOT a confirmed progeny of Pinot Noir × Gouais Blanc?",
+    "options": [
+      "Melon de Bourgogne",
+      "Romorantin",
+      "Knipperlé",
+      "Petit Meslier"
+    ],
+    "correct": 2,
+    "explanation": "Knipperlé (also known as Ortlieber) is an Alsatian variety not confirmed as a Pinot × Gouais cross. Melon de Bourgogne, Romorantin, and Petit Meslier are all DNA-confirmed progeny of the prolific Pinot × Gouais Blanc pairing.",
+    "sources": "Wine Grapes (Robinson/Harding/Vouillamoz); Oxford Companion to Wine",
+    "confidence": "consensus",
+    "tags": [
+      "parentage",
+      "dna",
+      "pinot-noir",
+      "gouais-blanc"
+    ]
+  },
+  {
+    "id": "GV-055",
+    "domain": "grape_varieties",
+    "difficulty": 2100,
+    "level": 10,
+    "format": "multiple_choice",
+    "question": "The obscure grape Completer, grown almost exclusively in Graubünden, Switzerland, was confirmed by DNA to be a natural cross of which two varieties?",
+    "options": [
+      "Lafnetscha × Humagne Blanc",
+      "Bondola × Cornalin",
+      "Cascarolo × unknown",
+      "Its parentage remains unconfirmed"
+    ],
+    "correct": 0,
+    "explanation": "DNA analysis by José Vouillamoz confirmed Completer as a natural cross of Lafnetscha and Humagne Blanc, both themselves rare Swiss varieties. Completer produces late-harvested white wines in the village of Malans.",
+    "sources": "Wine Grapes (Robinson/Harding/Vouillamoz); Oxford Companion to Wine",
+    "confidence": "consensus",
+    "tags": [
+      "completer",
+      "switzerland",
+      "rare-grapes",
+      "parentage",
+      "dna"
+    ]
+  },
+  {
+    "id": "GV-056",
+    "domain": "grape_varieties",
+    "difficulty": 160,
+    "level": 1,
+    "format": "multiple_choice",
+    "question": "Pinot Noir is used to make which famous style of wine?",
+    "options": [
+      "Sherry",
+      "Red Burgundy",
+      "Prosecco",
+      "Madeira"
+    ],
+    "correct": 1,
+    "explanation": "Pinot Noir is the red grape of Burgundy, France. Red Burgundy is considered one of the world's finest expressions of this delicate grape variety.",
+    "sources": "WSET Level 2; The Wine Bible (Karen MacNeil)",
+    "confidence": "established",
+    "tags": [
+      "pinot-noir",
+      "burgundy",
+      "beginner"
+    ]
+  },
+  {
+    "id": "GV-057",
+    "domain": "grape_varieties",
+    "difficulty": 420,
+    "level": 2,
+    "format": "multiple_choice",
+    "question": "Which grape variety is the most widely planted red grape in the world?",
+    "options": [
+      "Merlot",
+      "Cabernet Sauvignon",
+      "Tempranillo",
+      "Syrah"
+    ],
+    "correct": 1,
+    "explanation": "Cabernet Sauvignon surpassed Merlot to become the world's most widely planted red grape variety, according to the OIV, largely due to massive plantings in China.",
+    "sources": "Oxford Companion to Wine; Wine Grapes (Robinson/Harding/Vouillamoz)",
+    "confidence": "established",
+    "tags": [
+      "cabernet-sauvignon",
+      "global-plantings"
+    ]
+  },
+  {
+    "id": "GV-058",
+    "domain": "grape_varieties",
+    "difficulty": 560,
+    "level": 3,
+    "format": "multiple_choice",
+    "question": "What grape is Barolo made from?",
+    "options": [
+      "Sangiovese",
+      "Nebbiolo",
+      "Barbera",
+      "Dolcetto"
+    ],
+    "correct": 1,
+    "explanation": "Barolo DOCG requires 100% Nebbiolo. The grape's name may derive from 'nebbia' (fog), referring to the autumn fogs common in the Langhe hills of Piedmont where it ripens late.",
+    "sources": "WSET Level 3; Oxford Companion to Wine",
+    "confidence": "established",
+    "tags": [
+      "nebbiolo",
+      "barolo",
+      "piedmont",
+      "italian-wine"
+    ]
+  },
+  {
+    "id": "GV-059",
+    "domain": "grape_varieties",
+    "difficulty": 640,
+    "level": 3,
+    "format": "multiple_choice",
+    "question": "Melon de Bourgogne is the grape behind which Loire Valley wine?",
+    "options": [
+      "Sancerre",
+      "Vouvray",
+      "Muscadet",
+      "Chinon"
+    ],
+    "correct": 2,
+    "explanation": "Melon de Bourgogne (often simply called Melon) is the sole grape permitted in Muscadet, produced near the mouth of the Loire. Despite its name, it is no longer grown in Burgundy.",
+    "sources": "Oxford Companion to Wine; WSET Level 3",
+    "confidence": "established",
+    "tags": [
+      "melon-de-bourgogne",
+      "muscadet",
+      "loire"
+    ]
+  },
+  {
+    "id": "GV-060",
+    "domain": "grape_varieties",
+    "difficulty": 820,
+    "level": 4,
+    "format": "match_pairs",
+    "question": "Match each grape variety to the climate type where it thrives best.",
+    "pairs": {
+      "left": [
+        "Riesling",
+        "Grenache",
+        "Pinot Noir",
+        "Mourvèdre"
+      ],
+      "right": [
+        "Hot, dry (needs heat to ripen fully)",
+        "Cool (early budding, late ripening)",
+        "Cool to moderate (thin-skinned, early ripening)",
+        "Cool to moderate (aromatic preservation)"
+      ]
+    },
+    "correct": [
+      3,
+      1,
+      2,
+      0
+    ],
+    "explanation": "Riesling preserves aromatics in cool climates. Grenache thrives in hot, dry, windy conditions (Châteauneuf-du-Pape, Priorat). Pinot Noir prefers cool-to-moderate climates. Mourvèdre requires significant heat to ripen fully.",
+    "sources": "WSET Level 3; Oxford Companion to Wine",
+    "confidence": "established",
+    "tags": [
+      "climate",
+      "viticulture",
+      "grape-requirements"
+    ]
+  },
+  {
+    "id": "GV-061",
+    "domain": "grape_varieties",
+    "difficulty": 1060,
+    "level": 5,
+    "format": "multiple_choice",
+    "question": "Nerello Mascalese is the primary grape of wines produced on which Italian volcano?",
+    "options": [
+      "Vesuvius",
+      "Etna",
+      "Stromboli",
+      "Vulture"
+    ],
+    "correct": 1,
+    "explanation": "Nerello Mascalese is the dominant red grape of Etna DOC in Sicily, grown on the volcano's slopes at elevations up to 1,000 meters. It has drawn comparisons to Pinot Noir for its elegance and transparency.",
+    "sources": "Oxford Companion to Wine; GuildSomm",
+    "confidence": "established",
+    "tags": [
+      "nerello-mascalese",
+      "etna",
+      "sicily",
+      "volcanic"
+    ]
+  },
+  {
+    "id": "GV-062",
+    "domain": "grape_varieties",
+    "difficulty": 1280,
+    "level": 6,
+    "format": "multiple_choice",
+    "question": "Which white grape is the primary variety in Soave Classico DOCG?",
+    "options": [
+      "Trebbiano di Soave",
+      "Garganega",
+      "Cortese",
+      "Glera"
+    ],
+    "correct": 1,
+    "explanation": "Garganega must constitute at least 70% of Soave Classico. Despite the name, Trebbiano di Soave (actually Verdicchio) is a permitted secondary variety. Garganega can produce wines of considerable complexity from old vines.",
+    "sources": "Oxford Companion to Wine; GuildSomm",
+    "confidence": "established",
+    "tags": [
+      "garganega",
+      "soave",
+      "veneto",
+      "italian-wine"
+    ]
+  },
+  {
+    "id": "GV-063",
+    "domain": "grape_varieties",
+    "difficulty": 1480,
+    "level": 7,
+    "format": "multiple_choice",
+    "question": "Which grape variety is known as Spätburgunder in Germany?",
+    "options": [
+      "Lemberger",
+      "Pinot Noir",
+      "Dornfelder",
+      "Trollinger"
+    ],
+    "correct": 1,
+    "explanation": "Pinot Noir is called Spätburgunder in Germany, where it is the most planted red variety. Top examples come from Baden, the Ahr, and the Pfalz.",
+    "sources": "Oxford Companion to Wine; Wine Grapes (Robinson/Harding/Vouillamoz)",
+    "confidence": "established",
+    "tags": [
+      "pinot-noir",
+      "germany",
+      "synonyms",
+      "spatburgunder"
+    ]
+  },
+  {
+    "id": "GV-064",
+    "domain": "grape_varieties",
+    "difficulty": 1650,
+    "level": 8,
+    "format": "odd_one_out",
+    "question": "Which variety is NOT a color mutation of Grenache?",
+    "options": [
+      "Grenache Blanc",
+      "Grenache Gris",
+      "Grenache Pelut",
+      "Lledoner Pelut"
+    ],
+    "correct": 2,
+    "explanation": "Grenache Pelut and Lledoner Pelut are actually the same grape — a hairy-leaved biotype of Grenache Noir, not Grenache Blanc or Gris. However, Grenache Pelut IS a variant of Grenache, so technically all belong. The trick is that options C and D are the same variety listed twice under different names.",
+    "sources": "Wine Grapes (Robinson/Harding/Vouillamoz); Oxford Companion to Wine",
+    "confidence": "consensus",
+    "tags": [
+      "grenache",
+      "mutations",
+      "synonyms"
+    ]
+  },
+  {
+    "id": "GV-065",
+    "domain": "grape_varieties",
+    "difficulty": 1780,
+    "level": 9,
+    "format": "multiple_choice",
+    "question": "Furmint, the primary grape of Tokaji Aszú, has been confirmed by DNA to have a parent-offspring relationship with which variety?",
+    "options": [
+      "Hárslevelű",
+      "Gouais Blanc",
+      "Sárgamuskotály",
+      "Plantscher"
+    ],
+    "correct": 1,
+    "explanation": "DNA analysis has confirmed a parent-offspring relationship between Furmint and Gouais Blanc, the same prolific progenitor involved in numerous French varieties. This connects Hungarian and French grape heritage through a common ancestor.",
+    "sources": "Wine Grapes (Robinson/Harding/Vouillamoz); Oxford Companion to Wine",
+    "confidence": "consensus",
+    "tags": [
+      "furmint",
+      "tokaji",
+      "hungary",
+      "parentage",
+      "dna"
+    ]
+  },
+  {
+    "id": "GV-066",
+    "domain": "grape_varieties",
+    "difficulty": 2200,
+    "level": 10,
+    "format": "multiple_choice",
+    "question": "Which obscure Portuguese grape, used in white Port and Douro whites, is DNA-confirmed to be the same variety as Sercial of Madeira?",
+    "options": [
+      "Rabigato",
+      "Viosinho",
+      "Esgana Cão",
+      "Códega do Larinho"
+    ],
+    "correct": 2,
+    "explanation": "DNA profiling confirmed that Esgana Cão (literally 'dog strangler,' named for its high acidity) grown in the Douro is the same variety as Sercial, the grape behind the driest style of Madeira wine.",
+    "sources": "Wine Grapes (Robinson/Harding/Vouillamoz); Oxford Companion to Wine",
+    "confidence": "consensus",
+    "tags": [
+      "esgana-cao",
+      "sercial",
+      "madeira",
+      "portugal",
+      "grape-identity"
+    ]
+  },
+  {
+    "id": "GV-067",
+    "domain": "grape_varieties",
+    "difficulty": 270,
+    "level": 1,
+    "format": "multiple_choice",
+    "question": "Which of these grapes typically produces a full-bodied red wine?",
+    "options": [
+      "Pinot Grigio",
+      "Moscato",
+      "Cabernet Sauvignon",
+      "Riesling"
+    ],
+    "correct": 2,
+    "explanation": "Cabernet Sauvignon is known for producing full-bodied red wines with firm tannins and dark fruit flavors. The other three options are all white/light grape varieties.",
+    "sources": "WSET Level 2; The Wine Bible (Karen MacNeil)",
+    "confidence": "established",
+    "tags": [
+      "cabernet-sauvignon",
+      "body",
+      "beginner"
+    ]
+  },
+  {
+    "id": "GV-068",
+    "domain": "grape_varieties",
+    "difficulty": 340,
+    "level": 2,
+    "format": "odd_one_out",
+    "question": "Which grape does NOT belong in a classic GSM blend?",
+    "options": [
+      "Grenache",
+      "Syrah",
+      "Mourvèdre",
+      "Malbec"
+    ],
+    "correct": 3,
+    "explanation": "GSM stands for Grenache, Syrah, Mourvèdre — a classic blend from the southern Rhône Valley and Australia. Malbec is associated with Bordeaux and Argentina, not Rhône blends.",
+    "sources": "WSET Level 3; Oxford Companion to Wine",
+    "confidence": "established",
+    "tags": [
+      "gsm-blend",
+      "rhone",
+      "blending"
+    ]
+  },
+  {
+    "id": "GV-069",
+    "domain": "grape_varieties",
+    "difficulty": 1080,
+    "level": 5,
+    "format": "match_pairs",
+    "question": "Match each grape variety to its viticultural challenge.",
+    "pairs": {
+      "left": [
+        "Pinot Noir",
+        "Cabernet Sauvignon",
+        "Grenache",
+        "Nebbiolo"
+      ],
+      "right": [
+        "Very late ripening; needs long growing season",
+        "Susceptible to coulure; prefers hot dry conditions",
+        "Thick skin but late budding; frost risk moderate",
+        "Thin skin; highly susceptible to rot and disease"
+      ]
+    },
+    "correct": [
+      3,
+      2,
+      1,
+      0
+    ],
+    "explanation": "Pinot Noir's thin skin makes it disease-prone. Cabernet Sauvignon has thick skin but buds late, reducing spring frost risk. Grenache is susceptible to coulure and needs heat. Nebbiolo is one of the latest-ripening major varieties.",
+    "sources": "WSET Level 3; Oxford Companion to Wine",
+    "confidence": "established",
+    "tags": [
+      "viticulture",
+      "grape-challenges"
+    ]
+  },
+  {
+    "id": "GV-070",
+    "domain": "grape_varieties",
+    "difficulty": 1420,
+    "level": 7,
+    "format": "match_pairs",
+    "question": "Match each grape to its key phenolic or structural characteristic.",
+    "pairs": {
+      "left": [
+        "Tannat",
+        "Pinot Noir",
+        "Nebbiolo",
+        "Grenache"
+      ],
+      "right": [
+        "High tannin, low anthocyanin; loses color with age",
+        "High anthocyanin, acylated; deep stable color",
+        "Low tannin; delicate color, red fruit",
+        "Low tannin, high alcohol potential; pale color"
+      ]
+    },
+    "correct": [
+      1,
+      2,
+      0,
+      3
+    ],
+    "explanation": "Tannat has extremely high, stable anthocyanins. Pinot Noir has low tannin and delicate structure. Nebbiolo has high tannin but low anthocyanin, causing its garnet-brick color evolution. Grenache is low tannin, high alcohol, pale.",
+    "sources": "Wine Science (Jamie Goode); Oxford Companion to Wine",
+    "confidence": "established",
+    "tags": [
+      "phenolics",
+      "tannins",
+      "wine-chemistry"
+    ]
+  },
+  {
+    "id": "GV-071",
+    "domain": "grape_varieties",
+    "difficulty": 1920,
+    "level": 10,
+    "format": "odd_one_out",
+    "question": "Which grape variety was NOT identified as a progeny of Teroldego through DNA analysis?",
+    "options": [
+      "Lagrein",
+      "Marzemino",
+      "Syrah",
+      "Durella"
+    ],
+    "correct": 2,
+    "explanation": "Syrah was confirmed to be a cross of Dureza and Mondeuse Blanche, not related to Teroldego. DNA analysis has confirmed parent-offspring relationships between Teroldego and both Lagrein and Marzemino. Durella also shows a confirmed relationship.",
+    "sources": "Wine Grapes (Robinson/Harding/Vouillamoz); Oxford Companion to Wine",
+    "confidence": "consensus",
+    "tags": [
+      "teroldego",
+      "parentage",
+      "dna",
+      "trentino"
+    ]
+  },
+  {
+    "id": "GV-072",
+    "domain": "grape_varieties",
+    "difficulty": 2300,
+    "level": 10,
+    "format": "multiple_choice",
+    "question": "What is the confirmed DNA parentage of Syrah?",
+    "options": [
+      "Dureza × Mondeuse Blanche",
+      "Dureza × Viognier",
+      "Sérine × Mondeuse Noire",
+      "Mondeuse Blanche × Peloursin"
+    ],
+    "correct": 0,
+    "explanation": "DNA analysis by researchers in Montpellier confirmed that Syrah is a natural cross of Dureza (a rare red grape from the Ardèche) and Mondeuse Blanche (a white grape from Savoie). This definitively disproved theories of Persian or Sicilian origin.",
+    "sources": "Wine Grapes (Robinson/Harding/Vouillamoz); Oxford Companion to Wine",
+    "confidence": "consensus",
+    "tags": [
+      "syrah",
+      "parentage",
+      "dna",
+      "rhone"
+    ]
+  },
+  {
+    "id": "GV-073",
+    "domain": "grape_varieties",
+    "difficulty": 1160,
+    "level": 6,
+    "format": "multiple_choice",
+    "question": "Agiorgitiko is the primary red grape of which Greek appellation?",
+    "options": [
+      "Naoussa",
+      "Nemea",
+      "Santorini",
+      "Cephalonia"
+    ],
+    "correct": 1,
+    "explanation": "Agiorgitiko (St. George) is the sole grape variety of the Nemea appellation in the Peloponnese. It produces wines ranging from soft and fruity to structured and age-worthy depending on altitude.",
+    "sources": "Oxford Companion to Wine; The Wine Bible (Karen MacNeil)",
+    "confidence": "established",
+    "tags": [
+      "agiorgitiko",
+      "nemea",
+      "greece"
+    ]
+  },
+  {
+    "id": "GV-074",
+    "domain": "grape_varieties",
+    "difficulty": 1560,
+    "level": 8,
+    "format": "multiple_choice",
+    "question": "Vermentino, widely grown in Sardinia and Liguria, is the same variety as which Provençal grape?",
+    "options": [
+      "Clairette",
+      "Rolle",
+      "Bourboulenc",
+      "Ugni Blanc"
+    ],
+    "correct": 1,
+    "explanation": "DNA analysis confirmed that Vermentino (Italy) and Rolle (Provence, France) are the same grape variety. It is a key component in the white wines of Bandol and other Provençal appellations.",
+    "sources": "Wine Grapes (Robinson/Harding/Vouillamoz); Oxford Companion to Wine",
+    "confidence": "consensus",
+    "tags": [
+      "vermentino",
+      "rolle",
+      "sardinia",
+      "provence",
+      "grape-identity"
+    ]
+  },
+  {
+    "id": "GV-075",
+    "domain": "grape_varieties",
+    "difficulty": 2050,
+    "level": 10,
+    "format": "match_pairs",
+    "question": "Match each Hungarian grape to its role in Tokaji production.",
+    "pairs": {
+      "left": [
+        "Furmint",
+        "Hárslevelű",
+        "Sárgamuskotály",
+        "Kabar"
+      ],
+      "right": [
+        "Minor aromatic component; Muscat Blanc à Petits Grains",
+        "Primary grape (60%+); high acid, botrytis-susceptible",
+        "Softer, floral blending partner",
+        "Rare permitted variety; Bouvier × Hárslevelű cross"
+      ]
+    },
+    "correct": [
+      1,
+      2,
+      0,
+      3
+    ],
+    "explanation": "Furmint is the backbone of Tokaji, prized for acid and botrytis susceptibility. Hárslevelű adds floral softness. Sárgamuskotály (Yellow Muscat) is Muscat Blanc à Petits Grains. Kabar is a modern cross occasionally permitted.",
+    "sources": "Oxford Companion to Wine; Wine Grapes (Robinson/Harding/Vouillamoz)",
+    "confidence": "consensus",
+    "tags": [
+      "tokaji",
+      "hungary",
+      "furmint",
+      "sweet-wine"
+    ]
+  },
+  {
+    "id": "RA-001",
+    "domain": "regions_appellations",
+    "difficulty": 150,
+    "level": 1,
+    "format": "multiple_choice",
+    "question": "Which country is Bordeaux located in?",
+    "options": [
+      "Italy",
+      "Spain",
+      "France",
+      "Portugal"
+    ],
+    "correct": 2,
+    "explanation": "Bordeaux is a major wine region in southwestern France, situated along the Gironde estuary and the Garonne and Dordogne rivers.",
+    "sources": "WSET Level 2; Oxford Companion to Wine",
+    "confidence": "established",
+    "tags": [
+      "bordeaux",
+      "france",
+      "beginner"
+    ]
+  },
+  {
+    "id": "RA-002",
+    "domain": "regions_appellations",
+    "difficulty": 200,
+    "level": 1,
+    "format": "multiple_choice",
+    "question": "Which country is most famous for Chianti wine?",
+    "options": [
+      "Spain",
+      "France",
+      "Italy",
+      "Greece"
+    ],
+    "correct": 2,
+    "explanation": "Chianti is produced in the Tuscany region of central Italy. Chianti Classico DOCG is the historical heart of the zone, located between Florence and Siena.",
+    "sources": "WSET Level 2; The Wine Bible (Karen MacNeil)",
+    "confidence": "established",
+    "tags": [
+      "chianti",
+      "italy",
+      "tuscany",
+      "beginner"
+    ]
+  },
+  {
+    "id": "RA-003",
+    "domain": "regions_appellations",
+    "difficulty": 280,
+    "level": 1,
+    "format": "odd_one_out",
+    "question": "Which of these is NOT a wine-producing country?",
+    "options": [
+      "France",
+      "Italy",
+      "Antarctica",
+      "Argentina"
+    ],
+    "correct": 2,
+    "explanation": "Antarctica has no wine production. France, Italy, and Argentina are all major wine-producing countries, ranking among the world's top producers by volume.",
+    "sources": "Oxford Companion to Wine; WSET Level 2",
+    "confidence": "established",
+    "tags": [
+      "beginner",
+      "wine-regions"
+    ]
+  },
+  {
+    "id": "RA-004",
+    "domain": "regions_appellations",
+    "difficulty": 320,
+    "level": 2,
+    "format": "multiple_choice",
+    "question": "Napa Valley is located in which US state?",
+    "options": [
+      "Oregon",
+      "Washington",
+      "California",
+      "New York"
+    ],
+    "correct": 2,
+    "explanation": "Napa Valley is California's most prestigious wine region, located north of San Francisco. It gained international fame after the 1976 Judgment of Paris tasting.",
+    "sources": "WSET Level 3; The Wine Bible (Karen MacNeil)",
+    "confidence": "established",
+    "tags": [
+      "napa-valley",
+      "california",
+      "usa"
+    ]
+  },
+  {
+    "id": "RA-005",
+    "domain": "regions_appellations",
+    "difficulty": 380,
+    "level": 2,
+    "format": "multiple_choice",
+    "question": "What does 'DOC' stand for in Italian wine law?",
+    "options": [
+      "Denominazione di Origine Controllata",
+      "Denominazione Originale Classificata",
+      "Documento di Origine Certificata",
+      "Denominazione di Origine Comunale"
+    ],
+    "correct": 0,
+    "explanation": "DOC stands for Denominazione di Origine Controllata (Controlled Designation of Origin). It is Italy's equivalent to France's AOC system, regulating grape varieties, yields, and production methods.",
+    "sources": "Oxford Companion to Wine; WSET Level 3",
+    "confidence": "established",
+    "tags": [
+      "italian-wine-law",
+      "doc",
+      "italy"
+    ]
+  },
+  {
+    "id": "RA-006",
+    "domain": "regions_appellations",
+    "difficulty": 450,
+    "level": 2,
+    "format": "odd_one_out",
+    "question": "Which of these is NOT a French wine region?",
+    "options": [
+      "Burgundy",
+      "Champagne",
+      "Rioja",
+      "Alsace"
+    ],
+    "correct": 2,
+    "explanation": "Rioja is a Spanish wine region (DOCa), located in northern Spain along the Ebro River. Burgundy, Champagne, and Alsace are all French wine regions.",
+    "sources": "WSET Level 2; Oxford Companion to Wine",
+    "confidence": "established",
+    "tags": [
+      "french-regions",
+      "rioja",
+      "spain"
+    ]
+  },
+  {
+    "id": "RA-007",
+    "domain": "regions_appellations",
+    "difficulty": 500,
+    "level": 3,
+    "format": "match_pairs",
+    "question": "Match each wine region to its country.",
+    "pairs": {
+      "left": [
+        "Barossa Valley",
+        "Mendoza",
+        "Marlborough",
+        "Stellenbosch"
+      ],
+      "right": [
+        "South Africa",
+        "Argentina",
+        "New Zealand",
+        "Australia"
+      ]
+    },
+    "correct": [
+      3,
+      1,
+      2,
+      0
+    ],
+    "explanation": "Barossa Valley is in South Australia. Mendoza is Argentina's primary wine region. Marlborough is on New Zealand's South Island. Stellenbosch is in South Africa's Western Cape.",
+    "sources": "World Atlas of Wine (Johnson & Robinson); WSET Level 3",
+    "confidence": "established",
+    "tags": [
+      "new-world",
+      "wine-regions",
+      "geography"
+    ]
+  },
+  {
+    "id": "RA-008",
+    "domain": "regions_appellations",
+    "difficulty": 550,
+    "level": 3,
+    "format": "multiple_choice",
+    "question": "Which Bordeaux appellation is on the Right Bank of the Gironde, known primarily for Merlot-based wines?",
+    "options": [
+      "Pauillac",
+      "Margaux",
+      "Saint-Émilion",
+      "Pessac-Léognan"
+    ],
+    "correct": 2,
+    "explanation": "Saint-Émilion is on the Right Bank of the Dordogne, where Merlot dominates due to the clay-limestone soils. Pauillac, Margaux, and Pessac-Léognan are Left Bank appellations dominated by Cabernet Sauvignon.",
+    "sources": "WSET Level 3; World Atlas of Wine (Johnson & Robinson)",
+    "confidence": "established",
+    "tags": [
+      "bordeaux",
+      "saint-emilion",
+      "right-bank",
+      "merlot"
+    ]
+  },
+  {
+    "id": "RA-009",
+    "domain": "regions_appellations",
+    "difficulty": 600,
+    "level": 3,
+    "format": "multiple_choice",
+    "question": "In the Burgundy appellation hierarchy, which level is the highest?",
+    "options": [
+      "Village",
+      "Regional (Bourgogne)",
+      "Grand Cru",
+      "Premier Cru"
+    ],
+    "correct": 2,
+    "explanation": "Burgundy's hierarchy, from lowest to highest, is: Regional (Bourgogne) → Village → Premier Cru → Grand Cru. Grand Cru vineyards have their own appellations and represent about 1-2% of total production.",
+    "sources": "WSET Level 3; Oxford Companion to Wine",
+    "confidence": "established",
+    "tags": [
+      "burgundy",
+      "hierarchy",
+      "grand-cru",
+      "french-wine"
+    ]
+  },
+  {
+    "id": "RA-010",
+    "domain": "regions_appellations",
+    "difficulty": 680,
+    "level": 3,
+    "format": "odd_one_out",
+    "question": "Which is NOT a sub-region of Bordeaux?",
+    "options": [
+      "Médoc",
+      "Pomerol",
+      "Graves",
+      "Hermitage"
+    ],
+    "correct": 3,
+    "explanation": "Hermitage is an appellation in the northern Rhône Valley, known for Syrah-based red wines. Médoc, Pomerol, and Graves are all sub-regions within Bordeaux.",
+    "sources": "Oxford Companion to Wine; WSET Level 3",
+    "confidence": "established",
+    "tags": [
+      "bordeaux",
+      "rhone",
+      "hermitage"
+    ]
+  },
+  {
+    "id": "RA-011",
+    "domain": "regions_appellations",
+    "difficulty": 700,
+    "level": 4,
+    "format": "multiple_choice",
+    "question": "How many classified growths (Crus Classés) are in the 1855 Bordeaux Classification of red wines?",
+    "options": [
+      "51",
+      "61",
+      "71",
+      "81"
+    ],
+    "correct": 1,
+    "explanation": "The 1855 Classification of Bordeaux red wines includes 61 châteaux, ranked from First to Fifth Growth. The only change since 1855 was the promotion of Mouton Rothschild to First Growth in 1973.",
+    "sources": "Oxford Companion to Wine; WSET Level 3",
+    "confidence": "established",
+    "tags": [
+      "bordeaux",
+      "1855-classification",
+      "cru-classe"
+    ]
+  },
+  {
+    "id": "RA-012",
+    "domain": "regions_appellations",
+    "difficulty": 750,
+    "level": 4,
+    "format": "multiple_choice",
+    "question": "Which is the largest Burgundy Grand Cru vineyard by area?",
+    "options": [
+      "Romanée-Conti",
+      "Corton",
+      "Clos de Vougeot",
+      "Musigny"
+    ],
+    "correct": 1,
+    "explanation": "Corton, on the hill of Corton in the Côte de Beaune, is Burgundy's largest Grand Cru at approximately 160 hectares (including Corton and Corton-Charlemagne). Clos de Vougeot is about 50 hectares; Romanée-Conti is only 1.81 hectares.",
+    "sources": "World Atlas of Wine (Johnson & Robinson); Oxford Companion to Wine",
+    "confidence": "established",
+    "tags": [
+      "burgundy",
+      "corton",
+      "grand-cru"
+    ]
+  },
+  {
+    "id": "RA-013",
+    "domain": "regions_appellations",
+    "difficulty": 800,
+    "level": 4,
+    "format": "match_pairs",
+    "question": "Match each Italian DOCG to its primary grape variety.",
+    "pairs": {
+      "left": [
+        "Barolo",
+        "Brunello di Montalcino",
+        "Barbaresco",
+        "Chianti Classico"
+      ],
+      "right": [
+        "Sangiovese (as Brunello clone)",
+        "Nebbiolo",
+        "Sangiovese (min 80%)",
+        "Nebbiolo"
+      ]
+    },
+    "correct": [
+      3,
+      0,
+      1,
+      2
+    ],
+    "explanation": "Barolo and Barbaresco both require 100% Nebbiolo. Brunello di Montalcino requires 100% Sangiovese (locally called Brunello). Chianti Classico requires minimum 80% Sangiovese.",
+    "sources": "Oxford Companion to Wine; WSET Level 3",
+    "confidence": "established",
+    "tags": [
+      "italian-docg",
+      "barolo",
+      "brunello",
+      "chianti"
+    ]
+  },
+  {
+    "id": "RA-014",
+    "domain": "regions_appellations",
+    "difficulty": 870,
+    "level": 4,
+    "format": "odd_one_out",
+    "question": "Which is NOT one of the five First Growth (Premier Cru) estates of the 1855 Bordeaux Classification?",
+    "options": [
+      "Château Lafite Rothschild",
+      "Château Margaux",
+      "Château Cheval Blanc",
+      "Château Latour"
+    ],
+    "correct": 2,
+    "explanation": "Château Cheval Blanc is classified under the separate Saint-Émilion classification system (as a Premier Grand Cru Classé A), not the 1855 Classification. The five 1855 First Growths are Lafite Rothschild, Latour, Margaux, Haut-Brion, and Mouton Rothschild.",
+    "sources": "Oxford Companion to Wine; WSET Level 3",
+    "confidence": "established",
+    "tags": [
+      "bordeaux",
+      "1855-classification",
+      "first-growth"
+    ]
+  },
+  {
+    "id": "RA-015",
+    "domain": "regions_appellations",
+    "difficulty": 900,
+    "level": 5,
+    "format": "multiple_choice",
+    "question": "In Germany's Prädikat system, which level requires the highest must weight?",
+    "options": [
+      "Auslese",
+      "Spätlese",
+      "Trockenbeerenauslese",
+      "Beerenauslese"
+    ],
+    "correct": 2,
+    "explanation": "Trockenbeerenauslese (TBA) requires the highest must weight in the Prädikat system, made from individually selected botrytis-shriveled berries. The hierarchy ascends: Kabinett → Spätlese → Auslese → Beerenauslese → Eiswein → TBA.",
+    "sources": "WSET Level 3; Oxford Companion to Wine",
+    "confidence": "established",
+    "tags": [
+      "germany",
+      "pradikat",
+      "tba",
+      "sweet-wine"
+    ]
+  },
+  {
+    "id": "RA-016",
+    "domain": "regions_appellations",
+    "difficulty": 950,
+    "level": 5,
+    "format": "multiple_choice",
+    "question": "Which Champagne term indicates a wine made exclusively from Pinot Noir and/or Pinot Meunier, with no Chardonnay?",
+    "options": [
+      "Blanc de Blancs",
+      "Blanc de Noirs",
+      "Brut Nature",
+      "Crémant"
+    ],
+    "correct": 1,
+    "explanation": "Blanc de Noirs ('white from blacks') is a white Champagne made exclusively from black-skinned grapes — Pinot Noir and/or Pinot Meunier. Blanc de Blancs uses only Chardonnay.",
+    "sources": "WSET Level 3; Oxford Companion to Wine",
+    "confidence": "established",
+    "tags": [
+      "champagne",
+      "blanc-de-noirs",
+      "sparkling-wine"
+    ]
+  },
+  {
+    "id": "RA-017",
+    "domain": "regions_appellations",
+    "difficulty": 1020,
+    "level": 5,
+    "format": "match_pairs",
+    "question": "Match each Rhône appellation to its dominant style.",
+    "pairs": {
+      "left": [
+        "Châteauneuf-du-Pape",
+        "Hermitage",
+        "Condrieu",
+        "Tavel"
+      ],
+      "right": [
+        "Rosé only",
+        "Grenache-based red blends",
+        "Viognier white only",
+        "Syrah-based (red and white)"
+      ]
+    },
+    "correct": [
+      1,
+      3,
+      2,
+      0
+    ],
+    "explanation": "Châteauneuf-du-Pape is Grenache-dominated. Hermitage produces both Syrah reds and Marsanne/Roussanne whites. Condrieu is exclusively white Viognier. Tavel is France's most famous rosé-only appellation.",
+    "sources": "WSET Level 3; Oxford Companion to Wine",
+    "confidence": "established",
+    "tags": [
+      "rhone",
+      "french-appellations",
+      "chateauneuf-du-pape"
+    ]
+  },
+  {
+    "id": "RA-018",
+    "domain": "regions_appellations",
+    "difficulty": 1080,
+    "level": 5,
+    "format": "odd_one_out",
+    "question": "Which is NOT a Cru of Beaujolais?",
+    "options": [
+      "Morgon",
+      "Fleurie",
+      "Brouilly",
+      "Pouilly-Fuissé"
+    ],
+    "correct": 3,
+    "explanation": "Pouilly-Fuissé is a Mâconnais appellation for Chardonnay-based white wines, not a Beaujolais Cru. Morgon, Fleurie, and Brouilly are three of the ten Beaujolais Crus, all made from Gamay.",
+    "sources": "WSET Level 3; Oxford Companion to Wine",
+    "confidence": "established",
+    "tags": [
+      "beaujolais",
+      "crus",
+      "burgundy"
+    ]
+  },
+  {
+    "id": "RA-019",
+    "domain": "regions_appellations",
+    "difficulty": 1100,
+    "level": 6,
+    "format": "multiple_choice",
+    "question": "Priorat (DOCa) in Catalonia is known for its distinctive soil type called what?",
+    "options": [
+      "Galestro",
+      "Llicorella",
+      "Terra rossa",
+      "Kimmeridgian limestone"
+    ],
+    "correct": 1,
+    "explanation": "Priorat's distinctive llicorella is a dark, flakey slate (schist) soil that retains heat and forces vine roots deep. It is one of only two DOCa regions in Spain (along with Rioja).",
+    "sources": "Oxford Companion to Wine; World Atlas of Wine (Johnson & Robinson)",
+    "confidence": "established",
+    "tags": [
+      "priorat",
+      "spain",
+      "llicorella",
+      "soil",
+      "terroir"
+    ]
+  },
+  {
+    "id": "RA-020",
+    "domain": "regions_appellations",
+    "difficulty": 1150,
+    "level": 6,
+    "format": "multiple_choice",
+    "question": "In the Mosel, which village is home to the famous Wehlener Sonnenuhr vineyard?",
+    "options": [
+      "Bernkastel",
+      "Wehlen",
+      "Piesport",
+      "Ürzig"
+    ],
+    "correct": 1,
+    "explanation": "The Wehlener Sonnenuhr (sundial) vineyard is in the village of Wehlen in the Middle Mosel. The sundial on the steep slate hillside gives the vineyard its name and is one of Germany's most famous wine sites.",
+    "sources": "World Atlas of Wine (Johnson & Robinson); Oxford Companion to Wine",
+    "confidence": "established",
+    "tags": [
+      "mosel",
+      "germany",
+      "wehlener-sonnenuhr",
+      "riesling"
+    ]
+  },
+  {
+    "id": "RA-021",
+    "domain": "regions_appellations",
+    "difficulty": 1200,
+    "level": 6,
+    "format": "match_pairs",
+    "question": "Match each Spanish region to its traditional aging classification minimum for Reserva red wines.",
+    "pairs": {
+      "left": [
+        "Rioja",
+        "Ribera del Duero",
+        "Priorat",
+        "Navarra"
+      ],
+      "right": [
+        "36 months total, 12 in oak",
+        "36 months total, 12 in oak",
+        "36 months total, 12 in oak",
+        "36 months total, 12 in oak"
+      ]
+    },
+    "correct": [
+      0,
+      1,
+      2,
+      3
+    ],
+    "explanation": "Spanish Reserva requirements are standardized nationally: minimum 36 months total aging with at least 12 months in oak barrels for red wines. Individual DOs may impose stricter requirements but the base rule applies across these regions.",
+    "sources": "Oxford Companion to Wine; WSET Level 3",
+    "confidence": "established",
+    "tags": [
+      "spain",
+      "aging-requirements",
+      "reserva"
+    ]
+  },
+  {
+    "id": "RA-022",
+    "domain": "regions_appellations",
+    "difficulty": 1280,
+    "level": 6,
+    "format": "odd_one_out",
+    "question": "Which is NOT a Grand Cru vineyard in Alsace?",
+    "options": [
+      "Rangen",
+      "Schlossberg",
+      "Hugel",
+      "Brand"
+    ],
+    "correct": 2,
+    "explanation": "Hugel is a famous Alsatian wine producer (family domaine), not a Grand Cru vineyard. Rangen (Thann), Schlossberg (Kaysersberg), and Brand (Turckheim) are all classified Alsace Grand Cru vineyards.",
+    "sources": "Oxford Companion to Wine; World Atlas of Wine (Johnson & Robinson)",
+    "confidence": "established",
+    "tags": [
+      "alsace",
+      "grand-cru",
+      "french-wine"
+    ]
+  },
+  {
+    "id": "RA-023",
+    "domain": "regions_appellations",
+    "difficulty": 1300,
+    "level": 7,
+    "format": "multiple_choice",
+    "question": "How many Grand Cru vineyards are there in Chablis?",
+    "options": [
+      "5",
+      "7",
+      "9",
+      "11"
+    ],
+    "correct": 1,
+    "explanation": "Chablis has 7 Grand Cru vineyards, all on one southwest-facing slope north of the town: Blanchot, Bougros, Les Clos, Grenouilles, Preuses, Valmur, and Vaudésir.",
+    "sources": "Oxford Companion to Wine; World Atlas of Wine (Johnson & Robinson)",
+    "confidence": "established",
+    "tags": [
+      "chablis",
+      "burgundy",
+      "grand-cru"
+    ]
+  },
+  {
+    "id": "RA-024",
+    "domain": "regions_appellations",
+    "difficulty": 1350,
+    "level": 7,
+    "format": "multiple_choice",
+    "question": "The AVA system in the United States requires what minimum percentage of grapes from the named AVA to appear on the label?",
+    "options": [
+      "75%",
+      "85%",
+      "95%",
+      "100%"
+    ],
+    "correct": 1,
+    "explanation": "US federal regulations require a minimum of 85% of grapes to come from the named AVA (American Viticultural Area) for the AVA to appear on the label. Oregon requires 95% for most varieties.",
+    "sources": "Oxford Companion to Wine; The Wine Bible (Karen MacNeil)",
+    "confidence": "established",
+    "tags": [
+      "ava",
+      "usa",
+      "wine-law",
+      "labeling"
+    ]
+  },
+  {
+    "id": "RA-025",
+    "domain": "regions_appellations",
+    "difficulty": 1400,
+    "level": 7,
+    "format": "match_pairs",
+    "question": "Match each Burgundy Grand Cru to its commune.",
+    "pairs": {
+      "left": [
+        "Romanée-Conti",
+        "Chambertin",
+        "Montrachet",
+        "Corton"
+      ],
+      "right": [
+        "Aloxe-Corton",
+        "Gevrey-Chambertin",
+        "Puligny/Chassagne-Montrachet",
+        "Vosne-Romanée"
+      ]
+    },
+    "correct": [
+      3,
+      1,
+      2,
+      0
+    ],
+    "explanation": "Romanée-Conti is in Vosne-Romanée. Chambertin is in Gevrey-Chambertin. Montrachet straddles Puligny and Chassagne. Corton is in Aloxe-Corton (also Ladoix and Pernand-Vergelesses).",
+    "sources": "World Atlas of Wine (Johnson & Robinson); Oxford Companion to Wine",
+    "confidence": "established",
+    "tags": [
+      "burgundy",
+      "grand-cru",
+      "communes"
+    ]
+  },
+  {
+    "id": "RA-026",
+    "domain": "regions_appellations",
+    "difficulty": 1450,
+    "level": 7,
+    "format": "odd_one_out",
+    "question": "Which commune is NOT in the Haut-Médoc containing a classified growth from 1855?",
+    "options": [
+      "Saint-Julien",
+      "Pauillac",
+      "Listrac-Médoc",
+      "Saint-Estèphe"
+    ],
+    "correct": 2,
+    "explanation": "While Listrac-Médoc is a commune appellation in the Haut-Médoc, it contains no 1855 classified growths. Saint-Julien, Pauillac, and Saint-Estèphe all contain multiple classified châteaux.",
+    "sources": "Oxford Companion to Wine; WSET Level 3",
+    "confidence": "established",
+    "tags": [
+      "bordeaux",
+      "haut-medoc",
+      "1855-classification"
+    ]
+  },
+  {
+    "id": "RA-027",
+    "domain": "regions_appellations",
+    "difficulty": 1500,
+    "level": 8,
+    "format": "multiple_choice",
+    "question": "In the Barolo DOCG, which two villages are generally considered to produce the most powerful, long-lived wines due to their Helvetian (Serravallian) soils?",
+    "options": [
+      "La Morra and Barolo",
+      "Serralunga d'Alba and Monforte d'Alba",
+      "Castiglione Falletto and Verduno",
+      "Novello and Diano d'Alba"
+    ],
+    "correct": 1,
+    "explanation": "Serralunga d'Alba and Monforte d'Alba sit on older Helvetian (Serravallian) soils with higher proportions of compacted sandstone and limestone, producing more structured, tannic Barolos that need longer aging compared to the Tortonian marl of La Morra and Barolo village.",
+    "sources": "World Atlas of Wine (Johnson & Robinson); Oxford Companion to Wine",
+    "confidence": "consensus",
+    "tags": [
+      "barolo",
+      "piedmont",
+      "soil",
+      "terroir"
+    ]
+  },
+  {
+    "id": "RA-028",
+    "domain": "regions_appellations",
+    "difficulty": 1550,
+    "level": 8,
+    "format": "multiple_choice",
+    "question": "The Wachau wine region in Austria uses its own classification system instead of the standard Austrian wine law. What is the name of the driest, most powerful category?",
+    "options": [
+      "Steinfeder",
+      "Federspiel",
+      "Smaragd",
+      "Reserve"
+    ],
+    "correct": 2,
+    "explanation": "The Vinea Wachau classification uses three levels: Steinfeder (lightest, up to 11.5% ABV), Federspiel (medium, 11.5-12.5%), and Smaragd (fullest, 12.5%+, named after the emerald lizard found in the vineyards).",
+    "sources": "Oxford Companion to Wine; World Atlas of Wine (Johnson & Robinson)",
+    "confidence": "consensus",
+    "tags": [
+      "wachau",
+      "austria",
+      "classification"
+    ]
+  },
+  {
+    "id": "RA-029",
+    "domain": "regions_appellations",
+    "difficulty": 1600,
+    "level": 8,
+    "format": "match_pairs",
+    "question": "Match each Champagne Grand Cru village to the grape it is most famous for.",
+    "pairs": {
+      "left": [
+        "Avize",
+        "Ambonnay",
+        "Verzenay",
+        "Le Mesnil-sur-Oger"
+      ],
+      "right": [
+        "Chardonnay (Côte des Blancs)",
+        "Pinot Noir (Montagne de Reims)",
+        "Pinot Noir (Montagne de Reims)",
+        "Chardonnay (Côte des Blancs)"
+      ]
+    },
+    "correct": [
+      0,
+      2,
+      1,
+      3
+    ],
+    "explanation": "Avize and Le Mesnil-sur-Oger are Chardonnay Grand Crus on the Côte des Blancs. Ambonnay and Verzenay are Pinot Noir Grand Crus on the Montagne de Reims. Le Mesnil is home to Krug's Clos du Mesnil.",
+    "sources": "Oxford Companion to Wine; World Atlas of Wine (Johnson & Robinson)",
+    "confidence": "consensus",
+    "tags": [
+      "champagne",
+      "grand-cru",
+      "villages"
+    ]
+  },
+  {
+    "id": "RA-030",
+    "domain": "regions_appellations",
+    "difficulty": 1650,
+    "level": 8,
+    "format": "odd_one_out",
+    "question": "Which is NOT one of the 17 Grand Cru villages of Champagne?",
+    "options": [
+      "Aÿ",
+      "Bouzy",
+      "Hautvillers",
+      "Cramant"
+    ],
+    "correct": 2,
+    "explanation": "Hautvillers, famous as the home of Dom Pérignon's abbey, is only a Premier Cru village, not a Grand Cru. Aÿ, Bouzy, and Cramant are all among Champagne's 17 Grand Cru villages rated at 100% on the échelle des crus.",
+    "sources": "Oxford Companion to Wine; WSET Level 3",
+    "confidence": "consensus",
+    "tags": [
+      "champagne",
+      "grand-cru",
+      "hautvillers"
+    ]
+  },
+  {
+    "id": "RA-031",
+    "domain": "regions_appellations",
+    "difficulty": 1700,
+    "level": 9,
+    "format": "multiple_choice",
+    "question": "In the Jerez (Sherry) triangle, which soil type is most prized for growing Palomino grapes for fino sherry?",
+    "options": [
+      "Barros",
+      "Arenas",
+      "Albariza",
+      "Arcilla"
+    ],
+    "correct": 2,
+    "explanation": "Albariza is the chalky-white, diatomaceous limestone soil most prized in Jerez. Its high calcium carbonate content and ability to absorb and retain moisture make it ideal for Palomino. Barros (clay) and arenas (sand) are considered inferior.",
+    "sources": "Oxford Companion to Wine; World Atlas of Wine (Johnson & Robinson)",
+    "confidence": "consensus",
+    "tags": [
+      "jerez",
+      "sherry",
+      "spain",
+      "albariza",
+      "soil"
+    ]
+  },
+  {
+    "id": "RA-032",
+    "domain": "regions_appellations",
+    "difficulty": 1750,
+    "level": 9,
+    "format": "multiple_choice",
+    "question": "Which Burgundy Premier Cru vineyard in Volnay is often considered the finest and most age-worthy of the commune?",
+    "options": [
+      "Clos des Ducs",
+      "Taillepieds",
+      "Les Caillerets",
+      "Clos des Chênes"
+    ],
+    "correct": 0,
+    "explanation": "Clos des Ducs is a monopole of Domaine Marquis d'Angerville and is widely regarded as Volnay's finest Premier Cru. Its walled vineyard (clos) on steep mid-slope terrain produces wines of exceptional concentration and longevity.",
+    "sources": "World Atlas of Wine (Johnson & Robinson); GuildSomm",
+    "confidence": "consensus",
+    "tags": [
+      "burgundy",
+      "volnay",
+      "premier-cru"
+    ]
+  },
+  {
+    "id": "RA-033",
+    "domain": "regions_appellations",
+    "difficulty": 1800,
+    "level": 9,
+    "format": "match_pairs",
+    "question": "Match each Barolo cru (MGA) to its commune.",
+    "pairs": {
+      "left": [
+        "Cannubi",
+        "Vigna Rionda",
+        "Rocche dell'Annunziata",
+        "Bussia"
+      ],
+      "right": [
+        "Monforte d'Alba",
+        "La Morra",
+        "Barolo",
+        "Serralunga d'Alba"
+      ]
+    },
+    "correct": [
+      2,
+      3,
+      1,
+      0
+    ],
+    "explanation": "Cannubi is in the commune of Barolo. Vigna Rionda is in Serralunga d'Alba. Rocche dell'Annunziata is in La Morra. Bussia is in Monforte d'Alba. These are among Barolo's most celebrated vineyard sites (MGAs).",
+    "sources": "World Atlas of Wine (Johnson & Robinson); GuildSomm",
+    "confidence": "consensus",
+    "tags": [
+      "barolo",
+      "mga",
+      "cru",
+      "piedmont"
+    ]
+  },
+  {
+    "id": "RA-034",
+    "domain": "regions_appellations",
+    "difficulty": 1880,
+    "level": 9,
+    "format": "odd_one_out",
+    "question": "Which is NOT one of the original five communes of Barolo DOCG?",
+    "options": [
+      "Barolo",
+      "La Morra",
+      "Verduno",
+      "Serralunga d'Alba"
+    ],
+    "correct": 2,
+    "explanation": "The original five core communes of Barolo are Barolo, La Morra, Castiglione Falletto, Serralunga d'Alba, and Monforte d'Alba. Verduno is one of the six additional communes added later (along with Novello, Grinzane Cavour, Diano d'Alba, Cherasco, and Roddi).",
+    "sources": "Oxford Companion to Wine; World Atlas of Wine (Johnson & Robinson)",
+    "confidence": "consensus",
+    "tags": [
+      "barolo",
+      "communes",
+      "piedmont"
+    ]
+  },
+  {
+    "id": "RA-035",
+    "domain": "regions_appellations",
+    "difficulty": 1900,
+    "level": 10,
+    "format": "multiple_choice",
+    "question": "The Saint-Émilion classification is revised periodically. In the 2012 revision, how many estates were promoted to Premier Grand Cru Classé A?",
+    "options": [
+      "2",
+      "4",
+      "6",
+      "8"
+    ],
+    "correct": 1,
+    "explanation": "The 2012 Saint-Émilion classification promoted 4 estates to Premier Grand Cru Classé A: Château Angélus and Château Pavie joined Château Ausone and Château Cheval Blanc. Note that subsequent legal challenges have affected later revisions.",
+    "sources": "Oxford Companion to Wine; GuildSomm",
+    "confidence": "consensus",
+    "tags": [
+      "saint-emilion",
+      "classification",
+      "bordeaux"
+    ]
+  },
+  {
+    "id": "RA-036",
+    "domain": "regions_appellations",
+    "difficulty": 1980,
+    "level": 10,
+    "format": "multiple_choice",
+    "question": "The Kimmeridgian limestone that underlies Chablis also appears in which English wine region?",
+    "options": [
+      "Surrey Hills",
+      "Kent",
+      "Sussex (South Downs)",
+      "Hampshire"
+    ],
+    "correct": 2,
+    "explanation": "The same Kimmeridgian limestone formation that underlies Chablis extends across the English Channel to the chalky South Downs of Sussex. This geological connection is often cited by English sparkling wine producers as a terroir parallel to Champagne and Chablis.",
+    "sources": "Oxford Companion to Wine; World Atlas of Wine (Johnson & Robinson)",
+    "confidence": "consensus",
+    "tags": [
+      "chablis",
+      "england",
+      "kimmeridgian",
+      "geology"
+    ]
+  },
+  {
+    "id": "RA-037",
+    "domain": "regions_appellations",
+    "difficulty": 2050,
+    "level": 10,
+    "format": "match_pairs",
+    "question": "Match each Burgundy Grand Cru to its approximate size in hectares.",
+    "pairs": {
+      "left": [
+        "Romanée-Conti",
+        "Clos de Vougeot",
+        "La Romanée",
+        "La Tâche"
+      ],
+      "right": [
+        "6.06 ha",
+        "50.59 ha",
+        "0.85 ha",
+        "1.81 ha"
+      ]
+    },
+    "correct": [
+      3,
+      1,
+      2,
+      0
+    ],
+    "explanation": "Romanée-Conti is 1.81 ha (monopole of DRC). Clos de Vougeot is the largest Côte de Nuits Grand Cru at ~50.59 ha. La Romanée is Burgundy's smallest Grand Cru at 0.85 ha. La Tâche is 6.06 ha (monopole of DRC).",
+    "sources": "World Atlas of Wine (Johnson & Robinson); Oxford Companion to Wine",
+    "confidence": "consensus",
+    "tags": [
+      "burgundy",
+      "grand-cru",
+      "vineyard-sizes"
+    ]
+  },
+  {
+    "id": "RA-038",
+    "domain": "regions_appellations",
+    "difficulty": 250,
+    "level": 1,
+    "format": "match_pairs",
+    "question": "Match each wine to its country of origin.",
+    "pairs": {
+      "left": [
+        "Champagne",
+        "Chianti",
+        "Rioja",
+        "Port"
+      ],
+      "right": [
+        "Spain",
+        "Portugal",
+        "France",
+        "Italy"
+      ]
+    },
+    "correct": [
+      2,
+      3,
+      0,
+      1
+    ],
+    "explanation": "Champagne comes from France. Chianti is from Italy. Rioja is from Spain. Port is from Portugal's Douro Valley.",
+    "sources": "WSET Level 2; Oxford Companion to Wine",
+    "confidence": "established",
+    "tags": [
+      "beginner",
+      "geography"
+    ]
+  },
+  {
+    "id": "RA-039",
+    "domain": "regions_appellations",
+    "difficulty": 170,
+    "level": 1,
+    "format": "multiple_choice",
+    "question": "Champagne is a type of what?",
+    "options": [
+      "Still red wine",
+      "Sparkling wine",
+      "Fortified wine",
+      "Dessert wine"
+    ],
+    "correct": 1,
+    "explanation": "Champagne is a sparkling wine produced in the Champagne region of northern France using the traditional method (méthode champenoise), involving a secondary fermentation in the bottle.",
+    "sources": "WSET Level 2; The Wine Bible (Karen MacNeil)",
+    "confidence": "established",
+    "tags": [
+      "champagne",
+      "sparkling-wine",
+      "beginner"
+    ]
+  },
+  {
+    "id": "RA-040",
+    "domain": "regions_appellations",
+    "difficulty": 430,
+    "level": 2,
+    "format": "multiple_choice",
+    "question": "Which Italian wine region is Prosecco primarily produced in?",
+    "options": [
+      "Tuscany",
+      "Piedmont",
+      "Veneto",
+      "Sicily"
+    ],
+    "correct": 2,
+    "explanation": "Prosecco is produced primarily in the Veneto region (and parts of Friuli Venezia Giulia) in northeastern Italy, using the Glera grape. The finest examples come from Conegliano Valdobbiadene DOCG.",
+    "sources": "WSET Level 3; Oxford Companion to Wine",
+    "confidence": "established",
+    "tags": [
+      "prosecco",
+      "veneto",
+      "italy",
+      "sparkling-wine"
+    ]
+  },
+  {
+    "id": "RA-041",
+    "domain": "regions_appellations",
+    "difficulty": 370,
+    "level": 2,
+    "format": "odd_one_out",
+    "question": "Which is NOT a wine region?",
+    "options": [
+      "Burgundy",
+      "Tuscany",
+      "Merlot",
+      "Barossa Valley"
+    ],
+    "correct": 2,
+    "explanation": "Merlot is a grape variety, not a wine region. Burgundy (France), Tuscany (Italy), and Barossa Valley (Australia) are all wine regions.",
+    "sources": "WSET Level 2; Oxford Companion to Wine",
+    "confidence": "established",
+    "tags": [
+      "beginner",
+      "terminology"
+    ]
+  },
+  {
+    "id": "RA-042",
+    "domain": "regions_appellations",
+    "difficulty": 530,
+    "level": 3,
+    "format": "multiple_choice",
+    "question": "The Douro Valley is the home of which fortified wine?",
+    "options": [
+      "Sherry",
+      "Madeira",
+      "Port",
+      "Marsala"
+    ],
+    "correct": 2,
+    "explanation": "Port wine is produced in the Douro Valley of northern Portugal and traditionally aged and shipped from the city of Vila Nova de Gaia, across the river from Porto.",
+    "sources": "WSET Level 3; Oxford Companion to Wine",
+    "confidence": "established",
+    "tags": [
+      "port",
+      "douro",
+      "portugal",
+      "fortified-wine"
+    ]
+  },
+  {
+    "id": "RA-043",
+    "domain": "regions_appellations",
+    "difficulty": 620,
+    "level": 3,
+    "format": "match_pairs",
+    "question": "Match each Loire Valley appellation to its primary grape.",
+    "pairs": {
+      "left": [
+        "Sancerre",
+        "Vouvray",
+        "Muscadet",
+        "Chinon"
+      ],
+      "right": [
+        "Cabernet Franc",
+        "Melon de Bourgogne",
+        "Sauvignon Blanc",
+        "Chenin Blanc"
+      ]
+    },
+    "correct": [
+      2,
+      3,
+      1,
+      0
+    ],
+    "explanation": "Sancerre is Sauvignon Blanc. Vouvray is Chenin Blanc. Muscadet is Melon de Bourgogne. Chinon is Cabernet Franc. The Loire Valley showcases remarkable variety along its length.",
+    "sources": "WSET Level 3; Oxford Companion to Wine",
+    "confidence": "established",
+    "tags": [
+      "loire",
+      "french-appellations"
+    ]
+  },
+  {
+    "id": "RA-044",
+    "domain": "regions_appellations",
+    "difficulty": 660,
+    "level": 3,
+    "format": "odd_one_out",
+    "question": "Which is NOT a sub-region of Burgundy?",
+    "options": [
+      "Chablis",
+      "Côte de Nuits",
+      "Côte de Beaune",
+      "Côtes du Rhône"
+    ],
+    "correct": 3,
+    "explanation": "Côtes du Rhône is a separate wine region in the Rhône Valley, not part of Burgundy. Chablis, Côte de Nuits, and Côte de Beaune are all sub-regions of Burgundy.",
+    "sources": "WSET Level 3; Oxford Companion to Wine",
+    "confidence": "established",
+    "tags": [
+      "burgundy",
+      "rhone",
+      "french-regions"
+    ]
+  },
+  {
+    "id": "RA-045",
+    "domain": "regions_appellations",
+    "difficulty": 730,
+    "level": 4,
+    "format": "multiple_choice",
+    "question": "In Rioja, what is the minimum aging requirement for a Gran Reserva red wine?",
+    "options": [
+      "24 months total, 6 in oak",
+      "36 months total, 12 in oak",
+      "60 months total, 18 in oak",
+      "48 months total, 24 in oak"
+    ],
+    "correct": 2,
+    "explanation": "Rioja Gran Reserva red wines require a minimum of 60 months (5 years) of total aging, with at least 18 months in oak barrels and the remainder in bottle.",
+    "sources": "WSET Level 3; Oxford Companion to Wine",
+    "confidence": "established",
+    "tags": [
+      "rioja",
+      "spain",
+      "aging-requirements",
+      "gran-reserva"
+    ]
+  },
+  {
+    "id": "RA-046",
+    "domain": "regions_appellations",
+    "difficulty": 770,
+    "level": 4,
+    "format": "multiple_choice",
+    "question": "Which Napa Valley sub-AVA is known for its mountain Cabernet Sauvignon grown at high elevation on volcanic soils?",
+    "options": [
+      "Rutherford",
+      "Oakville",
+      "Howell Mountain",
+      "Stags Leap District"
+    ],
+    "correct": 2,
+    "explanation": "Howell Mountain AVA, located in the Vaca Mountains above the fog line, is known for its volcanic soils and high-elevation (above 1,400 feet) Cabernet Sauvignon with intense concentration and firm tannins.",
+    "sources": "The Wine Bible (Karen MacNeil); Oxford Companion to Wine",
+    "confidence": "established",
+    "tags": [
+      "napa-valley",
+      "howell-mountain",
+      "cabernet-sauvignon",
+      "ava"
+    ]
+  },
+  {
+    "id": "RA-047",
+    "domain": "regions_appellations",
+    "difficulty": 830,
+    "level": 4,
+    "format": "odd_one_out",
+    "question": "Which is NOT a classified Sauternes property (1855 Classification)?",
+    "options": [
+      "Château d'Yquem",
+      "Château Suduiraut",
+      "Château Pétrus",
+      "Château Climens"
+    ],
+    "correct": 2,
+    "explanation": "Château Pétrus is in Pomerol and was never classified (Pomerol has no classification system). Château d'Yquem (Premier Cru Supérieur), Suduiraut, and Climens are all 1855 classified Sauternes/Barsac properties.",
+    "sources": "Oxford Companion to Wine; WSET Level 3",
+    "confidence": "established",
+    "tags": [
+      "sauternes",
+      "bordeaux",
+      "classification",
+      "petrus"
+    ]
+  },
+  {
+    "id": "RA-048",
+    "domain": "regions_appellations",
+    "difficulty": 910,
+    "level": 5,
+    "format": "multiple_choice",
+    "question": "What is the minimum percentage of Sangiovese required in Brunello di Montalcino DOCG?",
+    "options": [
+      "80%",
+      "85%",
+      "90%",
+      "100%"
+    ],
+    "correct": 3,
+    "explanation": "Brunello di Montalcino DOCG requires 100% Sangiovese (locally called Brunello). Since the 2008 vintage, no other grape variety is permitted, though prior regulations had briefly allowed up to 15% of other varieties.",
+    "sources": "Oxford Companion to Wine; WSET Level 3",
+    "confidence": "established",
+    "tags": [
+      "brunello",
+      "montalcino",
+      "sangiovese",
+      "italian-docg"
+    ]
+  },
+  {
+    "id": "RA-049",
+    "domain": "regions_appellations",
+    "difficulty": 970,
+    "level": 5,
+    "format": "match_pairs",
+    "question": "Match each Alsace Grand Cru grape to whether it is permitted.",
+    "pairs": {
+      "left": [
+        "Riesling",
+        "Pinot Noir",
+        "Gewürztraminer",
+        "Muscat"
+      ],
+      "right": [
+        "Permitted",
+        "Not traditionally permitted as Grand Cru",
+        "Permitted",
+        "Permitted"
+      ]
+    },
+    "correct": [
+      0,
+      1,
+      2,
+      3
+    ],
+    "explanation": "Traditionally, only four noble varieties are permitted for Alsace Grand Cru: Riesling, Gewürztraminer, Pinot Gris, and Muscat. Pinot Noir was historically excluded from Grand Cru designation, though recent changes have begun to allow exceptions.",
+    "sources": "WSET Level 3; Oxford Companion to Wine",
+    "confidence": "established",
+    "tags": [
+      "alsace",
+      "grand-cru",
+      "noble-varieties"
+    ]
+  },
+  {
+    "id": "RA-050",
+    "domain": "regions_appellations",
+    "difficulty": 1040,
+    "level": 5,
+    "format": "odd_one_out",
+    "question": "Which is NOT a style of Port wine?",
+    "options": [
+      "Tawny",
+      "Ruby",
+      "LBV",
+      "Oloroso"
+    ],
+    "correct": 3,
+    "explanation": "Oloroso is a style of Sherry from Jerez, Spain, not a style of Port. Tawny, Ruby, and LBV (Late Bottled Vintage) are all recognized styles of Port wine from the Douro Valley.",
+    "sources": "WSET Level 3; Oxford Companion to Wine",
+    "confidence": "established",
+    "tags": [
+      "port",
+      "sherry",
+      "fortified-wine"
+    ]
+  },
+  {
+    "id": "RA-051",
+    "domain": "regions_appellations",
+    "difficulty": 1120,
+    "level": 6,
+    "format": "multiple_choice",
+    "question": "In the Graves Classification of 1959, which château was classified for both red AND white wines?",
+    "options": [
+      "Château Haut-Brion",
+      "Château Smith Haut Lafitte",
+      "Château Pape Clément",
+      "Château de Fieuzal"
+    ],
+    "correct": 0,
+    "explanation": "Château Haut-Brion is the only estate classified for both red and white wines in the 1959 Classification of Graves (Pessac-Léognan). It is also the only property appearing in both the 1855 and 1959 classifications.",
+    "sources": "Oxford Companion to Wine; WSET Level 3",
+    "confidence": "established",
+    "tags": [
+      "graves",
+      "bordeaux",
+      "classification",
+      "haut-brion"
+    ]
+  },
+  {
+    "id": "RA-052",
+    "domain": "regions_appellations",
+    "difficulty": 1220,
+    "level": 6,
+    "format": "match_pairs",
+    "question": "Match each New World region to its most distinctive climate influence.",
+    "pairs": {
+      "left": [
+        "Marlborough (NZ)",
+        "Barossa Valley (Aus)",
+        "Casablanca Valley (Chile)",
+        "Finger Lakes (NY)"
+      ],
+      "right": [
+        "Continental with lake-moderated microclimate",
+        "Cool maritime, Humboldt Current fog",
+        "Warm to hot continental",
+        "Cool, sunny, wide diurnal range"
+      ]
+    },
+    "correct": [
+      3,
+      2,
+      1,
+      0
+    ],
+    "explanation": "Marlborough has cool, sunny conditions with wide diurnal range. Barossa Valley is warm to hot continental. Casablanca Valley is cooled by Humboldt Current-driven fog. Finger Lakes benefits from lake-effect temperature moderation.",
+    "sources": "World Atlas of Wine (Johnson & Robinson); Oxford Companion to Wine",
+    "confidence": "established",
+    "tags": [
+      "new-world",
+      "climate",
+      "terroir"
+    ]
+  },
+  {
+    "id": "RA-053",
+    "domain": "regions_appellations",
+    "difficulty": 1330,
+    "level": 7,
+    "format": "multiple_choice",
+    "question": "How many Grand Cru vineyards are there in the Côte de Nuits?",
+    "options": [
+      "18",
+      "24",
+      "30",
+      "33"
+    ],
+    "correct": 1,
+    "explanation": "The Côte de Nuits contains 24 Grand Cru vineyards (or 23, depending on whether Musigny blanc is counted separately), spanning from Gevrey-Chambertin in the north to Nuits-Saint-Georges in the south (which itself has no Grand Crus).",
+    "sources": "World Atlas of Wine (Johnson & Robinson); Oxford Companion to Wine",
+    "confidence": "established",
+    "tags": [
+      "burgundy",
+      "cote-de-nuits",
+      "grand-cru"
+    ]
+  },
+  {
+    "id": "RA-054",
+    "domain": "regions_appellations",
+    "difficulty": 1370,
+    "level": 7,
+    "format": "odd_one_out",
+    "question": "Which commune in Burgundy does NOT have any Grand Cru vineyards?",
+    "options": [
+      "Pommard",
+      "Gevrey-Chambertin",
+      "Vosne-Romanée",
+      "Morey-Saint-Denis"
+    ],
+    "correct": 0,
+    "explanation": "Pommard has no Grand Cru vineyards, despite producing excellent Premier Crus (such as Rugiens and Épenots). Gevrey-Chambertin has 9 Grand Crus, Vosne-Romanée has 6, and Morey-Saint-Denis has 5.",
+    "sources": "World Atlas of Wine (Johnson & Robinson); Oxford Companion to Wine",
+    "confidence": "established",
+    "tags": [
+      "burgundy",
+      "pommard",
+      "grand-cru"
+    ]
+  },
+  {
+    "id": "RA-055",
+    "domain": "regions_appellations",
+    "difficulty": 1430,
+    "level": 7,
+    "format": "match_pairs",
+    "question": "Match each German wine region to its primary soil type.",
+    "pairs": {
+      "left": [
+        "Mosel",
+        "Rheingau",
+        "Pfalz",
+        "Nahe"
+      ],
+      "right": [
+        "Volcanic and sedimentary (diverse)",
+        "Slate (Devonian)",
+        "Loess, limestone, basalt (varied)",
+        "Quartzite and Phyllite"
+      ]
+    },
+    "correct": [
+      1,
+      3,
+      2,
+      0
+    ],
+    "explanation": "The Mosel is famous for Devonian slate. The Rheingau sits on quartzite and phyllite. The Pfalz has diverse soils including loess and limestone. The Nahe is one of Germany's most geologically diverse regions with volcanic and sedimentary soils.",
+    "sources": "World Atlas of Wine (Johnson & Robinson); Oxford Companion to Wine",
+    "confidence": "established",
+    "tags": [
+      "germany",
+      "soil",
+      "terroir"
+    ]
+  },
+  {
+    "id": "RA-056",
+    "domain": "regions_appellations",
+    "difficulty": 1530,
+    "level": 8,
+    "format": "multiple_choice",
+    "question": "In the Côte Rôtie, the two most famous slopes are the Côte Brune and Côte Blonde. What is the traditional explanation for their names?",
+    "options": [
+      "Soil color: darker schist vs. lighter gneiss",
+      "Vine age: older (brown) vs. younger (blonde) plantings",
+      "Two daughters of a medieval lord, one dark-haired, one blonde",
+      "French terms for north-facing (dark) and south-facing (light) slopes"
+    ],
+    "correct": 2,
+    "explanation": "Legend attributes the names to the two daughters of the Seigneur de Maugiron — one brunette, one blonde — who inherited the respective slopes. In reality, the Côte Brune has darker, iron-rich schist soils while the Côte Blonde has lighter, gneiss-based soils.",
+    "sources": "Oxford Companion to Wine; World Atlas of Wine (Johnson & Robinson)",
+    "confidence": "consensus",
+    "tags": [
+      "cote-rotie",
+      "rhone",
+      "terroir",
+      "wine-history"
+    ]
+  },
+  {
+    "id": "RA-057",
+    "domain": "regions_appellations",
+    "difficulty": 1620,
+    "level": 8,
+    "format": "odd_one_out",
+    "question": "Which is NOT a sub-zone of the Barbaresco DOCG?",
+    "options": [
+      "Barbaresco",
+      "Neive",
+      "Treiso",
+      "Alba"
+    ],
+    "correct": 3,
+    "explanation": "Alba is the main city of the Langhe but is not one of the Barbaresco production communes. Barbaresco DOCG encompasses four communes: Barbaresco, Neive, Treiso, and a small part of San Rocco Seno d'Elvio (within Alba's boundaries but distinct from Alba proper).",
+    "sources": "Oxford Companion to Wine; World Atlas of Wine (Johnson & Robinson)",
+    "confidence": "consensus",
+    "tags": [
+      "barbaresco",
+      "piedmont",
+      "communes"
+    ]
+  },
+  {
+    "id": "RA-058",
+    "domain": "regions_appellations",
+    "difficulty": 1680,
+    "level": 8,
+    "format": "match_pairs",
+    "question": "Match each Bordeaux appellation to its predominant soil type.",
+    "pairs": {
+      "left": [
+        "Pauillac",
+        "Pomerol",
+        "Sauternes",
+        "Saint-Émilion (plateau)"
+      ],
+      "right": [
+        "Clay over iron-rich subsoil (crasse de fer)",
+        "Gravel over clay/limestone",
+        "Limestone plateau over clay",
+        "Gravel, clay, and sandy soils"
+      ]
+    },
+    "correct": [
+      1,
+      0,
+      3,
+      2
+    ],
+    "explanation": "Pauillac sits on deep gravel banks. Pomerol's famous clay-over-iron-pan (crasse de fer) soil is key to Pétrus's identity. Sauternes has a mix of gravel, clay, and sand. The Saint-Émilion plateau is limestone over clay, home to estates like Ausone.",
+    "sources": "World Atlas of Wine (Johnson & Robinson); Oxford Companion to Wine",
+    "confidence": "consensus",
+    "tags": [
+      "bordeaux",
+      "soil",
+      "terroir"
+    ]
+  },
+  {
+    "id": "RA-059",
+    "domain": "regions_appellations",
+    "difficulty": 1720,
+    "level": 9,
+    "format": "multiple_choice",
+    "question": "In Burgundy, the vineyard Les Amoureuses in Chambolle-Musigny is classified as Premier Cru. Why is it often considered Grand Cru quality?",
+    "options": [
+      "It was accidentally omitted from the 1936 Grand Cru classification",
+      "Its prices consistently match or exceed many Grand Crus",
+      "It was historically farmed as part of Musigny",
+      "It has the same soil composition as Bonnes-Mares"
+    ],
+    "correct": 1,
+    "explanation": "Les Amoureuses consistently commands prices equal to or exceeding many Grand Cru Burgundies, reflecting its exceptional terroir adjacent to Musigny. Its quality is widely acknowledged as Grand Cru level, though it remains officially Premier Cru.",
+    "sources": "World Atlas of Wine (Johnson & Robinson); GuildSomm",
+    "confidence": "consensus",
+    "tags": [
+      "burgundy",
+      "chambolle-musigny",
+      "premier-cru",
+      "les-amoureuses"
+    ]
+  },
+  {
+    "id": "RA-060",
+    "domain": "regions_appellations",
+    "difficulty": 1780,
+    "level": 9,
+    "format": "odd_one_out",
+    "question": "Which of these Napa Valley sub-AVAs is NOT a mountain/hillside appellation?",
+    "options": [
+      "Spring Mountain District",
+      "Diamond Mountain District",
+      "Rutherford",
+      "Mount Veeder"
+    ],
+    "correct": 2,
+    "explanation": "Rutherford is a valley-floor AVA in the heart of Napa Valley, famous for its 'Rutherford Dust' Cabernet Sauvignon character. Spring Mountain, Diamond Mountain, and Mount Veeder are all mountain/hillside AVAs.",
+    "sources": "The Wine Bible (Karen MacNeil); Oxford Companion to Wine",
+    "confidence": "consensus",
+    "tags": [
+      "napa-valley",
+      "ava",
+      "rutherford",
+      "mountain"
+    ]
+  },
+  {
+    "id": "RA-061",
+    "domain": "regions_appellations",
+    "difficulty": 1840,
+    "level": 9,
+    "format": "match_pairs",
+    "question": "Match each Sherry style to its aging process.",
+    "pairs": {
+      "left": [
+        "Fino",
+        "Oloroso",
+        "Palo Cortado",
+        "Manzanilla"
+      ],
+      "right": [
+        "Biological aging under flor, Sanlúcar de Barrameda only",
+        "Biological aging under flor, Jerez",
+        "Oxidative aging without flor",
+        "Initially biological, then loses flor; finishes oxidatively"
+      ]
+    },
+    "correct": [
+      1,
+      2,
+      3,
+      0
+    ],
+    "explanation": "Fino ages biologically under flor in Jerez. Manzanilla is essentially Fino but aged specifically in Sanlúcar de Barrameda. Oloroso ages oxidatively from the start (fortified to 17%+ to prevent flor). Palo Cortado begins under flor but transitions to oxidative aging.",
+    "sources": "WSET Level 3; Oxford Companion to Wine",
+    "confidence": "consensus",
+    "tags": [
+      "sherry",
+      "jerez",
+      "fortified-wine",
+      "aging"
+    ]
+  },
+  {
+    "id": "RA-062",
+    "domain": "regions_appellations",
+    "difficulty": 1920,
+    "level": 10,
+    "format": "multiple_choice",
+    "question": "Which was the only château promoted from Second Growth to First Growth in the 1855 Bordeaux Classification?",
+    "options": [
+      "Château Mouton Rothschild",
+      "Château Palmer",
+      "Château Lynch-Bages",
+      "Château Ducru-Beaucaillou"
+    ],
+    "correct": 0,
+    "explanation": "Château Mouton Rothschild was promoted from Second Growth (Deuxième Cru) to First Growth (Premier Cru) in 1973, the only change ever made to the 1855 Classification. Baron Philippe de Rothschild famously campaigned for decades for the reclassification.",
+    "sources": "Oxford Companion to Wine; WSET Level 3",
+    "confidence": "consensus",
+    "tags": [
+      "bordeaux",
+      "1855-classification",
+      "mouton-rothschild"
+    ]
+  },
+  {
+    "id": "RA-063",
+    "domain": "regions_appellations",
+    "difficulty": 2000,
+    "level": 10,
+    "format": "odd_one_out",
+    "question": "Which is NOT one of the original 1855 First Growth (Premier Cru) Bordeaux estates?",
+    "options": [
+      "Château Haut-Brion",
+      "Château Lafite Rothschild",
+      "Château Latour",
+      "Château Mouton Rothschild"
+    ],
+    "correct": 3,
+    "explanation": "Mouton Rothschild was originally classified as a Second Growth in 1855 and was only promoted to First Growth in 1973. The original four First Growths were Lafite Rothschild, Latour, Margaux, and Haut-Brion.",
+    "sources": "Oxford Companion to Wine; WSET Level 3",
+    "confidence": "consensus",
+    "tags": [
+      "bordeaux",
+      "1855-classification",
+      "first-growth"
+    ]
+  },
+  {
+    "id": "RA-064",
+    "domain": "regions_appellations",
+    "difficulty": 2150,
+    "level": 10,
+    "format": "match_pairs",
+    "question": "Match each Mosel vineyard to its village.",
+    "pairs": {
+      "left": [
+        "Scharzhofberger",
+        "Wehlener Sonnenuhr",
+        "Erdener Prälat",
+        "Brauneberger Juffer-Sonnenuhr"
+      ],
+      "right": [
+        "Brauneberg",
+        "Erden",
+        "Wiltingen",
+        "Wehlen"
+      ]
+    },
+    "correct": [
+      2,
+      3,
+      1,
+      0
+    ],
+    "explanation": "Scharzhofberger is in Wiltingen (Saar tributary). Wehlener Sonnenuhr is in Wehlen. Erdener Prälat is in Erden, considered one of the Middle Mosel's finest sites. Brauneberger Juffer-Sonnenuhr is in Brauneberg.",
+    "sources": "World Atlas of Wine (Johnson & Robinson); Oxford Companion to Wine",
+    "confidence": "consensus",
+    "tags": [
+      "mosel",
+      "germany",
+      "vineyards",
+      "riesling"
+    ]
+  },
+  {
+    "id": "RA-065",
+    "domain": "regions_appellations",
+    "difficulty": 2250,
+    "level": 10,
+    "format": "multiple_choice",
+    "question": "Which Burgundy Grand Cru is a monopole of Domaine de la Romanée-Conti?",
+    "options": [
+      "Richebourg",
+      "Romanée-Saint-Vivant",
+      "La Tâche",
+      "Échézeaux"
+    ],
+    "correct": 2,
+    "explanation": "La Tâche (6.06 hectares) is a monopole of Domaine de la Romanée-Conti. They also hold the monopole of Romanée-Conti itself. Richebourg, Romanée-Saint-Vivant, and Échézeaux are shared among multiple producers.",
+    "sources": "World Atlas of Wine (Johnson & Robinson); Oxford Companion to Wine",
+    "confidence": "consensus",
+    "tags": [
+      "burgundy",
+      "drc",
+      "monopole",
+      "la-tache"
+    ]
+  },
+  {
+    "id": "RA-066",
+    "domain": "regions_appellations",
+    "difficulty": 310,
+    "level": 2,
+    "format": "multiple_choice",
+    "question": "Marlborough is the most famous wine region of which country?",
+    "options": [
+      "Australia",
+      "South Africa",
+      "New Zealand",
+      "Chile"
+    ],
+    "correct": 2,
+    "explanation": "Marlborough, on the northern tip of New Zealand's South Island, is the country's largest and most famous wine region, renowned globally for its distinctive Sauvignon Blanc.",
+    "sources": "WSET Level 3; Oxford Companion to Wine",
+    "confidence": "established",
+    "tags": [
+      "marlborough",
+      "new-zealand"
+    ]
+  },
+  {
+    "id": "RA-067",
+    "domain": "regions_appellations",
+    "difficulty": 470,
+    "level": 2,
+    "format": "match_pairs",
+    "question": "Match each wine style to its region of origin.",
+    "pairs": {
+      "left": [
+        "Sherry",
+        "Port",
+        "Champagne",
+        "Prosecco"
+      ],
+      "right": [
+        "Douro, Portugal",
+        "Veneto, Italy",
+        "Champagne, France",
+        "Jerez, Spain"
+      ]
+    },
+    "correct": [
+      3,
+      0,
+      2,
+      1
+    ],
+    "explanation": "Sherry comes from Jerez in southern Spain. Port comes from the Douro Valley in Portugal. Champagne comes from the Champagne region of France. Prosecco comes from the Veneto in northeastern Italy.",
+    "sources": "WSET Level 2; Oxford Companion to Wine",
+    "confidence": "established",
+    "tags": [
+      "wine-styles",
+      "origins",
+      "geography"
+    ]
+  },
+  {
+    "id": "RA-068",
+    "domain": "regions_appellations",
+    "difficulty": 570,
+    "level": 3,
+    "format": "multiple_choice",
+    "question": "What distinguishes Chianti Classico from basic Chianti?",
+    "options": [
+      "Chianti Classico uses different grapes",
+      "Chianti Classico is the historical heartland zone between Florence and Siena",
+      "Chianti Classico must be aged longer",
+      "Chianti Classico is always a reserve wine"
+    ],
+    "correct": 1,
+    "explanation": "Chianti Classico is a separate DOCG covering the original, historical Chianti zone between Florence and Siena. It has stricter production rules than the broader Chianti DOCG, including higher minimum Sangiovese content.",
+    "sources": "WSET Level 3; Oxford Companion to Wine",
+    "confidence": "established",
+    "tags": [
+      "chianti-classico",
+      "tuscany",
+      "italian-wine"
+    ]
+  },
+  {
+    "id": "RA-069",
+    "domain": "regions_appellations",
+    "difficulty": 710,
+    "level": 4,
+    "format": "match_pairs",
+    "question": "Match each classification to its region.",
+    "pairs": {
+      "left": [
+        "1855 Classification",
+        "Cru Classé system (revised periodically)",
+        "DOCG hierarchy",
+        "Qualitätswein Prädikat"
+      ],
+      "right": [
+        "Italy",
+        "Germany",
+        "Bordeaux (Médoc/Sauternes)",
+        "Saint-Émilion"
+      ]
+    },
+    "correct": [
+      2,
+      3,
+      0,
+      1
+    ],
+    "explanation": "The 1855 Classification covers the Médoc and Sauternes. Saint-Émilion has its own periodically revised classification. DOCG is Italy's highest quality tier. Qualitätswein Prädikat is Germany's quality wine designation.",
+    "sources": "WSET Level 3; Oxford Companion to Wine",
+    "confidence": "established",
+    "tags": [
+      "classification",
+      "wine-law"
+    ]
+  },
+  {
+    "id": "RA-070",
+    "domain": "regions_appellations",
+    "difficulty": 860,
+    "level": 4,
+    "format": "multiple_choice",
+    "question": "Amarone della Valpolicella is made using what special winemaking technique?",
+    "options": [
+      "Carbonic maceration",
+      "Appassimento (grape drying)",
+      "Solera system",
+      "Pied de cuve"
+    ],
+    "correct": 1,
+    "explanation": "Amarone is made using the appassimento method, where harvested grapes are dried on mats or racks for several months (typically September to January/February) to concentrate sugars and flavors before fermentation.",
+    "sources": "WSET Level 3; Oxford Companion to Wine",
+    "confidence": "established",
+    "tags": [
+      "amarone",
+      "valpolicella",
+      "appassimento",
+      "winemaking"
+    ]
+  },
+  {
+    "id": "RA-071",
+    "domain": "regions_appellations",
+    "difficulty": 940,
+    "level": 5,
+    "format": "multiple_choice",
+    "question": "Which of these is the correct ascending order of the Burgundy appellation hierarchy?",
+    "options": [
+      "Village → Regional → Premier Cru → Grand Cru",
+      "Regional → Village → Grand Cru → Premier Cru",
+      "Regional → Village → Premier Cru → Grand Cru",
+      "Regional → Premier Cru → Village → Grand Cru"
+    ],
+    "correct": 2,
+    "explanation": "The Burgundy hierarchy ascends: Regional (Bourgogne) → Village (e.g., Gevrey-Chambertin) → Premier Cru (named vineyard within a village) → Grand Cru (vineyard with its own appellation). This represents increasing specificity and quality.",
+    "sources": "WSET Level 3; Oxford Companion to Wine",
+    "confidence": "established",
+    "tags": [
+      "burgundy",
+      "hierarchy",
+      "appellation"
+    ]
+  },
+  {
+    "id": "RA-072",
+    "domain": "regions_appellations",
+    "difficulty": 1060,
+    "level": 5,
+    "format": "odd_one_out",
+    "question": "Which appellation does NOT require 100% of a single grape variety?",
+    "options": [
+      "Barolo (Nebbiolo)",
+      "Brunello di Montalcino (Sangiovese)",
+      "Chianti Classico (Sangiovese)",
+      "Barbaresco (Nebbiolo)"
+    ],
+    "correct": 2,
+    "explanation": "Chianti Classico requires a minimum of 80% Sangiovese (raised from 70% in 2006), allowing up to 20% other approved varieties. Barolo, Barbaresco (both 100% Nebbiolo), and Brunello di Montalcino (100% Sangiovese) are all single-variety wines.",
+    "sources": "Oxford Companion to Wine; WSET Level 3",
+    "confidence": "established",
+    "tags": [
+      "italian-docg",
+      "chianti-classico",
+      "appellation-rules"
+    ]
+  },
+  {
+    "id": "RA-073",
+    "domain": "regions_appellations",
+    "difficulty": 1170,
+    "level": 6,
+    "format": "multiple_choice",
+    "question": "Which Oregon AVA is located within the broader Willamette Valley AVA and is known for its volcanic Jory soils?",
+    "options": [
+      "Ribbon Ridge",
+      "Dundee Hills",
+      "Eola-Amity Hills",
+      "Chehalem Mountains"
+    ],
+    "correct": 1,
+    "explanation": "The Dundee Hills AVA is famous for its red volcanic Jory soils, derived from ancient basalt flows. This sub-AVA is considered one of Oregon's premier sites for Pinot Noir.",
+    "sources": "The Wine Bible (Karen MacNeil); Oxford Companion to Wine",
+    "confidence": "established",
+    "tags": [
+      "oregon",
+      "dundee-hills",
+      "willamette-valley",
+      "jory-soil"
+    ]
+  },
+  {
+    "id": "RA-074",
+    "domain": "regions_appellations",
+    "difficulty": 1260,
+    "level": 6,
+    "format": "odd_one_out",
+    "question": "Which is NOT one of the ten Crus of Beaujolais?",
+    "options": [
+      "Moulin-à-Vent",
+      "Saint-Amour",
+      "Beaujolais-Villages",
+      "Chénas"
+    ],
+    "correct": 2,
+    "explanation": "Beaujolais-Villages is a separate appellation tier below the Crus, covering 38 communes. The ten Crus are: Brouilly, Côte de Brouilly, Régnié, Morgon, Chiroubles, Fleurie, Moulin-à-Vent, Chénas, Juliénas, and Saint-Amour.",
+    "sources": "WSET Level 3; Oxford Companion to Wine",
+    "confidence": "established",
+    "tags": [
+      "beaujolais",
+      "crus",
+      "hierarchy"
+    ]
+  },
+  {
+    "id": "RA-075",
+    "domain": "regions_appellations",
+    "difficulty": 2400,
+    "level": 10,
+    "format": "multiple_choice",
+    "question": "In the Douro Valley's vineyard classification system, vineyards are scored on a points system. What is the maximum score a vineyard can receive?",
+    "options": [
+      "1,200 points",
+      "1,680 points",
+      "2,000 points",
+      "1,400 points"
+    ],
+    "correct": 0,
+    "explanation": "The Douro vineyard classification system (cadastro) rates vineyards on a scale from a minimum of 200 to a maximum of 1,200 points. Factors include altitude, yield, soil type, grape varieties, vine age, gradient, and exposure. Only vineyards scoring above certain thresholds can produce Port.",
+    "sources": "Oxford Companion to Wine; GuildSomm",
+    "confidence": "consensus",
+    "tags": [
+      "douro",
+      "port",
+      "classification",
+      "cadastro"
+    ]
+  }
+]

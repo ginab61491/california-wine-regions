@@ -1,0 +1,3819 @@
+[
+  {
+    "id": "FP-001",
+    "domain": "food_pairing",
+    "difficulty": 200,
+    "level": 1,
+    "format": "multiple_choice",
+    "question": "Which classic pairing principle explains why a squeeze of lemon on fried fish works similarly to pairing Muscadet with oysters?",
+    "options": [
+      "Tannin cuts through protein",
+      "Acid cuts through fat and richness",
+      "Sweetness balances salt",
+      "Alcohol enhances umami"
+    ],
+    "correct": 1,
+    "explanation": "Acidity in both lemon and high-acid wines like Muscadet cuts through the richness of fried or fatty foods, cleansing the palate between bites. This acid-fat interaction is one of the most fundamental pairing principles.",
+    "sources": "The Wine Bible (Karen MacNeil); WSET Level 3 Systematic Approach to Food and Wine Pairing",
+    "confidence": "established",
+    "tags": [
+      "acid-fat",
+      "basic-principles",
+      "seafood"
+    ]
+  },
+  {
+    "id": "FP-002",
+    "domain": "food_pairing",
+    "difficulty": 250,
+    "level": 1,
+    "format": "odd_one_out",
+    "question": "Which food does NOT follow the principle of 'what grows together goes together'?",
+    "options": [
+      "Chianti with tomato-based pasta",
+      "Albariño with Galician pulpo",
+      "Sancerre with goat cheese (Crottin de Chavignol)",
+      "Barossa Shiraz with sushi"
+    ],
+    "correct": 3,
+    "explanation": "Chianti/tomato pasta (Tuscany), Albariño/pulpo (Galicia), and Sancerre/Crottin de Chavignol (Loire) are all classic regional pairings. Barossa Shiraz with sushi violates the regional principle since Barossa Valley is in South Australia, not Japan.",
+    "sources": "World Atlas of Wine (Johnson & Robinson); The Wine Bible (Karen MacNeil)",
+    "confidence": "established",
+    "tags": [
+      "regional-pairing",
+      "what-grows-together"
+    ]
+  },
+  {
+    "id": "FP-003",
+    "domain": "food_pairing",
+    "difficulty": 350,
+    "level": 2,
+    "format": "multiple_choice",
+    "question": "Why do tannic red wines pair well with grilled red meat?",
+    "options": [
+      "Tannins enhance the smoky flavor of the grill",
+      "Proteins in meat bind with tannins, softening the wine's astringency",
+      "The alcohol in red wine breaks down fat molecules",
+      "Red meat increases the perception of fruit in the wine"
+    ],
+    "correct": 1,
+    "explanation": "Proteins and fats in red meat bind with tannin molecules, reducing the perception of astringency and making the wine taste smoother and more fruit-forward. This tannin-protein interaction is a cornerstone of classical pairing.",
+    "sources": "Wine Science (Jamie Goode); Oxford Companion to Wine (Robinson, Harding & Vouillamoz)",
+    "confidence": "established",
+    "tags": [
+      "tannin-protein",
+      "red-meat",
+      "basic-principles"
+    ]
+  },
+  {
+    "id": "FP-004",
+    "domain": "food_pairing",
+    "difficulty": 400,
+    "level": 2,
+    "format": "scenario",
+    "question": "A guest orders a plate of fresh asparagus with hollandaise sauce. Which wine would you recommend?",
+    "options": [
+      "Napa Valley Cabernet Sauvignon",
+      "Grüner Veltliner from Kamptal",
+      "Vintage Port",
+      "Amarone della Valpolicella"
+    ],
+    "correct": 1,
+    "explanation": "Asparagus contains mercaptan compounds that clash with most wines, making it notoriously difficult to pair. Grüner Veltliner's herbal, white-pepper character and zippy acidity complement asparagus naturally. Austrian Grüner Veltliner is one of the few widely accepted pairings with asparagus.",
+    "sources": "The Wine Bible (Karen MacNeil); GuildSomm Pairing Database",
+    "confidence": "established",
+    "tags": [
+      "difficult-foods",
+      "asparagus",
+      "gruner-veltliner"
+    ]
+  },
+  {
+    "id": "FP-005",
+    "domain": "food_pairing",
+    "difficulty": 500,
+    "level": 3,
+    "format": "multiple_choice",
+    "question": "What compound in artichokes makes wine taste sweeter, complicating pairing?",
+    "options": [
+      "Capsaicin",
+      "Cynarin",
+      "Theobromine",
+      "Limonene"
+    ],
+    "correct": 1,
+    "explanation": "Cynarin, found in artichokes, temporarily inhibits sweet taste receptors. When the compound is washed away by a sip of water or wine, the receptors rebound and everything tastes sweeter. This effect can distort wine flavors significantly.",
+    "sources": "Wine Science (Jamie Goode); Oxford Companion to Wine (Robinson, Harding & Vouillamoz)",
+    "confidence": "established",
+    "tags": [
+      "difficult-foods",
+      "artichoke",
+      "cynarin"
+    ]
+  },
+  {
+    "id": "FP-006",
+    "domain": "food_pairing",
+    "difficulty": 550,
+    "level": 3,
+    "format": "match_pairs",
+    "question": "Match each sauce type with its ideal wine pairing principle.",
+    "pairs": {
+      "left": [
+        "Beurre blanc (butter sauce)",
+        "Tomato-based marinara",
+        "Rich demi-glace",
+        "Thai green curry (coconut + chili)"
+      ],
+      "right": [
+        "Off-dry aromatic to tame heat",
+        "Rich white with weight to match",
+        "High-acid red to match sauce acidity",
+        "Full-bodied red with tannin for protein-rich stock"
+      ]
+    },
+    "correct": [
+      1,
+      2,
+      3,
+      0
+    ],
+    "explanation": "Butter sauces need weight (rich Chardonnay), tomato sauces need acidity (Sangiovese), demi-glace needs tannin and body (Cabernet), and spicy coconut curries benefit from off-dry aromatics (Riesling Spätlese) whose residual sugar tempers heat.",
+    "sources": "WSET Level 3 Study Guide; The Wine Bible (Karen MacNeil)",
+    "confidence": "established",
+    "tags": [
+      "sauce-pairing",
+      "matching-weight",
+      "spicy-food"
+    ]
+  },
+  {
+    "id": "FP-007",
+    "domain": "food_pairing",
+    "difficulty": 650,
+    "level": 3,
+    "format": "multiple_choice",
+    "question": "When pairing wine with umami-rich foods like aged Parmesan or miso, what happens to the perception of tannic red wines?",
+    "options": [
+      "Tannins appear softer and more integrated",
+      "Umami amplifies bitterness and astringency in the wine",
+      "Umami neutralizes the wine's acidity",
+      "There is no measurable interaction between umami and tannin"
+    ],
+    "correct": 1,
+    "explanation": "Umami intensifies the perception of bitterness and astringency in tannic wines, making them taste harsher. This is why high-umami dishes are better paired with fruity, low-tannin wines or wines with residual sugar rather than young, tannic reds.",
+    "sources": "Wine Science (Jamie Goode); GuildSomm Advanced Theory",
+    "confidence": "established",
+    "tags": [
+      "umami",
+      "tannin-interaction",
+      "difficult-foods"
+    ]
+  },
+  {
+    "id": "FP-008",
+    "domain": "food_pairing",
+    "difficulty": 700,
+    "level": 4,
+    "format": "scenario",
+    "question": "A table orders a cheese course featuring Roquefort, Comté, Époisses, and Crottin de Chavignol. They want one bottle for all four cheeses. What is your best recommendation?",
+    "options": [
+      "Young Barolo",
+      "Sauternes",
+      "New Zealand Sauvignon Blanc",
+      "Beaujolais Nouveau"
+    ],
+    "correct": 1,
+    "explanation": "Sauternes is the classic pairing for Roquefort (sweet-salty contrast), and its richness and acidity also complement the nuttiness of Comté, the pungency of Époisses, and the tang of Crottin. When a single wine must serve a mixed cheese plate, sweet wines offer the most versatility.",
+    "sources": "Oxford Companion to Wine (Robinson, Harding & Vouillamoz); WSET Level 3 Study Guide",
+    "confidence": "established",
+    "tags": [
+      "cheese-pairing",
+      "sauternes",
+      "roquefort",
+      "mixed-cheese"
+    ]
+  },
+  {
+    "id": "FP-009",
+    "domain": "food_pairing",
+    "difficulty": 800,
+    "level": 4,
+    "format": "odd_one_out",
+    "question": "Which pairing does NOT rely on the principle of contrasting flavors?",
+    "options": [
+      "Sauternes with Roquefort",
+      "Champagne with fried chicken",
+      "Off-dry Riesling with spicy Thai",
+      "Chianti with tomato-based pasta"
+    ],
+    "correct": 3,
+    "explanation": "Chianti with tomato pasta is a congruent (complementary) pairing: the high acidity in both the wine and the tomato sauce match. The others all rely on contrast: sweet vs. salty (Sauternes/Roquefort), acid/bubbles vs. fat (Champagne/fried chicken), and sugar vs. capsaicin heat (Riesling/Thai).",
+    "sources": "The Wine Bible (Karen MacNeil); WSET Level 3 Systematic Approach to Food and Wine Pairing",
+    "confidence": "established",
+    "tags": [
+      "contrast-vs-complement",
+      "pairing-principles"
+    ]
+  },
+  {
+    "id": "FP-010",
+    "domain": "food_pairing",
+    "difficulty": 900,
+    "level": 5,
+    "format": "multiple_choice",
+    "question": "How does the cooking method of braising versus grilling affect wine pairing for the same cut of beef?",
+    "options": [
+      "Braised beef requires higher alcohol; grilled beef requires lower alcohol",
+      "Braised beef's broken-down collagen favors acid-driven wines; grilled beef's charred crust favors tannic wines",
+      "Both preparations pair identically since the protein source is the same",
+      "Grilled beef requires sweeter wines due to Maillard compounds"
+    ],
+    "correct": 1,
+    "explanation": "Braising breaks down collagen into gelatin, creating a rich, unctuous texture best matched by wines with bright acidity (e.g., Barbera, Burgundy). Grilling produces a charred protein crust that binds with tannins effectively, favoring structured wines like Cabernet Sauvignon.",
+    "sources": "Wine Science (Jamie Goode); GuildSomm Pairing Theory",
+    "confidence": "established",
+    "tags": [
+      "cooking-method",
+      "braising",
+      "grilling",
+      "beef"
+    ]
+  },
+  {
+    "id": "FP-011",
+    "domain": "food_pairing",
+    "difficulty": 950,
+    "level": 5,
+    "format": "match_pairs",
+    "question": "Match each difficult-to-pair food with the best wine strategy.",
+    "pairs": {
+      "left": [
+        "Dark chocolate dessert",
+        "Sichuan hot pot",
+        "Egg-rich soufflé",
+        "Anchovy pizza"
+      ],
+      "right": [
+        "Sparkling wine (bubbles cut richness of egg)",
+        "Brachetto d'Acqui or Banyuls (sweet red to match intensity)",
+        "Off-dry Gewürztraminer (sugar and aromatics tame numbing spice)",
+        "Rosé from Provence (acid and light fruit stand up to salt and umami)"
+      ]
+    },
+    "correct": [
+      1,
+      2,
+      0,
+      3
+    ],
+    "explanation": "Chocolate needs a wine at least as sweet as itself (Banyuls/Brachetto). Sichuan peppercorn's numbing heat is soothed by residual sugar and aromatics (Gewürztraminer). Eggs coat the palate, so bubbles provide textural contrast. Anchovies bring intense umami and salt, best balanced by fresh rosé.",
+    "sources": "The Wine Bible (Karen MacNeil); GuildSomm Pairing Database",
+    "confidence": "established",
+    "tags": [
+      "difficult-foods",
+      "chocolate",
+      "spicy-food",
+      "eggs"
+    ]
+  },
+  {
+    "id": "FP-012",
+    "domain": "food_pairing",
+    "difficulty": 1050,
+    "level": 5,
+    "format": "scenario",
+    "question": "A guest is having a 7-course kaiseki meal featuring raw fish, grilled eel, pickled vegetables, and miso soup. They request wine pairings for the entire meal. Which approach is most appropriate?",
+    "options": [
+      "Serve one bold red wine throughout to assert dominance over all courses",
+      "Progress from Champagne through Chablis, then Alsace Pinot Gris, incorporating off-dry wines for umami-heavy courses",
+      "Pair each course with a different full-bodied Napa Cabernet vintage",
+      "Serve only Sherry throughout because it is the most food-friendly wine"
+    ],
+    "correct": 1,
+    "explanation": "Kaiseki's sequential structure mirrors wine-pairing progression. Start with high-acid sparkling, move to lean whites for raw fish, richer whites for grilled items, and use off-dry wines to buffer umami in miso. This approach respects both the Japanese culinary philosophy and wine-pairing fundamentals.",
+    "sources": "GuildSomm Advanced Pairing Seminars; WSET Level 3 Study Guide",
+    "confidence": "established",
+    "tags": [
+      "kaiseki",
+      "progressive-pairing",
+      "umami",
+      "japanese-cuisine"
+    ]
+  },
+  {
+    "id": "FP-013",
+    "domain": "food_pairing",
+    "difficulty": 1100,
+    "level": 6,
+    "format": "multiple_choice",
+    "question": "In the context of wine and food pairing, what is the 'bridge ingredient' technique?",
+    "options": [
+      "Using a shared aromatic compound in both the wine and a dish component to link them",
+      "Adding wine to the cooking sauce so the pairing is guaranteed",
+      "Serving bread between courses to reset the palate",
+      "Blending two wines to create a bridge between two courses"
+    ],
+    "correct": 0,
+    "explanation": "A bridge ingredient is a component added to a dish that shares aromatic or flavor compounds with the wine being served, creating a sensory link. For example, adding thyme to a lamb dish when serving Rhône Syrah, since both share herbal/garrigue notes from shared terpene compounds.",
+    "sources": "GuildSomm Advanced Pairing Theory; Wine Science (Jamie Goode)",
+    "confidence": "established",
+    "tags": [
+      "bridge-ingredient",
+      "advanced-pairing",
+      "aromatic-compounds"
+    ]
+  },
+  {
+    "id": "FP-014",
+    "domain": "food_pairing",
+    "difficulty": 1200,
+    "level": 6,
+    "format": "multiple_choice",
+    "question": "Why does Muscadet sur lie pair exceptionally well with raw oysters beyond just acidity?",
+    "options": [
+      "The residual sugar in Muscadet buffers the brininess",
+      "Lees aging adds a subtle richness and savory quality that mirrors the oyster's minerality and umami",
+      "Muscadet's high tannin binds with the proteins in oyster flesh",
+      "The carbonic maceration process used for Muscadet creates effervescence that cleanses the palate"
+    ],
+    "correct": 1,
+    "explanation": "Muscadet sur lie gains autolytic character (amino acids, mannoproteins) from extended lees contact, giving it a subtle savory richness that bridges to the oyster's umami and mineral character. This goes beyond simple acidity to create a synergistic pairing.",
+    "sources": "Oxford Companion to Wine (Robinson, Harding & Vouillamoz); Wine Science (Jamie Goode)",
+    "confidence": "established",
+    "tags": [
+      "muscadet",
+      "lees-aging",
+      "oysters",
+      "umami"
+    ]
+  },
+  {
+    "id": "FP-015",
+    "domain": "food_pairing",
+    "difficulty": 1300,
+    "level": 7,
+    "format": "scenario",
+    "question": "A guest with advanced wine knowledge orders venison tartare with a quail egg yolk, truffle shavings, and a hazelnut vinaigrette. Which wine pairing demonstrates the deepest understanding of flavor interactions?",
+    "options": [
+      "Vintage Champagne Blanc de Blancs — bubbles cut the egg richness, acid matches vinaigrette, autolytic notes echo truffle",
+      "Australian Shiraz — bold fruit stands up to game",
+      "Oregon Pinot Noir with some bottle age — earthy sous-bois notes mirror truffle, gentle tannins suit raw meat, acid handles vinaigrette",
+      "Paso Robles Zinfandel — high alcohol emphasizes the richness"
+    ],
+    "correct": 2,
+    "explanation": "Aged Oregon Pinot Noir offers earthy, sous-bois (forest floor) aromatics that create a bridge to truffle. Its moderate tannins won't overwhelm raw meat (unlike cooked), its acidity balances the hazelnut vinaigrette, and its medium body respects the dish's delicacy. This is a multi-dimensional pairing.",
+    "sources": "GuildSomm Advanced Pairing Theory; The Wine Bible (Karen MacNeil)",
+    "confidence": "established",
+    "tags": [
+      "venison",
+      "truffle",
+      "pinot-noir",
+      "bridge-ingredient",
+      "advanced-pairing"
+    ]
+  },
+  {
+    "id": "FP-016",
+    "domain": "food_pairing",
+    "difficulty": 1400,
+    "level": 7,
+    "format": "multiple_choice",
+    "question": "Which volatile compound shared by both Gewürztraminer and lychee-glazed duck makes the pairing work on a molecular level?",
+    "options": [
+      "Methoxypyrazine",
+      "Cis-rose oxide",
+      "Rotundone",
+      "4-MMP (4-mercapto-4-methylpentan-2-one)"
+    ],
+    "correct": 1,
+    "explanation": "Cis-rose oxide is the monoterpene responsible for the floral, lychee-like aroma in both Gewürztraminer grapes and lychee fruit. When lychee appears as a glaze component, it creates a direct aromatic bridge to Gewürztraminer at the molecular level.",
+    "sources": "Wine Science (Jamie Goode); Oxford Companion to Wine (Robinson, Harding & Vouillamoz)",
+    "confidence": "established",
+    "tags": [
+      "molecular-pairing",
+      "cis-rose-oxide",
+      "gewurztraminer",
+      "terpenes"
+    ]
+  },
+  {
+    "id": "FP-017",
+    "domain": "food_pairing",
+    "difficulty": 1500,
+    "level": 8,
+    "format": "odd_one_out",
+    "question": "Which pairing does NOT demonstrate a scientifically validated synergistic interaction?",
+    "options": [
+      "Champagne with caviar (effervescence cleanses fat, autolysis mirrors fishiness)",
+      "Sauternes with foie gras (sweetness cuts richness, botrytis adds complementary complexity)",
+      "Aged Barolo with white truffle pasta (nebbiolo's rose/tar aromatics complement truffle's volatile sulfur compounds)",
+      "Napa Cabernet with milk chocolate mousse (tannin complements cocoa butter)"
+    ],
+    "correct": 3,
+    "explanation": "Milk chocolate's high sugar content clashes with dry Cabernet's tannins, which amplify bitterness in the presence of sugar. The other three are well-documented synergistic pairings where specific chemical interactions produce enhanced flavor experiences.",
+    "sources": "Wine Science (Jamie Goode); GuildSomm Advanced Sensory Science",
+    "confidence": "consensus",
+    "tags": [
+      "synergistic-pairing",
+      "molecular-interaction",
+      "chocolate"
+    ]
+  },
+  {
+    "id": "FP-018",
+    "domain": "food_pairing",
+    "difficulty": 1600,
+    "level": 8,
+    "format": "multiple_choice",
+    "question": "When capsaicin from chili peppers binds to TRPV1 receptors, how does ethanol in wine interact with this process?",
+    "options": [
+      "Ethanol blocks TRPV1 receptors, reducing the perception of heat",
+      "Ethanol is a TRPV1 agonist that lowers the receptor's activation threshold, intensifying the burning sensation",
+      "Ethanol converts capsaicin into a non-irritating compound",
+      "Ethanol has no interaction with TRPV1 receptors"
+    ],
+    "correct": 1,
+    "explanation": "Ethanol is a known TRPV1 agonist. It lowers the activation temperature of TRPV1 receptors from 43°C to approximately 34°C (below body temperature), which is why high-alcohol wines intensify the burn of spicy food. This is why lower-alcohol, off-dry wines work better with chili-based dishes.",
+    "sources": "Wine Science (Jamie Goode); Journal of Neuroscience research on TRPV1 and ethanol",
+    "confidence": "consensus",
+    "tags": [
+      "capsaicin",
+      "TRPV1",
+      "alcohol-interaction",
+      "spicy-food"
+    ]
+  },
+  {
+    "id": "FP-019",
+    "domain": "food_pairing",
+    "difficulty": 1750,
+    "level": 9,
+    "format": "scenario",
+    "question": "You are building a wine pairing for a dish of A5 Wagyu beef tataki with ponzu, daikon, and shiso. The wine list includes: (A) 2015 Burgundy Premier Cru, (B) 2018 Barossa Shiraz, (C) 2010 Champagne Vintage Brut, (D) 2016 Willamette Valley Pinot Noir. Which pairing best addresses ALL components?",
+    "options": [
+      "2015 Burgundy Premier Cru — its tertiary complexity matches the dish's layered flavors, acidity addresses ponzu, Burgundian earthiness complements shiso",
+      "2018 Barossa Shiraz — the richness matches Wagyu's marbling",
+      "2010 Champagne Vintage Brut — bubbles and age cut through Wagyu fat, acid mirrors ponzu citrus, toasty autolysis bridges to seared exterior",
+      "2016 Willamette Valley Pinot Noir — light enough for raw beef preparation"
+    ],
+    "correct": 2,
+    "explanation": "The aged vintage Champagne addresses every element: its persistent mousse and acid cut through A5 Wagyu's extreme marbling, the citrus notes mirror ponzu, the autolytic complexity (brioche, toast) bridges to the seared exterior of tataki, and its palate-cleansing ability resets between the rich beef and sharp daikon/shiso. This is a holistic, multi-dimensional pairing.",
+    "sources": "GuildSomm CMS Theory Exam Preparation; Oxford Companion to Wine (Robinson, Harding & Vouillamoz)",
+    "confidence": "consensus",
+    "tags": [
+      "wagyu",
+      "tataki",
+      "champagne",
+      "japanese-cuisine",
+      "advanced-pairing"
+    ]
+  },
+  {
+    "id": "FP-020",
+    "domain": "food_pairing",
+    "difficulty": 1900,
+    "level": 10,
+    "format": "multiple_choice",
+    "question": "In molecular gastronomy pairing theory, the 'food-bridge hypothesis' proposes that successful pairings share key volatile compounds. Which analytical technique is primarily used to identify these shared volatiles?",
+    "options": [
+      "Brix refractometry",
+      "Gas chromatography-mass spectrometry (GC-MS)",
+      "Spectrophotometric titration",
+      "Nephelometric turbidity measurement"
+    ],
+    "correct": 1,
+    "explanation": "GC-MS is the primary analytical tool for identifying volatile aromatic compounds in both wine and food. Researchers like François Benzi and others at INRA have used GC-MS to map shared volatiles between foods and wines, supporting the molecular pairing hypothesis that shared key odorants predict pairing success.",
+    "sources": "Wine Science (Jamie Goode); International Journal of Gastronomy and Food Science",
+    "confidence": "consensus",
+    "tags": [
+      "molecular-pairing",
+      "GC-MS",
+      "food-bridge-hypothesis",
+      "analytical-chemistry"
+    ]
+  },
+  {
+    "id": "FP-021",
+    "domain": "food_pairing",
+    "difficulty": 150,
+    "level": 1,
+    "format": "multiple_choice",
+    "question": "Which is the most important rule when pairing wine with dessert?",
+    "options": [
+      "The wine should always be red",
+      "The wine should be at least as sweet as the dessert",
+      "The wine should be as dry as possible",
+      "The wine should be served warm"
+    ],
+    "correct": 1,
+    "explanation": "If the dessert is sweeter than the wine, the wine will taste thin, bitter, and sour by comparison. The wine must match or exceed the sweetness level of the dish to maintain balance.",
+    "sources": "WSET Level 2 Study Guide; The Wine Bible (Karen MacNeil)",
+    "confidence": "established",
+    "tags": [
+      "dessert-pairing",
+      "sweetness",
+      "basic-principles"
+    ]
+  },
+  {
+    "id": "FP-022",
+    "domain": "food_pairing",
+    "difficulty": 450,
+    "level": 2,
+    "format": "scenario",
+    "question": "A guest orders a Caesar salad as their starter. Which wine should you suggest?",
+    "options": [
+      "Barolo",
+      "Verdicchio dei Castelli di Jesi",
+      "Vintage Port",
+      "Napa Valley Cabernet Sauvignon"
+    ],
+    "correct": 1,
+    "explanation": "Caesar salad features anchovy (umami), Parmesan (umami), lemon (acid), and lettuce (bitter). Verdicchio's bright acidity, saline mineral quality, and light body complement all these elements without clashing. Heavy tannic wines would taste harsh against the umami and vinaigrette.",
+    "sources": "GuildSomm Pairing Database; The Wine Bible (Karen MacNeil)",
+    "confidence": "established",
+    "tags": [
+      "salad-pairing",
+      "umami",
+      "verdicchio"
+    ]
+  },
+  {
+    "id": "FP-023",
+    "domain": "food_pairing",
+    "difficulty": 600,
+    "level": 3,
+    "format": "multiple_choice",
+    "question": "Which cheese category generally pairs best with tannic red wines?",
+    "options": [
+      "Fresh cheeses like mozzarella",
+      "Hard aged cheeses like aged Cheddar or Manchego",
+      "Blue cheeses like Stilton",
+      "Bloomy rind cheeses like Brie"
+    ],
+    "correct": 1,
+    "explanation": "Hard aged cheeses have concentrated protein and fat content that binds with and softens tannins. Their lower moisture content and nutty, caramelized flavors complement the structural components of tannic reds. Blue cheeses clash with tannins due to high umami, and fresh/bloomy cheeses lack the intensity.",
+    "sources": "Oxford Companion to Wine (Robinson, Harding & Vouillamoz); WSET Level 3 Study Guide",
+    "confidence": "established",
+    "tags": [
+      "cheese-pairing",
+      "tannin-protein",
+      "hard-cheese"
+    ]
+  },
+  {
+    "id": "FP-024",
+    "domain": "food_pairing",
+    "difficulty": 750,
+    "level": 4,
+    "format": "multiple_choice",
+    "question": "Why does Champagne pair so well with potato chips?",
+    "options": [
+      "The sugar in Champagne balances the salt",
+      "The high acidity and effervescence cut through fat and salt while the yeast autolysis notes complement fried starch",
+      "Champagne's tannins bind with the potato proteins",
+      "The cool serving temperature numbs the palate to the salt"
+    ],
+    "correct": 1,
+    "explanation": "Champagne's high acidity and CO2 effervescence physically scrub fat from the palate, while the salt on chips enhances the wine's fruit perception. Additionally, autolytic notes (toasty, brioche-like flavors from lees aging) bridge to the fried, starchy flavors of the chips.",
+    "sources": "Wine Science (Jamie Goode); GuildSomm Pairing Theory",
+    "confidence": "established",
+    "tags": [
+      "champagne",
+      "fried-food",
+      "effervescence",
+      "salt"
+    ]
+  },
+  {
+    "id": "FP-025",
+    "domain": "food_pairing",
+    "difficulty": 850,
+    "level": 4,
+    "format": "match_pairs",
+    "question": "Match each regional cheese with its classic regional wine partner.",
+    "pairs": {
+      "left": [
+        "Roquefort (Aveyron)",
+        "Époisses (Burgundy)",
+        "Manchego (La Mancha)",
+        "Parmigiano-Reggiano (Emilia-Romagna)"
+      ],
+      "right": [
+        "Lambrusco",
+        "Sauternes",
+        "Chablis or Meursault",
+        "Tempranillo Reserva"
+      ]
+    },
+    "correct": [
+      1,
+      2,
+      3,
+      0
+    ],
+    "explanation": "Roquefort with Sauternes is a legendary sweet-salty contrast pairing from neighboring French regions. Époisses from Burgundy pairs with Burgundian whites. Manchego and Tempranillo are both La Mancha staples. Parmigiano-Reggiano and Lambrusco are an Emilian tradition — the sparkling wine's acidity cuts the cheese's umami intensity.",
+    "sources": "World Atlas of Wine (Johnson & Robinson); Oxford Companion to Wine (Robinson, Harding & Vouillamoz)",
+    "confidence": "established",
+    "tags": [
+      "cheese-pairing",
+      "regional-pairing",
+      "what-grows-together"
+    ]
+  },
+  {
+    "id": "FP-026",
+    "domain": "food_pairing",
+    "difficulty": 1000,
+    "level": 5,
+    "format": "odd_one_out",
+    "question": "Which pairing strategy is NOT appropriate for a dish with high chili heat?",
+    "options": [
+      "Choose a wine with residual sugar",
+      "Choose a wine with low alcohol",
+      "Choose a wine with high tannin and high alcohol",
+      "Choose a wine with aromatic intensity to compete with spice aromatics"
+    ],
+    "correct": 2,
+    "explanation": "High-tannin, high-alcohol wines are the worst choice for chili-spiced foods. Alcohol intensifies the burn of capsaicin (via TRPV1 receptor activation), and tannins add astringent bitterness that compounds the irritation. Residual sugar, low alcohol, and aromatic intensity all help manage heat.",
+    "sources": "Wine Science (Jamie Goode); WSET Level 3 Study Guide",
+    "confidence": "established",
+    "tags": [
+      "spicy-food",
+      "capsaicin",
+      "alcohol",
+      "tannin"
+    ]
+  },
+  {
+    "id": "FP-027",
+    "domain": "food_pairing",
+    "difficulty": 1150,
+    "level": 6,
+    "format": "scenario",
+    "question": "A guest requests a wine pairing for bone marrow on toast with parsley and caper salad. Which wine best addresses both the rich marrow and the bright condiment?",
+    "options": [
+      "Cru Beaujolais (Morgon) — fruity enough for marrow, acid for capers",
+      "South African Chenin Blanc — tropical fruit overwhelms the dish",
+      "Châteauneuf-du-Pape — its earthy richness and moderate acid bridges marrow and herbal salad, with enough structure for the fat",
+      "German Riesling Kabinett — too light for the richness of marrow"
+    ],
+    "correct": 2,
+    "explanation": "Châteauneuf-du-Pape's combination of earthy garrigue (herbs, lavender) notes echoes the parsley/caper garnish, while its full body and moderate tannins stand up to the extreme richness of bone marrow. The wine's savory, herb-inflected profile creates a bridge between the two contrasting elements on the plate.",
+    "sources": "GuildSomm Advanced Pairing Theory; The Wine Bible (Karen MacNeil)",
+    "confidence": "established",
+    "tags": [
+      "bone-marrow",
+      "chateauneuf-du-pape",
+      "bridge-ingredient",
+      "rich-dishes"
+    ]
+  },
+  {
+    "id": "FP-028",
+    "domain": "food_pairing",
+    "difficulty": 1250,
+    "level": 6,
+    "format": "multiple_choice",
+    "question": "What is the role of salivary proline-rich proteins (PRPs) in the perception of food and wine pairings involving tannins?",
+    "options": [
+      "PRPs enhance tannin perception, making wines taste more astringent with food",
+      "PRPs bind and precipitate tannins, causing the drying sensation of astringency; fatty foods compete for this binding, reducing perceived astringency",
+      "PRPs convert tannins into flavor-active compounds",
+      "PRPs have no role in tannin perception"
+    ],
+    "correct": 1,
+    "explanation": "Salivary PRPs normally lubricate the mouth. Tannins bind to and precipitate these proteins, causing the dry, astringent sensation. When fatty, protein-rich foods are consumed simultaneously, food proteins compete with salivary PRPs for tannin binding, leaving more PRPs available for lubrication and reducing perceived astringency.",
+    "sources": "Wine Science (Jamie Goode); Oxford Companion to Wine (Robinson, Harding & Vouillamoz)",
+    "confidence": "established",
+    "tags": [
+      "salivary-proteins",
+      "tannin",
+      "astringency",
+      "science"
+    ]
+  },
+  {
+    "id": "FP-029",
+    "domain": "food_pairing",
+    "difficulty": 1350,
+    "level": 7,
+    "format": "multiple_choice",
+    "question": "Regarding the Maillard reaction and wine pairing, which statement is most accurate?",
+    "options": [
+      "Maillard products in grilled foods have no impact on wine pairing decisions",
+      "Maillard reaction products (pyrazines, furanones, thiazoles) in seared foods create aromatic bridges to barrel-aged wines that contain similar compounds from oak toasting",
+      "The Maillard reaction only occurs in food and never in wine production",
+      "Maillard products make all foods pair exclusively with white wines"
+    ],
+    "correct": 1,
+    "explanation": "The Maillard reaction in seared/grilled foods produces heterocyclic compounds (pyrazines, furanones) that overlap with compounds generated during oak barrel toasting. This shared chemistry creates aromatic bridges between grilled dishes and barrel-aged wines, explaining why grilled steak pairs so well with oaked Cabernet.",
+    "sources": "Wine Science (Jamie Goode); GuildSomm Advanced Sensory Science",
+    "confidence": "established",
+    "tags": [
+      "maillard-reaction",
+      "oak-aging",
+      "aromatic-bridge",
+      "grilling"
+    ]
+  },
+  {
+    "id": "FP-030",
+    "domain": "food_pairing",
+    "difficulty": 1550,
+    "level": 8,
+    "format": "odd_one_out",
+    "question": "Which compound is NOT relevant to understanding why certain wines pair well with mushroom-based dishes?",
+    "options": [
+      "1-Octen-3-ol (mushroom alcohol, found in both Pinot Noir and mushrooms)",
+      "Sotolone (found in oxidized wines and some fungi)",
+      "Methoxypyrazines (green bell pepper note from unripe grapes)",
+      "Dimethyl sulfide at low levels (earthy, truffle-like, found in aged wines)"
+    ],
+    "correct": 2,
+    "explanation": "Methoxypyrazines produce green, vegetal notes (bell pepper, grass) associated with unripe Cabernet Sauvignon family grapes — not mushroom aromatics. The other three compounds all have mushroom/earthy/truffle aromatic qualities that create genuine molecular bridges between wine and mushroom dishes.",
+    "sources": "Wine Science (Jamie Goode); Oxford Companion to Wine (Robinson, Harding & Vouillamoz)",
+    "confidence": "consensus",
+    "tags": [
+      "volatile-compounds",
+      "mushroom",
+      "1-octen-3-ol",
+      "molecular-pairing"
+    ]
+  },
+  {
+    "id": "FP-031",
+    "domain": "food_pairing",
+    "difficulty": 1650,
+    "level": 8,
+    "format": "scenario",
+    "question": "You are pairing wines for a multi-course tasting featuring sea urchin with yuzu, followed by squab with cherry jus, then aged Gruyère with honeycomb. The sommelier team proposes: Course 1: Fino Sherry, Course 2: Cornas (Northern Rhône Syrah), Course 3: Jurançon moelleux. What is the flaw in this progression?",
+    "options": [
+      "The wines are too expensive for the menu price point",
+      "The progression is flawless and demonstrates ideal pairing logic",
+      "Fino Sherry is too oxidative for delicate sea urchin — a young, reductive Chablis or Muscadet would better serve the course",
+      "The jump from Fino Sherry's salinity to Cornas's power is too abrupt — an intermediate white or light red course should bridge them"
+    ],
+    "correct": 3,
+    "explanation": "While each individual pairing has merit, the progression fails in its lack of a transition between the light, saline Fino and the powerful, tannic Cornas. A well-designed wine progression should have no jarring jumps. An intermediate wine (e.g., aged white Burgundy or lighter Rhône red) would create a smoother arc.",
+    "sources": "GuildSomm CMS Theory Exam Preparation; Court of Master Sommeliers Study Materials",
+    "confidence": "consensus",
+    "tags": [
+      "progression",
+      "multi-course",
+      "sommelier-theory",
+      "service-flow"
+    ]
+  },
+  {
+    "id": "FP-032",
+    "domain": "food_pairing",
+    "difficulty": 1800,
+    "level": 9,
+    "format": "multiple_choice",
+    "question": "Research on trigeminal interactions shows that carbonation in sparkling wine activates which receptor, and how does this affect pairing with fatty foods?",
+    "options": [
+      "TRPA1 receptors — carbonation creates a cooling sensation that numbs fat perception",
+      "Carbonic anhydrase converts CO2 to carbonic acid on the tongue, stimulating acid-sensing ion channels (ASICs) and mechanoreceptors, physically and chemically cleansing fatty coatings from oral surfaces",
+      "TRPM8 receptors — the same pathway as menthol, creating a fresh sensation",
+      "Piezo2 receptors only — purely a mechanical scrubbing action with no chemical component"
+    ],
+    "correct": 1,
+    "explanation": "CO2 in sparkling wine is converted to carbonic acid by carbonic anhydrase enzymes on the tongue, stimulating both chemical (ASICs) and mechanical receptors. This dual action physically disrupts lipid films on oral surfaces and chemically stimulates saliva production, making sparkling wine exceptionally effective at cutting through fatty foods.",
+    "sources": "Wine Science (Jamie Goode); Journal of Sensory Studies on oral trigeminal responses",
+    "confidence": "consensus",
+    "tags": [
+      "carbonation",
+      "trigeminal",
+      "sparkling-wine",
+      "fat-interaction",
+      "science"
+    ]
+  },
+  {
+    "id": "FP-033",
+    "domain": "food_pairing",
+    "difficulty": 2000,
+    "level": 10,
+    "format": "multiple_choice",
+    "question": "In studies of retronasal olfaction during food-wine interaction, what phenomenon explains why a pairing can create entirely new aromas not present in either the food or wine alone?",
+    "options": [
+      "Olfactory fatigue causes the brain to invent new smells",
+      "Perceptual blending and suppression — when volatiles from food and wine merge in the retronasal cavity, the brain can synthesize novel percepts through configural processing, perceiving the mixture as a new odor object rather than its components",
+      "The tongue's taste receptors can detect aromatic compounds when mixed with saliva",
+      "New chemical compounds are literally created through enzymatic reactions in the mouth"
+    ],
+    "correct": 1,
+    "explanation": "Retronasal olfactory research shows that when food and wine volatiles co-arrive at olfactory receptors, configural processing can create emergent odor percepts — new aromas that don't exist in either component alone. This phenomenon, studied by researchers like Gordon Shepherd, explains why great pairings produce a 'third flavor' experience.",
+    "sources": "Wine Science (Jamie Goode); Neurogastronomy (Gordon Shepherd)",
+    "confidence": "consensus",
+    "tags": [
+      "retronasal-olfaction",
+      "configural-processing",
+      "neurogastronomy",
+      "advanced-science"
+    ]
+  },
+  {
+    "id": "FP-034",
+    "domain": "food_pairing",
+    "difficulty": 300,
+    "level": 1,
+    "format": "multiple_choice",
+    "question": "Which wine style generally pairs best with spicy Thai green curry?",
+    "options": [
+      "Dry, tannic Cabernet Sauvignon",
+      "Off-dry Riesling",
+      "Full-bodied oaked Chardonnay",
+      "Dry rosé from Provence"
+    ],
+    "correct": 1,
+    "explanation": "Off-dry Riesling's residual sugar helps tame the chili heat, its low alcohol avoids intensifying the burn, and its bright acidity provides a refreshing counterpoint to the rich coconut milk base of Thai green curry.",
+    "sources": "The Wine Bible (Karen MacNeil); WSET Level 2 Study Guide",
+    "confidence": "established",
+    "tags": [
+      "spicy-food",
+      "riesling",
+      "thai-cuisine"
+    ]
+  },
+  {
+    "id": "FP-035",
+    "domain": "food_pairing",
+    "difficulty": 1850,
+    "level": 9,
+    "format": "odd_one_out",
+    "question": "Which interaction is NOT a documented mechanism by which food modifies wine perception?",
+    "options": [
+      "Fat reducing perceived astringency through competitive protein binding",
+      "Salt suppressing bitterness and enhancing fruit perception",
+      "Umami amplifying perceived bitterness and astringency in tannic wines",
+      "Capsaicin directly denaturing anthocyanin pigments in red wine, reducing color intensity"
+    ],
+    "correct": 3,
+    "explanation": "Capsaicin does not denature anthocyanins. Its interaction with wine is purely perceptual (via TRPV1 receptor agonism and trigeminal nerve stimulation). The other three are well-documented mechanisms: fat-tannin competition for salivary proteins, salt's suppression of bitter taste, and umami's amplification of astringency.",
+    "sources": "Wine Science (Jamie Goode); GuildSomm Advanced Sensory Science",
+    "confidence": "consensus",
+    "tags": [
+      "food-wine-interaction",
+      "capsaicin",
+      "anthocyanins",
+      "sensory-science"
+    ]
+  },
+  {
+    "id": "FP-036",
+    "domain": "food_pairing",
+    "difficulty": 2100,
+    "level": 10,
+    "format": "scenario",
+    "question": "A Master Sommelier candidate must pair a single wine with a dish of seared diver scallop, cauliflower purée, brown butter, capers, raisins, and pine nuts. Considering textural weight, acid balance, aromatic bridges, and sweet-savory interplay, which wine shows the deepest understanding?",
+    "options": [
+      "NV Krug Grande Cuvée — weight and autolytic complexity for scallop, acid for brown butter, oxidative notes for capers",
+      "Mature Savennières (Chenin Blanc) — waxy texture mirrors brown butter, quince/honey notes bridge to raisins, high acid cuts richness, saline mineral finish echoes capers",
+      "Meursault Premier Cru — weight matches the dish but lacks aromatic bridges to raisins and capers",
+      "Condrieu (Viognier) — stone fruit aromatics for the raisins but too low in acid for the brown butter richness"
+    ],
+    "correct": 1,
+    "explanation": "Mature Savennières addresses every component: its waxy, lanolin texture parallels brown butter; its aged quince/honey aromatics bridge to golden raisins; its piercing acid handles the richness; its flinty, saline minerality echoes capers; and its medium-plus body matches the scallop's weight. This demonstrates the Master Sommelier-level ability to find a single wine that creates multiple bridges across a complex dish.",
+    "sources": "Court of Master Sommeliers Study Materials; GuildSomm CMS Theory Exam Preparation",
+    "confidence": "consensus",
+    "tags": [
+      "savennieres",
+      "multi-component-pairing",
+      "MS-exam",
+      "scallop"
+    ]
+  },
+  {
+    "id": "FP-037",
+    "domain": "food_pairing",
+    "difficulty": 2200,
+    "level": 10,
+    "format": "match_pairs",
+    "question": "Match each volatile compound bridge to the correct food-wine pairing it explains.",
+    "pairs": {
+      "left": [
+        "Rotundone (peppery)",
+        "4-MMP / 3-MH (tropical thiol)",
+        "Linalool (floral/citrus)",
+        "Diacetyl (buttery)"
+      ],
+      "right": [
+        "Malolactic Chardonnay with lobster in butter sauce",
+        "Northern Rhône Syrah with black pepper-crusted venison",
+        "Sancerre with passion fruit pavlova",
+        "Muscat with elderflower and lychee dessert"
+      ]
+    },
+    "correct": [
+      1,
+      2,
+      3,
+      0
+    ],
+    "explanation": "Rotundone is the sesquiterpene responsible for black pepper aroma in both Syrah and peppercorns. 4-MMP/3-MH are polyfunctional thiols giving tropical (passion fruit) character to Sauvignon Blanc. Linalool is a monoterpene shared by Muscat, elderflower, and lychee. Diacetyl is produced during malolactic fermentation and mirrors the butter in the dish.",
+    "sources": "Wine Science (Jamie Goode); Oxford Companion to Wine (Robinson, Harding & Vouillamoz)",
+    "confidence": "consensus",
+    "tags": [
+      "volatile-compounds",
+      "rotundone",
+      "thiols",
+      "linalool",
+      "diacetyl",
+      "molecular-pairing"
+    ]
+  },
+  {
+    "id": "FP-038",
+    "domain": "food_pairing",
+    "difficulty": 1450,
+    "level": 7,
+    "format": "scenario",
+    "question": "A guest wants to pair wine with a Thanksgiving meal featuring roast turkey, cranberry sauce, sweet potato casserole, and green bean casserole. Which single bottle addresses the broadest range of these dishes?",
+    "options": [
+      "Alsace Pinot Gris Vendange Tardive — too sweet for savory dishes",
+      "Willamette Valley Pinot Noir — red fruit echoes cranberry, moderate tannin suits turkey protein, earth complements root vegetables, acid cuts through casserole richness",
+      "Argentine Malbec — too tannic for turkey breast",
+      "Mosel Riesling Spätlese — acid and sweetness help but lacks body for the meal's overall weight"
+    ],
+    "correct": 1,
+    "explanation": "Oregon Pinot Noir is a Thanksgiving workhorse: its red fruit aromatics bridge to cranberry sauce, moderate tannins complement turkey without overwhelming white meat, its earthiness echoes root vegetables, and its bright acidity handles the richness of casseroles. Its medium body matches the meal's moderate weight.",
+    "sources": "The Wine Bible (Karen MacNeil); GuildSomm Pairing Database",
+    "confidence": "established",
+    "tags": [
+      "thanksgiving",
+      "pinot-noir",
+      "turkey",
+      "multi-dish-pairing"
+    ]
+  },
+  {
+    "id": "FP-039",
+    "domain": "food_pairing",
+    "difficulty": 100,
+    "level": 1,
+    "format": "multiple_choice",
+    "question": "What is the simplest guideline for matching wine weight to food weight?",
+    "options": [
+      "Always serve red wine with every dish",
+      "Match light wines with light dishes and full-bodied wines with rich dishes",
+      "Always serve the most expensive wine available",
+      "Pair only by color: white wine with white food, red wine with red food"
+    ],
+    "correct": 1,
+    "explanation": "The most fundamental pairing principle is matching the weight (body) of the wine to the weight of the dish. A delicate Pinot Grigio would be overwhelmed by a beef stew, just as a powerful Barolo would overpower a simple green salad.",
+    "sources": "WSET Level 2 Study Guide; The Wine Bible (Karen MacNeil)",
+    "confidence": "established",
+    "tags": [
+      "basic-principles",
+      "weight-matching",
+      "beginner"
+    ]
+  },
+  {
+    "id": "FP-040",
+    "domain": "food_pairing",
+    "difficulty": 1700,
+    "level": 9,
+    "format": "multiple_choice",
+    "question": "In the context of multi-sensory perception, how does the visual presentation of a dish influence wine pairing perception according to crossmodal correspondence research?",
+    "options": [
+      "Visual presentation has no effect on flavor perception",
+      "Round plate shapes and warm-colored plating enhance perception of sweetness and fruitiness in paired wines, while angular presentations enhance perceived acidity and bitterness, affecting pairing satisfaction through crossmodal correspondences",
+      "Only the color of the wine glass matters",
+      "Visual cues only affect aroma, not taste perception"
+    ],
+    "correct": 1,
+    "explanation": "Crossmodal research by Charles Spence and others demonstrates that visual cues (plate shape, color, presentation geometry) systematically influence taste and flavor perception. Round shapes and warm colors prime sweetness/fruitiness, while angular shapes and cool colors prime acidity/bitterness. Sommeliers at the highest level consider these presentation factors.",
+    "sources": "Wine Science (Jamie Goode); Gastrophysics (Charles Spence)",
+    "confidence": "consensus",
+    "tags": [
+      "crossmodal",
+      "multi-sensory",
+      "visual-perception",
+      "neurogastronomy"
+    ]
+  },
+  {
+    "id": "HC-001",
+    "domain": "history_culture",
+    "difficulty": 150,
+    "level": 1,
+    "format": "multiple_choice",
+    "question": "What devastating vine pest arrived in Europe in the 1860s, destroying most of the continent's vineyards?",
+    "options": [
+      "Oidium (powdery mildew)",
+      "Phylloxera",
+      "Downy mildew",
+      "Pierce's disease"
+    ],
+    "correct": 1,
+    "explanation": "Phylloxera (Dactylosphaera vitifoliae), a root-feeding aphid native to eastern North America, was accidentally introduced to Europe around 1863. It devastated European vineyards because Vitis vinifera had no natural resistance, ultimately destroying roughly two-thirds of European vineyards.",
+    "sources": "Oxford Companion to Wine (Robinson, Harding & Vouillamoz); The Wine Bible (Karen MacNeil)",
+    "confidence": "established",
+    "tags": [
+      "phylloxera",
+      "19th-century",
+      "vine-pests"
+    ]
+  },
+  {
+    "id": "HC-002",
+    "domain": "history_culture",
+    "difficulty": 200,
+    "level": 1,
+    "format": "multiple_choice",
+    "question": "Which event in 1976 shocked the wine world by having California wines beat French wines in a blind tasting?",
+    "options": [
+      "The Berlin Tasting",
+      "The Judgment of Paris",
+      "The Spurrier Challenge",
+      "The Napa Showdown"
+    ],
+    "correct": 1,
+    "explanation": "The Judgment of Paris, organized by British wine merchant Steven Spurrier on May 24, 1976, saw a Napa Valley Chardonnay (Chateau Montelena 1973) and Cabernet Sauvignon (Stag's Leap 1973) defeat top Burgundy and Bordeaux wines in a blind tasting judged by French experts.",
+    "sources": "Oxford Companion to Wine (Robinson, Harding & Vouillamoz); The Wine Bible (Karen MacNeil)",
+    "confidence": "established",
+    "tags": [
+      "judgment-of-paris",
+      "california",
+      "1976"
+    ]
+  },
+  {
+    "id": "HC-003",
+    "domain": "history_culture",
+    "difficulty": 300,
+    "level": 1,
+    "format": "odd_one_out",
+    "question": "Which of these was NOT a first-growth (Premier Cru) in the original 1855 Bordeaux Classification?",
+    "options": [
+      "Château Lafite Rothschild",
+      "Château Latour",
+      "Château Pétrus",
+      "Château Margaux"
+    ],
+    "correct": 2,
+    "explanation": "The 1855 Classification covered Médoc (plus Haut-Brion from Graves). Château Pétrus is in Pomerol, which was never part of the 1855 Classification. The four original first growths were Lafite, Latour, Margaux, and Haut-Brion. Mouton Rothschild was elevated to first-growth status in 1973.",
+    "sources": "Oxford Companion to Wine (Robinson, Harding & Vouillamoz); World Atlas of Wine (Johnson & Robinson)",
+    "confidence": "established",
+    "tags": [
+      "1855-classification",
+      "bordeaux",
+      "premier-cru"
+    ]
+  },
+  {
+    "id": "HC-004",
+    "domain": "history_culture",
+    "difficulty": 350,
+    "level": 2,
+    "format": "multiple_choice",
+    "question": "Which country is considered the birthplace of winemaking, with evidence of viticulture dating back approximately 8,000 years?",
+    "options": [
+      "Greece",
+      "Italy",
+      "Georgia",
+      "France"
+    ],
+    "correct": 2,
+    "explanation": "Archaeological evidence from the South Caucasus region of Georgia, including residue analysis from clay vessels (qvevri) at the Gadachrili Gora site, dates winemaking to approximately 6000 BCE, making Georgia the oldest known site of deliberate wine production.",
+    "sources": "Oxford Companion to Wine (Robinson, Harding & Vouillamoz); PNAS (Proceedings of the National Academy of Sciences) 2017 study on early Georgian winemaking",
+    "confidence": "established",
+    "tags": [
+      "georgia",
+      "qvevri",
+      "ancient-winemaking",
+      "origins"
+    ]
+  },
+  {
+    "id": "HC-005",
+    "domain": "history_culture",
+    "difficulty": 400,
+    "level": 2,
+    "format": "scenario",
+    "question": "A guest asks whether Dom Pérignon really 'invented' Champagne. What is the historically accurate response?",
+    "options": [
+      "Yes, he invented the méthode champenoise in 1693",
+      "No — sparkling wine in Champagne developed gradually; Dom Pérignon actually worked to PREVENT bubbles but contributed advances in blending, pressing, and quality",
+      "He invented Champagne but the English discovered it independently at the same time",
+      "He only invented the wire cage (muselet) for the cork"
+    ],
+    "correct": 1,
+    "explanation": "The Dom Pérignon myth is widely debunked. As cellar master at Hautvillers Abbey (1668-1715), he actually tried to eliminate bubbles, which were considered a fault. His real contributions were pioneering blending of different vineyard parcels, improving pressing techniques for white juice from red grapes, and advancing cork usage. English scientist Christopher Merret documented adding sugar for secondary fermentation in 1662, before Pérignon's tenure.",
+    "sources": "Oxford Companion to Wine (Robinson, Harding & Vouillamoz); The Wine Bible (Karen MacNeil)",
+    "confidence": "established",
+    "tags": [
+      "champagne",
+      "dom-perignon",
+      "myths",
+      "history"
+    ]
+  },
+  {
+    "id": "HC-006",
+    "domain": "history_culture",
+    "difficulty": 450,
+    "level": 2,
+    "format": "match_pairs",
+    "question": "Match each wine law milestone with its country and approximate year.",
+    "pairs": {
+      "left": [
+        "AOC system creation",
+        "DOC system creation",
+        "AVA system creation",
+        "Denominación de Origen system creation"
+      ],
+      "right": [
+        "Spain, 1932",
+        "France, 1935",
+        "Italy, 1963",
+        "United States, 1980"
+      ],
+      "correct": [
+        1,
+        2,
+        3,
+        0
+      ]
+    },
+    "correct": [
+      1,
+      2,
+      3,
+      0
+    ],
+    "explanation": "France's AOC (Appellation d'Origine Contrôlée) was established in 1935 under INAO. Italy's DOC (Denominazione di Origine Controllata) followed in 1963. The US AVA (American Viticultural Area) system began in 1980. Spain's DO system was actually established in 1932, making it technically the earliest of these four.",
+    "sources": "Oxford Companion to Wine (Robinson, Harding & Vouillamoz); World Atlas of Wine (Johnson & Robinson)",
+    "confidence": "established",
+    "tags": [
+      "wine-law",
+      "AOC",
+      "DOC",
+      "AVA",
+      "DO"
+    ]
+  },
+  {
+    "id": "HC-007",
+    "domain": "history_culture",
+    "difficulty": 500,
+    "level": 3,
+    "format": "multiple_choice",
+    "question": "What was the primary solution that saved European viticulture from phylloxera?",
+    "options": [
+      "Chemical fumigation of all vineyards",
+      "Grafting European Vitis vinifera vines onto resistant American rootstocks",
+      "Developing genetically modified vinifera vines",
+      "Flooding vineyards permanently to drown the aphid"
+    ],
+    "correct": 1,
+    "explanation": "The eventual solution was grafting Vitis vinifera (European wine grape) scions onto rootstocks of American vine species (V. riparia, V. rupestris, V. berlandieri), which had evolved natural resistance to phylloxera. This practice continues today and is standard in most wine regions worldwide.",
+    "sources": "Oxford Companion to Wine (Robinson, Harding & Vouillamoz); Wine Science (Jamie Goode)",
+    "confidence": "established",
+    "tags": [
+      "phylloxera",
+      "grafting",
+      "rootstock",
+      "viticulture"
+    ]
+  },
+  {
+    "id": "HC-008",
+    "domain": "history_culture",
+    "difficulty": 550,
+    "level": 3,
+    "format": "multiple_choice",
+    "question": "What role did Louis Pasteur play in the history of wine?",
+    "options": [
+      "He invented the wine press",
+      "He discovered that fermentation was caused by living microorganisms (yeast), not spontaneous chemical reactions, and developed pasteurization to prevent wine spoilage",
+      "He created the first Bordeaux classification",
+      "He was the first to bring Vitis vinifera to the Americas"
+    ],
+    "correct": 1,
+    "explanation": "In the 1850s-60s, Louis Pasteur demonstrated that fermentation was a biological process driven by yeast, not merely a chemical reaction. His work in Études sur le vin (1866) also identified bacteria as the cause of wine spoilage, leading to pasteurization. This revolutionized winemaking science.",
+    "sources": "Oxford Companion to Wine (Robinson, Harding & Vouillamoz); Wine Science (Jamie Goode)",
+    "confidence": "established",
+    "tags": [
+      "pasteur",
+      "fermentation",
+      "science-history",
+      "pasteurization"
+    ]
+  },
+  {
+    "id": "HC-009",
+    "domain": "history_culture",
+    "difficulty": 650,
+    "level": 3,
+    "format": "odd_one_out",
+    "question": "Which figure was NOT directly instrumental in the development of California's modern wine industry?",
+    "options": [
+      "André Tchelistcheff",
+      "Robert Mondavi",
+      "Baron Philippe de Rothschild",
+      "Agoston Haraszthy"
+    ],
+    "correct": 2,
+    "explanation": "Baron Philippe de Rothschild was a pivotal figure in Bordeaux (Mouton Rothschild), not California. André Tchelistcheff revolutionized Napa winemaking at Beaulieu Vineyard from 1938. Robert Mondavi founded his iconic winery in 1966. Agoston Haraszthy is considered the father of California viticulture, importing European varieties in the 1850s-60s.",
+    "sources": "The Wine Bible (Karen MacNeil); Oxford Companion to Wine (Robinson, Harding & Vouillamoz)",
+    "confidence": "established",
+    "tags": [
+      "california",
+      "tchelistcheff",
+      "mondavi",
+      "haraszthy"
+    ]
+  },
+  {
+    "id": "HC-010",
+    "domain": "history_culture",
+    "difficulty": 700,
+    "level": 4,
+    "format": "multiple_choice",
+    "question": "US Prohibition (1920-1933) devastated the American wine industry, but which legal loophole allowed some winemaking to continue?",
+    "options": [
+      "Wines under 5% ABV were exempt",
+      "The Volstead Act permitted production of up to 200 gallons per household per year for personal use of 'non-intoxicating fruit juice'",
+      "All religious wine was banned without exception",
+      "Only imported wine was legal during Prohibition"
+    ],
+    "correct": 1,
+    "explanation": "Section 29 of the Volstead Act allowed heads of household to produce up to 200 gallons of 'non-intoxicating cider and fruit juices' per year. This loophole was exploited for home winemaking, and grape shipments to home winemakers actually increased during Prohibition. Sacramental wine production was also permitted for religious use.",
+    "sources": "Oxford Companion to Wine (Robinson, Harding & Vouillamoz); The Wine Bible (Karen MacNeil)",
+    "confidence": "established",
+    "tags": [
+      "prohibition",
+      "volstead-act",
+      "american-history"
+    ]
+  },
+  {
+    "id": "HC-011",
+    "domain": "history_culture",
+    "difficulty": 800,
+    "level": 4,
+    "format": "match_pairs",
+    "question": "Match each ancient civilization with its primary contribution to wine history.",
+    "pairs": {
+      "left": [
+        "Ancient Georgians (~6000 BCE)",
+        "Phoenicians (~1000 BCE)",
+        "Ancient Romans",
+        "Medieval monks (Cistercians/Benedictines)"
+      ],
+      "right": [
+        "Systematic vineyard classification and terroir mapping (e.g., Burgundy crus)",
+        "Earliest known deliberate winemaking in qvevri",
+        "Spread vine cuttings across the Mediterranean trade routes",
+        "Large-scale viticulture, amphorae trade, and documented varietal preferences"
+      ]
+    },
+    "correct": [
+      1,
+      2,
+      3,
+      0
+    ],
+    "explanation": "Georgians pioneered qvevri winemaking (~6000 BCE). Phoenician traders spread viticulture across the Mediterranean. Romans industrialized wine production and documented grape varieties and vineyard practices. Cistercian and Benedictine monks meticulously mapped terroir in Burgundy, creating the cru classification system.",
+    "sources": "Oxford Companion to Wine (Robinson, Harding & Vouillamoz); World Atlas of Wine (Johnson & Robinson)",
+    "confidence": "established",
+    "tags": [
+      "ancient-winemaking",
+      "georgia",
+      "phoenicians",
+      "romans",
+      "monks"
+    ]
+  },
+  {
+    "id": "HC-012",
+    "domain": "history_culture",
+    "difficulty": 850,
+    "level": 4,
+    "format": "scenario",
+    "question": "A guest asks why Château Mouton Rothschild was not originally classified as a First Growth in 1855. What is the correct historical explanation?",
+    "options": [
+      "The owner refused to participate in the classification",
+      "Mouton was a Second Growth in 1855; after decades of lobbying by Baron Philippe de Rothschild, it was elevated to First Growth in 1973 — the only change ever made to the original classification",
+      "Mouton did not exist in 1855",
+      "Mouton was in Graves, which was excluded from the 1855 classification"
+    ],
+    "correct": 1,
+    "explanation": "Mouton was classified as the top of the Second Growths in 1855. Baron Philippe de Rothschild famously campaigned for decades for promotion, adopting the motto 'Premier ne puis, second ne daigne, Mouton suis' (First I cannot be, second I do not deign to be, Mouton I am). In 1973, it was officially elevated to Premier Cru — the only reclassification in the system's history.",
+    "sources": "Oxford Companion to Wine (Robinson, Harding & Vouillamoz); World Atlas of Wine (Johnson & Robinson)",
+    "confidence": "established",
+    "tags": [
+      "1855-classification",
+      "mouton-rothschild",
+      "bordeaux",
+      "baron-philippe"
+    ]
+  },
+  {
+    "id": "HC-013",
+    "domain": "history_culture",
+    "difficulty": 950,
+    "level": 5,
+    "format": "multiple_choice",
+    "question": "Which specific wines won in each category at the 1976 Judgment of Paris?",
+    "options": [
+      "Ridge Monte Bello (red) and Freemark Abbey (white)",
+      "Stag's Leap Wine Cellars 1973 S.L.V. Cabernet Sauvignon (red) and Chateau Montelena 1973 Chardonnay (white)",
+      "Opus One (red) and Robert Mondavi Fumé Blanc (white)",
+      "Heitz Martha's Vineyard (red) and Stony Hill Chardonnay (white)"
+    ],
+    "correct": 1,
+    "explanation": "The 1973 Stag's Leap Wine Cellars S.L.V. Cabernet Sauvignon beat top Bordeaux including Mouton Rothschild and Haut-Brion. The 1973 Chateau Montelena Chardonnay defeated prestigious Burgundies including Meursault-Charmes and Puligny-Montrachet. Both results stunned the French judges and international wine press.",
+    "sources": "Oxford Companion to Wine (Robinson, Harding & Vouillamoz); The Wine Bible (Karen MacNeil)",
+    "confidence": "established",
+    "tags": [
+      "judgment-of-paris",
+      "stags-leap",
+      "chateau-montelena",
+      "1976"
+    ]
+  },
+  {
+    "id": "HC-014",
+    "domain": "history_culture",
+    "difficulty": 1000,
+    "level": 5,
+    "format": "multiple_choice",
+    "question": "What was André Tchelistcheff's most significant technical contribution to Napa Valley winemaking?",
+    "options": [
+      "He introduced mechanical harvesting",
+      "He championed cold fermentation for whites, malolactic fermentation for reds, and was a pioneer of frost protection — transforming Napa winemaking from rustic to refined during his tenure at Beaulieu Vineyard",
+      "He invented concrete egg fermenters",
+      "He planted the first Cabernet Sauvignon vines in Napa"
+    ],
+    "correct": 1,
+    "explanation": "André Tchelistcheff, a Russian-born enologist, arrived at Beaulieu Vineyard in 1938 and became the most influential winemaker in California history. He introduced temperature-controlled fermentation, deliberately employed malolactic fermentation in reds, pioneered frost protection with wind machines, and mentored an entire generation of California winemakers.",
+    "sources": "The Wine Bible (Karen MacNeil); Oxford Companion to Wine (Robinson, Harding & Vouillamoz)",
+    "confidence": "established",
+    "tags": [
+      "tchelistcheff",
+      "napa-valley",
+      "beaulieu-vineyard",
+      "winemaking-history"
+    ]
+  },
+  {
+    "id": "HC-015",
+    "domain": "history_culture",
+    "difficulty": 1100,
+    "level": 6,
+    "format": "odd_one_out",
+    "question": "Which event did NOT directly result from the phylloxera crisis?",
+    "options": [
+      "Widespread adoption of grafted rootstocks in European viticulture",
+      "The near-total replanting of French vineyards between 1880 and 1910",
+      "The creation of the AOC system in 1935",
+      "The introduction of Cabernet Sauvignon to Australia"
+    ],
+    "correct": 3,
+    "explanation": "Cabernet Sauvignon was brought to Australia by James Busby in the 1830s, decades before phylloxera hit Europe. The other three are direct consequences: grafting became standard, French vineyards were replanted, and the economic devastation and subsequent fraud (cheap wine sold as famous appellations) eventually led to the creation of the AOC system to protect regional authenticity.",
+    "sources": "Oxford Companion to Wine (Robinson, Harding & Vouillamoz); World Atlas of Wine (Johnson & Robinson)",
+    "confidence": "established",
+    "tags": [
+      "phylloxera",
+      "AOC",
+      "australia",
+      "consequences"
+    ]
+  },
+  {
+    "id": "HC-016",
+    "domain": "history_culture",
+    "difficulty": 1150,
+    "level": 6,
+    "format": "multiple_choice",
+    "question": "What was the significance of the 1976 Judgment of Paris for the global wine industry beyond just California?",
+    "options": [
+      "It only affected California wine prices",
+      "It demonstrated that quality wine could be produced outside traditional European regions, catalyzing the global expansion of fine wine production in the New World and undermining the assumption of inherent European superiority",
+      "It led to the immediate collapse of the Bordeaux market",
+      "It proved that blind tasting is unreliable"
+    ],
+    "correct": 1,
+    "explanation": "The Judgment of Paris did not just boost California — it shattered the paradigm that only Europe could produce world-class wine. It empowered winemakers in Australia, Chile, South Africa, New Zealand, and elsewhere to pursue quality, fundamentally reshaping the global wine industry and ushering in the modern era of New World fine wine.",
+    "sources": "Oxford Companion to Wine (Robinson, Harding & Vouillamoz); The Wine Bible (Karen MacNeil)",
+    "confidence": "established",
+    "tags": [
+      "judgment-of-paris",
+      "new-world",
+      "global-impact"
+    ]
+  },
+  {
+    "id": "HC-017",
+    "domain": "history_culture",
+    "difficulty": 1250,
+    "level": 6,
+    "format": "scenario",
+    "question": "A collector shows you a bottle labeled 'Château Lafite 1870.' They claim it was pre-phylloxera and therefore grown on ungrafted vines. Is this plausible?",
+    "options": [
+      "No — phylloxera destroyed all French vines before 1870",
+      "Yes — phylloxera was first detected in France around 1863 in the southern Rhône, but it did not reach Bordeaux's Médoc significantly until the mid-1870s, so an 1870 Lafite could indeed be from ungrafted, pre-phylloxera vines",
+      "No — all French wines were grafted by 1865",
+      "Yes — but only if it was from sandy soil, which resists phylloxera"
+    ],
+    "correct": 1,
+    "explanation": "Phylloxera was first identified in France near Roquemaure in the southern Rhône around 1863. It spread gradually and did not devastate the Médoc until the late 1870s-1880s. An 1870 Lafite would indeed be from ungrafted Vitis vinifera on its own roots — a true pre-phylloxera wine. The wine's authentication would still require provenance verification.",
+    "sources": "Oxford Companion to Wine (Robinson, Harding & Vouillamoz); World Atlas of Wine (Johnson & Robinson)",
+    "confidence": "established",
+    "tags": [
+      "phylloxera",
+      "pre-phylloxera",
+      "bordeaux",
+      "lafite",
+      "authentication"
+    ]
+  },
+  {
+    "id": "HC-018",
+    "domain": "history_culture",
+    "difficulty": 1300,
+    "level": 7,
+    "format": "multiple_choice",
+    "question": "Which ancient Roman author wrote the most comprehensive treatise on viticulture and wine, including descriptions of grape varieties, vineyard management, and winemaking techniques?",
+    "options": [
+      "Pliny the Elder (Naturalis Historia)",
+      "Julius Caesar (De Bello Gallico)",
+      "Columella (De Re Rustica)",
+      "Virgil (Georgics)"
+    ],
+    "correct": 2,
+    "explanation": "Lucius Junius Moderatus Columella's De Re Rustica (c. 65 CE) is the most detailed ancient agricultural manual, with Book III and IV devoted entirely to viticulture. While Pliny's Natural History also discusses wine extensively, Columella provides the most practical and comprehensive viticultural guidance from antiquity.",
+    "sources": "Oxford Companion to Wine (Robinson, Harding & Vouillamoz); World Atlas of Wine (Johnson & Robinson)",
+    "confidence": "established",
+    "tags": [
+      "roman-viticulture",
+      "columella",
+      "ancient-texts"
+    ]
+  },
+  {
+    "id": "HC-019",
+    "domain": "history_culture",
+    "difficulty": 1400,
+    "level": 7,
+    "format": "match_pairs",
+    "question": "Match each historical figure to their key contribution to wine history.",
+    "pairs": {
+      "left": [
+        "Jules Guyot",
+        "Baron Haussmann",
+        "Christopher Merret",
+        "Pierre-Marie-Alexis Millardet"
+      ],
+      "right": [
+        "Developed Bordeaux mixture (copper sulfate) to combat downy mildew",
+        "Published first documented description of adding sugar for deliberate sparkling wine production (1662)",
+        "Systematized vine training methods still used today (Guyot system)",
+        "Modernized Paris, indirectly affecting Bordeaux wine trade through railway development"
+      ]
+    },
+    "correct": [
+      2,
+      3,
+      1,
+      0
+    ],
+    "explanation": "Jules Guyot developed the vine training system bearing his name. Haussmann's urban modernization and railway expansion improved Bordeaux's access to Parisian markets. Christopher Merret presented a paper to the Royal Society in 1662 describing how sugar addition created bubbles — predating Dom Pérignon. Millardet discovered Bordeaux mixture (CuSO4 + lime) in 1885 to fight downy mildew.",
+    "sources": "Oxford Companion to Wine (Robinson, Harding & Vouillamoz); Wine Science (Jamie Goode)",
+    "confidence": "established",
+    "tags": [
+      "guyot",
+      "merret",
+      "millardet",
+      "bordeaux-mixture",
+      "historical-figures"
+    ]
+  },
+  {
+    "id": "HC-020",
+    "domain": "history_culture",
+    "difficulty": 1500,
+    "level": 8,
+    "format": "multiple_choice",
+    "question": "What was the historical significance of the Winzergenossenschaft (cooperative winery) movement in Germany, and when did it originate?",
+    "options": [
+      "It was a 20th-century marketing strategy with no historical roots",
+      "The first German wine cooperative was founded in 1868 in Mayschoß (Ahr), inspired by Friedrich Wilhelm Raiffeisen's cooperative principles, and became a model for cooperative winemaking worldwide, democratizing quality wine production for small growers",
+      "Cooperatives were banned in Germany until 1950",
+      "The movement began in Burgundy and was imported to Germany in 1920"
+    ],
+    "correct": 1,
+    "explanation": "The Mayschoß-Altenahr cooperative, founded in 1868 in the Ahr Valley, is the oldest wine cooperative in the world. Inspired by Raiffeisen's cooperative banking principles, it allowed small growers to pool resources for winemaking, storage, and marketing. This model spread globally and remains vital in many wine regions today.",
+    "sources": "Oxford Companion to Wine (Robinson, Harding & Vouillamoz); German Wine Institute (DWI) historical records",
+    "confidence": "consensus",
+    "tags": [
+      "germany",
+      "cooperatives",
+      "mayschoß",
+      "raiffeisen"
+    ]
+  },
+  {
+    "id": "HC-021",
+    "domain": "history_culture",
+    "difficulty": 1550,
+    "level": 8,
+    "format": "odd_one_out",
+    "question": "Which event did NOT occur in 1855, the year of the famous Bordeaux Classification?",
+    "options": [
+      "Napoleon III ordered a classification of Bordeaux wines for the Paris Exposition Universelle",
+      "The Classification of the wines of the Médoc was drawn up by the Bordeaux wine brokers (courtiers)",
+      "The Classification of Sauternes and Barsac was established alongside the Médoc classification",
+      "The first Grand Cru Classé of Saint-Émilion was officially established"
+    ],
+    "correct": 3,
+    "explanation": "The Saint-Émilion classification was not established until 1955, a full century after the 1855 Bordeaux Classification. In 1855, the Médoc classification (plus Haut-Brion from Graves) and the Sauternes/Barsac classification were both created for Napoleon III's Paris Exposition. The Saint-Émilion system is notably different in that it is revised approximately every 10 years.",
+    "sources": "Oxford Companion to Wine (Robinson, Harding & Vouillamoz); World Atlas of Wine (Johnson & Robinson)",
+    "confidence": "consensus",
+    "tags": [
+      "1855-classification",
+      "saint-emilion",
+      "bordeaux",
+      "classifications"
+    ]
+  },
+  {
+    "id": "HC-022",
+    "domain": "history_culture",
+    "difficulty": 1650,
+    "level": 8,
+    "format": "scenario",
+    "question": "A student asks about the historical relationship between the English and the development of specific wine regions. Which answer is most complete?",
+    "options": [
+      "England only influenced Champagne",
+      "English demand and trade relationships directly shaped Bordeaux (claret trade from the 12th century via Eleanor of Aquitaine's marriage), Port (Methuen Treaty 1703 drove English merchants to the Douro), Sherry (English merchants established bodegas in Jerez), and Madeira (English trade route stopover)",
+      "The English had no significant influence on wine production outside England",
+      "English influence was limited to inventing the glass bottle"
+    ],
+    "correct": 1,
+    "explanation": "English influence on wine is vast: Bordeaux's claret trade dates to 1152 when Eleanor of Aquitaine married Henry II. The Methuen Treaty (1703) gave Portuguese wines preferential tariffs, driving English merchants to fortify Douro wines (creating Port). English merchants dominated Jerez's sherry trade. Madeira evolved as a wine for English ships on Atlantic voyages.",
+    "sources": "Oxford Companion to Wine (Robinson, Harding & Vouillamoz); World Atlas of Wine (Johnson & Robinson)",
+    "confidence": "consensus",
+    "tags": [
+      "english-influence",
+      "bordeaux",
+      "port",
+      "sherry",
+      "madeira",
+      "trade-history"
+    ]
+  },
+  {
+    "id": "HC-023",
+    "domain": "history_culture",
+    "difficulty": 1750,
+    "level": 9,
+    "format": "multiple_choice",
+    "question": "What was the legal and commercial significance of the 1911 Champagne riots?",
+    "options": [
+      "They were protests against cork prices",
+      "Vignerons in the Aube revolted because the 1908 delimitation of Champagne excluded their vineyards, and Marne growers rioted in 1911 over fraud (northern French and foreign grapes being sold as Champagne); these events directly accelerated the establishment of France's appellation laws",
+      "They were celebrations of a particularly good harvest",
+      "They were labor disputes unrelated to wine production"
+    ],
+    "correct": 1,
+    "explanation": "The Champagne riots of 1911 were triggered by economic distress: the 1908 delimitation excluded the Aube, and widespread fraud (cheap grapes relabeled as Champagne) devastated honest growers. Marne vignerons destroyed négociant cellars in Aÿ and Épernay. These events were critical precursors to France's appellation laws, ultimately leading to the AOC system created in 1935.",
+    "sources": "Oxford Companion to Wine (Robinson, Harding & Vouillamoz); The Wine Bible (Karen MacNeil)",
+    "confidence": "consensus",
+    "tags": [
+      "champagne-riots",
+      "1911",
+      "appellation-law",
+      "fraud"
+    ]
+  },
+  {
+    "id": "HC-024",
+    "domain": "history_culture",
+    "difficulty": 1800,
+    "level": 9,
+    "format": "multiple_choice",
+    "question": "What critical role did the Cistercian monks play in the development of Burgundy's vineyard classification, and what was their methodology?",
+    "options": [
+      "They simply inherited Roman vineyard maps",
+      "The Cistercians at Clos de Vougeot and elsewhere systematically observed differences in soil, drainage, exposure, and microclimate across plots over centuries, tasting wines from individual parcels separately and documenting quality differences — essentially inventing the concept of terroir-based classification that became Burgundy's cru system",
+      "They classified vineyards solely by altitude",
+      "Their only contribution was building stone walls around vineyards"
+    ],
+    "correct": 1,
+    "explanation": "Cistercian monks, particularly at Clos de Vougeot (founded 1098), were meticulous empiricists. They vinified parcels separately, observed soil and exposure differences, and over centuries mapped the quality hierarchy of individual vineyard plots. Their legacy is the foundation of Burgundy's lieu-dit and cru system — the world's most elaborate expression of terroir classification.",
+    "sources": "Oxford Companion to Wine (Robinson, Harding & Vouillamoz); World Atlas of Wine (Johnson & Robinson)",
+    "confidence": "consensus",
+    "tags": [
+      "cistercians",
+      "burgundy",
+      "terroir",
+      "cru-system",
+      "monks"
+    ]
+  },
+  {
+    "id": "HC-025",
+    "domain": "history_culture",
+    "difficulty": 1900,
+    "level": 10,
+    "format": "odd_one_out",
+    "question": "Which statement about the history of phylloxera is NOT accurate?",
+    "options": [
+      "Some European vineyards on sandy soils (e.g., Colares in Portugal, parts of the Camargue) survived phylloxera because the pest cannot move through sand",
+      "Chile remains largely phylloxera-free due to its geographic isolation (Andes, Pacific, Atacama Desert)",
+      "Phylloxera was definitively eradicated from all European vineyards by 1920, and grafting is no longer necessary",
+      "Ungrafted pre-phylloxera vines still exist in some regions, including parts of Australia (Barossa Valley old-vine Shiraz) and Chile"
+    ],
+    "correct": 2,
+    "explanation": "Phylloxera was never eradicated from Europe — it remains present in the soil. Grafting onto resistant American rootstocks is still essential and practiced universally in Europe. The sandy soil survival (Colares, Camargue), Chile's freedom from phylloxera, and surviving ungrafted old vines in Barossa and Chile are all accurate historical facts.",
+    "sources": "Oxford Companion to Wine (Robinson, Harding & Vouillamoz); Wine Science (Jamie Goode)",
+    "confidence": "consensus",
+    "tags": [
+      "phylloxera",
+      "sandy-soils",
+      "chile",
+      "barossa",
+      "ungrafted-vines"
+    ]
+  },
+  {
+    "id": "HC-026",
+    "domain": "history_culture",
+    "difficulty": 2000,
+    "level": 10,
+    "format": "multiple_choice",
+    "question": "In the context of wine authentication, what technique was used to detect fraud in supposedly pre-1945 wines by measuring the presence of cesium-137?",
+    "options": [
+      "Mass spectrometry of cork residue",
+      "Measuring cesium-137 and strontium-90 in the wine, which are nuclear fission products that did not exist in the atmosphere before the first nuclear detonations in 1945; their absence confirms pre-nuclear-age origin",
+      "Carbon-14 dating of the label paper",
+      "Spectrophotometric analysis of anthocyanin degradation"
+    ],
+    "correct": 1,
+    "explanation": "Cesium-137 (137Cs) is a radioactive isotope produced exclusively by nuclear fission. It was absent from the environment before the Trinity test in July 1945. Wines made before this date contain no detectable 137Cs, while post-1945 wines contain trace amounts. This technique has been used to authenticate (or debunk) wines claiming pre-war vintages, notably in the Rudy Kurniawan fraud case.",
+    "sources": "Wine Science (Jamie Goode); Oxford Companion to Wine (Robinson, Harding & Vouillamoz)",
+    "confidence": "consensus",
+    "tags": [
+      "authentication",
+      "cesium-137",
+      "fraud-detection",
+      "nuclear-age",
+      "kurniawan"
+    ]
+  },
+  {
+    "id": "HC-027",
+    "domain": "history_culture",
+    "difficulty": 100,
+    "level": 1,
+    "format": "multiple_choice",
+    "question": "Which country produces the most wine by volume in the world?",
+    "options": [
+      "France",
+      "United States",
+      "Italy",
+      "Spain"
+    ],
+    "correct": 2,
+    "explanation": "Italy and France have alternated as the world's largest wine producers by volume for decades. Italy has led in most recent years, typically producing 45-55 million hectoliters annually, followed closely by France and then Spain.",
+    "sources": "Oxford Companion to Wine (Robinson, Harding & Vouillamoz); OIV (International Organisation of Vine and Wine) statistics",
+    "confidence": "established",
+    "tags": [
+      "production",
+      "italy",
+      "statistics",
+      "beginner"
+    ]
+  },
+  {
+    "id": "HC-028",
+    "domain": "history_culture",
+    "difficulty": 260,
+    "level": 1,
+    "format": "odd_one_out",
+    "question": "Which of these is NOT one of the original four First Growths from the 1855 Bordeaux Classification?",
+    "options": [
+      "Château Haut-Brion",
+      "Château Lafite Rothschild",
+      "Château Mouton Rothschild",
+      "Château Latour"
+    ],
+    "correct": 2,
+    "explanation": "The original 1855 Classification named four First Growths: Lafite, Latour, Margaux, and Haut-Brion. Mouton Rothschild was classified as a Second Growth and was not elevated to First Growth status until 1973.",
+    "sources": "Oxford Companion to Wine (Robinson, Harding & Vouillamoz); World Atlas of Wine (Johnson & Robinson)",
+    "confidence": "established",
+    "tags": [
+      "1855-classification",
+      "bordeaux",
+      "first-growths"
+    ]
+  },
+  {
+    "id": "HC-029",
+    "domain": "history_culture",
+    "difficulty": 600,
+    "level": 3,
+    "format": "scenario",
+    "question": "A student claims that the ancient Greeks fermented wine in large clay amphorae and added seawater and pine resin to preserve it. Is this historically accurate?",
+    "options": [
+      "No — Greeks only drank beer",
+      "Yes — ancient Greeks used pitched amphorae and commonly added seawater and pine resin to preserve wine; retsina (pine-resinated wine) survives today as a direct descendant of this practice",
+      "They added resin but never seawater",
+      "This describes Roman, not Greek, practice"
+    ],
+    "correct": 1,
+    "explanation": "Ancient Greeks commonly sealed amphorae with pine resin and added both resin and seawater to wine as preservatives. This practice is well documented by ancient authors. Modern Greek retsina is the direct descendant of this ancient technique, using resin from Aleppo pines during fermentation.",
+    "sources": "Oxford Companion to Wine (Robinson, Harding & Vouillamoz); The Wine Bible (Karen MacNeil)",
+    "confidence": "established",
+    "tags": [
+      "ancient-greece",
+      "retsina",
+      "amphorae",
+      "preservation"
+    ]
+  },
+  {
+    "id": "HC-030",
+    "domain": "history_culture",
+    "difficulty": 750,
+    "level": 4,
+    "format": "multiple_choice",
+    "question": "Why was the Methuen Treaty of 1703 significant for the development of Port wine?",
+    "options": [
+      "It banned French wines from Portugal",
+      "It gave Portuguese wines preferential import tariffs into England over French wines, driving English merchants to the Douro Valley and incentivizing the development of fortified Port to survive the sea voyage",
+      "It established the first Port wine classification",
+      "It created the Douro demarcation"
+    ],
+    "correct": 1,
+    "explanation": "The Methuen Treaty established preferential tariffs for Portuguese wines entering England (lower duty than French wines), driven by political tensions with France. English merchants flocked to the Douro, and fortification with grape spirit developed to stabilize wines for the long sea journey to England. The Douro demarcation came later in 1756 under the Marquis de Pombal.",
+    "sources": "Oxford Companion to Wine (Robinson, Harding & Vouillamoz); World Atlas of Wine (Johnson & Robinson)",
+    "confidence": "established",
+    "tags": [
+      "methuen-treaty",
+      "port",
+      "english-merchants",
+      "douro"
+    ]
+  },
+  {
+    "id": "HC-031",
+    "domain": "history_culture",
+    "difficulty": 900,
+    "level": 5,
+    "format": "match_pairs",
+    "question": "Match each wine fraud case with its key detail.",
+    "pairs": {
+      "left": [
+        "Rudy Kurniawan",
+        "The Judgment of Princeton (2012)",
+        "The Brunellopoli scandal (2008)",
+        "Jefferson Bottles affair"
+      ],
+      "right": [
+        "Alleged Thomas Jefferson ownership; questioned by Bill Koch; never authenticated by forensic analysis",
+        "Convicted in 2013 for counterfeiting rare Burgundy and Bordeaux worth millions using blends and fake labels",
+        "Italian investigation revealing unauthorized blending of non-Sangiovese grapes in Brunello di Montalcino",
+        "New Jersey blind tasting event sometimes compared to 1976 Paris, not a fraud case"
+      ]
+    },
+    "correct": [
+      1,
+      3,
+      2,
+      0
+    ],
+    "explanation": "Rudy Kurniawan was the most notorious modern wine counterfeiter, convicted in 2013. The Jefferson Bottles were allegedly owned by Thomas Jefferson but were exposed as likely fakes. Brunellopoli uncovered producers adulterating Brunello with non-permitted grape varieties. The Princeton tasting is not a fraud case but a comparative tasting event.",
+    "sources": "Oxford Companion to Wine (Robinson, Harding & Vouillamoz); The Wine Bible (Karen MacNeil)",
+    "confidence": "established",
+    "tags": [
+      "wine-fraud",
+      "kurniawan",
+      "jefferson-bottles",
+      "brunellopoli"
+    ]
+  },
+  {
+    "id": "HC-032",
+    "domain": "history_culture",
+    "difficulty": 1050,
+    "level": 5,
+    "format": "multiple_choice",
+    "question": "What was the Marquis de Pombal's contribution to wine history, and why is it considered groundbreaking?",
+    "options": [
+      "He invented Port wine",
+      "In 1756, he established the Douro as the world's first legally demarcated and regulated wine region, predating France's AOC by nearly 180 years, including rules on permitted grape varieties, vineyard boundaries, and quality control",
+      "He was the first to export Madeira to England",
+      "He developed the solera system for Sherry aging"
+    ],
+    "correct": 1,
+    "explanation": "The Marquis de Pombal (Sebastião José de Carvalho e Melo) created the Companhia Geral da Agricultura das Vinhas do Alto Douro in 1756, establishing the Douro as the world's first demarcated wine region. This included boundary markers, production rules, quality grading, and price controls — a remarkably modern regulatory framework that predated all other wine appellation systems.",
+    "sources": "Oxford Companion to Wine (Robinson, Harding & Vouillamoz); World Atlas of Wine (Johnson & Robinson)",
+    "confidence": "established",
+    "tags": [
+      "pombal",
+      "douro",
+      "demarcation",
+      "regulation",
+      "1756"
+    ]
+  },
+  {
+    "id": "HC-033",
+    "domain": "history_culture",
+    "difficulty": 1350,
+    "level": 7,
+    "format": "scenario",
+    "question": "A collector presents a bottle of Tokaji Aszú labeled '6 Puttonyos.' They ask about the historical significance of the puttonyos system. What is the most complete answer?",
+    "options": [
+      "Puttonyos is just a marketing term with no historical basis",
+      "The puttonyos system dates to the 17th century: a puttony is a traditional hod (basket) holding approximately 25kg of aszú (botrytized) berries added to a 136-liter gönc barrel of base wine. More puttonyos meant more concentrated sweetness. The system historically ranged from 3 to 6 puttonyos, with Eszencia above that. Hungary's 2013 regulations simplified classifications.",
+      "It refers to the number of years the wine is aged",
+      "Puttonyos indicates the number of grape varieties in the blend"
+    ],
+    "correct": 1,
+    "explanation": "The puttonyos system is one of the world's oldest wine classification methods for sweet wines. Each puttony of aszú berries added to a gönc barrel increased sweetness and concentration. Tokaji Aszú was the world's first officially classified wine (1730, predating even Bordeaux 1855), and the term 'wine of kings, king of wines' was attributed to Louis XIV regarding Tokaji.",
+    "sources": "Oxford Companion to Wine (Robinson, Harding & Vouillamoz); World Atlas of Wine (Johnson & Robinson)",
+    "confidence": "established",
+    "tags": [
+      "tokaji",
+      "puttonyos",
+      "aszú",
+      "hungary",
+      "sweet-wine-history"
+    ]
+  },
+  {
+    "id": "HC-034",
+    "domain": "history_culture",
+    "difficulty": 2100,
+    "level": 10,
+    "format": "multiple_choice",
+    "question": "Recent archaeogenomic studies have revealed what about the domestication history of Vitis vinifera?",
+    "options": [
+      "Grapevines were domesticated only once, in Georgia",
+      "Research published in Science (2023) suggests that Vitis vinifera was likely domesticated independently in at least two locations — the South Caucasus and Western Asia — with extensive subsequent admixture, challenging the single-origin hypothesis",
+      "All modern wine grapes descend from a single Roman cultivar",
+      "Grape domestication occurred in China before any Western evidence"
+    ],
+    "correct": 1,
+    "explanation": "A major 2023 archaeogenomic study published in Science analyzed thousands of grape samples and suggested that wine grape domestication likely occurred independently in both the South Caucasus (Georgia/Armenia) and a second Western Asian center, with subsequent gene flow between populations. This challenges the long-held single-origin model and reframes our understanding of viticulture's origins.",
+    "sources": "Science (2023) — Dual domestication origins for grapevines; Oxford Companion to Wine (Robinson, Harding & Vouillamoz)",
+    "confidence": "consensus",
+    "tags": [
+      "archaeogenomics",
+      "domestication",
+      "vitis-vinifera",
+      "dual-origin",
+      "cutting-edge-research"
+    ]
+  },
+  {
+    "id": "HC-035",
+    "domain": "history_culture",
+    "difficulty": 2200,
+    "level": 10,
+    "format": "scenario",
+    "question": "An MS exam question asks: 'Explain how the 19th-century interplay of oidium (1850s), phylloxera (1860s-1900s), and downy mildew (1878) collectively reshaped European viticulture and wine commerce.' Which answer is most comprehensive?",
+    "options": [
+      "These pests only affected France and had no broader impact",
+      "The triple crisis devastated yields, destroyed vineyards, and created massive wine shortages that drove fraud; oidium necessitated sulfur treatments, phylloxera required complete replanting on American rootstocks, and downy mildew required Bordeaux mixture — collectively introducing chemical viticulture, grafting, and ultimately appellation laws to combat fraud born of scarcity",
+      "Phylloxera was the only significant crisis; oidium and mildew were minor issues",
+      "These events led to the abandonment of European winemaking and the shift to New World production exclusively"
+    ],
+    "correct": 1,
+    "explanation": "The three crises were sequential hammer blows: oidium (powdery mildew) arrived first in the 1850s, devastating yields and requiring sulfur spraying. Phylloxera followed in the 1860s, ultimately requiring complete replanting on American rootstocks. Downy mildew arrived in 1878, requiring copper sulfate treatments (Bordeaux mixture). Together, they transformed European viticulture from a largely untreated, own-rooted practice to a chemically managed, grafted system, and the resulting wine shortages drove the fraud that led to appellation legislation.",
+    "sources": "Oxford Companion to Wine (Robinson, Harding & Vouillamoz); Wine Science (Jamie Goode)",
+    "confidence": "consensus",
+    "tags": [
+      "triple-crisis",
+      "oidium",
+      "phylloxera",
+      "downy-mildew",
+      "19th-century",
+      "MS-exam"
+    ]
+  },
+  {
+    "id": "HC-036",
+    "domain": "history_culture",
+    "difficulty": 480,
+    "level": 2,
+    "format": "multiple_choice",
+    "question": "What is a Georgian qvevri?",
+    "options": [
+      "A type of oak barrel",
+      "A large egg-shaped clay vessel buried underground, used for fermenting and aging wine — a tradition dating back approximately 8,000 years",
+      "A stone wine press",
+      "A type of Georgian grape variety"
+    ],
+    "correct": 1,
+    "explanation": "Qvevri (also spelled kvevri) are large clay vessels, often holding 800+ liters, lined with beeswax and buried underground. Grapes are fermented with skins, seeds, and sometimes stems inside the qvevri. This UNESCO-recognized tradition produces the amber (orange) wines Georgia is famous for.",
+    "sources": "Oxford Companion to Wine (Robinson, Harding & Vouillamoz); UNESCO Intangible Cultural Heritage listing for qvevri winemaking",
+    "confidence": "established",
+    "tags": [
+      "georgia",
+      "qvevri",
+      "ancient-winemaking",
+      "clay-vessel"
+    ]
+  },
+  {
+    "id": "HC-037",
+    "domain": "history_culture",
+    "difficulty": 1600,
+    "level": 8,
+    "format": "multiple_choice",
+    "question": "What was the significance of the Abbé Rozier's 'Cours Complet d'Agriculture' (1781-1800) for viticulture?",
+    "options": [
+      "It was a cookbook with no viticultural content",
+      "It was one of the first systematic encyclopedic works to classify grape varieties by their characteristics and recommend specific varieties for specific terroirs, prefiguring modern ampelography",
+      "It was purely about cereal farming",
+      "It only described winemaking in Bordeaux"
+    ],
+    "correct": 1,
+    "explanation": "The Abbé François Rozier's encyclopedic work included detailed ampelographic descriptions and was among the first to systematically match grape varieties to terroir. His work laid groundwork for Pierre Viala and Victor Vermorel's later definitive Ampélographie (1901-1910), which classified thousands of varieties.",
+    "sources": "Oxford Companion to Wine (Robinson, Harding & Vouillamoz); World Atlas of Wine (Johnson & Robinson)",
+    "confidence": "consensus",
+    "tags": [
+      "rozier",
+      "ampelography",
+      "18th-century",
+      "grape-classification"
+    ]
+  },
+  {
+    "id": "HC-038",
+    "domain": "history_culture",
+    "difficulty": 1700,
+    "level": 9,
+    "format": "odd_one_out",
+    "question": "Which statement about the history of Champagne is NOT accurate?",
+    "options": [
+      "English scientist Christopher Merret documented méthode champenoise before Dom Pérignon's tenure at Hautvillers",
+      "Veuve Clicquot (Nicole-Barbe Ponsardin) developed the riddling table (pupitre) for rémuage around 1816",
+      "The comet vintage of 1811 was celebrated as one of Champagne's greatest early vintages",
+      "Dom Pérignon personally invented the cork closure for Champagne bottles in 1688"
+    ],
+    "correct": 3,
+    "explanation": "Cork closures predated Dom Pérignon and were in use for wine bottles in England before his time. While Pérignon contributed to Champagne quality (blending, pressing), the attribution of cork invention to him is a myth. Merret's 1662 paper, Clicquot's riddling innovation (~1816), and the famous 1811 comet vintage are all historically documented facts.",
+    "sources": "Oxford Companion to Wine (Robinson, Harding & Vouillamoz); The Wine Bible (Karen MacNeil)",
+    "confidence": "consensus",
+    "tags": [
+      "champagne-history",
+      "dom-perignon",
+      "veuve-clicquot",
+      "merret",
+      "myths"
+    ]
+  },
+  {
+    "id": "HC-039",
+    "domain": "history_culture",
+    "difficulty": 2300,
+    "level": 10,
+    "format": "multiple_choice",
+    "question": "The 'Vinland' references in Norse sagas (c. 1000 CE) have been debated for over a century. What is the current scholarly consensus on whether Norse explorers encountered wild grapevines in North America?",
+    "options": [
+      "The sagas are entirely fictional and have no historical basis",
+      "Archaeological evidence at L'Anse aux Meadows (Newfoundland) confirms Norse presence in North America c. 1000 CE, but 'Vinland' may refer to wild grapes (Vitis riparia) encountered further south, or the name may derive from 'vin' meaning meadow/pasture in Old Norse rather than wine — the debate remains unresolved among scholars",
+      "Norse explorers definitely made wine from American grapes",
+      "Vinland was located in modern-day California"
+    ],
+    "correct": 1,
+    "explanation": "While L'Anse aux Meadows confirms Norse exploration of North America, the Vinland-grape connection remains debated. Wild Vitis species (V. riparia, V. labrusca) did grow in regions south of Newfoundland. Some scholars argue 'vin' in Old Norse could mean 'meadow' rather than 'wine.' Butternuts found at L'Anse aux Meadows suggest travel to areas where wild grapes also grew, but definitive proof of Norse winemaking in America is lacking.",
+    "sources": "Oxford Companion to Wine (Robinson, Harding & Vouillamoz); Smithsonian Institution archaeological reports on L'Anse aux Meadows",
+    "confidence": "consensus",
+    "tags": [
+      "norse",
+      "vinland",
+      "north-america",
+      "early-exploration",
+      "archaeology"
+    ]
+  },
+  {
+    "id": "HC-040",
+    "domain": "history_culture",
+    "difficulty": 1150,
+    "level": 6,
+    "format": "multiple_choice",
+    "question": "What was the impact of the 18th Amendment (US Prohibition, 1920-1933) on American wine grape acreage?",
+    "options": [
+      "All vineyards were destroyed",
+      "Paradoxically, vineyard acreage in California actually increased during Prohibition because demand for home winemaking grapes surged, though quality declined as thick-skinned shipping varieties like Alicante Bouschet replaced fine varieties",
+      "Vineyard acreage remained exactly the same",
+      "Only European imports were affected; domestic production was unchanged"
+    ],
+    "correct": 1,
+    "explanation": "Counterintuitively, California grape acreage expanded during Prohibition to meet demand for home winemaking (legally permitted up to 200 gallons/household). However, fine varieties were ripped out in favor of thick-skinned grapes like Alicante Bouschet that could survive cross-country rail shipment. This quality decline took decades to reverse after Repeal.",
+    "sources": "Oxford Companion to Wine (Robinson, Harding & Vouillamoz); The Wine Bible (Karen MacNeil)",
+    "confidence": "established",
+    "tags": [
+      "prohibition",
+      "california",
+      "alicante-bouschet",
+      "acreage"
+    ]
+  },
+  {
+    "id": "SB-001",
+    "domain": "service_business",
+    "difficulty": 150,
+    "level": 1,
+    "format": "multiple_choice",
+    "question": "What is the generally recommended serving temperature for full-bodied red wines?",
+    "options": [
+      "Ice cold (4-6°C / 39-43°F)",
+      "Room temperature, which in wine terms means 16-18°C (60-65°F)",
+      "Warm (25-30°C / 77-86°F)",
+      "Frozen"
+    ],
+    "correct": 1,
+    "explanation": "Full-bodied reds are best served at 16-18°C (60-65°F), which is 'room temperature' from the era of European cellars — not modern heated rooms. Serving too warm accentuates alcohol and makes the wine flabby; too cold mutes aromas and amplifies tannins.",
+    "sources": "WSET Level 2 Study Guide; The Wine Bible (Karen MacNeil)",
+    "confidence": "established",
+    "tags": [
+      "serving-temperature",
+      "red-wine",
+      "basic-service"
+    ]
+  },
+  {
+    "id": "SB-002",
+    "domain": "service_business",
+    "difficulty": 250,
+    "level": 1,
+    "format": "multiple_choice",
+    "question": "In professional wine service, who at the table should taste the wine first?",
+    "options": [
+      "The oldest person at the table",
+      "The person who ordered the wine (the host)",
+      "Everyone tastes simultaneously",
+      "The server tastes first"
+    ],
+    "correct": 1,
+    "explanation": "The host (the person who ordered the wine) is presented the bottle for confirmation, then poured a small taste to check for faults. Once the host approves, the wine is served to guests (traditionally women first, then men, host last).",
+    "sources": "Court of Master Sommeliers Service Standards; WSET Level 3 Study Guide",
+    "confidence": "established",
+    "tags": [
+      "wine-service",
+      "etiquette",
+      "host-tasting"
+    ]
+  },
+  {
+    "id": "SB-003",
+    "domain": "service_business",
+    "difficulty": 300,
+    "level": 1,
+    "format": "odd_one_out",
+    "question": "Which is NOT a recognized wine fault?",
+    "options": [
+      "Cork taint (TCA)",
+      "Brettanomyces (barnyard aromas)",
+      "Oxidation (sherry-like notes in a young white)",
+      "High acidity in a Riesling from Mosel"
+    ],
+    "correct": 3,
+    "explanation": "High acidity is a natural and desirable characteristic of Mosel Riesling, not a fault. Cork taint (TCA contamination), Brettanomyces (producing 4-ethylphenol and 4-ethylguaiacol), and premature oxidation are all recognized wine faults that may warrant returning a bottle.",
+    "sources": "WSET Level 2 Study Guide; Wine Science (Jamie Goode)",
+    "confidence": "established",
+    "tags": [
+      "wine-faults",
+      "TCA",
+      "brett",
+      "oxidation"
+    ]
+  },
+  {
+    "id": "SB-004",
+    "domain": "service_business",
+    "difficulty": 400,
+    "level": 2,
+    "format": "multiple_choice",
+    "question": "What are the three ideal conditions for long-term wine storage?",
+    "options": [
+      "Warm, bright, and humid",
+      "Cool (12-14°C / 53-57°F), dark, and at 60-75% humidity with minimal vibration",
+      "Cold (0°C / 32°F), dry, and well-ventilated",
+      "Room temperature (22°C / 72°F), any lighting, and low humidity"
+    ],
+    "correct": 1,
+    "explanation": "Ideal wine storage requires consistent cool temperature (12-14°C), darkness (UV light degrades wine), and moderate humidity (60-75% to prevent cork desiccation without encouraging mold). Vibration should be minimized as it can disturb sediment and potentially accelerate chemical reactions.",
+    "sources": "Oxford Companion to Wine (Robinson, Harding & Vouillamoz); WSET Level 3 Study Guide",
+    "confidence": "established",
+    "tags": [
+      "storage",
+      "temperature",
+      "humidity",
+      "cellar-conditions"
+    ]
+  },
+  {
+    "id": "SB-005",
+    "domain": "service_business",
+    "difficulty": 450,
+    "level": 2,
+    "format": "scenario",
+    "question": "A guest sends back a bottle of wine claiming it is 'corked.' You smell the wine and detect wet cardboard and muted fruit. What is the correct course of action?",
+    "options": [
+      "Argue with the guest that the wine is fine",
+      "Agree the wine shows TCA taint, apologize, remove the bottle, and offer a replacement bottle or alternative selection without charging for the faulted bottle",
+      "Pour the wine for other tables to finish",
+      "Add ice to mask the fault"
+    ],
+    "correct": 1,
+    "explanation": "TCA (2,4,6-trichloroanisole) contamination produces musty, wet cardboard aromas and suppresses fruit. A corked bottle should always be replaced without charge. The sommelier should confirm the fault, validate the guest's concern, and offer a replacement. The faulty bottle should be set aside for distributor credit.",
+    "sources": "Court of Master Sommeliers Service Standards; Wine Science (Jamie Goode)",
+    "confidence": "established",
+    "tags": [
+      "TCA",
+      "cork-taint",
+      "service-protocol",
+      "wine-faults"
+    ]
+  },
+  {
+    "id": "SB-006",
+    "domain": "service_business",
+    "difficulty": 500,
+    "level": 3,
+    "format": "match_pairs",
+    "question": "Match each wine style with its recommended serving temperature range.",
+    "pairs": {
+      "left": [
+        "Sparkling wine / Champagne",
+        "Light-bodied white wine",
+        "Full-bodied oaked white",
+        "Full-bodied red wine"
+      ],
+      "right": [
+        "16-18°C (60-65°F)",
+        "6-8°C (43-46°F)",
+        "10-13°C (50-55°F)",
+        "7-10°C (45-50°F)"
+      ]
+    },
+    "correct": [
+      3,
+      1,
+      2,
+      0
+    ],
+    "explanation": "Sparkling wines are served coldest (6-8°C) to maintain mousse and freshness. Light whites slightly warmer (7-10°C). Full-bodied whites need warmth (10-13°C) to reveal complexity. Full-bodied reds at 16-18°C to balance fruit, tannin, and alcohol expression.",
+    "sources": "WSET Level 3 Study Guide; Court of Master Sommeliers Service Standards",
+    "confidence": "established",
+    "tags": [
+      "serving-temperature",
+      "service-sequence",
+      "temperature-ranges"
+    ]
+  },
+  {
+    "id": "SB-007",
+    "domain": "service_business",
+    "difficulty": 550,
+    "level": 3,
+    "format": "multiple_choice",
+    "question": "When should you decant a wine?",
+    "options": [
+      "Only red wines over 20 years old",
+      "Young tannic reds benefit from aeration to soften tannins and open aromas; old wines with sediment should be carefully decanted to separate clear wine from sediment",
+      "All wines should always be decanted",
+      "Only white wines benefit from decanting"
+    ],
+    "correct": 1,
+    "explanation": "Decanting serves two purposes: for young wines, it provides aeration to help volatile compounds develop and tannins soften. For old wines, it separates clear wine from sediment that has formed during aging. Note that very old, fragile wines should be decanted gently and served promptly, as excessive oxygen exposure can cause them to fade rapidly.",
+    "sources": "Oxford Companion to Wine (Robinson, Harding & Vouillamoz); Court of Master Sommeliers Service Standards",
+    "confidence": "established",
+    "tags": [
+      "decanting",
+      "aeration",
+      "sediment",
+      "service"
+    ]
+  },
+  {
+    "id": "SB-008",
+    "domain": "service_business",
+    "difficulty": 650,
+    "level": 3,
+    "format": "multiple_choice",
+    "question": "What is the standard restaurant wine markup, and what is the 'sweet spot' price point strategy?",
+    "options": [
+      "Restaurants mark up all wines 5x wholesale cost",
+      "Typical markups range from 2.5-4x wholesale; savvy wine directors often use progressive pricing — lower percentage markup on expensive bottles — to encourage guests to trade up, creating a 'sweet spot' where quality-to-price value peaks",
+      "All wines are sold at cost plus a flat $10 fee",
+      "Markups are regulated by law and must be exactly 3x"
+    ],
+    "correct": 1,
+    "explanation": "Restaurant wine markups typically range from 2.5-4x wholesale cost, with many programs using progressive pricing: higher percentage markups on entry-level bottles and lower percentages on premium bottles. This creates a value 'sweet spot' in the mid-range where guests get better quality-to-price ratio, which also builds guest trust and loyalty.",
+    "sources": "GuildSomm Business of Wine; Court of Master Sommeliers Business Module",
+    "confidence": "established",
+    "tags": [
+      "wine-program",
+      "markup",
+      "pricing-strategy",
+      "restaurant-business"
+    ]
+  },
+  {
+    "id": "SB-009",
+    "domain": "service_business",
+    "difficulty": 700,
+    "level": 4,
+    "format": "scenario",
+    "question": "A guest orders a 2005 Barolo. You notice significant sediment in the bottle. What is the proper service approach?",
+    "options": [
+      "Shake the bottle vigorously to redistribute the sediment before pouring",
+      "Stand the bottle upright for as long as possible, then carefully decant using a candle or light source to separate wine from sediment, presenting the decanted wine and showing the guest the original bottle",
+      "Refuse to serve it and suggest a younger wine instead",
+      "Pour directly from the bottle without concern for sediment"
+    ],
+    "correct": 1,
+    "explanation": "For an aged wine with sediment: ideally stand it upright before service (24+ hours preferred, but work with available time), then decant carefully using a light source (traditionally a candle) to illuminate the neck and stop pouring when sediment reaches the shoulder. Present both the decanter and the original bottle so the guest can see the label.",
+    "sources": "Court of Master Sommeliers Service Standards; Oxford Companion to Wine (Robinson, Harding & Vouillamoz)",
+    "confidence": "established",
+    "tags": [
+      "decanting",
+      "sediment",
+      "barolo",
+      "aged-wine-service"
+    ]
+  },
+  {
+    "id": "SB-010",
+    "domain": "service_business",
+    "difficulty": 800,
+    "level": 4,
+    "format": "odd_one_out",
+    "question": "Which is NOT a standard element found on an Old World (European) wine label?",
+    "options": [
+      "Appellation of origin (e.g., Appellation Bordeaux Contrôlée)",
+      "Vintage year",
+      "Grape variety prominently displayed on the front label",
+      "Producer/estate name"
+    ],
+    "correct": 2,
+    "explanation": "Traditional Old World labels emphasize place (appellation) and producer rather than grape variety. In contrast, New World labels (Australia, USA, Chile) typically feature the grape variety prominently. There are exceptions (Alsace labels grape variety; some New World wines use proprietary names), but this is the general convention.",
+    "sources": "WSET Level 3 Study Guide; The Wine Bible (Karen MacNeil)",
+    "confidence": "established",
+    "tags": [
+      "wine-labels",
+      "old-world-vs-new-world",
+      "appellation"
+    ]
+  },
+  {
+    "id": "SB-011",
+    "domain": "service_business",
+    "difficulty": 900,
+    "level": 5,
+    "format": "multiple_choice",
+    "question": "What is the ISO 3591 standard wine tasting glass, and why is it significant?",
+    "options": [
+      "It is a specific brand of crystal glass",
+      "The ISO 3591 glass is an internationally standardized tulip-shaped glass designed to provide consistent sensory evaluation conditions — with specific dimensions (height, bowl diameter, rim diameter) to concentrate aromas while allowing fair comparison across wines",
+      "It is the largest wine glass available",
+      "ISO 3591 refers to the minimum alcohol content for wine"
+    ],
+    "correct": 1,
+    "explanation": "The ISO 3591:1977 tasting glass has standardized dimensions: approximately 155mm tall, 65mm bowl diameter, 46mm rim diameter, holding ~215ml. Its inward-tapering rim concentrates volatile aromas at the opening. It is used in professional tasting contexts to eliminate glassware as a variable, ensuring all wines are evaluated under identical conditions.",
+    "sources": "Oxford Companion to Wine (Robinson, Harding & Vouillamoz); ISO 3591:1977 specification",
+    "confidence": "established",
+    "tags": [
+      "glassware",
+      "ISO-standard",
+      "tasting-equipment",
+      "sensory-evaluation"
+    ]
+  },
+  {
+    "id": "SB-012",
+    "domain": "service_business",
+    "difficulty": 950,
+    "level": 5,
+    "format": "match_pairs",
+    "question": "Match each wine fault with its primary chemical cause.",
+    "pairs": {
+      "left": [
+        "Cork taint (musty, wet cardboard)",
+        "Volatile acidity (vinegar, nail polish)",
+        "Reduction (rotten eggs, struck match)",
+        "Brettanomyces (barnyard, band-aid)"
+      ],
+      "right": [
+        "4-ethylphenol and 4-ethylguaiacol",
+        "2,4,6-trichloroanisole (TCA)",
+        "Acetic acid and ethyl acetate",
+        "Hydrogen sulfide (H2S) and mercaptans"
+      ]
+    },
+    "correct": [
+      1,
+      2,
+      3,
+      0
+    ],
+    "explanation": "TCA causes cork taint. Acetic acid (with ethyl acetate at higher levels) causes volatile acidity. H2S and mercaptans cause reductive faults. Brettanomyces yeast produces 4-ethylphenol (4-EP) and 4-ethylguaiacol (4-EG), responsible for barnyard, band-aid, and medicinal off-flavors.",
+    "sources": "Wine Science (Jamie Goode); Oxford Companion to Wine (Robinson, Harding & Vouillamoz)",
+    "confidence": "established",
+    "tags": [
+      "wine-faults",
+      "TCA",
+      "volatile-acidity",
+      "reduction",
+      "brett"
+    ]
+  },
+  {
+    "id": "SB-013",
+    "domain": "service_business",
+    "difficulty": 1050,
+    "level": 5,
+    "format": "scenario",
+    "question": "A sommelier notices that a guest is ordering an expensive bottle solely to impress their dining companions, but the wine won't pair well with their food choices. What is the ethically correct approach?",
+    "options": [
+      "Say nothing and open the expensive bottle — the guest is always right",
+      "Gently suggest the wine's pairing limitations and offer an alternative that suits both the food and the occasion, while emphasizing the alternative's quality — upselling to the right bottle, not just the expensive one",
+      "Refuse to open the expensive bottle",
+      "Publicly point out the poor pairing choice in front of the guest's companions"
+    ],
+    "correct": 1,
+    "explanation": "Sommelier ethics require balancing guest satisfaction with honest guidance. The best approach is tactful: acknowledge the guest's choice, mention the pairing challenge diplomatically, and suggest an alternative that suits the food while still being impressive for the occasion. This builds trust and demonstrates the sommelier's value without embarrassing the guest.",
+    "sources": "Court of Master Sommeliers Ethics and Service Standards; GuildSomm Business of Wine",
+    "confidence": "established",
+    "tags": [
+      "sommelier-ethics",
+      "salesmanship",
+      "guest-relations",
+      "service"
+    ]
+  },
+  {
+    "id": "SB-014",
+    "domain": "service_business",
+    "difficulty": 1100,
+    "level": 6,
+    "format": "multiple_choice",
+    "question": "What is the concept of 'by-the-glass program management' in a restaurant context?",
+    "options": [
+      "Simply opening any bottle and pouring from it until it is finished",
+      "Strategic selection of BTG offerings considering pour cost, preservation technology (Coravin, nitrogen systems), rotation frequency, food menu compatibility, and price-point spread to maximize both guest satisfaction and profitability while minimizing waste",
+      "Serving only house wine by the glass",
+      "Only offering sparkling wine by the glass"
+    ],
+    "correct": 1,
+    "explanation": "A well-managed BTG program balances multiple factors: pour cost targets (typically 20-25% of retail), wine preservation technology to extend shelf life, rotation frequency to maintain freshness and create discovery opportunities, variety across styles and price points, and food menu compatibility. Modern systems like Coravin and nitrogen dispensing have transformed BTG possibilities for premium wines.",
+    "sources": "GuildSomm Business of Wine; Court of Master Sommeliers Business Module",
+    "confidence": "established",
+    "tags": [
+      "BTG-program",
+      "wine-program",
+      "preservation",
+      "restaurant-management"
+    ]
+  },
+  {
+    "id": "SB-015",
+    "domain": "service_business",
+    "difficulty": 1200,
+    "level": 6,
+    "format": "odd_one_out",
+    "question": "Which factor is LEAST important when designing a restaurant wine list?",
+    "options": [
+      "Food menu compatibility and pairing potential",
+      "Diversity of regions, styles, and price points",
+      "The sommelier's personal preference for only natural wines",
+      "Inventory turnover rate and cash flow management"
+    ],
+    "correct": 2,
+    "explanation": "A sommelier's personal bias should not dictate list composition. Professional wine list design prioritizes food compatibility, guest preferences, diverse representation (regions, styles, prices), and business metrics (turnover, margins, cash flow). While a sommelier's expertise shapes the list, personal ideology should not override guest needs and business reality.",
+    "sources": "GuildSomm Business of Wine; Court of Master Sommeliers Business Module",
+    "confidence": "established",
+    "tags": [
+      "wine-list-design",
+      "sommelier-bias",
+      "business-management"
+    ]
+  },
+  {
+    "id": "SB-016",
+    "domain": "service_business",
+    "difficulty": 1300,
+    "level": 7,
+    "format": "multiple_choice",
+    "question": "How does the shape of a wine glass affect aromatic perception?",
+    "options": [
+      "Glass shape has no measurable effect on wine perception",
+      "Bowl size and shape affect the surface area of wine exposed to air (influencing oxidation and volatile release), while the rim diameter and chimney shape direct the concentration and angle of aromas toward different areas of the nose, altering which volatile compounds are perceived most prominently",
+      "Only the color of the glass matters",
+      "Wider glasses always make wine taste better"
+    ],
+    "correct": 1,
+    "explanation": "Research by Riedel and subsequent academic studies have shown that glass geometry affects wine perception through multiple mechanisms: bowl volume affects head space and surface area; chimney shape concentrates or disperses volatiles; rim diameter controls how broadly aromas reach the nose. While the magnitude of the effect is debated, measurable differences in sensory perception have been demonstrated.",
+    "sources": "Wine Science (Jamie Goode); Oxford Companion to Wine (Robinson, Harding & Vouillamoz)",
+    "confidence": "established",
+    "tags": [
+      "glassware",
+      "aromatic-perception",
+      "sensory-science",
+      "glass-shape"
+    ]
+  },
+  {
+    "id": "SB-017",
+    "domain": "service_business",
+    "difficulty": 1400,
+    "level": 7,
+    "format": "scenario",
+    "question": "A restaurant owner asks you to build a 200-selection wine list for a new upscale Italian restaurant. What organizational structure would you recommend?",
+    "options": [
+      "Alphabetical by producer name",
+      "Organize by Italian region (north to south), with sub-sections by style (sparkling, white, rosé, red), include a curated non-Italian section representing key international benchmarks, and structure pricing progressively with clear BTG selections that preview the list's strengths",
+      "Random order to encourage exploration",
+      "Only by price from cheapest to most expensive"
+    ],
+    "correct": 1,
+    "explanation": "For an Italian restaurant, regional organization (north to south mirrors Italy's geography and is intuitive) with style sub-categories provides logical navigation. Including select international wines shows sophistication. Progressive pricing within each section guides guests, and strategic BTG selections serve as ambassadors for the full list. This structure honors Italian wine tradition while being user-friendly.",
+    "sources": "GuildSomm Business of Wine; Court of Master Sommeliers Business Module",
+    "confidence": "established",
+    "tags": [
+      "wine-list-design",
+      "italian-wine",
+      "restaurant-management",
+      "organization"
+    ]
+  },
+  {
+    "id": "SB-018",
+    "domain": "service_business",
+    "difficulty": 1500,
+    "level": 8,
+    "format": "multiple_choice",
+    "question": "What is the 'sommelier's dilemma' regarding Brettanomyces in a wine service context?",
+    "options": [
+      "There is no dilemma — all Brett-affected wines should be returned",
+      "Low levels of Brettanomyces-derived compounds (4-EP, 4-EG) are considered part of the character of certain traditional wines (e.g., some Châteauneuf-du-Pape, older Barolo), while higher levels constitute a fault; the sommelier must judge whether the Brett character is within the wine's traditional expression or has crossed into defect territory",
+      "Brett only affects white wines",
+      "The dilemma is whether to use natural or synthetic corks"
+    ],
+    "correct": 1,
+    "explanation": "Brett is context-dependent: low levels (under ~400 μg/L of 4-EP) can contribute desirable complexity ('gamey,' 'earthy') in certain traditional wine styles, while higher levels produce objectionable 'barnyard,' 'band-aid,' and 'mouse cage' aromas. The sommelier must assess whether the Brett level is part of the wine's established style or a fault warranting replacement.",
+    "sources": "Wine Science (Jamie Goode); Oxford Companion to Wine (Robinson, Harding & Vouillamoz)",
+    "confidence": "consensus",
+    "tags": [
+      "brettanomyces",
+      "wine-faults",
+      "sommelier-judgment",
+      "service-dilemma"
+    ]
+  },
+  {
+    "id": "SB-019",
+    "domain": "service_business",
+    "difficulty": 1600,
+    "level": 8,
+    "format": "match_pairs",
+    "question": "Match each label term with its correct regulatory meaning.",
+    "pairs": {
+      "left": [
+        "Riserva (Italy)",
+        "Grand Cru (Burgundy)",
+        "Old Vine / Vieilles Vignes",
+        "Estate Bottled (USA)"
+      ],
+      "right": [
+        "100% of grapes grown on land owned/controlled by the winery in the stated AVA, and vinified and bottled on-site",
+        "Extended aging requirements defined by specific DOCG/DOC regulations",
+        "Highest vineyard classification in the Burgundy hierarchy, specific named vineyards",
+        "No legal definition in most jurisdictions; usage is not regulated"
+      ]
+    },
+    "correct": [
+      1,
+      2,
+      3,
+      0
+    ],
+    "explanation": "Italian Riserva denotes wines meeting specific extended aging requirements per their DOCG/DOC. Burgundy Grand Cru refers to 33 specifically delimited top-tier vineyards. 'Old Vine/Vieilles Vignes' has no legal definition in most countries (including France), though some regions (e.g., South Australia's Barossa) have informal charters. US 'Estate Bottled' requires winery-controlled grapes from the stated AVA.",
+    "sources": "Oxford Companion to Wine (Robinson, Harding & Vouillamoz); WSET Level 3 Study Guide",
+    "confidence": "consensus",
+    "tags": [
+      "label-terms",
+      "regulations",
+      "riserva",
+      "grand-cru",
+      "estate-bottled"
+    ]
+  },
+  {
+    "id": "SB-020",
+    "domain": "service_business",
+    "difficulty": 1700,
+    "level": 9,
+    "format": "scenario",
+    "question": "A VIP guest orders a 1982 Château Latour from your cellar. Upon opening, you detect slight volatile acidity but the wine is otherwise showing beautifully with complex tertiary development. The guest has not yet tasted. What is the correct approach?",
+    "options": [
+      "Dump the wine immediately — any VA is a fault",
+      "Pour the host's taste without comment; slight VA in very old wines can be part of their character and is a judgment call for the guest. If they raise concern, offer a replacement. Never preemptively tell a guest their expensive wine is flawed unless the fault is clear and severe",
+      "Tell the guest the wine is slightly flawed before they taste",
+      "Blend it with a younger wine to mask the VA"
+    ],
+    "correct": 1,
+    "explanation": "In very old fine wines, slight VA can be part of the wine's evolved character rather than a clear-cut fault. The correct approach is to present the host's taste without prejudicing their experience. The guest may find the VA to be part of the wine's complexity. If they object, handle it professionally with a replacement. Preemptive negative commentary can ruin a special experience unnecessarily.",
+    "sources": "Court of Master Sommeliers Service Standards; GuildSomm Advanced Service Theory",
+    "confidence": "consensus",
+    "tags": [
+      "volatile-acidity",
+      "old-wine",
+      "service-judgment",
+      "VIP-service"
+    ]
+  },
+  {
+    "id": "SB-021",
+    "domain": "service_business",
+    "difficulty": 1800,
+    "level": 9,
+    "format": "multiple_choice",
+    "question": "In wine program financial management, what is 'velocity-adjusted pour cost' and why does it matter?",
+    "options": [
+      "It is the cost of pouring wine quickly",
+      "It integrates per-bottle pour cost with inventory turnover rate — a low-margin wine that turns over weekly may generate more gross profit than a high-margin wine that sits for months, because it generates cash flow, reduces spoilage risk, and frees capital for reinvestment in the program",
+      "It measures how fast a sommelier can pour",
+      "It only applies to wines sold by the glass"
+    ],
+    "correct": 1,
+    "explanation": "Velocity-adjusted pour cost considers not just the margin per bottle but the speed at which inventory turns. A wine with 25% pour cost that sells twice weekly generates more annual profit than a 20% pour cost wine that sells monthly. This metric helps sommeliers optimize list composition for real-world profitability rather than theoretical margins.",
+    "sources": "GuildSomm Business of Wine; Court of Master Sommeliers Business Module",
+    "confidence": "consensus",
+    "tags": [
+      "pour-cost",
+      "inventory-management",
+      "financial-metrics",
+      "wine-program"
+    ]
+  },
+  {
+    "id": "SB-022",
+    "domain": "service_business",
+    "difficulty": 350,
+    "level": 2,
+    "format": "multiple_choice",
+    "question": "How should Champagne be opened professionally?",
+    "options": [
+      "Remove the foil and twist the cork out with a pop",
+      "Remove foil, loosen cage while keeping thumb on cork, hold cork firmly and rotate the BOTTLE (not the cork) while applying gentle downward pressure, aiming for a quiet 'sigh' rather than a pop",
+      "Use a corkscrew",
+      "Saber the bottle"
+    ],
+    "correct": 1,
+    "explanation": "Professional Champagne service involves removing the foil, loosening the cage while keeping a thumb securing the cork, then rotating the bottle while holding the cork steady. The goal is a controlled, quiet release ('the sigh of a contented woman,' as is sometimes said). A loud pop wastes carbonation and risks spraying guests.",
+    "sources": "Court of Master Sommeliers Service Standards; WSET Level 3 Study Guide",
+    "confidence": "established",
+    "tags": [
+      "champagne-service",
+      "opening-technique",
+      "sparkling-wine"
+    ]
+  },
+  {
+    "id": "SB-023",
+    "domain": "service_business",
+    "difficulty": 600,
+    "level": 3,
+    "format": "odd_one_out",
+    "question": "Which is NOT a legitimate reason for a guest to return a bottle of wine at a restaurant?",
+    "options": [
+      "The wine is corked (TCA contamination)",
+      "The wine is oxidized (brownish color, flat, sherry-like in a young wine)",
+      "The guest simply does not like the style of wine they ordered",
+      "The wine has excessive volatile acidity (vinegar-like aroma)"
+    ],
+    "correct": 2,
+    "explanation": "Wine faults (TCA, oxidation, VA) are legitimate reasons for return. However, simply disliking a correctly served, fault-free wine is not technically grounds for return — the guest chose the wine. That said, many high-end restaurants will accommodate such returns as a hospitality gesture, especially if the sommelier recommended the wine.",
+    "sources": "Court of Master Sommeliers Service Standards; GuildSomm Service Ethics",
+    "confidence": "established",
+    "tags": [
+      "returns-policy",
+      "wine-faults",
+      "service-ethics"
+    ]
+  },
+  {
+    "id": "SB-024",
+    "domain": "service_business",
+    "difficulty": 750,
+    "level": 4,
+    "format": "multiple_choice",
+    "question": "What percentage of wine bottles are estimated to be affected by TCA cork taint?",
+    "options": [
+      "Less than 0.1%",
+      "Approximately 1-3% of bottles sealed with natural cork, though this figure has decreased with improved cork treatment technologies",
+      "Over 25%",
+      "Exactly 10%"
+    ],
+    "correct": 1,
+    "explanation": "Historically, TCA contamination affected roughly 3-5% of natural cork closures. Improved cork treatment technologies (steam cleaning, individual cork screening) have reduced this to approximately 1-3% in recent years. This failure rate is one of the primary arguments for alternative closures (screwcaps, synthetic corks, glass stoppers).",
+    "sources": "Wine Science (Jamie Goode); Oxford Companion to Wine (Robinson, Harding & Vouillamoz)",
+    "confidence": "established",
+    "tags": [
+      "TCA",
+      "cork-taint",
+      "closures",
+      "statistics"
+    ]
+  },
+  {
+    "id": "SB-025",
+    "domain": "service_business",
+    "difficulty": 850,
+    "level": 4,
+    "format": "scenario",
+    "question": "A guest asks for a wine recommendation but has a strict budget of $50. Your list has a Burgundy at $48 (low margin, excellent quality) and a Languedoc at $45 (high margin, good quality). The sommelier ethic says to recommend:",
+    "options": [
+      "Always recommend the higher-margin wine to maximize restaurant profit",
+      "The Burgundy — serve the guest's best interest first; building trust and delivering exceptional experiences creates repeat guests and long-term revenue that outweighs short-term margin optimization",
+      "Whatever is oldest on the list to clear inventory",
+      "The most expensive wine the guest can afford"
+    ],
+    "correct": 1,
+    "explanation": "Sommelier ethics prioritize the guest's interest. Recommending the best wine for the guest's budget and preferences builds trust and repeat business. While margins matter for business health, sacrificing guest trust for short-term profit is antithetical to the sommelier profession. The best sommeliers balance hospitality and business naturally.",
+    "sources": "Court of Master Sommeliers Ethics; GuildSomm Professional Standards",
+    "confidence": "established",
+    "tags": [
+      "sommelier-ethics",
+      "guest-trust",
+      "recommendation",
+      "hospitality"
+    ]
+  },
+  {
+    "id": "SB-026",
+    "domain": "service_business",
+    "difficulty": 1000,
+    "level": 5,
+    "format": "multiple_choice",
+    "question": "What is the recommended approach for a sommelier encountering a wine showing possible 'premox' (premature oxidation)?",
+    "options": [
+      "Premox does not exist in fine wines",
+      "Assess whether the wine shows oxidation inconsistent with its age (e.g., a 5-year-old white Burgundy showing deep gold color and flat, nutty aromas); if confirmed, treat it as a fault, replace the bottle, and document the occurrence for distributor feedback and cellar management",
+      "Only white wines can show premox",
+      "Premox is the same as bottle variation and should be tolerated"
+    ],
+    "correct": 1,
+    "explanation": "Premature oxidation (premox), particularly associated with white Burgundy from certain vintages (especially 1996-2002), presents as advanced oxidative aging in young wines. If a wine shows color, aroma, and flavor development inconsistent with its age, the sommelier should treat it as a fault, replace the bottle, and document for inventory management and distributor communication.",
+    "sources": "Wine Science (Jamie Goode); Oxford Companion to Wine (Robinson, Harding & Vouillamoz)",
+    "confidence": "established",
+    "tags": [
+      "premox",
+      "premature-oxidation",
+      "white-burgundy",
+      "wine-faults"
+    ]
+  },
+  {
+    "id": "SB-027",
+    "domain": "service_business",
+    "difficulty": 1150,
+    "level": 6,
+    "format": "match_pairs",
+    "question": "Match each New World label term with its approximate equivalent in traditional European labeling.",
+    "pairs": {
+      "left": [
+        "Reserve (USA — no legal definition)",
+        "Estate Bottled (USA)",
+        "Varietal labeled (e.g., 'Chardonnay')",
+        "Regional designation (e.g., 'Napa Valley')"
+      ],
+      "right": [
+        "Appellation (e.g., AOC Chablis)",
+        "Mis en bouteille au château/domaine",
+        "Most Old World wines imply variety through appellation (e.g., Chablis = Chardonnay)",
+        "Riserva (Italy) or Réserve (France — variable regulation by region)"
+      ]
+    },
+    "correct": [
+      3,
+      1,
+      2,
+      0
+    ],
+    "explanation": "US 'Reserve' has no legal definition (unlike Italian Riserva). 'Estate Bottled' parallels European château/domaine bottling. New World varietal labeling serves the same identification purpose as Old World appellations that imply variety. Regional AVA designations function similarly to European appellations.",
+    "sources": "WSET Level 3 Study Guide; Oxford Companion to Wine (Robinson, Harding & Vouillamoz)",
+    "confidence": "established",
+    "tags": [
+      "label-terms",
+      "old-world-vs-new-world",
+      "regulations"
+    ]
+  },
+  {
+    "id": "SB-028",
+    "domain": "service_business",
+    "difficulty": 1900,
+    "level": 10,
+    "format": "scenario",
+    "question": "You are the head sommelier designing a wine program for a Michelin-starred restaurant with a $500,000 annual wine budget. The chef's menu changes seasonally. What is the most comprehensive approach to inventory management?",
+    "options": [
+      "Buy only wines from distributors' close-out lists",
+      "Implement a three-tier inventory strategy: (1) core list of 60-70% of selections that remain stable year-round for consistency; (2) seasonal rotational selections (20-25%) tied to menu changes; (3) allocated/rare wines (10-15%) as cellar treasures for VIP occasions. Track velocity-adjusted pour cost monthly, maintain 30-45 day average inventory turn, and use reorder points based on historical sales data",
+      "Purchase all wines in January for the entire year",
+      "Stock only wines with the highest margins regardless of food compatibility"
+    ],
+    "correct": 1,
+    "explanation": "Elite wine program management requires strategic inventory tiering: a stable core for consistency and reliability, seasonal rotation for menu compatibility and guest discovery, and allocated/rare wines for special occasions and VIP service. Financial metrics (velocity-adjusted pour cost, turnover rates, cash flow) must be monitored continuously, and purchasing must align with seasonal menu changes.",
+    "sources": "Court of Master Sommeliers Business Module; GuildSomm Advanced Business of Wine",
+    "confidence": "consensus",
+    "tags": [
+      "wine-program",
+      "inventory-management",
+      "michelin",
+      "financial-management",
+      "MS-exam"
+    ]
+  },
+  {
+    "id": "SB-029",
+    "domain": "service_business",
+    "difficulty": 2000,
+    "level": 10,
+    "format": "multiple_choice",
+    "question": "What is the significance of the 'three-tier system' in US wine distribution, and how does it affect restaurant wine programs?",
+    "options": [
+      "The three-tier system is a voluntary industry guideline",
+      "Established post-Prohibition, the three-tier system (producer → distributor → retailer/restaurant) is a legally mandated structure in most US states that affects wine availability, pricing, and selection; sommeliers must navigate distributor portfolios, allocation systems, and state-specific regulations to build their programs",
+      "The three tiers refer to the quality levels of wine",
+      "The three-tier system only applies to spirits, not wine"
+    ],
+    "correct": 1,
+    "explanation": "The US three-tier system was established after Prohibition's repeal (21st Amendment, 1933) to prevent the pre-Prohibition 'tied house' system where producers controlled retail. Producers must sell to licensed distributors, who sell to licensed retailers/restaurants. This mandatory structure profoundly affects wine availability, pricing, and program design. Some states allow limited exceptions (direct-to-consumer shipping, self-distribution in certain states).",
+    "sources": "Oxford Companion to Wine (Robinson, Harding & Vouillamoz); GuildSomm Business of Wine",
+    "confidence": "consensus",
+    "tags": [
+      "three-tier-system",
+      "US-distribution",
+      "prohibition-legacy",
+      "wine-business"
+    ]
+  },
+  {
+    "id": "SB-030",
+    "domain": "service_business",
+    "difficulty": 2100,
+    "level": 10,
+    "format": "odd_one_out",
+    "question": "Which approach is NOT consistent with Master Sommelier-level wine service philosophy?",
+    "options": [
+      "Reading the table to gauge guests' wine knowledge and adjusting communication accordingly",
+      "Offering unsolicited corrections of guests' pronunciation of wine names to demonstrate expertise",
+      "Guiding guests toward wines that match both their preferences and the food they've ordered",
+      "Using open-ended questions to understand guest preferences before making recommendations"
+    ],
+    "correct": 1,
+    "explanation": "Correcting a guest's pronunciation is antithetical to the MS service philosophy, which centers on hospitality, not the sommelier's ego. Master-level service reads the table, asks open-ended questions, and guides guests toward wines that enhance their experience. The sommelier's knowledge should empower the guest, not intimidate them. The guest's comfort is paramount.",
+    "sources": "Court of Master Sommeliers Service Philosophy; GuildSomm Professional Standards",
+    "confidence": "consensus",
+    "tags": [
+      "MS-service-philosophy",
+      "hospitality",
+      "guest-comfort",
+      "sommelier-ego"
+    ]
+  },
+  {
+    "id": "SB-031",
+    "domain": "service_business",
+    "difficulty": 1650,
+    "level": 8,
+    "format": "multiple_choice",
+    "question": "What is the Coravin system, and how has it changed by-the-glass wine programs?",
+    "options": [
+      "It is a type of wine filter",
+      "Coravin uses a hollow needle to pierce the cork, extract wine under argon gas pressure, and then allows the cork to reseal — enabling restaurants to pour from bottles of expensive wines by the glass without opening the bottle, dramatically expanding premium BTG offerings",
+      "It is a rapid chilling device",
+      "It is a decantering aerator"
+    ],
+    "correct": 1,
+    "explanation": "The Coravin system, invented by Greg Lambrecht, uses a thin needle that passes through the cork while injecting inert argon gas to replace the extracted wine. The natural cork reseals when the needle is removed. This allows pouring one glass at a time from premium bottles over weeks or months, revolutionizing high-end by-the-glass programs.",
+    "sources": "Wine Science (Jamie Goode); GuildSomm Business of Wine",
+    "confidence": "consensus",
+    "tags": [
+      "coravin",
+      "BTG-program",
+      "wine-preservation",
+      "technology"
+    ]
+  },
+  {
+    "id": "SB-032",
+    "domain": "service_business",
+    "difficulty": 1250,
+    "level": 6,
+    "format": "scenario",
+    "question": "Two guests at a table disagree: one wants a bold Napa Cabernet, the other wants a crisp Sancerre, and they are sharing a mixed grill with salad. What is the best sommelier solution?",
+    "options": [
+      "Tell them they must compromise on one wine",
+      "Suggest a versatile wine that bridges both preferences — such as a high-quality rosé (e.g., Bandol rosé) or a medium-bodied red with good acidity (e.g., Cru Beaujolais Fleurie) — while offering to also pour a glass of each guest's original preference to start",
+      "Pour both wines and say nothing about the food pairing",
+      "Recommend only water"
+    ],
+    "correct": 1,
+    "explanation": "The sommelier should find a bridge wine that satisfies both palates and suits the food, while also validating each guest's preference by potentially offering their requested styles by the glass to start. This demonstrates conflict resolution, pairing skill, and guest empathy simultaneously — hallmarks of professional service.",
+    "sources": "Court of Master Sommeliers Service Standards; GuildSomm Professional Standards",
+    "confidence": "established",
+    "tags": [
+      "conflict-resolution",
+      "guest-management",
+      "versatile-wines",
+      "service-skill"
+    ]
+  },
+  {
+    "id": "SB-033",
+    "domain": "service_business",
+    "difficulty": 200,
+    "level": 1,
+    "format": "multiple_choice",
+    "question": "How full should a standard wine glass be filled?",
+    "options": [
+      "To the very top",
+      "About one-third full for still wine, to allow room for swirling and aroma concentration",
+      "Half full for all wines",
+      "Exactly 100ml regardless of glass size"
+    ],
+    "correct": 1,
+    "explanation": "A standard pour is about one-third of the glass capacity (typically 150ml / 5oz). This leaves sufficient space above the wine for aromas to collect and allows guests to swirl without spilling. Sparkling wine flutes may be filled slightly higher as swirling is less common.",
+    "sources": "WSET Level 2 Study Guide; Court of Master Sommeliers Service Standards",
+    "confidence": "established",
+    "tags": [
+      "pouring",
+      "glass-fill",
+      "basic-service"
+    ]
+  },
+  {
+    "id": "SB-034",
+    "domain": "service_business",
+    "difficulty": 1550,
+    "level": 8,
+    "format": "multiple_choice",
+    "question": "What is 'double-decanting,' and when is it appropriate?",
+    "options": [
+      "Pouring wine through two decanters simultaneously",
+      "Decanting wine into a carafe, rinsing the original bottle, then returning the wine to the bottle for service — used when a guest prefers to drink from the original bottle but the wine has sediment or benefits from aeration",
+      "Decanting the wine twice over 24 hours",
+      "Mixing two bottles of the same wine in one decanter"
+    ],
+    "correct": 1,
+    "explanation": "Double-decanting involves decanting wine off its sediment into a clean vessel, rinsing the original bottle to remove sediment residue, then pouring the wine back into the original bottle. This is appropriate when a guest wants to see their bottle on the table (for prestige or verification) but the wine needs sediment removal or aeration.",
+    "sources": "Court of Master Sommeliers Service Standards; Oxford Companion to Wine (Robinson, Harding & Vouillamoz)",
+    "confidence": "consensus",
+    "tags": [
+      "double-decanting",
+      "service-technique",
+      "sediment",
+      "advanced-service"
+    ]
+  },
+  {
+    "id": "SB-035",
+    "domain": "service_business",
+    "difficulty": 2250,
+    "level": 10,
+    "format": "multiple_choice",
+    "question": "In the context of the CMS Master Sommelier exam service component, what demonstrates the highest level of 'invisible service'?",
+    "options": [
+      "Never interacting with the table",
+      "Anticipating needs before they arise — refilling glasses before they're empty, offering water unprompted, adjusting pace to the table's rhythm, providing information calibrated to the guest's knowledge level, and making the entire experience feel effortless while maintaining complete technical precision throughout",
+      "Using the most elaborate wine presentation rituals",
+      "Memorizing every guest's name"
+    ],
+    "correct": 1,
+    "explanation": "MS-level 'invisible service' means the sommelier's technical excellence is so seamless it becomes invisible — the guest simply has a perfect experience without noticing the mechanics. This requires reading body language, anticipating needs, calibrating information depth, controlling pace, and maintaining flawless technique. The focus shifts entirely from the sommelier's performance to the guest's experience.",
+    "sources": "Court of Master Sommeliers Examination Standards; GuildSomm MS Preparation Materials",
+    "confidence": "consensus",
+    "tags": [
+      "invisible-service",
+      "MS-exam",
+      "anticipation",
+      "guest-experience"
+    ]
+  },
+  {
+    "id": "BT-001",
+    "domain": "blind_tasting",
+    "difficulty": 200,
+    "level": 1,
+    "format": "multiple_choice",
+    "question": "In the CMS deductive tasting grid, what are the three main phases of evaluating a wine?",
+    "options": [
+      "Pour, Sniff, Drink",
+      "Sight, Nose, Palate (followed by Initial Conclusion and Final Conclusion)",
+      "Color, Temperature, Weight",
+      "Acid, Tannin, Alcohol"
+    ],
+    "correct": 1,
+    "explanation": "The CMS deductive tasting method follows a systematic sequence: Sight (appearance, color, clarity), Nose (aromatic assessment), and Palate (structural analysis and flavor), followed by Initial Conclusion (narrowing possibilities) and Final Conclusion (specific identification of grape, region, vintage, quality).",
+    "sources": "Court of Master Sommeliers Deductive Tasting Grid; GuildSomm Tasting Resources",
+    "confidence": "established",
+    "tags": [
+      "CMS-grid",
+      "deductive-tasting",
+      "systematic-approach"
+    ]
+  },
+  {
+    "id": "BT-002",
+    "domain": "blind_tasting",
+    "difficulty": 250,
+    "level": 1,
+    "format": "multiple_choice",
+    "question": "What does a deep purple-ruby color with blue-violet hues typically indicate about a red wine?",
+    "options": [
+      "The wine is very old",
+      "The wine is young, with high levels of anthocyanin pigments indicating little oxidative aging",
+      "The wine is made from white grapes",
+      "The wine has a fault"
+    ],
+    "correct": 1,
+    "explanation": "Deep purple-blue colors indicate youth in red wines. Anthocyanin pigments in young wines absorb light in the green-yellow spectrum, reflecting blue-purple. As wines age, anthocyanins polymerize and form complexes with tannins, shifting color from purple to ruby to garnet to brick/tawny.",
+    "sources": "Wine Science (Jamie Goode); Court of Master Sommeliers Deductive Tasting Grid",
+    "confidence": "established",
+    "tags": [
+      "color-assessment",
+      "anthocyanins",
+      "age-indicators",
+      "sight"
+    ]
+  },
+  {
+    "id": "BT-003",
+    "domain": "blind_tasting",
+    "difficulty": 350,
+    "level": 2,
+    "format": "odd_one_out",
+    "question": "Which aroma is NOT typically associated with oak aging?",
+    "options": [
+      "Vanilla",
+      "Toast",
+      "Petrol (kerosene)",
+      "Coconut"
+    ],
+    "correct": 2,
+    "explanation": "Petrol (kerosene/TDN — 1,1,6-trimethyl-1,2-dihydronaphthalene) is a varietal characteristic of aged Riesling, not an oak-derived aroma. Vanilla (from vanillin), toast (from barrel charring), and coconut (from oak lactones, especially American oak) are all classic oak-aging markers.",
+    "sources": "Wine Science (Jamie Goode); Oxford Companion to Wine (Robinson, Harding & Vouillamoz)",
+    "confidence": "established",
+    "tags": [
+      "oak-markers",
+      "riesling",
+      "TDN",
+      "aroma-identification"
+    ]
+  },
+  {
+    "id": "BT-004",
+    "domain": "blind_tasting",
+    "difficulty": 400,
+    "level": 2,
+    "format": "multiple_choice",
+    "question": "In blind tasting, high acidity combined with green fruit aromas (green apple, citrus) and light body in a white wine most likely indicates what climate?",
+    "options": [
+      "Warm continental",
+      "Cool climate",
+      "Hot tropical",
+      "Mediterranean"
+    ],
+    "correct": 1,
+    "explanation": "Cool climates produce wines with higher acidity (slower malate degradation), less ripe fruit (green apple vs. tropical), lighter body (lower alcohol from lower sugar accumulation), and often more pronounced mineral or herbal character. These are fundamental climate markers in the deductive tasting process.",
+    "sources": "Court of Master Sommeliers Deductive Tasting Grid; WSET Level 3 Study Guide",
+    "confidence": "established",
+    "tags": [
+      "climate-markers",
+      "cool-climate",
+      "acidity",
+      "deductive-tasting"
+    ]
+  },
+  {
+    "id": "BT-005",
+    "domain": "blind_tasting",
+    "difficulty": 500,
+    "level": 3,
+    "format": "match_pairs",
+    "question": "Match each classic varietal marker with its grape variety.",
+    "pairs": {
+      "left": [
+        "Green bell pepper / pyrazines",
+        "Petrol / TDN",
+        "Lychee / rose petal",
+        "Black pepper / rotundone"
+      ],
+      "right": [
+        "Syrah / Shiraz",
+        "Cabernet Sauvignon",
+        "Riesling (aged)",
+        "Gewürztraminer"
+      ]
+    },
+    "correct": [
+      1,
+      2,
+      3,
+      0
+    ],
+    "explanation": "Methoxypyrazines (bell pepper) are signature Cabernet Sauvignon markers. TDN (petrol) develops in aged Riesling. Cis-rose oxide and monoterpenes give Gewürztraminer its lychee/rose character. Rotundone provides black pepper aroma in Syrah, with concentration varying by cool climate sites.",
+    "sources": "Wine Science (Jamie Goode); Oxford Companion to Wine (Robinson, Harding & Vouillamoz)",
+    "confidence": "established",
+    "tags": [
+      "varietal-markers",
+      "pyrazines",
+      "TDN",
+      "rotundone",
+      "terpenes"
+    ]
+  },
+  {
+    "id": "BT-006",
+    "domain": "blind_tasting",
+    "difficulty": 550,
+    "level": 3,
+    "format": "multiple_choice",
+    "question": "When assessing a red wine's tannin level blind, what physical sensation are you primarily evaluating?",
+    "options": [
+      "Sweetness on the tip of the tongue",
+      "The drying, astringent, gripping sensation on the gums, cheeks, and teeth caused by tannin-protein binding",
+      "Temperature of the wine",
+      "The weight of the wine in the glass"
+    ],
+    "correct": 1,
+    "explanation": "Tannins bind to salivary proline-rich proteins, precipitating them and reducing oral lubrication. This creates the characteristic drying, gripping, astringent sensation felt primarily on the gums, inner cheeks, and teeth. The intensity, grain (fine vs. coarse), and location of this sensation are all assessed in structural analysis.",
+    "sources": "Wine Science (Jamie Goode); Court of Master Sommeliers Deductive Tasting Grid",
+    "confidence": "established",
+    "tags": [
+      "tannin-assessment",
+      "astringency",
+      "structural-analysis",
+      "palate"
+    ]
+  },
+  {
+    "id": "BT-007",
+    "domain": "blind_tasting",
+    "difficulty": 650,
+    "level": 3,
+    "format": "scenario",
+    "question": "You are blind tasting a white wine: pale straw color, high acidity, aromas of green apple, wet stone, and a hint of lees, with a saline finish. No oak influence. What is your most likely conclusion?",
+    "options": [
+      "Napa Valley Chardonnay",
+      "Muscadet Sèvre et Maine sur Lie",
+      "Australian Viognier",
+      "Alsace Gewürztraminer"
+    ],
+    "correct": 1,
+    "explanation": "The indicators point to Muscadet: pale color suggests a neutral grape, high acidity and no oak indicate cool-climate unoaked production, lees character (sur lie aging is a hallmark), saline/mineral finish from proximity to the Atlantic, and green apple/wet stone aromas. Muscadet (Melon de Bourgogne) is one of the most recognizable whites in blind tasting.",
+    "sources": "Court of Master Sommeliers Deductive Tasting Grid; GuildSomm Tasting Resources",
+    "confidence": "established",
+    "tags": [
+      "muscadet",
+      "deductive-reasoning",
+      "white-wine",
+      "blind-identification"
+    ]
+  },
+  {
+    "id": "BT-008",
+    "domain": "blind_tasting",
+    "difficulty": 700,
+    "level": 4,
+    "format": "multiple_choice",
+    "question": "What visual cue distinguishes a Pinot Noir from a Cabernet Sauvignon when examining color blind?",
+    "options": [
+      "Pinot Noir and Cabernet Sauvignon look identical",
+      "Pinot Noir typically shows lighter ruby color with higher transparency and a wider gradation from core to rim, while Cabernet Sauvignon shows deeper, more opaque purple-ruby color due to thicker skins and higher anthocyanin concentration",
+      "Cabernet Sauvignon is always lighter in color",
+      "Only the rim color differs"
+    ],
+    "correct": 1,
+    "explanation": "Pinot Noir has thin skins with lower anthocyanin content, producing lighter, more transparent ruby wines with visible rim variation. Cabernet Sauvignon's thick skins yield dense, opaque, deeply pigmented wines. This color density difference, visible even tilted against a white background, is one of the first clues in blind tasting.",
+    "sources": "Court of Master Sommeliers Deductive Tasting Grid; Wine Science (Jamie Goode)",
+    "confidence": "established",
+    "tags": [
+      "color-assessment",
+      "pinot-noir",
+      "cabernet-sauvignon",
+      "sight"
+    ]
+  },
+  {
+    "id": "BT-009",
+    "domain": "blind_tasting",
+    "difficulty": 800,
+    "level": 4,
+    "format": "odd_one_out",
+    "question": "Which is NOT a classic indicator of New World style (as opposed to Old World) in blind tasting?",
+    "options": [
+      "Riper fruit profile (jammy, tropical)",
+      "Higher alcohol levels",
+      "More prominent oak influence (vanilla, toast)",
+      "Higher acidity with more restrained fruit and prominent earthy/mineral notes"
+    ],
+    "correct": 3,
+    "explanation": "Higher acidity, restrained fruit, and earthy/mineral notes are classic OLD World markers. New World wines typically show riper, more fruit-forward profiles, higher alcohol (from warmer climates and riper harvest decisions), and often more overt new oak use. These generalizations have many exceptions but remain useful starting points in deductive tasting.",
+    "sources": "Court of Master Sommeliers Deductive Tasting Grid; WSET Level 3 Study Guide",
+    "confidence": "established",
+    "tags": [
+      "new-world-vs-old-world",
+      "style-markers",
+      "deductive-tasting"
+    ]
+  },
+  {
+    "id": "BT-010",
+    "domain": "blind_tasting",
+    "difficulty": 900,
+    "level": 5,
+    "format": "multiple_choice",
+    "question": "In the CMS deductive grid, what is the purpose of the 'Initial Conclusion' step before the 'Final Conclusion'?",
+    "options": [
+      "It is just a formality with no purpose",
+      "The Initial Conclusion synthesizes all observations (sight, nose, palate) to narrow the field to a short list of possible grapes, regions, and vintages before committing to a Final Conclusion — it prevents premature identification bias and ensures the conclusion is supported by evidence",
+      "It is where you guess the wine's price",
+      "Initial Conclusion is only for white wines"
+    ],
+    "correct": 1,
+    "explanation": "The Initial Conclusion is a critical analytical checkpoint. By synthesizing all collected evidence (color, aroma, structure, flavor) into a short list before committing, the taster avoids confirmation bias (jumping to a conclusion after one aroma note) and ensures their final identification is supported by multiple converging data points.",
+    "sources": "Court of Master Sommeliers Deductive Tasting Grid; GuildSomm Tasting Methodology",
+    "confidence": "established",
+    "tags": [
+      "CMS-grid",
+      "initial-conclusion",
+      "deductive-method",
+      "cognitive-bias"
+    ]
+  },
+  {
+    "id": "BT-011",
+    "domain": "blind_tasting",
+    "difficulty": 950,
+    "level": 5,
+    "format": "match_pairs",
+    "question": "Match each aromatic descriptor category with the stage of wine development it indicates.",
+    "pairs": {
+      "left": [
+        "Fresh fruit, floral (violet, rose), herbal (grass, mint)",
+        "Dried fruit, nuts, leather, tobacco, mushroom",
+        "Vanilla, toast, coconut, dill, smoke",
+        "Petrol, honey, marmalade, truffle"
+      ],
+      "right": [
+        "Tertiary aromas from extended bottle aging",
+        "Primary aromas from the grape variety",
+        "Secondary aromas from oak maturation",
+        "Tertiary aromas from reductive and oxidative bottle aging"
+      ]
+    },
+    "correct": [
+      1,
+      3,
+      2,
+      0
+    ],
+    "explanation": "Primary aromas come from grape varietal character (fruits, flowers, herbs). Secondary aromas develop during fermentation and maturation (oak: vanilla, toast, coconut). Tertiary aromas emerge during bottle aging — both reductive (petrol in Riesling, truffle) and oxidative (dried fruit, leather, nuts, tobacco, mushroom).",
+    "sources": "WSET Level 3 Study Guide; Wine Science (Jamie Goode)",
+    "confidence": "established",
+    "tags": [
+      "aroma-categories",
+      "primary-secondary-tertiary",
+      "aging",
+      "development"
+    ]
+  },
+  {
+    "id": "BT-012",
+    "domain": "blind_tasting",
+    "difficulty": 1000,
+    "level": 5,
+    "format": "scenario",
+    "question": "You blind taste a red wine: medium ruby with garnet rim, moderate-plus acidity, medium tannin (fine-grained), red cherry and cranberry fruit, earthy/mushroom notes, and a long finish with sous-bois character. Alcohol feels moderate (about 13%). What is your most likely conclusion?",
+    "options": [
+      "Argentine Malbec",
+      "Red Burgundy (Pinot Noir), likely at least 5-7 years old",
+      "Napa Valley Cabernet Sauvignon",
+      "Rioja Reserva (Tempranillo)"
+    ],
+    "correct": 1,
+    "explanation": "Every indicator converges on aged Burgundian Pinot Noir: garnet rim suggests age, fine-grained tannin is characteristic of Pinot, red cherry/cranberry are varietal markers, earthy/sous-bois (forest floor) notes indicate both Burgundian terroir and bottle development, and moderate 13% alcohol aligns with cooler Burgundy. This is a textbook deductive identification.",
+    "sources": "Court of Master Sommeliers Deductive Tasting Grid; GuildSomm Tasting Resources",
+    "confidence": "established",
+    "tags": [
+      "pinot-noir",
+      "burgundy",
+      "aged-wine",
+      "deductive-identification"
+    ]
+  },
+  {
+    "id": "BT-013",
+    "domain": "blind_tasting",
+    "difficulty": 1100,
+    "level": 6,
+    "format": "multiple_choice",
+    "question": "How can you distinguish American oak from French oak influence in blind tasting?",
+    "options": [
+      "There is no detectable difference between American and French oak",
+      "American oak tends to impart more pronounced coconut (from higher concentration of cis-oak lactone), dill, and vanilla notes, while French oak provides more subtle spice (clove, cinnamon), toast, and integrated tannin structure",
+      "French oak always produces vanilla; American oak never does",
+      "Only the color of the wine is affected by oak type"
+    ],
+    "correct": 1,
+    "explanation": "American oak (Quercus alba) contains 3-5x more cis-oak lactone than French oak (Q. petraea/robur), producing intense coconut aromas. American oak is also more porous, extracting faster and giving bolder flavors. French oak imparts subtler spice (eugenol/clove, vanillin) with more structured tannin extraction due to its tighter grain. These differences are detectable in careful blind tasting.",
+    "sources": "Wine Science (Jamie Goode); Oxford Companion to Wine (Robinson, Harding & Vouillamoz)",
+    "confidence": "established",
+    "tags": [
+      "oak-identification",
+      "american-oak",
+      "french-oak",
+      "lactones"
+    ]
+  },
+  {
+    "id": "BT-014",
+    "domain": "blind_tasting",
+    "difficulty": 1150,
+    "level": 6,
+    "format": "odd_one_out",
+    "question": "Which is NOT a reliable structural indicator for distinguishing cool-climate from warm-climate wines in blind tasting?",
+    "options": [
+      "Acidity level (higher in cool climate)",
+      "Alcohol level (lower in cool climate)",
+      "Fruit ripeness spectrum (green to tropical)",
+      "Cork type (natural vs. screwcap)"
+    ],
+    "correct": 3,
+    "explanation": "Cork type is a closure choice, not a climate indicator. Acidity (tartaric acid preservation in cool climates), alcohol level (directly related to sugar accumulation and climate warmth), and fruit ripeness spectrum (green apple in cool vs. tropical fruit in warm) are all reliable structural climate markers used in the deductive grid.",
+    "sources": "Court of Master Sommeliers Deductive Tasting Grid; WSET Level 3 Study Guide",
+    "confidence": "established",
+    "tags": [
+      "climate-markers",
+      "structural-analysis",
+      "cool-vs-warm"
+    ]
+  },
+  {
+    "id": "BT-015",
+    "domain": "blind_tasting",
+    "difficulty": 1200,
+    "level": 6,
+    "format": "multiple_choice",
+    "question": "What specific aroma compound is responsible for the 'cat pee' / boxwood descriptor sometimes associated with Sauvignon Blanc, and what does its presence indicate?",
+    "options": [
+      "TCA — it indicates cork taint",
+      "4-MMP (4-mercapto-4-methylpentan-2-one), a volatile thiol released from odorless precursors during fermentation — its presence is a varietal marker for Sauvignon Blanc, especially from cooler sites",
+      "Methoxypyrazine — it indicates warm climate",
+      "Diacetyl — it indicates malolactic fermentation"
+    ],
+    "correct": 1,
+    "explanation": "4-MMP is a polyfunctional thiol responsible for the boxwood/cat pee/broom aroma in Sauvignon Blanc. It exists as an odorless cysteine-bound precursor in the grape and is released during fermentation by yeast enzyme activity. Its presence alongside 3-MH (grapefruit/passion fruit thiol) is a hallmark of cool-climate Sauvignon Blanc, particularly Loire and Marlborough styles.",
+    "sources": "Wine Science (Jamie Goode); Oxford Companion to Wine (Robinson, Harding & Vouillamoz)",
+    "confidence": "established",
+    "tags": [
+      "4-MMP",
+      "thiols",
+      "sauvignon-blanc",
+      "volatile-compounds"
+    ]
+  },
+  {
+    "id": "BT-016",
+    "domain": "blind_tasting",
+    "difficulty": 1300,
+    "level": 7,
+    "format": "scenario",
+    "question": "You blind taste a white wine: medium-deep gold color, aromas of beeswax, lanolin, quince, chamomile, and honeycomb. Palate shows high acidity, full body, waxy texture, and a long mineral finish. No obvious oak. What is your most likely identification?",
+    "options": [
+      "Young Marlborough Sauvignon Blanc",
+      "Mature Savennières (Chenin Blanc from the Loire)",
+      "Napa Valley Chardonnay",
+      "Torrontés from Argentina"
+    ],
+    "correct": 1,
+    "explanation": "The gold color indicates age or grape character, beeswax/lanolin/quince/chamomile are classic aged Chenin Blanc descriptors, high acidity with full body and waxy texture are Savennières hallmarks, and the mineral finish reflects the schist soils. Savennières is one of the Loire's most distinctive dry Chenin Blanc expressions.",
+    "sources": "Court of Master Sommeliers Deductive Tasting Grid; GuildSomm Tasting Resources",
+    "confidence": "established",
+    "tags": [
+      "chenin-blanc",
+      "savenrieres",
+      "aged-white",
+      "deductive-identification"
+    ]
+  },
+  {
+    "id": "BT-017",
+    "domain": "blind_tasting",
+    "difficulty": 1350,
+    "level": 7,
+    "format": "multiple_choice",
+    "question": "In blind tasting, what does a pronounced 'green' character (bell pepper, herbal, vegetal) in a Cabernet Sauvignon indicate about the growing conditions?",
+    "options": [
+      "It indicates the wine is old",
+      "It indicates incomplete phenolic ripeness, often due to cool vintage conditions, excessive yields, or canopy shading — methoxypyrazines (specifically 3-isobutyl-2-methoxypyrazine / IBMP) are degraded by sunlight and warm temperatures, so their persistence signals insufficient ripening",
+      "It indicates new oak aging",
+      "It means the wine was blended with Sauvignon Blanc"
+    ],
+    "correct": 1,
+    "explanation": "IBMP (3-isobutyl-2-methoxypyrazine) produces the bell pepper/green character in Bordeaux varieties. It is naturally present in grapes but is degraded by UV light and elevated temperatures during ripening. Its persistence in finished wine indicates that grapes did not achieve full phenolic ripeness — whether due to cool vintage, over-cropping, excessive canopy shade, or early harvest.",
+    "sources": "Wine Science (Jamie Goode); Oxford Companion to Wine (Robinson, Harding & Vouillamoz)",
+    "confidence": "established",
+    "tags": [
+      "methoxypyrazines",
+      "IBMP",
+      "cabernet-sauvignon",
+      "ripeness"
+    ]
+  },
+  {
+    "id": "BT-018",
+    "domain": "blind_tasting",
+    "difficulty": 1450,
+    "level": 7,
+    "format": "match_pairs",
+    "question": "Match each blind tasting structural profile with the most likely grape variety.",
+    "pairs": {
+      "left": [
+        "High acid, high tannin, high alcohol, dark inky color",
+        "High acid, low tannin, light ruby, perfumed aromatics",
+        "Low acid, high tannin, high alcohol, deep color, plush texture",
+        "High acid, medium tannin, medium ruby, cherry/tar/rose aromatics"
+      ],
+      "right": [
+        "Nebbiolo (Barolo/Barbaresco)",
+        "Pinot Noir (Burgundy/Oregon)",
+        "Tannat or Mourvèdre (dense, extracted style)",
+        "Malbec (Cahors) or Petite Sirah"
+      ]
+    },
+    "correct": [
+      3,
+      1,
+      2,
+      0
+    ],
+    "explanation": "High acid + high tannin + high alcohol + inky color = powerhouses like Tannat or Petite Sirah. High acid + low tannin + light color + perfume = Pinot Noir. Low acid + high tannin + plush = Malbec/Petite Sirah style. High acid + medium tannin + cherry/tar/rose = Nebbiolo's signature profile, where high acidity and aromatic complexity coexist with firm tannin.",
+    "sources": "Court of Master Sommeliers Deductive Tasting Grid; GuildSomm Varietal Profiles",
+    "confidence": "established",
+    "tags": [
+      "structural-profiles",
+      "varietal-identification",
+      "nebbiolo",
+      "pinot-noir"
+    ]
+  },
+  {
+    "id": "BT-019",
+    "domain": "blind_tasting",
+    "difficulty": 1500,
+    "level": 8,
+    "format": "multiple_choice",
+    "question": "What is the significance of 'reduction' in a blind tasting context, and how do you differentiate between benign and problematic reduction?",
+    "options": [
+      "All reduction is a fault that requires returning the wine",
+      "Mild reduction (struck match, flint, wet stone) can blow off with aeration and may be stylistic in wines like Chablis or top Burgundy; severe reduction (rotten eggs, sewage, burnt rubber from mercaptans) indicates excessive H2S formation during fermentation and is a true fault",
+      "Reduction only occurs in red wines",
+      "Reduction is the same as oxidation"
+    ],
+    "correct": 1,
+    "explanation": "In blind tasting, distinguishing reductive character is critical. Mild reduction (H2S at low levels) produces struck match/flint notes that dissipate with air — often stylistic and even desirable in certain wines (Chablis, reductive-style Burgundy). Severe reduction produces persistent mercaptans (methyl/ethyl mercaptan) with foul aromas that worsen with air. Swirling or decanting the wine helps differentiate: if the aroma improves, it is benign.",
+    "sources": "Wine Science (Jamie Goode); Oxford Companion to Wine (Robinson, Harding & Vouillamoz)",
+    "confidence": "consensus",
+    "tags": [
+      "reduction",
+      "H2S",
+      "mercaptans",
+      "wine-faults",
+      "aeration"
+    ]
+  },
+  {
+    "id": "BT-020",
+    "domain": "blind_tasting",
+    "difficulty": 1550,
+    "level": 8,
+    "format": "scenario",
+    "question": "You are blind tasting a red wine at an advanced CMS session. Deep, opaque ruby-purple color. Nose: blackberry, cassis, mint/eucalyptus, dark chocolate, and new oak (vanilla, cedar). Palate: full body, high alcohol (14.5%+), ripe firm tannins, moderate acidity, long finish. What is your working hypothesis?",
+    "options": [
+      "Pinot Noir from Burgundy",
+      "Cabernet Sauvignon from a warm New World region — likely Napa Valley or Coonawarra, given the cassis/mint/eucalyptus combination, overt oak program, and ripe, powerful structure",
+      "Beaujolais (Gamay)",
+      "Vinho Verde from Portugal"
+    ],
+    "correct": 1,
+    "explanation": "This is a textbook warm-climate Cabernet Sauvignon profile: opaque color (thick skins), cassis (varietal marker), mint/eucalyptus (common in Napa and certain Australian regions), new oak influence, full body, high alcohol, and ripe tannin. The eucalyptus note particularly narrows to Napa (proximity to eucalyptus trees) or Coonawarra. The overall profile is distinctly New World in its extraction and ripeness.",
+    "sources": "Court of Master Sommeliers Deductive Tasting Grid; GuildSomm Tasting Resources",
+    "confidence": "consensus",
+    "tags": [
+      "cabernet-sauvignon",
+      "napa-valley",
+      "new-world",
+      "deductive-identification"
+    ]
+  },
+  {
+    "id": "BT-021",
+    "domain": "blind_tasting",
+    "difficulty": 1650,
+    "level": 8,
+    "format": "odd_one_out",
+    "question": "Which descriptor is NOT associated with the tertiary development stage of aged red wine?",
+    "options": [
+      "Leather",
+      "Forest floor (sous-bois)",
+      "Fresh raspberry",
+      "Cigar box"
+    ],
+    "correct": 2,
+    "explanation": "Fresh raspberry is a primary fruit aroma from the grape variety (common in young Pinot Noir or Grenache). Leather, forest floor (sous-bois), and cigar box are all tertiary aromas that develop through bottle aging via slow oxidation and chemical evolution of polyphenols, esters, and other compounds over years in bottle.",
+    "sources": "Wine Science (Jamie Goode); Court of Master Sommeliers Deductive Tasting Grid",
+    "confidence": "consensus",
+    "tags": [
+      "tertiary-aromas",
+      "aging",
+      "primary-vs-tertiary"
+    ]
+  },
+  {
+    "id": "BT-022",
+    "domain": "blind_tasting",
+    "difficulty": 1700,
+    "level": 9,
+    "format": "multiple_choice",
+    "question": "In blind tasting, how do you distinguish Syrah from the Northern Rhône versus Shiraz from the Barossa Valley?",
+    "options": [
+      "They are impossible to tell apart",
+      "Northern Rhône Syrah typically shows darker fruit with black olive, smoked meat, violet, and black pepper (rotundone from cool sites), with firmer acidity and more savory/mineral character; Barossa Shiraz shows sweeter dark fruit (blackberry jam), dark chocolate, licorice, more overt oak (American and French), higher alcohol, and a plush, velvety texture",
+      "Barossa Shiraz is always lighter in color",
+      "Northern Rhône Syrah always has higher alcohol"
+    ],
+    "correct": 1,
+    "explanation": "This is a classic Old World vs. New World comparison. Northern Rhône Syrah's cooler climate preserves acidity, concentrates rotundone (pepper), and produces savory, mineral wines with more restrained fruit. Barossa's warmer climate yields riper, sweeter fruit, higher alcohol, lower acidity, and a more voluptuous mouthfeel. Oak regime also differs: Barossa often uses more new American oak. These stylistic differences are fundamental to MS-level deductive tasting.",
+    "sources": "Court of Master Sommeliers Deductive Tasting Grid; GuildSomm Varietal Profiles",
+    "confidence": "consensus",
+    "tags": [
+      "syrah-vs-shiraz",
+      "northern-rhone",
+      "barossa",
+      "old-world-vs-new-world"
+    ]
+  },
+  {
+    "id": "BT-023",
+    "domain": "blind_tasting",
+    "difficulty": 1750,
+    "level": 9,
+    "format": "match_pairs",
+    "question": "Match each age-related color change with the correct wine type.",
+    "pairs": {
+      "left": [
+        "Purple → Ruby → Garnet → Brick/Tawny",
+        "Pale straw → Gold → Amber/Deep gold",
+        "Pale pink → Salmon → Onion skin/Copper",
+        "Pale yellow-green → Straw with slight gold hints"
+      ],
+      "right": [
+        "White wine aging over 10-20+ years",
+        "Young cool-climate white (e.g., recent vintage Muscadet)",
+        "Rosé aging over 3-5+ years",
+        "Red wine aging over 10-30+ years"
+      ]
+    },
+    "correct": [
+      3,
+      0,
+      2,
+      1
+    ],
+    "explanation": "Red wines evolve from purple (young) through ruby, garnet, to brick/tawny as anthocyanins polymerize and precipitate. White wines deepen from straw to gold to amber through slow oxidation of phenolic compounds. Rosé evolves from pink through salmon to onion skin. Very young cool-climate whites show pale yellow-green hues from chlorophyll-related compounds.",
+    "sources": "Wine Science (Jamie Goode); Court of Master Sommeliers Deductive Tasting Grid",
+    "confidence": "consensus",
+    "tags": [
+      "color-evolution",
+      "age-indicators",
+      "sight-assessment"
+    ]
+  },
+  {
+    "id": "BT-024",
+    "domain": "blind_tasting",
+    "difficulty": 1850,
+    "level": 9,
+    "format": "scenario",
+    "question": "In an MS exam blind tasting flight, you encounter a white wine: deep gold, viscous, aromas of saffron, dried apricot, beeswax, orange peel, and a hint of oxidative nuttiness. Palate: full body, medium acidity, phenolic grip on the palate (textural tannin), very long finish. No residual sugar. What should your deductive reasoning process consider?",
+    "options": [
+      "This must be an oaked Chardonnay",
+      "The phenolic grip (skin tannin) combined with oxidative character and deep gold suggests extended skin-contact winemaking — likely an amber/orange wine such as Georgian qvevri-style, Friulian skin-macerated, or Gravner/Radikon-style; the saffron and dried apricot are hallmarks of skin-contact whites",
+      "This is a typical Pinot Grigio",
+      "Deep gold always indicates a sweet wine"
+    ],
+    "correct": 1,
+    "explanation": "Phenolic grip (textural tannin) in a white wine is the signature of extended skin contact. Combined with the deep gold color, oxidative character, and specific descriptors (saffron, dried apricot, beeswax), this points to an orange/amber wine. The deductive process should narrow between Georgian (qvevri), Italian (Friuli), or Slovenian traditions. The absence of sweetness and the tannin structure are key distinguishing factors from aged sweet wines.",
+    "sources": "Court of Master Sommeliers Deductive Tasting Grid; Oxford Companion to Wine (Robinson, Harding & Vouillamoz)",
+    "confidence": "consensus",
+    "tags": [
+      "orange-wine",
+      "skin-contact",
+      "qvevri",
+      "phenolic-grip",
+      "deductive-reasoning"
+    ]
+  },
+  {
+    "id": "BT-025",
+    "domain": "blind_tasting",
+    "difficulty": 1900,
+    "level": 10,
+    "format": "multiple_choice",
+    "question": "At the MS exam level, what is the single most common cognitive error that causes experienced tasters to misidentify wines, and how is it mitigated?",
+    "options": [
+      "Color blindness",
+      "Anchoring bias — forming a premature conclusion based on the first strong sensory cue (e.g., smelling pyrazines and immediately assuming Cabernet Sauvignon without verifying through structural analysis); mitigated by strictly following the deductive grid from sight through palate before forming any conclusion",
+      "Inability to smell",
+      "Tasting too quickly"
+    ],
+    "correct": 1,
+    "explanation": "Anchoring bias is the most documented cognitive trap in advanced blind tasting. An experienced taster detects a familiar aroma (e.g., pyrazines) and unconsciously commits to an identification before completing structural analysis. Subsequent observations are then filtered through this premature lens (confirmation bias). The CMS deductive grid is specifically designed to combat this by forcing systematic evidence collection before conclusions.",
+    "sources": "GuildSomm Advanced Tasting Theory; Court of Master Sommeliers Examination Standards",
+    "confidence": "consensus",
+    "tags": [
+      "anchoring-bias",
+      "cognitive-error",
+      "deductive-method",
+      "MS-exam"
+    ]
+  },
+  {
+    "id": "BT-026",
+    "domain": "blind_tasting",
+    "difficulty": 2000,
+    "level": 10,
+    "format": "multiple_choice",
+    "question": "In the context of the CMS deductive tasting grid, how does the concept of 'parallel processing' apply to advanced blind identification?",
+    "options": [
+      "It means tasting two wines simultaneously",
+      "At the MS level, parallel processing means simultaneously running multiple varietal/regional hypotheses through the deductive grid, testing each against accumulating evidence rather than serially eliminating one at a time — allowing the taster to maintain cognitive flexibility and pivot between hypotheses as new data emerges at each stage",
+      "It refers to using both nostrils equally",
+      "It means having multiple tasters evaluate the same wine"
+    ],
+    "correct": 1,
+    "explanation": "MS-level parallel processing is a sophisticated cognitive approach: rather than committing to one hypothesis and testing it linearly, the expert taster maintains 2-4 plausible hypotheses simultaneously, weighing incoming evidence (sight, nose, palate) against all of them. As evidence accumulates, weaker hypotheses are gradually eliminated while remaining open to pivot. This method is more resistant to anchoring bias than serial hypothesis testing.",
+    "sources": "Court of Master Sommeliers Examination Standards; GuildSomm MS Preparation Materials",
+    "confidence": "consensus",
+    "tags": [
+      "parallel-processing",
+      "deductive-method",
+      "cognitive-strategy",
+      "MS-exam"
+    ]
+  },
+  {
+    "id": "BT-027",
+    "domain": "blind_tasting",
+    "difficulty": 300,
+    "level": 1,
+    "format": "multiple_choice",
+    "question": "What does it mean when a wine has 'legs' or 'tears' on the glass?",
+    "options": [
+      "It means the wine is of high quality",
+      "Legs are caused by the Gibbs-Marangoni effect — differences in surface tension between alcohol and water. More prominent legs indicate higher alcohol and/or higher sugar content, NOT necessarily quality",
+      "It means the glass is dirty",
+      "It indicates the wine is old"
+    ],
+    "correct": 1,
+    "explanation": "Wine legs (tears) form because alcohol has lower surface tension than water. As alcohol evaporates from the thin film on the glass, the remaining liquid (higher water content) is pulled upward by surface tension differences. Thicker, slower legs suggest higher alcohol or sugar. This is a physics phenomenon, not a quality indicator.",
+    "sources": "Wine Science (Jamie Goode); Oxford Companion to Wine (Robinson, Harding & Vouillamoz)",
+    "confidence": "established",
+    "tags": [
+      "legs-tears",
+      "gibbs-marangoni",
+      "alcohol",
+      "sight"
+    ]
+  },
+  {
+    "id": "BT-028",
+    "domain": "blind_tasting",
+    "difficulty": 450,
+    "level": 2,
+    "format": "scenario",
+    "question": "You blind taste a red wine with pronounced aromas of banana and bubblegum/candy (amyl acetate). What winemaking technique most likely produced these aromas?",
+    "options": [
+      "Extended barrel aging in new French oak",
+      "Carbonic maceration, where whole clusters ferment intracellularly, producing high levels of amyl acetate (banana/bubblegum ester)",
+      "Cold stabilization",
+      "Extended lees aging"
+    ],
+    "correct": 1,
+    "explanation": "Carbonic maceration (used for Beaujolais Nouveau and some Languedoc wines) involves fermenting whole, uncrushed clusters in a CO2-saturated environment. Intracellular fermentation produces high levels of amyl acetate (banana/bubblegum ester) and other volatile esters that give these wines their distinctive candy-like character.",
+    "sources": "Wine Science (Jamie Goode); Oxford Companion to Wine (Robinson, Harding & Vouillamoz)",
+    "confidence": "established",
+    "tags": [
+      "carbonic-maceration",
+      "amyl-acetate",
+      "beaujolais",
+      "winemaking-technique"
+    ]
+  },
+  {
+    "id": "BT-029",
+    "domain": "blind_tasting",
+    "difficulty": 600,
+    "level": 3,
+    "format": "odd_one_out",
+    "question": "Which aromatic note is NOT typically associated with Sauvignon Blanc?",
+    "options": [
+      "Gooseberry",
+      "Grapefruit",
+      "Lychee",
+      "Freshly cut grass"
+    ],
+    "correct": 2,
+    "explanation": "Lychee is a signature aromatic of Gewürztraminer (from cis-rose oxide), not Sauvignon Blanc. Gooseberry, grapefruit (from 3-MH thiol), and freshly cut grass (from hexenal and methoxypyrazines) are all classic Sauvignon Blanc varietal markers.",
+    "sources": "Wine Science (Jamie Goode); WSET Level 3 Study Guide",
+    "confidence": "established",
+    "tags": [
+      "sauvignon-blanc",
+      "varietal-markers",
+      "lychee",
+      "gewurztraminer"
+    ]
+  },
+  {
+    "id": "BT-030",
+    "domain": "blind_tasting",
+    "difficulty": 1050,
+    "level": 5,
+    "format": "multiple_choice",
+    "question": "What is the significance of 'volatile acidity' (VA) detection in blind tasting, and at what threshold does it become a fault?",
+    "options": [
+      "Any detectable VA is always a fault",
+      "Low levels of VA (acetic acid) are present in all wines and can add aromatic lift and complexity. It becomes a fault when acetic acid exceeds approximately 0.7-1.2 g/L (depending on wine style and legal limits), at which point vinegar-like aroma and nail polish remover (ethyl acetate) become dominant and unpleasant",
+      "VA is only found in white wines",
+      "VA is the same as alcohol by volume"
+    ],
+    "correct": 1,
+    "explanation": "All wines contain some acetic acid from fermentation. At low levels (under 0.5 g/L), it can contribute to aromatic complexity. Beyond approximately 0.7-1.2 g/L, acetic acid becomes pungent (vinegar) and ethyl acetate adds nail polish remover character. Some styles (e.g., traditional Barolo, certain Châteauneuf-du-Pape) tolerate slightly elevated VA as part of their character.",
+    "sources": "Wine Science (Jamie Goode); Oxford Companion to Wine (Robinson, Harding & Vouillamoz)",
+    "confidence": "established",
+    "tags": [
+      "volatile-acidity",
+      "acetic-acid",
+      "fault-threshold",
+      "ethyl-acetate"
+    ]
+  },
+  {
+    "id": "BT-031",
+    "domain": "blind_tasting",
+    "difficulty": 1250,
+    "level": 6,
+    "format": "match_pairs",
+    "question": "Match each structural analysis clue with what it helps determine in blind tasting.",
+    "pairs": {
+      "left": [
+        "Very high acidity + low-medium alcohol",
+        "Very high tannin + high acid + medium body",
+        "Very high alcohol + low acid + full body",
+        "Medium-plus acid + medium tannin + moderate alcohol + notable minerality"
+      ],
+      "right": [
+        "Warm inland region (e.g., inland Spain, southern Australia)",
+        "Old World moderate-climate region (e.g., Burgundy, Loire, Piedmont)",
+        "Cool marginal climate (e.g., Germany, northern Loire, England)",
+        "Continental or cool-climate with thick-skinned variety (e.g., Nebbiolo from Piedmont, Tannat from Madiran)"
+      ]
+    },
+    "correct": [
+      2,
+      3,
+      0,
+      1
+    ],
+    "explanation": "Very high acidity + low alcohol points to cool/marginal climates where sugar accumulation is limited. Very high tannin + high acid + medium body suggests a thick-skinned variety in a cooler climate (Nebbiolo in Piedmont). Very high alcohol + low acid + full body indicates warm climates. Moderate acid/tannin/alcohol with minerality suggests moderate Old World climates with terroir expression.",
+    "sources": "Court of Master Sommeliers Deductive Tasting Grid; GuildSomm Structural Analysis",
+    "confidence": "established",
+    "tags": [
+      "structural-analysis",
+      "climate-determination",
+      "deductive-reasoning"
+    ]
+  },
+  {
+    "id": "BT-032",
+    "domain": "blind_tasting",
+    "difficulty": 1400,
+    "level": 7,
+    "format": "multiple_choice",
+    "question": "How can you distinguish Nebbiolo from Sangiovese in blind tasting when both show high acid, moderate-to-high tannin, and garnet/ruby color?",
+    "options": [
+      "They are impossible to distinguish blind",
+      "Nebbiolo typically shows rose petal, tar, and cherry/raspberry with very fine-grained but powerful tannins, and tends lighter in color relative to its tannin intensity; Sangiovese shows more sour cherry, tomato leaf, dried herbs, and leather, with grainier, more rustic tannins and generally deeper color",
+      "Sangiovese always has higher alcohol",
+      "Nebbiolo never shows earthy notes"
+    ],
+    "correct": 1,
+    "explanation": "The key differentiators: Nebbiolo's color is deceptively pale for its tannin level (a hallmark), its tannins are very fine-grained yet powerful, and its aromatics include distinctive rose petal and tar. Sangiovese has proportionally deeper color, grainier/more rustic tannins, and a sour cherry/tomato leaf aromatic profile with more herbal, dried-herb character. Both are high-acid Italian varieties, making structural comparison alone insufficient.",
+    "sources": "Court of Master Sommeliers Deductive Tasting Grid; GuildSomm Varietal Profiles",
+    "confidence": "established",
+    "tags": [
+      "nebbiolo-vs-sangiovese",
+      "varietal-distinction",
+      "italian-varieties",
+      "tannin-quality"
+    ]
+  },
+  {
+    "id": "BT-033",
+    "domain": "blind_tasting",
+    "difficulty": 1600,
+    "level": 8,
+    "format": "scenario",
+    "question": "You encounter a white wine in a blind flight: medium straw-gold, aromas of flint, chalk, green apple, lemon, and a very subtle smoky/gunflint character. Palate: laser-like acidity, medium body, bone-dry, pronounced minerality with a steely, saline finish. No oak. No malolactic character. What is your deductive process?",
+    "options": [
+      "This is Viognier from Condrieu",
+      "This is a typical oaked Chardonnay",
+      "High acidity + flint/gunflint + chalk + steely minerality + no oak/MLF = Chablis (Chardonnay on Kimmeridgian limestone/marl). The 'gunflint' aroma may come from volatile sulfur compounds from reductive winemaking. The absence of MLF and oak confirms the lean, mineral-focused Chablis style",
+      "This must be Gewürztraminer"
+    ],
+    "correct": 2,
+    "explanation": "This is classic Chablis identification: unoaked Chardonnay with trademark flint/gunflint character (from reductive winemaking on Kimmeridgian soils), laser acidity (cool northerly continental climate), no MLF (preserving crispness), and pronounced chalk/mineral character. The gunflint aroma (sometimes attributed to benzyl mercaptan or other sulfur compounds) is a Chablis signature, distinguishing it from other unoaked Chardonnays.",
+    "sources": "Court of Master Sommeliers Deductive Tasting Grid; GuildSomm Tasting Resources",
+    "confidence": "consensus",
+    "tags": [
+      "chablis",
+      "chardonnay",
+      "gunflint",
+      "kimmeridgian",
+      "minerality"
+    ]
+  },
+  {
+    "id": "BT-034",
+    "domain": "blind_tasting",
+    "difficulty": 2100,
+    "level": 10,
+    "format": "multiple_choice",
+    "question": "In MS-level blind tasting, the concept of 'diagnostic aromas' refers to aroma compounds that are nearly unique to specific grape varieties. Which pairing of diagnostic aroma and variety is correct?",
+    "options": [
+      "Rotundone is diagnostic for Merlot",
+      "Dimethyl sulfide (DMS) at moderate levels is diagnostic for aged Syrah/Shiraz — it contributes truffle, olive, and blackcurrant-leaf notes in evolved examples and is produced from S-methylmethionine precursors during bottle aging",
+      "Isoamyl acetate is diagnostic for Cabernet Franc",
+      "Beta-damascenone is diagnostic for Muscat"
+    ],
+    "correct": 1,
+    "explanation": "DMS (dimethyl sulfide) at moderate levels is a recognized marker of aged Syrah/Shiraz, contributing truffle-like, olive, and blackcurrant-leaf aromas. Its precursor (S-methylmethionine) is present in Syrah grapes and slowly converts to DMS during reductive bottle aging. At higher concentrations it is a fault (canned corn), but at moderate levels in aged Syrah it is a diagnostic varietal-aging marker used by MS-level tasters.",
+    "sources": "Wine Science (Jamie Goode); Oxford Companion to Wine (Robinson, Harding & Vouillamoz)",
+    "confidence": "consensus",
+    "tags": [
+      "DMS",
+      "diagnostic-aromas",
+      "aged-syrah",
+      "S-methylmethionine",
+      "MS-exam"
+    ]
+  },
+  {
+    "id": "BT-035",
+    "domain": "blind_tasting",
+    "difficulty": 2200,
+    "level": 10,
+    "format": "scenario",
+    "question": "In an MS exam tasting flight, you encounter a red wine that initially presents like Northern Rhône Syrah (dark fruit, pepper, violet, smoked meat) but on the palate reveals unexpected high acidity with fine-grained tannin and a more Burgundian structure. You also notice a faint gamey/blood note. How should you process this conflicting data?",
+    "options": [
+      "Commit to Northern Rhône Syrah and ignore the structural contradictions",
+      "Recognize that the aromatic profile of Côte-Rôtie (Northern Rhône Syrah with up to 20% Viognier co-fermentation) can overlap with Burgundian structural elegance due to its specific terroir (steep granite slopes, continental influence); alternatively, consider Cornas or Saint-Joseph. The gamey note and fine tannin could also suggest aged Mourvèdre or even Pinot Noir from a warm vintage. Maintain parallel hypotheses and use the finish length and specific spice profile to resolve",
+      "This must be Pinot Noir based on the structure alone",
+      "The conflicting signals mean the wine has a fault"
+    ],
+    "correct": 1,
+    "explanation": "This scenario tests MS-level parallel processing. Côte-Rôtie Syrah (especially with Viognier co-fermentation) can show surprising elegance and fine tannin that mimics Burgundian structure. The key is maintaining multiple hypotheses simultaneously: Northern Rhône Syrah (specifically Côte-Rôtie), Mourvèdre, or even warm-vintage Pinot Noir. The resolution comes from finish analysis: Côte-Rôtie's distinctive violet/bacon fat finish, Mourvèdre's game/leather, or Pinot's red fruit persistence.",
+    "sources": "Court of Master Sommeliers Examination Standards; GuildSomm MS Preparation Materials",
+    "confidence": "consensus",
+    "tags": [
+      "cote-rotie",
+      "parallel-processing",
+      "conflicting-signals",
+      "MS-exam",
+      "advanced-deductive"
+    ]
+  }
+]

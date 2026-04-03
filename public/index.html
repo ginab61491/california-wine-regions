@@ -2754,12 +2754,82 @@
          SECTION: Palate IQ
     ════════════════════════════════════════════ -->
     <section class="section" id="palateiq-section">
-      <div class="section-header">
-        <h1>Palate IQ</h1>
-        <span class="section-tagline">Train your palate</span>
-      </div>
-      <div class="palateiq-body" style="max-width:700px;margin:0 auto;padding:40px;text-align:center;">
-        <p style="color:var(--ink-light);font-family:'Crimson Text',serif;font-size:1.1rem;">Coming soon.</p>
+      <div class="piq-scroll">
+        <div class="section-header">
+          <h1>Palate IQ</h1>
+          <span class="section-tagline">Train your wine knowledge with adaptive flashcards</span>
+        </div>
+
+        <div class="piq-body">
+          <!-- Score + Stats Bar -->
+          <div class="piq-stats-bar">
+            <div class="piq-stat">
+              <span class="piq-stat-label">Palate IQ</span>
+              <span class="piq-stat-value" id="piq-elo">1000</span>
+            </div>
+            <div class="piq-stat">
+              <span class="piq-stat-label">Streak</span>
+              <span class="piq-stat-value" id="piq-streak">0</span>
+            </div>
+            <div class="piq-stat">
+              <span class="piq-stat-label">Cards Today</span>
+              <span class="piq-stat-value" id="piq-today">0</span>
+            </div>
+            <div class="piq-stat">
+              <span class="piq-stat-label">Accuracy</span>
+              <span class="piq-stat-value" id="piq-accuracy">--</span>
+            </div>
+          </div>
+
+          <!-- Domain Filter Pills -->
+          <div class="piq-domain-bar">
+            <button class="piq-domain-pill active" data-domain="all">All Topics</button>
+            <button class="piq-domain-pill" data-domain="grape_varieties">Grapes</button>
+            <button class="piq-domain-pill" data-domain="regions_appellations">Regions</button>
+            <button class="piq-domain-pill" data-domain="tasting_sensory">Tasting</button>
+            <button class="piq-domain-pill" data-domain="winemaking">Winemaking</button>
+            <button class="piq-domain-pill" data-domain="food_pairing">Food Pairing</button>
+            <button class="piq-domain-pill" data-domain="history_culture">History</button>
+            <button class="piq-domain-pill" data-domain="service_business">Service</button>
+            <button class="piq-domain-pill" data-domain="blind_tasting">Blind Tasting</button>
+          </div>
+
+          <!-- Card Area -->
+          <div class="piq-card-area" id="piq-card-area">
+            <div class="piq-card" id="piq-card">
+              <div class="piq-card-meta">
+                <span class="piq-card-domain" id="piq-card-domain"></span>
+                <span class="piq-card-level" id="piq-card-level"></span>
+              </div>
+              <p class="piq-card-question" id="piq-card-question"></p>
+
+              <!-- Multiple Choice / Odd One Out / Scenario -->
+              <div class="piq-options" id="piq-options"></div>
+
+              <!-- Match Pairs -->
+              <div class="piq-pairs" id="piq-pairs" style="display:none"></div>
+
+              <!-- Explanation (shown after answer) -->
+              <div class="piq-explanation" id="piq-explanation" style="display:none">
+                <p id="piq-explanation-text"></p>
+                <span class="piq-source" id="piq-source"></span>
+              </div>
+
+              <!-- Next button -->
+              <button class="piq-next-btn" id="piq-next-btn" style="display:none">Next Card</button>
+            </div>
+          </div>
+
+          <!-- Level Progress -->
+          <div class="piq-level-bar">
+            <span class="piq-level-label">Level <span id="piq-level-num">1</span></span>
+            <div class="piq-level-track">
+              <div class="piq-level-fill" id="piq-level-fill" style="width:0%"></div>
+            </div>
+            <span class="piq-level-next" id="piq-level-next">Next: Level 2</span>
+          </div>
+
+        </div>
       </div>
     </section>
 
@@ -2927,6 +2997,7 @@
   <script src="js/grape-explorer.js"></script>
   <script src="js/producers.js"></script>
   <script src="js/study-tools.js"></script>
+  <script src="js/palateiq.js"></script>
   <script src="js/app.js"></script>
 </body>
 </html>
