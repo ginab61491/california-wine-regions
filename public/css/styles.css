@@ -255,74 +255,6 @@ button {
   margin-bottom: 24px;
 }
 
-/* ── First-time welcome ── */
-.home-welcome {
-  padding: 48px 40px;
-  background: var(--white);
-  border-bottom: 1px solid var(--cream-dark);
-  text-align: center;
-}
-.home-welcome-inner { max-width: 800px; margin: 0 auto; }
-.home-welcome-title {
-  font-family: 'Playfair Display', Georgia, serif;
-  font-size: clamp(1.4rem, 3vw, 1.8rem);
-  font-weight: 400;
-  color: var(--ink);
-  margin-bottom: 6px;
-}
-.home-welcome-sub {
-  font-family: 'Montserrat', sans-serif;
-  font-size: 0.88rem;
-  color: var(--ink-light);
-  margin-bottom: 24px;
-}
-.home-welcome-grid {
-  display: grid;
-  grid-template-columns: repeat(3, 1fr);
-  gap: 12px;
-  margin-bottom: 20px;
-}
-@media (max-width: 768px) { .home-welcome-grid { grid-template-columns: repeat(2, 1fr); } }
-@media (max-width: 480px) { .home-welcome-grid { grid-template-columns: 1fr; } .home-welcome { padding: 32px 20px; } }
-.home-welcome-card {
-  display: flex;
-  flex-direction: column;
-  gap: 4px;
-  background: var(--cream);
-  border: 1px solid var(--cream-dark);
-  border-radius: 10px;
-  padding: 18px 16px;
-  text-align: left;
-  cursor: pointer;
-  text-decoration: none;
-  color: inherit;
-  transition: all 0.2s;
-}
-.home-welcome-card:hover { border-color: var(--gold); box-shadow: var(--shadow-sm); transform: translateY(-2px); }
-.home-welcome-card strong {
-  font-family: 'Playfair Display', Georgia, serif;
-  font-size: 0.95rem;
-  font-weight: 400;
-  color: var(--ink);
-}
-.home-welcome-card p {
-  font-family: 'Montserrat', sans-serif;
-  font-size: 0.72rem;
-  color: var(--ink-light);
-  line-height: 1.4;
-  margin: 0;
-}
-.home-welcome-dismiss {
-  font-family: 'Montserrat', sans-serif;
-  font-size: 0.72rem;
-  color: var(--ink-xlight);
-  background: none;
-  border: none;
-  cursor: pointer;
-  padding: 8px 16px;
-}
-.home-welcome-dismiss:hover { color: var(--ink-mid); }
-
 /* ── About Gina ── */
 .home-about {
   background: var(--white);
@@ -497,11 +429,6 @@ button {
   border-color: var(--gold);
   box-shadow: 0 8px 32px rgba(196, 146, 42, 0.12);
   transform: translateY(-4px);
-}
-.home-card-emoji {
-  font-size: 1.8rem;
-  margin-bottom: 14px;
-  line-height: 1;
 }
 .home-card-icon {
   width: 40px;
