@@ -332,7 +332,7 @@ document.addEventListener('DOMContentLoaded', () => {
 
       scanBtn.disabled = true;
       scanBtn.textContent = 'Scanning...';
-      scanStatus.textContent = 'Identifying bottles — this may take 10-15 seconds...';
+      scanStatus.textContent = 'Identifying bottles. This may take 10-15 seconds...';
       scanResults.innerHTML = '';
 
       try {
@@ -352,7 +352,7 @@ document.addEventListener('DOMContentLoaded', () => {
           let errMsg = `Server error (${res.status})`;
           try { const errData = await res.json(); errMsg = errData.error || errMsg; } catch {}
           if (res.status === 413) errMsg = 'Image too large. Try a smaller photo.';
-          if (res.status === 500) errMsg = 'Server error — please try again in a moment.';
+          if (res.status === 500) errMsg = 'Server error. Please try again in a moment.';
           throw new Error(errMsg);
         }
 
