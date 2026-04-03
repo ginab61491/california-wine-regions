@@ -2115,6 +2115,87 @@ button {
 @media (max-width: 900px) {
   .study-tracks, .study-tracks-3col { grid-template-columns: 1fr; }
 }
+/* Certification logos */
+.cert-logos {
+  display: flex;
+  justify-content: center;
+  gap: 40px;
+  margin-bottom: 32px;
+  padding: 24px 0;
+}
+.cert-logo {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 8px;
+}
+.cert-logo img {
+  width: 60px;
+  height: 60px;
+  object-fit: contain;
+  filter: grayscale(0.3);
+  transition: filter 0.2s;
+}
+.cert-logo:hover img { filter: grayscale(0); }
+.cert-logo span {
+  font-family: 'Montserrat', sans-serif;
+  font-size: 0.68rem;
+  font-weight: 600;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  color: var(--ink-xlight);
+}
+
+/* Wine Classes section */
+.classes-section {
+  margin-top: 40px;
+  padding-top: 32px;
+  border-top: 1px solid var(--cream-dark);
+}
+.classes-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 20px;
+}
+@media (max-width: 900px) { .classes-grid { grid-template-columns: 1fr; } }
+.classes-group-title {
+  font-family: 'Playfair Display', Georgia, serif;
+  font-size: 1rem;
+  font-weight: 400;
+  color: var(--ink);
+  margin-bottom: 10px;
+}
+.classes-list { display: flex; flex-direction: column; gap: 10px; }
+.class-card {
+  display: block;
+  background: var(--white);
+  border: 1px solid var(--border-ink);
+  border-radius: 8px;
+  padding: 16px;
+  text-decoration: none;
+  transition: all 0.2s;
+}
+.class-card:hover { border-color: var(--gold); box-shadow: var(--shadow-sm); }
+.class-card strong {
+  font-family: 'Montserrat', sans-serif;
+  font-size: 0.85rem;
+  color: var(--ink);
+  display: block;
+  margin-bottom: 4px;
+}
+.class-card p {
+  font-family: 'Montserrat', sans-serif;
+  font-size: 0.75rem;
+  color: var(--ink-light);
+  line-height: 1.5;
+  margin: 0 0 6px;
+}
+.class-meta {
+  font-family: 'Montserrat', sans-serif;
+  font-size: 0.62rem;
+  color: var(--ink-xlight);
+}
+
 .study-section-heading {
   font-family: 'Playfair Display', Georgia, serif;
   font-size: 1.4rem;
