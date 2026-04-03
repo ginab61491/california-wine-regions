@@ -32,11 +32,12 @@ document.addEventListener('DOMContentLoaded', () => {
     recs:        'Recommendations',
     about:       'About Sommplicity',
     chat:        'Sommelier AI',
+    palateiq:    'Palate IQ',
   };
 
   // Section → parent group for dropdown active states
   const sectionGroups = {
-    grapes: 'Learn', dailywine: 'Learn', pairing: 'Learn', regions: 'Learn', producers: 'Learn',
+    grapes: 'Learn', dailywine: 'Learn', pairing: 'Learn', regions: 'Learn', producers: 'Learn', palateiq: 'Learn',
     study: 'Study', cmsprep: 'Study', wset3prep: 'Study',
     catrip: 'Visit', caregions: 'Visit', events: 'Visit',
     analyzer: 'Sip', diary: 'Sip', palate: 'Sip', vault: 'Sip', recs: 'Sip',
