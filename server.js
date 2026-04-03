@@ -395,6 +395,13 @@ app.post('/api/subscribe', async (req, res) => {
     const data = await response.json();
 
     if (data.status === 'subscribed' || data.status === 400) {
+      // Log subscriber to local file
+      const subFile = path.join(__dirname, 'data', 'subscribers.json');
+      let subs = [];
+      try { subs = JSON.parse(fs.readFileSync(subFile, 'utf8')); } catch {}
+      subs.push({ email, name: name || '', level: level || '', topics: topics || [], subscribedAt: new Date().toISOString() });
+      fs.writeFileSync(subFile, JSON.stringify(subs, null, 2));
+
       res.json({ ok: true });
     } else {
       res.status(400).json({ error: data.title || 'Subscription failed' });
@@ -402,6 +409,17 @@ app.post('/api/subscribe', async (req, res) => {
   } catch (err) {
     console.error('Mailchimp error:', err);
     res.status(500).json({ error: 'Failed to subscribe. Try again later.' });
+  }
+});
+
+// View subscribers (JSON)
+app.get('/api/subscribers', (req, res) => {
+  const subFile = path.join(__dirname, 'data', 'subscribers.json');
+  try {
+    const subs = JSON.parse(fs.readFileSync(subFile, 'utf8'));
+    res.json(subs);
+  } catch {
+    res.json([]);
   }
 });
 
