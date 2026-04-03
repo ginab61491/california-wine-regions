@@ -191,6 +191,28 @@ document.addEventListener('DOMContentLoaded', () => {
   // Start on home page
   updateHeaderState();
 
+  // ── First-time visitor welcome ──
+  const welcomeEl = document.getElementById('home-welcome');
+  const dismissBtn = document.getElementById('home-welcome-dismiss');
+  if (welcomeEl && !localStorage.getItem('somm_visited')) {
+    welcomeEl.style.display = 'block';
+    // Card clicks navigate and dismiss
+    welcomeEl.querySelectorAll('[data-section]').forEach(card => {
+      card.addEventListener('click', (e) => {
+        e.preventDefault();
+        localStorage.setItem('somm_visited', '1');
+        welcomeEl.style.display = 'none';
+        switchSection(card.dataset.section);
+      });
+    });
+    if (dismissBtn) {
+      dismissBtn.addEventListener('click', () => {
+        localStorage.setItem('somm_visited', '1');
+        welcomeEl.style.display = 'none';
+      });
+    }
+  }
+
   // ── Topnav auth state ──
   function updateTopnavAuth() {
     const user = JSON.parse(localStorage.getItem('sommplicity_user') || 'null');
