@@ -9726,6 +9726,15 @@ code {
   margin-top: 4px;
 }
 .gina-event-link:hover { text-decoration: underline; }
+.gina-events-empty {
+  font-family: 'Crimson Text', Georgia, serif;
+  font-style: italic;
+  font-size: 0.88rem;
+  color: var(--ink-xlight);
+  padding: 16px 0;
+}
+.gina-events-empty a { color: var(--gold); text-decoration: none; }
+.gina-events-empty a:hover { text-decoration: underline; }
 
 /* Photo gallery */
 .gina-gallery {
