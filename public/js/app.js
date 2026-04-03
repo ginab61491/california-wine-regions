@@ -191,6 +191,27 @@ document.addEventListener('DOMContentLoaded', () => {
   // Start on home page
   updateHeaderState();
 
+  // ── Topnav auth state ──
+  function updateTopnavAuth() {
+    const user = JSON.parse(localStorage.getItem('sommplicity_user') || 'null');
+    const signInBtn = document.getElementById('topnav-signin-btn');
+    const userBtn = document.getElementById('topnav-user-btn');
+    const avatar = document.getElementById('topnav-user-avatar');
+    const nameEl = document.getElementById('topnav-user-name');
+    if (!signInBtn || !userBtn) return;
+    if (user) {
+      signInBtn.style.display = 'none';
+      userBtn.style.display = 'flex';
+      if (avatar) avatar.src = user.picture || '';
+      if (nameEl) nameEl.textContent = (user.name || 'Account').split(' ')[0];
+    } else {
+      signInBtn.style.display = '';
+      userBtn.style.display = 'none';
+    }
+  }
+  updateTopnavAuth();
+  window.addEventListener('sommplicity-auth-change', updateTopnavAuth);
+
   // ── Lazy image fade-in ──
   document.querySelectorAll('img[loading="lazy"]').forEach(img => {
     if (img.complete) { img.classList.add('loaded'); }

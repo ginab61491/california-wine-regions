@@ -888,6 +888,39 @@ button {
   border-color: var(--gold-light);
   color: var(--gold-light);
 }
+/* Signed-in user button */
+.topnav-user {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  background: none;
+  border: 1px solid var(--cream-dark);
+  border-radius: 20px;
+  padding: 4px 14px 4px 4px;
+  cursor: pointer;
+  transition: all 0.2s;
+}
+.topnav-user:hover { border-color: var(--gold); }
+.topnav-user-avatar {
+  width: 28px;
+  height: 28px;
+  border-radius: 50%;
+  object-fit: cover;
+}
+.topnav-user-name {
+  font-family: 'Montserrat', sans-serif;
+  font-size: 0.75rem;
+  font-weight: 500;
+  color: var(--ink-mid);
+}
+.topnav--transparent .topnav-user,
+.topnav--scrolled .topnav-user {
+  border-color: rgba(245,241,232,0.3);
+}
+.topnav--transparent .topnav-user-name,
+.topnav--scrolled .topnav-user-name {
+  color: rgba(245,241,232,0.8);
+}
 .topnav--transparent .topnav-signin,
 .topnav--scrolled .topnav-signin {
   color: var(--gold-light);
