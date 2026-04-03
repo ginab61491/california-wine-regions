@@ -305,7 +305,13 @@ document.addEventListener('DOMContentLoaded', () => {
     initialized = true;
 
     try {
-      const files = ['palateiq-cards-1.json', 'palateiq-cards-2.json', 'palateiq-cards-3.json'];
+      const files = [
+        'palateiq-cards-1.json', 'palateiq-cards-2.json', 'palateiq-cards-3.json',
+        'palateiq-grape_varieties.json', 'palateiq-regions_appellations.json',
+        'palateiq-tasting_sensory.json', 'palateiq-winemaking.json',
+        'palateiq-food_pairing.json', 'palateiq-history_culture.json',
+        'palateiq-service_business.json', 'palateiq-blind_tasting.json',
+      ];
       const results = await Promise.allSettled(
         files.map(f => fetch('/data/' + f).then(r => r.ok ? r.json() : []))
       );
@@ -317,6 +323,14 @@ document.addEventListener('DOMContentLoaded', () => {
     } catch {
       // Silently continue with whatever loaded
     }
+
+    // Deduplicate by ID
+    const seen = new Set();
+    allCards = allCards.filter(c => {
+      if (seen.has(c.id)) return false;
+      seen.add(c.id);
+      return true;
+    });
 
     if (allCards.length === 0) {
       document.getElementById('piq-card-question').textContent = 'Loading cards...';
