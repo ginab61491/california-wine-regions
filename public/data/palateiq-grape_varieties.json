@@ -7793,5 +7793,808 @@
       "color_intensity",
       "berry_morphology"
     ]
+  },
+  {
+    "id": "GV-301",
+    "domain": "grape_varieties",
+    "difficulty": 2100,
+    "level": 10,
+    "format": "multiple_choice",
+    "question": "Which grape variety contains the highest natural levels of the terpene compound rotundone, contributing to its distinctive black pepper aromatics?",
+    "options": [
+      "Syrah",
+      "Grüner Veltliner",
+      "Mourvèdre",
+      "Sangiovese"
+    ],
+    "correct": 0,
+    "explanation": "Syrah contains the highest levels of rotundone, the sesquiterpene responsible for black pepper aromatics. This compound is so distinctive that it's used as a chemical marker for Syrah identification, with cool-climate expressions showing the most pronounced pepper character.",
+    "sources": "Wine Science (Jamie Goode); The Oxford Companion to Wine (Robinson & Harding)",
+    "confidence": "established",
+    "tags": [
+      "syrah",
+      "aromatics",
+      "terpenes",
+      "chemistry"
+    ]
+  },
+  {
+    "id": "GV-302",
+    "domain": "grape_varieties",
+    "difficulty": 2200,
+    "level": 10,
+    "format": "match_pairs",
+    "question": "Match each grape variety with its confirmed DNA-analyzed offspring:",
+    "pairs": {
+      "left": [
+        "Gouais Blanc",
+        "Traminer",
+        "Cabernet Franc",
+        "Mondeuse Blanche"
+      ],
+      "right": [
+        "Gewürztraminer",
+        "Chardonnay",
+        "Carmenère",
+        "Syrah"
+      ]
+    },
+    "options": [],
+    "correct": [
+      1,
+      0,
+      2,
+      3
+    ],
+    "explanation": "These parent-offspring relationships were confirmed through DNA analysis by Vouillamoz and colleagues. Gouais Blanc is the prolific parent of over 80 varieties including Chardonnay, while Traminer gave rise to the aromatic Gewürztraminer mutation.",
+    "sources": "Wine Grapes (Robinson, Harding & Vouillamoz); The Oxford Companion to Wine (Robinson & Harding)",
+    "confidence": "established",
+    "tags": [
+      "dna_parentage",
+      "genetics",
+      "varietal_relationships"
+    ]
+  },
+  {
+    "id": "GV-303",
+    "domain": "grape_varieties",
+    "difficulty": 2150,
+    "level": 10,
+    "format": "odd_one_out",
+    "question": "Which of these grape varieties does NOT typically develop significant levels of methoxypyrazines, contributing to herbaceous characteristics?",
+    "options": [
+      "Cabernet Sauvignon",
+      "Sauvignon Blanc",
+      "Carmenère",
+      "Chenin Blanc"
+    ],
+    "correct": 3,
+    "explanation": "Chenin Blanc lacks the genetic predisposition to produce significant methoxypyrazines, the compounds responsible for bell pepper and herbaceous notes. The other three varieties are notorious for these 'green' characteristics when grown in cool conditions or harvested underripe.",
+    "sources": "Wine Science (Jamie Goode); The Oxford Companion to Wine (Robinson & Harding)",
+    "confidence": "established",
+    "tags": [
+      "methoxypyrazines",
+      "aromatics",
+      "chemistry",
+      "herbaceous"
+    ]
+  },
+  {
+    "id": "GV-304",
+    "domain": "grape_varieties",
+    "difficulty": 2300,
+    "level": 10,
+    "format": "multiple_choice",
+    "question": "Which grape variety is confirmed through DNA analysis to be a natural crossing of Pinot Noir and Cinsaut, originally developed for Algeria's hot climate?",
+    "options": [
+      "Pinotage",
+      "Ruby Cabernet",
+      "Marselan",
+      "Centennial"
+    ],
+    "correct": 0,
+    "explanation": "Pinotage was created in 1925 by Abraham Perold at Stellenbosch University, crossing Pinot Noir with Cinsaut (then called Hermitage in South Africa). This crossing aimed to combine Pinot's elegance with Cinsaut's heat tolerance for challenging climates.",
+    "sources": "Wine Grapes (Robinson, Harding & Vouillamoz); The Oxford Companion to Wine (Robinson & Harding)",
+    "confidence": "established",
+    "tags": [
+      "pinotage",
+      "crossings",
+      "south_africa",
+      "dna_analysis"
+    ]
+  },
+  {
+    "id": "GV-305",
+    "domain": "grape_varieties",
+    "difficulty": 2250,
+    "level": 10,
+    "format": "scenario",
+    "question": "A Master Sommelier candidate is analyzing a wine with distinctive 'tar and roses' aromatics, high acidity, and aggressive tannins that require extended aging. The wine shows classic nebbiolo characteristics but comes from an unexpected region. Which clone would most likely produce this profile outside Piedmont?",
+    "options": [
+      "Nebbiolo Lampia",
+      "Nebbiolo Michet",
+      "Nebbiolo Rosé",
+      "Nebbiolo Bolla"
+    ],
+    "correct": 0,
+    "explanation": "Nebbiolo Lampia is the most widely planted and highest-quality clone, producing the most structured wines with classic 'tar and roses' aromatics. It's the clone most likely to maintain nebbiolo's distinctive character when planted in new regions, unlike the more delicate Michet.",
+    "sources": "The Oxford Companion to Wine (Robinson & Harding); Wine Grapes (Robinson, Harding & Vouillamoz)",
+    "confidence": "established",
+    "tags": [
+      "nebbiolo",
+      "clones",
+      "aromatics",
+      "structure"
+    ]
+  },
+  {
+    "id": "GV-306",
+    "domain": "grape_varieties",
+    "difficulty": 2180,
+    "level": 10,
+    "format": "multiple_choice",
+    "question": "Which grape variety contains the highest natural levels of malic acid among major white varieties, contributing to its piercing acidity even in warm climates?",
+    "options": [
+      "Riesling",
+      "Albariño",
+      "Assyrtiko",
+      "Grüner Veltliner"
+    ],
+    "correct": 2,
+    "explanation": "Assyrtiko maintains exceptionally high malic acid levels even in Santorini's intense heat, creating wines with almost electric acidity. This genetic trait allows it to produce age-worthy wines in volcanic soils where other varieties would become flabby and unbalanced.",
+    "sources": "The Oxford Companion to Wine (Robinson & Harding); Wine Grapes (Robinson, Harding & Vouillamoz)",
+    "confidence": "established",
+    "tags": [
+      "assyrtiko",
+      "acidity",
+      "malic_acid",
+      "greece"
+    ]
+  },
+  {
+    "id": "GV-307",
+    "domain": "grape_varieties",
+    "difficulty": 2350,
+    "level": 10,
+    "format": "match_pairs",
+    "question": "Match each grape variety with its characteristic anthocyanin profile:",
+    "pairs": {
+      "left": [
+        "Pinot Noir",
+        "Syrah",
+        "Nebbiolo",
+        "Sangiovese"
+      ],
+      "right": [
+        "Low total, unstable color",
+        "High malvidin, stable color",
+        "Low total, quick browning",
+        "Medium total, moderate stability"
+      ]
+    },
+    "options": [],
+    "correct": [
+      0,
+      1,
+      2,
+      3
+    ],
+    "explanation": "These anthocyanin profiles explain each variety's color behavior. Pinot's low anthocyanins create delicate color, while Syrah's high malvidin content produces deeply colored, stable wines. Nebbiolo's rapid browning is legendary among Barolo producers.",
+    "sources": "Wine Science (Jamie Goode); The Oxford Companion to Wine (Robinson & Harding)",
+    "confidence": "established",
+    "tags": [
+      "anthocyanins",
+      "color",
+      "chemistry",
+      "phenolics"
+    ]
+  },
+  {
+    "id": "GV-308",
+    "domain": "grape_varieties",
+    "difficulty": 2400,
+    "level": 10,
+    "format": "multiple_choice",
+    "question": "Which grape variety is confirmed through DNA analysis to be a natural crossing of Dureza and Mondeuse Blanche, both indigenous to the Northern Rhône?",
+    "options": [
+      "Syrah",
+      "Viognier",
+      "Marsanne",
+      "Roussanne"
+    ],
+    "correct": 0,
+    "explanation": "DNA analysis by Vouillamoz confirmed Syrah's parentage as Dureza (red) × Mondeuse Blanche (white), both from the Northern Rhône region. This discovery solved the mystery of Syrah's origins and explains its perfect adaptation to steep, granite slopes of Hermitage and Côte-Rôtie.",
+    "sources": "Wine Grapes (Robinson, Harding & Vouillamoz); The Oxford Companion to Wine (Robinson & Harding)",
+    "confidence": "established",
+    "tags": [
+      "syrah",
+      "dna_parentage",
+      "northern_rhone",
+      "genetics"
+    ]
+  },
+  {
+    "id": "GV-309",
+    "domain": "grape_varieties",
+    "difficulty": 2100,
+    "level": 10,
+    "format": "odd_one_out",
+    "question": "Which of these grape varieties does NOT typically require extended skin contact to develop its characteristic color intensity and tannin structure?",
+    "options": [
+      "Nebbiolo",
+      "Sangiovese",
+      "Pinot Noir",
+      "Gamay"
+    ],
+    "correct": 3,
+    "explanation": "Gamay's thin skins and low tannin content make it unsuitable for extended maceration, which would extract harsh, bitter compounds. Traditional carbonic maceration actually minimizes skin contact, creating its signature bright, fruity profile without aggressive extraction.",
+    "sources": "The Oxford Companion to Wine (Robinson & Harding); WSET Level 3 Study Materials",
+    "confidence": "established",
+    "tags": [
+      "gamay",
+      "extraction",
+      "winemaking",
+      "skin_contact"
+    ]
+  },
+  {
+    "id": "GV-310",
+    "domain": "grape_varieties",
+    "difficulty": 2250,
+    "level": 10,
+    "format": "scenario",
+    "question": "A winemaker in Tasmania notices their Pinot Noir consistently developing unwanted herbaceous characteristics despite optimal ripeness. Which viticultural factor is most likely contributing to excessive methoxypyrazine production?",
+    "options": [
+      "Excessive canopy density blocking sunlight",
+      "Over-irrigation during véraison",
+      "Late harvest timing",
+      "High-vigor rootstock selection"
+    ],
+    "correct": 0,
+    "explanation": "Methoxypyrazines degrade with sunlight exposure, so excessive canopy density creates shaded fruit that retains these 'green' compounds. This is particularly problematic in cool climates like Tasmania where natural light intensity is already limited for breaking down these unwanted aromatics.",
+    "sources": "Wine Science (Jamie Goode); The Oxford Companion to Wine (Robinson & Harding)",
+    "confidence": "established",
+    "tags": [
+      "pinot_noir",
+      "methoxypyrazines",
+      "viticulture",
+      "canopy_management"
+    ]
+  },
+  {
+    "id": "GV-311",
+    "domain": "grape_varieties",
+    "difficulty": 2300,
+    "level": 10,
+    "format": "multiple_choice",
+    "question": "Which grape variety is known for producing wines with the highest natural levels of the phenolic compound resveratrol due to its genetic predisposition and thick skin structure?",
+    "options": [
+      "Tannat",
+      "Petite Sirah",
+      "Sagrantino",
+      "Aglianico"
+    ],
+    "correct": 2,
+    "explanation": "Sagrantino produces wines with exceptionally high resveratrol levels, often 10-15 times higher than other varieties. Its genetic makeup combined with extremely thick skins creates wines so tannic they traditionally required decades of aging, earning the nickname 'the iron fist in a velvet glove.'",
+    "sources": "Wine Science (Jamie Goode); The Oxford Companion to Wine (Robinson & Harding)",
+    "confidence": "consensus",
+    "tags": [
+      "sagrantino",
+      "resveratrol",
+      "phenolics",
+      "umbria"
+    ]
+  },
+  {
+    "id": "GV-312",
+    "domain": "grape_varieties",
+    "difficulty": 2150,
+    "level": 10,
+    "format": "match_pairs",
+    "question": "Match each grape variety with its characteristic skin-to-juice ratio:",
+    "pairs": {
+      "left": [
+        "Grenache",
+        "Mourvèdre",
+        "Carignan",
+        "Cinsaut"
+      ],
+      "right": [
+        "Very high ratio, intense extraction",
+        "Low ratio, light extraction",
+        "High ratio, structured wines",
+        "Medium ratio, balanced extraction"
+      ]
+    },
+    "options": [],
+    "correct": [
+      1,
+      0,
+      2,
+      3
+    ],
+    "explanation": "These ratios explain each variety's role in blends: Grenache's low skin-to-juice ratio provides fruit and alcohol, Mourvèdre's high ratio adds structure and color, while Carignan contributes backbone and Cinsaut offers elegance and perfume.",
+    "sources": "The Oxford Companion to Wine (Robinson & Harding); Wine Science (Jamie Goode)",
+    "confidence": "established",
+    "tags": [
+      "skin_ratio",
+      "extraction",
+      "southern_rhone",
+      "blending"
+    ]
+  },
+  {
+    "id": "GV-313",
+    "domain": "grape_varieties",
+    "difficulty": 2400,
+    "level": 10,
+    "format": "multiple_choice",
+    "question": "Which white grape variety is confirmed through DNA analysis to be a natural crossing of Savagnin and an unknown second parent, explaining its distinctive aromatic intensity?",
+    "options": [
+      "Gewürztraminer",
+      "Viognier",
+      "Torrontés",
+      "Moscato Bianco"
+    ],
+    "correct": 0,
+    "explanation": "DNA analysis confirmed Gewürztraminer as a pink-skinned mutation of Traminer, with Savagnin as one confirmed parent. This parentage explains its extraordinary aromatic intensity and the genetic basis for its distinctive lychee and rose petal characteristics that make it unmistakable in blind tastings.",
+    "sources": "Wine Grapes (Robinson, Harding & Vouillamoz); The Oxford Companion to Wine (Robinson & Harding)",
+    "confidence": "established",
+    "tags": [
+      "gewurztraminer",
+      "dna_parentage",
+      "savagnin",
+      "aromatics"
+    ]
+  },
+  {
+    "id": "GV-314",
+    "domain": "grape_varieties",
+    "difficulty": 2200,
+    "level": 10,
+    "format": "scenario",
+    "question": "A sommelier is serving a 20-year-old Barolo that shows classic 'tar and roses' aromatics but has developed an unusual orange-brick color much more rapidly than expected. Which factor most likely accelerated this color evolution?",
+    "options": [
+      "High pH during fermentation",
+      "Extended skin contact during maceration",
+      "Storage in overly warm conditions",
+      "Natural low anthocyanin content of Nebbiolo"
+    ],
+    "correct": 3,
+    "explanation": "Nebbiolo naturally contains very low levels of anthocyanins, making it prone to rapid color evolution from ruby to orange-brick. This variety's color instability is legendary, with even young Barolos showing orange hues that would indicate over-maturity in other varieties.",
+    "sources": "The Oxford Companion to Wine (Robinson & Harding); Wine Science (Jamie Goode)",
+    "confidence": "established",
+    "tags": [
+      "nebbiolo",
+      "color_evolution",
+      "anthocyanins",
+      "aging"
+    ]
+  },
+  {
+    "id": "GV-315",
+    "domain": "grape_varieties",
+    "difficulty": 2350,
+    "level": 10,
+    "format": "odd_one_out",
+    "question": "Which of these grape varieties does NOT typically develop significant levels of the compound 4-mercapto-4-methylpentan-2-one (4MMP), contributing to blackcurrant and tropical fruit aromatics?",
+    "options": [
+      "Sauvignon Blanc",
+      "Cabernet Sauvignon",
+      "Riesling",
+      "Scheurebe"
+    ],
+    "correct": 2,
+    "explanation": "Riesling lacks the genetic predisposition to produce significant 4MMP, the thiol compound responsible for intense blackcurrant and tropical fruit aromatics. Instead, Riesling's aromatic profile relies on terpenes and esters, creating its distinctive petrol and citrus character profile.",
+    "sources": "Wine Science (Jamie Goode); The Oxford Companion to Wine (Robinson & Harding)",
+    "confidence": "established",
+    "tags": [
+      "thiols",
+      "aromatics",
+      "riesling",
+      "chemistry"
+    ]
+  },
+  {
+    "id": "GV-316",
+    "domain": "grape_varieties",
+    "difficulty": 2200,
+    "level": 10,
+    "format": "multiple_choice",
+    "question": "Which grape variety is confirmed through DNA analysis to be a natural crossing of Magdeleine Noire des Charentes and Cabernet Franc, making it a half-sibling to Merlot?",
+    "options": [
+      "Carmenère",
+      "Malbec",
+      "Petit Verdot",
+      "Cabernet Sauvignon"
+    ],
+    "correct": 1,
+    "explanation": "Malbec's parentage was confirmed by UC Davis researchers, revealing it shares one parent (Magdeleine Noire des Charentes) with Merlot, making them half-siblings. This genetic connection explains why both varieties can show similar plush textures and dark fruit profiles in certain terroirs.",
+    "sources": "Wine Grapes (Robinson, Harding & Vouillamoz); GuildSomm",
+    "confidence": "established",
+    "tags": [
+      "dna_parentage",
+      "malbec",
+      "bordeaux_varieties",
+      "genetics"
+    ]
+  },
+  {
+    "id": "GV-317",
+    "domain": "grape_varieties",
+    "difficulty": 2350,
+    "level": 10,
+    "format": "odd_one_out",
+    "question": "Which of these grape varieties does NOT naturally produce significant levels of methoxypyrazines, the compounds responsible for herbaceous 'bell pepper' characteristics?",
+    "options": [
+      "Cabernet Franc",
+      "Carmenère",
+      "Sauvignon Blanc",
+      "Grenache"
+    ],
+    "correct": 3,
+    "explanation": "Grenache produces virtually no methoxypyrazines, which is why it never shows the green bell pepper notes that can appear in the other three varieties. This absence of methoxypyrazines allows Grenache's pure red fruit character to shine through, even when grown in cooler conditions.",
+    "sources": "Wine Science (Jamie Goode); The Oxford Companion to Wine",
+    "confidence": "established",
+    "tags": [
+      "methoxypyrazines",
+      "grenache",
+      "aromatic_compounds",
+      "herbaceous_character"
+    ]
+  },
+  {
+    "id": "GV-318",
+    "domain": "grape_varieties",
+    "difficulty": 2100,
+    "level": 10,
+    "format": "match_pairs",
+    "question": "Match each grape variety with its characteristic natural acidity level at harvest:",
+    "pairs": {
+      "left": [
+        "Chenin Blanc",
+        "Viognier",
+        "Albariño",
+        "Gewürztraminer"
+      ],
+      "right": [
+        "Naturally high malic acid retention",
+        "Naturally low total acidity",
+        "Extreme tartaric acid levels",
+        "Moderate acidity with quick malic degradation"
+      ]
+    },
+    "options": [],
+    "correct": [
+      0,
+      1,
+      2,
+      3
+    ],
+    "explanation": "Chenin Blanc retains malic acid even in warm climates, Viognier naturally produces low-acid wines, Albariño from Rías Baixas shows piercing tartaric acidity from Atlantic influence, and Gewürztraminer loses malic acid rapidly during ripening. These acid profiles fundamentally shape each variety's winemaking approach.",
+    "sources": "WSET Diploma Study Materials; The Oxford Companion to Wine",
+    "confidence": "established",
+    "tags": [
+      "acidity",
+      "malic_acid",
+      "tartaric_acid",
+      "harvest_chemistry"
+    ]
+  },
+  {
+    "id": "GV-319",
+    "domain": "grape_varieties",
+    "difficulty": 2400,
+    "level": 10,
+    "format": "scenario",
+    "question": "A Master Sommelier candidate is tasting a wine blind that shows intense violet florals, white pepper spice, and firm tannins, but the color is surprisingly light for the intensity of flavor. The wine is from a warm climate but shows remarkable freshness. Which variety and winemaking technique combination is most likely?",
+    "options": [
+      "Syrah with whole cluster fermentation",
+      "Mourvèdre with extended cold maceration",
+      "Grenache with carbonic maceration",
+      "Cinsaut with traditional fermentation"
+    ],
+    "correct": 0,
+    "explanation": "Syrah with whole cluster fermentation produces this exact profile - the stems contribute white pepper spice and floral lift while reducing color extraction, creating wines with remarkable aromatic intensity but lighter color. The stems also preserve freshness in warm climates through increased acidity and tannin structure.",
+    "sources": "GuildSomm; Wine Science (Jamie Goode)",
+    "confidence": "established",
+    "tags": [
+      "syrah",
+      "whole_cluster",
+      "winemaking_techniques",
+      "blind_tasting"
+    ]
+  },
+  {
+    "id": "GV-320",
+    "domain": "grape_varieties",
+    "difficulty": 2250,
+    "level": 10,
+    "format": "multiple_choice",
+    "question": "Which grape variety contains the highest natural levels of the aromatic compound damascenone, contributing to its characteristic 'honey and beeswax' tertiary development?",
+    "options": [
+      "Riesling",
+      "Chenin Blanc",
+      "Sémillon",
+      "Chardonnay"
+    ],
+    "correct": 2,
+    "explanation": "Sémillon naturally contains exceptional levels of damascenone precursors that develop into the variety's signature honeyed complexity with age. This compound is why aged Hunter Valley Sémillon or great Sauternes develop such distinctive waxy, honeyed character that no other variety can quite replicate.",
+    "sources": "Wine Science (Jamie Goode); The Oxford Companion to Wine",
+    "confidence": "established",
+    "tags": [
+      "semillon",
+      "damascenone",
+      "tertiary_aromatics",
+      "aging_potential"
+    ]
+  },
+  {
+    "id": "GV-321",
+    "domain": "grape_varieties",
+    "difficulty": 2150,
+    "level": 10,
+    "format": "multiple_choice",
+    "question": "Which clone of Pinot Noir was specifically selected for its ability to retain color and structure in warm climates, making it particularly valuable for New World regions?",
+    "options": [
+      "Clone 115",
+      "Clone 777",
+      "Clone 667",
+      "Clone 828"
+    ],
+    "correct": 1,
+    "explanation": "Clone 777 was selected from Burgundy specifically for its heat tolerance and color retention, making it the go-to choice for warmer Pinot Noir regions like California and Australia. Its thick skins and compact clusters help maintain the variety's elegance even when temperatures rise, earning it the nickname 'the workhorse clone.'",
+    "sources": "GuildSomm; WSET Diploma Study Materials",
+    "confidence": "established",
+    "tags": [
+      "pinot_noir",
+      "clone_777",
+      "warm_climate",
+      "color_retention"
+    ]
+  },
+  {
+    "id": "GV-322",
+    "domain": "grape_varieties",
+    "difficulty": 2300,
+    "level": 10,
+    "format": "odd_one_out",
+    "question": "Which of these grape varieties does NOT typically develop significant levels of volatile phenols when affected by Brettanomyces, due to its low precursor compound content?",
+    "options": [
+      "Mourvèdre",
+      "Syrah",
+      "Sangiovese",
+      "Riesling"
+    ],
+    "correct": 3,
+    "explanation": "Riesling contains virtually no phenolic precursors that Brettanomyces can convert to volatile phenols, making it essentially immune to 'Brett' character. The red varieties all contain coumaric and ferulic acids that Brett can transform into 4-ethylphenol and 4-ethylguaiacol, creating those barnyard aromatics that can plague red wines.",
+    "sources": "Wine Science (Jamie Goode); The Oxford Companion to Wine",
+    "confidence": "established",
+    "tags": [
+      "brettanomyces",
+      "volatile_phenols",
+      "riesling",
+      "wine_faults"
+    ]
+  },
+  {
+    "id": "GV-323",
+    "domain": "grape_varieties",
+    "difficulty": 2450,
+    "level": 10,
+    "format": "match_pairs",
+    "question": "Match each grape variety with its characteristic response to botrytis cinerea infection:",
+    "pairs": {
+      "left": [
+        "Sémillon",
+        "Chenin Blanc",
+        "Sauvignon Blanc",
+        "Riesling"
+      ],
+      "right": [
+        "Concentrates sugars while maintaining acidity",
+        "Develops complex honeyed flavors readily",
+        "Often becomes overly flabby and loses character",
+        "Creates intense sweetness but can lack complexity"
+      ]
+    },
+    "options": [],
+    "correct": [
+      1,
+      0,
+      2,
+      3
+    ],
+    "explanation": "Sémillon's thin skins make it the ideal botrytis host, developing extraordinary honeyed complexity in Sauternes. Chenin Blanc's high natural acidity survives the concentration process beautifully. Sauvignon Blanc often loses its characteristic intensity when botrytized, while Riesling creates sweetness but sometimes lacks the complexity of the other noble rot varieties.",
+    "sources": "The Oxford Companion to Wine; WSET Diploma Study Materials",
+    "confidence": "established",
+    "tags": [
+      "botrytis",
+      "noble_rot",
+      "sweet_wines",
+      "varietal_response"
+    ]
+  },
+  {
+    "id": "GV-324",
+    "domain": "grape_varieties",
+    "difficulty": 2200,
+    "level": 10,
+    "format": "scenario",
+    "question": "A winemaker in Santorini notices their Assyrtiko vines consistently producing wines with lower than expected acidity despite the variety's reputation. Which factor is most likely compromising the variety's characteristic acidity retention?",
+    "options": [
+      "Excessive potassium uptake from volcanic soils",
+      "Insufficient diurnal temperature variation",
+      "Over-irrigation reducing stress",
+      "Harvest timing too late in the season"
+    ],
+    "correct": 0,
+    "explanation": "Assyrtiko can absorb excessive potassium from Santorini's volcanic pumice soils, which directly reduces acidity by promoting malate degradation. The variety's legendary acid retention depends on balanced nutrition - when potassium levels spike, even this acid-champion loses its characteristic laser-like precision.",
+    "sources": "WSET Diploma Study Materials; GuildSomm",
+    "confidence": "established",
+    "tags": [
+      "assyrtiko",
+      "potassium_uptake",
+      "volcanic_soils",
+      "acidity_retention"
+    ]
+  },
+  {
+    "id": "GV-325",
+    "domain": "grape_varieties",
+    "difficulty": 2350,
+    "level": 10,
+    "format": "multiple_choice",
+    "question": "Which grape variety is confirmed through DNA analysis to be a natural crossing of Gouais Blanc and Pinot Noir, making it a sibling to Chardonnay and numerous other major varieties?",
+    "options": [
+      "Gamay",
+      "Aligoté",
+      "Melon de Bourgogne",
+      "Auxerrois"
+    ],
+    "correct": 1,
+    "explanation": "Aligoté shares the same Gouais Blanc × Pinot Noir parentage as Chardonnay, making them full siblings despite their very different expressions. This ancient crossing has produced an extraordinary number of important varieties, with Aligoté representing the more mineral, high-acid expression of this genetic combination compared to Chardonnay's richer potential.",
+    "sources": "Wine Grapes (Robinson, Harding & Vouillamoz); GuildSomm",
+    "confidence": "established",
+    "tags": [
+      "aligote",
+      "dna_parentage",
+      "gouais_blanc",
+      "chardonnay_sibling"
+    ]
+  },
+  {
+    "id": "GV-326",
+    "domain": "grape_varieties",
+    "difficulty": 2100,
+    "level": 10,
+    "format": "multiple_choice",
+    "question": "Which grape variety naturally produces the highest levels of glycerol among major white varieties, contributing to its characteristic viscous mouthfeel?",
+    "options": [
+      "Gewürztraminer",
+      "Viognier",
+      "Pinot Gris",
+      "Chenin Blanc"
+    ],
+    "correct": 1,
+    "explanation": "Viognier produces exceptional glycerol levels during fermentation, creating its signature oily, viscous texture that coats the palate. This natural glycerol production is so pronounced that Viognier wines often show their characteristic weight and richness even without oak treatment - the variety literally feels different in your mouth.",
+    "sources": "Wine Science (Jamie Goode); The Oxford Companion to Wine",
+    "confidence": "established",
+    "tags": [
+      "viognier",
+      "glycerol",
+      "mouthfeel",
+      "viscosity"
+    ]
+  },
+  {
+    "id": "GV-327",
+    "domain": "grape_varieties",
+    "difficulty": 2400,
+    "level": 10,
+    "format": "odd_one_out",
+    "question": "Which of these grape varieties does NOT typically show significant vintage variation in phenolic ripeness due to its consistent tannin development patterns?",
+    "options": [
+      "Cabernet Sauvignon",
+      "Nebbiolo",
+      "Sangiovese",
+      "Grenache"
+    ],
+    "correct": 3,
+    "explanation": "Grenache develops tannins very consistently across vintages because its large berries and thin skins create predictable phenolic extraction patterns. The other varieties all show dramatic vintage variation - Cabernet Sauvignon with its thick skins, Nebbiolo with its late ripening, and Sangiovese with its sensitivity to temperature fluctuations during the crucial final ripening phase.",
+    "sources": "GuildSomm; WSET Diploma Study Materials",
+    "confidence": "established",
+    "tags": [
+      "grenache",
+      "phenolic_ripeness",
+      "vintage_variation",
+      "tannin_development"
+    ]
+  },
+  {
+    "id": "GV-328",
+    "domain": "grape_varieties",
+    "difficulty": 2250,
+    "level": 10,
+    "format": "match_pairs",
+    "question": "Match each grape variety with its characteristic cluster architecture and resulting disease pressure:",
+    "pairs": {
+      "left": [
+        "Riesling",
+        "Pinot Noir",
+        "Chenin Blanc",
+        "Gewürztraminer"
+      ],
+      "right": [
+        "Extremely compact, high botrytis risk",
+        "Loose clusters, good air circulation",
+        "Compact with tough skins, moderate risk",
+        "Variable compactness, clone-dependent risk"
+      ]
+    },
+    "options": [],
+    "correct": [
+      2,
+      3,
+      1,
+      0
+    ],
+    "explanation": "Riesling's tough skins and compact clusters create moderate disease pressure, while Pinot Noir's cluster architecture varies dramatically by clone. Chenin Blanc's loose, well-ventilated clusters resist disease naturally, but Gewürztraminer's extremely tight clusters make it highly susceptible to rot - a key factor in its viticultural challenges.",
+    "sources": "The Oxford Companion to Wine; WSET Diploma Study Materials",
+    "confidence": "established",
+    "tags": [
+      "cluster_architecture",
+      "disease_pressure",
+      "botrytis_risk",
+      "viticultural_challenges"
+    ]
+  },
+  {
+    "id": "GV-329",
+    "domain": "grape_varieties",
+    "difficulty": 2350,
+    "level": 10,
+    "format": "scenario",
+    "question": "A sommelier is analyzing a wine that shows classic Nebbiolo characteristics - tar, roses, high acid, firm tannins - but comes from Valtellina rather than Piedmont. The wine shows more immediate approachability despite clear varietal character. Which factor most likely accounts for this stylistic difference?",
+    "options": [
+      "Higher altitude reducing tannin extraction",
+      "Granite soils creating softer tannin structure",
+      "Different Nebbiolo clones adapted to Alpine conditions",
+      "Extended skin contact time in Valtellina tradition"
+    ],
+    "correct": 2,
+    "explanation": "Valtellina's Nebbiolo clones (locally called Chiavennasca) have adapted to Alpine conditions over centuries, developing softer tannin profiles while maintaining the variety's signature aromatics. These high-altitude clones ripen differently than Piedmont's selections, creating wines that show Nebbiolo's character but with more immediate charm and elegance.",
+    "sources": "GuildSomm; The Oxford Companion to Wine",
+    "confidence": "consensus",
+    "tags": [
+      "nebbiolo",
+      "valtellina",
+      "chiavennasca",
+      "alpine_clones"
+    ]
+  },
+  {
+    "id": "GV-330",
+    "domain": "grape_varieties",
+    "difficulty": 2500,
+    "level": 10,
+    "format": "multiple_choice",
+    "question": "Which grape variety contains the highest natural concentration of the compound 3-mercaptohexan-1-ol (3MH), contributing to its characteristic passion fruit and grapefruit aromatics?",
+    "options": [
+      "Sauvignon Blanc",
+      "Colombard",
+      "Petit Manseng",
+      "Riesling"
+    ],
+    "correct": 1,
+    "explanation": "Colombard produces the highest levels of 3MH among white varieties, even exceeding Sauvignon Blanc in this key tropical fruit compound. This explains why Colombard can show such intense passion fruit character in warm climates like California's Central Valley, where it often outshines more famous aromatic varieties in blind tastings of tropical fruit intensity.",
+    "sources": "Wine Science (Jamie Goode); GuildSomm",
+    "confidence": "consensus",
+    "tags": [
+      "colombard",
+      "3MH",
+      "tropical_aromatics",
+      "thiol_compounds"
+    ]
   }
 ]

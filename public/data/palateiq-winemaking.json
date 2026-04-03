@@ -1,0 +1,524 @@
+[
+  {
+    "id": "WM-001",
+    "domain": "winemaking",
+    "difficulty": 2200,
+    "level": 10,
+    "format": "multiple_choice",
+    "question": "In traditional method sparkling wine production, what is the minimum time on lees required for Champagne AOP vintage wines before disgorgement?",
+    "options": [
+      "12 months",
+      "15 months",
+      "3 years",
+      "5 years"
+    ],
+    "correct": 2,
+    "explanation": "Champagne AOP mandates a minimum of 3 years on lees for vintage wines, compared to just 15 months for non-vintage. This extended aging develops the complex brioche and autolytic flavors that define great vintage Champagne—think of it as the wine's 'PhD in flavor development.'",
+    "sources": "WSET Diploma Materials; The Oxford Companion to Wine",
+    "confidence": "established",
+    "tags": [
+      "sparkling_wine",
+      "traditional_method",
+      "champagne",
+      "aging"
+    ]
+  },
+  {
+    "id": "WM-002",
+    "domain": "winemaking",
+    "difficulty": 2300,
+    "level": 10,
+    "format": "odd_one_out",
+    "question": "Which of these yeast strains does NOT belong with the others in terms of fermentation characteristics?",
+    "options": [
+      "Saccharomyces cerevisiae",
+      "Brettanomyces bruxellensis",
+      "Candida milleri",
+      "Kloeckera apiculata"
+    ],
+    "correct": 0,
+    "explanation": "Saccharomyces cerevisiae is the only true fermentative yeast here, capable of completing alcoholic fermentation to dryness. The others are wild yeasts that typically die off as alcohol levels rise—they're the opening act, not the headliner of fermentation.",
+    "sources": "Wine Science (Jamie Goode); The Oxford Companion to Wine",
+    "confidence": "established",
+    "tags": [
+      "yeast",
+      "fermentation",
+      "wild_yeast",
+      "saccharomyces"
+    ]
+  },
+  {
+    "id": "WM-003",
+    "domain": "winemaking",
+    "difficulty": 2400,
+    "level": 10,
+    "format": "multiple_choice",
+    "question": "In Sherry production, what is the specific gravity range that determines when a wine will be classified for biological aging versus oxidative aging?",
+    "options": [
+      "15.0-15.5% ABV",
+      "14.5-15.5% ABV",
+      "15.5-16.0% ABV",
+      "16.0-17.0% ABV"
+    ],
+    "correct": 0,
+    "explanation": "Wines testing between 15.0-15.5% ABV are classified for biological aging under flor, while those above 15.5% go the oxidative route. It's nature's coin flip—half a degree of alcohol decides whether your wine becomes a delicate Fino or a rich Oloroso.",
+    "sources": "The Oxford Companion to Wine; WSET Diploma Materials",
+    "confidence": "established",
+    "tags": [
+      "sherry",
+      "fortification",
+      "biological_aging",
+      "oxidative_aging"
+    ]
+  },
+  {
+    "id": "WM-004",
+    "domain": "winemaking",
+    "difficulty": 2100,
+    "level": 10,
+    "format": "match_pairs",
+    "question": "Match each oak cooperage region with its characteristic flavor contribution:",
+    "pairs": {
+      "left": [
+        "Vosges",
+        "Limousin",
+        "Nevers",
+        "Allier"
+      ],
+      "right": [
+        "Spicy, high tannin",
+        "Fine grain, elegant",
+        "Tight grain, subtle",
+        "Medium grain, balanced"
+      ]
+    },
+    "options": [],
+    "correct": [
+      3,
+      0,
+      2,
+      1
+    ],
+    "explanation": "Each French forest imparts distinct characteristics: Vosges gives balanced elegance, Limousin delivers spicy punch, Nevers whispers subtlety, and Allier offers refined finesse. Think of them as different perfume houses—same base material, completely different signatures.",
+    "sources": "The Oxford Companion to Wine; Wine Science (Jamie Goode)",
+    "confidence": "established",
+    "tags": [
+      "oak",
+      "french_oak",
+      "cooperage",
+      "flavor_compounds"
+    ]
+  },
+  {
+    "id": "WM-005",
+    "domain": "winemaking",
+    "difficulty": 2350,
+    "level": 10,
+    "format": "scenario",
+    "question": "A winemaker discovers their Pinot Noir has stuck fermentation at 8 Brix with a temperature of 85°F (29°C). The most likely cause and immediate solution is:",
+    "options": [
+      "Nutrient deficiency; add diammonium phosphate",
+      "Temperature shock; cool to 75°F and add fresh yeast",
+      "High alcohol toxicity; dilute with water",
+      "Excessive SO2; aerate vigorously"
+    ],
+    "correct": 1,
+    "explanation": "At 85°F, the yeast are literally cooking to death—Pinot Noir fermentation should stay below 80°F. The temperature shock has killed the yeast population, so cooling and re-inoculating is the fix. It's like trying to run a marathon in Death Valley—even the strongest athletes will collapse.",
+    "sources": "Wine Science (Jamie Goode); WSET Diploma Materials",
+    "confidence": "established",
+    "tags": [
+      "stuck_fermentation",
+      "temperature_control",
+      "pinot_noir",
+      "yeast_management"
+    ]
+  },
+  {
+    "id": "WM-006",
+    "domain": "winemaking",
+    "difficulty": 2250,
+    "level": 10,
+    "format": "multiple_choice",
+    "question": "In Port production, what is the specific timing for the addition of aguardente to achieve the desired residual sugar levels?",
+    "options": [
+      "When fermentation reaches 6-8° Baumé",
+      "At the start of fermentation",
+      "When alcohol reaches 7-9% ABV",
+      "After complete fermentation"
+    ],
+    "correct": 0,
+    "explanation": "Fortification occurs at 6-8° Baumé (roughly 60-80g/L residual sugar) to preserve the perfect balance of sweetness and structure. It's like stopping a symphony at exactly the right crescendo—too early and you miss the complexity, too late and the sweetness disappears.",
+    "sources": "The Oxford Companion to Wine; WSET Diploma Materials",
+    "confidence": "established",
+    "tags": [
+      "port",
+      "fortification",
+      "residual_sugar",
+      "aguardente"
+    ]
+  },
+  {
+    "id": "WM-007",
+    "domain": "winemaking",
+    "difficulty": 2150,
+    "level": 10,
+    "format": "multiple_choice",
+    "question": "Which malolactic bacteria strain is most commonly used in commercial winemaking due to its reliability and predictable flavor impact?",
+    "options": [
+      "Oenococcus oeni",
+      "Lactobacillus plantarum",
+      "Leuconostoc mesenteroides",
+      "Pediococcus pentosaceus"
+    ],
+    "correct": 0,
+    "explanation": "Oenococcus oeni is the workhorse of malolactic conversion—it's acid-tolerant, alcohol-resistant, and produces clean, predictable results. The others are wild cards that can create off-flavors or fail to complete conversion. Think of it as the Toyota Camry of wine bacteria—not flashy, but utterly dependable.",
+    "sources": "Wine Science (Jamie Goode); The Oxford Companion to Wine",
+    "confidence": "established",
+    "tags": [
+      "malolactic_fermentation",
+      "bacteria",
+      "oenococcus_oeni",
+      "wine_microbiology"
+    ]
+  },
+  {
+    "id": "WM-008",
+    "domain": "winemaking",
+    "difficulty": 2400,
+    "level": 10,
+    "format": "odd_one_out",
+    "question": "Which of these compounds does NOT contribute to the 'vanilla' aroma associated with oak aging?",
+    "options": [
+      "Vanillin",
+      "4-ethylguaiacol",
+      "Eugenol",
+      "Furfural"
+    ],
+    "correct": 1,
+    "explanation": "4-ethylguaiacol creates smoky, spicy aromas, not vanilla—it's actually associated with Brettanomyces contamination. The others all contribute to that classic vanilla-sweet profile from oak. It's the olfactory equivalent of a wolf in sheep's clothing.",
+    "sources": "Wine Science (Jamie Goode); The Oxford Companion to Wine",
+    "confidence": "established",
+    "tags": [
+      "oak_chemistry",
+      "vanilla",
+      "flavor_compounds",
+      "brettanomyces"
+    ]
+  },
+  {
+    "id": "WM-009",
+    "domain": "winemaking",
+    "difficulty": 2300,
+    "level": 10,
+    "format": "multiple_choice",
+    "question": "In the production of Eiswein, what is the minimum must weight required under German wine law?",
+    "options": [
+      "110° Oechsle",
+      "125° Oechsle",
+      "150° Oechsle",
+      "175° Oechsle"
+    ],
+    "correct": 2,
+    "explanation": "German Eiswein requires a punishing minimum of 150° Oechsle—higher than even Beerenauslese. This extreme concentration comes from water crystallizing out during freezing, leaving behind liquid gold. It's nature's most expensive chemistry experiment, where failure means losing an entire year's work.",
+    "sources": "The Oxford Companion to Wine; WSET Diploma Materials",
+    "confidence": "established",
+    "tags": [
+      "eiswein",
+      "german_wine_law",
+      "oechsle",
+      "ice_wine"
+    ]
+  },
+  {
+    "id": "WM-010",
+    "domain": "winemaking",
+    "difficulty": 2200,
+    "level": 10,
+    "format": "scenario",
+    "question": "A winemaker wants to produce a wine using carbonic maceration for 40% of the blend and traditional fermentation for 60%. The most likely wine style and region this technique is associated with is:",
+    "options": [
+      "Barolo from Piedmont",
+      "Beaujolais from Burgundy",
+      "Rioja from Spain",
+      "Châteauneuf-du-Pape from Rhône"
+    ],
+    "correct": 1,
+    "explanation": "This semi-carbonic technique is classic Beaujolais, where partial carbonic maceration creates those signature banana and bubble-gum esters while traditional fermentation adds structure. It's like having your cake and eating it too—fun fruit flavors with serious wine credibility.",
+    "sources": "The Oxford Companion to Wine; WSET Diploma Materials",
+    "confidence": "established",
+    "tags": [
+      "carbonic_maceration",
+      "beaujolais",
+      "semi_carbonic",
+      "gamay"
+    ]
+  },
+  {
+    "id": "WM-011",
+    "domain": "winemaking",
+    "difficulty": 2450,
+    "level": 10,
+    "format": "multiple_choice",
+    "question": "What is the optimal pH range for malolactic fermentation to proceed efficiently without risk of spoilage bacteria?",
+    "options": [
+      "2.9-3.2",
+      "3.2-3.5",
+      "3.5-3.8",
+      "3.8-4.1"
+    ],
+    "correct": 1,
+    "explanation": "The sweet spot is 3.2-3.5 pH—high enough for malolactic bacteria to thrive, but low enough to suppress harmful microbes. Below 3.2, MLF struggles like a fish out of water; above 3.5, you're rolling out the red carpet for spoilage bacteria.",
+    "sources": "Wine Science (Jamie Goode); WSET Diploma Materials",
+    "confidence": "established",
+    "tags": [
+      "malolactic_fermentation",
+      "pH",
+      "wine_chemistry",
+      "spoilage_bacteria"
+    ]
+  },
+  {
+    "id": "WM-012",
+    "domain": "winemaking",
+    "difficulty": 2350,
+    "level": 10,
+    "format": "match_pairs",
+    "question": "Match each fining agent with its primary removal target:",
+    "pairs": {
+      "left": [
+        "Bentonite",
+        "Egg whites",
+        "PVPP",
+        "Isinglass"
+      ],
+      "right": [
+        "Phenolic compounds",
+        "Harsh tannins",
+        "Protein haze",
+        "Suspended particles"
+      ]
+    },
+    "options": [],
+    "correct": [
+      2,
+      1,
+      0,
+      3
+    ],
+    "explanation": "Each fining agent is a specialist: bentonite tackles protein haze like a molecular magnet, egg whites gentle harsh tannins, PVPP strips bitter phenolics, and isinglass clarifies by attracting particles. It's like having a specialized cleaning crew where each member has one perfect job.",
+    "sources": "Wine Science (Jamie Goode); The Oxford Companion to Wine",
+    "confidence": "established",
+    "tags": [
+      "fining_agents",
+      "wine_clarification",
+      "protein_stability",
+      "tannin_management"
+    ]
+  },
+  {
+    "id": "WM-013",
+    "domain": "winemaking",
+    "difficulty": 2250,
+    "level": 10,
+    "format": "multiple_choice",
+    "question": "In traditional method sparkling wine, what causes the characteristic 'mousse' texture and persistent bubbles?",
+    "options": [
+      "High levels of dissolved CO2",
+      "Presence of mannoproteins from yeast autolysis",
+      "Low pH and high acidity",
+      "Extended time on lees"
+    ],
+    "correct": 1,
+    "explanation": "Mannoproteins released during yeast autolysis act like tiny bubble stabilizers, creating that creamy mousse texture and persistent perlage. Without them, bubbles would be harsh and fleeting—it's the difference between champagne foam and soda fizz, all thanks to dead yeast cells doing one last favor.",
+    "sources": "Wine Science (Jamie Goode); WSET Diploma Materials",
+    "confidence": "established",
+    "tags": [
+      "sparkling_wine",
+      "mousse",
+      "mannoproteins",
+      "yeast_autolysis"
+    ]
+  },
+  {
+    "id": "WM-014",
+    "domain": "winemaking",
+    "difficulty": 2400,
+    "level": 10,
+    "format": "odd_one_out",
+    "question": "Which of these factors does NOT directly influence the rate of extraction during red wine maceration?",
+    "options": [
+      "Temperature",
+      "Alcohol concentration",
+      "Ambient humidity",
+      "pH level"
+    ],
+    "correct": 2,
+    "explanation": "Ambient humidity affects grape drying and concentration before harvest, but once maceration begins, it's irrelevant—the party's all happening inside the tank. Temperature, alcohol, and pH all directly impact how quickly tannins and color compounds extract from the skins.",
+    "sources": "Wine Science (Jamie Goode); The Oxford Companion to Wine",
+    "confidence": "established",
+    "tags": [
+      "maceration",
+      "extraction",
+      "red_wine",
+      "winemaking_factors"
+    ]
+  },
+  {
+    "id": "WM-015",
+    "domain": "winemaking",
+    "difficulty": 2300,
+    "level": 10,
+    "format": "scenario",
+    "question": "A winemaker producing Sauternes notices uneven botrytis development across their vineyard in late October. The optimal harvesting strategy would be:",
+    "options": [
+      "Wait for uniform infection across all bunches",
+      "Harvest in multiple passes (tries) selecting only properly infected grapes",
+      "Harvest immediately to prevent over-infection",
+      "Apply artificial botrytis spores to uninfected grapes"
+    ],
+    "correct": 1,
+    "explanation": "Sauternes demands multiple selective harvests (tries)—sometimes up to six passes through the vineyard picking only perfectly botrytized grapes. It's like being a truffle hunter, where patience and selectivity create liquid gold. Rushing the harvest would dilute the magic that makes great dessert wine.",
+    "sources": "The Oxford Companion to Wine; WSET Diploma Materials",
+    "confidence": "established",
+    "tags": [
+      "sauternes",
+      "botrytis",
+      "selective_harvest",
+      "noble_rot"
+    ]
+  },
+  {
+    "id": "WM-016",
+    "domain": "winemaking",
+    "difficulty": 2200,
+    "level": 10,
+    "format": "multiple_choice",
+    "question": "In the production of Tokaji Aszú 6 puttonyos, what is the specific ratio of aszú berries to must/base wine that defines this classification under Hungarian wine law?",
+    "options": [
+      "120 kg aszú berries per 136 liters must",
+      "150 kg aszú berries per 136 liters must",
+      "180 kg aszú berries per 136 liters must",
+      "210 kg aszú berries per 136 liters must"
+    ],
+    "correct": 1,
+    "explanation": "The 6 puttonyos classification requires exactly 150 kg of hand-selected aszú berries per 136-liter gönci barrel of must or base wine. Think of it as the 'golden ratio' that creates Tokaji's legendary balance between sweetness and acidity.",
+    "sources": "The Oxford Companion to Wine; WSET Diploma Study Materials",
+    "confidence": "established",
+    "tags": [
+      "sweet_wine",
+      "botrytis",
+      "tokaji",
+      "classification"
+    ]
+  },
+  {
+    "id": "WM-017",
+    "domain": "winemaking",
+    "difficulty": 2150,
+    "level": 10,
+    "format": "odd_one_out",
+    "question": "Which of these indigenous yeast strains does NOT belong with the others in terms of their specific fermentation temperature tolerance?",
+    "options": [
+      "Saccharomyces cerevisiae var. bayanus",
+      "Saccharomyces cerevisiae var. uvarum",
+      "Torulaspora delbrueckii",
+      "Saccharomyces cerevisiae var. cerevisiae"
+    ],
+    "correct": 2,
+    "explanation": "Torulaspora delbrueckii thrives at lower temperatures (10-20°C) and dies off early in fermentation, while the other three are all temperature-hardy Saccharomyces strains. T. delbrueckii is the 'early bird' that adds complexity before the main fermentation begins.",
+    "sources": "Wine Science (Jamie Goode); The Oxford Companion to Wine",
+    "confidence": "established",
+    "tags": [
+      "yeast",
+      "fermentation",
+      "temperature",
+      "indigenous_yeast"
+    ]
+  },
+  {
+    "id": "WM-018",
+    "domain": "winemaking",
+    "difficulty": 2300,
+    "level": 10,
+    "format": "match_pairs",
+    "question": "Match each specific cooperage forest with its characteristic tannin profile in wine:",
+    "pairs": {
+      "left": [
+        "Vosges",
+        "Allier",
+        "Nevers",
+        "Limousin"
+      ],
+      "right": [
+        "Fine-grained, elegant tannins",
+        "Tight grain, high tannin extraction",
+        "Medium grain, balanced extraction",
+        "Wide grain, aggressive tannins"
+      ]
+    },
+    "options": [],
+    "correct": [
+      0,
+      1,
+      2,
+      3
+    ],
+    "explanation": "Each French forest produces oak with distinct grain patterns that directly impact tannin extraction: Vosges gives elegance, Allier intensity, Nevers balance, and Limousin power. Remember 'VANL' - from delicate to dramatic.",
+    "sources": "The Oxford Companion to Wine; Wine Science (Jamie Goode)",
+    "confidence": "established",
+    "tags": [
+      "oak",
+      "cooperage",
+      "tannins",
+      "french_oak"
+    ]
+  },
+  {
+    "id": "WM-019",
+    "domain": "winemaking",
+    "difficulty": 2250,
+    "level": 10,
+    "format": "scenario",
+    "question": "A winemaker in Jerez notices their fino sherry has developed a patchy, inconsistent flor layer in November. The alcohol is 15.2%, pH is 3.1, and cellar humidity is 65%. What is the most likely cause and appropriate intervention?",
+    "options": [
+      "Alcohol too high; fortify down to 15.0% and increase humidity",
+      "pH too low; add potassium bicarbonate to raise pH to 3.3",
+      "Humidity too low; increase to 75-80% and ensure consistent air circulation",
+      "Temperature fluctuation; install climate control and maintain 18-20°C"
+    ],
+    "correct": 2,
+    "explanation": "Flor requires 75-80% humidity to thrive consistently - at 65%, the yeast film becomes patchy and vulnerable. Think of flor as a 'living blanket' that needs moisture to stay intact and protect the wine.",
+    "sources": "The Oxford Companion to Wine; WSET Diploma Study Materials",
+    "confidence": "established",
+    "tags": [
+      "sherry",
+      "flor",
+      "biological_aging",
+      "cellar_conditions"
+    ]
+  },
+  {
+    "id": "WM-020",
+    "domain": "winemaking",
+    "difficulty": 2180,
+    "level": 10,
+    "format": "multiple_choice",
+    "question": "In the production of Vin de Constance, what is the specific minimum potential alcohol requirement for the grapes at harvest under South African wine law?",
+    "options": [
+      "28° Brix (15.8% potential alcohol)",
+      "30° Brix (17.1% potential alcohol)",
+      "32° Brix (18.4% potential alcohol)",
+      "35° Brix (20.2% potential alcohol)"
+    ],
+    "correct": 2,
+    "explanation": "Vin de Constance requires grapes harvested at minimum 32° Brix, ensuring the concentrated sweetness that made Klein Constantia legendary in Napoleon's era. This sugar level creates the perfect balance between richness and aging potential.",
+    "sources": "The Oxford Companion to Wine; WSET Diploma Study Materials",
+    "confidence": "established",
+    "tags": [
+      "sweet_wine",
+      "south_africa",
+      "constantia",
+      "brix_levels"
+    ]
+  }
+]

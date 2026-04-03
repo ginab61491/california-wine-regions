@@ -1,0 +1,943 @@
+[
+  {
+    "id": "RA-001",
+    "domain": "regions_appellations",
+    "difficulty": 2150,
+    "level": 10,
+    "format": "multiple_choice",
+    "question": "Which Barolo MGA (Menzioni Geografiche Aggiuntive) is located within the commune of Serralunga d'Alba and is known for its distinctive white calcareous marl soils from the Sant'Agata Fossili formation?",
+    "options": [
+      "Vigna Rionda",
+      "Lazzarito",
+      "Francia",
+      "Ornato"
+    ],
+    "correct": 1,
+    "explanation": "Lazzarito in Serralunga d'Alba sits on the distinctive white Sant'Agata Fossili marl, which creates wines of exceptional elegance and longevity. Think of it as Barolo's 'white gold' — the pale soils visible from the vineyard give away this geological treasure that produces some of the most refined expressions in the appellation.",
+    "sources": "The Oxford Companion to Wine; Wine Atlas of Italy",
+    "confidence": "established",
+    "tags": [
+      "barolo",
+      "mga",
+      "serralunga",
+      "geology",
+      "piedmont"
+    ]
+  },
+  {
+    "id": "RA-002",
+    "domain": "regions_appellations",
+    "difficulty": 2200,
+    "level": 10,
+    "format": "odd_one_out",
+    "question": "Which of these Burgundy Premier Cru vineyards does NOT belong with the others in terms of their commune location?",
+    "options": [
+      "Les Rugiens",
+      "Les Caillerets",
+      "Clos des Mouches",
+      "Les Champans"
+    ],
+    "correct": 2,
+    "explanation": "Clos des Mouches is in Beaune, while the other three are all Premier Crus in Volnay. Remember that Volnay is the 'silk and lace' commune — these three vineyards exemplify that elegant style, while Clos des Mouches represents Beaune's more structured approach.",
+    "sources": "The Oxford Companion to Wine; WSET Diploma Study Materials",
+    "confidence": "established",
+    "tags": [
+      "burgundy",
+      "premier_cru",
+      "volnay",
+      "beaune",
+      "commune"
+    ]
+  },
+  {
+    "id": "RA-003",
+    "domain": "regions_appellations",
+    "difficulty": 2300,
+    "level": 10,
+    "format": "multiple_choice",
+    "question": "In the Wachau DAC system, what is the minimum must weight requirement (in KMW) for Smaragd wines?",
+    "options": [
+      "17° KMW",
+      "18.2° KMW",
+      "19° KMW",
+      "20° KMW"
+    ],
+    "correct": 2,
+    "explanation": "Smaragd wines require a minimum of 19° KMW (roughly 95° Oechsle), making them the most concentrated tier in Wachau's three-level system. Think of the emerald lizard (Smaragd) basking on the hottest terraces — these wines capture that intense Austrian sun and steep Danube slopes.",
+    "sources": "WSET Diploma Study Materials; The Oxford Companion to Wine",
+    "confidence": "established",
+    "tags": [
+      "wachau",
+      "austria",
+      "smaragd",
+      "must_weight",
+      "classification"
+    ]
+  },
+  {
+    "id": "RA-004",
+    "domain": "regions_appellations",
+    "difficulty": 2100,
+    "level": 10,
+    "format": "scenario",
+    "question": "A sommelier is building a vertical tasting of Hermitage Rouge and wants to showcase the impact of the 2003 European heat wave. Which specific climat within Hermitage would best demonstrate the vintage's concentration while maintaining the appellation's characteristic structure?",
+    "options": [
+      "Les Bessards",
+      "Le Méal",
+      "Les Greffieux",
+      "L'Hermite"
+    ],
+    "correct": 0,
+    "explanation": "Les Bessards, with its granite soils and steep east-facing exposure, would have concentrated the 2003 heat while its mineral backbone kept the wine structured. This climat is Hermitage's 'iron fist in a velvet glove' — powerful enough to handle extreme vintages while maintaining elegance.",
+    "sources": "The Oxford Companion to Wine; Wine Atlas of France",
+    "confidence": "established",
+    "tags": [
+      "hermitage",
+      "climat",
+      "vintage_variation",
+      "les_bessards",
+      "rhone"
+    ]
+  },
+  {
+    "id": "RA-005",
+    "domain": "regions_appellations",
+    "difficulty": 2250,
+    "level": 10,
+    "format": "match_pairs",
+    "question": "Match each Mosel vineyard site with its specific soil type:",
+    "pairs": {
+      "left": [
+        "Ürziger Würzgarten",
+        "Bernkasteler Doctor",
+        "Wehlener Sonnenuhr",
+        "Graacher Himmelreich"
+      ],
+      "right": [
+        "Red sandstone",
+        "Blue slate",
+        "Grey slate",
+        "Decomposed slate with iron"
+      ]
+    },
+    "options": [],
+    "correct": [
+      0,
+      1,
+      2,
+      3
+    ],
+    "explanation": "Each Mosel site's soil signature creates its unique personality: Würzgarten's red sandstone gives spice, Doctor's blue slate provides power, Sonnenuhr's grey slate offers finesse, and Himmelreich's iron-rich slate adds mineral complexity. Think of it as the Mosel's geological rainbow — each color tells a different story in the glass.",
+    "sources": "Wine Grapes; The Oxford Companion to Wine",
+    "confidence": "established",
+    "tags": [
+      "mosel",
+      "vineyard_sites",
+      "soil_types",
+      "geology",
+      "germany"
+    ]
+  },
+  {
+    "id": "RA-006",
+    "domain": "regions_appellations",
+    "difficulty": 2180,
+    "level": 10,
+    "format": "multiple_choice",
+    "question": "Which specific sub-zone within Santorini PDO is considered the most prestigious for Assyrtiko production due to its proximity to the caldera and volcanic ash soils?",
+    "options": [
+      "Oia",
+      "Pyrgos",
+      "Megalochori",
+      "Akrotiri"
+    ],
+    "correct": 0,
+    "explanation": "Oia's vineyards, perched closest to the caldera rim, benefit from the most intense volcanic influence and dramatic diurnal temperature variation. The volcanic ash here is so fine it's like nature's own terroir amplifier — concentrating Assyrtiko's mineral intensity while preserving its legendary acidity.",
+    "sources": "WSET Diploma Study Materials; The Oxford Companion to Wine",
+    "confidence": "consensus",
+    "tags": [
+      "santorini",
+      "assyrtiko",
+      "volcanic_soils",
+      "oia",
+      "greece"
+    ]
+  },
+  {
+    "id": "RA-007",
+    "domain": "regions_appellations",
+    "difficulty": 2220,
+    "level": 10,
+    "format": "multiple_choice",
+    "question": "In Rioja's classification system, what is the minimum aging requirement for Rioja Gran Reserva in terms of total aging and oak aging respectively?",
+    "options": [
+      "60 months total, 18 months oak",
+      "50 months total, 18 months oak",
+      "60 months total, 24 months oak",
+      "50 months total, 24 months oak"
+    ],
+    "correct": 0,
+    "explanation": "Rioja Gran Reserva requires 60 months total aging with at least 18 months in oak barrels. Think of it as Rioja's marathon runner — the longest journey from grape to glass, creating wines with the patience and complexity that only time can provide.",
+    "sources": "WSET Diploma Study Materials; The Oxford Companion to Wine",
+    "confidence": "established",
+    "tags": [
+      "rioja",
+      "gran_reserva",
+      "aging_requirements",
+      "classification",
+      "spain"
+    ]
+  },
+  {
+    "id": "RA-008",
+    "domain": "regions_appellations",
+    "difficulty": 2350,
+    "level": 10,
+    "format": "odd_one_out",
+    "question": "Which of these Champagne villages does NOT belong with the others in terms of their classification status?",
+    "options": [
+      "Cramant",
+      "Le Mesnil-sur-Oger",
+      "Vertus",
+      "Chouilly"
+    ],
+    "correct": 2,
+    "explanation": "Vertus is rated at 95% in the Échelle des Crus, while Cramant, Le Mesnil-sur-Oger, and Chouilly are all 100% Grand Cru villages. Vertus is the 'almost perfect' village — exceptional quality but just shy of the Grand Cru summit, like a Premier Cru that dreams of greatness.",
+    "sources": "The Oxford Companion to Wine; WSET Diploma Study Materials",
+    "confidence": "established",
+    "tags": [
+      "champagne",
+      "grand_cru",
+      "echelle_des_crus",
+      "vertus",
+      "classification"
+    ]
+  },
+  {
+    "id": "RA-009",
+    "domain": "regions_appellations",
+    "difficulty": 2280,
+    "level": 10,
+    "format": "scenario",
+    "question": "A Master Sommelier candidate is studying the influence of the Gironde estuary on Bordeaux terroir. Which Left Bank commune would best demonstrate the moderating maritime influence on Cabernet Sauvignon ripening in challenging vintages?",
+    "options": [
+      "Saint-Estèphe",
+      "Pauillac",
+      "Saint-Julien",
+      "Margaux"
+    ],
+    "correct": 0,
+    "explanation": "Saint-Estèphe, being furthest north and closest to the Gironde, receives the strongest maritime influence, helping Cabernet Sauvignon ripen in difficult years through temperature moderation. Think of it as Bordeaux's 'northern lighthouse' — the estuary's cooling winds and warming waters guide even the most challenging vintages to maturity.",
+    "sources": "The World Atlas of Wine; The Oxford Companion to Wine",
+    "confidence": "established",
+    "tags": [
+      "bordeaux",
+      "saint_estephe",
+      "maritime_influence",
+      "cabernet_sauvignon",
+      "terroir"
+    ]
+  },
+  {
+    "id": "RA-010",
+    "domain": "regions_appellations",
+    "difficulty": 2150,
+    "level": 10,
+    "format": "multiple_choice",
+    "question": "Which specific vineyard site in Priorat DOCa is considered the historical epicenter of the modern quality revolution and is planted on pure llicorella slate at 350-400m elevation?",
+    "options": [
+      "Clos Mogador",
+      "Clos de l'Obac",
+      "Clos Erasmus",
+      "Clos Martinet"
+    ],
+    "correct": 1,
+    "explanation": "Clos de l'Obac, planted by Carles Pastrana in 1989, sits on pure llicorella slate and sparked Priorat's renaissance alongside the other 'Clos' pioneers. This vineyard is like Priorat's 'patient zero' for quality — the slate terraces here proved that this forgotten region could produce world-class wines again.",
+    "sources": "WSET Diploma Study Materials; Wine Atlas of Spain",
+    "confidence": "established",
+    "tags": [
+      "priorat",
+      "clos_de_obac",
+      "llicorella",
+      "quality_revolution",
+      "spain"
+    ]
+  },
+  {
+    "id": "RA-011",
+    "domain": "regions_appellations",
+    "difficulty": 2320,
+    "level": 10,
+    "format": "match_pairs",
+    "question": "Match each Napa Valley sub-AVA with its defining geological characteristic:",
+    "pairs": {
+      "left": [
+        "Stags Leap District",
+        "Diamond Mountain District",
+        "Mount Veeder",
+        "Howell Mountain"
+      ],
+      "right": [
+        "Volcanic ash and tufa",
+        "Sedimentary rock and alluvial fans",
+        "Red volcanic soils",
+        "Thin volcanic soils over bedrock"
+      ]
+    },
+    "options": [],
+    "correct": [
+      1,
+      0,
+      2,
+      3
+    ],
+    "explanation": "Napa's sub-AVAs each tell their geological story: Stags Leap's sedimentary fans create elegance, Diamond Mountain's volcanic ash adds power, Mount Veeder's red volcanic soils bring intensity, and Howell Mountain's thin volcanic soils over bedrock produce concentration. Think of it as Napa's geological library — each AVA is a different chapter in the valley's ancient story.",
+    "sources": "The Oxford Companion to Wine; WSET Diploma Study Materials",
+    "confidence": "established",
+    "tags": [
+      "napa_valley",
+      "sub_avas",
+      "geology",
+      "terroir",
+      "california"
+    ]
+  },
+  {
+    "id": "RA-012",
+    "domain": "regions_appellations",
+    "difficulty": 2400,
+    "level": 10,
+    "format": "multiple_choice",
+    "question": "In the VDP classification system, which Grosse Lage vineyard in the Nahe is considered the region's most prestigious site for Riesling, known for its porphyry volcanic soils and extreme south-facing exposure?",
+    "options": [
+      "Felseneck",
+      "Dellchen",
+      "Hermannsberg",
+      "Kupfergrube"
+    ],
+    "correct": 2,
+    "explanation": "Hermannsberg in Niederhausen is the Nahe's crown jewel, where porphyry volcanic soils and perfect south-facing exposure create Rieslings of extraordinary mineral complexity and longevity. This vineyard is the Nahe's 'geological cathedral' — the ancient volcanic porphyry creates wines that seem to channel the earth's molten history.",
+    "sources": "Wine Grapes; The Oxford Companion to Wine",
+    "confidence": "established",
+    "tags": [
+      "nahe",
+      "hermannsberg",
+      "vdp",
+      "grosse_lage",
+      "porphyry"
+    ]
+  },
+  {
+    "id": "RA-013",
+    "domain": "regions_appellations",
+    "difficulty": 2180,
+    "level": 10,
+    "format": "multiple_choice",
+    "question": "Which specific lieu-dit within Sancerre AOP is renowned for producing the most mineral-driven expressions of Sauvignon Blanc due to its pure Kimmeridgian limestone composition?",
+    "options": [
+      "Les Monts Damnés",
+      "La Grande Côte",
+      "Le Chêne Marchand",
+      "Les Romains"
+    ],
+    "correct": 0,
+    "explanation": "Les Monts Damnés ('The Damned Hills') in Chavignol features pure Kimmeridgian limestone that creates Sancerre's most intensely mineral Sauvignon Blancs. The name hints at the vineyard's challenging steep slopes, but these 'damned' hills produce some of Loire's most heavenly expressions of terroir.",
+    "sources": "The Oxford Companion to Wine; Wine Atlas of France",
+    "confidence": "established",
+    "tags": [
+      "sancerre",
+      "les_monts_damnes",
+      "kimmeridgian",
+      "sauvignon_blanc",
+      "loire"
+    ]
+  },
+  {
+    "id": "RA-014",
+    "domain": "regions_appellations",
+    "difficulty": 2250,
+    "level": 10,
+    "format": "scenario",
+    "question": "A wine collector is seeking to understand how the 2011 vintage affected Amarone production in Valpolicella. Which specific zone within Valpolicella Classico would have best preserved acidity during the challenging warm, dry conditions of that vintage?",
+    "options": [
+      "Fumane valley",
+      "Marano valley",
+      "Negrar valley",
+      "San Pietro in Cariano"
+    ],
+    "correct": 1,
+    "explanation": "The Marano valley, with its higher elevation and north-facing slopes, would have best preserved acidity during 2011's heat and drought through cooler nighttime temperatures and reduced sun exposure. Think of Marano as Valpolicella's 'cool sanctuary' — when the vintage turns up the heat, this valley keeps its composure.",
+    "sources": "WSET Diploma Study Materials; Wine Atlas of Italy",
+    "confidence": "consensus",
+    "tags": [
+      "valpolicella",
+      "amarone",
+      "marano_valley",
+      "vintage_variation",
+      "veneto"
+    ]
+  },
+  {
+    "id": "RA-015",
+    "domain": "regions_appellations",
+    "difficulty": 2380,
+    "level": 10,
+    "format": "odd_one_out",
+    "question": "Which of these Margaret River sub-regions does NOT belong with the others in terms of their soil composition?",
+    "options": [
+      "Wilyabrup",
+      "Treeton",
+      "Karridale",
+      "Wallcliffe"
+    ],
+    "correct": 2,
+    "explanation": "Karridale sits on lateritic gravel over clay, while Wilyabrup, Treeton, and Wallcliffe are all characterized by gravelly loam over limestone. Karridale is Margaret River's 'red earth rebel' — its iron-rich lateritic soils create a distinctly different terroir expression compared to the limestone-influenced sites that define the region's classic style.",
+    "sources": "The Oxford Companion to Wine; Wine Atlas of Australia",
+    "confidence": "established",
+    "tags": [
+      "margaret_river",
+      "karridale",
+      "soil_composition",
+      "lateritic",
+      "australia"
+    ]
+  },
+  {
+    "id": "RA-016",
+    "domain": "regions_appellations",
+    "difficulty": 2200,
+    "level": 10,
+    "format": "multiple_choice",
+    "question": "Which specific vineyard site in Barolo DOCG is known for its unique blue-gray marl soils from the Lequio formation and produces wines with distinctive floral aromatics?",
+    "options": [
+      "Brunate",
+      "Cannubi",
+      "Rocche dell'Annunziata",
+      "Villero"
+    ],
+    "correct": 2,
+    "explanation": "Rocche dell'Annunziata's blue-gray Lequio formation marl creates wines with ethereal floral notes—think violets and roses—that distinguish it from the more structured, tannic sites. The soil's high limestone content contributes to this elegant, perfumed style that sommeliers often describe as 'Burgundian' in character.",
+    "sources": "The Oxford Companion to Wine; Wine Grapes",
+    "confidence": "established",
+    "tags": [
+      "italy",
+      "piedmont",
+      "barolo",
+      "soil",
+      "mga"
+    ]
+  },
+  {
+    "id": "RA-017",
+    "domain": "regions_appellations",
+    "difficulty": 2350,
+    "level": 10,
+    "format": "odd_one_out",
+    "question": "Which of these Burgundy Grand Cru vineyards does NOT belong with the others in terms of their geological formation?",
+    "options": [
+      "Clos de Vougeot",
+      "Échezeaux",
+      "Grands Échezeaux",
+      "Richebourg"
+    ],
+    "correct": 0,
+    "explanation": "Clos de Vougeot sits on Bajocian limestone, while the other three lie on the prized Prémeaux limestone formation of the Vosne-Romanée slope. Think of Clos de Vougeot as the geological outlier—its 125 acres span multiple soil types, explaining why it produces such variable wines across its 80+ owners.",
+    "sources": "The Oxford Companion to Wine; The World Atlas of Wine",
+    "confidence": "established",
+    "tags": [
+      "france",
+      "burgundy",
+      "grand_cru",
+      "geology",
+      "vosne_romanee"
+    ]
+  },
+  {
+    "id": "RA-018",
+    "domain": "regions_appellations",
+    "difficulty": 2400,
+    "level": 10,
+    "format": "multiple_choice",
+    "question": "In the Jerez DO classification system, what is the minimum aging requirement for Palo Cortado sherry before release?",
+    "options": [
+      "2 years",
+      "3 years",
+      "4 years",
+      "8 years"
+    ],
+    "correct": 1,
+    "explanation": "Palo Cortado requires a minimum 3 years aging in the solera system, the same as Amontillado. The key distinction isn't aging time but the mysterious loss of flor that transforms what starts as a Fino into this rare, complex style—only about 1-2% of production naturally becomes Palo Cortado.",
+    "sources": "The Oxford Companion to Wine; WSET Diploma Study Materials",
+    "confidence": "established",
+    "tags": [
+      "spain",
+      "jerez",
+      "sherry",
+      "palo_cortado",
+      "aging"
+    ]
+  },
+  {
+    "id": "RA-019",
+    "domain": "regions_appellations",
+    "difficulty": 2150,
+    "level": 10,
+    "format": "scenario",
+    "question": "A sommelier is selecting wines for a tasting focused on the impact of diurnal temperature variation on Pinot Noir. Which Willamette Valley sub-AVA would best demonstrate extreme day-night temperature swings due to its elevation and continental influence?",
+    "options": [
+      "Dundee Hills",
+      "Ribbon Ridge",
+      "Eola-Amity Hills",
+      "Chehalem Mountains"
+    ],
+    "correct": 2,
+    "explanation": "Eola-Amity Hills sits at the gap where marine air funnels through the Coast Range, creating dramatic temperature swings—often 40°F+ between day and night. This extreme diurnal variation preserves acidity while allowing full phenolic ripening, producing Pinots with both power and elegance.",
+    "sources": "The Oxford Companion to Wine; GuildSomm",
+    "confidence": "established",
+    "tags": [
+      "usa",
+      "oregon",
+      "willamette_valley",
+      "pinot_noir",
+      "climate"
+    ]
+  },
+  {
+    "id": "RA-020",
+    "domain": "regions_appellations",
+    "difficulty": 2300,
+    "level": 10,
+    "format": "match_pairs",
+    "question": "Match each Châteauneuf-du-Pape lieu-dit with its dominant soil type:",
+    "pairs": {
+      "left": [
+        "La Crau",
+        "Mont-Redon",
+        "Pignan",
+        "Rayas"
+      ],
+      "right": [
+        "Sand and clay",
+        "Red clay and limestone",
+        "Quartzite pebbles",
+        "Alpine diluvium stones"
+      ]
+    },
+    "options": [],
+    "correct": [
+      3,
+      2,
+      1,
+      0
+    ],
+    "explanation": "These soil variations create Châteauneuf's legendary diversity—La Crau's massive quartzite galets store heat for power, while Rayas' sandy soils produce ethereal, Burgundian-style wines. Remember: the stones don't just look impressive, they're geological radiators that extend the growing season.",
+    "sources": "The Oxford Companion to Wine; Wine Grapes",
+    "confidence": "established",
+    "tags": [
+      "france",
+      "rhone",
+      "chateauneuf_du_pape",
+      "terroir",
+      "soil"
+    ]
+  },
+  {
+    "id": "RA-021",
+    "domain": "regions_appellations",
+    "difficulty": 2250,
+    "level": 10,
+    "format": "multiple_choice",
+    "question": "Which specific vineyard site in Mosel is considered the steepest commercially viable vineyard in the world, with slopes reaching 68 degrees?",
+    "options": [
+      "Bremmer Calmont",
+      "Ürziger Würzgarten",
+      "Wehlener Sonnenuhr",
+      "Bernkasteler Doctor"
+    ],
+    "correct": 0,
+    "explanation": "Bremmer Calmont's vertiginous 68-degree slopes make harvesting an extreme sport—workers literally rope themselves to the vines. The vineyard's Devon slate soils and southern exposure create wines of incredible mineral intensity, though yields are minuscule due to the challenging terrain.",
+    "sources": "The Oxford Companion to Wine; The World Atlas of Wine",
+    "confidence": "established",
+    "tags": [
+      "germany",
+      "mosel",
+      "vineyard",
+      "slope",
+      "terroir"
+    ]
+  },
+  {
+    "id": "RA-022",
+    "domain": "regions_appellations",
+    "difficulty": 2100,
+    "level": 10,
+    "format": "multiple_choice",
+    "question": "In the Douro DOC hierarchy, what percentage of a quinta's production may be declared as Port in a typical year?",
+    "options": [
+      "30%",
+      "40%",
+      "50%",
+      "60%"
+    ],
+    "correct": 1,
+    "explanation": "The IVDP limits Port production to roughly 40% of each quinta's harvest, ensuring quality and market stability. This 'lei do terço' (law of thirds) forces producers to make difficult selections, sending only the best fruit to fortification while the rest becomes Douro table wine.",
+    "sources": "The Oxford Companion to Wine; WSET Diploma Study Materials",
+    "confidence": "established",
+    "tags": [
+      "portugal",
+      "douro",
+      "port",
+      "regulation",
+      "production"
+    ]
+  },
+  {
+    "id": "RA-023",
+    "domain": "regions_appellations",
+    "difficulty": 2400,
+    "level": 10,
+    "format": "odd_one_out",
+    "question": "Which of these Alsace Grand Cru vineyards does NOT belong with the others in terms of their primary geological formation?",
+    "options": [
+      "Rangen",
+      "Hengst",
+      "Goldert",
+      "Brand"
+    ],
+    "correct": 0,
+    "explanation": "Rangen sits on volcanic rock, while the others are built on limestone-based soils. Rangen's dark volcanic soils create Alsace's most powerful, mineral-driven wines—think of it as the region's geological rebel, producing Rieslings that taste like they've been forged in fire.",
+    "sources": "The Oxford Companion to Wine; Wine Grapes",
+    "confidence": "established",
+    "tags": [
+      "france",
+      "alsace",
+      "grand_cru",
+      "geology",
+      "volcanic"
+    ]
+  },
+  {
+    "id": "RA-024",
+    "domain": "regions_appellations",
+    "difficulty": 2200,
+    "level": 10,
+    "format": "scenario",
+    "question": "A Master Sommelier candidate is studying the influence of the Humboldt Current on Chilean wine regions. Which valley would best demonstrate this maritime cooling effect on Pinot Noir production?",
+    "options": [
+      "Maipo Valley",
+      "Colchagua Valley",
+      "San Antonio Valley",
+      "Maule Valley"
+    ],
+    "correct": 2,
+    "explanation": "San Antonio Valley sits just 12 miles from the Pacific, where the frigid Humboldt Current creates morning fogs that keep temperatures cool enough for elegant Pinot Noir. The valley's proximity to Valparaíso means it receives the full brunt of maritime influence—think Burgundian conditions in the Southern Hemisphere.",
+    "sources": "The Oxford Companion to Wine; The World Atlas of Wine",
+    "confidence": "established",
+    "tags": [
+      "chile",
+      "san_antonio",
+      "pinot_noir",
+      "maritime",
+      "climate"
+    ]
+  },
+  {
+    "id": "RA-025",
+    "domain": "regions_appellations",
+    "difficulty": 2350,
+    "level": 10,
+    "format": "multiple_choice",
+    "question": "Which specific cru in Beaujolais is known for its pink granite soils and produces the most Burgundian-style Gamay wines in the region?",
+    "options": [
+      "Fleurie",
+      "Moulin-à-Vent",
+      "Morgon",
+      "Chiroubles"
+    ],
+    "correct": 0,
+    "explanation": "Fleurie's pink granite soils create wines of remarkable finesse and floral elegance—the 'Queen of Beaujolais' produces Gamay that drinks like Volnay Premier Cru. The granite's feldspar content gives these wines their distinctive perfumed character and silky texture that sets them apart from the more structured crus.",
+    "sources": "The Oxford Companion to Wine; The World Atlas of Wine",
+    "confidence": "established",
+    "tags": [
+      "france",
+      "beaujolais",
+      "fleurie",
+      "granite",
+      "gamay"
+    ]
+  },
+  {
+    "id": "RA-026",
+    "domain": "regions_appellations",
+    "difficulty": 2300,
+    "level": 10,
+    "format": "multiple_choice",
+    "question": "In the Hunter Valley, which specific soil type in the Pokolbin district is considered optimal for Semillon production?",
+    "options": [
+      "Red duplex soils",
+      "Alluvial river flats",
+      "Volcanic basalt",
+      "Weathered sandstone"
+    ],
+    "correct": 0,
+    "explanation": "The red duplex soils—clay subsoil beneath sandy topsoil—provide perfect drainage while retaining enough moisture for Semillon's long hang time. These soils stress the vines just enough to concentrate flavors while the clay base prevents excessive water stress, creating Hunter's legendary age-worthy Semillons.",
+    "sources": "The Oxford Companion to Wine; GuildSomm",
+    "confidence": "established",
+    "tags": [
+      "australia",
+      "hunter_valley",
+      "semillon",
+      "soil",
+      "terroir"
+    ]
+  },
+  {
+    "id": "RA-027",
+    "domain": "regions_appellations",
+    "difficulty": 2450,
+    "level": 10,
+    "format": "match_pairs",
+    "question": "Match each Etna DOC contrada with its elevation range:",
+    "pairs": {
+      "left": [
+        "Contrada Rampante",
+        "Contrada Santo Spirito",
+        "Contrada Feudo di Mezzo",
+        "Contrada Calderara Sottana"
+      ],
+      "right": [
+        "450-500m",
+        "600-650m",
+        "750-800m",
+        "550-600m"
+      ]
+    },
+    "options": [],
+    "correct": [
+      2,
+      1,
+      0,
+      3
+    ],
+    "explanation": "Etna's contrade create a vertical tasting room—each 50-meter elevation band produces distinctly different expressions of Nerello Mascalese. Higher elevations like Feudo di Mezzo preserve more acidity and develop more complex aromatics, while lower sites like Rampante show more power and earlier ripening.",
+    "sources": "Wine Grapes; GuildSomm",
+    "confidence": "consensus",
+    "tags": [
+      "italy",
+      "sicily",
+      "etna",
+      "elevation",
+      "contrada"
+    ]
+  },
+  {
+    "id": "RA-028",
+    "domain": "regions_appellations",
+    "difficulty": 2200,
+    "level": 10,
+    "format": "multiple_choice",
+    "question": "Which specific vineyard site in Kamptal DAC is considered the region's most prestigious for Riesling, known for its primary rock (Urgestein) soils and extreme south-facing exposure?",
+    "options": [
+      "Heiligenstein",
+      "Gaisberg",
+      "Lamm",
+      "Steinmassl"
+    ],
+    "correct": 0,
+    "explanation": "Heiligenstein's 270-million-year-old volcanic primary rock creates Austria's most mineral-driven Rieslings—wines that taste like liquid stone. The vineyard's name means 'holy stone,' and its ancient soils produce Rieslings with a distinctive smoky minerality that's impossible to replicate elsewhere in Austria.",
+    "sources": "The Oxford Companion to Wine; Wine Grapes",
+    "confidence": "established",
+    "tags": [
+      "austria",
+      "kamptal",
+      "riesling",
+      "heiligenstein",
+      "urgestein"
+    ]
+  },
+  {
+    "id": "RA-029",
+    "domain": "regions_appellations",
+    "difficulty": 2150,
+    "level": 10,
+    "format": "scenario",
+    "question": "A wine buyer is sourcing Assyrtiko for a restaurant program focused on volcanic minerality. Which specific village on Santorini would produce the most intensely mineral-driven examples due to its proximity to active volcanic vents?",
+    "options": [
+      "Oia",
+      "Fira",
+      "Megalochori",
+      "Akrotiri"
+    ],
+    "correct": 1,
+    "explanation": "Fira sits directly above the caldera's most active volcanic zone, where sulfur compounds from underground vents infuse the volcanic ash soils. Assyrtiko from Fira vineyards shows an almost electric minerality—think struck flint and sea spray—that reflects this unique geological activity.",
+    "sources": "The Oxford Companion to Wine; Wine Grapes",
+    "confidence": "consensus",
+    "tags": [
+      "greece",
+      "santorini",
+      "assyrtiko",
+      "volcanic",
+      "minerality"
+    ]
+  },
+  {
+    "id": "RA-030",
+    "domain": "regions_appellations",
+    "difficulty": 2300,
+    "level": 10,
+    "format": "odd_one_out",
+    "question": "Which of these Napa Valley sub-AVAs does NOT belong with the others in terms of their primary cooling influence?",
+    "options": [
+      "Los Carneros",
+      "Oak Knoll District",
+      "Coombsville",
+      "Mount Veeder"
+    ],
+    "correct": 3,
+    "explanation": "Mount Veeder gains its cooling from elevation (400-2,677 feet), while the others rely on marine influence from San Pablo Bay. Mount Veeder's mountain climate creates dramatic diurnal swings and later ripening—it's Napa's high-altitude rebel, producing Cabernets with mountain structure rather than valley opulence.",
+    "sources": "The Oxford Companion to Wine; GuildSomm",
+    "confidence": "established",
+    "tags": [
+      "usa",
+      "napa_valley",
+      "sub_ava",
+      "climate",
+      "elevation"
+    ]
+  },
+  {
+    "id": "RA-031",
+    "domain": "regions_appellations",
+    "difficulty": 2200,
+    "level": 10,
+    "format": "multiple_choice",
+    "question": "Which specific vineyard site in Côte-Rôtie is considered the most prestigious for Syrah production and is characterized by its steep schist slopes with mica inclusions that create the distinctive 'côte brunie' (burned slope) effect?",
+    "options": [
+      "La Landonne",
+      "La Mouline",
+      "La Turque",
+      "Les Jumelles"
+    ],
+    "correct": 0,
+    "explanation": "La Landonne is the steepest and most austere of Côte-Rôtie's legendary sites, with pure schist and mica that literally burns in the sun, creating wines of incredible power and longevity. Think of it as Côte-Rôtie's answer to La Tâche — the most structured expression of its appellation.",
+    "sources": "The Oxford Companion to Wine; The World Atlas of Wine",
+    "confidence": "established",
+    "tags": [
+      "rhone",
+      "cote_rotie",
+      "vineyard_sites",
+      "syrah"
+    ]
+  },
+  {
+    "id": "RA-032",
+    "domain": "regions_appellations",
+    "difficulty": 2350,
+    "level": 10,
+    "format": "odd_one_out",
+    "question": "Which of these Burgundy Premier Cru vineyards does NOT belong with the others in terms of their underlying geological formation?",
+    "options": [
+      "Gevrey-Chambertin Les Cazetiers",
+      "Morey-Saint-Denis Clos des Ormes",
+      "Chambolle-Musigny Les Amoureuses",
+      "Vosne-Romanée Aux Malconsorts"
+    ],
+    "correct": 2,
+    "explanation": "Les Amoureuses sits on pure limestone with minimal clay, while the others are on the classic Côte d'Or blend of limestone-clay over Bajocian limestone. Les Amoureuses' pure limestone gives it that ethereal, perfumed quality that makes it Chambolle's most elegant Premier Cru.",
+    "sources": "The Oxford Companion to Wine; Wine Grapes",
+    "confidence": "established",
+    "tags": [
+      "burgundy",
+      "geology",
+      "premier_cru",
+      "terroir"
+    ]
+  },
+  {
+    "id": "RA-033",
+    "domain": "regions_appellations",
+    "difficulty": 2150,
+    "level": 10,
+    "format": "scenario",
+    "question": "A Master Sommelier candidate is studying the impact of the 2005 vintage conditions on Brunello di Montalcino. Which specific zone within the DOCG would have best preserved freshness during this exceptionally hot vintage due to its elevation and exposure?",
+    "options": [
+      "Montalcino town hillsides (350-400m, southwest exposure)",
+      "Sant'Angelo in Colle (200-250m, south exposure)",
+      "Castelnuovo dell'Abate (500-600m, north exposure)",
+      "Camigliano (150-200m, southeast exposure)"
+    ],
+    "correct": 2,
+    "explanation": "Castelnuovo dell'Abate's high elevation and northern exposure created a crucial cooling effect during 2005's brutal heat, preserving the acidity that many lower sites lost. It's the same principle that makes high-altitude Burgundy villages shine in hot vintages — elevation is nature's air conditioning.",
+    "sources": "The Oxford Companion to Wine; The World Atlas of Wine",
+    "confidence": "established",
+    "tags": [
+      "tuscany",
+      "brunello",
+      "vintage_conditions",
+      "elevation"
+    ]
+  },
+  {
+    "id": "RA-034",
+    "domain": "regions_appellations",
+    "difficulty": 2400,
+    "level": 10,
+    "format": "match_pairs",
+    "question": "Match each Chablis Grand Cru with its specific geological characteristic:",
+    "pairs": {
+      "left": [
+        "Les Clos",
+        "Valmur",
+        "Grenouilles",
+        "Vaudésir"
+      ],
+      "right": [
+        "Steepest slope with maximum sun exposure",
+        "Deepest Kimmeridgian marl deposits",
+        "Highest proportion of fossilized oyster shells",
+        "Most complex soil profile with three distinct layers"
+      ]
+    },
+    "options": [],
+    "correct": [
+      0,
+      3,
+      2,
+      1
+    ],
+    "explanation": "Each Grand Cru has distinct Kimmeridgian variations: Les Clos gets maximum sun on steep slopes, Valmur has the deepest marl, Grenouilles shows the most fossils, and Vaudésir displays complex layering. It's like reading the geological history of Chablis in seven vineyard chapters.",
+    "sources": "The Oxford Companion to Wine; Wine Grapes",
+    "confidence": "established",
+    "tags": [
+      "chablis",
+      "grand_cru",
+      "geology",
+      "kimmeridgian"
+    ]
+  },
+  {
+    "id": "RA-035",
+    "domain": "regions_appellations",
+    "difficulty": 2300,
+    "level": 10,
+    "format": "multiple_choice",
+    "question": "In the Wachau DAC system, which specific vineyard site is considered the region's most prestigious Riesling terroir and is characterized by its primary rock (Urgestein) gneiss soils with the steepest terracing in the appellation?",
+    "options": [
+      "Kellerberg",
+      "Achleiten",
+      "Singerriedel",
+      "Steinertal"
+    ],
+    "correct": 2,
+    "explanation": "Singerriedel represents Wachau's pinnacle — ancient gneiss terraces so steep they require heroic viticulture, producing Rieslings of incredible mineral precision and longevity. Think of it as the Steinberg of Austria, where every bottle tells the story of a billion-year-old rock formation.",
+    "sources": "The Oxford Companion to Wine; WSET Study Materials",
+    "confidence": "established",
+    "tags": [
+      "austria",
+      "wachau",
+      "riesling",
+      "vineyard_sites",
+      "terroir"
+    ]
+  }
+]

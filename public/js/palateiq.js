@@ -27,8 +27,8 @@ document.addEventListener('DOMContentLoaded', () => {
     };
   }
 
-  const MAX_LEVEL = 9;
-  const LEVEL_THRESHOLDS = [0, 300, 500, 700, 900, 1100, 1300, 1500, 1700, 2000];
+  const MAX_LEVEL = 10;
+  const LEVEL_THRESHOLDS = [0, 300, 500, 700, 900, 1100, 1300, 1500, 1700, 2000, 2500];
   function eloToLevel(elo) {
     for (let i = LEVEL_THRESHOLDS.length - 1; i >= 0; i--) {
       if (elo >= LEVEL_THRESHOLDS[i]) return Math.min(i + 1, MAX_LEVEL);

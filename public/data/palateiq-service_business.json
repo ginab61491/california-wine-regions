@@ -1,0 +1,395 @@
+[
+  {
+    "id": "SB-001",
+    "domain": "service_business",
+    "difficulty": 2200,
+    "level": 10,
+    "format": "multiple_choice",
+    "question": "When decanting a 1985 Barolo Monfortino from Giacomo Conterno, which technique is most appropriate to minimize sediment disturbance while preserving the wine's delicate aromatics?",
+    "options": [
+      "Stand the bottle upright for 48 hours, then decant in one continuous pour with a candle flame beneath the shoulder",
+      "Decant immediately from horizontal storage using a Venturi aerator to separate sediment",
+      "Double decant through a fine mesh filter, returning the wine to the original bottle",
+      "Use a Coravin system to extract the clear wine above the sediment line"
+    ],
+    "correct": 0,
+    "explanation": "Aged Nebbiolo requires gentle handling—standing upright allows sediment to settle, and the slow, continuous pour with light source lets you stop before sediment reaches the neck. Think of it as surgery, not construction work.",
+    "sources": "The Oxford Companion to Wine; GuildSomm",
+    "confidence": "established",
+    "tags": [
+      "decanting",
+      "aged_wines",
+      "nebbiolo",
+      "service_technique"
+    ]
+  },
+  {
+    "id": "SB-002",
+    "domain": "service_business",
+    "difficulty": 2350,
+    "level": 10,
+    "format": "odd_one_out",
+    "question": "Which of these wine faults would NOT typically be resolved or improved through decanting?",
+    "options": [
+      "Reduction (H2S) in a young Syrah from Northern Rhône",
+      "Cork taint (TCA) in a Burgundian Pinot Noir",
+      "Bottle stink from recent shipping in a Riesling Kabinett",
+      "Volatile acidity from Brettanomyces in an aged Châteauneuf-du-Pape"
+    ],
+    "correct": 1,
+    "explanation": "TCA is a molecular compound that binds to wine permanently—no amount of air exposure will remove that musty, wet cardboard character. The others can dissipate with aeration, like opening windows in a stuffy room.",
+    "sources": "Wine Science (Jamie Goode); The Oxford Companion to Wine",
+    "confidence": "established",
+    "tags": [
+      "wine_faults",
+      "decanting",
+      "TCA",
+      "service_troubleshooting"
+    ]
+  },
+  {
+    "id": "SB-003",
+    "domain": "service_business",
+    "difficulty": 2100,
+    "level": 10,
+    "format": "multiple_choice",
+    "question": "In a restaurant setting, what is the optimal serving temperature for a 2015 Chassagne-Montrachet Premier Cru from Domaine Ramonet?",
+    "options": [
+      "8-10°C (46-50°F)",
+      "12-14°C (54-57°F)",
+      "16-18°C (61-64°F)",
+      "10-12°C (50-54°F)"
+    ],
+    "correct": 1,
+    "explanation": "Premier Cru white Burgundy needs enough warmth to express its complex oak integration and mineral complexity, but not so warm that alcohol dominates. It's the Goldilocks zone where terroir and winemaking sing in harmony.",
+    "sources": "WSET Diploma Study Materials; GuildSomm",
+    "confidence": "established",
+    "tags": [
+      "serving_temperature",
+      "burgundy",
+      "chardonnay",
+      "premier_cru"
+    ]
+  },
+  {
+    "id": "SB-004",
+    "domain": "service_business",
+    "difficulty": 2400,
+    "level": 10,
+    "format": "scenario",
+    "question": "A guest orders a 2010 Hermitage Rouge from M. Chapoutier. Upon opening, you detect slight reduction and a tight, closed nose. The wine shows good color and no obvious faults. What is your best course of action?",
+    "options": [
+      "Immediately offer a replacement bottle, as reduction indicates a flawed wine",
+      "Decant the wine and allow 30-45 minutes of aeration before presenting to the guest",
+      "Serve the wine as-is, explaining that young Hermitage typically needs time in the glass",
+      "Return the wine to storage and suggest an older vintage that will be more approachable"
+    ],
+    "correct": 1,
+    "explanation": "Young Northern Rhône Syrah often shows reductive characters that blow off beautifully with air exposure—it's like watching a butterfly emerge from its cocoon. Decanting transforms what seems like a problem into a revelation.",
+    "sources": "GuildSomm; The Oxford Companion to Wine",
+    "confidence": "established",
+    "tags": [
+      "wine_service",
+      "syrah",
+      "northern_rhone",
+      "reduction",
+      "decanting"
+    ]
+  },
+  {
+    "id": "SB-005",
+    "domain": "service_business",
+    "difficulty": 2250,
+    "level": 10,
+    "format": "multiple_choice",
+    "question": "When calculating wine inventory turnover for a restaurant's by-the-glass program, which metric provides the most accurate assessment of program efficiency?",
+    "options": [
+      "Total glasses sold divided by total bottles opened",
+      "Cost of goods sold divided by average inventory value",
+      "Revenue per bottle divided by wholesale cost per bottle",
+      "Number of different wines offered divided by storage capacity"
+    ],
+    "correct": 1,
+    "explanation": "COGS divided by average inventory value gives you true turnover rate—how quickly you're converting stock into revenue. It's the heartbeat of your wine program, measuring the pulse of profitability.",
+    "sources": "GuildSomm; Wine Business Monthly",
+    "confidence": "established",
+    "tags": [
+      "inventory_management",
+      "restaurant_operations",
+      "by_the_glass",
+      "turnover_rate"
+    ]
+  },
+  {
+    "id": "SB-006",
+    "domain": "service_business",
+    "difficulty": 2300,
+    "level": 10,
+    "format": "match_pairs",
+    "question": "Match each wine storage parameter with its optimal range for long-term cellar conditions:",
+    "pairs": {
+      "left": [
+        "Temperature",
+        "Relative Humidity",
+        "Light Exposure",
+        "Vibration Level"
+      ],
+      "right": [
+        "0.2g maximum acceleration",
+        "50-70%",
+        "Complete darkness or <3 lux",
+        "12-15°C (54-59°F)"
+      ]
+    },
+    "options": [],
+    "correct": [
+      3,
+      1,
+      2,
+      0
+    ],
+    "explanation": "These parameters work together like a quartet—each must be in harmony for wines to age gracefully. Temperature stability matters more than exact degrees, but humidity prevents cork desiccation while darkness preserves delicate compounds.",
+    "sources": "Wine Science (Jamie Goode); The Oxford Companion to Wine",
+    "confidence": "established",
+    "tags": [
+      "wine_storage",
+      "cellar_conditions",
+      "aging",
+      "preservation"
+    ]
+  },
+  {
+    "id": "SB-007",
+    "domain": "service_business",
+    "difficulty": 2150,
+    "level": 10,
+    "format": "multiple_choice",
+    "question": "Which closure type provides the most consistent oxygen transmission rate for wines intended for 10-15 years of aging?",
+    "options": [
+      "Natural cork from Portuguese Quercus suber",
+      "Technical cork (agglomerated with microspheres)",
+      "Screwcap with Saranex liner",
+      "DIAM cork (processed with supercritical CO2)"
+    ],
+    "correct": 3,
+    "explanation": "DIAM corks offer the most predictable OTR while eliminating TCA risk—they're like natural cork's perfectly engineered cousin. The supercritical CO2 process removes compounds that cause variation while maintaining ideal permeability.",
+    "sources": "Wine Science (Jamie Goode); The Oxford Companion to Wine",
+    "confidence": "consensus",
+    "tags": [
+      "closures",
+      "aging",
+      "oxygen_transmission",
+      "DIAM",
+      "cork_alternatives"
+    ]
+  },
+  {
+    "id": "SB-008",
+    "domain": "service_business",
+    "difficulty": 2400,
+    "level": 10,
+    "format": "odd_one_out",
+    "question": "Which factor is LEAST important when determining the optimal markup strategy for a restaurant's reserve wine list?",
+    "options": [
+      "Local market competition and price sensitivity analysis",
+      "The wine's critical scores from Robert Parker or Wine Spectator",
+      "Storage and insurance costs for high-value inventory",
+      "Target customer demographic and spending patterns"
+    ],
+    "correct": 1,
+    "explanation": "Critical scores don't drive markup strategy—they're marketing tools, not business fundamentals. Smart pricing considers real costs, competition, and customer behavior, not what critics think tastes good.",
+    "sources": "GuildSomm; Wine Business Monthly",
+    "confidence": "established",
+    "tags": [
+      "wine_pricing",
+      "markup_strategy",
+      "restaurant_management",
+      "critical_scores"
+    ]
+  },
+  {
+    "id": "SB-009",
+    "domain": "service_business",
+    "difficulty": 2200,
+    "level": 10,
+    "format": "scenario",
+    "question": "A guest complains that their 2018 Sancerre tastes 'flat and lifeless' compared to the 2019 they had last week. Both wines show no obvious faults. How should you respond?",
+    "options": [
+      "Explain that 2018 was a challenging vintage in Loire Valley and offer a replacement",
+      "Acknowledge the difference and offer to decant the wine or try a different bottle",
+      "Suggest that vintage variation is normal and the wine may improve with time in glass",
+      "Immediately replace the wine without charge to maintain customer satisfaction"
+    ],
+    "correct": 2,
+    "explanation": "Vintage variation is part of wine's natural story—2018 Loire was indeed more restrained than the generous 2019. Education paired with patience often transforms disappointment into appreciation, like learning to love different movements in a symphony.",
+    "sources": "GuildSomm; Wine Spectator Vintage Charts",
+    "confidence": "established",
+    "tags": [
+      "vintage_variation",
+      "customer_service",
+      "loire_valley",
+      "sancerre",
+      "wine_education"
+    ]
+  },
+  {
+    "id": "SB-010",
+    "domain": "service_business",
+    "difficulty": 2350,
+    "level": 10,
+    "format": "multiple_choice",
+    "question": "When reading German wine labels under the 2021 VDP classification reform, which term indicates the highest quality tier equivalent to Burgundy Grand Cru?",
+    "options": [
+      "VDP.GROSSE LAGE",
+      "VDP.ERSTE LAGE",
+      "VDP.ORTSWEIN",
+      "VDP.GUTSWEIN"
+    ],
+    "correct": 0,
+    "explanation": "VDP.GROSSE LAGE represents Germany's finest single vineyards, like Burgundy's Grand Crus—these are the crown jewels where terroir expression reaches its pinnacle. Think of it as Germany's way of saying 'this dirt is special.'",
+    "sources": "WSET Diploma Study Materials; The Oxford Companion to Wine",
+    "confidence": "established",
+    "tags": [
+      "german_wine_law",
+      "VDP_classification",
+      "wine_labels",
+      "quality_hierarchy"
+    ]
+  },
+  {
+    "id": "SB-011",
+    "domain": "service_business",
+    "difficulty": 2300,
+    "level": 10,
+    "format": "multiple_choice",
+    "question": "Which glassware characteristic has the greatest impact on the perception of tannin structure in a young Cabernet Sauvignon?",
+    "options": [
+      "Bowl diameter and surface area for aeration",
+      "Rim thickness and lip design",
+      "Crystal composition versus standard glass",
+      "Stem length and overall balance"
+    ],
+    "correct": 0,
+    "explanation": "Bowl size controls oxygen exposure and aroma concentration—larger bowls soften harsh tannins through micro-oxygenation while concentrating fruit aromatics. It's like giving the wine room to breathe and show its best side.",
+    "sources": "GuildSomm; Wine Science (Jamie Goode)",
+    "confidence": "established",
+    "tags": [
+      "glassware",
+      "tannin_perception",
+      "cabernet_sauvignon",
+      "service_technique"
+    ]
+  },
+  {
+    "id": "SB-012",
+    "domain": "service_business",
+    "difficulty": 2450,
+    "level": 10,
+    "format": "match_pairs",
+    "question": "Match each wine investment grade classification with its typical auction appreciation rate over 10-year periods:",
+    "pairs": {
+      "left": [
+        "First Growth Bordeaux",
+        "Burgundy Grand Cru",
+        "Vintage Port (declared years)",
+        "Champagne Prestige Cuvées"
+      ],
+      "right": [
+        "4-6% annually",
+        "8-12% annually",
+        "6-8% annually",
+        "3-5% annually"
+      ]
+    },
+    "options": [],
+    "correct": [
+      1,
+      0,
+      2,
+      3
+    ],
+    "explanation": "Burgundy Grand Cru leads appreciation due to scarcity and cult status, while Champagne lags due to larger production volumes. Think of it as supply and demand wearing tuxedos—rarer equals pricier over time.",
+    "sources": "Wine Market Journal; Liv-ex Index Reports",
+    "confidence": "consensus",
+    "tags": [
+      "wine_investment",
+      "auction_markets",
+      "appreciation_rates",
+      "collectible_wines"
+    ]
+  },
+  {
+    "id": "SB-013",
+    "domain": "service_business",
+    "difficulty": 2200,
+    "level": 10,
+    "format": "scenario",
+    "question": "A sommelier notices their by-the-glass Burgundian Chardonnay is showing signs of premature oxidation after 48 hours under argon gas. What is the most likely cause and solution?",
+    "options": [
+      "Faulty argon system; switch to nitrogen gas preservation",
+      "Wine was already oxidized before opening; replace with fresh inventory",
+      "Incorrect storage temperature; reduce cellar temperature by 2°C",
+      "Inadequate gas pressure; increase argon flow rate and check seals"
+    ],
+    "correct": 3,
+    "explanation": "White Burgundy is particularly susceptible to oxidation, and insufficient gas pressure allows oxygen infiltration through microscopic gaps. It's like trying to keep water out with a screen door—you need proper pressure to maintain the protective blanket.",
+    "sources": "GuildSomm; Wine Preservation Systems Manual",
+    "confidence": "established",
+    "tags": [
+      "wine_preservation",
+      "by_the_glass",
+      "burgundy",
+      "oxidation",
+      "argon_systems"
+    ]
+  },
+  {
+    "id": "SB-014",
+    "domain": "service_business",
+    "difficulty": 2250,
+    "level": 10,
+    "format": "odd_one_out",
+    "question": "Which practice would NOT be considered appropriate sommelier ethics when making wine recommendations?",
+    "options": [
+      "Suggesting a less expensive wine that better matches the guest's preferences",
+      "Recommending wines from producers who provide educational trips",
+      "Steering guests toward wines with higher profit margins without disclosure",
+      "Offering wines from regions you've personally visited and studied"
+    ],
+    "correct": 2,
+    "explanation": "Profit-driven recommendations without transparency violate the sommelier's duty to serve the guest's best interests first. Think of it as being a wine therapist—your client's needs come before your wallet's desires.",
+    "sources": "GuildSomm Ethics Guidelines; Court of Master Sommeliers Standards",
+    "confidence": "established",
+    "tags": [
+      "sommelier_ethics",
+      "wine_recommendations",
+      "professional_standards",
+      "guest_service"
+    ]
+  },
+  {
+    "id": "SB-015",
+    "domain": "service_business",
+    "difficulty": 2400,
+    "level": 10,
+    "format": "multiple_choice",
+    "question": "When double decanting a 1996 Vintage Port from Quinta do Noval Nacional, at what stage should you return the wine to the original bottle?",
+    "options": [
+      "Immediately after the initial decanting to preserve sediment separation",
+      "After 2-4 hours when primary aromatics have fully integrated",
+      "When the wine reaches optimal serving temperature of 18°C",
+      "After 30-60 minutes when volatile compounds have dissipated but before over-aeration"
+    ],
+    "correct": 3,
+    "explanation": "Aged Port needs just enough air to shed bottle shock and integrate, but too much exposure destroys its delicate aged character. It's like tuning a vintage violin—just enough tension to sing, not enough to snap the strings.",
+    "sources": "The Oxford Companion to Wine; GuildSomm",
+    "confidence": "established",
+    "tags": [
+      "double_decanting",
+      "vintage_port",
+      "aged_wines",
+      "service_timing",
+      "aeration"
+    ]
+  }
+]

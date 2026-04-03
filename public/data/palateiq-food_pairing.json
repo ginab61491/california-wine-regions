@@ -1,0 +1,395 @@
+[
+  {
+    "id": "FP-001",
+    "domain": "food_pairing",
+    "difficulty": 2100,
+    "level": 10,
+    "format": "multiple_choice",
+    "question": "Which specific compound in artichokes is responsible for making wine taste metallic and bitter when paired together?",
+    "options": [
+      "Cynarin",
+      "Chlorogenic acid",
+      "Inulin",
+      "Caffeic acid"
+    ],
+    "correct": 0,
+    "explanation": "Cynarin is the phenolic compound that temporarily blocks sweet taste receptors, making everything taste bitter and metallic afterward—including wine. Think of it as nature's palate saboteur that sommeliers learn to avoid at all costs.",
+    "sources": "The Wine Bible; Wine Science",
+    "confidence": "established",
+    "tags": [
+      "difficult_foods",
+      "artichoke",
+      "cynarin",
+      "phenolic_compounds"
+    ]
+  },
+  {
+    "id": "FP-002",
+    "domain": "food_pairing",
+    "difficulty": 2200,
+    "level": 10,
+    "format": "odd_one_out",
+    "question": "Which of these classic regional pairings does NOT follow the 'what grows together, goes together' principle?",
+    "options": [
+      "Sancerre Blanc with Crottin de Chavignol",
+      "Barolo with white truffles from Alba",
+      "Muscadet with Belon oysters from Brittany",
+      "Roquefort with Sauternes"
+    ],
+    "correct": 3,
+    "explanation": "Roquefort comes from the Aveyron region in southern France, while Sauternes is from Bordeaux—they're geographically distant. The pairing works brilliantly due to salt-sweetness harmony, but it's not a 'grows together' match like the others.",
+    "sources": "The Oxford Companion to Wine; The World Atlas of Wine",
+    "confidence": "established",
+    "tags": [
+      "regional_pairings",
+      "terroir",
+      "cheese_wine",
+      "geographic_matching"
+    ]
+  },
+  {
+    "id": "FP-003",
+    "domain": "food_pairing",
+    "difficulty": 2300,
+    "level": 10,
+    "format": "multiple_choice",
+    "question": "When pairing wine with dishes high in umami (glutamates), what specific sensory change occurs with tannic red wines?",
+    "options": [
+      "Tannins become more astringent and bitter",
+      "Tannins become softer and more rounded",
+      "Alcohol perception increases dramatically",
+      "Acidity appears to decrease significantly"
+    ],
+    "correct": 0,
+    "explanation": "Umami compounds amplify the perception of tannin bitterness and astringency, creating an unpleasant metallic clash. This is why mushroom risotto pairs better with Pinot Noir than Cabernet Sauvignon—less tannin means less conflict with those glutamates.",
+    "sources": "Wine Science; WSET Level 3 Study Materials",
+    "confidence": "established",
+    "tags": [
+      "umami",
+      "tannin_interaction",
+      "glutamates",
+      "sensory_perception"
+    ]
+  },
+  {
+    "id": "FP-004",
+    "domain": "food_pairing",
+    "difficulty": 2150,
+    "level": 10,
+    "format": "scenario",
+    "question": "A guest orders duck breast with a cherry gastrique sauce. The duck is cooked medium-rare. What pairing principle should drive your wine selection?",
+    "options": [
+      "Match the wine to the duck's richness and protein",
+      "Match the wine to the sweet-tart cherry gastrique",
+      "Focus on the medium-rare cooking method",
+      "Consider the dish's overall weight and texture"
+    ],
+    "correct": 1,
+    "explanation": "Always pair to the sauce, not the protein—the gastrique's sweet-tart profile will dominate the palate interaction. A Pinot Noir with bright acidity and red fruit would echo the cherries while handling the sauce's sweetness better than a wine chosen for the duck alone.",
+    "sources": "The Wine Bible; WSET Level 3 Study Materials",
+    "confidence": "established",
+    "tags": [
+      "sauce_pairing",
+      "gastrique",
+      "pairing_hierarchy",
+      "flavor_dominance"
+    ]
+  },
+  {
+    "id": "FP-005",
+    "domain": "food_pairing",
+    "difficulty": 2250,
+    "level": 10,
+    "format": "match_pairs",
+    "question": "Match each cooking method with its optimal wine pairing approach:",
+    "pairs": {
+      "left": [
+        "Grilled/Charred",
+        "Poached/Steamed",
+        "Raw/Ceviche",
+        "Braised/Slow-cooked"
+      ],
+      "right": [
+        "High acidity wines to cut richness",
+        "Full-bodied wines with concentration",
+        "Bright, mineral wines with citrus notes",
+        "Wines with smoky/earthy complexity"
+      ]
+    },
+    "options": [],
+    "correct": [
+      3,
+      0,
+      2,
+      1
+    ],
+    "explanation": "Cooking methods create distinct flavor profiles that demand specific wine responses: char needs smokiness, delicate preparations need brightness, acidity cuts through richness, and concentrated cooking demands concentrated wines. Think of wine as the cooking method's flavor echo.",
+    "sources": "The Wine Bible; WSET Level 3 Study Materials",
+    "confidence": "established",
+    "tags": [
+      "cooking_methods",
+      "pairing_strategy",
+      "flavor_intensity",
+      "textural_matching"
+    ]
+  },
+  {
+    "id": "FP-006",
+    "domain": "food_pairing",
+    "difficulty": 2400,
+    "level": 10,
+    "format": "multiple_choice",
+    "question": "In the classic pairing of aged Comté cheese with Vin Jaune from Jura, which specific compound interaction creates the synergy?",
+    "options": [
+      "Calcium in the cheese neutralizes tartaric acid",
+      "Acetaldehyde in the wine echoes nutty oxidation flavors",
+      "Tyramine in aged cheese enhances alcohol perception",
+      "Lactic acid bacteria create complementary esters"
+    ],
+    "correct": 1,
+    "explanation": "Vin Jaune's deliberate oxidative aging under flor creates acetaldehyde, which mirrors the nutty, oxidized flavors that develop in long-aged Comté. It's like pairing two expressions of the same beautiful decay—controlled oxidation creating complexity in both wine and cheese.",
+    "sources": "The Oxford Companion to Wine; Wine Science",
+    "confidence": "established",
+    "tags": [
+      "oxidative_aging",
+      "acetaldehyde",
+      "comte_cheese",
+      "vin_jaune",
+      "chemical_synergy"
+    ]
+  },
+  {
+    "id": "FP-007",
+    "domain": "food_pairing",
+    "difficulty": 2050,
+    "level": 10,
+    "format": "multiple_choice",
+    "question": "Why does asparagus create pairing challenges with most wines?",
+    "options": [
+      "High levels of methional create vegetal flavors that clash",
+      "Asparagusic acid breaks down into sulfur compounds",
+      "Natural salicylates interfere with tannin perception",
+      "Excessive fiber content affects wine's mouthfeel"
+    ],
+    "correct": 1,
+    "explanation": "Asparagusic acid metabolizes into volatile sulfur compounds that create that distinctive asparagus aroma—and these sulfur notes clash harshly with most wines. Sauvignon Blanc works because it already has complementary sulfur compounds from its own metabolism.",
+    "sources": "Wine Science; The Wine Bible",
+    "confidence": "established",
+    "tags": [
+      "asparagus",
+      "asparagusic_acid",
+      "sulfur_compounds",
+      "difficult_foods"
+    ]
+  },
+  {
+    "id": "FP-008",
+    "domain": "food_pairing",
+    "difficulty": 2300,
+    "level": 10,
+    "format": "odd_one_out",
+    "question": "Which of these bridge ingredients does NOT work by creating flavor echoes with wine?",
+    "options": [
+      "Black pepper with Syrah's spice notes",
+      "Lemon zest with Riesling's citrus character",
+      "Butter with Chardonnay's malolactic richness",
+      "Sea salt with wine's mineral finish"
+    ],
+    "correct": 3,
+    "explanation": "Sea salt works by contrast, not echo—it enhances wine's fruit perception and softens tannins through ionic interaction, rather than mirroring flavors. The others create direct flavor bridges where food and wine sing the same aromatic song.",
+    "sources": "The Wine Bible; WSET Level 3 Study Materials",
+    "confidence": "established",
+    "tags": [
+      "bridge_ingredients",
+      "flavor_echoing",
+      "salt_interaction",
+      "contrast_vs_complement"
+    ]
+  },
+  {
+    "id": "FP-009",
+    "domain": "food_pairing",
+    "difficulty": 2200,
+    "level": 10,
+    "format": "scenario",
+    "question": "A guest wants to pair wine with 85% dark chocolate tart. They prefer red wine. What is your best recommendation strategy?",
+    "options": [
+      "Suggest a high-tannin Cabernet Sauvignon to match intensity",
+      "Recommend a Port or other fortified wine instead",
+      "Choose a fruit-forward Zinfandel with residual sugar",
+      "Advise against red wine entirely due to tannin-chocolate clash"
+    ],
+    "correct": 1,
+    "explanation": "Dark chocolate's bitterness amplifies tannin harshness catastrophically, while its richness demands sweetness for balance. Port's fortified sweetness and lower tannins create harmony where table wines create war—sometimes you must redirect the guest's preference for their own palate's sake.",
+    "sources": "The Wine Bible; WSET Level 3 Study Materials",
+    "confidence": "established",
+    "tags": [
+      "chocolate_pairing",
+      "tannin_bitterness",
+      "fortified_wine",
+      "guest_education"
+    ]
+  },
+  {
+    "id": "FP-010",
+    "domain": "food_pairing",
+    "difficulty": 2350,
+    "level": 10,
+    "format": "multiple_choice",
+    "question": "In wine and cheese pairing, what makes blue cheese and sweet wine such a classic combination at the molecular level?",
+    "options": [
+      "Penicillium roqueforti enzymes neutralize wine acids",
+      "Salt crystals enhance wine's fruit perception",
+      "Roquefortine alkaloids bind with wine phenolics",
+      "Fat content buffers wine's alcohol heat"
+    ],
+    "correct": 1,
+    "explanation": "The salt crystals in blue cheese enhance our perception of the wine's fruit sweetness while the cheese's fat coats the palate, creating a luxurious mouthfeel. It's pure sensory magic—salt makes sweet taste sweeter, and fat makes everything feel more indulgent.",
+    "sources": "Wine Science; The Oxford Companion to Wine",
+    "confidence": "established",
+    "tags": [
+      "blue_cheese",
+      "sweet_wine",
+      "salt_enhancement",
+      "fat_texture",
+      "sensory_interaction"
+    ]
+  },
+  {
+    "id": "FP-011",
+    "domain": "food_pairing",
+    "difficulty": 2100,
+    "level": 10,
+    "format": "multiple_choice",
+    "question": "When pairing wine with very spicy (capsaicin-heavy) dishes, why should alcohol levels be kept moderate?",
+    "options": [
+      "Capsaicin breaks down alcohol into acetaldehyde",
+      "Alcohol enhances capsaicin's heat sensation",
+      "High alcohol masks the dish's flavor complexity",
+      "Capsaicin interferes with alcohol metabolism"
+    ],
+    "correct": 1,
+    "explanation": "Alcohol and capsaicin are both detected by the same TRPV1 receptors, so they amplify each other's burning sensation exponentially. Think of it as pouring gasoline on a fire—that's why off-dry Riesling works better with Thai curry than Barolo.",
+    "sources": "Wine Science; The Wine Bible",
+    "confidence": "established",
+    "tags": [
+      "capsaicin",
+      "spicy_food",
+      "alcohol_interaction",
+      "TRPV1_receptors",
+      "heat_sensation"
+    ]
+  },
+  {
+    "id": "FP-012",
+    "domain": "food_pairing",
+    "difficulty": 2150,
+    "level": 10,
+    "format": "multiple_choice",
+    "question": "According to established pairing principles, why must dessert wines always be sweeter than the dessert itself?",
+    "options": [
+      "Sugar in food enhances wine's acidity perception",
+      "The wine will taste bitter and thin by comparison",
+      "Sweet foods block alcohol receptors in the palate",
+      "Residual sugar prevents proper wine aroma release"
+    ],
+    "correct": 1,
+    "explanation": "When your palate is calibrated to the dessert's sweetness level, a less-sweet wine tastes shockingly bitter and austere—like drinking lemon juice after eating cake. The wine must be sweeter to maintain its own character and avoid this sensory crash.",
+    "sources": "WSET Level 3 Study Materials; The Wine Bible",
+    "confidence": "established",
+    "tags": [
+      "dessert_pairing",
+      "sweetness_levels",
+      "palate_calibration",
+      "sensory_contrast"
+    ]
+  },
+  {
+    "id": "FP-013",
+    "domain": "food_pairing",
+    "difficulty": 2250,
+    "level": 10,
+    "format": "scenario",
+    "question": "A table orders oysters with mignonette (shallot-red wine vinegar sauce). The guests want Champagne. What pairing challenge must you address?",
+    "options": [
+      "The vinegar's acidity will clash with Champagne's acidity",
+      "Bubbles will be flattened by the shellfish's salinity",
+      "Red wine vinegar will make the Champagne taste flat",
+      "The shallots will overpower the wine's delicate flavors"
+    ],
+    "correct": 2,
+    "explanation": "Acetic acid in vinegar is wine's mortal enemy—it makes even the finest Champagne taste lifeless and dull. You might suggest they skip the mignonette or choose a different wine, because no amount of bubbles can survive that acidic assault.",
+    "sources": "The Wine Bible; WSET Level 3 Study Materials",
+    "confidence": "established",
+    "tags": [
+      "vinegar_pairing",
+      "acetic_acid",
+      "champagne",
+      "oysters",
+      "acid_clash"
+    ]
+  },
+  {
+    "id": "FP-014",
+    "domain": "food_pairing",
+    "difficulty": 2400,
+    "level": 10,
+    "format": "match_pairs",
+    "question": "Match each difficult-to-pair food with its optimal wine style:",
+    "pairs": {
+      "left": [
+        "Artichoke hearts",
+        "Raw tomatoes",
+        "Asparagus spears",
+        "Dark chocolate (85%)"
+      ],
+      "right": [
+        "Herbaceous Sauvignon Blanc",
+        "Crisp white with bright acidity",
+        "Fortified sweet wine",
+        "Rich white with oak and texture"
+      ]
+    },
+    "options": [],
+    "correct": [
+      3,
+      1,
+      0,
+      2
+    ],
+    "explanation": "Each problematic food needs a specific wine solution: artichokes need richness to combat cynarin, tomatoes need acidity for balance, asparagus needs herbal echoes, and dark chocolate demands sweetness. It's like having the right key for each particularly stubborn lock.",
+    "sources": "The Wine Bible; Wine Science",
+    "confidence": "established",
+    "tags": [
+      "difficult_foods",
+      "pairing_solutions",
+      "food_chemistry",
+      "wine_matching"
+    ]
+  },
+  {
+    "id": "FP-015",
+    "domain": "food_pairing",
+    "difficulty": 2200,
+    "level": 10,
+    "format": "multiple_choice",
+    "question": "What makes sparkling wine uniquely versatile for food pairing across diverse cuisines?",
+    "options": [
+      "CO2 bubbles physically scrub the palate clean",
+      "Effervescence enhances umami perception in foods",
+      "Bubbles carry aromatic compounds more effectively",
+      "Carbon dioxide neutralizes capsaicin heat"
+    ],
+    "correct": 0,
+    "explanation": "Those CO2 bubbles act like tiny scrub brushes, physically lifting oils and proteins from your palate between bites, resetting your taste buds for the next flavor. It's why Champagne works with everything from sushi to fried chicken—it's the ultimate palate eraser.",
+    "sources": "Wine Science; The Wine Bible",
+    "confidence": "established",
+    "tags": [
+      "sparkling_wine",
+      "CO2_bubbles",
+      "palate_cleansing",
+      "versatility",
+      "effervescence"
+    ]
+  }
+]

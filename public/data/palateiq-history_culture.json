@@ -1,0 +1,376 @@
+[
+  {
+    "id": "HC-001",
+    "domain": "history_culture",
+    "difficulty": 2100,
+    "level": 10,
+    "format": "multiple_choice",
+    "question": "Which specific rootstock combination did Hermann Jaeger first successfully graft European Vitis vinifera onto in Missouri during the 1870s phylloxera crisis?",
+    "options": [
+      "Vitis riparia crossed with Vitis rupestris",
+      "Vitis berlandieri crossed with Vitis riparia",
+      "Pure Vitis riparia from the Ozark Mountains",
+      "Vitis aestivalis crossed with Vitis labrusca"
+    ],
+    "correct": 2,
+    "explanation": "Jaeger's breakthrough used pure Vitis riparia from Missouri's Ozark region, which proved naturally resistant to phylloxera's root damage. His success preceded the later development of hybrid rootstocks, making him the unsung hero who saved European viticulture with American roots.",
+    "sources": "The Oxford Companion to Wine; Wine Grapes",
+    "confidence": "established",
+    "tags": [
+      "phylloxera",
+      "rootstock",
+      "american_viticulture"
+    ]
+  },
+  {
+    "id": "HC-002",
+    "domain": "history_culture",
+    "difficulty": 2200,
+    "level": 10,
+    "format": "odd_one_out",
+    "question": "Which of these châteaux was NOT classified in the original 1855 Bordeaux Classification but was later elevated?",
+    "options": [
+      "Château Cantemerle",
+      "Château Mouton Rothschild",
+      "Château Pichon Baron",
+      "Château Pontet-Canet"
+    ],
+    "correct": 1,
+    "explanation": "Mouton Rothschild was the only château to break the 1855 Classification's rigid hierarchy, ascending from Second to First Growth in 1973 after Baron Philippe's relentless campaign. The others were all classified in their current positions in 1855, making Mouton the exception that proved the rule could bend.",
+    "sources": "The Oxford Companion to Wine; The World Atlas of Wine",
+    "confidence": "established",
+    "tags": [
+      "bordeaux_classification",
+      "mouton_rothschild",
+      "classification_changes"
+    ]
+  },
+  {
+    "id": "HC-003",
+    "domain": "history_culture",
+    "difficulty": 2300,
+    "level": 10,
+    "format": "multiple_choice",
+    "question": "At the 1976 Judgment of Paris, which specific Burgundy producer's wine placed second among the white wines, behind Chateau Montelena?",
+    "options": [
+      "Meursault-Charmes from Roulot",
+      "Bâtard-Montrachet from Ramonet-Prudhon",
+      "Beaune Clos des Mouches Blanc from Drouhin",
+      "Puligny-Montrachet Les Pucelles from Leflaive"
+    ],
+    "correct": 1,
+    "explanation": "Ramonet-Prudhon's 1973 Bâtard-Montrachet placed second, making it the highest-scoring French white wine in Spurrier's blind tasting. This grand cru Burgundy's silver medal position showed that even France's most prestigious whites weren't immune to California's challenge.",
+    "sources": "The Oxford Companion to Wine; GuildSomm",
+    "confidence": "established",
+    "tags": [
+      "judgment_of_paris",
+      "burgundy",
+      "spurrier"
+    ]
+  },
+  {
+    "id": "HC-004",
+    "domain": "history_culture",
+    "difficulty": 2150,
+    "level": 10,
+    "format": "multiple_choice",
+    "question": "Which technique did Madame Clicquot's cellar master Antoine de Müller actually develop in 1816 that revolutionized Champagne production?",
+    "options": [
+      "The méthode champenoise itself",
+      "Riddling tables (pupitres) for remuage",
+      "Dosage adjustment after disgorgement",
+      "Blending wines from different villages"
+    ],
+    "correct": 1,
+    "explanation": "De Müller invented the riddling table system that allowed systematic remuage (riddling) to collect sediment in the bottle neck for clean disgorgement. This A-frame wooden contraption with its angled holes transformed Champagne from cloudy to crystal clear, giving Veuve Clicquot a massive competitive advantage.",
+    "sources": "The Oxford Companion to Wine; Wine Science",
+    "confidence": "established",
+    "tags": [
+      "champagne_history",
+      "veuve_clicquot",
+      "riddling"
+    ]
+  },
+  {
+    "id": "HC-005",
+    "domain": "history_culture",
+    "difficulty": 2250,
+    "level": 10,
+    "format": "match_pairs",
+    "question": "Match each ancient winemaking civilization with their specific viticultural innovation:",
+    "pairs": {
+      "left": [
+        "Georgian qvevri makers",
+        "Roman viticulturists",
+        "Greek wine merchants",
+        "Phoenician traders"
+      ],
+      "right": [
+        "Developed amphorae for long-distance transport",
+        "Created the earliest known clay fermentation vessels",
+        "Established systematic vineyard row planting",
+        "Introduced wine dilution with seawater"
+      ]
+    },
+    "options": [],
+    "correct": [
+      1,
+      2,
+      3,
+      0
+    ],
+    "explanation": "Each civilization contributed distinct innovations: Georgians pioneered qvevri (8,000-year-old clay vessels), Romans systematized vineyard layout, Greeks added seawater for preservation, and Phoenicians perfected amphorae for maritime trade. These foundations still influence winemaking today, from Georgian natural wine to structured vineyard planning.",
+    "sources": "The Oxford Companion to Wine; Wine Grapes",
+    "confidence": "established",
+    "tags": [
+      "ancient_winemaking",
+      "qvevri",
+      "roman_viticulture"
+    ]
+  },
+  {
+    "id": "HC-006",
+    "domain": "history_culture",
+    "difficulty": 2180,
+    "level": 10,
+    "format": "multiple_choice",
+    "question": "Which specific provision in the 1935 French AOC law established the legal framework that most distinguished it from earlier wine regulations?",
+    "options": [
+      "Mandatory minimum alcohol levels for each appellation",
+      "Delimitation of precise geographic boundaries",
+      "Required use of traditional grape varieties only",
+      "Compulsory tasting panel approval before release"
+    ],
+    "correct": 3,
+    "explanation": "The revolutionary aspect was requiring tasting panel approval (agrément) before wines could claim AOC status, making France the first country to legally mandate quality assessment beyond just geographic and varietal compliance. This 'taste test' requirement separated AOC from simple geographic designations, establishing the template for quality-based wine law worldwide.",
+    "sources": "The Oxford Companion to Wine; WSET Diploma Study Materials",
+    "confidence": "established",
+    "tags": [
+      "french_aoc",
+      "wine_law",
+      "quality_control"
+    ]
+  },
+  {
+    "id": "HC-007",
+    "domain": "history_culture",
+    "difficulty": 2050,
+    "level": 10,
+    "format": "scenario",
+    "question": "A Master Sommelier candidate is studying Prohibition's aftermath on American wine. They discover that one specific consequence allowed European wine imports to dominate the American fine wine market until the 1960s. What was this consequence?",
+    "options": [
+      "Loss of winemaking knowledge due to 13-year production gap",
+      "Destruction of premium grape vine rootstock during Prohibition",
+      "Legal preference given to imported wines in post-Prohibition licensing",
+      "Consumer preference shift toward spirits over wine permanently"
+    ],
+    "correct": 0,
+    "explanation": "The 13-year production hiatus (1920-1933) created a 'lost generation' of American winemakers, breaking the knowledge transfer chain from master to apprentice. When Prohibition ended, European producers had maintained their expertise while America had to rebuild from scratch, explaining why imports dominated until pioneers like Robert Mondavi emerged.",
+    "sources": "The Oxford Companion to Wine; The Wine Bible",
+    "confidence": "established",
+    "tags": [
+      "prohibition",
+      "american_wine_history",
+      "knowledge_transfer"
+    ]
+  },
+  {
+    "id": "HC-008",
+    "domain": "history_culture",
+    "difficulty": 2280,
+    "level": 10,
+    "format": "multiple_choice",
+    "question": "Which specific discovery by Louis Pasteur in his 1866 'Études sur le Vin' most directly revolutionized wine stability and international trade?",
+    "options": [
+      "Identification of Saccharomyces cerevisiae as the primary fermentation yeast",
+      "Proof that heating wine to 60°C kills harmful bacteria without affecting taste",
+      "Discovery that malolactic fermentation reduces wine acidity",
+      "Demonstration that sulfur dioxide prevents oxidation"
+    ],
+    "correct": 1,
+    "explanation": "Pasteur's pasteurization process (heating to 60°C) eliminated spoilage bacteria while preserving wine character, making long-distance shipping commercially viable for the first time. This breakthrough opened global wine markets and launched the international wine trade as we know it—imagine Bordeaux without export markets!",
+    "sources": "The Oxford Companion to Wine; Wine Science",
+    "confidence": "established",
+    "tags": [
+      "pasteur",
+      "pasteurization",
+      "wine_science"
+    ]
+  },
+  {
+    "id": "HC-009",
+    "domain": "history_culture",
+    "difficulty": 2320,
+    "level": 10,
+    "format": "odd_one_out",
+    "question": "Which of these innovations attributed to André Tchelistcheff did NOT actually originate with him at Beaulieu Vineyard?",
+    "options": [
+      "Cold fermentation techniques for white wines",
+      "Malolactic fermentation control in California",
+      "Systematic use of French oak barrels",
+      "Introduction of stainless steel fermentation tanks"
+    ],
+    "correct": 3,
+    "explanation": "Stainless steel tanks were pioneered by other California wineries in the 1960s, not Tchelistcheff at BV. However, his mastery of cold fermentation, MLF management, and French oak integration earned him the title 'Dean of American Winemakers'—his students became the next generation's stars throughout Napa and beyond.",
+    "sources": "The Oxford Companion to Wine; GuildSomm",
+    "confidence": "established",
+    "tags": [
+      "tchelistcheff",
+      "california_winemaking",
+      "innovation"
+    ]
+  },
+  {
+    "id": "HC-010",
+    "domain": "history_culture",
+    "difficulty": 2400,
+    "level": 10,
+    "format": "multiple_choice",
+    "question": "Robert Parker's 100-point scoring system was directly adapted from which specific American educational assessment model?",
+    "options": [
+      "SAT scoring system (200-800 scale)",
+      "American high school grading (50-100 scale)",
+      "Graduate school GPA system (0-4.0 scale)",
+      "Law school ranking system (1-100 percentile)"
+    ],
+    "correct": 1,
+    "explanation": "Parker explicitly modeled his system on American high school grades where 50-59 is failing, 90-100 is excellent, making wine scores instantly comprehensible to American consumers. This familiar framework helped democratize wine criticism and created the modern wine scoring phenomenon that influences global markets today.",
+    "sources": "The Oxford Companion to Wine; The Wine Bible",
+    "confidence": "established",
+    "tags": [
+      "robert_parker",
+      "wine_scoring",
+      "wine_criticism"
+    ]
+  },
+  {
+    "id": "HC-011",
+    "domain": "history_culture",
+    "difficulty": 2150,
+    "level": 10,
+    "format": "multiple_choice",
+    "question": "The modern concept of terroir was first systematically codified in which specific French wine region's classification system?",
+    "options": [
+      "Burgundy's climat system in the 14th century",
+      "Champagne's cru villages in the 17th century",
+      "Bordeaux's château system in the 18th century",
+      "Rhône Valley's lieu-dit system in the 19th century"
+    ],
+    "correct": 0,
+    "explanation": "Burgundy's medieval monks systematically mapped climats (specific vineyard sites) by the 1300s, creating the first terroir-based classification that recognized how soil, slope, and microclimate affect wine character. Their meticulous site observations became the foundation for the modern terroir concept that now influences wine regions worldwide.",
+    "sources": "The Oxford Companion to Wine; The World Atlas of Wine",
+    "confidence": "established",
+    "tags": [
+      "terroir",
+      "burgundy",
+      "climat_system"
+    ]
+  },
+  {
+    "id": "HC-012",
+    "domain": "history_culture",
+    "difficulty": 2200,
+    "level": 10,
+    "format": "match_pairs",
+    "question": "Match each wine law system with its specific defining characteristic:",
+    "pairs": {
+      "left": [
+        "French AOC (1935)",
+        "Italian DOC (1963)",
+        "German QmP (1971)",
+        "American AVA (1978)"
+      ],
+      "right": [
+        "Geographic boundaries only, no style requirements",
+        "Minimum ripeness levels define quality tiers",
+        "Traditional methods and tasting approval required",
+        "Geographic zones with permitted grape varieties"
+      ]
+    },
+    "options": [],
+    "correct": [
+      2,
+      3,
+      1,
+      0
+    ],
+    "explanation": "Each system reflects national philosophy: French AOC demands tradition and taste approval, Italian DOC specifies geography and grapes, German QmP uses ripeness as quality measure, while American AVAs only define boundaries without style restrictions. These different approaches shaped how each country's wines developed their distinct identities.",
+    "sources": "WSET Diploma Study Materials; The Oxford Companion to Wine",
+    "confidence": "established",
+    "tags": [
+      "wine_law",
+      "aoc",
+      "doc",
+      "ava"
+    ]
+  },
+  {
+    "id": "HC-013",
+    "domain": "history_culture",
+    "difficulty": 2350,
+    "level": 10,
+    "format": "scenario",
+    "question": "A wine historian discovers that Robert Mondavi's most significant contribution to New World winemaking wasn't a specific technique, but rather a business model innovation. What was this innovation?",
+    "options": [
+      "First winery to use temperature-controlled fermentation exclusively",
+      "Pioneer of direct-to-consumer wine sales and tasting rooms",
+      "Creator of the modern wine marketing and branding approach",
+      "Inventor of the reserve wine tier pricing structure"
+    ],
+    "correct": 2,
+    "explanation": "Mondavi revolutionized wine marketing by treating wine as a lifestyle brand rather than just an agricultural product, complete with elegant packaging, educational tastings, and cultural events. His approach transformed wine from commodity to aspiration, inspiring the entire New World to market wine as sophistication rather than mere beverage.",
+    "sources": "The Oxford Companion to Wine; The Wine Bible",
+    "confidence": "established",
+    "tags": [
+      "robert_mondavi",
+      "wine_marketing",
+      "new_world"
+    ]
+  },
+  {
+    "id": "HC-014",
+    "domain": "history_culture",
+    "difficulty": 2250,
+    "level": 10,
+    "format": "multiple_choice",
+    "question": "Which specific aspect of globalization most fundamentally changed traditional Old World winemaking practices in the 1990s?",
+    "options": [
+      "International grape variety plantings replacing indigenous ones",
+      "Adoption of New World oak aging and extraction techniques",
+      "Temperature-controlled fermentation technology transfer",
+      "Consultant winemaker influence on regional styles"
+    ],
+    "correct": 3,
+    "explanation": "Flying winemakers and international consultants homogenized global wine styles by spreading techniques across regions, often overriding local traditions in favor of 'international' appeal. Michel Rolland in Bordeaux, Alberto Antonini worldwide—these consultants wielded more influence than technology, reshaping terroir expression to match global palates.",
+    "sources": "The Oxford Companion to Wine; GuildSomm",
+    "confidence": "consensus",
+    "tags": [
+      "globalization",
+      "consultant_winemakers",
+      "wine_styles"
+    ]
+  },
+  {
+    "id": "HC-015",
+    "domain": "history_culture",
+    "difficulty": 2300,
+    "level": 10,
+    "format": "multiple_choice",
+    "question": "Jancis Robinson's most significant contribution to wine education was establishing which specific methodology that became the global standard?",
+    "options": [
+      "The 20-point wine scoring system used by international competitions",
+      "Systematic wine tasting note vocabulary and descriptive framework",
+      "DNA-based grape variety identification and classification system",
+      "Professional wine service and sommelier certification standards"
+    ],
+    "correct": 1,
+    "explanation": "Robinson's systematic approach to tasting notes and wine description vocabulary became the foundation for modern wine communication, influencing everything from WSET materials to professional wine writing worldwide. Her precise, accessible language gave the wine world a common vocabulary that transcends regional differences and personal preferences.",
+    "sources": "The Oxford Companion to Wine; WSET Study Materials",
+    "confidence": "established",
+    "tags": [
+      "jancis_robinson",
+      "wine_education",
+      "tasting_methodology"
+    ]
+  }
+]

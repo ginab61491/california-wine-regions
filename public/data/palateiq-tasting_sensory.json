@@ -1,0 +1,523 @@
+[
+  {
+    "id": "TS-001",
+    "domain": "tasting_sensory",
+    "difficulty": 2100,
+    "level": 10,
+    "format": "multiple_choice",
+    "question": "Which specific aroma compound is primarily responsible for the 'cat pee' character found in some Sauvignon Blanc wines, particularly those from Marlborough?",
+    "options": [
+      "4-mercapto-4-methylpentan-2-one",
+      "3-mercaptohexan-1-ol",
+      "2-methoxy-3-isobutylpyrazine",
+      "linalool"
+    ],
+    "correct": 0,
+    "explanation": "4-mercapto-4-methylpentan-2-one is the specific thiol compound that creates that distinctive 'cat pee' aroma in Sauvignon Blanc. Think of it as the molecular signature of Marlborough's most polarizing characteristic—you either love it or you don't, but now you know exactly what's causing it.",
+    "sources": "Wine Science (Jamie Goode); WSET Diploma Study Materials",
+    "confidence": "established",
+    "tags": [
+      "aroma_compounds",
+      "thiols",
+      "sauvignon_blanc",
+      "marlborough"
+    ]
+  },
+  {
+    "id": "TS-002",
+    "domain": "tasting_sensory",
+    "difficulty": 2200,
+    "level": 10,
+    "format": "odd_one_out",
+    "question": "Which of these aroma compounds does NOT belong with the others in terms of their biosynthetic origin in wine?",
+    "options": [
+      "rotundone",
+      "TDN (1,1,6-trimethyl-1,2-dihydronaphthalene)",
+      "sotolon",
+      "linalool"
+    ],
+    "correct": 2,
+    "explanation": "Sotolon is formed through Maillard reactions during aging, while the others are all derived from grape-derived precursors. Sotolon gives that curry spice note in aged wines—it's the only one here that's purely a product of time and chemistry, not varietal character.",
+    "sources": "Wine Science (Jamie Goode); WSET Diploma Study Materials",
+    "confidence": "established",
+    "tags": [
+      "aroma_compounds",
+      "wine_chemistry",
+      "aging",
+      "tertiary_aromas"
+    ]
+  },
+  {
+    "id": "TS-003",
+    "domain": "tasting_sensory",
+    "difficulty": 2300,
+    "level": 10,
+    "format": "multiple_choice",
+    "question": "At what specific concentration threshold does Brettanomyces become detectable to most tasters as 4-ethylphenol in red wine?",
+    "options": [
+      "200-300 μg/L",
+      "400-600 μg/L",
+      "800-1000 μg/L",
+      "1200-1500 μg/L"
+    ],
+    "correct": 1,
+    "explanation": "Most tasters detect Brett's barnyard character at 400-600 μg/L of 4-ethylphenol in red wine. Below this threshold, it might actually add complexity—above it, and you're in fault territory where the wine smells more like a stable than a cellar.",
+    "sources": "Wine Science (Jamie Goode); GuildSomm",
+    "confidence": "established",
+    "tags": [
+      "wine_faults",
+      "brettanomyces",
+      "sensory_thresholds",
+      "4-ethylphenol"
+    ]
+  },
+  {
+    "id": "TS-004",
+    "domain": "tasting_sensory",
+    "difficulty": 2000,
+    "level": 10,
+    "format": "scenario",
+    "question": "A sommelier notices a wine with pronounced green bell pepper aromas that intensify significantly when the glass is swirled vigorously. The wine shows good fruit concentration otherwise. What is the most likely cause of this specific sensory phenomenon?",
+    "options": [
+      "High levels of 2-methoxy-3-isobutylpyrazine from underripe grapes",
+      "Volatile acidity creating enhanced perception of pyrazines",
+      "TCA contamination mimicking pyrazine character",
+      "Reduction compounds being mistaken for methoxypyrazines"
+    ],
+    "correct": 0,
+    "explanation": "Methoxypyrazines from underripe grapes become more pronounced with aeration because they're volatile compounds that concentrate in the headspace when swirled. The key clue is that swirling intensifies the green character—true pyrazines get more obvious with air exposure, unlike other faults that might dissipate.",
+    "sources": "Wine Science (Jamie Goode); WSET Diploma Study Materials",
+    "confidence": "established",
+    "tags": [
+      "pyrazines",
+      "underripe_grapes",
+      "aroma_compounds",
+      "sensory_assessment"
+    ]
+  },
+  {
+    "id": "TS-005",
+    "domain": "tasting_sensory",
+    "difficulty": 2250,
+    "level": 10,
+    "format": "match_pairs",
+    "question": "Match each specific aroma compound with its characteristic descriptor in wine tasting:",
+    "pairs": {
+      "left": [
+        "β-damascenone",
+        "rotundone",
+        "TDN",
+        "geosmin"
+      ],
+      "right": [
+        "petrol/kerosene",
+        "black pepper",
+        "earthy/beetroot",
+        "honey/cooked apple"
+      ]
+    },
+    "options": [],
+    "correct": [
+      3,
+      1,
+      0,
+      2
+    ],
+    "explanation": "These are the molecular fingerprints of some of wine's most distinctive characters. β-damascenone creates those honeyed, cooked apple notes in aged wines, while rotundone is literally what makes black pepper spicy—when you taste it in Syrah, you're tasting the same compound.",
+    "sources": "Wine Science (Jamie Goode); Wine Grapes (Robinson, Harding & Vouillamoz)",
+    "confidence": "established",
+    "tags": [
+      "aroma_compounds",
+      "sensory_descriptors",
+      "wine_chemistry",
+      "molecular_gastronomy"
+    ]
+  },
+  {
+    "id": "TS-006",
+    "domain": "tasting_sensory",
+    "difficulty": 2150,
+    "level": 10,
+    "format": "multiple_choice",
+    "question": "In the CMS deductive tasting grid, what specific structural assessment should immediately follow the detection of significant residual sugar in a white wine?",
+    "options": [
+      "Alcohol level assessment to determine if it's fortified",
+      "Acidity evaluation to assess balance and style",
+      "Tannin assessment for textural integration",
+      "Body evaluation for overall weight"
+    ],
+    "correct": 1,
+    "explanation": "Acidity assessment is crucial immediately after detecting sweetness because the acid-sugar balance determines whether you're tasting a successful sweet wine or a flawed dry one. Without sufficient acidity, sweet wines become cloying—it's the backbone that makes sweetness sing rather than suffocate.",
+    "sources": "GuildSomm; Court of Master Sommeliers Study Materials",
+    "confidence": "established",
+    "tags": [
+      "cms_deductive_tasting",
+      "residual_sugar",
+      "acidity",
+      "structural_balance"
+    ]
+  },
+  {
+    "id": "TS-007",
+    "domain": "tasting_sensory",
+    "difficulty": 2400,
+    "level": 10,
+    "format": "multiple_choice",
+    "question": "Which specific wavelength range of light is most responsible for causing lightstrike (goût de lumière) in wines stored in clear glass bottles?",
+    "options": [
+      "280-320 nm (UV-B)",
+      "320-400 nm (UV-A)",
+      "400-500 nm (blue light)",
+      "500-600 nm (green light)"
+    ],
+    "correct": 1,
+    "explanation": "UV-A light (320-400 nm) penetrates glass and breaks down riboflavin and amino acids, creating that wet wool, cabbage-like off-flavor. It's why serious wine producers use dark glass—think of UV-A as wine's kryptonite, invisible but deadly to delicate aromatics.",
+    "sources": "Wine Science (Jamie Goode); The Oxford Companion to Wine",
+    "confidence": "established",
+    "tags": [
+      "wine_faults",
+      "lightstrike",
+      "uv_light",
+      "wine_storage"
+    ]
+  },
+  {
+    "id": "TS-008",
+    "domain": "tasting_sensory",
+    "difficulty": 2050,
+    "level": 10,
+    "format": "odd_one_out",
+    "question": "Which of these sensory phenomena does NOT involve retronasal olfaction during wine tasting?",
+    "options": [
+      "Detecting vanilla notes from oak aging",
+      "Perceiving astringency from tannins",
+      "Identifying floral aromatics from terpenes",
+      "Recognizing mineral notes from terroir"
+    ],
+    "correct": 1,
+    "explanation": "Astringency is a tactile sensation felt in the mouth, not an aroma perceived through retronasal olfaction. While the other three all involve volatile compounds traveling from your mouth to your olfactory receptors, tannin astringency is purely about proteins in your saliva binding with polyphenols—it's touch, not smell.",
+    "sources": "Wine Science (Jamie Goode); WSET Study Materials",
+    "confidence": "established",
+    "tags": [
+      "retronasal_olfaction",
+      "astringency",
+      "tannins",
+      "sensory_science"
+    ]
+  },
+  {
+    "id": "TS-009",
+    "domain": "tasting_sensory",
+    "difficulty": 2300,
+    "level": 10,
+    "format": "scenario",
+    "question": "A sommelier tastes a 10-year-old Riesling that shows pronounced petrol notes alongside residual fruit character. The wine has good acidity and no obvious faults. What does this specific aromatic development most likely indicate about the wine's production?",
+    "options": [
+      "The wine was made from botrytis-affected grapes",
+      "The wine experienced malolactic fermentation",
+      "The wine was produced from grapes with high precursor levels of TDN",
+      "The wine underwent extended lees contact during production"
+    ],
+    "correct": 2,
+    "explanation": "TDN (1,1,6-trimethyl-1,2-dihydronaphthalene) develops from carotenoid precursors in the grapes and increases with age, creating that classic petrol character in aged Riesling. It's not a fault—it's terroir and time expressing themselves chemically, turning what was once just fruity into something profound and complex.",
+    "sources": "Wine Science (Jamie Goode); Wine Grapes (Robinson, Harding & Vouillamoz)",
+    "confidence": "established",
+    "tags": [
+      "TDN",
+      "riesling",
+      "aging",
+      "petrol_character",
+      "carotenoids"
+    ]
+  },
+  {
+    "id": "TS-010",
+    "domain": "tasting_sensory",
+    "difficulty": 2200,
+    "level": 10,
+    "format": "multiple_choice",
+    "question": "In WSET Systematic Approach to Tasting, what specific color descriptor indicates a white wine has likely undergone significant oxidative handling or aging?",
+    "options": [
+      "Lemon-green",
+      "Gold",
+      "Amber",
+      "Bronze"
+    ],
+    "correct": 2,
+    "explanation": "Amber indicates significant oxidative development in white wine, whether from intentional oxidative winemaking or extended aging. It's the color of time and oxygen working together—think of it as white wine's way of showing its age and experience, like silver hair on a distinguished person.",
+    "sources": "WSET Study Materials; GuildSomm",
+    "confidence": "established",
+    "tags": [
+      "wset_sat",
+      "white_wine_color",
+      "oxidation",
+      "aging",
+      "color_assessment"
+    ]
+  },
+  {
+    "id": "TS-011",
+    "domain": "tasting_sensory",
+    "difficulty": 2350,
+    "level": 10,
+    "format": "multiple_choice",
+    "question": "Which specific ester compound is primarily responsible for the banana and pear drop aromas associated with carbonic maceration in Beaujolais wines?",
+    "options": [
+      "ethyl acetate",
+      "isoamyl acetate",
+      "ethyl butyrate",
+      "phenylethyl acetate"
+    ],
+    "correct": 1,
+    "explanation": "Isoamyl acetate creates those distinctive banana and pear drop notes that define carbonic maceration wines. It's formed when intracellular fermentation occurs inside whole berries—think of it as the aromatic signature of grapes fermenting from the inside out, creating flavors impossible to achieve through normal crushing.",
+    "sources": "Wine Science (Jamie Goode); The Oxford Companion to Wine",
+    "confidence": "established",
+    "tags": [
+      "carbonic_maceration",
+      "esters",
+      "beaujolais",
+      "isoamyl_acetate",
+      "winemaking_aromas"
+    ]
+  },
+  {
+    "id": "TS-012",
+    "domain": "tasting_sensory",
+    "difficulty": 2100,
+    "level": 10,
+    "format": "match_pairs",
+    "question": "Match each wine fault with its specific chemical cause:",
+    "pairs": {
+      "left": [
+        "Cork taint",
+        "Volatile acidity",
+        "Reduction",
+        "Heat damage"
+      ],
+      "right": [
+        "hydrogen sulfide compounds",
+        "acetic acid and ethyl acetate",
+        "2,4,6-trichloroanisole",
+        "cooked fruit compounds from Maillard reactions"
+      ]
+    },
+    "options": [],
+    "correct": [
+      2,
+      1,
+      0,
+      3
+    ],
+    "explanation": "These are the molecular villains of the wine world, each with its own chemical signature. TCA literally blocks your ability to smell the wine's true character—it's like putting a chemical mask over the wine's face, which is why corked wines smell muted and musty.",
+    "sources": "Wine Science (Jamie Goode); The Oxford Companion to Wine",
+    "confidence": "established",
+    "tags": [
+      "wine_faults",
+      "tca",
+      "volatile_acidity",
+      "reduction",
+      "heat_damage"
+    ]
+  },
+  {
+    "id": "TS-013",
+    "domain": "tasting_sensory",
+    "difficulty": 2250,
+    "level": 10,
+    "format": "scenario",
+    "question": "During a blind tasting, a sommelier detects strong eucalyptus and mint aromas in a red wine with full body and high tannins. The wine shows no obvious faults but the eucalyptus character dominates the fruit. What does this most likely indicate about the vineyard location?",
+    "options": [
+      "The vineyard is located in a particularly cool climate region",
+      "The vineyard is planted near eucalyptus trees affecting the grapes",
+      "The wine was made using extended cold maceration techniques",
+      "The grapes were harvested at excessive ripeness levels"
+    ],
+    "correct": 1,
+    "explanation": "Eucalyptus trees near vineyards can transfer their aromatic compounds to grapes through airborne terpenes, especially in warm, dry conditions. It's terroir in its most literal sense—the landscape literally flavoring the wine, though not always in a way that improves it when it dominates the fruit character.",
+    "sources": "The Oxford Companion to Wine; Wine Science (Jamie Goode)",
+    "confidence": "consensus",
+    "tags": [
+      "eucalyptus_character",
+      "terroir",
+      "environmental_influence",
+      "terpenes"
+    ]
+  },
+  {
+    "id": "TS-014",
+    "domain": "tasting_sensory",
+    "difficulty": 2400,
+    "level": 10,
+    "format": "multiple_choice",
+    "question": "What is the specific mechanism by which cross-modal sensory perception affects the assessment of tannin astringency in red wine?",
+    "options": [
+      "Higher alcohol levels chemically reduce tannin polymerization",
+      "Color intensity psychologically influences perceived astringency levels",
+      "Acidity levels alter saliva pH affecting tannin-protein binding",
+      "Temperature changes modify tannin solubility in the wine matrix"
+    ],
+    "correct": 1,
+    "explanation": "Deeper color intensity makes tasters perceive higher astringency even when tannin levels are identical—your brain uses visual cues to predict what your mouth should feel. It's why blind tasting is so revealing; without color bias, you taste the wine's true structure rather than what your eyes tell you to expect.",
+    "sources": "Wine Science (Jamie Goode); WSET Diploma Study Materials",
+    "confidence": "established",
+    "tags": [
+      "cross_modal_perception",
+      "tannin_astringency",
+      "color_influence",
+      "sensory_science"
+    ]
+  },
+  {
+    "id": "TS-015",
+    "domain": "tasting_sensory",
+    "difficulty": 2180,
+    "level": 10,
+    "format": "odd_one_out",
+    "question": "Which of these aromatic compounds does NOT belong with the others in terms of their primary sensory impact on wine character?",
+    "options": [
+      "3-mercaptohexan-1-ol (grapefruit thiol)",
+      "linalool (floral terpene)",
+      "geosmin (earthy compound)",
+      "vanillin (oak lactone)"
+    ],
+    "correct": 3,
+    "explanation": "Vanillin comes from oak during barrel aging (secondary aroma), while the others are all primary aromatic compounds derived from the grapes themselves. Vanillin is the winemaker's signature, while the others are nature's—they represent the difference between what the grape gives you and what technique adds to it.",
+    "sources": "Wine Science (Jamie Goode); WSET Study Materials",
+    "confidence": "established",
+    "tags": [
+      "primary_aromas",
+      "secondary_aromas",
+      "oak_compounds",
+      "varietal_character"
+    ]
+  },
+  {
+    "id": "TS-016",
+    "domain": "tasting_sensory",
+    "difficulty": 2200,
+    "level": 10,
+    "format": "multiple_choice",
+    "question": "Which specific phenolic compound is primarily responsible for the 'green' astringency detected in wines made from underripe grape seeds, distinct from skin tannin astringency?",
+    "options": [
+      "Catechin",
+      "Epicatechin gallate",
+      "Prodelphinidin",
+      "Procyanidin B1"
+    ],
+    "correct": 1,
+    "explanation": "Epicatechin gallate from underripe seeds creates that distinctive harsh, green astringency that feels different from the velvety tannins of ripe skins. Think of it as the wine equivalent of biting into an unripe walnut—that's your epicatechin gallate signature.",
+    "sources": "Wine Science (Jamie Goode); The Oxford Companion to Wine",
+    "confidence": "established",
+    "tags": [
+      "phenolic_compounds",
+      "tannin_chemistry",
+      "sensory_perception"
+    ]
+  },
+  {
+    "id": "TS-017",
+    "domain": "tasting_sensory",
+    "difficulty": 2350,
+    "level": 10,
+    "format": "odd_one_out",
+    "question": "Which of these aroma compounds does NOT belong with the others in terms of their specific formation pathway during wine aging?",
+    "options": [
+      "Sotolon",
+      "Vitispirane",
+      "TDN (1,1,6-trimethyl-1,2-dihydronaphthalene)",
+      "Damascenone"
+    ],
+    "correct": 0,
+    "explanation": "Sotolon forms through Maillard reactions and oxidative processes, while the other three are all carotenoid degradation products. Sotolon gives you those curry, fenugreek notes in aged wines—it's the outlier taking the oxidative pathway while the others break down from carotenoids.",
+    "sources": "Wine Grapes (Robinson, Harding & Vouillamoz); Wine Science (Jamie Goode)",
+    "confidence": "established",
+    "tags": [
+      "aroma_compounds",
+      "aging_chemistry",
+      "carotenoid_degradation"
+    ]
+  },
+  {
+    "id": "TS-018",
+    "domain": "tasting_sensory",
+    "difficulty": 2150,
+    "level": 10,
+    "format": "scenario",
+    "question": "A Master Sommelier candidate tastes a wine showing intense black olive, leather, and barnyard aromas with a slightly metallic finish. The wine has good fruit underneath and normal acidity. Lab analysis shows 4-ethylphenol at 620 μg/L and 4-ethylguaiacol at 150 μg/L. What is the most precise assessment?",
+    "options": [
+      "Classic Brettanomyces character within acceptable limits",
+      "Brettanomyces above fault threshold requiring disclosure",
+      "Mixed Brett and reduction faults",
+      "Advanced bottle development with Brett complexity"
+    ],
+    "correct": 1,
+    "explanation": "With 4-ethylphenol above 600 μg/L, this crosses into fault territory where most tasters detect it as unpleasant rather than complex. The metallic finish confirms it's intrusive Brett, not just terroir character—this needs disclosure in professional service.",
+    "sources": "GuildSomm; Wine Science (Jamie Goode)",
+    "confidence": "established",
+    "tags": [
+      "brettanomyces",
+      "wine_faults",
+      "threshold_levels"
+    ]
+  },
+  {
+    "id": "TS-019",
+    "domain": "tasting_sensory",
+    "difficulty": 2300,
+    "level": 10,
+    "format": "match_pairs",
+    "question": "Match each specific sensory adaptation phenomenon with its precise mechanism in wine tasting:",
+    "pairs": {
+      "left": [
+        "Olfactory fatigue to ethyl acetate",
+        "Astringency build-up during tasting",
+        "Sweetness suppression by acidity",
+        "Temperature-induced tannin softening"
+      ],
+      "right": [
+        "Protein precipitation reducing tactile sensation",
+        "Receptor desensitization to specific esters",
+        "Cross-modal sensory interaction",
+        "Cumulative polyphenol binding to salivary proteins"
+      ]
+    },
+    "options": [],
+    "correct": [
+      1,
+      3,
+      2,
+      0
+    ],
+    "explanation": "Each represents a different sensory science principle—receptor fatigue, cumulative protein binding, cross-modal suppression, and temperature-dependent molecular behavior. Understanding these mechanisms helps Master Sommeliers maintain tasting accuracy across long flights.",
+    "sources": "Wine Science (Jamie Goode); GuildSomm",
+    "confidence": "established",
+    "tags": [
+      "sensory_adaptation",
+      "cross_modal_perception",
+      "tasting_methodology"
+    ]
+  },
+  {
+    "id": "TS-020",
+    "domain": "tasting_sensory",
+    "difficulty": 2400,
+    "level": 10,
+    "format": "multiple_choice",
+    "question": "In the CMS deductive tasting grid, when assessing a wine with detectable volatile acidity that enhances rather than detracts from the overall impression, what specific terminology should be used in the conclusion?",
+    "options": [
+      "Acceptable levels of VA contributing to complexity",
+      "Slight volatile acidity within stylistic norms",
+      "Elevated but harmonious acetic character",
+      "VA present but not faulted"
+    ],
+    "correct": 1,
+    "explanation": "The CMS grid requires precise language—'slight volatile acidity within stylistic norms' acknowledges the presence without calling it a fault, while indicating professional awareness of style expectations. This phrasing shows you understand the difference between detection and defect.",
+    "sources": "GuildSomm; Court of Master Sommeliers materials",
+    "confidence": "established",
+    "tags": [
+      "CMS_deductive_grid",
+      "volatile_acidity",
+      "tasting_terminology"
+    ]
+  }
+]

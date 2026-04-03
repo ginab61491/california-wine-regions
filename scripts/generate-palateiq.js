@@ -33,7 +33,7 @@ const LEVEL_CONFIG = {
   7:  { elo: [1300, 1500], cards: 0.12 },
   8:  { elo: [1500, 1700], cards: 0.10 },
   9:  { elo: [1700, 1900], cards: 0.05 },
-  10: { elo: [1900, 2500], cards: 0.05 },
+  10: { elo: [2000, 2500], cards: 0.10 },
 };
 
 const SYSTEM_PROMPT = `You are a Master Sommelier and WSET Diploma holder generating flashcard questions for wine education. Your cards will be used by students ranging from absolute beginners to Master Sommelier candidates.
@@ -188,9 +188,13 @@ async function generateBatch(domain, levelStart, levelEnd, batchSize, existingQu
 - ~15% "match_pairs" (include "pairs": {"left": ["A","B","C","D"], "right": ["W","X","Y","Z"]}, "correct": [i,j,k,l] where each number is the index into "right" that matches the corresponding "left" item. "options" should be an empty array [])
 - ~10% "scenario" (real-world situation, 4 options, "correct" is 0-based index)`;
 
-  const levelInstructions = levelRange.map(l =>
-    `Level ${l.level} (Elo ${l.eloMin}-${l.eloMax}): Generate ${l.count} cards. ${l.level <= 7 ? 'confidence must be "established"' : 'confidence can be "established" or "consensus"'}`
-  ).join('\n');
+  const levelInstructions = levelRange.map(l => {
+    let extra = l.level <= 7 ? 'confidence must be "established"' : 'confidence can be "established" or "consensus"';
+    if (l.level === 10) {
+      extra += `. LEVEL 10 = Advanced Sommelier to Master Sommelier exam level. These are the hardest questions in the system. Topics should include: obscure vineyard sites and their specific soil compositions, micro-appellations, rare indigenous grape varieties and their DNA parentage, specific vintage conditions and their effects, edge-case winemaking chemistry, historical minutiae that only MS candidates would study, cross-regional comparisons requiring deep knowledge of multiple wine laws, specific producers' techniques and their influence on style. Every distractor must be extremely plausible — only deep expertise should distinguish the correct answer.`;
+    }
+    return `Level ${l.level} (Elo ${l.eloMin}-${l.eloMax}): Generate ${l.count} cards. ${extra}`;
+  }).join('\n');
 
   const existingList = existingQuestions.length > 0
     ? `\n\nDO NOT repeat or closely paraphrase any of these existing questions:\n${existingQuestions.slice(-50).map(q => `- ${q}`).join('\n')}`
