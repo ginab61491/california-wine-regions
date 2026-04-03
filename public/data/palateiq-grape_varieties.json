@@ -2,7 +2,7 @@
   {
     "id": "GV-001",
     "domain": "grape_varieties",
-    "difficulty": 150,
+    "difficulty": 163,
     "level": 1,
     "format": "multiple_choice",
     "question": "Which grape variety is known for producing wines with high tannins and blackcurrant aromas?",
@@ -26,7 +26,7 @@
   {
     "id": "GV-002",
     "domain": "grape_varieties",
-    "difficulty": 180,
+    "difficulty": 221,
     "level": 1,
     "format": "multiple_choice",
     "question": "Which white grape variety is most associated with producing dry wines in Sancerre, France?",
@@ -50,7 +50,7 @@
   {
     "id": "GV-003",
     "domain": "grape_varieties",
-    "difficulty": 200,
+    "difficulty": 207,
     "level": 1,
     "format": "odd_one_out",
     "question": "Which of these grape varieties does NOT typically produce wines with high acidity?",
@@ -74,7 +74,7 @@
   {
     "id": "GV-004",
     "domain": "grape_varieties",
-    "difficulty": 250,
+    "difficulty": 137,
     "level": 1,
     "format": "multiple_choice",
     "question": "Which grape variety is the primary component of Chianti wines?",
@@ -98,7 +98,7 @@
   {
     "id": "GV-005",
     "domain": "grape_varieties",
-    "difficulty": 220,
+    "difficulty": 126,
     "level": 1,
     "format": "match_pairs",
     "question": "Match each grape variety with its most characteristic primary aroma:",
@@ -136,7 +136,7 @@
   {
     "id": "GV-006",
     "domain": "grape_varieties",
-    "difficulty": 190,
+    "difficulty": 187,
     "level": 1,
     "format": "multiple_choice",
     "question": "Which grape variety is known for producing wines that can range from bone dry to lusciously sweet?",
@@ -160,7 +160,7 @@
   {
     "id": "GV-007",
     "domain": "grape_varieties",
-    "difficulty": 160,
+    "difficulty": 234,
     "level": 1,
     "format": "scenario",
     "question": "A customer asks for a soft, approachable red wine with plum flavors and moderate tannins. Which grape variety would be your best recommendation?",
@@ -184,7 +184,7 @@
   {
     "id": "GV-008",
     "domain": "grape_varieties",
-    "difficulty": 240,
+    "difficulty": 124,
     "level": 1,
     "format": "multiple_choice",
     "question": "Which grape variety is most commonly associated with the Rhône Valley's Northern region?",
@@ -208,7 +208,7 @@
   {
     "id": "GV-009",
     "domain": "grape_varieties",
-    "difficulty": 170,
+    "difficulty": 247,
     "level": 1,
     "format": "odd_one_out",
     "question": "Which of these grape varieties is NOT typically associated with producing sparkling wines?",
@@ -232,7 +232,7 @@
   {
     "id": "GV-010",
     "domain": "grape_varieties",
-    "difficulty": 210,
+    "difficulty": 244,
     "level": 1,
     "format": "multiple_choice",
     "question": "Which grape variety is known for its distinctive 'cat's pee' aroma descriptor in certain expressions?",
@@ -256,8 +256,8 @@
   {
     "id": "GV-011",
     "domain": "grape_varieties",
-    "difficulty": 280,
-    "level": 2,
+    "difficulty": 158,
+    "level": 1,
     "format": "multiple_choice",
     "question": "Which of these grape varieties is genetically identical to Zinfandel?",
     "options": [
@@ -280,8 +280,8 @@
   {
     "id": "GV-012",
     "domain": "grape_varieties",
-    "difficulty": 320,
-    "level": 2,
+    "difficulty": 245,
+    "level": 1,
     "format": "match_pairs",
     "question": "Match each grape variety with its confirmed DNA parentage:",
     "pairs": {
@@ -318,8 +318,8 @@
   {
     "id": "GV-013",
     "domain": "grape_varieties",
-    "difficulty": 290,
-    "level": 2,
+    "difficulty": 157,
+    "level": 1,
     "format": "scenario",
     "question": "A wine shows intense violet florals, white pepper, and smoky minerality with firm tannins. The wine is from the Northern Rhône. Which grape variety is this most likely to be?",
     "options": [
@@ -342,8 +342,8 @@
   {
     "id": "GV-014",
     "domain": "grape_varieties",
-    "difficulty": 350,
-    "level": 2,
+    "difficulty": 245,
+    "level": 1,
     "format": "multiple_choice",
     "question": "Which grape variety is known for its tendency toward coulure and millerandage due to its flowering sensitivity?",
     "options": [
@@ -366,8 +366,8 @@
   {
     "id": "GV-015",
     "domain": "grape_varieties",
-    "difficulty": 310,
-    "level": 2,
+    "difficulty": 218,
+    "level": 1,
     "format": "odd_one_out",
     "question": "Which of these grape varieties does NOT belong to the Pinot family?",
     "options": [
@@ -390,7 +390,7 @@
   {
     "id": "GV-016",
     "domain": "grape_varieties",
-    "difficulty": 250,
+    "difficulty": 223,
     "level": 1,
     "format": "multiple_choice",
     "question": "Which grape variety is the main component of red Burgundy wines?",
@@ -413,7 +413,7 @@
   {
     "id": "GV-017",
     "domain": "grape_varieties",
-    "difficulty": 180,
+    "difficulty": 250,
     "level": 1,
     "format": "multiple_choice",
     "question": "Which white grape variety is most famous for producing the wines of Chablis?",
@@ -436,7 +436,7 @@
   {
     "id": "GV-018",
     "domain": "grape_varieties",
-    "difficulty": 220,
+    "difficulty": 134,
     "level": 1,
     "format": "odd_one_out",
     "question": "Which of these grape varieties does NOT typically produce wines with floral aromas?",
@@ -461,7 +461,7 @@
   {
     "id": "GV-019",
     "domain": "grape_varieties",
-    "difficulty": 290,
+    "difficulty": 220,
     "level": 1,
     "format": "multiple_choice",
     "question": "Which grape variety is known for producing full-bodied red wines with high tannins and cassis flavors?",
@@ -485,7 +485,7 @@
   {
     "id": "GV-020",
     "domain": "grape_varieties",
-    "difficulty": 200,
+    "difficulty": 142,
     "level": 1,
     "format": "multiple_choice",
     "question": "Which grape variety is most associated with Beaujolais wines?",
@@ -509,7 +509,7 @@
   {
     "id": "GV-021",
     "domain": "grape_varieties",
-    "difficulty": 260,
+    "difficulty": 241,
     "level": 1,
     "format": "match_pairs",
     "question": "Match each grape variety with its most characteristic aroma:",
@@ -548,7 +548,7 @@
   {
     "id": "GV-022",
     "domain": "grape_varieties",
-    "difficulty": 240,
+    "difficulty": 278,
     "level": 1,
     "format": "multiple_choice",
     "question": "Which grape variety is the primary component of most German white wines?",
@@ -572,7 +572,7 @@
   {
     "id": "GV-023",
     "domain": "grape_varieties",
-    "difficulty": 280,
+    "difficulty": 123,
     "level": 1,
     "format": "scenario",
     "question": "A customer wants a medium-bodied red wine with soft tannins and plum flavors for a dinner party. Which grape variety would you recommend?",
@@ -597,7 +597,7 @@
   {
     "id": "GV-024",
     "domain": "grape_varieties",
-    "difficulty": 210,
+    "difficulty": 251,
     "level": 1,
     "format": "multiple_choice",
     "question": "Which grape variety is most famous for producing the great red wines of Barolo and Barbaresco?",
@@ -622,7 +622,7 @@
   {
     "id": "GV-025",
     "domain": "grape_varieties",
-    "difficulty": 190,
+    "difficulty": 174,
     "level": 1,
     "format": "multiple_choice",
     "question": "Which white grape variety is known for its ability to produce both dry and sweet wines?",
@@ -647,7 +647,7 @@
   {
     "id": "GV-026",
     "domain": "grape_varieties",
-    "difficulty": 270,
+    "difficulty": 155,
     "level": 1,
     "format": "odd_one_out",
     "question": "Which of these grape varieties is NOT commonly used in Champagne production?",
@@ -672,7 +672,7 @@
   {
     "id": "GV-027",
     "domain": "grape_varieties",
-    "difficulty": 230,
+    "difficulty": 148,
     "level": 1,
     "format": "multiple_choice",
     "question": "Which grape variety is most associated with the Rhône Valley's northern appellations like Hermitage and Côte-Rôtie?",
@@ -697,8 +697,8 @@
   {
     "id": "GV-028",
     "domain": "grape_varieties",
-    "difficulty": 300,
-    "level": 2,
+    "difficulty": 222,
+    "level": 1,
     "format": "multiple_choice",
     "question": "Which grape variety is genetically identical to Primitivo and was confirmed through DNA analysis?",
     "options": [
@@ -722,8 +722,8 @@
   {
     "id": "GV-029",
     "domain": "grape_varieties",
-    "difficulty": 420,
-    "level": 2,
+    "difficulty": 167,
+    "level": 1,
     "format": "match_pairs",
     "question": "Match each grape variety with its confirmed DNA parentage:",
     "pairs": {
@@ -761,8 +761,8 @@
   {
     "id": "GV-030",
     "domain": "grape_varieties",
-    "difficulty": 380,
-    "level": 2,
+    "difficulty": 213,
+    "level": 1,
     "format": "scenario",
     "question": "A wine shows intense violet and white pepper aromas with firm tannins and smoky minerality. The wine is from a cool climate region. Which grape variety is this most likely?",
     "options": [
@@ -786,7 +786,7 @@
   {
     "id": "GV-031",
     "domain": "grape_varieties",
-    "difficulty": 150,
+    "difficulty": 174,
     "level": 1,
     "format": "multiple_choice",
     "question": "Which grape variety is known for producing wines with distinctive lychee and rose petal aromas?",
@@ -809,7 +809,7 @@
   {
     "id": "GV-032",
     "domain": "grape_varieties",
-    "difficulty": 200,
+    "difficulty": 262,
     "level": 1,
     "format": "multiple_choice",
     "question": "Which red grape variety is the main component of Côtes du Rhône wines?",
@@ -832,7 +832,7 @@
   {
     "id": "GV-033",
     "domain": "grape_varieties",
-    "difficulty": 180,
+    "difficulty": 193,
     "level": 1,
     "format": "odd_one_out",
     "question": "Which of these grape varieties does NOT typically produce wines with prominent herbal characteristics?",
@@ -855,7 +855,7 @@
   {
     "id": "GV-034",
     "domain": "grape_varieties",
-    "difficulty": 220,
+    "difficulty": 251,
     "level": 1,
     "format": "multiple_choice",
     "question": "Which white grape variety is most famous for producing the great sweet wines of Sauternes?",
@@ -879,7 +879,7 @@
   {
     "id": "GV-035",
     "domain": "grape_varieties",
-    "difficulty": 160,
+    "difficulty": 243,
     "level": 1,
     "format": "match_pairs",
     "question": "Match each grape variety with its most characteristic primary aroma:",
@@ -918,7 +918,7 @@
   {
     "id": "GV-036",
     "domain": "grape_varieties",
-    "difficulty": 240,
+    "difficulty": 141,
     "level": 1,
     "format": "scenario",
     "question": "A customer asks for a white wine that pairs well with spicy Asian cuisine and has crisp acidity with citrus flavors. Which grape variety would be your best recommendation?",
@@ -942,7 +942,7 @@
   {
     "id": "GV-037",
     "domain": "grape_varieties",
-    "difficulty": 190,
+    "difficulty": 192,
     "level": 1,
     "format": "multiple_choice",
     "question": "Which grape variety is known for producing wines with distinctive smoky, bacon-like aromas?",
@@ -966,7 +966,7 @@
   {
     "id": "GV-038",
     "domain": "grape_varieties",
-    "difficulty": 170,
+    "difficulty": 224,
     "level": 1,
     "format": "multiple_choice",
     "question": "Which grape variety is most commonly associated with the production of Prosecco?",
@@ -990,7 +990,7 @@
   {
     "id": "GV-039",
     "domain": "grape_varieties",
-    "difficulty": 210,
+    "difficulty": 122,
     "level": 1,
     "format": "odd_one_out",
     "question": "Which of these grape varieties does NOT typically require warm climate conditions to ripen properly?",
@@ -1014,7 +1014,7 @@
   {
     "id": "GV-040",
     "domain": "grape_varieties",
-    "difficulty": 250,
+    "difficulty": 184,
     "level": 1,
     "format": "multiple_choice",
     "question": "Which grape variety is the primary component of traditional Rioja red wines?",
@@ -1038,7 +1038,7 @@
   {
     "id": "GV-041",
     "domain": "grape_varieties",
-    "difficulty": 280,
+    "difficulty": 165,
     "level": 1,
     "format": "scenario",
     "question": "A customer wants a full-bodied red wine with high tannins and dark fruit flavors for aging. Which grape variety would be your best recommendation?",
@@ -1062,7 +1062,7 @@
   {
     "id": "GV-042",
     "domain": "grape_varieties",
-    "difficulty": 160,
+    "difficulty": 231,
     "level": 1,
     "format": "multiple_choice",
     "question": "Which white grape variety is known for producing wines with distinctive mineral and citrus characteristics in Chablis?",
@@ -1086,7 +1086,7 @@
   {
     "id": "GV-043",
     "domain": "grape_varieties",
-    "difficulty": 200,
+    "difficulty": 215,
     "level": 1,
     "format": "multiple_choice",
     "question": "Which grape variety is most associated with producing the light, fruity wines of Beaujolais?",
@@ -1110,7 +1110,7 @@
   {
     "id": "GV-044",
     "domain": "grape_varieties",
-    "difficulty": 230,
+    "difficulty": 273,
     "level": 1,
     "format": "match_pairs",
     "question": "Match each grape variety with its most famous wine region:",
@@ -1149,7 +1149,7 @@
   {
     "id": "GV-045",
     "domain": "grape_varieties",
-    "difficulty": 270,
+    "difficulty": 227,
     "level": 1,
     "format": "odd_one_out",
     "question": "Which of these grape varieties does NOT typically produce wines with high natural acidity?",
@@ -1173,7 +1173,7 @@
   {
     "id": "GV-046",
     "domain": "grape_varieties",
-    "difficulty": 150,
+    "difficulty": 268,
     "level": 1,
     "format": "multiple_choice",
     "question": "Which grape variety is known for producing wines with distinctive spicy, white pepper aromas?",
@@ -1197,7 +1197,7 @@
   {
     "id": "GV-047",
     "domain": "grape_varieties",
-    "difficulty": 200,
+    "difficulty": 183,
     "level": 1,
     "format": "odd_one_out",
     "question": "Which of these grape varieties does NOT typically produce wines with prominent earthy characteristics?",
@@ -1221,7 +1221,7 @@
   {
     "id": "GV-048",
     "domain": "grape_varieties",
-    "difficulty": 180,
+    "difficulty": 246,
     "level": 1,
     "format": "multiple_choice",
     "question": "Which white grape variety is most famous for producing wines with intense floral aromas, particularly rose and lychee?",
@@ -1245,7 +1245,7 @@
   {
     "id": "GV-049",
     "domain": "grape_varieties",
-    "difficulty": 220,
+    "difficulty": 275,
     "level": 1,
     "format": "match_pairs",
     "question": "Match each grape variety with its most characteristic climate preference:",
@@ -1283,7 +1283,7 @@
   {
     "id": "GV-050",
     "domain": "grape_varieties",
-    "difficulty": 160,
+    "difficulty": 145,
     "level": 1,
     "format": "multiple_choice",
     "question": "Which grape variety is known for producing wines with high acidity and green fruit flavors, particularly gooseberry and grass?",
@@ -1307,7 +1307,7 @@
   {
     "id": "GV-051",
     "domain": "grape_varieties",
-    "difficulty": 240,
+    "difficulty": 261,
     "level": 1,
     "format": "scenario",
     "question": "A customer wants a red wine with soft tannins, medium body, and red fruit flavors for a casual dinner. Which grape variety would be your best recommendation?",
@@ -1331,7 +1331,7 @@
   {
     "id": "GV-052",
     "domain": "grape_varieties",
-    "difficulty": 190,
+    "difficulty": 182,
     "level": 1,
     "format": "multiple_choice",
     "question": "Which grape variety is most famous for producing the great dessert wines of Sauternes?",
@@ -1355,7 +1355,7 @@
   {
     "id": "GV-053",
     "domain": "grape_varieties",
-    "difficulty": 210,
+    "difficulty": 211,
     "level": 1,
     "format": "odd_one_out",
     "question": "Which of these grape varieties does NOT typically produce wines with significant tannin structure?",
@@ -1379,7 +1379,7 @@
   {
     "id": "GV-054",
     "domain": "grape_varieties",
-    "difficulty": 170,
+    "difficulty": 198,
     "level": 1,
     "format": "multiple_choice",
     "question": "Which grape variety is known for producing wines that can range from bone dry to lusciously sweet, often with petrol-like aromas when aged?",
@@ -1403,8 +1403,8 @@
   {
     "id": "GV-055",
     "domain": "grape_varieties",
-    "difficulty": 650,
-    "level": 3,
+    "difficulty": 380,
+    "level": 2,
     "format": "multiple_choice",
     "question": "Which grape variety is known for its characteristic 'noble rot' susceptibility and ability to produce both dry and sweet wines?",
     "options": [
@@ -1427,8 +1427,8 @@
   {
     "id": "GV-056",
     "domain": "grape_varieties",
-    "difficulty": 580,
-    "level": 3,
+    "difficulty": 405,
+    "level": 2,
     "format": "odd_one_out",
     "question": "Which of these grape varieties does NOT belong to the Vitis vinifera species?",
     "options": [
@@ -1451,8 +1451,8 @@
   {
     "id": "GV-057",
     "domain": "grape_varieties",
-    "difficulty": 720,
-    "level": 4,
+    "difficulty": 635,
+    "level": 3,
     "format": "match_pairs",
     "question": "Match each grape variety with its confirmed DNA-established offspring:",
     "pairs": {
@@ -1489,8 +1489,8 @@
   {
     "id": "GV-058",
     "domain": "grape_varieties",
-    "difficulty": 620,
-    "level": 3,
+    "difficulty": 338,
+    "level": 2,
     "format": "multiple_choice",
     "question": "Which grape variety is known for its distinctive 'petrichor' or wet stone aroma, particularly in wines from Chablis?",
     "options": [
@@ -1513,8 +1513,8 @@
   {
     "id": "GV-059",
     "domain": "grape_varieties",
-    "difficulty": 680,
-    "level": 3,
+    "difficulty": 339,
+    "level": 2,
     "format": "scenario",
     "question": "A winemaker in a cool climate region wants to plant a red grape variety that ripens early and can handle vintage variation well. Which variety would be the most suitable choice?",
     "options": [
@@ -1537,8 +1537,8 @@
   {
     "id": "GV-060",
     "domain": "grape_varieties",
-    "difficulty": 750,
-    "level": 4,
+    "difficulty": 566,
+    "level": 3,
     "format": "multiple_choice",
     "question": "Which grape variety is known for its high levels of anthocyanins and is often used to add color to blends in Châteauneuf-du-Pape?",
     "options": [
@@ -1561,8 +1561,8 @@
   {
     "id": "GV-061",
     "domain": "grape_varieties",
-    "difficulty": 590,
-    "level": 3,
+    "difficulty": 471,
+    "level": 2,
     "format": "odd_one_out",
     "question": "Which of these grape varieties does NOT typically display prominent herbaceous characteristics?",
     "options": [
@@ -1585,8 +1585,8 @@
   {
     "id": "GV-062",
     "domain": "grape_varieties",
-    "difficulty": 780,
-    "level": 4,
+    "difficulty": 572,
+    "level": 3,
     "format": "multiple_choice",
     "question": "Which white grape variety is known for its naturally high acidity and ability to express terroir, particularly in Austria's Wachau region?",
     "options": [
@@ -1609,8 +1609,8 @@
   {
     "id": "GV-063",
     "domain": "grape_varieties",
-    "difficulty": 640,
-    "level": 3,
+    "difficulty": 336,
+    "level": 2,
     "format": "multiple_choice",
     "question": "Which red grape variety is known for producing wines with high tannins and requiring extended aging to reach optimal drinking condition?",
     "options": [
@@ -1633,8 +1633,8 @@
   {
     "id": "GV-064",
     "domain": "grape_varieties",
-    "difficulty": 560,
-    "level": 3,
+    "difficulty": 330,
+    "level": 2,
     "format": "scenario",
     "question": "A restaurant guest wants a white wine with intense floral aromas and full body to pair with spicy Thai cuisine. Which grape variety would be your best recommendation?",
     "options": [
@@ -1657,8 +1657,8 @@
   {
     "id": "GV-065",
     "domain": "grape_varieties",
-    "difficulty": 700,
-    "level": 4,
+    "difficulty": 638,
+    "level": 3,
     "format": "match_pairs",
     "question": "Match each grape variety with its most characteristic climate requirement:",
     "pairs": {
@@ -1695,8 +1695,8 @@
   {
     "id": "GV-066",
     "domain": "grape_varieties",
-    "difficulty": 820,
-    "level": 4,
+    "difficulty": 597,
+    "level": 3,
     "format": "multiple_choice",
     "question": "Which grape variety is known for its distinctive 'rotundone' compound that produces black pepper aromas, particularly in cool climate expressions?",
     "options": [
@@ -1719,8 +1719,8 @@
   {
     "id": "GV-067",
     "domain": "grape_varieties",
-    "difficulty": 610,
-    "level": 3,
+    "difficulty": 413,
+    "level": 2,
     "format": "odd_one_out",
     "question": "Which of these grape varieties does NOT typically produce wines with significant phenolic structure?",
     "options": [
@@ -1743,8 +1743,8 @@
   {
     "id": "GV-068",
     "domain": "grape_varieties",
-    "difficulty": 690,
-    "level": 3,
+    "difficulty": 405,
+    "level": 2,
     "format": "multiple_choice",
     "question": "Which grape variety is most susceptible to coulure and millerandage due to its poor fruit set characteristics?",
     "options": [
@@ -1767,8 +1767,8 @@
   {
     "id": "GV-069",
     "domain": "grape_varieties",
-    "difficulty": 760,
-    "level": 4,
+    "difficulty": 568,
+    "level": 3,
     "format": "scenario",
     "question": "A winemaker in Priorat wants to plant a variety that can handle the region's llicorella slate soils and produce concentrated, age-worthy wines. Which variety would be most suitable?",
     "options": [
@@ -1791,8 +1791,8 @@
   {
     "id": "GV-070",
     "domain": "grape_varieties",
-    "difficulty": 650,
-    "level": 3,
+    "difficulty": 322,
+    "level": 2,
     "format": "multiple_choice",
     "question": "Which grape variety is known for its distinctive 'cat's pee' aroma on the gooseberry bush, particularly in wines from the Loire Valley?",
     "options": [
@@ -1814,8 +1814,8 @@
   {
     "id": "GV-071",
     "domain": "grape_varieties",
-    "difficulty": 580,
-    "level": 3,
+    "difficulty": 411,
+    "level": 2,
     "format": "odd_one_out",
     "question": "Which of these grape varieties does NOT typically require warm to hot climate conditions to achieve full phenolic ripeness?",
     "options": [
@@ -1837,8 +1837,8 @@
   {
     "id": "GV-072",
     "domain": "grape_varieties",
-    "difficulty": 720,
-    "level": 4,
+    "difficulty": 665,
+    "level": 3,
     "format": "match_pairs",
     "question": "Match each grape variety with its DNA-confirmed parent variety:",
     "pairs": {
@@ -1876,8 +1876,8 @@
   {
     "id": "GV-073",
     "domain": "grape_varieties",
-    "difficulty": 620,
-    "level": 3,
+    "difficulty": 452,
+    "level": 2,
     "format": "scenario",
     "question": "A customer wants a full-bodied white wine with rich texture and vanilla notes to pair with lobster thermidor. Which grape variety would be your best recommendation?",
     "options": [
@@ -1900,8 +1900,8 @@
   {
     "id": "GV-074",
     "domain": "grape_varieties",
-    "difficulty": 590,
-    "level": 3,
+    "difficulty": 396,
+    "level": 2,
     "format": "multiple_choice",
     "question": "Which grape variety is known for producing wines with distinctive tar and roses aromas, particularly in Piedmont's Barolo and Barbaresco?",
     "options": [
@@ -1924,8 +1924,8 @@
   {
     "id": "GV-075",
     "domain": "grape_varieties",
-    "difficulty": 750,
-    "level": 4,
+    "difficulty": 573,
+    "level": 3,
     "format": "multiple_choice",
     "question": "Which grape variety is known for its high levels of resveratrol and anthocyanins, contributing to its reputation as one of the most antioxidant-rich wine grapes?",
     "options": [
@@ -1948,8 +1948,8 @@
   {
     "id": "GV-076",
     "domain": "grape_varieties",
-    "difficulty": 680,
-    "level": 3,
+    "difficulty": 349,
+    "level": 2,
     "format": "odd_one_out",
     "question": "Which of these white grape varieties does NOT typically develop petrol/kerosene aromas with bottle age?",
     "options": [
@@ -1972,8 +1972,8 @@
   {
     "id": "GV-077",
     "domain": "grape_varieties",
-    "difficulty": 820,
-    "level": 4,
+    "difficulty": 539,
+    "level": 3,
     "format": "scenario",
     "question": "A winemaker in Mendoza's Uco Valley wants to plant a variety that can handle the region's intense UV radiation and diurnal temperature swings while producing deeply colored, structured wines. Which variety would be most suitable?",
     "options": [
@@ -1996,8 +1996,8 @@
   {
     "id": "GV-078",
     "domain": "grape_varieties",
-    "difficulty": 640,
-    "level": 3,
+    "difficulty": 414,
+    "level": 2,
     "format": "multiple_choice",
     "question": "Which grape variety is known for its distinctive 'struck match' or sulfur-like aromas when young, particularly in wines from the Northern Rhône?",
     "options": [
@@ -2020,8 +2020,8 @@
   {
     "id": "GV-079",
     "domain": "grape_varieties",
-    "difficulty": 760,
-    "level": 4,
+    "difficulty": 533,
+    "level": 3,
     "format": "match_pairs",
     "question": "Match each grape variety with its most characteristic soil preference:",
     "pairs": {
@@ -2058,8 +2058,8 @@
   {
     "id": "GV-080",
     "domain": "grape_varieties",
-    "difficulty": 590,
-    "level": 3,
+    "difficulty": 421,
+    "level": 2,
     "format": "multiple_choice",
     "question": "Which grape variety is known for its ability to retain high natural acidity even in warm climates, making it ideal for sparkling wine production?",
     "options": [
@@ -2082,8 +2082,8 @@
   {
     "id": "GV-081",
     "domain": "grape_varieties",
-    "difficulty": 700,
-    "level": 4,
+    "difficulty": 624,
+    "level": 3,
     "format": "odd_one_out",
     "question": "Which of these grape varieties does NOT typically produce wines with significant botrytis susceptibility for dessert wine production?",
     "options": [
@@ -2106,8 +2106,8 @@
   {
     "id": "GV-082",
     "domain": "grape_varieties",
-    "difficulty": 780,
-    "level": 4,
+    "difficulty": 676,
+    "level": 3,
     "format": "scenario",
     "question": "A sommelier notices a wine with intense violet florals, white pepper spice, and firm tannins from a cool climate region known for granite soils. The wine shows excellent aging potential. Which grape variety is this most likely?",
     "options": [
@@ -2130,8 +2130,8 @@
   {
     "id": "GV-083",
     "domain": "grape_varieties",
-    "difficulty": 620,
-    "level": 3,
+    "difficulty": 328,
+    "level": 2,
     "format": "multiple_choice",
     "question": "Which grape variety is known for its distinctive honeyed, lanolin-like texture and ability to age for decades, particularly in wines from Hunter Valley?",
     "options": [
@@ -2154,8 +2154,8 @@
   {
     "id": "GV-084",
     "domain": "grape_varieties",
-    "difficulty": 850,
-    "level": 4,
+    "difficulty": 672,
+    "level": 3,
     "format": "multiple_choice",
     "question": "Which grape variety is known for its extremely late ripening characteristics and requirement for extended hang time, often harvested in November in the Northern Hemisphere?",
     "options": [
@@ -2178,8 +2178,8 @@
   {
     "id": "GV-085",
     "domain": "grape_varieties",
-    "difficulty": 650,
-    "level": 3,
+    "difficulty": 331,
+    "level": 2,
     "format": "multiple_choice",
     "question": "Which grape variety is known for its distinctive 'foxy' characteristics and is native to North America?",
     "options": [
@@ -2201,8 +2201,8 @@
   {
     "id": "GV-086",
     "domain": "grape_varieties",
-    "difficulty": 580,
-    "level": 3,
+    "difficulty": 419,
+    "level": 2,
     "format": "odd_one_out",
     "question": "Which of these grape varieties does NOT typically produce wines with prominent floral primary aromas?",
     "options": [
@@ -2224,8 +2224,8 @@
   {
     "id": "GV-087",
     "domain": "grape_varieties",
-    "difficulty": 720,
-    "level": 4,
+    "difficulty": 629,
+    "level": 3,
     "format": "match_pairs",
     "question": "Match each grape variety with its confirmed DNA parent:",
     "pairs": {
@@ -2262,8 +2262,8 @@
   {
     "id": "GV-088",
     "domain": "grape_varieties",
-    "difficulty": 620,
-    "level": 3,
+    "difficulty": 477,
+    "level": 2,
     "format": "multiple_choice",
     "question": "Which grape variety is known for its naturally high malic acid content, contributing to its characteristic crisp acidity?",
     "options": [
@@ -2285,8 +2285,8 @@
   {
     "id": "GV-089",
     "domain": "grape_varieties",
-    "difficulty": 780,
-    "level": 4,
+    "difficulty": 634,
+    "level": 3,
     "format": "scenario",
     "question": "A viticulturist in Tasmania wants to plant a red variety that can handle cool, wet conditions and still produce structured wines with good color intensity. Which variety would be most suitable?",
     "options": [
@@ -2309,8 +2309,8 @@
   {
     "id": "GV-090",
     "domain": "grape_varieties",
-    "difficulty": 850,
-    "level": 4,
+    "difficulty": 624,
+    "level": 3,
     "format": "multiple_choice",
     "question": "Which compound is responsible for the distinctive 'petrichor' or wet stone aroma found in certain expressions of Riesling?",
     "options": [
@@ -2333,8 +2333,8 @@
   {
     "id": "GV-091",
     "domain": "grape_varieties",
-    "difficulty": 680,
-    "level": 3,
+    "difficulty": 441,
+    "level": 2,
     "format": "odd_one_out",
     "question": "Which of these grape varieties does NOT typically require extended maceration to extract sufficient color and tannins?",
     "options": [
@@ -2357,8 +2357,8 @@
   {
     "id": "GV-092",
     "domain": "grape_varieties",
-    "difficulty": 750,
-    "level": 4,
+    "difficulty": 546,
+    "level": 3,
     "format": "multiple_choice",
     "question": "Which grape variety is known for its susceptibility to 'hen and chickens' (millerandage) due to poor fruit set?",
     "options": [
@@ -2381,8 +2381,8 @@
   {
     "id": "GV-093",
     "domain": "grape_varieties",
-    "difficulty": 590,
-    "level": 3,
+    "difficulty": 473,
+    "level": 2,
     "format": "multiple_choice",
     "question": "Which white grape variety is known for producing wines with naturally low acidity and full body?",
     "options": [
@@ -2405,8 +2405,8 @@
   {
     "id": "GV-094",
     "domain": "grape_varieties",
-    "difficulty": 820,
-    "level": 4,
+    "difficulty": 660,
+    "level": 3,
     "format": "scenario",
     "question": "A winemaker in Barossa Valley notices their old vine Shiraz developing leather and game aromas alongside the fruit. What secondary aroma development is most likely occurring?",
     "options": [
@@ -2429,8 +2429,8 @@
   {
     "id": "GV-095",
     "domain": "grape_varieties",
-    "difficulty": 640,
-    "level": 3,
+    "difficulty": 467,
+    "level": 2,
     "format": "match_pairs",
     "question": "Match each grape variety with its most characteristic primary aroma descriptor:",
     "pairs": {
@@ -2466,8 +2466,8 @@
   {
     "id": "GV-096",
     "domain": "grape_varieties",
-    "difficulty": 700,
-    "level": 4,
+    "difficulty": 540,
+    "level": 3,
     "format": "multiple_choice",
     "question": "Which grape variety contains the highest levels of resveratrol, particularly in the skins?",
     "options": [
@@ -2490,8 +2490,8 @@
   {
     "id": "GV-097",
     "domain": "grape_varieties",
-    "difficulty": 560,
-    "level": 3,
+    "difficulty": 446,
+    "level": 2,
     "format": "odd_one_out",
     "question": "Which of these grape varieties does NOT typically produce wines suitable for long-term aging?",
     "options": [
@@ -2514,8 +2514,8 @@
   {
     "id": "GV-098",
     "domain": "grape_varieties",
-    "difficulty": 780,
-    "level": 4,
+    "difficulty": 628,
+    "level": 3,
     "format": "multiple_choice",
     "question": "Which grape variety is known for producing wines with naturally high levels of anthocyanins, contributing to exceptional color stability?",
     "options": [
@@ -2538,8 +2538,8 @@
   {
     "id": "GV-099",
     "domain": "grape_varieties",
-    "difficulty": 860,
-    "level": 4,
+    "difficulty": 551,
+    "level": 3,
     "format": "scenario",
     "question": "A sommelier tastes a wine showing intense mineral notes, lime zest, and white pepper with a lean, steely texture from Austria's Wachau region. Which grape variety is this most likely?",
     "options": [
@@ -2562,8 +2562,8 @@
   {
     "id": "GV-100",
     "domain": "grape_varieties",
-    "difficulty": 550,
-    "level": 3,
+    "difficulty": 445,
+    "level": 2,
     "format": "multiple_choice",
     "question": "Which grape variety is the confirmed DNA offspring of Cabernet Franc and Sauvignon Blanc?",
     "options": [
@@ -2585,8 +2585,8 @@
   {
     "id": "GV-101",
     "domain": "grape_varieties",
-    "difficulty": 620,
-    "level": 3,
+    "difficulty": 346,
+    "level": 2,
     "format": "odd_one_out",
     "question": "Which of these grape varieties does NOT typically require warm climate conditions to achieve full ripeness?",
     "options": [
@@ -2608,8 +2608,8 @@
   {
     "id": "GV-102",
     "domain": "grape_varieties",
-    "difficulty": 580,
-    "level": 3,
+    "difficulty": 403,
+    "level": 2,
     "format": "multiple_choice",
     "question": "Which grape variety is most famous for producing the great white wines of Burgundy?",
     "options": [
@@ -2631,8 +2631,8 @@
   {
     "id": "GV-103",
     "domain": "grape_varieties",
-    "difficulty": 640,
-    "level": 3,
+    "difficulty": 368,
+    "level": 2,
     "format": "match_pairs",
     "question": "Match each grape variety with its most characteristic primary aroma:",
     "pairs": {
@@ -2668,8 +2668,8 @@
   {
     "id": "GV-104",
     "domain": "grape_varieties",
-    "difficulty": 560,
-    "level": 3,
+    "difficulty": 432,
+    "level": 2,
     "format": "multiple_choice",
     "question": "Which grape variety is known for producing wines with naturally high acidity and the ability to express terroir most transparently?",
     "options": [
@@ -2691,8 +2691,8 @@
   {
     "id": "GV-105",
     "domain": "grape_varieties",
-    "difficulty": 690,
-    "level": 4,
+    "difficulty": 607,
+    "level": 3,
     "format": "scenario",
     "question": "A winemaker in Oregon's Willamette Valley wants to plant a red variety that can handle the region's cool, wet conditions while producing elegant, age-worthy wines. Which variety would be most suitable?",
     "options": [
@@ -2714,8 +2714,8 @@
   {
     "id": "GV-106",
     "domain": "grape_varieties",
-    "difficulty": 720,
-    "level": 4,
+    "difficulty": 654,
+    "level": 3,
     "format": "multiple_choice",
     "question": "Which compound is responsible for the distinctive black pepper aroma in cool-climate Syrah?",
     "options": [
@@ -2738,8 +2738,8 @@
   {
     "id": "GV-107",
     "domain": "grape_varieties",
-    "difficulty": 650,
-    "level": 3,
+    "difficulty": 332,
+    "level": 2,
     "format": "odd_one_out",
     "question": "Which of these grape varieties does NOT typically develop petrol/kerosene aromas with bottle age?",
     "options": [
@@ -2762,8 +2762,8 @@
   {
     "id": "GV-108",
     "domain": "grape_varieties",
-    "difficulty": 780,
-    "level": 4,
+    "difficulty": 673,
+    "level": 3,
     "format": "multiple_choice",
     "question": "Which grape variety is Zinfandel's confirmed DNA identical twin, discovered through genetic analysis?",
     "options": [
@@ -2786,8 +2786,8 @@
   {
     "id": "GV-109",
     "domain": "grape_varieties",
-    "difficulty": 610,
-    "level": 3,
+    "difficulty": 343,
+    "level": 2,
     "format": "multiple_choice",
     "question": "Which grape variety is most susceptible to noble rot (Botrytis cinerea) for dessert wine production?",
     "options": [
@@ -2810,8 +2810,8 @@
   {
     "id": "GV-110",
     "domain": "grape_varieties",
-    "difficulty": 820,
-    "level": 4,
+    "difficulty": 556,
+    "level": 3,
     "format": "match_pairs",
     "question": "Match each grape variety with its confirmed DNA parent variety:",
     "pairs": {
@@ -2847,8 +2847,8 @@
   {
     "id": "GV-111",
     "domain": "grape_varieties",
-    "difficulty": 740,
-    "level": 4,
+    "difficulty": 584,
+    "level": 3,
     "format": "scenario",
     "question": "A sommelier tastes a wine with intense violet florals, garrigue herbs, and firm tannins from a warm climate region known for schist soils. The wine shows excellent aging potential. Which grape variety is this most likely?",
     "options": [
@@ -2871,8 +2871,8 @@
   {
     "id": "GV-112",
     "domain": "grape_varieties",
-    "difficulty": 580,
-    "level": 3,
+    "difficulty": 452,
+    "level": 2,
     "format": "multiple_choice",
     "question": "Which grape variety is known for producing wines with high levels of anthocyanins, contributing to exceptional color intensity?",
     "options": [
@@ -2895,8 +2895,8 @@
   {
     "id": "GV-113",
     "domain": "grape_varieties",
-    "difficulty": 660,
-    "level": 3,
+    "difficulty": 322,
+    "level": 2,
     "format": "odd_one_out",
     "question": "Which of these grape varieties does NOT typically produce wines with herbaceous characteristics?",
     "options": [
@@ -2919,8 +2919,8 @@
   {
     "id": "GV-114",
     "domain": "grape_varieties",
-    "difficulty": 790,
-    "level": 4,
+    "difficulty": 644,
+    "level": 3,
     "format": "scenario",
     "question": "A viticulturist in Mendoza's high-altitude vineyards wants to plant a variety that can handle intense UV radiation and extreme diurnal temperature swings while producing structured, age-worthy wines. Which variety would be most suitable?",
     "options": [
@@ -2943,8 +2943,8 @@
   {
     "id": "GV-115",
     "domain": "grape_varieties",
-    "difficulty": 550,
-    "level": 3,
+    "difficulty": 351,
+    "level": 2,
     "format": "multiple_choice",
     "question": "Which grape variety is known for its thick skins and high tannin levels, often requiring extended aging to soften its structure?",
     "options": [
@@ -2966,8 +2966,8 @@
   {
     "id": "GV-116",
     "domain": "grape_varieties",
-    "difficulty": 620,
-    "level": 3,
+    "difficulty": 470,
+    "level": 2,
     "format": "odd_one_out",
     "question": "Which of these white grape varieties does NOT typically produce wines with pronounced mineral characteristics?",
     "options": [
@@ -2989,8 +2989,8 @@
   {
     "id": "GV-117",
     "domain": "grape_varieties",
-    "difficulty": 680,
-    "level": 3,
+    "difficulty": 324,
+    "level": 2,
     "format": "match_pairs",
     "question": "Match each grape variety with its most characteristic primary aroma profile:",
     "pairs": {
@@ -3026,8 +3026,8 @@
   {
     "id": "GV-118",
     "domain": "grape_varieties",
-    "difficulty": 750,
-    "level": 4,
+    "difficulty": 660,
+    "level": 3,
     "format": "scenario",
     "question": "A winemaker in Alsace wants to produce a late-harvest dessert wine with intense aromatics and natural acidity. The variety must handle botrytis well and maintain structure even at high sugar levels. Which variety would be most suitable?",
     "options": [
@@ -3050,8 +3050,8 @@
   {
     "id": "GV-119",
     "domain": "grape_varieties",
-    "difficulty": 580,
-    "level": 3,
+    "difficulty": 434,
+    "level": 2,
     "format": "multiple_choice",
     "question": "Which grape variety is known for producing wines with naturally low acidity and requires careful vineyard management to maintain freshness?",
     "options": [
@@ -3073,8 +3073,8 @@
   {
     "id": "GV-120",
     "domain": "grape_varieties",
-    "difficulty": 820,
-    "level": 4,
+    "difficulty": 648,
+    "level": 3,
     "format": "multiple_choice",
     "question": "Which grape variety is genetically identical to Zinfandel, discovered through DNA analysis in the 1990s?",
     "options": [
@@ -3097,8 +3097,8 @@
   {
     "id": "GV-121",
     "domain": "grape_varieties",
-    "difficulty": 640,
-    "level": 3,
+    "difficulty": 347,
+    "level": 2,
     "format": "odd_one_out",
     "question": "Which of these grape varieties does NOT typically require warm to hot climate conditions to achieve full ripeness?",
     "options": [
@@ -3120,8 +3120,8 @@
   {
     "id": "GV-122",
     "domain": "grape_varieties",
-    "difficulty": 780,
-    "level": 4,
+    "difficulty": 528,
+    "level": 3,
     "format": "match_pairs",
     "question": "Match each grape variety with its confirmed DNA parent:",
     "pairs": {
@@ -3157,8 +3157,8 @@
   {
     "id": "GV-123",
     "domain": "grape_varieties",
-    "difficulty": 590,
-    "level": 3,
+    "difficulty": 462,
+    "level": 2,
     "format": "scenario",
     "question": "A customer asks for a white wine with rich texture, vanilla notes, and the ability to age gracefully. They want something that pairs well with lobster in cream sauce. Which grape variety would be your best recommendation?",
     "options": [
@@ -3181,8 +3181,8 @@
   {
     "id": "GV-124",
     "domain": "grape_varieties",
-    "difficulty": 720,
-    "level": 4,
+    "difficulty": 617,
+    "level": 3,
     "format": "multiple_choice",
     "question": "Which compound is responsible for the distinctive 'green bell pepper' aroma in underripe Cabernet Sauvignon and Cabernet Franc?",
     "options": [
@@ -3205,8 +3205,8 @@
   {
     "id": "GV-125",
     "domain": "grape_varieties",
-    "difficulty": 660,
-    "level": 3,
+    "difficulty": 324,
+    "level": 2,
     "format": "odd_one_out",
     "question": "Which of these grape varieties does NOT typically develop honeyed, waxy characteristics with bottle age?",
     "options": [
@@ -3228,8 +3228,8 @@
   {
     "id": "GV-126",
     "domain": "grape_varieties",
-    "difficulty": 850,
-    "level": 4,
+    "difficulty": 577,
+    "level": 3,
     "format": "scenario",
     "question": "A viticulturist in Piedmont's Langhe hills wants to plant a variety that can handle the region's calcareous-clay soils and fog conditions while producing wines capable of decades of aging. The variety must have naturally high acidity and tannins. Which would be most suitable?",
     "options": [
@@ -3252,8 +3252,8 @@
   {
     "id": "GV-127",
     "domain": "grape_varieties",
-    "difficulty": 950,
-    "level": 5,
+    "difficulty": 826,
+    "level": 4,
     "format": "multiple_choice",
     "question": "Which grape variety is known for its distinctive 'cat's pee' aroma when grown in cool climates, particularly noticeable in wines from Sancerre and Marlborough?",
     "options": [
@@ -3275,8 +3275,8 @@
   {
     "id": "GV-128",
     "domain": "grape_varieties",
-    "difficulty": 1050,
-    "level": 5,
+    "difficulty": 827,
+    "level": 4,
     "format": "odd_one_out",
     "question": "Which of these grape varieties does NOT typically produce wines with significant tannin levels requiring extended aging?",
     "options": [
@@ -3298,8 +3298,8 @@
   {
     "id": "GV-129",
     "domain": "grape_varieties",
-    "difficulty": 1000,
-    "level": 5,
+    "difficulty": 829,
+    "level": 4,
     "format": "match_pairs",
     "question": "Match each grape variety with its most characteristic climate requirement:",
     "pairs": {
@@ -3335,8 +3335,8 @@
   {
     "id": "GV-130",
     "domain": "grape_varieties",
-    "difficulty": 975,
-    "level": 5,
+    "difficulty": 738,
+    "level": 4,
     "format": "multiple_choice",
     "question": "Which grape variety is known for producing wines with naturally high acidity and the ability to reflect terroir most clearly?",
     "options": [
@@ -3358,8 +3358,8 @@
   {
     "id": "GV-131",
     "domain": "grape_varieties",
-    "difficulty": 1025,
-    "level": 5,
+    "difficulty": 869,
+    "level": 4,
     "format": "scenario",
     "question": "A customer wants a red wine with 'earthy, truffle-like aromas' and mentions they love Barolo. Which grape variety should you recommend from a different region?",
     "options": [
@@ -3382,8 +3382,8 @@
   {
     "id": "GV-132",
     "domain": "grape_varieties",
-    "difficulty": 1075,
-    "level": 5,
+    "difficulty": 748,
+    "level": 4,
     "format": "multiple_choice",
     "question": "Which grape variety is known for its thick skins and high levels of anthocyanins, making it ideal for producing deeply colored wines?",
     "options": [
@@ -3406,8 +3406,8 @@
   {
     "id": "GV-133",
     "domain": "grape_varieties",
-    "difficulty": 950,
-    "level": 5,
+    "difficulty": 792,
+    "level": 4,
     "format": "odd_one_out",
     "question": "Which of these grape varieties does NOT typically develop petrol or kerosene aromas with bottle age?",
     "options": [
@@ -3430,8 +3430,8 @@
   {
     "id": "GV-134",
     "domain": "grape_varieties",
-    "difficulty": 1100,
-    "level": 6,
+    "difficulty": 1069,
+    "level": 5,
     "format": "multiple_choice",
     "question": "Which compound is primarily responsible for the distinctive 'smoky, bacon fat' aromas in certain expressions of Syrah, particularly from the Northern Rhône?",
     "options": [
@@ -3454,8 +3454,8 @@
   {
     "id": "GV-135",
     "domain": "grape_varieties",
-    "difficulty": 1150,
-    "level": 6,
+    "difficulty": 1054,
+    "level": 5,
     "format": "match_pairs",
     "question": "Match each grape variety with its confirmed DNA parent variety:",
     "pairs": {
@@ -3492,8 +3492,8 @@
   {
     "id": "GV-136",
     "domain": "grape_varieties",
-    "difficulty": 1200,
-    "level": 6,
+    "difficulty": 996,
+    "level": 5,
     "format": "scenario",
     "question": "A winemaker in Washington State's Columbia Valley wants to plant a variety that can handle the region's continental climate with hot days and cool nights, while producing wines with good acidity and aging potential. Which variety would be most suitable?",
     "options": [
@@ -3516,8 +3516,8 @@
   {
     "id": "GV-137",
     "domain": "grape_varieties",
-    "difficulty": 1175,
-    "level": 6,
+    "difficulty": 1072,
+    "level": 5,
     "format": "odd_one_out",
     "question": "Which of these grape varieties does NOT typically require extensive skin contact during fermentation to achieve optimal color and tannin extraction?",
     "options": [
@@ -3540,8 +3540,8 @@
   {
     "id": "GV-138",
     "domain": "grape_varieties",
-    "difficulty": 1125,
-    "level": 6,
+    "difficulty": 940,
+    "level": 5,
     "format": "multiple_choice",
     "question": "Which grape variety is known for its susceptibility to coulure (poor fruit set) due to sensitivity during flowering?",
     "options": [
@@ -3564,8 +3564,8 @@
   {
     "id": "GV-139",
     "domain": "grape_varieties",
-    "difficulty": 1250,
-    "level": 6,
+    "difficulty": 921,
+    "level": 5,
     "format": "multiple_choice",
     "question": "Which Italian grape variety is known for producing wines with high natural acidity and the characteristic 'tar and roses' aroma profile?",
     "options": [
@@ -3588,8 +3588,8 @@
   {
     "id": "GV-140",
     "domain": "grape_varieties",
-    "difficulty": 1050,
-    "level": 5,
+    "difficulty": 752,
+    "level": 4,
     "format": "match_pairs",
     "question": "Match each grape variety with its most characteristic primary aroma:",
     "pairs": {
@@ -3625,8 +3625,8 @@
   {
     "id": "GV-141",
     "domain": "grape_varieties",
-    "difficulty": 1000,
-    "level": 5,
+    "difficulty": 838,
+    "level": 4,
     "format": "scenario",
     "question": "A customer asks for 'a wine like Sancerre but from the New World' for their oyster course. Which grape variety and region combination would you recommend?",
     "options": [
@@ -3649,8 +3649,8 @@
   {
     "id": "GV-142",
     "domain": "grape_varieties",
-    "difficulty": 950,
-    "level": 5,
+    "difficulty": 780,
+    "level": 4,
     "format": "multiple_choice",
     "question": "Which grape variety is known for its distinctive rose petal and lychee aromatics, particularly when grown in Alsace?",
     "options": [
@@ -3672,8 +3672,8 @@
   {
     "id": "GV-143",
     "domain": "grape_varieties",
-    "difficulty": 1000,
-    "level": 5,
+    "difficulty": 847,
+    "level": 4,
     "format": "odd_one_out",
     "question": "Which of these grape varieties does NOT typically produce wines with significant herbaceous characteristics when grown in cool climates?",
     "options": [
@@ -3695,8 +3695,8 @@
   {
     "id": "GV-144",
     "domain": "grape_varieties",
-    "difficulty": 1050,
-    "level": 5,
+    "difficulty": 868,
+    "level": 4,
     "format": "match_pairs",
     "question": "Match each grape variety with its most famous regional expression:",
     "pairs": {
@@ -3732,8 +3732,8 @@
   {
     "id": "GV-145",
     "domain": "grape_varieties",
-    "difficulty": 975,
-    "level": 5,
+    "difficulty": 726,
+    "level": 4,
     "format": "multiple_choice",
     "question": "Which grape variety is known for producing naturally high-acid wines with distinctive mineral characteristics, particularly in Austria's Wachau region?",
     "options": [
@@ -3755,8 +3755,8 @@
   {
     "id": "GV-146",
     "domain": "grape_varieties",
-    "difficulty": 1025,
-    "level": 5,
+    "difficulty": 747,
+    "level": 4,
     "format": "scenario",
     "question": "A customer wants a full-bodied red wine with soft tannins and plush fruit character, but without the herbaceous notes sometimes found in Cabernet Sauvignon. Which variety would be your best recommendation?",
     "options": [
@@ -3778,8 +3778,8 @@
   {
     "id": "GV-147",
     "domain": "grape_varieties",
-    "difficulty": 1075,
-    "level": 5,
+    "difficulty": 723,
+    "level": 4,
     "format": "multiple_choice",
     "question": "Which compound is primarily responsible for the distinctive 'petrol' or 'kerosene' aroma that develops in aged Riesling?",
     "options": [
@@ -3801,8 +3801,8 @@
   {
     "id": "GV-148",
     "domain": "grape_varieties",
-    "difficulty": 950,
-    "level": 5,
+    "difficulty": 863,
+    "level": 4,
     "format": "odd_one_out",
     "question": "Which of these grape varieties does NOT typically require warm to hot climate conditions to achieve full ripeness?",
     "options": [
@@ -3824,8 +3824,8 @@
   {
     "id": "GV-149",
     "domain": "grape_varieties",
-    "difficulty": 1100,
-    "level": 6,
+    "difficulty": 952,
+    "level": 5,
     "format": "multiple_choice",
     "question": "Which grape variety is confirmed through DNA analysis to be the offspring of Gouais Blanc and Pinot Noir?",
     "options": [
@@ -3847,8 +3847,8 @@
   {
     "id": "GV-150",
     "domain": "grape_varieties",
-    "difficulty": 1150,
-    "level": 6,
+    "difficulty": 1067,
+    "level": 5,
     "format": "match_pairs",
     "question": "Match each grape variety with its characteristic primary aroma compound or family:",
     "pairs": {
@@ -3884,8 +3884,8 @@
   {
     "id": "GV-151",
     "domain": "grape_varieties",
-    "difficulty": 1075,
-    "level": 6,
+    "difficulty": 920,
+    "level": 5,
     "format": "scenario",
     "question": "A viticulturist in Tasmania wants to plant a red variety that can handle cool, maritime conditions while producing elegant, age-worthy wines with bright acidity. Which variety would be most suitable?",
     "options": [
@@ -3907,8 +3907,8 @@
   {
     "id": "GV-152",
     "domain": "grape_varieties",
-    "difficulty": 1125,
-    "level": 6,
+    "difficulty": 922,
+    "level": 5,
     "format": "multiple_choice",
     "question": "Which grape variety is known for its naturally thick skins and high levels of anthocyanins, making it particularly suitable for producing deeply colored, age-worthy wines?",
     "options": [
@@ -3930,8 +3930,8 @@
   {
     "id": "GV-153",
     "domain": "grape_varieties",
-    "difficulty": 1000,
-    "level": 6,
+    "difficulty": 980,
+    "level": 5,
     "format": "odd_one_out",
     "question": "Which of these grape varieties does NOT typically develop honeyed, waxy characteristics with extended bottle aging?",
     "options": [
@@ -3953,8 +3953,8 @@
   {
     "id": "GV-154",
     "domain": "grape_varieties",
-    "difficulty": 1175,
-    "level": 6,
+    "difficulty": 957,
+    "level": 5,
     "format": "multiple_choice",
     "question": "Which Spanish grape variety is known for producing wines with distinctive violet and leather aromatics, particularly in Ribera del Duero?",
     "options": [
@@ -3976,8 +3976,8 @@
   {
     "id": "GV-155",
     "domain": "grape_varieties",
-    "difficulty": 1050,
-    "level": 6,
+    "difficulty": 992,
+    "level": 5,
     "format": "scenario",
     "question": "A sommelier is building a wine list and wants to include a white variety that can produce both crisp, mineral-driven styles and rich, honeyed dessert wines, showing incredible versatility across different winemaking approaches. Which variety would be ideal?",
     "options": [
@@ -3999,8 +3999,8 @@
   {
     "id": "GV-156",
     "domain": "grape_varieties",
-    "difficulty": 1200,
-    "level": 6,
+    "difficulty": 1005,
+    "level": 5,
     "format": "match_pairs",
     "question": "Match each grape variety with its confirmed DNA parent variety:",
     "pairs": {
@@ -4036,8 +4036,8 @@
   {
     "id": "GV-157",
     "domain": "grape_varieties",
-    "difficulty": 950,
-    "level": 5,
+    "difficulty": 784,
+    "level": 4,
     "format": "multiple_choice",
     "question": "Which grape variety is known for its distinctive 'gooseberry' and 'passion fruit' primary aromatics in cool climate expressions?",
     "options": [
@@ -4059,8 +4059,8 @@
   {
     "id": "GV-158",
     "domain": "grape_varieties",
-    "difficulty": 1050,
-    "level": 5,
+    "difficulty": 858,
+    "level": 4,
     "format": "odd_one_out",
     "question": "Which of these grape varieties does NOT typically require extended skin contact during red winemaking to achieve optimal structure?",
     "options": [
@@ -4083,8 +4083,8 @@
   {
     "id": "GV-159",
     "domain": "grape_varieties",
-    "difficulty": 1000,
-    "level": 5,
+    "difficulty": 725,
+    "level": 4,
     "format": "multiple_choice",
     "question": "Which grape variety is known for producing wines with naturally high malic acid levels, contributing to their characteristic bright acidity?",
     "options": [
@@ -4107,8 +4107,8 @@
   {
     "id": "GV-160",
     "domain": "grape_varieties",
-    "difficulty": 1100,
-    "level": 5,
+    "difficulty": 735,
+    "level": 4,
     "format": "match_pairs",
     "question": "Match each grape variety with its most characteristic viticultural challenge:",
     "pairs": {
@@ -4144,8 +4144,8 @@
   {
     "id": "GV-161",
     "domain": "grape_varieties",
-    "difficulty": 1150,
-    "level": 6,
+    "difficulty": 1050,
+    "level": 5,
     "format": "multiple_choice",
     "question": "Which grape variety is confirmed through DNA analysis to be a natural crossing of Cabernet Franc and Sauvignon Blanc?",
     "options": [
@@ -4167,8 +4167,8 @@
   {
     "id": "GV-162",
     "domain": "grape_varieties",
-    "difficulty": 1200,
-    "level": 6,
+    "difficulty": 997,
+    "level": 5,
     "format": "scenario",
     "question": "A winemaker in Argentina's Uco Valley wants to plant a variety that thrives at high altitude with intense UV exposure and dramatic diurnal temperature variation. The variety should produce deeply colored, structured wines. Which would be most suitable?",
     "options": [
@@ -4191,8 +4191,8 @@
   {
     "id": "GV-163",
     "domain": "grape_varieties",
-    "difficulty": 1050,
-    "level": 5,
+    "difficulty": 869,
+    "level": 4,
     "format": "odd_one_out",
     "question": "Which of these grape varieties does NOT typically develop secondary aromatics from oak aging?",
     "options": [
@@ -4215,8 +4215,8 @@
   {
     "id": "GV-164",
     "domain": "grape_varieties",
-    "difficulty": 1000,
-    "level": 5,
+    "difficulty": 862,
+    "level": 4,
     "format": "multiple_choice",
     "question": "Which compound is primarily responsible for the distinctive 'black pepper' spice notes in cool-climate Syrah?",
     "options": [
@@ -4239,8 +4239,8 @@
   {
     "id": "GV-165",
     "domain": "grape_varieties",
-    "difficulty": 1150,
-    "level": 6,
+    "difficulty": 1039,
+    "level": 5,
     "format": "match_pairs",
     "question": "Match each grape variety with its characteristic tannin profile:",
     "pairs": {
@@ -4276,8 +4276,8 @@
   {
     "id": "GV-166",
     "domain": "grape_varieties",
-    "difficulty": 1100,
-    "level": 6,
+    "difficulty": 920,
+    "level": 5,
     "format": "multiple_choice",
     "question": "Which grape variety is known for its susceptibility to millerandage (uneven berry development) due to poor fruit set?",
     "options": [
@@ -4300,8 +4300,8 @@
   {
     "id": "GV-167",
     "domain": "grape_varieties",
-    "difficulty": 950,
-    "level": 5,
+    "difficulty": 761,
+    "level": 4,
     "format": "scenario",
     "question": "A restaurant customer wants a white wine with 'mineral-driven character and electric acidity' to pair with raw oysters. They specifically mention loving wines from Austria's Wachau region. Which grape variety should you recommend?",
     "options": [
@@ -4324,8 +4324,8 @@
   {
     "id": "GV-168",
     "domain": "grape_varieties",
-    "difficulty": 1200,
-    "level": 6,
+    "difficulty": 970,
+    "level": 5,
     "format": "odd_one_out",
     "question": "Which of these grape varieties does NOT typically produce wines with significant phenolic bitterness requiring careful extraction management?",
     "options": [
@@ -4348,8 +4348,8 @@
   {
     "id": "GV-169",
     "domain": "grape_varieties",
-    "difficulty": 1100,
-    "level": 6,
+    "difficulty": 974,
+    "level": 5,
     "format": "multiple_choice",
     "question": "Which grape variety is confirmed through DNA analysis to be the offspring of Pinot Noir and Gouais Blanc?",
     "options": [
@@ -4372,8 +4372,8 @@
   {
     "id": "GV-170",
     "domain": "grape_varieties",
-    "difficulty": 1000,
-    "level": 5,
+    "difficulty": 817,
+    "level": 4,
     "format": "multiple_choice",
     "question": "Which grape variety is known for producing wines with distinctive 'violet' and 'rose petal' primary aromatics?",
     "options": [
@@ -4396,8 +4396,8 @@
   {
     "id": "GV-171",
     "domain": "grape_varieties",
-    "difficulty": 1250,
-    "level": 6,
+    "difficulty": 1032,
+    "level": 5,
     "format": "scenario",
     "question": "A viticulturist in Sicily's Mount Etna region wants to plant a red variety that can handle volcanic soils, high altitude, and strong diurnal temperature variation while producing elegant, mineral-driven wines. Which variety would be most suitable?",
     "options": [
@@ -4420,8 +4420,8 @@
   {
     "id": "GV-172",
     "domain": "grape_varieties",
-    "difficulty": 950,
-    "level": 5,
+    "difficulty": 732,
+    "level": 4,
     "format": "multiple_choice",
     "question": "Which grape variety is known for its distinctive 'grapefruit' and 'elderflower' primary aromatics, particularly when grown in cool maritime climates?",
     "options": [
@@ -4444,8 +4444,8 @@
   {
     "id": "GV-173",
     "domain": "grape_varieties",
-    "difficulty": 1050,
-    "level": 5,
+    "difficulty": 793,
+    "level": 4,
     "format": "odd_one_out",
     "question": "Which of these grape varieties does NOT typically require warm to hot growing conditions to achieve full phenolic ripeness?",
     "options": [
@@ -4468,8 +4468,8 @@
   {
     "id": "GV-174",
     "domain": "grape_varieties",
-    "difficulty": 1000,
-    "level": 5,
+    "difficulty": 756,
+    "level": 4,
     "format": "multiple_choice",
     "question": "Which grape variety is known for producing wines with naturally high levels of tartaric acid, contributing to exceptional aging potential?",
     "options": [
@@ -4492,8 +4492,8 @@
   {
     "id": "GV-175",
     "domain": "grape_varieties",
-    "difficulty": 1080,
-    "level": 5,
+    "difficulty": 797,
+    "level": 4,
     "format": "match_pairs",
     "question": "Match each grape variety with its most characteristic skin thickness:",
     "pairs": {
@@ -4530,8 +4530,8 @@
   {
     "id": "GV-176",
     "domain": "grape_varieties",
-    "difficulty": 920,
-    "level": 5,
+    "difficulty": 852,
+    "level": 4,
     "format": "scenario",
     "question": "A customer asks for a white wine with 'smoky mineral character and the ability to pair with both shellfish and aged cheeses.' They mention loving wines that develop complexity over decades. Which variety would be your best recommendation?",
     "options": [
@@ -4554,8 +4554,8 @@
   {
     "id": "GV-177",
     "domain": "grape_varieties",
-    "difficulty": 1120,
-    "level": 6,
+    "difficulty": 950,
+    "level": 5,
     "format": "multiple_choice",
     "question": "Which compound is primarily responsible for the distinctive 'violet' aroma in young Malbec wines?",
     "options": [
@@ -4578,8 +4578,8 @@
   {
     "id": "GV-178",
     "domain": "grape_varieties",
-    "difficulty": 1200,
-    "level": 6,
+    "difficulty": 1017,
+    "level": 5,
     "format": "odd_one_out",
     "question": "Which of these grape varieties does NOT typically develop significant botrytis susceptibility in humid conditions?",
     "options": [
@@ -4602,8 +4602,8 @@
   {
     "id": "GV-179",
     "domain": "grape_varieties",
-    "difficulty": 1150,
-    "level": 6,
+    "difficulty": 1047,
+    "level": 5,
     "format": "multiple_choice",
     "question": "Which Greek grape variety is known for producing wines with exceptional minerality on volcanic soils, particularly on Santorini?",
     "options": [
@@ -4626,8 +4626,8 @@
   {
     "id": "GV-180",
     "domain": "grape_varieties",
-    "difficulty": 1080,
-    "level": 6,
+    "difficulty": 979,
+    "level": 5,
     "format": "match_pairs",
     "question": "Match each grape variety with its confirmed DNA parent variety:",
     "pairs": {
@@ -4664,8 +4664,8 @@
   {
     "id": "GV-181",
     "domain": "grape_varieties",
-    "difficulty": 980,
-    "level": 5,
+    "difficulty": 756,
+    "level": 4,
     "format": "scenario",
     "question": "A winemaker in Oregon's Willamette Valley wants to plant a red variety that can handle the region's cool, wet springs and moderate summers while producing elegant, age-worthy wines with bright acidity. Which variety would be most suitable?",
     "options": [
@@ -4688,8 +4688,8 @@
   {
     "id": "GV-182",
     "domain": "grape_varieties",
-    "difficulty": 1040,
-    "level": 5,
+    "difficulty": 744,
+    "level": 4,
     "format": "multiple_choice",
     "question": "Which grape variety is known for its distinctive 'white pepper' and 'olive tapenade' aromatics, particularly when grown in warm Mediterranean climates?",
     "options": [
@@ -4712,8 +4712,8 @@
   {
     "id": "GV-183",
     "domain": "grape_varieties",
-    "difficulty": 1160,
-    "level": 6,
+    "difficulty": 1015,
+    "level": 5,
     "format": "multiple_choice",
     "question": "Which Austrian grape variety is known for producing wines with distinctive 'white pepper' spice and exceptional minerality, particularly in the Wachau region?",
     "options": [
@@ -4736,8 +4736,8 @@
   {
     "id": "GV-184",
     "domain": "grape_varieties",
-    "difficulty": 1020,
-    "level": 5,
+    "difficulty": 786,
+    "level": 4,
     "format": "odd_one_out",
     "question": "Which of these grape varieties does NOT typically develop significant 'barnyard' or 'gamey' characteristics with extended bottle aging?",
     "options": [
@@ -4760,8 +4760,8 @@
   {
     "id": "GV-185",
     "domain": "grape_varieties",
-    "difficulty": 1180,
-    "level": 6,
+    "difficulty": 1037,
+    "level": 5,
     "format": "match_pairs",
     "question": "Match each grape variety with its most characteristic viticultural challenge:",
     "pairs": {
@@ -4798,8 +4798,8 @@
   {
     "id": "GV-186",
     "domain": "grape_varieties",
-    "difficulty": 1100,
-    "level": 6,
+    "difficulty": 1057,
+    "level": 5,
     "format": "scenario",
     "question": "A sommelier needs to recommend a red wine for a customer who loves 'earthy, mushroom-driven wines with firm tannins' but wants something different from their usual Barolo. The wine should have similar aging potential and structure. Which grape variety would be the best alternative?",
     "options": [
@@ -4822,8 +4822,8 @@
   {
     "id": "GV-187",
     "domain": "grape_varieties",
-    "difficulty": 950,
-    "level": 5,
+    "difficulty": 819,
+    "level": 4,
     "format": "multiple_choice",
     "question": "Which grape variety is known for its characteristic 'cat's pee' aroma when grown in cool climates, particularly noticeable in young wines?",
     "options": [
@@ -4845,8 +4845,8 @@
   {
     "id": "GV-188",
     "domain": "grape_varieties",
-    "difficulty": 1000,
-    "level": 5,
+    "difficulty": 773,
+    "level": 4,
     "format": "odd_one_out",
     "question": "Which of these grape varieties does NOT typically produce wines with naturally high acidity levels?",
     "options": [
@@ -4868,8 +4868,8 @@
   {
     "id": "GV-189",
     "domain": "grape_varieties",
-    "difficulty": 1050,
-    "level": 5,
+    "difficulty": 740,
+    "level": 4,
     "format": "match_pairs",
     "question": "Match each grape variety with its most characteristic climate requirement:",
     "pairs": {
@@ -4905,8 +4905,8 @@
   {
     "id": "GV-190",
     "domain": "grape_varieties",
-    "difficulty": 980,
-    "level": 5,
+    "difficulty": 762,
+    "level": 4,
     "format": "scenario",
     "question": "A customer wants a red wine with 'bright red fruit character and low tannins' for a salmon dish. Which grape variety would be your best recommendation?",
     "options": [
@@ -4928,8 +4928,8 @@
   {
     "id": "GV-191",
     "domain": "grape_varieties",
-    "difficulty": 1020,
-    "level": 5,
+    "difficulty": 867,
+    "level": 4,
     "format": "multiple_choice",
     "question": "Which grape variety is known for producing wines with the highest natural sugar levels at harvest, often requiring careful timing to avoid over-ripeness?",
     "options": [
@@ -4951,8 +4951,8 @@
   {
     "id": "GV-192",
     "domain": "grape_varieties",
-    "difficulty": 1080,
-    "level": 5,
+    "difficulty": 782,
+    "level": 4,
     "format": "multiple_choice",
     "question": "Which Italian grape variety is famous for producing wines with naturally high tannins and requires extended aging to become approachable?",
     "options": [
@@ -4974,8 +4974,8 @@
   {
     "id": "GV-193",
     "domain": "grape_varieties",
-    "difficulty": 950,
-    "level": 5,
+    "difficulty": 813,
+    "level": 4,
     "format": "odd_one_out",
     "question": "Which of these grape varieties does NOT typically develop honeyed characteristics with age?",
     "options": [
@@ -4997,8 +4997,8 @@
   {
     "id": "GV-194",
     "domain": "grape_varieties",
-    "difficulty": 1100,
-    "level": 5,
+    "difficulty": 832,
+    "level": 4,
     "format": "multiple_choice",
     "question": "Which grape variety is known for its distinctive 'smoky' or 'gunflint' minerality, particularly when grown on volcanic soils?",
     "options": [
@@ -5020,8 +5020,8 @@
   {
     "id": "GV-195",
     "domain": "grape_varieties",
-    "difficulty": 1050,
-    "level": 6,
+    "difficulty": 1017,
+    "level": 5,
     "format": "match_pairs",
     "question": "Match each grape variety with its characteristic bunch structure:",
     "pairs": {
@@ -5057,8 +5057,8 @@
   {
     "id": "GV-196",
     "domain": "grape_varieties",
-    "difficulty": 1150,
-    "level": 6,
+    "difficulty": 994,
+    "level": 5,
     "format": "multiple_choice",
     "question": "Which compound is primarily responsible for the distinctive 'eucalyptus' aroma sometimes found in warm-climate Cabernet Sauvignon?",
     "options": [
@@ -5080,8 +5080,8 @@
   {
     "id": "GV-197",
     "domain": "grape_varieties",
-    "difficulty": 1200,
-    "level": 6,
+    "difficulty": 1025,
+    "level": 5,
     "format": "scenario",
     "question": "A winemaker in Chile's Maipo Valley notices their Carmenère developing excessive herbaceous character. What viticultural adjustment would most likely improve fruit ripeness?",
     "options": [
@@ -5103,8 +5103,8 @@
   {
     "id": "GV-198",
     "domain": "grape_varieties",
-    "difficulty": 1080,
-    "level": 6,
+    "difficulty": 991,
+    "level": 5,
     "format": "odd_one_out",
     "question": "Which of these grape varieties does NOT typically show significant vintage variation in quality?",
     "options": [
@@ -5126,8 +5126,8 @@
   {
     "id": "GV-199",
     "domain": "grape_varieties",
-    "difficulty": 1250,
-    "level": 6,
+    "difficulty": 1021,
+    "level": 5,
     "format": "multiple_choice",
     "question": "Which grape variety shows the most dramatic difference in character between cool and warm climate expressions?",
     "options": [
@@ -5149,8 +5149,8 @@
   {
     "id": "GV-200",
     "domain": "grape_varieties",
-    "difficulty": 1180,
-    "level": 6,
+    "difficulty": 1027,
+    "level": 5,
     "format": "match_pairs",
     "question": "Match each grape variety with its characteristic skin thickness:",
     "pairs": {
@@ -5186,8 +5186,8 @@
   {
     "id": "GV-201",
     "domain": "grape_varieties",
-    "difficulty": 1120,
-    "level": 6,
+    "difficulty": 1000,
+    "level": 5,
     "format": "scenario",
     "question": "A sommelier needs to recommend a white wine for a customer who 'loves the texture of aged white Burgundy but wants something more aromatic and exotic.' Which variety would be the best match?",
     "options": [
@@ -5209,8 +5209,8 @@
   {
     "id": "GV-202",
     "domain": "grape_varieties",
-    "difficulty": 950,
-    "level": 5,
+    "difficulty": 865,
+    "level": 4,
     "format": "multiple_choice",
     "question": "Which grape variety is confirmed through DNA analysis to be a mutation of Pinot Noir?",
     "options": [
@@ -5232,8 +5232,8 @@
   {
     "id": "GV-203",
     "domain": "grape_varieties",
-    "difficulty": 1050,
-    "level": 5,
+    "difficulty": 876,
+    "level": 4,
     "format": "odd_one_out",
     "question": "Which of these grape varieties does NOT typically produce wines with naturally high acidity levels?",
     "options": [
@@ -5255,8 +5255,8 @@
   {
     "id": "GV-204",
     "domain": "grape_varieties",
-    "difficulty": 1150,
-    "level": 6,
+    "difficulty": 1019,
+    "level": 5,
     "format": "match_pairs",
     "question": "Match each grape variety with its most characteristic primary aromatic descriptor:",
     "pairs": {
@@ -5292,8 +5292,8 @@
   {
     "id": "GV-205",
     "domain": "grape_varieties",
-    "difficulty": 1350,
-    "level": 7,
+    "difficulty": 1145,
+    "level": 6,
     "format": "multiple_choice",
     "question": "Which grape variety is confirmed through DNA analysis to be a natural crossing of Traminer and an unknown variety, resulting in its distinctive aromatic intensity?",
     "options": [
@@ -5315,8 +5315,8 @@
   {
     "id": "GV-206",
     "domain": "grape_varieties",
-    "difficulty": 1400,
-    "level": 7,
+    "difficulty": 1155,
+    "level": 6,
     "format": "odd_one_out",
     "question": "Which of these grape varieties does NOT typically require warm to hot growing conditions to achieve full phenolic ripeness?",
     "options": [
@@ -5338,8 +5338,8 @@
   {
     "id": "GV-207",
     "domain": "grape_varieties",
-    "difficulty": 1450,
-    "level": 7,
+    "difficulty": 1170,
+    "level": 6,
     "format": "multiple_choice",
     "question": "Which grape variety is known for its susceptibility to coulure (poor fruit set), often resulting in naturally low yields?",
     "options": [
@@ -5361,8 +5361,8 @@
   {
     "id": "GV-208",
     "domain": "grape_varieties",
-    "difficulty": 1380,
-    "level": 7,
+    "difficulty": 1231,
+    "level": 6,
     "format": "match_pairs",
     "question": "Match each grape variety with its characteristic primary aromatic descriptor:",
     "pairs": {
@@ -5398,8 +5398,8 @@
   {
     "id": "GV-209",
     "domain": "grape_varieties",
-    "difficulty": 1420,
-    "level": 7,
+    "difficulty": 1253,
+    "level": 6,
     "format": "multiple_choice",
     "question": "Which grape variety typically produces wines with the highest natural tannin levels, often requiring extended aging to become approachable?",
     "options": [
@@ -5421,8 +5421,8 @@
   {
     "id": "GV-210",
     "domain": "grape_varieties",
-    "difficulty": 1360,
-    "level": 7,
+    "difficulty": 1254,
+    "level": 6,
     "format": "scenario",
     "question": "A customer asks for a white wine with 'racy acidity and mineral precision' to pair with raw shellfish. They specifically mention loving wines from Germany's Mosel region. Which grape variety should you recommend?",
     "options": [
@@ -5445,8 +5445,8 @@
   {
     "id": "GV-211",
     "domain": "grape_varieties",
-    "difficulty": 1440,
-    "level": 7,
+    "difficulty": 1202,
+    "level": 6,
     "format": "multiple_choice",
     "question": "Which compound is primarily responsible for the distinctive 'black pepper' spice notes characteristic of cool-climate Syrah?",
     "options": [
@@ -5469,8 +5469,8 @@
   {
     "id": "GV-212",
     "domain": "grape_varieties",
-    "difficulty": 1390,
-    "level": 7,
+    "difficulty": 1235,
+    "level": 6,
     "format": "odd_one_out",
     "question": "Which of these grape varieties does NOT typically develop significant botrytis susceptibility in humid conditions?",
     "options": [
@@ -5492,8 +5492,8 @@
   {
     "id": "GV-213",
     "domain": "grape_varieties",
-    "difficulty": 1410,
-    "level": 7,
+    "difficulty": 1162,
+    "level": 6,
     "format": "multiple_choice",
     "question": "Which grape variety is known for producing wines with naturally high levels of malic acid, contributing to their characteristic bright acidity?",
     "options": [
@@ -5515,8 +5515,8 @@
   {
     "id": "GV-214",
     "domain": "grape_varieties",
-    "difficulty": 1370,
-    "level": 7,
+    "difficulty": 1261,
+    "level": 6,
     "format": "match_pairs",
     "question": "Match each grape variety with its characteristic skin thickness:",
     "pairs": {
@@ -5552,8 +5552,8 @@
   {
     "id": "GV-215",
     "domain": "grape_varieties",
-    "difficulty": 1430,
-    "level": 7,
+    "difficulty": 1139,
+    "level": 6,
     "format": "scenario",
     "question": "A winemaker in Burgundy notices their Pinot Noir developing excessive vegetal character. What viticultural factor is most likely causing this issue?",
     "options": [
@@ -5575,8 +5575,8 @@
   {
     "id": "GV-216",
     "domain": "grape_varieties",
-    "difficulty": 1350,
-    "level": 7,
+    "difficulty": 1180,
+    "level": 6,
     "format": "multiple_choice",
     "question": "Which grape variety is confirmed through DNA analysis to be a natural crossing of Cabernet Franc and Sauvignon Blanc?",
     "options": [
@@ -5598,8 +5598,8 @@
   {
     "id": "GV-217",
     "domain": "grape_varieties",
-    "difficulty": 1480,
-    "level": 7,
+    "difficulty": 1125,
+    "level": 6,
     "format": "multiple_choice",
     "question": "Which Spanish grape variety is known for its exceptional ability to produce both young, fruity wines and complex, age-worthy expressions depending on winemaking approach?",
     "options": [
@@ -5621,8 +5621,8 @@
   {
     "id": "GV-218",
     "domain": "grape_varieties",
-    "difficulty": 1460,
-    "level": 7,
+    "difficulty": 1138,
+    "level": 6,
     "format": "odd_one_out",
     "question": "Which of these grape varieties does NOT typically show significant vintage variation in quality due to weather sensitivity?",
     "options": [
@@ -5644,8 +5644,8 @@
   {
     "id": "GV-219",
     "domain": "grape_varieties",
-    "difficulty": 1420,
-    "level": 7,
+    "difficulty": 1262,
+    "level": 6,
     "format": "scenario",
     "question": "A sommelier needs to recommend a red wine for a customer who loves 'bright red fruit character and silky tannins' for a duck breast dish. Which grape variety would be the best match?",
     "options": [
@@ -5667,8 +5667,8 @@
   {
     "id": "GV-220",
     "domain": "grape_varieties",
-    "difficulty": 1400,
-    "level": 7,
+    "difficulty": 1154,
+    "level": 6,
     "format": "multiple_choice",
     "question": "Which grape variety is known for producing wines with distinctive 'lychee' and 'rose petal' primary aromatics?",
     "options": [
@@ -5690,8 +5690,8 @@
   {
     "id": "GV-221",
     "domain": "grape_varieties",
-    "difficulty": 1350,
-    "level": 7,
+    "difficulty": 1183,
+    "level": 6,
     "format": "odd_one_out",
     "question": "Which of these grape varieties does NOT typically require extended maceration to extract sufficient color and tannin?",
     "options": [
@@ -5714,8 +5714,8 @@
   {
     "id": "GV-222",
     "domain": "grape_varieties",
-    "difficulty": 1450,
-    "level": 7,
+    "difficulty": 1200,
+    "level": 6,
     "format": "match_pairs",
     "question": "Match each grape variety with its characteristic harvest timing:",
     "pairs": {
@@ -5751,8 +5751,8 @@
   {
     "id": "GV-223",
     "domain": "grape_varieties",
-    "difficulty": 1380,
-    "level": 7,
+    "difficulty": 1243,
+    "level": 6,
     "format": "scenario",
     "question": "A customer requests a white wine with 'honeyed richness and the ability to age for decades' but wants something different from Riesling. Which variety would be your best recommendation?",
     "options": [
@@ -5774,8 +5774,8 @@
   {
     "id": "GV-224",
     "domain": "grape_varieties",
-    "difficulty": 1420,
-    "level": 7,
+    "difficulty": 1148,
+    "level": 6,
     "format": "multiple_choice",
     "question": "Which grape variety is confirmed through DNA analysis to be a parent of Cabernet Sauvignon?",
     "options": [
@@ -5797,8 +5797,8 @@
   {
     "id": "GV-225",
     "domain": "grape_varieties",
-    "difficulty": 1360,
-    "level": 7,
+    "difficulty": 1191,
+    "level": 6,
     "format": "multiple_choice",
     "question": "Which grape variety typically produces wines with the lowest alcohol levels when fully ripe?",
     "options": [
@@ -5820,8 +5820,8 @@
   {
     "id": "GV-226",
     "domain": "grape_varieties",
-    "difficulty": 1480,
-    "level": 7,
+    "difficulty": 1229,
+    "level": 6,
     "format": "odd_one_out",
     "question": "Which of these grape varieties does NOT typically develop significant 'petrol' or 'kerosene' aromatics with bottle aging?",
     "options": [
@@ -5843,8 +5843,8 @@
   {
     "id": "GV-227",
     "domain": "grape_varieties",
-    "difficulty": 1340,
-    "level": 7,
+    "difficulty": 1161,
+    "level": 6,
     "format": "multiple_choice",
     "question": "Which grape variety is known for its distinctive 'gooseberry' and 'passion fruit' primary aromatics?",
     "options": [
@@ -5866,8 +5866,8 @@
   {
     "id": "GV-228",
     "domain": "grape_varieties",
-    "difficulty": 1460,
-    "level": 7,
+    "difficulty": 1221,
+    "level": 6,
     "format": "match_pairs",
     "question": "Match each grape variety with its characteristic soil preference:",
     "pairs": {
@@ -5903,8 +5903,8 @@
   {
     "id": "GV-229",
     "domain": "grape_varieties",
-    "difficulty": 1390,
-    "level": 7,
+    "difficulty": 1265,
+    "level": 6,
     "format": "scenario",
     "question": "A winemaker in a cool climate region wants to plant a red variety that will ripen reliably while producing wines with bright acidity and food-friendly tannins. Which variety would be most suitable?",
     "options": [
@@ -5927,8 +5927,8 @@
   {
     "id": "GV-230",
     "domain": "grape_varieties",
-    "difficulty": 1440,
-    "level": 7,
+    "difficulty": 1243,
+    "level": 6,
     "format": "multiple_choice",
     "question": "Which grape variety is known for producing wines with naturally high levels of anthocyanins, contributing to exceptional color stability?",
     "options": [
@@ -5951,8 +5951,8 @@
   {
     "id": "GV-231",
     "domain": "grape_varieties",
-    "difficulty": 1370,
-    "level": 7,
+    "difficulty": 1135,
+    "level": 6,
     "format": "odd_one_out",
     "question": "Which of these grape varieties does NOT typically show significant vintage variation due to weather sensitivity?",
     "options": [
@@ -5974,8 +5974,8 @@
   {
     "id": "GV-232",
     "domain": "grape_varieties",
-    "difficulty": 1410,
-    "level": 7,
+    "difficulty": 1159,
+    "level": 6,
     "format": "multiple_choice",
     "question": "Which grape variety is known for its characteristic 'tar and roses' aromatic profile when grown in traditional regions?",
     "options": [
@@ -5997,8 +5997,8 @@
   {
     "id": "GV-233",
     "domain": "grape_varieties",
-    "difficulty": 1320,
-    "level": 7,
+    "difficulty": 1125,
+    "level": 6,
     "format": "scenario",
     "question": "A customer wants a white wine with 'crisp minerality and citrus precision' to pair with oysters. They specifically mention loving wines from France's Loire Valley. Which grape variety should you recommend?",
     "options": [
@@ -6021,8 +6021,8 @@
   {
     "id": "GV-234",
     "domain": "grape_varieties",
-    "difficulty": 1500,
-    "level": 7,
+    "difficulty": 1133,
+    "level": 6,
     "format": "match_pairs",
     "question": "Match each grape variety with its characteristic bunch compactness:",
     "pairs": {
@@ -6058,8 +6058,8 @@
   {
     "id": "GV-235",
     "domain": "grape_varieties",
-    "difficulty": 1400,
-    "level": 7,
+    "difficulty": 1121,
+    "level": 6,
     "format": "multiple_choice",
     "question": "Which grape variety is confirmed through DNA analysis to be a natural crossing of Gouais Blanc and Pinot Noir?",
     "options": [
@@ -6082,8 +6082,8 @@
   {
     "id": "GV-236",
     "domain": "grape_varieties",
-    "difficulty": 1350,
-    "level": 7,
+    "difficulty": 1225,
+    "level": 6,
     "format": "odd_one_out",
     "question": "Which of these grape varieties does NOT typically require warm to hot climates to achieve full phenolic ripeness?",
     "options": [
@@ -6105,8 +6105,8 @@
   {
     "id": "GV-237",
     "domain": "grape_varieties",
-    "difficulty": 1450,
-    "level": 7,
+    "difficulty": 1231,
+    "level": 6,
     "format": "match_pairs",
     "question": "Match each grape variety with its characteristic primary aromatic descriptor:",
     "pairs": {
@@ -6142,8 +6142,8 @@
   {
     "id": "GV-238",
     "domain": "grape_varieties",
-    "difficulty": 1380,
-    "level": 7,
+    "difficulty": 1233,
+    "level": 6,
     "format": "multiple_choice",
     "question": "Which grape variety is known for producing wines with naturally high levels of pyrazines, contributing to herbaceous characteristics?",
     "options": [
@@ -6166,8 +6166,8 @@
   {
     "id": "GV-239",
     "domain": "grape_varieties",
-    "difficulty": 1420,
-    "level": 7,
+    "difficulty": 1153,
+    "level": 6,
     "format": "scenario",
     "question": "A customer loves the 'bright acidity and floral elegance' of German Riesling but wants to try something from a warmer climate with similar aromatic intensity. Which variety would be your best recommendation?",
     "options": [
@@ -6190,8 +6190,8 @@
   {
     "id": "GV-240",
     "domain": "grape_varieties",
-    "difficulty": 1300,
-    "level": 7,
+    "difficulty": 1233,
+    "level": 6,
     "format": "multiple_choice",
     "question": "Which grape variety is known for its distinctive tight, small bunches that contribute to its naturally low yields?",
     "options": [
@@ -6214,8 +6214,8 @@
   {
     "id": "GV-241",
     "domain": "grape_varieties",
-    "difficulty": 1460,
-    "level": 7,
+    "difficulty": 1258,
+    "level": 6,
     "format": "odd_one_out",
     "question": "Which of these grape varieties does NOT typically develop significant secondary aromatics from malolactic fermentation?",
     "options": [
@@ -6238,8 +6238,8 @@
   {
     "id": "GV-242",
     "domain": "grape_varieties",
-    "difficulty": 1390,
-    "level": 7,
+    "difficulty": 1227,
+    "level": 6,
     "format": "multiple_choice",
     "question": "Which grape variety is confirmed through DNA analysis to be identical to Primitivo?",
     "options": [
@@ -6262,8 +6262,8 @@
   {
     "id": "GV-243",
     "domain": "grape_varieties",
-    "difficulty": 1350,
-    "level": 7,
+    "difficulty": 1257,
+    "level": 6,
     "format": "multiple_choice",
     "question": "Which grape variety is known for producing wines with naturally high tannins due to its thick skins and large pip-to-pulp ratio?",
     "options": [
@@ -6286,8 +6286,8 @@
   {
     "id": "GV-244",
     "domain": "grape_varieties",
-    "difficulty": 1480,
-    "level": 7,
+    "difficulty": 1212,
+    "level": 6,
     "format": "match_pairs",
     "question": "Match each grape variety with its characteristic ripening period:",
     "pairs": {
@@ -6324,8 +6324,8 @@
   {
     "id": "GV-245",
     "domain": "grape_varieties",
-    "difficulty": 1320,
-    "level": 7,
+    "difficulty": 1121,
+    "level": 6,
     "format": "scenario",
     "question": "A restaurant customer wants a red wine with 'soft, approachable tannins and bright fruit character' to pair with roasted chicken. Which grape variety would be most suitable?",
     "options": [
@@ -6348,8 +6348,8 @@
   {
     "id": "GV-246",
     "domain": "grape_varieties",
-    "difficulty": 1440,
-    "level": 7,
+    "difficulty": 1149,
+    "level": 6,
     "format": "multiple_choice",
     "question": "Which grape variety is known for its susceptibility to noble rot (Botrytis cinerea) due to its thin skin?",
     "options": [
@@ -6372,8 +6372,8 @@
   {
     "id": "GV-247",
     "domain": "grape_varieties",
-    "difficulty": 1360,
-    "level": 7,
+    "difficulty": 1251,
+    "level": 6,
     "format": "odd_one_out",
     "question": "Which of these grape varieties does NOT typically show significant vintage variation due to weather sensitivity?",
     "options": [
@@ -6396,8 +6396,8 @@
   {
     "id": "GV-248",
     "domain": "grape_varieties",
-    "difficulty": 1410,
-    "level": 7,
+    "difficulty": 1238,
+    "level": 6,
     "format": "multiple_choice",
     "question": "Which grape variety is known for producing wines with distinctive 'smoky' or 'bacon fat' characteristics, particularly when aged in oak?",
     "options": [
@@ -6420,8 +6420,8 @@
   {
     "id": "GV-249",
     "domain": "grape_varieties",
-    "difficulty": 1370,
-    "level": 7,
+    "difficulty": 1234,
+    "level": 6,
     "format": "multiple_choice",
     "question": "Which grape variety typically produces wines with the highest natural acidity levels when grown in cool climates?",
     "options": [
@@ -6444,8 +6444,8 @@
   {
     "id": "GV-250",
     "domain": "grape_varieties",
-    "difficulty": 1350,
-    "level": 7,
+    "difficulty": 1129,
+    "level": 6,
     "format": "multiple_choice",
     "question": "Which grape variety is known for its characteristic 'cat's pee' aroma when grown in cool climates, particularly on mineral soils?",
     "options": [
@@ -6467,8 +6467,8 @@
   {
     "id": "GV-251",
     "domain": "grape_varieties",
-    "difficulty": 1420,
-    "level": 7,
+    "difficulty": 1191,
+    "level": 6,
     "format": "odd_one_out",
     "question": "Which of these grape varieties does NOT typically require hot climates to achieve full phenolic ripeness?",
     "options": [
@@ -6490,8 +6490,8 @@
   {
     "id": "GV-252",
     "domain": "grape_varieties",
-    "difficulty": 1380,
-    "level": 7,
+    "difficulty": 1234,
+    "level": 6,
     "format": "match_pairs",
     "question": "Match each grape variety with its characteristic cluster size:",
     "pairs": {
@@ -6527,8 +6527,8 @@
   {
     "id": "GV-253",
     "domain": "grape_varieties",
-    "difficulty": 1450,
-    "level": 7,
+    "difficulty": 1227,
+    "level": 6,
     "format": "multiple_choice",
     "question": "Which grape variety is confirmed through DNA analysis to be a parent of Merlot?",
     "options": [
@@ -6551,8 +6551,8 @@
   {
     "id": "GV-254",
     "domain": "grape_varieties",
-    "difficulty": 1400,
-    "level": 7,
+    "difficulty": 1168,
+    "level": 6,
     "format": "scenario",
     "question": "A customer wants a white wine with 'bright acidity and stone fruit character' that pairs well with spicy Asian cuisine. They mention loving the texture of good Chablis but want more aromatic intensity. Which variety would be your best recommendation?",
     "options": [
@@ -6575,8 +6575,8 @@
   {
     "id": "GV-255",
     "domain": "grape_varieties",
-    "difficulty": 1320,
-    "level": 7,
+    "difficulty": 1152,
+    "level": 6,
     "format": "multiple_choice",
     "question": "Which grape variety is known for producing wines with naturally high levels of potassium, often requiring acidification in warm climates?",
     "options": [
@@ -6599,8 +6599,8 @@
   {
     "id": "GV-256",
     "domain": "grape_varieties",
-    "difficulty": 1480,
-    "level": 7,
+    "difficulty": 1236,
+    "level": 6,
     "format": "odd_one_out",
     "question": "Which of these grape varieties does NOT typically show significant noble rot susceptibility due to thin skins?",
     "options": [
@@ -6623,8 +6623,8 @@
   {
     "id": "GV-257",
     "domain": "grape_varieties",
-    "difficulty": 1360,
-    "level": 7,
+    "difficulty": 1259,
+    "level": 6,
     "format": "multiple_choice",
     "question": "Which grape variety is known for its distinctive 'violet' primary aromatics, particularly in cooler growing conditions?",
     "options": [
@@ -6647,8 +6647,8 @@
   {
     "id": "GV-258",
     "domain": "grape_varieties",
-    "difficulty": 1440,
-    "level": 7,
+    "difficulty": 1229,
+    "level": 6,
     "format": "match_pairs",
     "question": "Match each grape variety with its characteristic berry size:",
     "pairs": {
@@ -6684,8 +6684,8 @@
   {
     "id": "GV-259",
     "domain": "grape_varieties",
-    "difficulty": 1390,
-    "level": 7,
+    "difficulty": 1213,
+    "level": 6,
     "format": "scenario",
     "question": "A winemaker in a marginal climate region wants to plant a red variety that ripens early and produces wines with bright acidity and low tannins suitable for immediate consumption. Which variety would be most appropriate?",
     "options": [
@@ -6708,8 +6708,8 @@
   {
     "id": "GV-260",
     "domain": "grape_varieties",
-    "difficulty": 1470,
-    "level": 7,
+    "difficulty": 1144,
+    "level": 6,
     "format": "multiple_choice",
     "question": "Which grape variety is known for its susceptibility to spring frost damage due to early budbreak?",
     "options": [
@@ -6732,8 +6732,8 @@
   {
     "id": "GV-261",
     "domain": "grape_varieties",
-    "difficulty": 1410,
-    "level": 7,
+    "difficulty": 1187,
+    "level": 6,
     "format": "odd_one_out",
     "question": "Which of these grape varieties does NOT typically develop significant 'garrigue' or herbal characteristics in Mediterranean climates?",
     "options": [
@@ -6756,8 +6756,8 @@
   {
     "id": "GV-262",
     "domain": "grape_varieties",
-    "difficulty": 1350,
-    "level": 7,
+    "difficulty": 1271,
+    "level": 6,
     "format": "multiple_choice",
     "question": "Which grape variety is confirmed through DNA analysis to be a natural crossing of Pinot Noir and Gouais Blanc?",
     "options": [
@@ -6780,8 +6780,8 @@
   {
     "id": "GV-263",
     "domain": "grape_varieties",
-    "difficulty": 1430,
-    "level": 7,
+    "difficulty": 1179,
+    "level": 6,
     "format": "scenario",
     "question": "A customer loves the 'mineral precision and citrus intensity' of Sancerre but wants to explore a Spanish white wine with similar characteristics. Which variety would be your best recommendation?",
     "options": [
@@ -6804,8 +6804,8 @@
   {
     "id": "GV-264",
     "domain": "grape_varieties",
-    "difficulty": 1460,
-    "level": 7,
+    "difficulty": 1140,
+    "level": 6,
     "format": "match_pairs",
     "question": "Match each grape variety with its characteristic tannin structure:",
     "pairs": {
@@ -6841,8 +6841,8 @@
   {
     "id": "GV-265",
     "domain": "grape_varieties",
-    "difficulty": 1350,
-    "level": 7,
+    "difficulty": 1231,
+    "level": 6,
     "format": "multiple_choice",
     "question": "Which grape variety is known for producing wines with distinctive 'white pepper' and 'olive' primary aromatics, particularly when grown in cooler climates?",
     "options": [
@@ -6864,8 +6864,8 @@
   {
     "id": "GV-266",
     "domain": "grape_varieties",
-    "difficulty": 1400,
-    "level": 7,
+    "difficulty": 1125,
+    "level": 6,
     "format": "odd_one_out",
     "question": "Which of these white grape varieties does NOT typically develop significant honeyed characteristics with bottle aging?",
     "options": [
@@ -6887,8 +6887,8 @@
   {
     "id": "GV-267",
     "domain": "grape_varieties",
-    "difficulty": 1450,
-    "level": 7,
+    "difficulty": 1202,
+    "level": 6,
     "format": "match_pairs",
     "question": "Match each grape variety with its characteristic skin thickness:",
     "pairs": {
@@ -6924,8 +6924,8 @@
   {
     "id": "GV-268",
     "domain": "grape_varieties",
-    "difficulty": 1380,
-    "level": 7,
+    "difficulty": 1209,
+    "level": 6,
     "format": "multiple_choice",
     "question": "Which grape variety is confirmed through DNA analysis to be a natural crossing of Traminer and an unknown variety, giving it its distinctive spicy aromatics?",
     "options": [
@@ -6947,8 +6947,8 @@
   {
     "id": "GV-269",
     "domain": "grape_varieties",
-    "difficulty": 1420,
-    "level": 7,
+    "difficulty": 1196,
+    "level": 6,
     "format": "scenario",
     "question": "A winemaker in a warm climate region notices their Merlot consistently producing wines with jammy character and low acidity. Which viticultural adjustment would be most effective?",
     "options": [
@@ -6970,8 +6970,8 @@
   {
     "id": "GV-270",
     "domain": "grape_varieties",
-    "difficulty": 1480,
-    "level": 7,
+    "difficulty": 1223,
+    "level": 6,
     "format": "multiple_choice",
     "question": "Which grape variety is known for its naturally high malic acid content, contributing to its characteristic bright acidity even in warm climates?",
     "options": [
@@ -6993,8 +6993,8 @@
   {
     "id": "GV-271",
     "domain": "grape_varieties",
-    "difficulty": 1750,
-    "level": 9,
+    "difficulty": 1622,
+    "level": 8,
     "format": "multiple_choice",
     "question": "Which grape variety is confirmed through DNA analysis to be a natural crossing of Cabernet Franc and Sauvignon Blanc?",
     "options": [
@@ -7017,8 +7017,8 @@
   {
     "id": "GV-272",
     "domain": "grape_varieties",
-    "difficulty": 1820,
-    "level": 9,
+    "difficulty": 1571,
+    "level": 8,
     "format": "odd_one_out",
     "question": "Which of these grape varieties does NOT typically require extended skin contact to develop its characteristic color intensity?",
     "options": [
@@ -7041,8 +7041,8 @@
   {
     "id": "GV-273",
     "domain": "grape_varieties",
-    "difficulty": 1880,
-    "level": 9,
+    "difficulty": 1631,
+    "level": 8,
     "format": "match_pairs",
     "question": "Match each grape variety with its characteristic budbreak timing:",
     "pairs": {
@@ -7079,8 +7079,8 @@
   {
     "id": "GV-274",
     "domain": "grape_varieties",
-    "difficulty": 1790,
-    "level": 9,
+    "difficulty": 1635,
+    "level": 8,
     "format": "scenario",
     "question": "A sommelier needs to recommend a white wine with 'waxy texture and lanolin richness' that develops complex tertiary aromatics with age. The customer specifically wants something from France. Which variety should they choose?",
     "options": [
@@ -7103,8 +7103,8 @@
   {
     "id": "GV-275",
     "domain": "grape_varieties",
-    "difficulty": 1850,
-    "level": 9,
+    "difficulty": 1656,
+    "level": 8,
     "format": "multiple_choice",
     "question": "Which grape variety is known for producing wines with naturally high levels of resveratrol due to its thick skins?",
     "options": [
@@ -7127,8 +7127,8 @@
   {
     "id": "GV-276",
     "domain": "grape_varieties",
-    "difficulty": 1920,
-    "level": 10,
+    "difficulty": 1946,
+    "level": 9,
     "format": "multiple_choice",
     "question": "Which grape variety is confirmed through DNA analysis to be a natural crossing of Pinot Noir and Cinsaut?",
     "options": [
@@ -7151,8 +7151,8 @@
   {
     "id": "GV-277",
     "domain": "grape_varieties",
-    "difficulty": 1780,
-    "level": 9,
+    "difficulty": 1605,
+    "level": 8,
     "format": "odd_one_out",
     "question": "Which of these grape varieties does NOT typically show significant vintage variation due to consistent ripening patterns?",
     "options": [
@@ -7175,8 +7175,8 @@
   {
     "id": "GV-278",
     "domain": "grape_varieties",
-    "difficulty": 1950,
-    "level": 10,
+    "difficulty": 1822,
+    "level": 9,
     "format": "match_pairs",
     "question": "Match each grape variety with its characteristic anthocyanin profile:",
     "pairs": {
@@ -7213,8 +7213,8 @@
   {
     "id": "GV-279",
     "domain": "grape_varieties",
-    "difficulty": 1870,
-    "level": 9,
+    "difficulty": 1568,
+    "level": 8,
     "format": "scenario",
     "question": "A winemaker in a cool climate wants to produce a red wine with bright acidity, low tannins, and the ability to express terroir clearly. Which variety would be most suitable?",
     "options": [
@@ -7237,8 +7237,8 @@
   {
     "id": "GV-280",
     "domain": "grape_varieties",
-    "difficulty": 1940,
-    "level": 10,
+    "difficulty": 1850,
+    "level": 9,
     "format": "multiple_choice",
     "question": "Which grape variety is known for its distinctive 'rotundone' compound, contributing to black pepper aromatics?",
     "options": [
@@ -7261,8 +7261,8 @@
   {
     "id": "GV-281",
     "domain": "grape_varieties",
-    "difficulty": 1810,
-    "level": 9,
+    "difficulty": 1602,
+    "level": 8,
     "format": "odd_one_out",
     "question": "Which of these grape varieties does NOT typically develop significant botrytis susceptibility due to skin characteristics?",
     "options": [
@@ -7285,8 +7285,8 @@
   {
     "id": "GV-282",
     "domain": "grape_varieties",
-    "difficulty": 1890,
-    "level": 9,
+    "difficulty": 1675,
+    "level": 8,
     "format": "match_pairs",
     "question": "Match each grape variety with its characteristic clone or mutation:",
     "pairs": {
@@ -7323,8 +7323,8 @@
   {
     "id": "GV-283",
     "domain": "grape_varieties",
-    "difficulty": 1970,
-    "level": 10,
+    "difficulty": 1842,
+    "level": 9,
     "format": "scenario",
     "question": "A customer loves the 'mineral precision and electric acidity' of Austrian Riesling but wants to explore a Greek white wine with similar intensity and aging potential. Which variety should you recommend?",
     "options": [
@@ -7347,8 +7347,8 @@
   {
     "id": "GV-284",
     "domain": "grape_varieties",
-    "difficulty": 1860,
-    "level": 9,
+    "difficulty": 1591,
+    "level": 8,
     "format": "multiple_choice",
     "question": "Which grape variety is known for producing wines with naturally high levels of malic acid, contributing to bright acidity even in warm climates?",
     "options": [
@@ -7371,8 +7371,8 @@
   {
     "id": "GV-285",
     "domain": "grape_varieties",
-    "difficulty": 1930,
-    "level": 10,
+    "difficulty": 1877,
+    "level": 9,
     "format": "multiple_choice",
     "question": "Which grape variety is confirmed through DNA analysis to share parentage with Syrah, both being offspring of Mondeuse Blanche?",
     "options": [
@@ -7395,8 +7395,8 @@
   {
     "id": "GV-286",
     "domain": "grape_varieties",
-    "difficulty": 1750,
-    "level": 9,
+    "difficulty": 1665,
+    "level": 8,
     "format": "multiple_choice",
     "question": "Which grape variety is known for producing wines with distinctive 'lychee' and 'rose petal' primary aromatics due to its high levels of linalool and geraniol?",
     "options": [
@@ -7419,8 +7419,8 @@
   {
     "id": "GV-287",
     "domain": "grape_varieties",
-    "difficulty": 1850,
-    "level": 9,
+    "difficulty": 1523,
+    "level": 8,
     "format": "odd_one_out",
     "question": "Which of these grape varieties does NOT typically require extended hang time to develop complex phenolic compounds?",
     "options": [
@@ -7443,8 +7443,8 @@
   {
     "id": "GV-288",
     "domain": "grape_varieties",
-    "difficulty": 1900,
-    "level": 10,
+    "difficulty": 1968,
+    "level": 9,
     "format": "match_pairs",
     "question": "Match each grape variety with its confirmed DNA parentage:",
     "pairs": {
@@ -7481,8 +7481,8 @@
   {
     "id": "GV-289",
     "domain": "grape_varieties",
-    "difficulty": 1800,
-    "level": 9,
+    "difficulty": 1583,
+    "level": 8,
     "format": "scenario",
     "question": "A winemaker in Tasmania wants to plant a red variety that excels in cool, maritime conditions and can produce wines with bright acidity and silky tannins. Which variety would be most suitable?",
     "options": [
@@ -7505,8 +7505,8 @@
   {
     "id": "GV-290",
     "domain": "grape_varieties",
-    "difficulty": 1950,
-    "level": 10,
+    "difficulty": 1743,
+    "level": 9,
     "format": "multiple_choice",
     "question": "Which grape variety is known for producing wines with naturally high levels of anthocyanins but low levels of stable color compounds, resulting in wines that fade quickly without careful winemaking?",
     "options": [
@@ -7529,8 +7529,8 @@
   {
     "id": "GV-291",
     "domain": "grape_varieties",
-    "difficulty": 1750,
-    "level": 9,
+    "difficulty": 1594,
+    "level": 8,
     "format": "multiple_choice",
     "question": "Which white grape variety is particularly susceptible to potassium uptake, often requiring acidification in warm climates to maintain balance?",
     "options": [
@@ -7553,8 +7553,8 @@
   {
     "id": "GV-292",
     "domain": "grape_varieties",
-    "difficulty": 1880,
-    "level": 9,
+    "difficulty": 1600,
+    "level": 8,
     "format": "odd_one_out",
     "question": "Which of these grape varieties does NOT typically develop significant 'petrichor' or wet stone characteristics in cool, mineral-rich soils?",
     "options": [
@@ -7577,8 +7577,8 @@
   {
     "id": "GV-293",
     "domain": "grape_varieties",
-    "difficulty": 1920,
-    "level": 10,
+    "difficulty": 1917,
+    "level": 9,
     "format": "multiple_choice",
     "question": "Which grape variety contains the highest natural levels of resveratrol due to its thick skins and genetic predisposition to produce stilbene compounds?",
     "options": [
@@ -7601,8 +7601,8 @@
   {
     "id": "GV-294",
     "domain": "grape_varieties",
-    "difficulty": 1800,
-    "level": 9,
+    "difficulty": 1570,
+    "level": 8,
     "format": "scenario",
     "question": "A sommelier needs to recommend a Greek white wine with 'laser-like acidity and volcanic minerality' to pair with raw oysters. The customer specifically wants something that expresses volcanic terroir. Which variety should they choose?",
     "options": [
@@ -7625,8 +7625,8 @@
   {
     "id": "GV-295",
     "domain": "grape_varieties",
-    "difficulty": 1750,
-    "level": 9,
+    "difficulty": 1656,
+    "level": 8,
     "format": "match_pairs",
     "question": "Match each grape variety with its characteristic cluster compactness:",
     "pairs": {
@@ -7663,8 +7663,8 @@
   {
     "id": "GV-296",
     "domain": "grape_varieties",
-    "difficulty": 1850,
-    "level": 9,
+    "difficulty": 1541,
+    "level": 8,
     "format": "multiple_choice",
     "question": "Which grape variety is known for its distinctive 'graphite' and 'pencil shavings' tertiary aromatics that develop with extended bottle aging?",
     "options": [
@@ -7687,8 +7687,8 @@
   {
     "id": "GV-297",
     "domain": "grape_varieties",
-    "difficulty": 1920,
-    "level": 10,
+    "difficulty": 1918,
+    "level": 9,
     "format": "odd_one_out",
     "question": "Which of these grape varieties does NOT typically show significant vintage variation due to its consistent ripening characteristics?",
     "options": [
@@ -7711,8 +7711,8 @@
   {
     "id": "GV-298",
     "domain": "grape_varieties",
-    "difficulty": 1800,
-    "level": 9,
+    "difficulty": 1632,
+    "level": 8,
     "format": "scenario",
     "question": "A winemaker in Northern Italy wants to produce an age-worthy red wine with high acidity and firm tannins that can develop complex tertiary aromatics over decades. Which variety would be most appropriate for their goals?",
     "options": [
@@ -7735,8 +7735,8 @@
   {
     "id": "GV-299",
     "domain": "grape_varieties",
-    "difficulty": 1950,
-    "level": 10,
+    "difficulty": 1874,
+    "level": 9,
     "format": "multiple_choice",
     "question": "Which grape variety is confirmed through DNA analysis to be a natural crossing of Dureza and Mondeuse Blanche, both indigenous to the Northern Rhône region?",
     "options": [
@@ -7759,8 +7759,8 @@
   {
     "id": "GV-300",
     "domain": "grape_varieties",
-    "difficulty": 1780,
-    "level": 9,
+    "difficulty": 1526,
+    "level": 8,
     "format": "match_pairs",
     "question": "Match each grape variety with its characteristic skin-to-pulp ratio:",
     "pairs": {

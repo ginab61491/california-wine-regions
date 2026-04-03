@@ -2,7 +2,7 @@
   {
     "id": "GV-001",
     "domain": "grape_varieties",
-    "difficulty": 150,
+    "difficulty": 275,
     "level": 1,
     "format": "multiple_choice",
     "question": "What color wine does Chardonnay typically produce?",
@@ -25,7 +25,7 @@
   {
     "id": "GV-002",
     "domain": "grape_varieties",
-    "difficulty": 200,
+    "difficulty": 199,
     "level": 1,
     "format": "multiple_choice",
     "question": "Which of these is a red grape variety?",
@@ -48,7 +48,7 @@
   {
     "id": "GV-003",
     "domain": "grape_varieties",
-    "difficulty": 250,
+    "difficulty": 139,
     "level": 1,
     "format": "odd_one_out",
     "question": "Which of these grapes does NOT belong with the others?",
@@ -70,8 +70,8 @@
   {
     "id": "GV-004",
     "domain": "grape_varieties",
-    "difficulty": 350,
-    "level": 2,
+    "difficulty": 224,
+    "level": 1,
     "format": "multiple_choice",
     "question": "Which country is Malbec most associated with today?",
     "options": [
@@ -93,8 +93,8 @@
   {
     "id": "GV-005",
     "domain": "grape_varieties",
-    "difficulty": 400,
-    "level": 2,
+    "difficulty": 208,
+    "level": 1,
     "format": "multiple_choice",
     "question": "What is the primary aromatic characteristic of Sauvignon Blanc?",
     "options": [
@@ -116,8 +116,8 @@
   {
     "id": "GV-006",
     "domain": "grape_varieties",
-    "difficulty": 450,
-    "level": 2,
+    "difficulty": 145,
+    "level": 1,
     "format": "odd_one_out",
     "question": "Which grape does NOT belong with the others?",
     "options": [
@@ -139,8 +139,8 @@
   {
     "id": "GV-007",
     "domain": "grape_varieties",
-    "difficulty": 500,
-    "level": 3,
+    "difficulty": 384,
+    "level": 2,
     "format": "match_pairs",
     "question": "Match each grape variety to its classic region.",
     "pairs": {
@@ -176,8 +176,8 @@
   {
     "id": "GV-008",
     "domain": "grape_varieties",
-    "difficulty": 550,
-    "level": 3,
+    "difficulty": 406,
+    "level": 2,
     "format": "multiple_choice",
     "question": "Which grape variety is the primary component of red Burgundy?",
     "options": [
@@ -199,8 +199,8 @@
   {
     "id": "GV-009",
     "domain": "grape_varieties",
-    "difficulty": 600,
-    "level": 3,
+    "difficulty": 427,
+    "level": 2,
     "format": "multiple_choice",
     "question": "Which aromatic compound is responsible for the 'petrol' note in aged Riesling?",
     "options": [
@@ -222,8 +222,8 @@
   {
     "id": "GV-010",
     "domain": "grape_varieties",
-    "difficulty": 650,
-    "level": 3,
+    "difficulty": 356,
+    "level": 2,
     "format": "odd_one_out",
     "question": "Which grape is NOT typically part of a classic Bordeaux red blend?",
     "options": [
@@ -245,8 +245,8 @@
   {
     "id": "GV-011",
     "domain": "grape_varieties",
-    "difficulty": 700,
-    "level": 4,
+    "difficulty": 617,
+    "level": 3,
     "format": "multiple_choice",
     "question": "What is the DNA-confirmed parentage of Cabernet Sauvignon?",
     "options": [
@@ -269,8 +269,8 @@
   {
     "id": "GV-012",
     "domain": "grape_varieties",
-    "difficulty": 750,
-    "level": 4,
+    "difficulty": 522,
+    "level": 3,
     "format": "multiple_choice",
     "question": "Which soil type is traditionally considered ideal for Nebbiolo in the Langhe hills?",
     "options": [
@@ -293,8 +293,8 @@
   {
     "id": "GV-013",
     "domain": "grape_varieties",
-    "difficulty": 800,
-    "level": 4,
+    "difficulty": 522,
+    "level": 3,
     "format": "match_pairs",
     "question": "Match each grape variety to its DNA-confirmed parentage.",
     "pairs": {
@@ -329,8 +329,8 @@
   {
     "id": "GV-014",
     "domain": "grape_varieties",
-    "difficulty": 850,
-    "level": 4,
+    "difficulty": 593,
+    "level": 3,
     "format": "odd_one_out",
     "question": "Which grape does NOT have Pinot Noir as a confirmed parent?",
     "options": [
@@ -353,8 +353,8 @@
   {
     "id": "GV-015",
     "domain": "grape_varieties",
-    "difficulty": 900,
-    "level": 5,
+    "difficulty": 745,
+    "level": 4,
     "format": "multiple_choice",
     "question": "What is the aromatic compound rotundone responsible for in Syrah?",
     "options": [
@@ -378,8 +378,8 @@
   {
     "id": "GV-016",
     "domain": "grape_varieties",
-    "difficulty": 950,
-    "level": 5,
+    "difficulty": 834,
+    "level": 4,
     "format": "multiple_choice",
     "question": "Grüner Veltliner is a DNA-confirmed cross of Traminer and which other variety?",
     "options": [
@@ -402,8 +402,8 @@
   {
     "id": "GV-017",
     "domain": "grape_varieties",
-    "difficulty": 1000,
-    "level": 5,
+    "difficulty": 743,
+    "level": 4,
     "format": "match_pairs",
     "question": "Match each grape variety to its characteristic aromatic compound or marker.",
     "pairs": {
@@ -438,8 +438,8 @@
   {
     "id": "GV-018",
     "domain": "grape_varieties",
-    "difficulty": 1050,
-    "level": 5,
+    "difficulty": 752,
+    "level": 4,
     "format": "odd_one_out",
     "question": "Which variety is NOT classified as an aromatic grape?",
     "options": [
@@ -461,8 +461,8 @@
   {
     "id": "GV-019",
     "domain": "grape_varieties",
-    "difficulty": 1100,
-    "level": 6,
+    "difficulty": 986,
+    "level": 5,
     "format": "multiple_choice",
     "question": "Carmenère was long confused with Merlot in Chilean vineyards. When was it officially re-identified?",
     "options": [
@@ -485,8 +485,8 @@
   {
     "id": "GV-020",
     "domain": "grape_varieties",
-    "difficulty": 1150,
-    "level": 6,
+    "difficulty": 1000,
+    "level": 5,
     "format": "multiple_choice",
     "question": "Which grape variety is known as Cot in its homeland of Cahors?",
     "options": [
@@ -509,8 +509,8 @@
   {
     "id": "GV-021",
     "domain": "grape_varieties",
-    "difficulty": 1200,
-    "level": 6,
+    "difficulty": 1003,
+    "level": 5,
     "format": "match_pairs",
     "question": "Match each grape to its common synonym in another country.",
     "pairs": {
@@ -545,8 +545,8 @@
   {
     "id": "GV-022",
     "domain": "grape_varieties",
-    "difficulty": 1250,
-    "level": 6,
+    "difficulty": 1027,
+    "level": 5,
     "format": "odd_one_out",
     "question": "Which variety is NOT a confirmed progeny of Gouais Blanc?",
     "options": [
@@ -569,8 +569,8 @@
   {
     "id": "GV-023",
     "domain": "grape_varieties",
-    "difficulty": 1300,
-    "level": 7,
+    "difficulty": 1227,
+    "level": 6,
     "format": "multiple_choice",
     "question": "Which Burgundy Grand Cru vineyard is permitted to grow both Pinot Noir and Chardonnay?",
     "options": [
@@ -593,8 +593,8 @@
   {
     "id": "GV-024",
     "domain": "grape_varieties",
-    "difficulty": 1350,
-    "level": 7,
+    "difficulty": 1176,
+    "level": 6,
     "format": "multiple_choice",
     "question": "Touriga Nacional is considered the finest grape variety for Port. In which Portuguese region has it become increasingly important for table wines?",
     "options": [
@@ -617,8 +617,8 @@
   {
     "id": "GV-025",
     "domain": "grape_varieties",
-    "difficulty": 1400,
-    "level": 7,
+    "difficulty": 1167,
+    "level": 6,
     "format": "odd_one_out",
     "question": "Which grape is NOT one of the 13 varieties traditionally permitted in Châteauneuf-du-Pape?",
     "options": [
@@ -641,8 +641,8 @@
   {
     "id": "GV-026",
     "domain": "grape_varieties",
-    "difficulty": 1450,
-    "level": 7,
+    "difficulty": 1242,
+    "level": 6,
     "format": "match_pairs",
     "question": "Match each clone to its associated grape variety.",
     "pairs": {
@@ -677,8 +677,8 @@
   {
     "id": "GV-027",
     "domain": "grape_varieties",
-    "difficulty": 1500,
-    "level": 8,
+    "difficulty": 1391,
+    "level": 7,
     "format": "multiple_choice",
     "question": "Savagnin and Traminer have been confirmed by DNA analysis to be what relationship?",
     "options": [
@@ -702,8 +702,8 @@
   {
     "id": "GV-028",
     "domain": "grape_varieties",
-    "difficulty": 1550,
-    "level": 8,
+    "difficulty": 1473,
+    "level": 7,
     "format": "multiple_choice",
     "question": "Which grape variety, widely planted in Australia's Barossa Valley, was long called 'Mataro' before being identified as which variety?",
     "options": [
@@ -726,8 +726,8 @@
   {
     "id": "GV-029",
     "domain": "grape_varieties",
-    "difficulty": 1600,
-    "level": 8,
+    "difficulty": 1474,
+    "level": 7,
     "format": "odd_one_out",
     "question": "Which grape is NOT a member of the Trebbiano/Ugni Blanc family as confirmed by DNA?",
     "options": [
@@ -750,8 +750,8 @@
   {
     "id": "GV-030",
     "domain": "grape_varieties",
-    "difficulty": 1700,
-    "level": 9,
+    "difficulty": 1657,
+    "level": 8,
     "format": "multiple_choice",
     "question": "The grape Petit Manseng is prized in Jurançon for sweet wines. What is its confirmed relationship to Gros Manseng?",
     "options": [
@@ -774,8 +774,8 @@
   {
     "id": "GV-031",
     "domain": "grape_varieties",
-    "difficulty": 1750,
-    "level": 9,
+    "difficulty": 1542,
+    "level": 8,
     "format": "match_pairs",
     "question": "Match each Italian grape to its DNA-confirmed relationship.",
     "pairs": {
@@ -810,8 +810,8 @@
   {
     "id": "GV-032",
     "domain": "grape_varieties",
-    "difficulty": 1800,
-    "level": 9,
+    "difficulty": 1606,
+    "level": 8,
     "format": "multiple_choice",
     "question": "The grape Durif (Petite Sirah in the USA) was confirmed by DNA analysis to be a cross of which two varieties?",
     "options": [
@@ -834,8 +834,8 @@
   {
     "id": "GV-033",
     "domain": "grape_varieties",
-    "difficulty": 1900,
-    "level": 10,
+    "difficulty": 1759,
+    "level": 9,
     "format": "multiple_choice",
     "question": "Xinomavro, Greece's most important red grape, is grown primarily in which appellation?",
     "options": [
@@ -858,8 +858,8 @@
   {
     "id": "GV-034",
     "domain": "grape_varieties",
-    "difficulty": 1950,
-    "level": 10,
+    "difficulty": 1763,
+    "level": 9,
     "format": "odd_one_out",
     "question": "Which grape is NOT permitted in the DOC/DOCG regulations for Amarone della Valpolicella?",
     "options": [
@@ -882,8 +882,8 @@
   {
     "id": "GV-035",
     "domain": "grape_varieties",
-    "difficulty": 2000,
-    "level": 10,
+    "difficulty": 1838,
+    "level": 9,
     "format": "match_pairs",
     "question": "Match each rare grape variety to its region of primary cultivation.",
     "pairs": {
@@ -919,7 +919,7 @@
   {
     "id": "GV-036",
     "domain": "grape_varieties",
-    "difficulty": 300,
+    "difficulty": 247,
     "level": 1,
     "format": "multiple_choice",
     "question": "Which grape variety is most associated with Champagne's white sparkling wines?",
@@ -942,7 +942,7 @@
   {
     "id": "GV-037",
     "domain": "grape_varieties",
-    "difficulty": 180,
+    "difficulty": 144,
     "level": 1,
     "format": "odd_one_out",
     "question": "Which of these is NOT a grape variety?",
@@ -964,8 +964,8 @@
   {
     "id": "GV-038",
     "domain": "grape_varieties",
-    "difficulty": 380,
-    "level": 2,
+    "difficulty": 146,
+    "level": 1,
     "format": "match_pairs",
     "question": "Match each grape to the color of wine it typically produces.",
     "pairs": {
@@ -999,8 +999,8 @@
   {
     "id": "GV-039",
     "domain": "grape_varieties",
-    "difficulty": 480,
-    "level": 2,
+    "difficulty": 241,
+    "level": 1,
     "format": "multiple_choice",
     "question": "Which grape variety is most commonly associated with New Zealand?",
     "options": [
@@ -1022,8 +1022,8 @@
   {
     "id": "GV-040",
     "domain": "grape_varieties",
-    "difficulty": 520,
-    "level": 3,
+    "difficulty": 375,
+    "level": 2,
     "format": "multiple_choice",
     "question": "What is Tempranillo named after?",
     "options": [
@@ -1045,8 +1045,8 @@
   {
     "id": "GV-041",
     "domain": "grape_varieties",
-    "difficulty": 580,
-    "level": 3,
+    "difficulty": 407,
+    "level": 2,
     "format": "odd_one_out",
     "question": "Which grape variety is NOT native to Italy?",
     "options": [
@@ -1068,8 +1068,8 @@
   {
     "id": "GV-042",
     "domain": "grape_varieties",
-    "difficulty": 680,
-    "level": 3,
+    "difficulty": 376,
+    "level": 2,
     "format": "match_pairs",
     "question": "Match each grape variety to its primary aroma descriptor.",
     "pairs": {
@@ -1104,8 +1104,8 @@
   {
     "id": "GV-043",
     "domain": "grape_varieties",
-    "difficulty": 720,
-    "level": 4,
+    "difficulty": 577,
+    "level": 3,
     "format": "multiple_choice",
     "question": "Albariño is the signature white grape of which Spanish wine region?",
     "options": [
@@ -1128,8 +1128,8 @@
   {
     "id": "GV-044",
     "domain": "grape_varieties",
-    "difficulty": 780,
-    "level": 4,
+    "difficulty": 561,
+    "level": 3,
     "format": "odd_one_out",
     "question": "Which grape is NOT considered a 'noble rot' variety (regularly used to make botrytized sweet wines)?",
     "options": [
@@ -1151,8 +1151,8 @@
   {
     "id": "GV-045",
     "domain": "grape_varieties",
-    "difficulty": 920,
-    "level": 5,
+    "difficulty": 767,
+    "level": 4,
     "format": "multiple_choice",
     "question": "Chenin Blanc can produce virtually every style of white wine. In which Loire appellation can it produce dry, off-dry, sweet, and sparkling wines?",
     "options": [
@@ -1175,8 +1175,8 @@
   {
     "id": "GV-046",
     "domain": "grape_varieties",
-    "difficulty": 980,
-    "level": 5,
+    "difficulty": 868,
+    "level": 4,
     "format": "odd_one_out",
     "question": "Which grape is NOT a teinturier (red-fleshed) variety?",
     "options": [
@@ -1198,8 +1198,8 @@
   {
     "id": "GV-047",
     "domain": "grape_varieties",
-    "difficulty": 1130,
-    "level": 6,
+    "difficulty": 951,
+    "level": 5,
     "format": "multiple_choice",
     "question": "Which Greek grape variety is grown on the volcanic island of Santorini, often trained in basket-shaped 'kouloura' vines?",
     "options": [
@@ -1222,8 +1222,8 @@
   {
     "id": "GV-048",
     "domain": "grape_varieties",
-    "difficulty": 1180,
-    "level": 6,
+    "difficulty": 1052,
+    "level": 5,
     "format": "match_pairs",
     "question": "Match each grape to its signature South African expression.",
     "pairs": {
@@ -1258,8 +1258,8 @@
   {
     "id": "GV-049",
     "domain": "grape_varieties",
-    "difficulty": 1320,
-    "level": 7,
+    "difficulty": 1211,
+    "level": 6,
     "format": "multiple_choice",
     "question": "Which grape variety has the highest number of identified clones in France?",
     "options": [
@@ -1282,8 +1282,8 @@
   {
     "id": "GV-050",
     "domain": "grape_varieties",
-    "difficulty": 1380,
-    "level": 7,
+    "difficulty": 1168,
+    "level": 6,
     "format": "odd_one_out",
     "question": "Which grape is NOT permitted in Barolo DOCG?",
     "options": [
@@ -1306,8 +1306,8 @@
   {
     "id": "GV-051",
     "domain": "grape_varieties",
-    "difficulty": 1520,
-    "level": 8,
+    "difficulty": 1455,
+    "level": 7,
     "format": "multiple_choice",
     "question": "Which compound class is primarily responsible for the color stability of Tannat wines?",
     "options": [
@@ -1330,8 +1330,8 @@
   {
     "id": "GV-052",
     "domain": "grape_varieties",
-    "difficulty": 1580,
-    "level": 8,
+    "difficulty": 1386,
+    "level": 7,
     "format": "match_pairs",
     "question": "Match each Austrian grape to its primary region.",
     "pairs": {
@@ -1366,8 +1366,8 @@
   {
     "id": "GV-053",
     "domain": "grape_varieties",
-    "difficulty": 1720,
-    "level": 9,
+    "difficulty": 1566,
+    "level": 8,
     "format": "multiple_choice",
     "question": "Sagrantino, used in Montefalco Sagrantino DOCG, is notable for having exceptionally high levels of which phenolic compound?",
     "options": [
@@ -1390,8 +1390,8 @@
   {
     "id": "GV-054",
     "domain": "grape_varieties",
-    "difficulty": 1850,
-    "level": 9,
+    "difficulty": 1584,
+    "level": 8,
     "format": "odd_one_out",
     "question": "Which variety is NOT a confirmed progeny of Pinot Noir × Gouais Blanc?",
     "options": [
@@ -1414,8 +1414,8 @@
   {
     "id": "GV-055",
     "domain": "grape_varieties",
-    "difficulty": 2100,
-    "level": 10,
+    "difficulty": 1856,
+    "level": 9,
     "format": "multiple_choice",
     "question": "The obscure grape Completer, grown almost exclusively in Graubünden, Switzerland, was confirmed by DNA to be a natural cross of which two varieties?",
     "options": [
@@ -1439,7 +1439,7 @@
   {
     "id": "GV-056",
     "domain": "grape_varieties",
-    "difficulty": 160,
+    "difficulty": 203,
     "level": 1,
     "format": "multiple_choice",
     "question": "Pinot Noir is used to make which famous style of wine?",
@@ -1462,8 +1462,8 @@
   {
     "id": "GV-057",
     "domain": "grape_varieties",
-    "difficulty": 420,
-    "level": 2,
+    "difficulty": 211,
+    "level": 1,
     "format": "multiple_choice",
     "question": "Which grape variety is the most widely planted red grape in the world?",
     "options": [
@@ -1484,8 +1484,8 @@
   {
     "id": "GV-058",
     "domain": "grape_varieties",
-    "difficulty": 560,
-    "level": 3,
+    "difficulty": 410,
+    "level": 2,
     "format": "multiple_choice",
     "question": "What grape is Barolo made from?",
     "options": [
@@ -1508,8 +1508,8 @@
   {
     "id": "GV-059",
     "domain": "grape_varieties",
-    "difficulty": 640,
-    "level": 3,
+    "difficulty": 389,
+    "level": 2,
     "format": "multiple_choice",
     "question": "Melon de Bourgogne is the grape behind which Loire Valley wine?",
     "options": [
@@ -1531,8 +1531,8 @@
   {
     "id": "GV-060",
     "domain": "grape_varieties",
-    "difficulty": 820,
-    "level": 4,
+    "difficulty": 545,
+    "level": 3,
     "format": "match_pairs",
     "question": "Match each grape variety to the climate type where it thrives best.",
     "pairs": {
@@ -1567,8 +1567,8 @@
   {
     "id": "GV-061",
     "domain": "grape_varieties",
-    "difficulty": 1060,
-    "level": 5,
+    "difficulty": 759,
+    "level": 4,
     "format": "multiple_choice",
     "question": "Nerello Mascalese is the primary grape of wines produced on which Italian volcano?",
     "options": [
@@ -1591,8 +1591,8 @@
   {
     "id": "GV-062",
     "domain": "grape_varieties",
-    "difficulty": 1280,
-    "level": 6,
+    "difficulty": 984,
+    "level": 5,
     "format": "multiple_choice",
     "question": "Which white grape is the primary variety in Soave Classico DOCG?",
     "options": [
@@ -1615,8 +1615,8 @@
   {
     "id": "GV-063",
     "domain": "grape_varieties",
-    "difficulty": 1480,
-    "level": 7,
+    "difficulty": 1265,
+    "level": 6,
     "format": "multiple_choice",
     "question": "Which grape variety is known as Spätburgunder in Germany?",
     "options": [
@@ -1639,8 +1639,8 @@
   {
     "id": "GV-064",
     "domain": "grape_varieties",
-    "difficulty": 1650,
-    "level": 8,
+    "difficulty": 1406,
+    "level": 7,
     "format": "odd_one_out",
     "question": "Which variety is NOT a color mutation of Grenache?",
     "options": [
@@ -1662,8 +1662,8 @@
   {
     "id": "GV-065",
     "domain": "grape_varieties",
-    "difficulty": 1780,
-    "level": 9,
+    "difficulty": 1591,
+    "level": 8,
     "format": "multiple_choice",
     "question": "Furmint, the primary grape of Tokaji Aszú, has been confirmed by DNA to have a parent-offspring relationship with which variety?",
     "options": [
@@ -1687,8 +1687,8 @@
   {
     "id": "GV-066",
     "domain": "grape_varieties",
-    "difficulty": 2200,
-    "level": 10,
+    "difficulty": 1859,
+    "level": 9,
     "format": "multiple_choice",
     "question": "Which obscure Portuguese grape, used in white Port and Douro whites, is DNA-confirmed to be the same variety as Sercial of Madeira?",
     "options": [
@@ -1712,7 +1712,7 @@
   {
     "id": "GV-067",
     "domain": "grape_varieties",
-    "difficulty": 270,
+    "difficulty": 192,
     "level": 1,
     "format": "multiple_choice",
     "question": "Which of these grapes typically produces a full-bodied red wine?",
@@ -1735,8 +1735,8 @@
   {
     "id": "GV-068",
     "domain": "grape_varieties",
-    "difficulty": 340,
-    "level": 2,
+    "difficulty": 187,
+    "level": 1,
     "format": "odd_one_out",
     "question": "Which grape does NOT belong in a classic GSM blend?",
     "options": [
@@ -1758,8 +1758,8 @@
   {
     "id": "GV-069",
     "domain": "grape_varieties",
-    "difficulty": 1080,
-    "level": 5,
+    "difficulty": 794,
+    "level": 4,
     "format": "match_pairs",
     "question": "Match each grape variety to its viticultural challenge.",
     "pairs": {
@@ -1793,8 +1793,8 @@
   {
     "id": "GV-070",
     "domain": "grape_varieties",
-    "difficulty": 1420,
-    "level": 7,
+    "difficulty": 1136,
+    "level": 6,
     "format": "match_pairs",
     "question": "Match each grape to its key phenolic or structural characteristic.",
     "pairs": {
@@ -1829,8 +1829,8 @@
   {
     "id": "GV-071",
     "domain": "grape_varieties",
-    "difficulty": 1920,
-    "level": 10,
+    "difficulty": 1917,
+    "level": 9,
     "format": "odd_one_out",
     "question": "Which grape variety was NOT identified as a progeny of Teroldego through DNA analysis?",
     "options": [
@@ -1853,8 +1853,8 @@
   {
     "id": "GV-072",
     "domain": "grape_varieties",
-    "difficulty": 2300,
-    "level": 10,
+    "difficulty": 1776,
+    "level": 9,
     "format": "multiple_choice",
     "question": "What is the confirmed DNA parentage of Syrah?",
     "options": [
@@ -1877,8 +1877,8 @@
   {
     "id": "GV-073",
     "domain": "grape_varieties",
-    "difficulty": 1160,
-    "level": 6,
+    "difficulty": 1016,
+    "level": 5,
     "format": "multiple_choice",
     "question": "Agiorgitiko is the primary red grape of which Greek appellation?",
     "options": [
@@ -1900,8 +1900,8 @@
   {
     "id": "GV-074",
     "domain": "grape_varieties",
-    "difficulty": 1560,
-    "level": 8,
+    "difficulty": 1389,
+    "level": 7,
     "format": "multiple_choice",
     "question": "Vermentino, widely grown in Sardinia and Liguria, is the same variety as which Provençal grape?",
     "options": [
@@ -1925,8 +1925,8 @@
   {
     "id": "GV-075",
     "domain": "grape_varieties",
-    "difficulty": 2050,
-    "level": 10,
+    "difficulty": 1969,
+    "level": 9,
     "format": "match_pairs",
     "question": "Match each Hungarian grape to its role in Tokaji production.",
     "pairs": {
@@ -1962,7 +1962,7 @@
   {
     "id": "RA-001",
     "domain": "regions_appellations",
-    "difficulty": 150,
+    "difficulty": 157,
     "level": 1,
     "format": "multiple_choice",
     "question": "Which country is Bordeaux located in?",
@@ -1985,7 +1985,7 @@
   {
     "id": "RA-002",
     "domain": "regions_appellations",
-    "difficulty": 200,
+    "difficulty": 274,
     "level": 1,
     "format": "multiple_choice",
     "question": "Which country is most famous for Chianti wine?",
@@ -2009,7 +2009,7 @@
   {
     "id": "RA-003",
     "domain": "regions_appellations",
-    "difficulty": 280,
+    "difficulty": 254,
     "level": 1,
     "format": "odd_one_out",
     "question": "Which of these is NOT a wine-producing country?",
@@ -2031,8 +2031,8 @@
   {
     "id": "RA-004",
     "domain": "regions_appellations",
-    "difficulty": 320,
-    "level": 2,
+    "difficulty": 169,
+    "level": 1,
     "format": "multiple_choice",
     "question": "Napa Valley is located in which US state?",
     "options": [
@@ -2054,8 +2054,8 @@
   {
     "id": "RA-005",
     "domain": "regions_appellations",
-    "difficulty": 380,
-    "level": 2,
+    "difficulty": 165,
+    "level": 1,
     "format": "multiple_choice",
     "question": "What does 'DOC' stand for in Italian wine law?",
     "options": [
@@ -2077,8 +2077,8 @@
   {
     "id": "RA-006",
     "domain": "regions_appellations",
-    "difficulty": 450,
-    "level": 2,
+    "difficulty": 202,
+    "level": 1,
     "format": "odd_one_out",
     "question": "Which of these is NOT a French wine region?",
     "options": [
@@ -2100,8 +2100,8 @@
   {
     "id": "RA-007",
     "domain": "regions_appellations",
-    "difficulty": 500,
-    "level": 3,
+    "difficulty": 411,
+    "level": 2,
     "format": "match_pairs",
     "question": "Match each wine region to its country.",
     "pairs": {
@@ -2136,8 +2136,8 @@
   {
     "id": "RA-008",
     "domain": "regions_appellations",
-    "difficulty": 550,
-    "level": 3,
+    "difficulty": 437,
+    "level": 2,
     "format": "multiple_choice",
     "question": "Which Bordeaux appellation is on the Right Bank of the Gironde, known primarily for Merlot-based wines?",
     "options": [
@@ -2160,8 +2160,8 @@
   {
     "id": "RA-009",
     "domain": "regions_appellations",
-    "difficulty": 600,
-    "level": 3,
+    "difficulty": 432,
+    "level": 2,
     "format": "multiple_choice",
     "question": "In the Burgundy appellation hierarchy, which level is the highest?",
     "options": [
@@ -2184,8 +2184,8 @@
   {
     "id": "RA-010",
     "domain": "regions_appellations",
-    "difficulty": 680,
-    "level": 3,
+    "difficulty": 454,
+    "level": 2,
     "format": "odd_one_out",
     "question": "Which is NOT a sub-region of Bordeaux?",
     "options": [
@@ -2207,8 +2207,8 @@
   {
     "id": "RA-011",
     "domain": "regions_appellations",
-    "difficulty": 700,
-    "level": 4,
+    "difficulty": 604,
+    "level": 3,
     "format": "multiple_choice",
     "question": "How many classified growths (Crus Classés) are in the 1855 Bordeaux Classification of red wines?",
     "options": [
@@ -2230,8 +2230,8 @@
   {
     "id": "RA-012",
     "domain": "regions_appellations",
-    "difficulty": 750,
-    "level": 4,
+    "difficulty": 637,
+    "level": 3,
     "format": "multiple_choice",
     "question": "Which is the largest Burgundy Grand Cru vineyard by area?",
     "options": [
@@ -2253,8 +2253,8 @@
   {
     "id": "RA-013",
     "domain": "regions_appellations",
-    "difficulty": 800,
-    "level": 4,
+    "difficulty": 575,
+    "level": 3,
     "format": "match_pairs",
     "question": "Match each Italian DOCG to its primary grape variety.",
     "pairs": {
@@ -2290,8 +2290,8 @@
   {
     "id": "RA-014",
     "domain": "regions_appellations",
-    "difficulty": 870,
-    "level": 4,
+    "difficulty": 607,
+    "level": 3,
     "format": "odd_one_out",
     "question": "Which is NOT one of the five First Growth (Premier Cru) estates of the 1855 Bordeaux Classification?",
     "options": [
@@ -2313,8 +2313,8 @@
   {
     "id": "RA-015",
     "domain": "regions_appellations",
-    "difficulty": 900,
-    "level": 5,
+    "difficulty": 800,
+    "level": 4,
     "format": "multiple_choice",
     "question": "In Germany's Prädikat system, which level requires the highest must weight?",
     "options": [
@@ -2337,8 +2337,8 @@
   {
     "id": "RA-016",
     "domain": "regions_appellations",
-    "difficulty": 950,
-    "level": 5,
+    "difficulty": 841,
+    "level": 4,
     "format": "multiple_choice",
     "question": "Which Champagne term indicates a wine made exclusively from Pinot Noir and/or Pinot Meunier, with no Chardonnay?",
     "options": [
@@ -2360,8 +2360,8 @@
   {
     "id": "RA-017",
     "domain": "regions_appellations",
-    "difficulty": 1020,
-    "level": 5,
+    "difficulty": 775,
+    "level": 4,
     "format": "match_pairs",
     "question": "Match each Rhône appellation to its dominant style.",
     "pairs": {
@@ -2396,8 +2396,8 @@
   {
     "id": "RA-018",
     "domain": "regions_appellations",
-    "difficulty": 1080,
-    "level": 5,
+    "difficulty": 824,
+    "level": 4,
     "format": "odd_one_out",
     "question": "Which is NOT a Cru of Beaujolais?",
     "options": [
@@ -2419,8 +2419,8 @@
   {
     "id": "RA-019",
     "domain": "regions_appellations",
-    "difficulty": 1100,
-    "level": 6,
+    "difficulty": 1018,
+    "level": 5,
     "format": "multiple_choice",
     "question": "Priorat (DOCa) in Catalonia is known for its distinctive soil type called what?",
     "options": [
@@ -2444,8 +2444,8 @@
   {
     "id": "RA-020",
     "domain": "regions_appellations",
-    "difficulty": 1150,
-    "level": 6,
+    "difficulty": 973,
+    "level": 5,
     "format": "multiple_choice",
     "question": "In the Mosel, which village is home to the famous Wehlener Sonnenuhr vineyard?",
     "options": [
@@ -2468,8 +2468,8 @@
   {
     "id": "RA-021",
     "domain": "regions_appellations",
-    "difficulty": 1200,
-    "level": 6,
+    "difficulty": 985,
+    "level": 5,
     "format": "match_pairs",
     "question": "Match each Spanish region to its traditional aging classification minimum for Reserva red wines.",
     "pairs": {
@@ -2504,8 +2504,8 @@
   {
     "id": "RA-022",
     "domain": "regions_appellations",
-    "difficulty": 1280,
-    "level": 6,
+    "difficulty": 1050,
+    "level": 5,
     "format": "odd_one_out",
     "question": "Which is NOT a Grand Cru vineyard in Alsace?",
     "options": [
@@ -2527,8 +2527,8 @@
   {
     "id": "RA-023",
     "domain": "regions_appellations",
-    "difficulty": 1300,
-    "level": 7,
+    "difficulty": 1170,
+    "level": 6,
     "format": "multiple_choice",
     "question": "How many Grand Cru vineyards are there in Chablis?",
     "options": [
@@ -2550,8 +2550,8 @@
   {
     "id": "RA-024",
     "domain": "regions_appellations",
-    "difficulty": 1350,
-    "level": 7,
+    "difficulty": 1152,
+    "level": 6,
     "format": "multiple_choice",
     "question": "The AVA system in the United States requires what minimum percentage of grapes from the named AVA to appear on the label?",
     "options": [
@@ -2574,8 +2574,8 @@
   {
     "id": "RA-025",
     "domain": "regions_appellations",
-    "difficulty": 1400,
-    "level": 7,
+    "difficulty": 1166,
+    "level": 6,
     "format": "match_pairs",
     "question": "Match each Burgundy Grand Cru to its commune.",
     "pairs": {
@@ -2610,8 +2610,8 @@
   {
     "id": "RA-026",
     "domain": "regions_appellations",
-    "difficulty": 1450,
-    "level": 7,
+    "difficulty": 1243,
+    "level": 6,
     "format": "odd_one_out",
     "question": "Which commune is NOT in the Haut-Médoc containing a classified growth from 1855?",
     "options": [
@@ -2633,8 +2633,8 @@
   {
     "id": "RA-027",
     "domain": "regions_appellations",
-    "difficulty": 1500,
-    "level": 8,
+    "difficulty": 1412,
+    "level": 7,
     "format": "multiple_choice",
     "question": "In the Barolo DOCG, which two villages are generally considered to produce the most powerful, long-lived wines due to their Helvetian (Serravallian) soils?",
     "options": [
@@ -2657,8 +2657,8 @@
   {
     "id": "RA-028",
     "domain": "regions_appellations",
-    "difficulty": 1550,
-    "level": 8,
+    "difficulty": 1412,
+    "level": 7,
     "format": "multiple_choice",
     "question": "The Wachau wine region in Austria uses its own classification system instead of the standard Austrian wine law. What is the name of the driest, most powerful category?",
     "options": [
@@ -2680,8 +2680,8 @@
   {
     "id": "RA-029",
     "domain": "regions_appellations",
-    "difficulty": 1600,
-    "level": 8,
+    "difficulty": 1352,
+    "level": 7,
     "format": "match_pairs",
     "question": "Match each Champagne Grand Cru village to the grape it is most famous for.",
     "pairs": {
@@ -2716,8 +2716,8 @@
   {
     "id": "RA-030",
     "domain": "regions_appellations",
-    "difficulty": 1650,
-    "level": 8,
+    "difficulty": 1404,
+    "level": 7,
     "format": "odd_one_out",
     "question": "Which is NOT one of the 17 Grand Cru villages of Champagne?",
     "options": [
@@ -2739,8 +2739,8 @@
   {
     "id": "RA-031",
     "domain": "regions_appellations",
-    "difficulty": 1700,
-    "level": 9,
+    "difficulty": 1659,
+    "level": 8,
     "format": "multiple_choice",
     "question": "In the Jerez (Sherry) triangle, which soil type is most prized for growing Palomino grapes for fino sherry?",
     "options": [
@@ -2764,8 +2764,8 @@
   {
     "id": "RA-032",
     "domain": "regions_appellations",
-    "difficulty": 1750,
-    "level": 9,
+    "difficulty": 1630,
+    "level": 8,
     "format": "multiple_choice",
     "question": "Which Burgundy Premier Cru vineyard in Volnay is often considered the finest and most age-worthy of the commune?",
     "options": [
@@ -2787,8 +2787,8 @@
   {
     "id": "RA-033",
     "domain": "regions_appellations",
-    "difficulty": 1800,
-    "level": 9,
+    "difficulty": 1535,
+    "level": 8,
     "format": "match_pairs",
     "question": "Match each Barolo cru (MGA) to its commune.",
     "pairs": {
@@ -2824,8 +2824,8 @@
   {
     "id": "RA-034",
     "domain": "regions_appellations",
-    "difficulty": 1880,
-    "level": 9,
+    "difficulty": 1597,
+    "level": 8,
     "format": "odd_one_out",
     "question": "Which is NOT one of the original five communes of Barolo DOCG?",
     "options": [
@@ -2847,8 +2847,8 @@
   {
     "id": "RA-035",
     "domain": "regions_appellations",
-    "difficulty": 1900,
-    "level": 10,
+    "difficulty": 1829,
+    "level": 9,
     "format": "multiple_choice",
     "question": "The Saint-Émilion classification is revised periodically. In the 2012 revision, how many estates were promoted to Premier Grand Cru Classé A?",
     "options": [
@@ -2870,8 +2870,8 @@
   {
     "id": "RA-036",
     "domain": "regions_appellations",
-    "difficulty": 1980,
-    "level": 10,
+    "difficulty": 1800,
+    "level": 9,
     "format": "multiple_choice",
     "question": "The Kimmeridgian limestone that underlies Chablis also appears in which English wine region?",
     "options": [
@@ -2894,8 +2894,8 @@
   {
     "id": "RA-037",
     "domain": "regions_appellations",
-    "difficulty": 2050,
-    "level": 10,
+    "difficulty": 1860,
+    "level": 9,
     "format": "match_pairs",
     "question": "Match each Burgundy Grand Cru to its approximate size in hectares.",
     "pairs": {
@@ -2930,7 +2930,7 @@
   {
     "id": "RA-038",
     "domain": "regions_appellations",
-    "difficulty": 250,
+    "difficulty": 276,
     "level": 1,
     "format": "match_pairs",
     "question": "Match each wine to its country of origin.",
@@ -2965,7 +2965,7 @@
   {
     "id": "RA-039",
     "domain": "regions_appellations",
-    "difficulty": 170,
+    "difficulty": 163,
     "level": 1,
     "format": "multiple_choice",
     "question": "Champagne is a type of what?",
@@ -2988,8 +2988,8 @@
   {
     "id": "RA-040",
     "domain": "regions_appellations",
-    "difficulty": 430,
-    "level": 2,
+    "difficulty": 150,
+    "level": 1,
     "format": "multiple_choice",
     "question": "Which Italian wine region is Prosecco primarily produced in?",
     "options": [
@@ -3012,8 +3012,8 @@
   {
     "id": "RA-041",
     "domain": "regions_appellations",
-    "difficulty": 370,
-    "level": 2,
+    "difficulty": 212,
+    "level": 1,
     "format": "odd_one_out",
     "question": "Which is NOT a wine region?",
     "options": [
@@ -3034,8 +3034,8 @@
   {
     "id": "RA-042",
     "domain": "regions_appellations",
-    "difficulty": 530,
-    "level": 3,
+    "difficulty": 329,
+    "level": 2,
     "format": "multiple_choice",
     "question": "The Douro Valley is the home of which fortified wine?",
     "options": [
@@ -3058,8 +3058,8 @@
   {
     "id": "RA-043",
     "domain": "regions_appellations",
-    "difficulty": 620,
-    "level": 3,
+    "difficulty": 412,
+    "level": 2,
     "format": "match_pairs",
     "question": "Match each Loire Valley appellation to its primary grape.",
     "pairs": {
@@ -3093,8 +3093,8 @@
   {
     "id": "RA-044",
     "domain": "regions_appellations",
-    "difficulty": 660,
-    "level": 3,
+    "difficulty": 461,
+    "level": 2,
     "format": "odd_one_out",
     "question": "Which is NOT a sub-region of Burgundy?",
     "options": [
@@ -3116,8 +3116,8 @@
   {
     "id": "RA-045",
     "domain": "regions_appellations",
-    "difficulty": 730,
-    "level": 4,
+    "difficulty": 606,
+    "level": 3,
     "format": "multiple_choice",
     "question": "In Rioja, what is the minimum aging requirement for a Gran Reserva red wine?",
     "options": [
@@ -3140,8 +3140,8 @@
   {
     "id": "RA-046",
     "domain": "regions_appellations",
-    "difficulty": 770,
-    "level": 4,
+    "difficulty": 616,
+    "level": 3,
     "format": "multiple_choice",
     "question": "Which Napa Valley sub-AVA is known for its mountain Cabernet Sauvignon grown at high elevation on volcanic soils?",
     "options": [
@@ -3164,8 +3164,8 @@
   {
     "id": "RA-047",
     "domain": "regions_appellations",
-    "difficulty": 830,
-    "level": 4,
+    "difficulty": 552,
+    "level": 3,
     "format": "odd_one_out",
     "question": "Which is NOT a classified Sauternes property (1855 Classification)?",
     "options": [
@@ -3188,8 +3188,8 @@
   {
     "id": "RA-048",
     "domain": "regions_appellations",
-    "difficulty": 910,
-    "level": 5,
+    "difficulty": 818,
+    "level": 4,
     "format": "multiple_choice",
     "question": "What is the minimum percentage of Sangiovese required in Brunello di Montalcino DOCG?",
     "options": [
@@ -3212,8 +3212,8 @@
   {
     "id": "RA-049",
     "domain": "regions_appellations",
-    "difficulty": 970,
-    "level": 5,
+    "difficulty": 794,
+    "level": 4,
     "format": "match_pairs",
     "question": "Match each Alsace Grand Cru grape to whether it is permitted.",
     "pairs": {
@@ -3248,8 +3248,8 @@
   {
     "id": "RA-050",
     "domain": "regions_appellations",
-    "difficulty": 1040,
-    "level": 5,
+    "difficulty": 790,
+    "level": 4,
     "format": "odd_one_out",
     "question": "Which is NOT a style of Port wine?",
     "options": [
@@ -3271,8 +3271,8 @@
   {
     "id": "RA-051",
     "domain": "regions_appellations",
-    "difficulty": 1120,
-    "level": 6,
+    "difficulty": 945,
+    "level": 5,
     "format": "multiple_choice",
     "question": "In the Graves Classification of 1959, which château was classified for both red AND white wines?",
     "options": [
@@ -3295,8 +3295,8 @@
   {
     "id": "RA-052",
     "domain": "regions_appellations",
-    "difficulty": 1220,
-    "level": 6,
+    "difficulty": 997,
+    "level": 5,
     "format": "match_pairs",
     "question": "Match each New World region to its most distinctive climate influence.",
     "pairs": {
@@ -3331,8 +3331,8 @@
   {
     "id": "RA-053",
     "domain": "regions_appellations",
-    "difficulty": 1330,
-    "level": 7,
+    "difficulty": 1232,
+    "level": 6,
     "format": "multiple_choice",
     "question": "How many Grand Cru vineyards are there in the Côte de Nuits?",
     "options": [
@@ -3354,8 +3354,8 @@
   {
     "id": "RA-054",
     "domain": "regions_appellations",
-    "difficulty": 1370,
-    "level": 7,
+    "difficulty": 1190,
+    "level": 6,
     "format": "odd_one_out",
     "question": "Which commune in Burgundy does NOT have any Grand Cru vineyards?",
     "options": [
@@ -3377,8 +3377,8 @@
   {
     "id": "RA-055",
     "domain": "regions_appellations",
-    "difficulty": 1430,
-    "level": 7,
+    "difficulty": 1261,
+    "level": 6,
     "format": "match_pairs",
     "question": "Match each German wine region to its primary soil type.",
     "pairs": {
@@ -3413,8 +3413,8 @@
   {
     "id": "RA-056",
     "domain": "regions_appellations",
-    "difficulty": 1530,
-    "level": 8,
+    "difficulty": 1354,
+    "level": 7,
     "format": "multiple_choice",
     "question": "In the Côte Rôtie, the two most famous slopes are the Côte Brune and Côte Blonde. What is the traditional explanation for their names?",
     "options": [
@@ -3437,8 +3437,8 @@
   {
     "id": "RA-057",
     "domain": "regions_appellations",
-    "difficulty": 1620,
-    "level": 8,
+    "difficulty": 1460,
+    "level": 7,
     "format": "odd_one_out",
     "question": "Which is NOT a sub-zone of the Barbaresco DOCG?",
     "options": [
@@ -3460,8 +3460,8 @@
   {
     "id": "RA-058",
     "domain": "regions_appellations",
-    "difficulty": 1680,
-    "level": 8,
+    "difficulty": 1328,
+    "level": 7,
     "format": "match_pairs",
     "question": "Match each Bordeaux appellation to its predominant soil type.",
     "pairs": {
@@ -3496,8 +3496,8 @@
   {
     "id": "RA-059",
     "domain": "regions_appellations",
-    "difficulty": 1720,
-    "level": 9,
+    "difficulty": 1613,
+    "level": 8,
     "format": "multiple_choice",
     "question": "In Burgundy, the vineyard Les Amoureuses in Chambolle-Musigny is classified as Premier Cru. Why is it often considered Grand Cru quality?",
     "options": [
@@ -3520,8 +3520,8 @@
   {
     "id": "RA-060",
     "domain": "regions_appellations",
-    "difficulty": 1780,
-    "level": 9,
+    "difficulty": 1531,
+    "level": 8,
     "format": "odd_one_out",
     "question": "Which of these Napa Valley sub-AVAs is NOT a mountain/hillside appellation?",
     "options": [
@@ -3544,8 +3544,8 @@
   {
     "id": "RA-061",
     "domain": "regions_appellations",
-    "difficulty": 1840,
-    "level": 9,
+    "difficulty": 1601,
+    "level": 8,
     "format": "match_pairs",
     "question": "Match each Sherry style to its aging process.",
     "pairs": {
@@ -3581,8 +3581,8 @@
   {
     "id": "RA-062",
     "domain": "regions_appellations",
-    "difficulty": 1920,
-    "level": 10,
+    "difficulty": 1808,
+    "level": 9,
     "format": "multiple_choice",
     "question": "Which was the only château promoted from Second Growth to First Growth in the 1855 Bordeaux Classification?",
     "options": [
@@ -3604,8 +3604,8 @@
   {
     "id": "RA-063",
     "domain": "regions_appellations",
-    "difficulty": 2000,
-    "level": 10,
+    "difficulty": 1774,
+    "level": 9,
     "format": "odd_one_out",
     "question": "Which is NOT one of the original 1855 First Growth (Premier Cru) Bordeaux estates?",
     "options": [
@@ -3627,8 +3627,8 @@
   {
     "id": "RA-064",
     "domain": "regions_appellations",
-    "difficulty": 2150,
-    "level": 10,
+    "difficulty": 1811,
+    "level": 9,
     "format": "match_pairs",
     "question": "Match each Mosel vineyard to its village.",
     "pairs": {
@@ -3664,8 +3664,8 @@
   {
     "id": "RA-065",
     "domain": "regions_appellations",
-    "difficulty": 2250,
-    "level": 10,
+    "difficulty": 1927,
+    "level": 9,
     "format": "multiple_choice",
     "question": "Which Burgundy Grand Cru is a monopole of Domaine de la Romanée-Conti?",
     "options": [
@@ -3688,8 +3688,8 @@
   {
     "id": "RA-066",
     "domain": "regions_appellations",
-    "difficulty": 310,
-    "level": 2,
+    "difficulty": 273,
+    "level": 1,
     "format": "multiple_choice",
     "question": "Marlborough is the most famous wine region of which country?",
     "options": [
@@ -3710,8 +3710,8 @@
   {
     "id": "RA-067",
     "domain": "regions_appellations",
-    "difficulty": 470,
-    "level": 2,
+    "difficulty": 174,
+    "level": 1,
     "format": "match_pairs",
     "question": "Match each wine style to its region of origin.",
     "pairs": {
@@ -3746,8 +3746,8 @@
   {
     "id": "RA-068",
     "domain": "regions_appellations",
-    "difficulty": 570,
-    "level": 3,
+    "difficulty": 451,
+    "level": 2,
     "format": "multiple_choice",
     "question": "What distinguishes Chianti Classico from basic Chianti?",
     "options": [
@@ -3769,8 +3769,8 @@
   {
     "id": "RA-069",
     "domain": "regions_appellations",
-    "difficulty": 710,
-    "level": 4,
+    "difficulty": 545,
+    "level": 3,
     "format": "match_pairs",
     "question": "Match each classification to its region.",
     "pairs": {
@@ -3804,8 +3804,8 @@
   {
     "id": "RA-070",
     "domain": "regions_appellations",
-    "difficulty": 860,
-    "level": 4,
+    "difficulty": 582,
+    "level": 3,
     "format": "multiple_choice",
     "question": "Amarone della Valpolicella is made using what special winemaking technique?",
     "options": [
@@ -3828,8 +3828,8 @@
   {
     "id": "RA-071",
     "domain": "regions_appellations",
-    "difficulty": 940,
-    "level": 5,
+    "difficulty": 830,
+    "level": 4,
     "format": "multiple_choice",
     "question": "Which of these is the correct ascending order of the Burgundy appellation hierarchy?",
     "options": [
@@ -3851,8 +3851,8 @@
   {
     "id": "RA-072",
     "domain": "regions_appellations",
-    "difficulty": 1060,
-    "level": 5,
+    "difficulty": 838,
+    "level": 4,
     "format": "odd_one_out",
     "question": "Which appellation does NOT require 100% of a single grape variety?",
     "options": [
@@ -3874,8 +3874,8 @@
   {
     "id": "RA-073",
     "domain": "regions_appellations",
-    "difficulty": 1170,
-    "level": 6,
+    "difficulty": 986,
+    "level": 5,
     "format": "multiple_choice",
     "question": "Which Oregon AVA is located within the broader Willamette Valley AVA and is known for its volcanic Jory soils?",
     "options": [
@@ -3898,8 +3898,8 @@
   {
     "id": "RA-074",
     "domain": "regions_appellations",
-    "difficulty": 1260,
-    "level": 6,
+    "difficulty": 1067,
+    "level": 5,
     "format": "odd_one_out",
     "question": "Which is NOT one of the ten Crus of Beaujolais?",
     "options": [
@@ -3921,8 +3921,8 @@
   {
     "id": "RA-075",
     "domain": "regions_appellations",
-    "difficulty": 2400,
-    "level": 10,
+    "difficulty": 1917,
+    "level": 9,
     "format": "multiple_choice",
     "question": "In the Douro Valley's vineyard classification system, vineyards are scored on a points system. What is the maximum score a vineyard can receive?",
     "options": [

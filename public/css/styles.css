@@ -11029,6 +11029,87 @@ select:focus {
   color: #fff;
 }
 
+/* Level browser */
+.piq-level-browser {
+  margin-bottom: 24px;
+  text-align: center;
+}
+.piq-level-browser-label {
+  font-family: 'Montserrat', sans-serif;
+  font-size: 0.6rem;
+  font-weight: 600;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  color: var(--ink-xlight);
+  display: block;
+  margin-bottom: 8px;
+}
+.piq-level-pills {
+  display: flex;
+  justify-content: center;
+  gap: 4px;
+  flex-wrap: wrap;
+  margin-bottom: 10px;
+}
+.piq-level-pill {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 1px;
+  padding: 6px 12px;
+  background: var(--white);
+  border: 1px solid var(--cream-dark);
+  border-radius: 8px;
+  cursor: pointer;
+  transition: all 0.2s;
+  min-width: 44px;
+}
+.piq-level-pill:hover { border-color: var(--gold); }
+.piq-level-pill.active {
+  background: var(--ink);
+  border-color: var(--ink);
+}
+.piq-level-pill-name {
+  font-family: 'Montserrat', sans-serif;
+  font-size: 0.72rem;
+  font-weight: 600;
+  color: var(--ink);
+}
+.piq-level-pill.active .piq-level-pill-name { color: var(--white); }
+.piq-level-pill-count {
+  font-family: 'Montserrat', sans-serif;
+  font-size: 0.55rem;
+  color: var(--ink-xlight);
+}
+.piq-level-pill.active .piq-level-pill-count { color: rgba(255,255,255,0.5); }
+
+.piq-browse-nav {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 16px;
+}
+.piq-browse-btn {
+  font-family: 'Montserrat', sans-serif;
+  font-size: 0.72rem;
+  font-weight: 500;
+  color: var(--ink-mid);
+  background: var(--white);
+  border: 1px solid var(--cream-dark);
+  border-radius: 6px;
+  padding: 6px 14px;
+  cursor: pointer;
+  transition: all 0.2s;
+}
+.piq-browse-btn:hover { border-color: var(--gold); color: var(--ink); }
+.piq-browse-counter {
+  font-family: 'Montserrat', sans-serif;
+  font-size: 0.68rem;
+  color: var(--ink-xlight);
+  min-width: 100px;
+  text-align: center;
+}
+
 /* Card */
 .piq-card-area { margin-bottom: 24px; }
 .piq-card {

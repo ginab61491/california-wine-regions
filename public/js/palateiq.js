@@ -1,16 +1,18 @@
-// palateiq.js — Adaptive wine flashcard engine with Elo rating
+// palateiq.js — Adaptive wine flashcard engine with Elo rating + level browser
 
 document.addEventListener('DOMContentLoaded', () => {
   let allCards = [];
   let activeDomain = 'all';
+  let activeLevel = 0; // 0 = adaptive mode, 1-9 = locked to level
   let currentCard = null;
   let answered = false;
   let initialized = false;
+  let levelCardIndex = 0;
+  let levelPool = [];
 
   // Match pairs state
   let pairSelLeft = null;
   let pairMatches = {};
-  let pairCorrect = null;
 
   // Elo + stats from localStorage
   function loadStats() {
@@ -19,48 +21,49 @@ document.addEventListener('DOMContentLoaded', () => {
   function saveStats(s) { localStorage.setItem('piq_stats', JSON.stringify(s)); }
   function getStats() {
     return loadStats() || {
-      elo: 1000,
-      streak: 0,
-      totalCorrect: 0,
-      totalAnswered: 0,
-      todayCount: 0,
-      todayDate: new Date().toDateString(),
-      seenIds: [],
-      domainElo: {}
+      elo: 1000, streak: 0, totalCorrect: 0, totalAnswered: 0,
+      todayCount: 0, todayDate: new Date().toDateString(),
+      seenIds: [], domainElo: {}
     };
   }
 
-  const LEVEL_THRESHOLDS = [0, 300, 500, 700, 900, 1100, 1300, 1500, 1700, 1900, 2500];
+  const MAX_LEVEL = 9;
+  const LEVEL_THRESHOLDS = [0, 300, 500, 700, 900, 1100, 1300, 1500, 1700, 2000];
   function eloToLevel(elo) {
     for (let i = LEVEL_THRESHOLDS.length - 1; i >= 0; i--) {
-      if (elo >= LEVEL_THRESHOLDS[i]) return i + 1;
+      if (elo >= LEVEL_THRESHOLDS[i]) return Math.min(i + 1, MAX_LEVEL);
     }
     return 1;
   }
 
   function updateStatsDisplay() {
     const s = getStats();
-    // Reset today count if new day
     if (s.todayDate !== new Date().toDateString()) {
-      s.todayCount = 0;
-      s.todayDate = new Date().toDateString();
-      saveStats(s);
+      s.todayCount = 0; s.todayDate = new Date().toDateString(); saveStats(s);
     }
     document.getElementById('piq-elo').textContent = Math.round(s.elo);
     document.getElementById('piq-streak').textContent = s.streak;
     document.getElementById('piq-today').textContent = s.todayCount;
     document.getElementById('piq-accuracy').textContent = s.totalAnswered > 0
-      ? Math.round((s.totalCorrect / s.totalAnswered) * 100) + '%'
-      : '--';
+      ? Math.round((s.totalCorrect / s.totalAnswered) * 100) + '%' : '--';
 
     const level = eloToLevel(s.elo);
     document.getElementById('piq-level-num').textContent = level;
-    const nextThreshold = LEVEL_THRESHOLDS[level] || 2500;
+    const nextThreshold = LEVEL_THRESHOLDS[level] || 2000;
     const prevThreshold = LEVEL_THRESHOLDS[level - 1] || 0;
     const pct = Math.min(100, ((s.elo - prevThreshold) / (nextThreshold - prevThreshold)) * 100);
     document.getElementById('piq-level-fill').style.width = pct + '%';
-    document.getElementById('piq-level-next').textContent = level >= 10
+    document.getElementById('piq-level-next').textContent = level >= MAX_LEVEL
       ? 'Max Level' : `Next: Level ${level + 1}`;
+  }
+
+  function updateLevelNav() {
+    const counter = document.getElementById('piq-browse-counter');
+    if (activeLevel === 0) {
+      counter.textContent = '';
+      return;
+    }
+    counter.textContent = `Card ${levelCardIndex + 1} of ${levelPool.length}`;
   }
 
   // Elo calculation
@@ -70,55 +73,58 @@ document.addEventListener('DOMContentLoaded', () => {
     return playerElo + K * ((won ? 1 : 0) - expected);
   }
 
-  // Pick next card — adaptive: match difficulty to player Elo
+  // Pick next card — adaptive or from level pool
   function pickCard() {
+    if (activeLevel > 0) {
+      // Level browse mode
+      buildLevelPool();
+      if (levelPool.length === 0) return null;
+      levelCardIndex = Math.min(levelCardIndex, levelPool.length - 1);
+      updateLevelNav();
+      return levelPool[levelCardIndex];
+    }
+
+    // Adaptive mode
     const s = getStats();
     let pool = activeDomain === 'all'
-      ? allCards
-      : allCards.filter(c => c.domain === activeDomain);
-
+      ? allCards : allCards.filter(c => c.domain === activeDomain);
     if (pool.length === 0) return null;
 
-    // Prefer unseen cards, but allow repeats if pool is small
     const unseen = pool.filter(c => !s.seenIds.includes(c.id));
     const source = unseen.length > 10 ? unseen : pool;
-
-    // Weight cards closer to player's Elo
     const playerElo = activeDomain !== 'all' && s.domainElo[activeDomain]
       ? s.domainElo[activeDomain] : s.elo;
 
     const weighted = source.map(c => {
       const dist = Math.abs(c.difficulty - playerElo);
-      const weight = 1 / (1 + dist / 200);
-      return { card: c, weight };
+      return { card: c, weight: 1 / (1 + dist / 200) };
     });
-
-    // Weighted random selection
     const totalWeight = weighted.reduce((sum, w) => sum + w.weight, 0);
     let r = Math.random() * totalWeight;
-    for (const w of weighted) {
-      r -= w.weight;
-      if (r <= 0) return w.card;
-    }
+    for (const w of weighted) { r -= w.weight; if (r <= 0) return w.card; }
     return weighted[weighted.length - 1].card;
   }
 
+  function buildLevelPool() {
+    let pool = allCards.filter(c => c.level === activeLevel);
+    if (activeDomain !== 'all') pool = pool.filter(c => c.domain === activeDomain);
+    levelPool = pool;
+  }
+
   const DOMAIN_LABELS = {
-    grape_varieties: 'Grapes',
-    regions_appellations: 'Regions',
-    tasting_sensory: 'Tasting',
-    winemaking: 'Winemaking',
-    food_pairing: 'Food Pairing',
-    history_culture: 'History',
-    service_business: 'Service',
-    blind_tasting: 'Blind Tasting'
+    grape_varieties: 'Grapes', regions_appellations: 'Regions',
+    tasting_sensory: 'Tasting', winemaking: 'Winemaking',
+    food_pairing: 'Food Pairing', history_culture: 'History',
+    service_business: 'Service', blind_tasting: 'Blind Tasting'
   };
 
   function showCard(card) {
     if (!card) {
-      document.getElementById('piq-card-question').textContent = 'No cards available for this topic.';
+      document.getElementById('piq-card-question').textContent = 'No cards available for this selection.';
       document.getElementById('piq-options').innerHTML = '';
       document.getElementById('piq-pairs').style.display = 'none';
+      document.getElementById('piq-explanation').style.display = 'none';
+      document.getElementById('piq-next-btn').style.display = 'none';
       return;
     }
 
@@ -126,7 +132,6 @@ document.addEventListener('DOMContentLoaded', () => {
     answered = false;
     pairSelLeft = null;
     pairMatches = {};
-    pairCorrect = null;
 
     document.getElementById('piq-card-domain').textContent = DOMAIN_LABELS[card.domain] || card.domain;
     document.getElementById('piq-card-level').textContent = 'Lvl ' + card.level;
@@ -161,12 +166,10 @@ document.addEventListener('DOMContentLoaded', () => {
         const idx = parseInt(btn.dataset.idx);
         const correctIdx = Array.isArray(card.correct) ? card.correct[0] : card.correct;
         const isCorrect = idx === correctIdx;
-
         btn.classList.add(isCorrect ? 'correct' : 'wrong');
         if (!isCorrect) {
           el.querySelector(`.piq-option[data-idx="${correctIdx}"]`).classList.add('correct');
         }
-
         recordAnswer(isCorrect);
       });
     });
@@ -177,7 +180,6 @@ document.addEventListener('DOMContentLoaded', () => {
     const left = card.pairs.left;
     const right = card.pairs.right;
 
-    // Shuffle right side for display
     const rightShuffled = right.map((r, i) => ({ text: r, origIdx: i }));
     for (let i = rightShuffled.length - 1; i > 0; i--) {
       const j = Math.floor(Math.random() * (i + 1));
@@ -211,81 +213,63 @@ document.addEventListener('DOMContentLoaded', () => {
     el.querySelectorAll('.piq-pair-right').forEach(btn => {
       btn.addEventListener('click', () => {
         if (answered || pairSelLeft === null) return;
-        // Remove previous match for this left
-        Object.keys(pairMatches).forEach(k => {
-          if (parseInt(k) === pairSelLeft) delete pairMatches[k];
-        });
-        // Remove previous assignment of this right
-        Object.keys(pairMatches).forEach(k => {
-          if (pairMatches[k] === parseInt(btn.dataset.orig)) delete pairMatches[k];
-        });
-
+        Object.keys(pairMatches).forEach(k => { if (parseInt(k) === pairSelLeft) delete pairMatches[k]; });
+        Object.keys(pairMatches).forEach(k => { if (pairMatches[k] === parseInt(btn.dataset.orig)) delete pairMatches[k]; });
         pairMatches[pairSelLeft] = parseInt(btn.dataset.orig);
 
-        // Visual feedback
         el.querySelectorAll('.piq-pair-left').forEach(b => b.classList.remove('selected', 'matched'));
         el.querySelectorAll('.piq-pair-right').forEach(b => b.classList.remove('matched'));
         Object.keys(pairMatches).forEach(k => {
           el.querySelector(`.piq-pair-left[data-idx="${k}"]`).classList.add('matched');
           el.querySelector(`.piq-pair-right[data-orig="${pairMatches[k]}"]`).classList.add('matched');
         });
-
         pairSelLeft = null;
 
-        // Show submit when all matched
         if (Object.keys(pairMatches).length === left.length) {
           document.getElementById('piq-pairs-submit').style.display = 'block';
         }
       });
     });
 
-    const submitBtn = document.getElementById('piq-pairs-submit');
-    submitBtn.addEventListener('click', () => {
+    document.getElementById('piq-pairs-submit').addEventListener('click', () => {
       if (answered) return;
       answered = true;
-
       let correctCount = 0;
       const correct = card.correct;
       for (let i = 0; i < left.length; i++) {
-        const userMatch = pairMatches[i];
-        const isRight = userMatch === correct[i];
+        const isRight = pairMatches[i] === correct[i];
         if (isRight) correctCount++;
-        const leftBtn = el.querySelector(`.piq-pair-left[data-idx="${i}"]`);
-        leftBtn.classList.add(isRight ? 'correct' : 'wrong');
+        el.querySelector(`.piq-pair-left[data-idx="${i}"]`).classList.add(isRight ? 'correct' : 'wrong');
       }
-      const isCorrect = correctCount === left.length;
-      recordAnswer(isCorrect);
+      recordAnswer(correctCount === left.length);
     });
   }
 
   function recordAnswer(isCorrect) {
     const s = getStats();
     s.elo = calcElo(s.elo, currentCard.difficulty, isCorrect);
-
-    // Domain-specific Elo
     if (!s.domainElo[currentCard.domain]) s.domainElo[currentCard.domain] = 1000;
     s.domainElo[currentCard.domain] = calcElo(s.domainElo[currentCard.domain], currentCard.difficulty, isCorrect);
-
     s.totalAnswered++;
-    if (isCorrect) { s.totalCorrect++; s.streak++; }
-    else { s.streak = 0; }
+    if (isCorrect) { s.totalCorrect++; s.streak++; } else { s.streak = 0; }
     s.todayCount++;
     if (!s.seenIds.includes(currentCard.id)) s.seenIds.push(currentCard.id);
     saveStats(s);
 
-    // Show explanation
     const explEl = document.getElementById('piq-explanation');
     document.getElementById('piq-explanation-text').textContent = currentCard.explanation;
     document.getElementById('piq-source').textContent = currentCard.sources;
     explEl.style.display = 'block';
     explEl.className = 'piq-explanation ' + (isCorrect ? 'piq-correct' : 'piq-wrong');
-
     document.getElementById('piq-next-btn').style.display = 'block';
     updateStatsDisplay();
   }
 
   // Next card
   document.getElementById('piq-next-btn').addEventListener('click', () => {
+    if (activeLevel > 0) {
+      levelCardIndex = (levelCardIndex + 1) % levelPool.length;
+    }
     showCard(pickCard());
   });
 
@@ -295,8 +279,34 @@ document.addEventListener('DOMContentLoaded', () => {
       document.querySelectorAll('.piq-domain-pill').forEach(p => p.classList.remove('active'));
       pill.classList.add('active');
       activeDomain = pill.dataset.domain;
+      levelCardIndex = 0;
       showCard(pickCard());
     });
+  });
+
+  // Level browser buttons
+  document.querySelectorAll('.piq-level-pill').forEach(pill => {
+    pill.addEventListener('click', () => {
+      document.querySelectorAll('.piq-level-pill').forEach(p => p.classList.remove('active'));
+      pill.classList.add('active');
+      activeLevel = parseInt(pill.dataset.level);
+      levelCardIndex = 0;
+      showCard(pickCard());
+    });
+  });
+
+  // Prev/Next browse buttons
+  document.getElementById('piq-browse-prev').addEventListener('click', () => {
+    if (activeLevel === 0 || levelPool.length === 0) return;
+    levelCardIndex = (levelCardIndex - 1 + levelPool.length) % levelPool.length;
+    showCard(levelPool[levelCardIndex]);
+    updateLevelNav();
+  });
+  document.getElementById('piq-browse-next').addEventListener('click', () => {
+    if (activeLevel === 0 || levelPool.length === 0) return;
+    levelCardIndex = (levelCardIndex + 1) % levelPool.length;
+    showCard(levelPool[levelCardIndex]);
+    updateLevelNav();
   });
 
   // Init
@@ -316,32 +326,33 @@ document.addEventListener('DOMContentLoaded', () => {
         files.map(f => fetch('/data/' + f).then(r => r.ok ? r.json() : []))
       );
       results.forEach(r => {
-        if (r.status === 'fulfilled' && Array.isArray(r.value)) {
-          allCards = allCards.concat(r.value);
-        }
+        if (r.status === 'fulfilled' && Array.isArray(r.value)) allCards = allCards.concat(r.value);
       });
-    } catch {
-      // Silently continue with whatever loaded
-    }
+    } catch {}
 
     // Deduplicate by ID
     const seen = new Set();
-    allCards = allCards.filter(c => {
-      if (seen.has(c.id)) return false;
-      seen.add(c.id);
-      return true;
-    });
+    allCards = allCards.filter(c => { if (seen.has(c.id)) return false; seen.add(c.id); return true; });
 
     if (allCards.length === 0) {
       document.getElementById('piq-card-question').textContent = 'Loading cards...';
       return;
     }
 
+    // Update level pill counts
+    for (let l = 1; l <= MAX_LEVEL; l++) {
+      const count = allCards.filter(c => c.level === l).length;
+      const pill = document.querySelector(`.piq-level-pill[data-level="${l}"]`);
+      if (pill) pill.querySelector('.piq-level-pill-count').textContent = count;
+    }
+    const totalCount = allCards.length;
+    const adaptPill = document.querySelector('.piq-level-pill[data-level="0"]');
+    if (adaptPill) adaptPill.querySelector('.piq-level-pill-count').textContent = totalCount;
+
     updateStatsDisplay();
     showCard(pickCard());
   }
 
-  // Lazy init when section becomes visible
   const observer = new MutationObserver(() => {
     const sec = document.getElementById('palateiq-section');
     if (sec && sec.classList.contains('active')) init();
