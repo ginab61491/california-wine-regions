@@ -3179,8 +3179,6 @@ button {
   min-height: 44px;
 }
 .prod-show-results-btn:hover { background: var(--gold-mid); }
-/* Hide Show Results on desktop (auto-filters) */
-@media (min-width: 768px) { .prod-show-results-btn { display: none; } }
 
 /* Main results */
 .prod-main {
