@@ -1,0 +1,346 @@
+/* ============================================================
+   LABEL SCHOOL — Interactive Wine Label Reading
+   ============================================================ */
+
+#labelschool-section {
+  --ls-bg: #FAF7F2;
+  --ls-card: #FFFDF9;
+  --ls-text: #2C1810;
+  --ls-text-muted: #6B5D52;
+  --ls-text-faint: #9E9189;
+  --ls-accent: #722F37;
+  --ls-gold: #B8943E;
+  --ls-correct: #6B7F5E;
+  --ls-card-edge: #E8DFD2;
+  background: var(--ls-bg);
+  color: var(--ls-text);
+  padding: 0;
+}
+
+.ls-scroll { flex: 1; overflow-y: auto; -webkit-overflow-scrolling: touch; }
+.ls-body { max-width: 520px; margin: 0 auto; padding: 32px 20px 48px; }
+
+/* Header */
+.ls-header { margin-bottom: 24px; }
+.ls-breadcrumb {
+  display: flex; align-items: center; justify-content: space-between; margin-bottom: 4px;
+}
+.ls-crumb {
+  font-family: 'Montserrat', sans-serif; font-size: 0.6rem;
+  letter-spacing: 0.15em; text-transform: uppercase; color: var(--ls-text-faint);
+}
+.ls-badge {
+  font-family: 'Montserrat', sans-serif; font-size: 0.55rem; font-weight: 600;
+  letter-spacing: 0.1em; text-transform: uppercase; color: var(--ls-gold);
+  background: rgba(184,148,62,0.08); border: 1px solid rgba(184,148,62,0.15);
+  padding: 3px 10px; border-radius: 20px;
+}
+.ls-title {
+  font-family: 'Playfair Display', Georgia, serif; font-size: 1.8rem;
+  font-weight: 400; color: var(--ls-text); margin-bottom: 4px;
+}
+.ls-subtitle {
+  font-family: 'Crimson Text', Georgia, serif; font-size: 0.9rem;
+  color: var(--ls-text-muted); line-height: 1.5;
+}
+
+/* Mode toggle */
+.ls-mode-toggle {
+  display: flex; border-radius: 8px; overflow: hidden;
+  border: 1px solid var(--ls-card-edge); margin-bottom: 24px;
+}
+.ls-mode-btn {
+  flex: 1; padding: 11px 8px; cursor: pointer; border: none;
+  background: var(--ls-card); color: var(--ls-text-muted);
+  font-family: 'Montserrat', sans-serif; font-size: 0.78rem; font-weight: 500;
+  transition: all 0.25s; border-bottom: 2px solid transparent;
+}
+.ls-mode-btn.active {
+  background: rgba(184,148,62,0.06); color: var(--ls-gold);
+  border-bottom-color: var(--ls-gold);
+}
+
+/* Label selector grid */
+.ls-label-grid {
+  display: grid; grid-template-columns: 1fr 1fr; gap: 8px; margin-bottom: 20px;
+}
+.ls-label-card {
+  background: var(--ls-card); border: 1.5px solid var(--ls-card-edge);
+  border-radius: 10px; padding: 14px 16px; cursor: pointer;
+  text-align: left; transition: all 0.25s; width: 100%;
+}
+.ls-label-card:hover { border-color: var(--ls-gold); }
+.ls-label-card.active {
+  border-color: var(--ls-gold); background: rgba(184,148,62,0.06);
+}
+.ls-label-region {
+  font-family: 'Cormorant Garamond', serif; font-size: 0.6rem;
+  letter-spacing: 0.12em; text-transform: uppercase;
+  color: var(--ls-text-faint); margin-bottom: 3px;
+}
+.ls-label-card.active .ls-label-region { color: var(--ls-gold); }
+.ls-label-title {
+  font-family: 'Cormorant Garamond', serif; font-size: 0.95rem;
+  font-weight: 600; color: var(--ls-text); line-height: 1.2;
+}
+.ls-label-card.active .ls-label-title { color: var(--ls-text); }
+.ls-label-meta {
+  font-family: 'Montserrat', sans-serif; font-size: 0.65rem;
+  color: var(--ls-text-faint); margin-top: 3px;
+}
+.ls-label-card.active .ls-label-meta { color: var(--ls-gold); }
+
+/* Old World / New World indicator */
+.ls-world-indicator {
+  display: flex; align-items: center; justify-content: center;
+  gap: 8px; margin-bottom: 16px;
+}
+.ls-world-pill {
+  font-family: 'Montserrat', sans-serif; font-size: 0.6rem; font-weight: 600;
+  letter-spacing: 0.1em; text-transform: uppercase;
+  padding: 4px 14px; border-radius: 20px; border: 1px solid var(--ls-card-edge);
+  color: var(--ls-text-faint); background: transparent;
+}
+.ls-world-pill.active {
+  color: var(--ls-gold); background: rgba(184,148,62,0.06);
+  border-color: rgba(184,148,62,0.2);
+}
+.ls-world-dot { font-size: 0.6rem; color: var(--ls-card-edge); }
+
+/* Wine label rendering */
+.ls-wine-label {
+  position: relative; width: 100%; max-width: 320px; margin: 0 auto;
+}
+.ls-label-surface {
+  background: linear-gradient(180deg, #FAF6F0 0%, #F0E8DC 100%);
+  border-radius: 8px; border: 1px solid #D4C5B0;
+  padding: 32px 28px; position: relative; min-height: 400px;
+  box-shadow:
+    0 4px 20px rgba(44,24,16,0.08),
+    0 1px 3px rgba(44,24,16,0.06),
+    inset 0 1px 0 rgba(255,255,255,0.5);
+}
+.ls-label-border-inner {
+  position: absolute; inset: 8px;
+  border: 0.5px solid #C4B79C; border-radius: 4px; pointer-events: none;
+}
+
+/* Tappable zones on the label */
+.ls-zone {
+  cursor: pointer; padding: 6px 4px; border-radius: 4px;
+  transition: background 0.2s; text-align: center;
+}
+.ls-zone:hover { background: rgba(184,148,62,0.08); }
+.ls-zone.active { background: rgba(184,148,62,0.12); }
+
+.ls-label-producer {
+  font-family: 'Cormorant Garamond', serif; font-size: 0.68rem;
+  letter-spacing: 0.2em; text-transform: uppercase; color: #8B7355;
+  margin-bottom: 16px;
+}
+.ls-label-divider {
+  width: 60px; height: 1px; background: #C4B79C; margin: 0 auto 16px;
+}
+.ls-label-main-title {
+  font-family: 'Cormorant Garamond', serif; font-size: 1.75rem;
+  font-weight: 700; color: #2C1810; line-height: 1.1;
+}
+.ls-label-main-sub {
+  font-family: 'Cormorant Garamond', serif; font-size: 0.68rem;
+  color: #8B7355; margin-top: 6px; letter-spacing: 0.08em;
+}
+.ls-label-classification {
+  font-family: 'Cormorant Garamond', serif; font-size: 0.82rem;
+  font-style: italic; color: #6B5744; letter-spacing: 0.05em;
+}
+.ls-label-ornament {
+  text-align: center; color: #C4B79C; font-size: 1rem; margin: 8px 0;
+  font-family: serif;
+}
+.ls-label-vintage {
+  font-family: 'Cormorant Garamond', serif; font-size: 2rem;
+  font-weight: 300; color: #2C1810;
+}
+.ls-label-bottom {
+  position: absolute; bottom: 20px; left: 28px; right: 28px; text-align: center;
+}
+.ls-label-bottom-text {
+  font-family: 'Montserrat', sans-serif; font-size: 0.6rem; color: #999;
+}
+
+/* Missing grape prompt */
+.ls-missing-grape {
+  cursor: pointer; margin: 16px auto; padding: 10px 16px;
+  border-radius: 6px; border: 1px dashed var(--ls-gold);
+  background: rgba(184,148,62,0.03); text-align: center; max-width: 220px;
+  transition: all 0.25s;
+}
+.ls-missing-grape:hover, .ls-missing-grape.active {
+  background: rgba(184,148,62,0.08);
+}
+.ls-missing-grape-title {
+  font-family: 'Montserrat', sans-serif; font-size: 0.7rem;
+  font-weight: 500; color: var(--ls-gold);
+}
+.ls-missing-grape-hint {
+  font-family: 'Montserrat', sans-serif; font-size: 0.6rem;
+  color: var(--ls-text-faint); margin-top: 2px;
+}
+
+/* Tap hint */
+.ls-tap-hint {
+  text-align: center; margin-top: 12px;
+  font-family: 'Montserrat', sans-serif; font-size: 0.68rem;
+  color: var(--ls-text-faint);
+}
+
+/* Explanation panel */
+.ls-explanation {
+  background: var(--ls-card); border: 1px solid var(--ls-card-edge);
+  border-radius: 10px; padding: 20px; margin-top: 16px;
+  animation: ls-slide-up 0.3s ease;
+}
+@keyframes ls-slide-up {
+  from { opacity: 0; transform: translateY(8px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+.ls-expl-header {
+  display: flex; align-items: center; gap: 8px; margin-bottom: 10px;
+}
+.ls-expl-bar { width: 3px; height: 16px; background: var(--ls-gold); border-radius: 2px; }
+.ls-expl-label {
+  font-family: 'Cormorant Garamond', serif; font-size: 0.82rem; font-weight: 600;
+  color: var(--ls-gold); letter-spacing: 0.05em; text-transform: uppercase;
+}
+.ls-expl-text {
+  font-family: 'Montserrat', sans-serif; font-size: 0.82rem;
+  color: var(--ls-text-muted); line-height: 1.65; margin-bottom: 12px;
+}
+.ls-wset-box {
+  background: rgba(184,148,62,0.05); border: 1px solid rgba(184,148,62,0.12);
+  border-radius: 6px; padding: 10px 12px;
+}
+.ls-wset-label {
+  font-family: 'Montserrat', sans-serif; font-size: 0.58rem; font-weight: 600;
+  letter-spacing: 0.1em; text-transform: uppercase;
+  color: var(--ls-gold); margin-bottom: 4px;
+}
+.ls-wset-text {
+  font-family: 'Montserrat', sans-serif; font-size: 0.75rem;
+  color: var(--ls-text-muted); line-height: 1.5;
+}
+
+/* Core rule card */
+.ls-core-rule {
+  margin-top: 24px; padding: 18px;
+  background: rgba(184,148,62,0.04); border: 1px solid rgba(184,148,62,0.1);
+  border-radius: 10px;
+}
+.ls-core-rule-label {
+  font-family: 'Montserrat', sans-serif; font-size: 0.65rem; font-weight: 600;
+  letter-spacing: 0.08em; text-transform: uppercase;
+  color: var(--ls-gold); margin-bottom: 8px;
+}
+.ls-core-rule-text {
+  font-family: 'Crimson Text', Georgia, serif; font-size: 0.9rem;
+  color: var(--ls-text-muted); line-height: 1.6;
+}
+.ls-core-rule-text strong { color: var(--ls-text); }
+.ls-core-rule-footnote {
+  font-family: 'Montserrat', sans-serif; font-size: 0.72rem;
+  color: var(--ls-text-faint); margin-top: 8px;
+}
+
+/* Upload mode */
+.ls-upload-drop {
+  border: 2px dashed rgba(184,148,62,0.25); border-radius: 12px;
+  padding: 48px 32px; cursor: pointer; text-align: center;
+  background: rgba(184,148,62,0.02); transition: all 0.25s;
+}
+.ls-upload-drop:hover { border-color: rgba(184,148,62,0.5); }
+.ls-upload-icon { font-size: 2rem; margin-bottom: 10px; color: var(--ls-gold); }
+.ls-upload-title {
+  font-family: 'Cormorant Garamond', serif; font-size: 1rem; font-weight: 600;
+  color: var(--ls-gold); margin-bottom: 4px;
+}
+.ls-upload-hint {
+  font-family: 'Montserrat', sans-serif; font-size: 0.72rem; color: var(--ls-text-faint);
+}
+
+/* Upload zones guide */
+.ls-upload-zones { margin-top: 24px; }
+.ls-upload-zones-title {
+  font-family: 'Cormorant Garamond', serif; font-size: 0.75rem; font-weight: 600;
+  letter-spacing: 0.08em; text-transform: uppercase;
+  color: var(--ls-gold); margin-bottom: 12px;
+}
+.ls-upload-zone {
+  padding: 10px 12px; border-radius: 6px; margin-bottom: 6px;
+  cursor: pointer; border: 1px solid var(--ls-card-edge);
+  background: var(--ls-card); transition: all 0.2s;
+}
+.ls-upload-zone:hover { border-color: var(--ls-gold); }
+.ls-upload-zone.active {
+  background: rgba(184,148,62,0.05); border-color: rgba(184,148,62,0.2);
+}
+.ls-upload-zone-header { display: flex; align-items: center; gap: 8px; }
+.ls-upload-zone-dot {
+  width: 8px; height: 8px; border-radius: 50%; flex-shrink: 0;
+}
+.ls-upload-zone-name {
+  font-family: 'Montserrat', sans-serif; font-size: 0.82rem;
+  font-weight: 500; color: var(--ls-text);
+}
+.ls-upload-zone.active .ls-upload-zone-name { color: var(--ls-text); }
+.ls-upload-zone-expl {
+  font-family: 'Montserrat', sans-serif; font-size: 0.75rem;
+  color: var(--ls-text-muted); line-height: 1.6; margin-top: 8px; padding-left: 16px;
+}
+
+/* Uploaded image view */
+.ls-uploaded-wrap { position: relative; margin-bottom: 16px; }
+.ls-uploaded-img {
+  width: 100%; border-radius: 8px; border: 1px solid var(--ls-card-edge);
+}
+.ls-uploaded-reset {
+  position: absolute; top: 8px; right: 8px;
+  background: rgba(44,24,16,0.7); border: 1px solid rgba(255,255,255,0.2);
+  border-radius: 6px; color: #E8DDD0; font-size: 0.68rem;
+  padding: 4px 10px; cursor: pointer; font-family: 'Montserrat', sans-serif;
+}
+.ls-uploaded-overlay {
+  position: absolute; left: 0; right: 0; cursor: pointer;
+  transition: all 0.25s; display: flex; align-items: center;
+  justify-content: flex-end; padding-right: 8px;
+  border-top: 1px solid transparent; border-bottom: 1px solid transparent;
+}
+.ls-uploaded-overlay.active { border-color: currentColor; }
+.ls-uploaded-overlay-tag {
+  font-family: 'Montserrat', sans-serif; font-size: 0.55rem; font-weight: 600;
+  letter-spacing: 0.05em; text-transform: uppercase;
+  color: #fff; padding: 2px 8px; border-radius: 3px;
+}
+
+/* Quick decode box */
+.ls-quick-decode {
+  margin-top: 20px; padding: 16px;
+  background: rgba(184,148,62,0.04); border-radius: 8px;
+  border: 1px solid rgba(184,148,62,0.1);
+}
+.ls-quick-decode-title {
+  font-family: 'Montserrat', sans-serif; font-size: 0.65rem; font-weight: 600;
+  letter-spacing: 0.08em; text-transform: uppercase;
+  color: var(--ls-gold); margin-bottom: 8px;
+}
+.ls-quick-decode-text {
+  font-family: 'Montserrat', sans-serif; font-size: 0.75rem;
+  color: var(--ls-text-muted); line-height: 1.6;
+}
+.ls-quick-decode-text strong { color: var(--ls-gold); }
+
+/* Mobile */
+@media (max-width: 768px) {
+  .ls-body { padding: 24px 16px 40px; }
+  .ls-label-surface { padding: 28px 22px; min-height: 360px; }
+  .ls-label-grid { gap: 6px; }
+}

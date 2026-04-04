@@ -1,0 +1,94 @@
+{
+  "labels": {
+    "chablis": {
+      "region": "France — Burgundy",
+      "title": "Chablis",
+      "subtitle": "Premier Cru · Fourchaume",
+      "producer": "Domaine William Fevre",
+      "vintage": "2020",
+      "volume": "750ml",
+      "abv": "13%",
+      "appellation": "Chablis Premier Cru · Appellation Controlee",
+      "country": "Product of France",
+      "zones": [
+        {"id":"producer","label":"Producer","explanation":"The estate or house that made the wine. In Burgundy, domaine-bottled wines (\"Mis en bouteille au domaine\") signal that the producer grew the grapes and made the wine.","wset":"WSET 2: Identifying the producer helps assess quality and style expectations."},
+        {"id":"appellation","label":"Appellation","explanation":"\"Chablis Premier Cru\" is a legally protected designation under French AOC/AOP law. Chablis is ALWAYS 100% Chardonnay. Premier Cru is the second-highest vineyard classification in Burgundy.","wset":"WSET 2 Key Concept: Old World labels name the PLACE, not the grape. If you see Chablis, you must know it means Chardonnay."},
+        {"id":"vineyard","label":"Vineyard","explanation":"\"Fourchaume\" is one of the most respected Premier Cru vineyard sites in Chablis, on the Right Bank of the Serein river. In Burgundy, the specific vineyard (\"climat\") tells you more about the wine's character than almost anything else on the label.","wset":"WSET 3+: Vineyard-level geography is central to understanding Burgundy's hierarchy."},
+        {"id":"vintage","label":"Vintage","explanation":"The year the grapes were harvested. 2020 was a warm, early vintage in Chablis producing richer wines with good concentration.","wset":"WSET 2: Vintage indicates the harvest year and affects style, quality, and readiness to drink."},
+        {"id":"volume","label":"Volume & ABV","explanation":"750ml is the standard bottle size. 13% ABV is moderate-to-full for white Burgundy. ABV gives clues about ripeness and body.","wset":"WSET 2: ABV is an indicator of body and ripeness level."},
+        {"id":"country","label":"Country of Origin","explanation":"\"Product of France\" confirms the wine's geographic origin and the regulatory framework (French AOC/AOP) governing its production.","wset":"WSET 2: Country of origin determines which wine laws and labeling conventions apply."}
+      ],
+      "missingGrape": true,
+      "missingGrapeNote": "No grape variety is listed anywhere on this label. That's not an oversight. Chablis is ALWAYS Chardonnay. The appellation law requires it, so stating the grape would be redundant. This is the #1 concept WSET 2 tests: Old World = Place, New World = Grape."
+    },
+    "chianti": {
+      "region": "Italy — Tuscany",
+      "title": "Chianti Classico",
+      "subtitle": "Denominazione di Origine Controllata e Garantita",
+      "producer": "Castello di Volpaia",
+      "vintage": "2019",
+      "volume": "750ml",
+      "abv": "13.5%",
+      "appellation": "Chianti Classico DOCG · Riserva",
+      "country": "Product of Italy",
+      "zones": [
+        {"id":"producer","label":"Producer","explanation":"\"Castello di Volpaia\" is an estate in the heart of the Chianti Classico zone. Italian labels typically feature the producer prominently, often with historical estate names.","wset":"WSET 2: The producer indicates quality tier and style."},
+        {"id":"appellation","label":"DOCG Classification","explanation":"\"DOCG\" (Denominazione di Origine Controllata e Garantita) is Italy's highest wine classification. Chianti Classico DOCG is the original, historic Chianti zone, distinct from basic \"Chianti\" which covers a much larger area.","wset":"WSET 2: Italy's quality pyramid: Vino, IGT, DOC, DOCG. DOCG is the top."},
+        {"id":"riserva","label":"Riserva","explanation":"\"Riserva\" is a legally defined term in Italy requiring extended aging. For Chianti Classico Riserva: minimum 24 months aging (including at least 3 months in bottle).","wset":"WSET 2: Riserva/Reserva terms are legally regulated in Italy and Spain, guaranteeing minimum aging periods."},
+        {"id":"vintage","label":"Vintage","explanation":"2019 is widely considered an exceptional vintage in Tuscany, praised for elegance and long-term aging potential.","wset":"WSET 2: Vintage variation matters. Great vintages can significantly affect quality and value."},
+        {"id":"grape","label":"Grape (Hidden)","explanation":"No grape is listed. Chianti Classico must be at least 80% Sangiovese by law (DOCG regulations). The remaining 20% can include approved local or international varieties.","wset":"WSET 2: Another Old World example. The appellation dictates grape composition. Chianti = primarily Sangiovese."},
+        {"id":"country","label":"Country of Origin","explanation":"\"Product of Italy\" confirms Italian DOC/DOCG regulations apply, governing grape varieties, yields, aging requirements, and geographic boundaries.","wset":"WSET 2: Italian wine law is one of the most detailed systems you'll encounter."}
+      ],
+      "missingGrape": true,
+      "missingGrapeNote": "No grape on the label. Chianti Classico is at least 80% Sangiovese by DOCG law. Old World pattern: the PLACE name carries the grape information within it."
+    },
+    "rioja": {
+      "region": "Spain — Rioja",
+      "title": "Rioja",
+      "subtitle": "Denominacion de Origen Calificada",
+      "producer": "Bodegas Lopez de Heredia",
+      "vintage": "2011",
+      "volume": "750ml",
+      "abv": "13.5%",
+      "appellation": "Rioja DOCa · Reserva",
+      "country": "Product of Spain",
+      "zones": [
+        {"id":"producer","label":"Producer","explanation":"\"Lopez de Heredia\" is one of Rioja's oldest and most traditional bodegas, founded 1877. They're known for exceptionally long aging.","wset":"WSET 2: Producer reputation is especially important in regions with broad appellations like Rioja."},
+        {"id":"appellation","label":"DOCa Classification","explanation":"\"DOCa\" (Denominacion de Origen Calificada) is Spain's highest regional classification. Only Rioja and Priorat hold this status.","wset":"WSET 2: Spain's quality hierarchy: Vino, VdlT, DO, DOCa. Rioja is one of only two DOCa regions."},
+        {"id":"reserva","label":"Reserva","explanation":"\"Reserva\" in Spain is a legally defined aging category. For red Rioja Reserva: minimum 36 months total aging, with at least 12 months in oak barrels. The hierarchy: Joven, Crianza, Reserva, Gran Reserva.","wset":"WSET 2 Key Concept: Spanish aging terms are legally regulated. Reserva = minimum 3 years aging (1 in oak) for reds."},
+        {"id":"vintage","label":"Vintage","explanation":"2011 on a Reserva released many years later is typical of traditional Rioja producers who age wines extensively before release.","wset":"WSET 2: The gap between vintage and release date reveals the producer's aging philosophy."},
+        {"id":"country","label":"Country of Origin","explanation":"\"Product of Spain\" confirms Spanish wine law (DOCa) governs everything from permitted grape varieties to minimum aging requirements.","wset":"WSET 2: Country determines regulatory framework. Spanish aging terms have different requirements than Italian ones."}
+      ],
+      "missingGrape": true,
+      "missingGrapeNote": "No grape listed. Rioja reds are traditionally Tempranillo-dominant (often blended with Garnacha, Graciano, or Mazuelo). Old World convention: the region name implies the grape."
+    },
+    "marlborough": {
+      "region": "New Zealand — Marlborough",
+      "title": "Sauvignon Blanc",
+      "subtitle": "Marlborough",
+      "producer": "Cloudy Bay",
+      "vintage": "2023",
+      "volume": "750ml",
+      "abv": "13%",
+      "appellation": "Marlborough · New Zealand",
+      "country": "Product of New Zealand",
+      "zones": [
+        {"id":"grape","label":"Grape Variety","explanation":"\"Sauvignon Blanc\" front and center. This is the defining New World convention: the GRAPE is the star, not the place.","wset":"WSET 2 Key Concept: New World labels name the GRAPE. Old World labels name the PLACE. This is the fundamental distinction."},
+        {"id":"producer","label":"Producer/Brand","explanation":"\"Cloudy Bay\" is the brand/producer. New World labels tend to emphasize the brand as a quality signal.","wset":"WSET 2: In the New World, the producer/brand often carries more weight than the regional name."},
+        {"id":"region","label":"Region","explanation":"\"Marlborough\" is New Zealand's most famous wine region, renowned for intensely aromatic Sauvignon Blanc.","wset":"WSET 2: Knowing key region + grape pairings (Marlborough = Sauvignon Blanc) helps predict style."},
+        {"id":"vintage","label":"Vintage","explanation":"2023. Most New World Sauvignon Blanc is made to drink young, so a recent vintage is desirable.","wset":"WSET 2: Vintage context depends on the wine's style. Young-drinking whites vs. age-worthy reds."},
+        {"id":"abv","label":"ABV","explanation":"13%. Moderate alcohol for Marlborough Sauvignon Blanc. The cool maritime climate preserves acidity while achieving good ripeness.","wset":"WSET 2: ABV reflects climate and winemaking. Cooler climates tend toward lower ABV with higher acidity."},
+        {"id":"country","label":"Country of Origin","explanation":"\"Product of New Zealand.\" New Zealand has its own Geographical Indications system, but it's far less prescriptive than European appellation laws.","wset":"WSET 2: New World wine laws are generally less restrictive than Old World. More winemaker freedom."}
+      ],
+      "missingGrape": false
+    }
+  },
+  "uploadZones": [
+    {"id":"top","label":"Producer / Brand","y":0,"h":15,"color":"#B8943E","explanation":"Usually at the top. The estate, domaine, chateau, bodega, or brand name."},
+    {"id":"main","label":"Wine Name / Appellation","y":15,"h":25,"color":"#722F37","explanation":"The most prominent text. Could be a place name (Old World) or grape variety (New World). This is the key to reading the label."},
+    {"id":"classification","label":"Classification / Quality","y":40,"h":15,"color":"#6B7F5E","explanation":"Look for terms like: AOC/AOP, DOC/DOCG, DO/DOCa, Qualitatswein, Grand Cru, Reserva, Riserva, Premier Cru."},
+    {"id":"vintage","label":"Vintage Year","y":55,"h":10,"color":"#5B6B8A","explanation":"The harvest year. Tells you about weather conditions and helps predict style. NV (Non-Vintage) is common in Champagne."},
+    {"id":"details","label":"Volume, ABV & Origin","y":65,"h":20,"color":"#A0614B","explanation":"Legally required: bottle size, alcohol percentage, and country of origin. ABV hints at body and climate."},
+    {"id":"back","label":"Back Label / Importer","y":85,"h":15,"color":"#6B5D7A","explanation":"Often contains the importer, additional tasting notes, serving suggestions, and allergen information (Contains Sulfites)."}
+  ]
+}
