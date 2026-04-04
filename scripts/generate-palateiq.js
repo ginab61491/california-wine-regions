@@ -21,19 +21,21 @@ const DOMAINS = {
   history_culture:      { target: 150, prefix: 'HC' },
   service_business:     { target: 150, prefix: 'SB' },
   blind_tasting:        { target: 200, prefix: 'BT' },
+  producer_knowledge:   { target: 200, prefix: 'PK' },
 };
 
 const LEVEL_CONFIG = {
-  1:  { elo: [100, 300],   cards: 0.09 },   // ~9% of domain total
-  2:  { elo: [300, 500],   cards: 0.09 },
-  3:  { elo: [500, 700],   cards: 0.12 },
-  4:  { elo: [700, 900],   cards: 0.12 },
-  5:  { elo: [900, 1100],  cards: 0.13 },
-  6:  { elo: [1100, 1300], cards: 0.13 },
-  7:  { elo: [1300, 1500], cards: 0.12 },
-  8:  { elo: [1500, 1700], cards: 0.10 },
-  9:  { elo: [1700, 1900], cards: 0.05 },
-  10: { elo: [2000, 2500], cards: 0.10 },
+  1:  { elo: [100, 250],   cards: 0.08 },
+  2:  { elo: [250, 400],   cards: 0.08 },
+  3:  { elo: [400, 550],   cards: 0.08 },
+  4:  { elo: [550, 700],   cards: 0.09 },
+  5:  { elo: [700, 900],   cards: 0.10 },
+  6:  { elo: [900, 1100],  cards: 0.10 },
+  7:  { elo: [1100, 1300], cards: 0.10 },
+  8:  { elo: [1300, 1500], cards: 0.10 },
+  9:  { elo: [1500, 1700], cards: 0.09 },
+  10: { elo: [1700, 2000], cards: 0.09 },
+  11: { elo: [2000, 2500], cards: 0.09 },
 };
 
 const SYSTEM_PROMPT = `You are a Master Sommelier and WSET Diploma holder generating flashcard questions for wine education. Your cards will be used by students ranging from absolute beginners to Master Sommelier candidates.
@@ -169,6 +171,21 @@ const DOMAIN_TOPICS = {
 - Structural analysis as identification clues (acid, tannin, alcohol, body)
 - Common blind tasting traps and how to avoid them
 - Grid methodology for sparkling, fortified, sweet wines`,
+
+  producer_knowledge: `PRODUCER KNOWLEDGE — Topics to cover:
+- Notable producers by region and what they are best known for
+- France: First Growth Bordeaux estates, Burgundy domaines (DRC, Leroy, Leflaive, Roulot), Rhône icons (Guigal, Jaboulet, Chapoutier), Champagne houses (Krug, Bollinger, Salon, Jacques Selosse), Loire (Huet, Cotat, Dagueneau)
+- Italy: Piedmont legends (Giacomo Conterno, Gaja, Bruno Giacosa, Bartolo Mascarello), Tuscan icons (Sassicaia/Tenuta San Guido, Ornellaia, Biondi-Santi, Antinori), Super Tuscans origin story, Amarone masters (Quintarelli, Dal Forno)
+- Spain: Vega Sicilia, Lopez de Heredia, Alvaro Palacios, Torres
+- USA: Napa icons (Screaming Eagle, Harlan, Opus One, Ridge, Stag's Leap), Sonoma (Williams Selyem, Kistler, Littorai), Oregon (Domaine Drouhin, Eyrie), Washington (Quilceda Creek, Leonetti)
+- Germany: Egon Müller, J.J. Prüm, Dr. Loosen
+- Southern Hemisphere: Penfolds, Henschke, Cloudy Bay, Catena Zapata, Kanonkop
+- What makes each producer distinctive: signature wine, winemaking philosophy, historical significance
+- Producer classification within their region's system
+- Key winemakers and their influence (Henri Jayer, André Tchelistcheff, Michel Rolland)
+- Cult wines and why they achieved cult status
+- Family lineage and generational changes at estates
+- Retail availability — which producers are findable at wine shops vs allocation-only`,
 };
 
 // ── Generation ──────────────────────────────────────────

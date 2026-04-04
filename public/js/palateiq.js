@@ -27,8 +27,8 @@ document.addEventListener('DOMContentLoaded', () => {
     };
   }
 
-  const MAX_LEVEL = 10;
-  const LEVEL_THRESHOLDS = [0, 300, 500, 700, 900, 1100, 1300, 1500, 1700, 2000, 2500];
+  const MAX_LEVEL = 11;
+  const LEVEL_THRESHOLDS = [0, 250, 400, 550, 700, 900, 1100, 1300, 1500, 1700, 2000, 2500];
   function eloToLevel(elo) {
     for (let i = LEVEL_THRESHOLDS.length - 1; i >= 0; i--) {
       if (elo >= LEVEL_THRESHOLDS[i]) return Math.min(i + 1, MAX_LEVEL);
@@ -54,7 +54,7 @@ document.addEventListener('DOMContentLoaded', () => {
     const pct = Math.min(100, ((s.elo - prevThreshold) / (nextThreshold - prevThreshold)) * 100);
     document.getElementById('piq-level-fill').style.width = pct + '%';
     document.getElementById('piq-level-next').textContent = level >= MAX_LEVEL
-      ? 'Max Level' : `Next: Level ${level + 1}`;
+      ? 'Master Level' : `Next: Level ${level + 1}`;
   }
 
   function updateLevelNav() {
@@ -115,7 +115,8 @@ document.addEventListener('DOMContentLoaded', () => {
     grape_varieties: 'Grapes', regions_appellations: 'Regions',
     tasting_sensory: 'Tasting', winemaking: 'Winemaking',
     food_pairing: 'Food Pairing', history_culture: 'History',
-    service_business: 'Service', blind_tasting: 'Blind Tasting'
+    service_business: 'Service', blind_tasting: 'Blind Tasting',
+    producer_knowledge: 'Producers'
   };
 
   function showCard(card) {
@@ -321,6 +322,7 @@ document.addEventListener('DOMContentLoaded', () => {
         'palateiq-tasting_sensory.json', 'palateiq-winemaking.json',
         'palateiq-food_pairing.json', 'palateiq-history_culture.json',
         'palateiq-service_business.json', 'palateiq-blind_tasting.json',
+        'palateiq-producer_knowledge.json',
       ];
       const results = await Promise.allSettled(
         files.map(f => fetch('/data/' + f).then(r => r.ok ? r.json() : []))

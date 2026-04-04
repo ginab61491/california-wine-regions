@@ -2,8 +2,8 @@
   {
     "id": "SB-001",
     "domain": "service_business",
-    "difficulty": 2200,
-    "level": 10,
+    "difficulty": 2394,
+    "level": 11,
     "format": "multiple_choice",
     "question": "When decanting a 1985 Barolo Monfortino from Giacomo Conterno, which technique is most appropriate to minimize sediment disturbance while preserving the wine's delicate aromatics?",
     "options": [
@@ -26,8 +26,8 @@
   {
     "id": "SB-002",
     "domain": "service_business",
-    "difficulty": 2350,
-    "level": 10,
+    "difficulty": 2007,
+    "level": 11,
     "format": "odd_one_out",
     "question": "Which of these wine faults would NOT typically be resolved or improved through decanting?",
     "options": [
@@ -50,8 +50,8 @@
   {
     "id": "SB-003",
     "domain": "service_business",
-    "difficulty": 2100,
-    "level": 10,
+    "difficulty": 2389,
+    "level": 11,
     "format": "multiple_choice",
     "question": "In a restaurant setting, what is the optimal serving temperature for a 2015 Chassagne-Montrachet Premier Cru from Domaine Ramonet?",
     "options": [
@@ -74,8 +74,8 @@
   {
     "id": "SB-004",
     "domain": "service_business",
-    "difficulty": 2400,
-    "level": 10,
+    "difficulty": 2224,
+    "level": 11,
     "format": "scenario",
     "question": "A guest orders a 2010 Hermitage Rouge from M. Chapoutier. Upon opening, you detect slight reduction and a tight, closed nose. The wine shows good color and no obvious faults. What is your best course of action?",
     "options": [
@@ -99,8 +99,8 @@
   {
     "id": "SB-005",
     "domain": "service_business",
-    "difficulty": 2250,
-    "level": 10,
+    "difficulty": 2263,
+    "level": 11,
     "format": "multiple_choice",
     "question": "When calculating wine inventory turnover for a restaurant's by-the-glass program, which metric provides the most accurate assessment of program efficiency?",
     "options": [
@@ -123,8 +123,8 @@
   {
     "id": "SB-006",
     "domain": "service_business",
-    "difficulty": 2300,
-    "level": 10,
+    "difficulty": 2182,
+    "level": 11,
     "format": "match_pairs",
     "question": "Match each wine storage parameter with its optimal range for long-term cellar conditions:",
     "pairs": {
@@ -161,8 +161,8 @@
   {
     "id": "SB-007",
     "domain": "service_business",
-    "difficulty": 2150,
-    "level": 10,
+    "difficulty": 2156,
+    "level": 11,
     "format": "multiple_choice",
     "question": "Which closure type provides the most consistent oxygen transmission rate for wines intended for 10-15 years of aging?",
     "options": [
@@ -186,8 +186,8 @@
   {
     "id": "SB-008",
     "domain": "service_business",
-    "difficulty": 2400,
-    "level": 10,
+    "difficulty": 2020,
+    "level": 11,
     "format": "odd_one_out",
     "question": "Which factor is LEAST important when determining the optimal markup strategy for a restaurant's reserve wine list?",
     "options": [
@@ -210,8 +210,8 @@
   {
     "id": "SB-009",
     "domain": "service_business",
-    "difficulty": 2200,
-    "level": 10,
+    "difficulty": 2162,
+    "level": 11,
     "format": "scenario",
     "question": "A guest complains that their 2018 Sancerre tastes 'flat and lifeless' compared to the 2019 they had last week. Both wines show no obvious faults. How should you respond?",
     "options": [
@@ -235,8 +235,8 @@
   {
     "id": "SB-010",
     "domain": "service_business",
-    "difficulty": 2350,
-    "level": 10,
+    "difficulty": 2111,
+    "level": 11,
     "format": "multiple_choice",
     "question": "When reading German wine labels under the 2021 VDP classification reform, which term indicates the highest quality tier equivalent to Burgundy Grand Cru?",
     "options": [
@@ -259,8 +259,8 @@
   {
     "id": "SB-011",
     "domain": "service_business",
-    "difficulty": 2300,
-    "level": 10,
+    "difficulty": 2192,
+    "level": 11,
     "format": "multiple_choice",
     "question": "Which glassware characteristic has the greatest impact on the perception of tannin structure in a young Cabernet Sauvignon?",
     "options": [
@@ -283,8 +283,8 @@
   {
     "id": "SB-012",
     "domain": "service_business",
-    "difficulty": 2450,
-    "level": 10,
+    "difficulty": 2121,
+    "level": 11,
     "format": "match_pairs",
     "question": "Match each wine investment grade classification with its typical auction appreciation rate over 10-year periods:",
     "pairs": {
@@ -321,8 +321,8 @@
   {
     "id": "SB-013",
     "domain": "service_business",
-    "difficulty": 2200,
-    "level": 10,
+    "difficulty": 2218,
+    "level": 11,
     "format": "scenario",
     "question": "A sommelier notices their by-the-glass Burgundian Chardonnay is showing signs of premature oxidation after 48 hours under argon gas. What is the most likely cause and solution?",
     "options": [
@@ -346,8 +346,8 @@
   {
     "id": "SB-014",
     "domain": "service_business",
-    "difficulty": 2250,
-    "level": 10,
+    "difficulty": 2438,
+    "level": 11,
     "format": "odd_one_out",
     "question": "Which practice would NOT be considered appropriate sommelier ethics when making wine recommendations?",
     "options": [
@@ -370,8 +370,8 @@
   {
     "id": "SB-015",
     "domain": "service_business",
-    "difficulty": 2400,
-    "level": 10,
+    "difficulty": 2136,
+    "level": 11,
     "format": "multiple_choice",
     "question": "When double decanting a 1996 Vintage Port from Quinta do Noval Nacional, at what stage should you return the wine to the original bottle?",
     "options": [
@@ -390,6 +390,603 @@
       "aged_wines",
       "service_timing",
       "aeration"
+    ]
+  },
+  {
+    "id": "SB-016",
+    "domain": "service_business",
+    "difficulty": 320,
+    "level": 2,
+    "format": "multiple_choice",
+    "question": "What is the correct order for wine service at the table?",
+    "options": [
+      "Present label, open bottle, taste wine, pour for guests",
+      "Open bottle, present label, pour for guests, taste wine",
+      "Present label, open bottle, pour tasting portion for host, pour for guests",
+      "Open bottle, taste wine, present label, pour for guests"
+    ],
+    "correct": 2,
+    "explanation": "The classic service sequence ensures the host can approve the wine before guests are served. Think of it as 'show, open, taste, share' - this rhythm becomes second nature with practice.",
+    "sources": "Court of Master Sommeliers Study Guide; WSET Level 2",
+    "confidence": "established",
+    "tags": [
+      "service_sequence",
+      "table_service",
+      "hospitality"
+    ]
+  },
+  {
+    "id": "SB-017",
+    "domain": "service_business",
+    "difficulty": 350,
+    "level": 2,
+    "format": "multiple_choice",
+    "question": "At what temperature should most red wines be served?",
+    "options": [
+      "Room temperature (68-72°F/20-22°C)",
+      "Cellar temperature (55-65°F/13-18°C)",
+      "Slightly chilled (45-50°F/7-10°C)",
+      "Well chilled (40-45°F/4-7°C)"
+    ],
+    "correct": 1,
+    "explanation": "Cellar temperature, not modern room temperature, is ideal for reds - it preserves freshness while allowing aromatics to express. Remember: today's 'room temperature' would have made Victorian wine lovers sweat!",
+    "sources": "WSET Level 2 Study Guide; The Wine Bible",
+    "confidence": "established",
+    "tags": [
+      "serving_temperature",
+      "red_wine",
+      "service_standards"
+    ]
+  },
+  {
+    "id": "SB-018",
+    "domain": "service_business",
+    "difficulty": 280,
+    "level": 2,
+    "format": "odd_one_out",
+    "question": "Which of these is NOT a proper wine storage condition?",
+    "options": [
+      "55°F (13°C) temperature",
+      "70% relative humidity",
+      "Bottles stored upright",
+      "Protection from UV light"
+    ],
+    "correct": 2,
+    "explanation": "Cork-finished wines should lie on their sides to keep the cork moist and prevent oxidation. Standing bottles upright is like leaving the door ajar - it invites trouble over time.",
+    "sources": "WSET Level 2 Study Guide; The Oxford Companion to Wine",
+    "confidence": "established",
+    "tags": [
+      "wine_storage",
+      "cellar_conditions",
+      "cork_contact"
+    ]
+  },
+  {
+    "id": "SB-019",
+    "domain": "service_business",
+    "difficulty": 310,
+    "level": 2,
+    "format": "multiple_choice",
+    "question": "When should you decant a wine?",
+    "options": [
+      "Only for red wines over 10 years old",
+      "For young tannic reds and old wines with sediment",
+      "Never for white wines",
+      "Only when the wine has obvious faults"
+    ],
+    "correct": 1,
+    "explanation": "Decanting serves two masters: young wines benefit from aeration to soften tannins, while old wines need separation from sediment. It's like giving wine room to breathe or a clean slate to perform.",
+    "sources": "WSET Level 2 Study Guide; Court of Master Sommeliers Study Materials",
+    "confidence": "established",
+    "tags": [
+      "decanting",
+      "aeration",
+      "sediment_removal"
+    ]
+  },
+  {
+    "id": "SB-020",
+    "domain": "service_business",
+    "difficulty": 340,
+    "level": 2,
+    "format": "multiple_choice",
+    "question": "What is the primary difference between Old World and New World wine labels?",
+    "options": [
+      "Old World labels are in foreign languages",
+      "Old World emphasizes place, New World emphasizes grape variety",
+      "New World wines are always vintage dated",
+      "Old World wines have higher alcohol levels"
+    ],
+    "correct": 1,
+    "explanation": "Old World labels tell you 'where' (Burgundy, Rioja), trusting you know the grapes, while New World labels tell you 'what' (Pinot Noir, Tempranillo). It's geography versus grape variety as the headline act.",
+    "sources": "WSET Level 2 Study Guide; The Wine Bible",
+    "confidence": "established",
+    "tags": [
+      "wine_labels",
+      "old_world",
+      "new_world",
+      "classification"
+    ]
+  },
+  {
+    "id": "SB-021",
+    "domain": "service_business",
+    "difficulty": 360,
+    "level": 2,
+    "format": "scenario",
+    "question": "A guest complains their wine smells like wet cardboard and tastes flat. What is most likely wrong and how should you respond?",
+    "options": [
+      "The wine is corked; apologize and replace immediately",
+      "The wine needs decanting; offer to decant it",
+      "The wine is too cold; let it warm up",
+      "The wine is fine; educate the guest about the style"
+    ],
+    "correct": 0,
+    "explanation": "Wet cardboard aroma is the classic signature of cork taint (TCA). No amount of time or temperature will fix this - the wine is genuinely faulty and replacement is the only solution.",
+    "sources": "WSET Level 2 Study Guide; Court of Master Sommeliers Study Materials",
+    "confidence": "established",
+    "tags": [
+      "wine_faults",
+      "cork_taint",
+      "customer_service",
+      "TCA"
+    ]
+  },
+  {
+    "id": "SB-022",
+    "domain": "service_business",
+    "difficulty": 290,
+    "level": 2,
+    "format": "multiple_choice",
+    "question": "What type of glass is best for serving Champagne?",
+    "options": [
+      "Coupe",
+      "Flute",
+      "Burgundy bowl",
+      "Bordeaux glass"
+    ],
+    "correct": 1,
+    "explanation": "The flute's narrow opening preserves bubbles and concentrates aromatics better than the wide coupe. Think of it as a chimney for bubbles - it directs the effervescence and aromatics right to your nose.",
+    "sources": "WSET Level 2 Study Guide; The Wine Bible",
+    "confidence": "established",
+    "tags": [
+      "glassware",
+      "champagne",
+      "sparkling_wine",
+      "service_equipment"
+    ]
+  },
+  {
+    "id": "SB-023",
+    "domain": "service_business",
+    "difficulty": 380,
+    "level": 2,
+    "format": "multiple_choice",
+    "question": "What is a typical restaurant markup on wine?",
+    "options": [
+      "50-75%",
+      "100-200%",
+      "200-300%",
+      "400-500%"
+    ],
+    "correct": 2,
+    "explanation": "Most restaurants mark up wine 200-300% (3-4 times cost) to cover storage, service, glassware, and profit. It seems steep until you consider the overhead - restaurants are in the hospitality business, not just wine retail.",
+    "sources": "GuildSomm Professional Development; The Wine Bible",
+    "confidence": "established",
+    "tags": [
+      "restaurant_markup",
+      "wine_pricing",
+      "cost_structure",
+      "business_operations"
+    ]
+  },
+  {
+    "id": "SB-024",
+    "domain": "service_business",
+    "difficulty": 270,
+    "level": 2,
+    "format": "multiple_choice",
+    "question": "Which closure type allows the most oxygen transmission?",
+    "options": [
+      "Natural cork",
+      "Synthetic cork",
+      "Screwcap",
+      "Glass stopper"
+    ],
+    "correct": 0,
+    "explanation": "Natural cork is the most porous closure, allowing micro-oxygenation that helps wine evolve over time. It's like the difference between a wool sweater and a plastic raincoat - one breathes, one seals.",
+    "sources": "WSET Level 2 Study Guide; Wine Science",
+    "confidence": "established",
+    "tags": [
+      "closures",
+      "cork",
+      "oxygen_transmission",
+      "wine_aging"
+    ]
+  },
+  {
+    "id": "SB-025",
+    "domain": "service_business",
+    "difficulty": 330,
+    "level": 2,
+    "format": "odd_one_out",
+    "question": "Which of these would NOT be appropriate sommelier behavior when making recommendations?",
+    "options": [
+      "Asking about the guest's preferences",
+      "Suggesting wines within their stated budget",
+      "Recommending only the most expensive options",
+      "Offering to pour a small taste before committing"
+    ],
+    "correct": 2,
+    "explanation": "Good sommeliers build trust by respecting budgets and preferences, not pushing high-ticket items. Think of yourself as a wine matchmaker - your job is finding the perfect pairing between guest and bottle, not maximizing the check.",
+    "sources": "Court of Master Sommeliers Ethics Guidelines; GuildSomm Professional Standards",
+    "confidence": "established",
+    "tags": [
+      "sommelier_ethics",
+      "recommendations",
+      "customer_service",
+      "professional_standards"
+    ]
+  },
+  {
+    "id": "SB-026",
+    "domain": "service_business",
+    "difficulty": 420,
+    "level": 3,
+    "format": "multiple_choice",
+    "question": "When double decanting an old wine, what is the primary purpose of returning it to the original bottle?",
+    "options": [
+      "To allow further settling of fine sediment",
+      "To control the rate of aeration for service",
+      "To present the wine in its original vessel for authenticity",
+      "To prevent over-oxidation during extended service"
+    ],
+    "correct": 1,
+    "explanation": "Double decanting lets you clean the bottle while aerating the wine, then control exposure by returning it to the narrow-necked original bottle. It's like having a volume control for oxygen - you get the benefits of aeration without the risk of over-exposure.",
+    "sources": "Court of Master Sommeliers Advanced Study Guide; The Oxford Companion to Wine",
+    "confidence": "established",
+    "tags": [
+      "double_decanting",
+      "aeration_control",
+      "old_wine_service",
+      "advanced_technique"
+    ]
+  },
+  {
+    "id": "SB-027",
+    "domain": "service_business",
+    "difficulty": 450,
+    "level": 3,
+    "format": "match_pairs",
+    "question": "Match each wine style with its optimal serving temperature:",
+    "pairs": {
+      "left": [
+        "Vintage Champagne",
+        "Burgundian Chardonnay",
+        "Barolo",
+        "Sauternes"
+      ],
+      "right": [
+        "46-50°F (8-10°C)",
+        "50-55°F (10-13°C)",
+        "62-68°F (17-20°C)",
+        "43-46°F (6-8°C)"
+      ]
+    },
+    "options": [],
+    "correct": [
+      1,
+      2,
+      3,
+      0
+    ],
+    "explanation": "Temperature affects perception dramatically - too cold mutes aromatics, too warm emphasizes alcohol. Think of temperature as the volume knob for a wine's personality, with each style having its sweet spot for optimal expression.",
+    "sources": "WSET Level 3 Study Guide; Court of Master Sommeliers Advanced Materials",
+    "confidence": "established",
+    "tags": [
+      "serving_temperature",
+      "wine_styles",
+      "service_precision",
+      "sensory_optimization"
+    ]
+  },
+  {
+    "id": "SB-028",
+    "domain": "service_business",
+    "difficulty": 480,
+    "level": 3,
+    "format": "scenario",
+    "question": "Your by-the-glass Chablis has been open for 36 hours under argon and now shows muted fruit and a slightly flat mouthfeel, though no obvious oxidation. What's the most likely issue?",
+    "options": [
+      "The wine was faulty from the start",
+      "Argon system is malfunctioning",
+      "Natural evolution - replace the wine",
+      "Temperature fluctuation has damaged the wine"
+    ],
+    "correct": 2,
+    "explanation": "Even under perfect gas systems, delicate whites like Chablis lose their vibrant character after 24-48 hours - it's evolution, not oxidation. Think of it like cut flowers - they may look fine but have lost their life force.",
+    "sources": "GuildSomm BTG Management; WSET Level 3 Service Guidelines",
+    "confidence": "established",
+    "tags": [
+      "by_the_glass",
+      "wine_preservation",
+      "quality_control",
+      "chablis"
+    ]
+  },
+  {
+    "id": "SB-029",
+    "domain": "service_business",
+    "difficulty": 410,
+    "level": 3,
+    "format": "multiple_choice",
+    "question": "What is the main limitation of vintage charts for wine recommendations?",
+    "options": [
+      "They only cover expensive wines",
+      "They don't account for individual producer quality and style",
+      "They become outdated too quickly",
+      "They focus only on red wines"
+    ],
+    "correct": 1,
+    "explanation": "Vintage charts paint with a broad brush, but great producers can make excellent wine in 'poor' years while mediocre producers disappoint in 'great' ones. It's like judging a book by its publication year - the author matters more than the timing.",
+    "sources": "The Oxford Companion to Wine; Court of Master Sommeliers Advanced Study Guide",
+    "confidence": "established",
+    "tags": [
+      "vintage_charts",
+      "quality_assessment",
+      "producer_variation",
+      "wine_evaluation"
+    ]
+  },
+  {
+    "id": "SB-030",
+    "domain": "service_business",
+    "difficulty": 390,
+    "level": 3,
+    "format": "multiple_choice",
+    "question": "For wine investment purposes, which factor is most critical for long-term value appreciation?",
+    "options": [
+      "Vintage variation",
+      "Producer reputation and track record",
+      "Initial purchase price",
+      "Storage provenance and condition"
+    ],
+    "correct": 3,
+    "explanation": "Perfect provenance trumps everything in the investment market - a flawlessly stored average vintage will outperform a great vintage with questionable storage. Think of provenance as the wine's birth certificate and medical records combined.",
+    "sources": "Wine Investment Association Guidelines; The Oxford Companion to Wine",
+    "confidence": "established",
+    "tags": [
+      "wine_investment",
+      "provenance",
+      "storage_conditions",
+      "market_value"
+    ]
+  },
+  {
+    "id": "SB-031",
+    "domain": "service_business",
+    "difficulty": 350,
+    "level": 2,
+    "format": "multiple_choice",
+    "question": "What is the proper sequence for wine service at the table?",
+    "options": [
+      "Present label, open bottle, pour tasting portion, serve guests",
+      "Open bottle, present label, pour tasting portion, serve guests",
+      "Present label, pour tasting portion, open bottle, serve guests",
+      "Pour tasting portion, present label, open bottle, serve guests"
+    ],
+    "correct": 0,
+    "explanation": "Think of wine service like introducing a friend - you present the wine's 'identity' first, then open it, offer a taste to the host for approval, and finally serve everyone. This sequence builds anticipation and allows the host to verify the selection before committing.",
+    "sources": "WSET Level 2; Court of Master Sommeliers Introductory",
+    "confidence": "established",
+    "tags": [
+      "service_sequence",
+      "table_service",
+      "hospitality"
+    ]
+  },
+  {
+    "id": "SB-032",
+    "domain": "service_business",
+    "difficulty": 425,
+    "level": 3,
+    "format": "odd_one_out",
+    "question": "Which of these storage conditions would NOT be appropriate for long-term wine cellaring?",
+    "options": [
+      "55-59°F (13-15°C) temperature",
+      "70-75% relative humidity",
+      "Bottles stored on their side",
+      "Frequent temperature fluctuations of 10°F daily"
+    ],
+    "correct": 3,
+    "explanation": "Temperature swings are wine's worst enemy - they cause the liquid to expand and contract, potentially pushing wine past the cork or drawing air in. Think of wine as preferring a steady, cool meditation rather than a rollercoaster ride.",
+    "sources": "The Oxford Companion to Wine; WSET Level 3",
+    "confidence": "established",
+    "tags": [
+      "wine_storage",
+      "temperature_control",
+      "cellar_conditions"
+    ]
+  },
+  {
+    "id": "SB-033",
+    "domain": "service_business",
+    "difficulty": 300,
+    "level": 2,
+    "format": "multiple_choice",
+    "question": "At what temperature should most light-bodied red wines like Pinot Noir be served?",
+    "options": [
+      "Room temperature (68-72°F/20-22°C)",
+      "Slightly chilled (55-60°F/13-15°C)",
+      "Well chilled (45-50°F/7-10°C)",
+      "Cellar temperature (50-55°F/10-13°C)"
+    ],
+    "correct": 1,
+    "explanation": "Light reds shine when slightly chilled - it preserves their delicate fruit aromatics and prevents alcohol from overwhelming their subtle structure. Think 'cool room' rather than 'cold fridge' or 'warm living room.'",
+    "sources": "WSET Level 2; The Wine Bible",
+    "confidence": "established",
+    "tags": [
+      "serving_temperature",
+      "red_wine",
+      "pinot_noir"
+    ]
+  },
+  {
+    "id": "SB-034",
+    "domain": "service_business",
+    "difficulty": 475,
+    "level": 3,
+    "format": "scenario",
+    "question": "A guest orders a 15-year-old Barolo and upon opening, you notice significant sediment and a tight, muted nose despite proper storage. The wine shows good color with no off-aromas. What should you do?",
+    "options": [
+      "Suggest decanting for 2-3 hours to allow the wine to open and separate sediment",
+      "Serve immediately as older wines can deteriorate quickly once opened",
+      "Return the bottle as it appears to be past its prime",
+      "Offer to replace it with a younger vintage"
+    ],
+    "correct": 0,
+    "explanation": "Mature Barolo often needs time and air to reveal its glory - sediment is normal and the tight nose suggests the wine is just 'sleeping,' not damaged. Decanting is like giving an old master time to stretch and show its true colors.",
+    "sources": "The Oxford Companion to Wine; GuildSomm",
+    "confidence": "established",
+    "tags": [
+      "decanting",
+      "aged_wine",
+      "barolo",
+      "service_decisions"
+    ]
+  },
+  {
+    "id": "SB-035",
+    "domain": "service_business",
+    "difficulty": 380,
+    "level": 2,
+    "format": "match_pairs",
+    "question": "Match each wine type with its optimal serving temperature:",
+    "pairs": {
+      "left": [
+        "Champagne",
+        "Sancerre",
+        "Chianti Classico",
+        "Vintage Port"
+      ],
+      "right": [
+        "62-65°F (17-18°C)",
+        "46-50°F (8-10°C)",
+        "50-55°F (10-13°C)",
+        "58-62°F (14-17°C)"
+      ]
+    },
+    "options": [],
+    "correct": [
+      1,
+      2,
+      3,
+      0
+    ],
+    "explanation": "Temperature is like seasoning for wine - sparkling needs the coldest serving to maintain bubbles and freshness, while fortified wines can handle warmth that would make Champagne flat. Each style has its sweet spot for optimal expression.",
+    "sources": "WSET Level 2; The Wine Bible",
+    "confidence": "established",
+    "tags": [
+      "serving_temperature",
+      "wine_types",
+      "champagne",
+      "port"
+    ]
+  },
+  {
+    "id": "SB-036",
+    "domain": "service_business",
+    "difficulty": 320,
+    "level": 2,
+    "format": "multiple_choice",
+    "question": "What is the primary difference between Old World and New World wine labels?",
+    "options": [
+      "Old World emphasizes place/region, New World emphasizes grape variety",
+      "Old World shows vintage, New World shows alcohol content",
+      "Old World uses corks, New World uses screwcaps",
+      "Old World has longer aging requirements, New World has shorter ones"
+    ],
+    "correct": 0,
+    "explanation": "Old World labels are like saying 'I'm from Burgundy' while New World labels say 'I'm Chardonnay' - it's the difference between terroir-first versus variety-first identity. This reflects centuries of winemaking tradition versus modern marketing approaches.",
+    "sources": "WSET Level 2; The Oxford Companion to Wine",
+    "confidence": "established",
+    "tags": [
+      "wine_labels",
+      "old_world",
+      "new_world",
+      "terroir"
+    ]
+  },
+  {
+    "id": "SB-037",
+    "domain": "service_business",
+    "difficulty": 450,
+    "level": 3,
+    "format": "multiple_choice",
+    "question": "When managing a by-the-glass wine program, what is the most critical factor for maintaining quality and profitability?",
+    "options": [
+      "Using the most expensive preservation system available",
+      "Rotating stock every 24 hours regardless of preservation method",
+      "Matching wine selection to actual consumption patterns and using appropriate preservation",
+      "Serving only wines under $15 wholesale cost"
+    ],
+    "correct": 2,
+    "explanation": "Smart by-the-glass programs are like running a produce section - you need the right preservation for each wine's lifespan and realistic expectations of how fast each will sell. A slow-moving Barolo needs different handling than a popular Pinot Grigio.",
+    "sources": "GuildSomm; Wine Business Monthly",
+    "confidence": "established",
+    "tags": [
+      "by_the_glass",
+      "wine_preservation",
+      "inventory_management",
+      "profitability"
+    ]
+  },
+  {
+    "id": "SB-038",
+    "domain": "service_business",
+    "difficulty": 275,
+    "level": 2,
+    "format": "multiple_choice",
+    "question": "A guest complains their Sauvignon Blanc smells like struck matches and tastes muted. What is the most likely issue?",
+    "options": [
+      "Cork taint (TCA)",
+      "Sulfur dioxide (SO2) excess",
+      "Heat damage",
+      "Premature oxidation"
+    ],
+    "correct": 1,
+    "explanation": "The struck match aroma is SO2's calling card - it's like wine's preservative got a bit overzealous at bottling. A quick decant or vigorous swirl usually blows off excess sulfur, revealing the wine underneath like clearing smoke from a room.",
+    "sources": "WSET Level 2; Wine Faults and Flaws",
+    "confidence": "established",
+    "tags": [
+      "wine_faults",
+      "sulfur_dioxide",
+      "sauvignon_blanc",
+      "service_recovery"
+    ]
+  },
+  {
+    "id": "SB-039",
+    "domain": "service_business",
+    "difficulty": 400,
+    "level": 3,
+    "format": "multiple_choice",
+    "question": "Which closure type provides the most consistent aging potential for wines intended for 10+ years of cellaring?",
+    "options": [
+      "Natural cork",
+      "Technical cork (agglomerated)",
+      "Screwcap with Saranex liner",
+      "Synthetic cork"
+    ],
+    "correct": 2,
+    "explanation": "Screwcaps with Saranex liners are like precision instruments - they allow just enough oxygen for proper development without the variability that makes some natural corks perfect and others problematic. Consistency trumps romance for serious aging.",
+    "sources": "Wine Science (Jamie Goode); The Oxford Companion to Wine",
+    "confidence": "established",
+    "tags": [
+      "closures",
+      "screwcap",
+      "wine_aging",
+      "oxygen_transmission"
     ]
   }
 ]

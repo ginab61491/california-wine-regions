@@ -2,8 +2,8 @@
   {
     "id": "FP-001",
     "domain": "food_pairing",
-    "difficulty": 2100,
-    "level": 10,
+    "difficulty": 2206,
+    "level": 11,
     "format": "multiple_choice",
     "question": "Which specific compound in artichokes is responsible for making wine taste metallic and bitter when paired together?",
     "options": [
@@ -26,8 +26,8 @@
   {
     "id": "FP-002",
     "domain": "food_pairing",
-    "difficulty": 2200,
-    "level": 10,
+    "difficulty": 2137,
+    "level": 11,
     "format": "odd_one_out",
     "question": "Which of these classic regional pairings does NOT follow the 'what grows together, goes together' principle?",
     "options": [
@@ -50,8 +50,8 @@
   {
     "id": "FP-003",
     "domain": "food_pairing",
-    "difficulty": 2300,
-    "level": 10,
+    "difficulty": 2029,
+    "level": 11,
     "format": "multiple_choice",
     "question": "When pairing wine with dishes high in umami (glutamates), what specific sensory change occurs with tannic red wines?",
     "options": [
@@ -74,8 +74,8 @@
   {
     "id": "FP-004",
     "domain": "food_pairing",
-    "difficulty": 2150,
-    "level": 10,
+    "difficulty": 2382,
+    "level": 11,
     "format": "scenario",
     "question": "A guest orders duck breast with a cherry gastrique sauce. The duck is cooked medium-rare. What pairing principle should drive your wine selection?",
     "options": [
@@ -98,8 +98,8 @@
   {
     "id": "FP-005",
     "domain": "food_pairing",
-    "difficulty": 2250,
-    "level": 10,
+    "difficulty": 2186,
+    "level": 11,
     "format": "match_pairs",
     "question": "Match each cooking method with its optimal wine pairing approach:",
     "pairs": {
@@ -136,8 +136,8 @@
   {
     "id": "FP-006",
     "domain": "food_pairing",
-    "difficulty": 2400,
-    "level": 10,
+    "difficulty": 2186,
+    "level": 11,
     "format": "multiple_choice",
     "question": "In the classic pairing of aged Comté cheese with Vin Jaune from Jura, which specific compound interaction creates the synergy?",
     "options": [
@@ -161,8 +161,8 @@
   {
     "id": "FP-007",
     "domain": "food_pairing",
-    "difficulty": 2050,
-    "level": 10,
+    "difficulty": 2204,
+    "level": 11,
     "format": "multiple_choice",
     "question": "Why does asparagus create pairing challenges with most wines?",
     "options": [
@@ -185,8 +185,8 @@
   {
     "id": "FP-008",
     "domain": "food_pairing",
-    "difficulty": 2300,
-    "level": 10,
+    "difficulty": 2341,
+    "level": 11,
     "format": "odd_one_out",
     "question": "Which of these bridge ingredients does NOT work by creating flavor echoes with wine?",
     "options": [
@@ -209,8 +209,8 @@
   {
     "id": "FP-009",
     "domain": "food_pairing",
-    "difficulty": 2200,
-    "level": 10,
+    "difficulty": 2342,
+    "level": 11,
     "format": "scenario",
     "question": "A guest wants to pair wine with 85% dark chocolate tart. They prefer red wine. What is your best recommendation strategy?",
     "options": [
@@ -233,8 +233,8 @@
   {
     "id": "FP-010",
     "domain": "food_pairing",
-    "difficulty": 2350,
-    "level": 10,
+    "difficulty": 2490,
+    "level": 11,
     "format": "multiple_choice",
     "question": "In wine and cheese pairing, what makes blue cheese and sweet wine such a classic combination at the molecular level?",
     "options": [
@@ -258,8 +258,8 @@
   {
     "id": "FP-011",
     "domain": "food_pairing",
-    "difficulty": 2100,
-    "level": 10,
+    "difficulty": 2307,
+    "level": 11,
     "format": "multiple_choice",
     "question": "When pairing wine with very spicy (capsaicin-heavy) dishes, why should alcohol levels be kept moderate?",
     "options": [
@@ -283,8 +283,8 @@
   {
     "id": "FP-012",
     "domain": "food_pairing",
-    "difficulty": 2150,
-    "level": 10,
+    "difficulty": 2094,
+    "level": 11,
     "format": "multiple_choice",
     "question": "According to established pairing principles, why must dessert wines always be sweeter than the dessert itself?",
     "options": [
@@ -307,8 +307,8 @@
   {
     "id": "FP-013",
     "domain": "food_pairing",
-    "difficulty": 2250,
-    "level": 10,
+    "difficulty": 2389,
+    "level": 11,
     "format": "scenario",
     "question": "A table orders oysters with mignonette (shallot-red wine vinegar sauce). The guests want Champagne. What pairing challenge must you address?",
     "options": [
@@ -332,8 +332,8 @@
   {
     "id": "FP-014",
     "domain": "food_pairing",
-    "difficulty": 2400,
-    "level": 10,
+    "difficulty": 2422,
+    "level": 11,
     "format": "match_pairs",
     "question": "Match each difficult-to-pair food with its optimal wine style:",
     "pairs": {
@@ -370,8 +370,8 @@
   {
     "id": "FP-015",
     "domain": "food_pairing",
-    "difficulty": 2200,
-    "level": 10,
+    "difficulty": 2299,
+    "level": 11,
     "format": "multiple_choice",
     "question": "What makes sparkling wine uniquely versatile for food pairing across diverse cuisines?",
     "options": [
@@ -390,6 +390,588 @@
       "palate_cleansing",
       "versatility",
       "effervescence"
+    ]
+  },
+  {
+    "id": "FP-016",
+    "domain": "food_pairing",
+    "difficulty": 320,
+    "level": 2,
+    "format": "multiple_choice",
+    "question": "What is the primary reason high-acid wines pair well with fatty foods?",
+    "options": [
+      "The acid cuts through the fat, cleansing the palate",
+      "The acid enhances the fat's flavor compounds",
+      "The acid neutralizes the fat's texture",
+      "The acid creates a creamy mouthfeel"
+    ],
+    "correct": 0,
+    "explanation": "Acidity acts like a palate cleanser, cutting through rich, fatty foods and refreshing your mouth for the next bite. Think of how lemon juice brightens a rich salmon dish—wine's acidity works the same magic.",
+    "sources": "WSET Level 2 Study Materials; The Wine Bible (Karen MacNeil)",
+    "confidence": "established",
+    "tags": [
+      "acid_fat_pairing",
+      "fundamental_principles",
+      "palate_cleansing"
+    ]
+  },
+  {
+    "id": "FP-017",
+    "domain": "food_pairing",
+    "difficulty": 350,
+    "level": 2,
+    "format": "multiple_choice",
+    "question": "Why do tannic red wines pair well with protein-rich foods like steak?",
+    "options": [
+      "Tannins enhance the meat's umami flavors",
+      "Proteins bind with tannins, softening the wine's astringency",
+      "Tannins break down the meat's fibers",
+      "Proteins increase the wine's tannin perception"
+    ],
+    "correct": 1,
+    "explanation": "Proteins literally bind with tannin molecules, making astringent wines feel smoother and more balanced. It's like adding cream to strong tea—the harsh edges disappear, revealing the wine's fruit underneath.",
+    "sources": "WSET Level 2 Study Materials; Wine Science (Jamie Goode)",
+    "confidence": "established",
+    "tags": [
+      "tannin_protein_pairing",
+      "fundamental_principles",
+      "astringency_reduction"
+    ]
+  },
+  {
+    "id": "FP-018",
+    "domain": "food_pairing",
+    "difficulty": 280,
+    "level": 2,
+    "format": "multiple_choice",
+    "question": "Which wine style is most versatile for pairing with spicy Asian cuisine?",
+    "options": [
+      "High-alcohol Cabernet Sauvignon",
+      "Off-dry Riesling",
+      "Oaked Chardonnay",
+      "Aged Barolo"
+    ],
+    "correct": 1,
+    "explanation": "Off-dry Riesling's touch of sweetness soothes spice heat while its bright acidity cuts through rich sauces. The lower alcohol won't amplify the burn—it's like having a cooling breeze with every sip.",
+    "sources": "WSET Level 2 Study Materials; The Wine Bible (Karen MacNeil)",
+    "confidence": "established",
+    "tags": [
+      "spicy_food_pairing",
+      "sweetness_spice",
+      "asian_cuisine"
+    ]
+  },
+  {
+    "id": "FP-019",
+    "domain": "food_pairing",
+    "difficulty": 340,
+    "level": 2,
+    "format": "odd_one_out",
+    "question": "Which of these is NOT a classic 'what grows together, goes together' pairing?",
+    "options": [
+      "Sancerre with Loire Valley goat cheese",
+      "Chianti Classico with Tuscan wild boar",
+      "German Riesling with Japanese sushi",
+      "Muscadet with Brittany oysters"
+    ],
+    "correct": 2,
+    "explanation": "German Riesling and Japanese sushi don't share geographic origins—this pairing works for other reasons (acidity with delicate fish). The others are all regional marriages where local wines evolved alongside local foods over centuries.",
+    "sources": "The World Atlas of Wine (Hugh Johnson & Jancis Robinson); WSET Level 2 Study Materials",
+    "confidence": "established",
+    "tags": [
+      "regional_pairings",
+      "geographic_harmony",
+      "traditional_matches"
+    ]
+  },
+  {
+    "id": "FP-020",
+    "domain": "food_pairing",
+    "difficulty": 360,
+    "level": 2,
+    "format": "multiple_choice",
+    "question": "When pairing wine with a dish, what should be your primary focus?",
+    "options": [
+      "The main protein",
+      "The dominant sauce or seasoning",
+      "The cooking method used",
+      "The side dishes"
+    ],
+    "correct": 1,
+    "explanation": "Always pair to the sauce, not the protein—it's the sauce that dominates your palate. A simple chicken becomes completely different with creamy mushroom sauce versus spicy tomato salsa, requiring entirely different wine approaches.",
+    "sources": "WSET Level 2 Study Materials; The Wine Bible (Karen MacNeil)",
+    "confidence": "established",
+    "tags": [
+      "sauce_pairing",
+      "dominant_flavors",
+      "pairing_hierarchy"
+    ]
+  },
+  {
+    "id": "FP-021",
+    "domain": "food_pairing",
+    "difficulty": 300,
+    "level": 2,
+    "format": "multiple_choice",
+    "question": "What makes sparkling wine particularly good with fried foods?",
+    "options": [
+      "The bubbles enhance the oil's flavor",
+      "The effervescence cuts through grease and cleanses the palate",
+      "The bubbles absorb excess salt",
+      "The pressure increases umami perception"
+    ],
+    "correct": 1,
+    "explanation": "Those dancing bubbles act like tiny scrub brushes, lifting grease off your palate and refreshing your mouth. It's why Champagne with fish and chips works so beautifully—each sip resets your taste buds for the next bite.",
+    "sources": "WSET Level 2 Study Materials; The Wine Bible (Karen MacNeil)",
+    "confidence": "established",
+    "tags": [
+      "sparkling_wine_versatility",
+      "effervescence_cleansing",
+      "fried_foods"
+    ]
+  },
+  {
+    "id": "FP-022",
+    "domain": "food_pairing",
+    "difficulty": 330,
+    "level": 2,
+    "format": "multiple_choice",
+    "question": "Why should dessert wines always be sweeter than the dessert being served?",
+    "options": [
+      "To enhance the dessert's texture",
+      "To prevent the wine from tasting sour by comparison",
+      "To balance the dessert's acidity",
+      "To complement the dessert's alcohol content"
+    ],
+    "correct": 1,
+    "explanation": "If your dessert is sweeter than your wine, the wine will taste thin and acidic—like drinking lemon water after eating chocolate cake. The wine needs to match or exceed the dessert's sweetness to maintain its own character.",
+    "sources": "WSET Level 2 Study Materials; The Wine Bible (Karen MacNeil)",
+    "confidence": "established",
+    "tags": [
+      "dessert_wine_pairing",
+      "sweetness_hierarchy",
+      "taste_perception"
+    ]
+  },
+  {
+    "id": "FP-023",
+    "domain": "food_pairing",
+    "difficulty": 310,
+    "level": 2,
+    "format": "scenario",
+    "question": "A guest orders grilled salmon with lemon butter sauce. They want a white wine. What's your best recommendation approach?",
+    "options": [
+      "Choose a wine that matches the salmon's richness",
+      "Focus on the lemon butter sauce's acidity and richness",
+      "Select based on the grilled cooking method",
+      "Pair with the salmon's natural oils"
+    ],
+    "correct": 1,
+    "explanation": "The lemon butter sauce is what your palate experiences most—its bright acidity and rich texture should drive your wine choice. A crisp Sauvignon Blanc or rich Chardonnay would complement those dominant flavors beautifully.",
+    "sources": "WSET Level 2 Study Materials; The Wine Bible (Karen MacNeil)",
+    "confidence": "established",
+    "tags": [
+      "sauce_driven_pairing",
+      "real_world_scenario",
+      "dominant_flavors"
+    ]
+  },
+  {
+    "id": "FP-024",
+    "domain": "food_pairing",
+    "difficulty": 290,
+    "level": 2,
+    "format": "multiple_choice",
+    "question": "What wine characteristic should you avoid when pairing with very spicy food?",
+    "options": [
+      "High acidity",
+      "High alcohol",
+      "Light body",
+      "Fruity flavors"
+    ],
+    "correct": 1,
+    "explanation": "High alcohol amplifies the burning sensation of spicy food, making both the heat and the alcohol feel more intense. It's like pouring gasoline on a fire—choose lower alcohol wines to keep the pairing comfortable.",
+    "sources": "WSET Level 2 Study Materials; The Wine Bible (Karen MacNeil)",
+    "confidence": "established",
+    "tags": [
+      "spicy_food_challenges",
+      "alcohol_heat_interaction",
+      "pairing_pitfalls"
+    ]
+  },
+  {
+    "id": "FP-025",
+    "domain": "food_pairing",
+    "difficulty": 270,
+    "level": 2,
+    "format": "multiple_choice",
+    "question": "Which cooking method typically requires the lightest wine pairing?",
+    "options": [
+      "Grilling",
+      "Braising",
+      "Poaching",
+      "Roasting"
+    ],
+    "correct": 2,
+    "explanation": "Poaching uses gentle, moist heat that preserves delicate flavors without adding richness or intensity. Think poached fish—it needs a wine as delicate as the cooking method, not something that will overpower its subtle character.",
+    "sources": "WSET Level 2 Study Materials; The Wine Bible (Karen MacNeil)",
+    "confidence": "established",
+    "tags": [
+      "cooking_method_pairing",
+      "gentle_cooking",
+      "delicate_flavors"
+    ]
+  },
+  {
+    "id": "FP-026",
+    "domain": "food_pairing",
+    "difficulty": 380,
+    "level": 2,
+    "format": "multiple_choice",
+    "question": "Why does blue cheese pair classically with sweet wines like Port or Sauternes?",
+    "options": [
+      "The sweetness masks the cheese's saltiness",
+      "Sweet and salty create complementary contrast",
+      "The wine's alcohol cuts through the cheese's fat",
+      "The sweetness enhances the cheese's blue mold flavors"
+    ],
+    "correct": 1,
+    "explanation": "Sweet and salty are natural flavor opposites that enhance each other—think salted caramel or chocolate-covered pretzels. The wine's honeyed sweetness makes the cheese's pungent saltiness more pronounced and vice versa, creating perfect balance.",
+    "sources": "WSET Level 2 Study Materials; The Wine Bible (Karen MacNeil)",
+    "confidence": "established",
+    "tags": [
+      "blue_cheese_pairing",
+      "sweet_salty_contrast",
+      "complementary_flavors"
+    ]
+  },
+  {
+    "id": "FP-027",
+    "domain": "food_pairing",
+    "difficulty": 450,
+    "level": 3,
+    "format": "match_pairs",
+    "question": "Match each challenging-to-pair food with its optimal wine solution:",
+    "pairs": {
+      "left": [
+        "Artichoke (cynarin compound)",
+        "Chocolate dessert",
+        "Asparagus",
+        "Vinegar-heavy salad"
+      ],
+      "right": [
+        "Sauvignon Blanc with herbaceous notes",
+        "Sweet wine or wine with residual sugar",
+        "Sparkling wine or high-acid white",
+        "Avoid wine, serve water instead"
+      ]
+    },
+    "options": [],
+    "correct": [
+      3,
+      1,
+      0,
+      2
+    ],
+    "explanation": "Each difficult food has a specific solution: artichoke's cynarin makes wine taste metallic (avoid pairing), chocolate needs sweetness to avoid bitterness clash, asparagus pairs with herbaceous wines that echo its vegetal character, and vinegar's harsh acidity needs sparkling's bubbles or bright acidity to compete.",
+    "sources": "WSET Level 3 Study Materials; The Wine Bible (Karen MacNeil)",
+    "confidence": "established",
+    "tags": [
+      "difficult_foods",
+      "problem_solving",
+      "specific_compounds"
+    ]
+  },
+  {
+    "id": "FP-028",
+    "domain": "food_pairing",
+    "difficulty": 420,
+    "level": 3,
+    "format": "multiple_choice",
+    "question": "How do umami-rich foods (mushrooms, aged cheese, soy sauce) affect the perception of tannic red wines?",
+    "options": [
+      "They enhance the wine's fruit flavors",
+      "They make tannins taste more bitter and astringent",
+      "They soften the wine's acidity",
+      "They increase the wine's alcohol perception"
+    ],
+    "correct": 1,
+    "explanation": "Umami compounds interact with tannins to create a harsh, metallic bitterness that makes wines taste unpleasantly astringent. It's why that perfect Barolo can taste awful with mushroom risotto—the umami amplifies everything you don't want in tannins.",
+    "sources": "WSET Level 3 Study Materials; Wine Science (Jamie Goode)",
+    "confidence": "established",
+    "tags": [
+      "umami_interaction",
+      "tannin_perception",
+      "molecular_pairing"
+    ]
+  },
+  {
+    "id": "FP-029",
+    "domain": "food_pairing",
+    "difficulty": 480,
+    "level": 3,
+    "format": "scenario",
+    "question": "A guest orders pan-seared foie gras with cherry gastrique and asks for wine pairing advice. What drives your recommendation?",
+    "options": [
+      "The foie gras's rich, fatty texture",
+      "The cherry gastrique's sweet-tart profile",
+      "The searing method's caramelization",
+      "The dish's French origin"
+    ],
+    "correct": 1,
+    "explanation": "The cherry gastrique dominates this dish with its intense sweet-tart character that will coat the palate. You need a wine with enough acidity to cut through the sauce's sweetness and enough fruit intensity to complement the cherry—think Pinot Noir or off-dry Riesling.",
+    "sources": "WSET Level 3 Study Materials; GuildSomm",
+    "confidence": "established",
+    "tags": [
+      "sauce_driven_logic",
+      "complex_dishes",
+      "flavor_dominance"
+    ]
+  },
+  {
+    "id": "FP-030",
+    "domain": "food_pairing",
+    "difficulty": 460,
+    "level": 3,
+    "format": "odd_one_out",
+    "question": "Which of these bridge ingredients does NOT work by creating flavor echoes with wine?",
+    "options": [
+      "Black pepper with spicy Syrah",
+      "Mushrooms with earthy Burgundy",
+      "Vanilla with oak-aged Chardonnay",
+      "Lemon with high-acid Sauvignon Blanc"
+    ],
+    "correct": 1,
+    "explanation": "Mushrooms don't echo Burgundy's flavors—they're problematic due to umami compounds that make tannins taste harsh. The others all work by flavor echoing: pepper mirrors Syrah's spice, vanilla matches oak flavors, and lemon reflects wine's citrus acidity.",
+    "sources": "WSET Level 3 Study Materials; Wine Science (Jamie Goode)",
+    "confidence": "established",
+    "tags": [
+      "bridge_ingredients",
+      "flavor_echoing",
+      "umami_problems"
+    ]
+  },
+  {
+    "id": "FP-031",
+    "domain": "food_pairing",
+    "difficulty": 320,
+    "level": 2,
+    "format": "multiple_choice",
+    "question": "What is the fundamental reason why acidic wines like Sauvignon Blanc pair so well with rich, fatty foods like goat cheese?",
+    "options": [
+      "The acid cuts through the fat, cleansing the palate and creating balance",
+      "The acid enhances the fat content, making it taste richer",
+      "The acid neutralizes the protein in the cheese",
+      "The acid increases the perception of saltiness in the cheese"
+    ],
+    "correct": 0,
+    "explanation": "Think of acid as nature's degreaser — it literally cuts through fat molecules on your palate, cleansing and refreshing between bites. This creates the perfect yin-yang balance that makes each sip and bite more enjoyable than the last.",
+    "sources": "WSET Level 2 Study Materials; The Wine Bible (Karen MacNeil)",
+    "confidence": "established",
+    "tags": [
+      "acid_fat_pairing",
+      "fundamental_principles",
+      "balance"
+    ]
+  },
+  {
+    "id": "FP-032",
+    "domain": "food_pairing",
+    "difficulty": 380,
+    "level": 2,
+    "format": "multiple_choice",
+    "question": "Why do tannic red wines like Cabernet Sauvignon pair beautifully with grilled steak?",
+    "options": [
+      "The tannins add sweetness that complements the meat",
+      "The proteins in the meat bind with tannins, softening both and creating harmony",
+      "The tannins increase the perception of umami in the meat",
+      "The alcohol dissolves the fat in the meat"
+    ],
+    "correct": 1,
+    "explanation": "Protein acts like a molecular handshake with tannins — they bind together, making harsh tannins feel silky and tough meat taste more tender. It's why a chewy Barolo transforms into velvet when paired with a rare ribeye.",
+    "sources": "WSET Level 2 Study Materials; The Oxford Companion to Wine",
+    "confidence": "established",
+    "tags": [
+      "tannin_protein",
+      "fundamental_principles",
+      "red_wine"
+    ]
+  },
+  {
+    "id": "FP-033",
+    "domain": "food_pairing",
+    "difficulty": 350,
+    "level": 2,
+    "format": "odd_one_out",
+    "question": "Which of these is NOT a classic 'what grows together, goes together' regional pairing?",
+    "options": [
+      "Muscadet with oysters from the Loire Valley",
+      "Chianti Classico with Tuscan wild boar",
+      "Australian Shiraz with Japanese sushi",
+      "Chablis with Burgundian escargot"
+    ],
+    "correct": 2,
+    "explanation": "Australian Shiraz with Japanese sushi breaks the golden rule — they're from opposite sides of the world with completely different food cultures. The others are all classic regional marriages where local wines evolved alongside local cuisine over centuries.",
+    "sources": "The World Atlas of Wine; WSET Level 2 Study Materials",
+    "confidence": "established",
+    "tags": [
+      "regional_pairing",
+      "what_grows_together",
+      "classic_combinations"
+    ]
+  },
+  {
+    "id": "FP-034",
+    "domain": "food_pairing",
+    "difficulty": 290,
+    "level": 2,
+    "format": "multiple_choice",
+    "question": "When pairing wine with dessert, what is the essential rule to follow?",
+    "options": [
+      "The wine should be drier than the dessert",
+      "The wine should be sweeter than the dessert",
+      "The wine should have higher alcohol than usual",
+      "The wine should be served at room temperature"
+    ],
+    "correct": 1,
+    "explanation": "If your wine isn't sweeter than the dessert, it will taste thin and sour by comparison — like drinking lemon juice after eating chocolate cake. The dessert always wins the sweetness battle, so your wine needs to be the heavyweight champion.",
+    "sources": "WSET Level 2 Study Materials; The Wine Bible (Karen MacNeil)",
+    "confidence": "established",
+    "tags": [
+      "dessert_pairing",
+      "sweetness_levels",
+      "fundamental_principles"
+    ]
+  },
+  {
+    "id": "FP-035",
+    "domain": "food_pairing",
+    "difficulty": 360,
+    "level": 2,
+    "format": "scenario",
+    "question": "A guest orders fish and chips and asks for a wine recommendation. What's your best pairing strategy?",
+    "options": [
+      "Recommend a full-bodied red wine to match the richness",
+      "Suggest a high-acid white wine or sparkling to cut through the fried coating",
+      "Offer a sweet wine to balance the salt",
+      "Recommend a low-acid wine to avoid clashing with the vinegar"
+    ],
+    "correct": 1,
+    "explanation": "Fried foods are crying out for acid to cut through all that oil and grease — think Champagne with tempura or Albariño with fish and chips. The bubbles and bright acidity act like a palate power-wash between bites.",
+    "sources": "WSET Level 2 Study Materials; The Oxford Companion to Wine",
+    "confidence": "established",
+    "tags": [
+      "fried_foods",
+      "acid_pairing",
+      "practical_application"
+    ]
+  },
+  {
+    "id": "FP-036",
+    "domain": "food_pairing",
+    "difficulty": 450,
+    "level": 3,
+    "format": "match_pairs",
+    "question": "Match each cooking method with its optimal wine pairing approach:",
+    "pairs": {
+      "left": [
+        "Grilled/Charred",
+        "Poached/Steamed",
+        "Raw/Cured",
+        "Braised/Slow-cooked"
+      ],
+      "right": [
+        "Light, delicate wines",
+        "Full-bodied, robust wines",
+        "Fresh, high-acid wines",
+        "Medium-bodied wines with some tannin"
+      ]
+    },
+    "options": [],
+    "correct": [
+      1,
+      0,
+      2,
+      3
+    ],
+    "explanation": "Cooking intensity determines wine intensity — gentle poaching calls for gentle wines, while aggressive grilling demands wines that can stand up to char and smoke. Think of it as matching the energy levels of your cooking method and wine.",
+    "sources": "WSET Level 3 Study Materials; The Oxford Companion to Wine",
+    "confidence": "established",
+    "tags": [
+      "cooking_methods",
+      "wine_weight",
+      "intensity_matching"
+    ]
+  },
+  {
+    "id": "FP-037",
+    "domain": "food_pairing",
+    "difficulty": 420,
+    "level": 3,
+    "format": "multiple_choice",
+    "question": "What makes artichokes particularly challenging to pair with wine?",
+    "options": [
+      "High tannin content that clashes with red wines",
+      "Cynarin compound that makes wine taste metallic and bitter",
+      "Excessive saltiness that overwhelms delicate wines",
+      "High sugar content that makes dry wines taste sour"
+    ],
+    "correct": 1,
+    "explanation": "Cynarin is artichoke's secret weapon — this compound literally rewires your taste buds, making everything (including wine) taste metallic and bitter for up to an hour. It's like artichokes are playing a cruel joke on sommeliers everywhere.",
+    "sources": "The Wine Bible (Karen MacNeil); WSET Level 3 Study Materials",
+    "confidence": "established",
+    "tags": [
+      "difficult_foods",
+      "cynarin",
+      "artichokes",
+      "chemical_interaction"
+    ]
+  },
+  {
+    "id": "FP-038",
+    "domain": "food_pairing",
+    "difficulty": 480,
+    "level": 3,
+    "format": "scenario",
+    "question": "A guest orders beef bourguignon (beef braised in red wine with mushrooms and bacon). They want a wine pairing. What principle should drive your selection?",
+    "options": [
+      "Match the wine to the beef protein",
+      "Choose a wine similar to what was used in cooking",
+      "Select based on the mushroom earthiness",
+      "Focus on the bacon's smokiness"
+    ],
+    "correct": 1,
+    "explanation": "When wine is a major cooking ingredient, echo that flavor profile in your pairing — if Burgundian Pinot Noir built those beautiful braised flavors, more Burgundy will create seamless harmony. It's like adding another verse to the same song.",
+    "sources": "WSET Level 3 Study Materials; The Oxford Companion to Wine",
+    "confidence": "established",
+    "tags": [
+      "sauce_pairing",
+      "wine_in_cooking",
+      "flavor_echoing"
+    ]
+  },
+  {
+    "id": "FP-039",
+    "domain": "food_pairing",
+    "difficulty": 390,
+    "level": 3,
+    "format": "multiple_choice",
+    "question": "Why does Roquefort (blue cheese) pair classically with Sauternes or Port?",
+    "options": [
+      "The saltiness enhances the wine's fruit flavors",
+      "The blue mold neutralizes the wine's tannins",
+      "The contrast between salty-pungent cheese and sweet wine creates perfect balance",
+      "The cheese's fat content softens the wine's acidity"
+    ],
+    "correct": 2,
+    "explanation": "It's the ultimate opposites-attract romance — the aggressive, salty punch of blue cheese makes sweet wine taste even more honeyed and luscious, while the wine's sweetness tames the cheese's funky intensity. Pure yin-yang magic on your palate.",
+    "sources": "The Wine Bible (Karen MacNeil); WSET Level 3 Study Materials",
+    "confidence": "established",
+    "tags": [
+      "cheese_pairing",
+      "blue_cheese",
+      "sweet_wine",
+      "contrast_pairing"
     ]
   }
 ]

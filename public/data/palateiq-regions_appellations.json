@@ -2,8 +2,8 @@
   {
     "id": "RA-001",
     "domain": "regions_appellations",
-    "difficulty": 2150,
-    "level": 10,
+    "difficulty": 2278,
+    "level": 11,
     "format": "multiple_choice",
     "question": "Which Barolo MGA (Menzioni Geografiche Aggiuntive) is located within the commune of Serralunga d'Alba and is known for its distinctive white calcareous marl soils from the Sant'Agata Fossili formation?",
     "options": [
@@ -27,8 +27,8 @@
   {
     "id": "RA-002",
     "domain": "regions_appellations",
-    "difficulty": 2200,
-    "level": 10,
+    "difficulty": 2184,
+    "level": 11,
     "format": "odd_one_out",
     "question": "Which of these Burgundy Premier Cru vineyards does NOT belong with the others in terms of their commune location?",
     "options": [
@@ -52,8 +52,8 @@
   {
     "id": "RA-003",
     "domain": "regions_appellations",
-    "difficulty": 2300,
-    "level": 10,
+    "difficulty": 2403,
+    "level": 11,
     "format": "multiple_choice",
     "question": "In the Wachau DAC system, what is the minimum must weight requirement (in KMW) for Smaragd wines?",
     "options": [
@@ -77,8 +77,8 @@
   {
     "id": "RA-004",
     "domain": "regions_appellations",
-    "difficulty": 2100,
-    "level": 10,
+    "difficulty": 2146,
+    "level": 11,
     "format": "scenario",
     "question": "A sommelier is building a vertical tasting of Hermitage Rouge and wants to showcase the impact of the 2003 European heat wave. Which specific climat within Hermitage would best demonstrate the vintage's concentration while maintaining the appellation's characteristic structure?",
     "options": [
@@ -102,8 +102,8 @@
   {
     "id": "RA-005",
     "domain": "regions_appellations",
-    "difficulty": 2250,
-    "level": 10,
+    "difficulty": 2476,
+    "level": 11,
     "format": "match_pairs",
     "question": "Match each Mosel vineyard site with its specific soil type:",
     "pairs": {
@@ -141,8 +141,8 @@
   {
     "id": "RA-006",
     "domain": "regions_appellations",
-    "difficulty": 2180,
-    "level": 10,
+    "difficulty": 2202,
+    "level": 11,
     "format": "multiple_choice",
     "question": "Which specific sub-zone within Santorini PDO is considered the most prestigious for Assyrtiko production due to its proximity to the caldera and volcanic ash soils?",
     "options": [
@@ -166,8 +166,8 @@
   {
     "id": "RA-007",
     "domain": "regions_appellations",
-    "difficulty": 2220,
-    "level": 10,
+    "difficulty": 2031,
+    "level": 11,
     "format": "multiple_choice",
     "question": "In Rioja's classification system, what is the minimum aging requirement for Rioja Gran Reserva in terms of total aging and oak aging respectively?",
     "options": [
@@ -191,8 +191,8 @@
   {
     "id": "RA-008",
     "domain": "regions_appellations",
-    "difficulty": 2350,
-    "level": 10,
+    "difficulty": 2291,
+    "level": 11,
     "format": "odd_one_out",
     "question": "Which of these Champagne villages does NOT belong with the others in terms of their classification status?",
     "options": [
@@ -216,8 +216,8 @@
   {
     "id": "RA-009",
     "domain": "regions_appellations",
-    "difficulty": 2280,
-    "level": 10,
+    "difficulty": 2030,
+    "level": 11,
     "format": "scenario",
     "question": "A Master Sommelier candidate is studying the influence of the Gironde estuary on Bordeaux terroir. Which Left Bank commune would best demonstrate the moderating maritime influence on Cabernet Sauvignon ripening in challenging vintages?",
     "options": [
@@ -241,8 +241,8 @@
   {
     "id": "RA-010",
     "domain": "regions_appellations",
-    "difficulty": 2150,
-    "level": 10,
+    "difficulty": 2221,
+    "level": 11,
     "format": "multiple_choice",
     "question": "Which specific vineyard site in Priorat DOCa is considered the historical epicenter of the modern quality revolution and is planted on pure llicorella slate at 350-400m elevation?",
     "options": [
@@ -266,8 +266,8 @@
   {
     "id": "RA-011",
     "domain": "regions_appellations",
-    "difficulty": 2320,
-    "level": 10,
+    "difficulty": 2486,
+    "level": 11,
     "format": "match_pairs",
     "question": "Match each Napa Valley sub-AVA with its defining geological characteristic:",
     "pairs": {
@@ -305,8 +305,8 @@
   {
     "id": "RA-012",
     "domain": "regions_appellations",
-    "difficulty": 2400,
-    "level": 10,
+    "difficulty": 2262,
+    "level": 11,
     "format": "multiple_choice",
     "question": "In the VDP classification system, which Grosse Lage vineyard in the Nahe is considered the region's most prestigious site for Riesling, known for its porphyry volcanic soils and extreme south-facing exposure?",
     "options": [
@@ -330,8 +330,8 @@
   {
     "id": "RA-013",
     "domain": "regions_appellations",
-    "difficulty": 2180,
-    "level": 10,
+    "difficulty": 2264,
+    "level": 11,
     "format": "multiple_choice",
     "question": "Which specific lieu-dit within Sancerre AOP is renowned for producing the most mineral-driven expressions of Sauvignon Blanc due to its pure Kimmeridgian limestone composition?",
     "options": [
@@ -355,8 +355,8 @@
   {
     "id": "RA-014",
     "domain": "regions_appellations",
-    "difficulty": 2250,
-    "level": 10,
+    "difficulty": 2217,
+    "level": 11,
     "format": "scenario",
     "question": "A wine collector is seeking to understand how the 2011 vintage affected Amarone production in Valpolicella. Which specific zone within Valpolicella Classico would have best preserved acidity during the challenging warm, dry conditions of that vintage?",
     "options": [
@@ -380,8 +380,8 @@
   {
     "id": "RA-015",
     "domain": "regions_appellations",
-    "difficulty": 2380,
-    "level": 10,
+    "difficulty": 2195,
+    "level": 11,
     "format": "odd_one_out",
     "question": "Which of these Margaret River sub-regions does NOT belong with the others in terms of their soil composition?",
     "options": [
@@ -405,8 +405,8 @@
   {
     "id": "RA-016",
     "domain": "regions_appellations",
-    "difficulty": 2200,
-    "level": 10,
+    "difficulty": 2440,
+    "level": 11,
     "format": "multiple_choice",
     "question": "Which specific vineyard site in Barolo DOCG is known for its unique blue-gray marl soils from the Lequio formation and produces wines with distinctive floral aromatics?",
     "options": [
@@ -430,8 +430,8 @@
   {
     "id": "RA-017",
     "domain": "regions_appellations",
-    "difficulty": 2350,
-    "level": 10,
+    "difficulty": 2475,
+    "level": 11,
     "format": "odd_one_out",
     "question": "Which of these Burgundy Grand Cru vineyards does NOT belong with the others in terms of their geological formation?",
     "options": [
@@ -455,8 +455,8 @@
   {
     "id": "RA-018",
     "domain": "regions_appellations",
-    "difficulty": 2400,
-    "level": 10,
+    "difficulty": 2275,
+    "level": 11,
     "format": "multiple_choice",
     "question": "In the Jerez DO classification system, what is the minimum aging requirement for Palo Cortado sherry before release?",
     "options": [
@@ -480,8 +480,8 @@
   {
     "id": "RA-019",
     "domain": "regions_appellations",
-    "difficulty": 2150,
-    "level": 10,
+    "difficulty": 2132,
+    "level": 11,
     "format": "scenario",
     "question": "A sommelier is selecting wines for a tasting focused on the impact of diurnal temperature variation on Pinot Noir. Which Willamette Valley sub-AVA would best demonstrate extreme day-night temperature swings due to its elevation and continental influence?",
     "options": [
@@ -505,8 +505,8 @@
   {
     "id": "RA-020",
     "domain": "regions_appellations",
-    "difficulty": 2300,
-    "level": 10,
+    "difficulty": 2410,
+    "level": 11,
     "format": "match_pairs",
     "question": "Match each Châteauneuf-du-Pape lieu-dit with its dominant soil type:",
     "pairs": {
@@ -544,8 +544,8 @@
   {
     "id": "RA-021",
     "domain": "regions_appellations",
-    "difficulty": 2250,
-    "level": 10,
+    "difficulty": 2172,
+    "level": 11,
     "format": "multiple_choice",
     "question": "Which specific vineyard site in Mosel is considered the steepest commercially viable vineyard in the world, with slopes reaching 68 degrees?",
     "options": [
@@ -569,8 +569,8 @@
   {
     "id": "RA-022",
     "domain": "regions_appellations",
-    "difficulty": 2100,
-    "level": 10,
+    "difficulty": 2460,
+    "level": 11,
     "format": "multiple_choice",
     "question": "In the Douro DOC hierarchy, what percentage of a quinta's production may be declared as Port in a typical year?",
     "options": [
@@ -594,8 +594,8 @@
   {
     "id": "RA-023",
     "domain": "regions_appellations",
-    "difficulty": 2400,
-    "level": 10,
+    "difficulty": 2422,
+    "level": 11,
     "format": "odd_one_out",
     "question": "Which of these Alsace Grand Cru vineyards does NOT belong with the others in terms of their primary geological formation?",
     "options": [
@@ -619,8 +619,8 @@
   {
     "id": "RA-024",
     "domain": "regions_appellations",
-    "difficulty": 2200,
-    "level": 10,
+    "difficulty": 2327,
+    "level": 11,
     "format": "scenario",
     "question": "A Master Sommelier candidate is studying the influence of the Humboldt Current on Chilean wine regions. Which valley would best demonstrate this maritime cooling effect on Pinot Noir production?",
     "options": [
@@ -644,8 +644,8 @@
   {
     "id": "RA-025",
     "domain": "regions_appellations",
-    "difficulty": 2350,
-    "level": 10,
+    "difficulty": 2335,
+    "level": 11,
     "format": "multiple_choice",
     "question": "Which specific cru in Beaujolais is known for its pink granite soils and produces the most Burgundian-style Gamay wines in the region?",
     "options": [
@@ -669,8 +669,8 @@
   {
     "id": "RA-026",
     "domain": "regions_appellations",
-    "difficulty": 2300,
-    "level": 10,
+    "difficulty": 2378,
+    "level": 11,
     "format": "multiple_choice",
     "question": "In the Hunter Valley, which specific soil type in the Pokolbin district is considered optimal for Semillon production?",
     "options": [
@@ -694,8 +694,8 @@
   {
     "id": "RA-027",
     "domain": "regions_appellations",
-    "difficulty": 2450,
-    "level": 10,
+    "difficulty": 2482,
+    "level": 11,
     "format": "match_pairs",
     "question": "Match each Etna DOC contrada with its elevation range:",
     "pairs": {
@@ -733,8 +733,8 @@
   {
     "id": "RA-028",
     "domain": "regions_appellations",
-    "difficulty": 2200,
-    "level": 10,
+    "difficulty": 2375,
+    "level": 11,
     "format": "multiple_choice",
     "question": "Which specific vineyard site in Kamptal DAC is considered the region's most prestigious for Riesling, known for its primary rock (Urgestein) soils and extreme south-facing exposure?",
     "options": [
@@ -758,8 +758,8 @@
   {
     "id": "RA-029",
     "domain": "regions_appellations",
-    "difficulty": 2150,
-    "level": 10,
+    "difficulty": 2051,
+    "level": 11,
     "format": "scenario",
     "question": "A wine buyer is sourcing Assyrtiko for a restaurant program focused on volcanic minerality. Which specific village on Santorini would produce the most intensely mineral-driven examples due to its proximity to active volcanic vents?",
     "options": [
@@ -783,8 +783,8 @@
   {
     "id": "RA-030",
     "domain": "regions_appellations",
-    "difficulty": 2300,
-    "level": 10,
+    "difficulty": 2374,
+    "level": 11,
     "format": "odd_one_out",
     "question": "Which of these Napa Valley sub-AVAs does NOT belong with the others in terms of their primary cooling influence?",
     "options": [
@@ -808,8 +808,8 @@
   {
     "id": "RA-031",
     "domain": "regions_appellations",
-    "difficulty": 2200,
-    "level": 10,
+    "difficulty": 2019,
+    "level": 11,
     "format": "multiple_choice",
     "question": "Which specific vineyard site in Côte-Rôtie is considered the most prestigious for Syrah production and is characterized by its steep schist slopes with mica inclusions that create the distinctive 'côte brunie' (burned slope) effect?",
     "options": [
@@ -832,8 +832,8 @@
   {
     "id": "RA-032",
     "domain": "regions_appellations",
-    "difficulty": 2350,
-    "level": 10,
+    "difficulty": 2176,
+    "level": 11,
     "format": "odd_one_out",
     "question": "Which of these Burgundy Premier Cru vineyards does NOT belong with the others in terms of their underlying geological formation?",
     "options": [
@@ -856,8 +856,8 @@
   {
     "id": "RA-033",
     "domain": "regions_appellations",
-    "difficulty": 2150,
-    "level": 10,
+    "difficulty": 2084,
+    "level": 11,
     "format": "scenario",
     "question": "A Master Sommelier candidate is studying the impact of the 2005 vintage conditions on Brunello di Montalcino. Which specific zone within the DOCG would have best preserved freshness during this exceptionally hot vintage due to its elevation and exposure?",
     "options": [
@@ -880,8 +880,8 @@
   {
     "id": "RA-034",
     "domain": "regions_appellations",
-    "difficulty": 2400,
-    "level": 10,
+    "difficulty": 2035,
+    "level": 11,
     "format": "match_pairs",
     "question": "Match each Chablis Grand Cru with its specific geological characteristic:",
     "pairs": {
@@ -918,8 +918,8 @@
   {
     "id": "RA-035",
     "domain": "regions_appellations",
-    "difficulty": 2300,
-    "level": 10,
+    "difficulty": 2215,
+    "level": 11,
     "format": "multiple_choice",
     "question": "In the Wachau DAC system, which specific vineyard site is considered the region's most prestigious Riesling terroir and is characterized by its primary rock (Urgestein) gneiss soils with the steepest terracing in the appellation?",
     "options": [
@@ -938,6 +938,1476 @@
       "riesling",
       "vineyard_sites",
       "terroir"
+    ]
+  },
+  {
+    "id": "RA-036",
+    "domain": "regions_appellations",
+    "difficulty": 300,
+    "level": 2,
+    "format": "multiple_choice",
+    "question": "Which wine region is known for producing Muscadet?",
+    "options": [
+      "Loire Valley",
+      "Rhône Valley",
+      "Alsace",
+      "Languedoc"
+    ],
+    "correct": 0,
+    "explanation": "Muscadet comes from the Loire Valley, specifically the western part near the Atlantic coast. Think of it as the perfect oyster wine from France's oyster coast.",
+    "sources": "WSET Level 2; The Oxford Companion to Wine",
+    "confidence": "established",
+    "tags": [
+      "loire",
+      "muscadet",
+      "france"
+    ]
+  },
+  {
+    "id": "RA-037",
+    "domain": "regions_appellations",
+    "difficulty": 350,
+    "level": 2,
+    "format": "multiple_choice",
+    "question": "In Burgundy, which classification level is higher than Village wines but lower than Grand Cru?",
+    "options": [
+      "Regional",
+      "Premier Cru",
+      "Monopole",
+      "Climat"
+    ],
+    "correct": 1,
+    "explanation": "Premier Cru sits in the middle of Burgundy's hierarchy, like the middle child with serious talent. These wines show more complexity than Village level but aren't quite at Grand Cru's rarified heights.",
+    "sources": "WSET Level 2; The Oxford Companion to Wine",
+    "confidence": "established",
+    "tags": [
+      "burgundy",
+      "classification",
+      "premier_cru"
+    ]
+  },
+  {
+    "id": "RA-038",
+    "domain": "regions_appellations",
+    "difficulty": 380,
+    "level": 2,
+    "format": "odd_one_out",
+    "question": "Which of these regions does NOT belong with the others in terms of their primary grape variety?",
+    "options": [
+      "Sancerre",
+      "Chablis",
+      "Muscadet",
+      "Pouilly-Fumé"
+    ],
+    "correct": 2,
+    "explanation": "Muscadet is made from Melon de Bourgogne, while the other three are all Sauvignon Blanc (Sancerre, Pouilly-Fumé) or Chardonnay (Chablis) regions. Muscadet is the odd duck swimming in different waters.",
+    "sources": "WSET Level 2; The Wine Bible",
+    "confidence": "established",
+    "tags": [
+      "grape_varieties",
+      "france",
+      "loire",
+      "burgundy"
+    ]
+  },
+  {
+    "id": "RA-039",
+    "domain": "regions_appellations",
+    "difficulty": 320,
+    "level": 2,
+    "format": "multiple_choice",
+    "question": "Which Spanish region is most famous for Tempranillo-based wines aged in American oak?",
+    "options": [
+      "Ribera del Duero",
+      "Rías Baixas",
+      "Rioja",
+      "Priorat"
+    ],
+    "correct": 2,
+    "explanation": "Rioja is synonymous with Tempranillo aged in American oak barrels, creating those signature vanilla and coconut notes. It's like Spain's calling card for traditional oak-aged reds.",
+    "sources": "WSET Level 2; The Oxford Companion to Wine",
+    "confidence": "established",
+    "tags": [
+      "rioja",
+      "tempranillo",
+      "spain",
+      "oak"
+    ]
+  },
+  {
+    "id": "RA-040",
+    "domain": "regions_appellations",
+    "difficulty": 290,
+    "level": 2,
+    "format": "multiple_choice",
+    "question": "In which German wine region would you find the famous Bernkasteler Doctor vineyard?",
+    "options": [
+      "Rheingau",
+      "Pfalz",
+      "Mosel",
+      "Nahe"
+    ],
+    "correct": 2,
+    "explanation": "Bernkasteler Doctor is the Mosel's most famous vineyard, perched on steep slate slopes above the town of Bernkastel. Think of it as the Mosel's medical prescription for perfect Riesling.",
+    "sources": "WSET Level 2; The Oxford Companion to Wine",
+    "confidence": "established",
+    "tags": [
+      "mosel",
+      "germany",
+      "riesling",
+      "vineyard_sites"
+    ]
+  },
+  {
+    "id": "RA-041",
+    "domain": "regions_appellations",
+    "difficulty": 340,
+    "level": 2,
+    "format": "match_pairs",
+    "question": "Match each wine region with its signature grape variety:",
+    "pairs": {
+      "left": [
+        "Barossa Valley",
+        "Marlborough",
+        "Sancerre",
+        "Chianti"
+      ],
+      "right": [
+        "Sauvignon Blanc",
+        "Sangiovese",
+        "Shiraz",
+        "Pinot Noir"
+      ]
+    },
+    "options": [],
+    "correct": [
+      2,
+      0,
+      0,
+      1
+    ],
+    "explanation": "These are classic regional-grape marriages: Barossa's powerful Shiraz, Marlborough's zesty Sauvignon Blanc, Sancerre's mineral Sauvignon Blanc, and Chianti's noble Sangiovese. Like perfect dance partners, they bring out the best in each other.",
+    "sources": "WSET Level 2; The Oxford Companion to Wine",
+    "confidence": "established",
+    "tags": [
+      "grape_varieties",
+      "regional_specialties",
+      "australia",
+      "new_zealand",
+      "france",
+      "italy"
+    ]
+  },
+  {
+    "id": "RA-042",
+    "domain": "regions_appellations",
+    "difficulty": 360,
+    "level": 2,
+    "format": "multiple_choice",
+    "question": "Which Champagne village is famous for its Pinot Noir and is classified as a Grand Cru?",
+    "options": [
+      "Épernay",
+      "Reims",
+      "Aÿ",
+      "Cramant"
+    ],
+    "correct": 2,
+    "explanation": "Aÿ is the Pinot Noir capital of Champagne and one of only 17 Grand Cru villages. Its south-facing slopes create perfect conditions for this noble red grape in sparkling wine country.",
+    "sources": "WSET Level 2; The Oxford Companion to Wine",
+    "confidence": "established",
+    "tags": [
+      "champagne",
+      "pinot_noir",
+      "grand_cru",
+      "villages"
+    ]
+  },
+  {
+    "id": "RA-043",
+    "domain": "regions_appellations",
+    "difficulty": 310,
+    "level": 2,
+    "format": "scenario",
+    "question": "A customer asks for a crisp, dry white wine from Portugal that pairs well with seafood. Which region should you recommend?",
+    "options": [
+      "Douro",
+      "Alentejo",
+      "Vinho Verde",
+      "Dão"
+    ],
+    "correct": 2,
+    "explanation": "Vinho Verde produces light, crisp, slightly sparkling wines perfect with seafood. The name means 'green wine' - think of it as Portugal's answer to a sea breeze in a glass.",
+    "sources": "WSET Level 2; The Oxford Companion to Wine",
+    "confidence": "established",
+    "tags": [
+      "portugal",
+      "vinho_verde",
+      "seafood_pairing",
+      "white_wine"
+    ]
+  },
+  {
+    "id": "RA-044",
+    "domain": "regions_appellations",
+    "difficulty": 370,
+    "level": 2,
+    "format": "multiple_choice",
+    "question": "Which Italian region is home to both Barolo and Barbaresco DOCG wines?",
+    "options": [
+      "Tuscany",
+      "Veneto",
+      "Piedmont",
+      "Lombardy"
+    ],
+    "correct": 2,
+    "explanation": "Piedmont is the kingdom of Nebbiolo, producing both the 'king and queen' of Italian wines - Barolo and Barbaresco. Think of it as Italy's Burgundy, where small differences in terroir create distinct personalities.",
+    "sources": "WSET Level 2; The Oxford Companion to Wine",
+    "confidence": "established",
+    "tags": [
+      "piedmont",
+      "barolo",
+      "barbaresco",
+      "nebbiolo",
+      "italy"
+    ]
+  },
+  {
+    "id": "RA-045",
+    "domain": "regions_appellations",
+    "difficulty": 330,
+    "level": 2,
+    "format": "odd_one_out",
+    "question": "Which of these appellations does NOT belong with the others in terms of their location?",
+    "options": [
+      "Pauillac",
+      "Saint-Julien",
+      "Pomerol",
+      "Saint-Estèphe"
+    ],
+    "correct": 2,
+    "explanation": "Pomerol is on Bordeaux's Right Bank, while the other three are Left Bank appellations. Pomerol is like the artistic cousin living across the river from the structured Left Bank châteaux.",
+    "sources": "WSET Level 2; The Oxford Companion to Wine",
+    "confidence": "established",
+    "tags": [
+      "bordeaux",
+      "left_bank",
+      "right_bank",
+      "appellations"
+    ]
+  },
+  {
+    "id": "RA-046",
+    "domain": "regions_appellations",
+    "difficulty": 450,
+    "level": 3,
+    "format": "multiple_choice",
+    "question": "In Alsace, which Grand Cru vineyard is exclusively dedicated to Riesling production?",
+    "options": [
+      "Schlossberg",
+      "Rangen",
+      "Sommerberg",
+      "Brand"
+    ],
+    "correct": 0,
+    "explanation": "Schlossberg was the first Alsace Grand Cru to restrict itself to a single variety - Riesling only. It's like the purist's paradise, where Riesling can show its truest expression on granite soils.",
+    "sources": "WSET Level 3; The Oxford Companion to Wine",
+    "confidence": "established",
+    "tags": [
+      "alsace",
+      "grand_cru",
+      "riesling",
+      "schlossberg"
+    ]
+  },
+  {
+    "id": "RA-047",
+    "domain": "regions_appellations",
+    "difficulty": 480,
+    "level": 3,
+    "format": "multiple_choice",
+    "question": "Which specific zone within Valpolicella produces the highest quality Amarone wines?",
+    "options": [
+      "Valpolicella Classico",
+      "Valpolicella Valpantena",
+      "Valpolicella Orientale",
+      "Valpolicella DOC"
+    ],
+    "correct": 0,
+    "explanation": "Valpolicella Classico is the historic heartland where the best Amarone is made, with ideal hillside exposures and traditional grape-drying techniques. Think of it as Amarone's ancestral home where tradition runs deepest.",
+    "sources": "WSET Level 3; The Oxford Companion to Wine",
+    "confidence": "established",
+    "tags": [
+      "valpolicella",
+      "amarone",
+      "classico",
+      "italy"
+    ]
+  },
+  {
+    "id": "RA-048",
+    "domain": "regions_appellations",
+    "difficulty": 420,
+    "level": 3,
+    "format": "scenario",
+    "question": "A sommelier needs to explain the difference between Côte-Rôtie and Hermitage to guests. Which key distinction should they emphasize?",
+    "options": [
+      "Côte-Rôtie allows Viognier blending, Hermitage does not",
+      "Hermitage is 100% Syrah, Côte-Rôtie allows Viognier",
+      "Côte-Rôtie uses carbonic maceration, Hermitage does not",
+      "Hermitage requires longer aging than Côte-Rôtie"
+    ],
+    "correct": 1,
+    "explanation": "Hermitage must be 100% Syrah, while Côte-Rôtie can blend up to 20% Viognier for aromatic lift. Think of Viognier as Côte-Rôtie's secret perfume that adds floral elegance to Syrah's power.",
+    "sources": "WSET Level 3; The Oxford Companion to Wine",
+    "confidence": "established",
+    "tags": [
+      "northern_rhone",
+      "cote_rotie",
+      "hermitage",
+      "syrah",
+      "viognier"
+    ]
+  },
+  {
+    "id": "RA-049",
+    "domain": "regions_appellations",
+    "difficulty": 510,
+    "level": 3,
+    "format": "match_pairs",
+    "question": "Match each Burgundy Grand Cru with its commune:",
+    "pairs": {
+      "left": [
+        "Montrachet",
+        "Chambertin",
+        "Musigny",
+        "Corton"
+      ],
+      "right": [
+        "Aloxe-Corton",
+        "Chambolle-Musigny",
+        "Puligny-Montrachet",
+        "Gevrey-Chambertin"
+      ]
+    },
+    "options": [],
+    "correct": [
+      2,
+      3,
+      1,
+      0
+    ],
+    "explanation": "These are Burgundy's most prestigious sites, each intimately tied to its commune. Like aristocratic families, the Grand Cru names often echo their village origins, creating Burgundy's noble geography.",
+    "sources": "WSET Level 3; The Oxford Companion to Wine",
+    "confidence": "established",
+    "tags": [
+      "burgundy",
+      "grand_cru",
+      "communes",
+      "vineyard_sites"
+    ]
+  },
+  {
+    "id": "RA-050",
+    "domain": "regions_appellations",
+    "difficulty": 440,
+    "level": 3,
+    "format": "odd_one_out",
+    "question": "Which of these Napa Valley sub-AVAs does NOT belong with the others in terms of their elevation characteristics?",
+    "options": [
+      "Howell Mountain",
+      "Diamond Mountain District",
+      "Carneros",
+      "Spring Mountain District"
+    ],
+    "correct": 2,
+    "explanation": "Carneros is a cool, low-elevation region perfect for Pinot Noir and Chardonnay, while the other three are mountain AVAs known for Cabernet Sauvignon. Carneros is literally down in the valley while the others reach for the sky.",
+    "sources": "WSET Level 3; The Oxford Companion to Wine",
+    "confidence": "established",
+    "tags": [
+      "napa_valley",
+      "sub_avas",
+      "elevation",
+      "carneros",
+      "mountain_districts"
+    ]
+  },
+  {
+    "id": "RA-051",
+    "domain": "regions_appellations",
+    "difficulty": 320,
+    "level": 2,
+    "format": "multiple_choice",
+    "question": "Which French wine region is famous for producing Sancerre?",
+    "options": [
+      "Loire Valley",
+      "Rhône Valley",
+      "Languedoc",
+      "Provence"
+    ],
+    "correct": 0,
+    "explanation": "The Loire Valley is home to Sancerre, where Sauvignon Blanc thrives on the region's famous limestone soils. Think of the Loire as France's 'white wine highway' flowing from east to west.",
+    "sources": "The Oxford Companion to Wine; WSET Level 2 Study Materials",
+    "confidence": "established",
+    "tags": [
+      "france",
+      "loire_valley",
+      "sancerre",
+      "sauvignon_blanc"
+    ]
+  },
+  {
+    "id": "RA-052",
+    "domain": "regions_appellations",
+    "difficulty": 380,
+    "level": 2,
+    "format": "odd_one_out",
+    "question": "Which of these regions does NOT belong with the others in terms of their primary focus on red wine production?",
+    "options": [
+      "Barolo",
+      "Muscadet",
+      "Rioja",
+      "Ribera del Duero"
+    ],
+    "correct": 1,
+    "explanation": "Muscadet produces exclusively white wines from the Melon de Bourgogne grape, while the others are renowned red wine regions. Remember Muscadet as the Loire's 'oyster wine' - crisp, mineral, and perfectly white.",
+    "sources": "The World Atlas of Wine; WSET Level 2 Study Materials",
+    "confidence": "established",
+    "tags": [
+      "france",
+      "spain",
+      "italy",
+      "red_wine",
+      "white_wine"
+    ]
+  },
+  {
+    "id": "RA-053",
+    "domain": "regions_appellations",
+    "difficulty": 290,
+    "level": 2,
+    "format": "multiple_choice",
+    "question": "Which Australian wine region is most famous for Shiraz production?",
+    "options": [
+      "Hunter Valley",
+      "Barossa Valley",
+      "Margaret River",
+      "Yarra Valley"
+    ],
+    "correct": 1,
+    "explanation": "Barossa Valley is Australia's Shiraz heartland, producing some of the world's most powerful and age-worthy examples. The region's warm climate and old vines create wines with signature chocolate and spice notes.",
+    "sources": "The Oxford Companion to Wine; The World Atlas of Wine",
+    "confidence": "established",
+    "tags": [
+      "australia",
+      "barossa_valley",
+      "shiraz",
+      "red_wine"
+    ]
+  },
+  {
+    "id": "RA-054",
+    "domain": "regions_appellations",
+    "difficulty": 350,
+    "level": 2,
+    "format": "match_pairs",
+    "question": "Match each wine region with its most famous grape variety:",
+    "pairs": {
+      "left": [
+        "Marlborough",
+        "Rioja",
+        "Chablis",
+        "Chianti"
+      ],
+      "right": [
+        "Sangiovese",
+        "Chardonnay",
+        "Tempranillo",
+        "Sauvignon Blanc"
+      ]
+    },
+    "options": [],
+    "correct": [
+      3,
+      2,
+      1,
+      0
+    ],
+    "explanation": "These are classic region-grape marriages: Marlborough put New Zealand on the wine map with its distinctive Sauvignon Blanc, while the others represent centuries-old traditions in their respective countries.",
+    "sources": "WSET Level 2 Study Materials; The World Atlas of Wine",
+    "confidence": "established",
+    "tags": [
+      "new_zealand",
+      "spain",
+      "france",
+      "italy",
+      "grape_varieties"
+    ]
+  },
+  {
+    "id": "RA-055",
+    "domain": "regions_appellations",
+    "difficulty": 340,
+    "level": 2,
+    "format": "scenario",
+    "question": "A customer wants a full-bodied red wine from Italy that pairs well with aged cheese and has earthy, truffle-like aromas. Which region should you recommend?",
+    "options": [
+      "Tuscany for Chianti Classico",
+      "Piedmont for Barolo",
+      "Veneto for Amarone",
+      "Sicily for Nero d'Avola"
+    ],
+    "correct": 1,
+    "explanation": "Barolo from Piedmont is the perfect match - its Nebbiolo grape develops those signature truffle and earth aromas with age, and the wine's structure complements aged cheeses beautifully. Think of Barolo as Italy's 'king of wines' for good reason.",
+    "sources": "The Wine Bible; WSET Level 2 Study Materials",
+    "confidence": "established",
+    "tags": [
+      "italy",
+      "piedmont",
+      "barolo",
+      "nebbiolo",
+      "food_pairing"
+    ]
+  },
+  {
+    "id": "RA-056",
+    "domain": "regions_appellations",
+    "difficulty": 310,
+    "level": 2,
+    "format": "multiple_choice",
+    "question": "Which German wine region is considered the most prestigious for Riesling production?",
+    "options": [
+      "Pfalz",
+      "Mosel",
+      "Baden",
+      "Württemberg"
+    ],
+    "correct": 1,
+    "explanation": "The Mosel is Germany's most prestigious Riesling region, famous for its steep slate vineyards and ethereally light wines with razor-sharp acidity. The region's blue slate soils give Mosel Rieslings their distinctive mineral backbone.",
+    "sources": "The Oxford Companion to Wine; WSET Level 2 Study Materials",
+    "confidence": "established",
+    "tags": [
+      "germany",
+      "mosel",
+      "riesling",
+      "white_wine"
+    ]
+  },
+  {
+    "id": "RA-057",
+    "domain": "regions_appellations",
+    "difficulty": 370,
+    "level": 2,
+    "format": "multiple_choice",
+    "question": "In Bordeaux's 1855 Classification, how many châteaux were classified as First Growth (Premier Grand Cru Classé)?",
+    "options": [
+      "3",
+      "4",
+      "5",
+      "6"
+    ],
+    "correct": 2,
+    "explanation": "Five châteaux achieved First Growth status in 1855: Lafite, Latour, Margaux, Haut-Brion, and (added later) Mouton Rothschild. Remember the 'Fantastic Five' - they remain Bordeaux's most prestigious estates today.",
+    "sources": "The Oxford Companion to Wine; The World Atlas of Wine",
+    "confidence": "established",
+    "tags": [
+      "france",
+      "bordeaux",
+      "1855_classification",
+      "first_growth"
+    ]
+  },
+  {
+    "id": "RA-058",
+    "domain": "regions_appellations",
+    "difficulty": 325,
+    "level": 2,
+    "format": "odd_one_out",
+    "question": "Which of these Champagne villages does NOT belong with the others in terms of their Grand Cru status?",
+    "options": [
+      "Ay",
+      "Épernay",
+      "Cramant",
+      "Bouzy"
+    ],
+    "correct": 1,
+    "explanation": "Épernay is a major Champagne town and commercial center, not a Grand Cru village, while Ay, Cramant, and Bouzy are all classified as Grand Cru. Think of Épernay as Champagne's 'capital city' rather than a vineyard site.",
+    "sources": "WSET Level 2 Study Materials; The Oxford Companion to Wine",
+    "confidence": "established",
+    "tags": [
+      "france",
+      "champagne",
+      "grand_cru",
+      "villages"
+    ]
+  },
+  {
+    "id": "RA-059",
+    "domain": "regions_appellations",
+    "difficulty": 360,
+    "level": 2,
+    "format": "scenario",
+    "question": "A guest asks for a wine recommendation to pair with fresh oysters and wants something crisp, mineral, and from France. Which appellation should you suggest?",
+    "options": [
+      "Sancerre from Loire Valley",
+      "Muscadet from Loire Valley",
+      "Chablis from Burgundy",
+      "Albariño from Rías Baixas"
+    ],
+    "correct": 1,
+    "explanation": "Muscadet is the classic oyster wine - its crisp acidity, mineral character, and light body make it the perfect seafood companion. The wine's name literally means 'muscular' referring to its clean, precise style.",
+    "sources": "The Wine Bible; WSET Level 2 Study Materials",
+    "confidence": "established",
+    "tags": [
+      "france",
+      "loire_valley",
+      "muscadet",
+      "food_pairing",
+      "white_wine"
+    ]
+  },
+  {
+    "id": "RA-060",
+    "domain": "regions_appellations",
+    "difficulty": 390,
+    "level": 2,
+    "format": "multiple_choice",
+    "question": "Which Spanish region is famous for its distinctive blue-black slate soils called 'llicorella'?",
+    "options": [
+      "Rioja",
+      "Ribera del Duero",
+      "Priorat",
+      "Rías Baixas"
+    ],
+    "correct": 2,
+    "explanation": "Priorat's llicorella slate soils are unique in Spain, creating intensely concentrated wines with distinctive mineral character. These ancient schist soils force vines to struggle, producing some of Spain's most powerful and age-worthy reds.",
+    "sources": "The Oxford Companion to Wine; WSET Level 2 Study Materials",
+    "confidence": "established",
+    "tags": [
+      "spain",
+      "priorat",
+      "llicorella",
+      "slate_soils",
+      "terroir"
+    ]
+  },
+  {
+    "id": "RA-061",
+    "domain": "regions_appellations",
+    "difficulty": 280,
+    "level": 2,
+    "format": "multiple_choice",
+    "question": "Which New Zealand region is most famous for Sauvignon Blanc production?",
+    "options": [
+      "Central Otago",
+      "Hawke's Bay",
+      "Marlborough",
+      "Canterbury"
+    ],
+    "correct": 2,
+    "explanation": "Marlborough put New Zealand on the global wine map with its distinctive Sauvignon Blanc, characterized by intense tropical fruit and herbaceous notes. The region's cool climate and long growing season create wines with exceptional aromatic intensity.",
+    "sources": "The World Atlas of Wine; WSET Level 2 Study Materials",
+    "confidence": "established",
+    "tags": [
+      "new_zealand",
+      "marlborough",
+      "sauvignon_blanc",
+      "white_wine"
+    ]
+  },
+  {
+    "id": "RA-062",
+    "domain": "regions_appellations",
+    "difficulty": 335,
+    "level": 2,
+    "format": "match_pairs",
+    "question": "Match each Portuguese wine region with its signature style:",
+    "pairs": {
+      "left": [
+        "Douro",
+        "Vinho Verde",
+        "Madeira",
+        "Alentejo"
+      ],
+      "right": [
+        "Fortified wine",
+        "Light, sparkling wine",
+        "Full-bodied reds",
+        "Port wine"
+      ]
+    },
+    "options": [],
+    "correct": [
+      3,
+      1,
+      0,
+      2
+    ],
+    "explanation": "Portugal's regions each have distinct personalities: Douro produces both Port and powerful dry reds, Vinho Verde offers refreshing light wines, Madeira creates unique fortified wines, and Alentejo makes robust reds in the south.",
+    "sources": "WSET Level 2 Study Materials; The Oxford Companion to Wine",
+    "confidence": "established",
+    "tags": [
+      "portugal",
+      "douro",
+      "vinho_verde",
+      "madeira",
+      "alentejo"
+    ]
+  },
+  {
+    "id": "RA-063",
+    "domain": "regions_appellations",
+    "difficulty": 345,
+    "level": 2,
+    "format": "multiple_choice",
+    "question": "In Burgundy's hierarchy, what level comes between Village wines and Grand Cru?",
+    "options": [
+      "Regional",
+      "Premier Cru",
+      "Cru Bourgeois",
+      "Cru Classé"
+    ],
+    "correct": 1,
+    "explanation": "Premier Cru is the middle tier in Burgundy's three-level quality pyramid: Village at the base, Premier Cru in the middle, and Grand Cru at the top. Think of it as Burgundy's 'first among equals' below the Grand Cru elite.",
+    "sources": "WSET Level 2 Study Materials; The Oxford Companion to Wine",
+    "confidence": "established",
+    "tags": [
+      "france",
+      "burgundy",
+      "premier_cru",
+      "classification",
+      "hierarchy"
+    ]
+  },
+  {
+    "id": "RA-064",
+    "domain": "regions_appellations",
+    "difficulty": 355,
+    "level": 2,
+    "format": "odd_one_out",
+    "question": "Which of these wine regions does NOT belong with the others in terms of their location in the Northern Rhône?",
+    "options": [
+      "Côte-Rôtie",
+      "Hermitage",
+      "Châteauneuf-du-Pape",
+      "Condrieu"
+    ],
+    "correct": 2,
+    "explanation": "Châteauneuf-du-Pape is located in the Southern Rhône, while the others are Northern Rhône appellations. The Northern Rhône is all about steep granite slopes and single varieties, while the south features broader valleys and blends.",
+    "sources": "WSET Level 2 Study Materials; The World Atlas of Wine",
+    "confidence": "established",
+    "tags": [
+      "france",
+      "rhone_valley",
+      "northern_rhone",
+      "southern_rhone",
+      "geography"
+    ]
+  },
+  {
+    "id": "RA-065",
+    "domain": "regions_appellations",
+    "difficulty": 315,
+    "level": 2,
+    "format": "scenario",
+    "question": "A wine enthusiast wants to explore premium Pinot Noir from the United States and is looking for a cool-climate region known for elegant, Burgundian-style wines. Which region should you recommend?",
+    "options": [
+      "Napa Valley, California",
+      "Willamette Valley, Oregon",
+      "Paso Robles, California",
+      "Columbia Valley, Washington"
+    ],
+    "correct": 1,
+    "explanation": "Willamette Valley is Oregon's premier Pinot Noir region, famous for producing elegant, Burgundian-style wines with bright acidity and complex aromatics. The region's cool, wet climate and volcanic soils create ideal conditions for this finicky grape.",
+    "sources": "The Wine Bible; WSET Level 2 Study Materials",
+    "confidence": "established",
+    "tags": [
+      "usa",
+      "oregon",
+      "willamette_valley",
+      "pinot_noir",
+      "cool_climate"
+    ]
+  },
+  {
+    "id": "RA-066",
+    "domain": "regions_appellations",
+    "difficulty": 300,
+    "level": 2,
+    "format": "multiple_choice",
+    "question": "Which French wine region is most famous for producing Côtes du Rhône wines?",
+    "options": [
+      "Rhône Valley",
+      "Loire Valley",
+      "Burgundy",
+      "Alsace"
+    ],
+    "correct": 0,
+    "explanation": "The Rhône Valley is home to the Côtes du Rhône appellation, stretching from Vienne in the north to Avignon in the south. Think of it as the river highway for French wine - the Rhône flows right through the heart of this iconic region.",
+    "sources": "The Oxford Companion to Wine; The World Atlas of Wine",
+    "confidence": "established",
+    "tags": [
+      "france",
+      "rhone",
+      "appellations"
+    ]
+  },
+  {
+    "id": "RA-067",
+    "domain": "regions_appellations",
+    "difficulty": 350,
+    "level": 2,
+    "format": "odd_one_out",
+    "question": "Which of these regions does NOT belong with the others in terms of their location in Tuscany?",
+    "options": [
+      "Chianti Classico",
+      "Brunello di Montalcino",
+      "Barolo",
+      "Vino Nobile di Montepulciano"
+    ],
+    "correct": 2,
+    "explanation": "Barolo is located in Piedmont, not Tuscany - it's the odd one out geographically. The other three are all prestigious Tuscan appellations known for Sangiovese-based wines.",
+    "sources": "The World Atlas of Wine; Wine Grapes",
+    "confidence": "established",
+    "tags": [
+      "italy",
+      "tuscany",
+      "piedmont",
+      "geography"
+    ]
+  },
+  {
+    "id": "RA-068",
+    "domain": "regions_appellations",
+    "difficulty": 320,
+    "level": 2,
+    "format": "match_pairs",
+    "question": "Match each German wine region with its most famous vineyard site:",
+    "pairs": {
+      "left": [
+        "Mosel",
+        "Rheingau",
+        "Pfalz",
+        "Nahe"
+      ],
+      "right": [
+        "Schlossberg",
+        "Schloss Johannisberg",
+        "Bernkasteler Doctor",
+        "Forster Kirchenstück"
+      ]
+    },
+    "options": [],
+    "correct": [
+      2,
+      1,
+      3,
+      0
+    ],
+    "explanation": "These are Germany's most celebrated vineyard sites in their respective regions. Bernkasteler Doctor is the Mosel's crown jewel - so steep you need mountain goat genes to harvest it!",
+    "sources": "The World Atlas of Wine; The Oxford Companion to Wine",
+    "confidence": "established",
+    "tags": [
+      "germany",
+      "vineyards",
+      "mosel",
+      "rheingau"
+    ]
+  },
+  {
+    "id": "RA-069",
+    "domain": "regions_appellations",
+    "difficulty": 280,
+    "level": 2,
+    "format": "scenario",
+    "question": "A customer wants a sparkling wine from France that's made using the traditional method but is more affordable than Champagne. Which region should you recommend?",
+    "options": [
+      "Crémant de Loire",
+      "Chablis",
+      "Sancerre",
+      "Muscadet"
+    ],
+    "correct": 0,
+    "explanation": "Crémant de Loire offers excellent value sparkling wines made using the same traditional method as Champagne. It's like Champagne's talented younger sibling - same technique, Loire Valley charm, gentler price tag.",
+    "sources": "WSET Study Materials; The Oxford Companion to Wine",
+    "confidence": "established",
+    "tags": [
+      "france",
+      "loire",
+      "sparkling",
+      "cremant"
+    ]
+  },
+  {
+    "id": "RA-070",
+    "domain": "regions_appellations",
+    "difficulty": 340,
+    "level": 2,
+    "format": "multiple_choice",
+    "question": "Which Spanish region is famous for its distinctive slate soils called 'llicorella'?",
+    "options": [
+      "Rioja",
+      "Priorat",
+      "Ribera del Duero",
+      "Rías Baixas"
+    ],
+    "correct": 1,
+    "explanation": "Priorat's llicorella soils are dark slate mixed with quartz that create intensely concentrated wines. These ancient soils are so hard that vines must fight through cracks to survive, producing liquid intensity.",
+    "sources": "The World Atlas of Wine; Wine Grapes",
+    "confidence": "established",
+    "tags": [
+      "spain",
+      "priorat",
+      "soils",
+      "llicorella"
+    ]
+  },
+  {
+    "id": "RA-071",
+    "domain": "regions_appellations",
+    "difficulty": 310,
+    "level": 2,
+    "format": "multiple_choice",
+    "question": "In which Australian region would you find the famous Penfolds Grange vineyard sources?",
+    "options": [
+      "Hunter Valley",
+      "Barossa Valley",
+      "Margaret River",
+      "Yarra Valley"
+    ],
+    "correct": 1,
+    "explanation": "Barossa Valley is the spiritual home of Penfolds Grange, Australia's most iconic wine. The valley's old Shiraz vines and warm climate create the perfect foundation for this legendary blend.",
+    "sources": "The World Atlas of Wine; The Oxford Companion to Wine",
+    "confidence": "established",
+    "tags": [
+      "australia",
+      "barossa",
+      "shiraz",
+      "penfolds"
+    ]
+  },
+  {
+    "id": "RA-072",
+    "domain": "regions_appellations",
+    "difficulty": 290,
+    "level": 2,
+    "format": "odd_one_out",
+    "question": "Which of these Loire Valley appellations does NOT belong with the others in terms of their primary grape variety?",
+    "options": [
+      "Sancerre",
+      "Pouilly-Fumé",
+      "Muscadet",
+      "Menetou-Salon"
+    ],
+    "correct": 2,
+    "explanation": "Muscadet is made from Melon de Bourgogne, while the others are all Sauvignon Blanc appellations. Think of Muscadet as the Loire's seaside rebel - crisp, mineral, and perfect with oysters.",
+    "sources": "Wine Grapes; The Oxford Companion to Wine",
+    "confidence": "established",
+    "tags": [
+      "france",
+      "loire",
+      "grape_varieties",
+      "sauvignon_blanc"
+    ]
+  },
+  {
+    "id": "RA-073",
+    "domain": "regions_appellations",
+    "difficulty": 360,
+    "level": 2,
+    "format": "scenario",
+    "question": "A guest wants to try a premium Italian red wine that showcases the Nebbiolo grape in its purest form. Which region should you recommend?",
+    "options": [
+      "Tuscany",
+      "Piedmont",
+      "Veneto",
+      "Sicily"
+    ],
+    "correct": 1,
+    "explanation": "Piedmont is Nebbiolo's kingdom, home to both Barolo and Barbaresco. These wines showcase Nebbiolo's legendary combination of power and elegance - think of it as Italy's answer to great Burgundy.",
+    "sources": "Wine Grapes; The World Atlas of Wine",
+    "confidence": "established",
+    "tags": [
+      "italy",
+      "piedmont",
+      "nebbiolo",
+      "barolo"
+    ]
+  },
+  {
+    "id": "RA-074",
+    "domain": "regions_appellations",
+    "difficulty": 330,
+    "level": 2,
+    "format": "multiple_choice",
+    "question": "Which Champagne village is famous for its Chardonnay and is located in the Côte des Blancs?",
+    "options": [
+      "Ay",
+      "Bouzy",
+      "Cramant",
+      "Verzenay"
+    ],
+    "correct": 2,
+    "explanation": "Cramant is a Grand Cru village in the Côte des Blancs, renowned for producing some of Champagne's finest Chardonnay. The chalky soils here create Chardonnay with razor-sharp precision and mineral backbone.",
+    "sources": "The World Atlas of Wine; The Oxford Companion to Wine",
+    "confidence": "established",
+    "tags": [
+      "france",
+      "champagne",
+      "chardonnay",
+      "cote_des_blancs"
+    ]
+  },
+  {
+    "id": "RA-075",
+    "domain": "regions_appellations",
+    "difficulty": 370,
+    "level": 2,
+    "format": "match_pairs",
+    "question": "Match each Portuguese wine region with its signature wine style:",
+    "pairs": {
+      "left": [
+        "Douro",
+        "Madeira",
+        "Vinho Verde",
+        "Alentejo"
+      ],
+      "right": [
+        "Fortified dessert wine",
+        "Light, slightly sparkling white",
+        "Full-bodied red blends",
+        "Fortified Port wine"
+      ]
+    },
+    "options": [],
+    "correct": [
+      3,
+      0,
+      1,
+      2
+    ],
+    "explanation": "Each Portuguese region has its distinct calling card. Vinho Verde's slight spritz makes it perfect for hot summer days - like Portugal's refreshing ocean breeze in a bottle.",
+    "sources": "The Oxford Companion to Wine; WSET Study Materials",
+    "confidence": "established",
+    "tags": [
+      "portugal",
+      "regional_styles",
+      "port",
+      "madeira"
+    ]
+  },
+  {
+    "id": "RA-076",
+    "domain": "regions_appellations",
+    "difficulty": 420,
+    "level": 3,
+    "format": "multiple_choice",
+    "question": "In Burgundy's classification system, which Premier Cru vineyard in Gevrey-Chambertin is considered closest in quality to Grand Cru status?",
+    "options": [
+      "Clos Saint-Jacques",
+      "Les Cazetiers",
+      "Lavaux Saint-Jacques",
+      "Estournelles Saint-Jacques"
+    ],
+    "correct": 0,
+    "explanation": "Clos Saint-Jacques is widely regarded as the unofficial 'Grand Cru' of Gevrey-Chambertin Premier Crus, with exceptional exposure and limestone-rich soils. Many consider it superior to some actual Grand Crus - it's Burgundy's best-kept secret hiding in plain sight.",
+    "sources": "The Oxford Companion to Wine; The World Atlas of Wine",
+    "confidence": "established",
+    "tags": [
+      "france",
+      "burgundy",
+      "gevrey_chambertin",
+      "premier_cru"
+    ]
+  },
+  {
+    "id": "RA-077",
+    "domain": "regions_appellations",
+    "difficulty": 450,
+    "level": 3,
+    "format": "odd_one_out",
+    "question": "Which of these Barolo communes does NOT belong with the others in terms of their soil composition?",
+    "options": [
+      "La Morra",
+      "Serralunga d'Alba",
+      "Castiglione Falletto",
+      "Monforte d'Alba"
+    ],
+    "correct": 0,
+    "explanation": "La Morra sits primarily on calcareous marl soils, while the others are dominated by sandstone. This gives La Morra wines their characteristic elegance and earlier approachability - think silk versus iron fist.",
+    "sources": "Wine Grapes; The World Atlas of Wine",
+    "confidence": "established",
+    "tags": [
+      "italy",
+      "piedmont",
+      "barolo",
+      "soil_types"
+    ]
+  },
+  {
+    "id": "RA-078",
+    "domain": "regions_appellations",
+    "difficulty": 480,
+    "level": 3,
+    "format": "scenario",
+    "question": "A Master Sommelier candidate needs to identify a Riesling from Austria's Wachau region that shows the ripest, most powerful style allowed under DAC regulations. Which classification should they look for?",
+    "options": [
+      "Steinfeder",
+      "Federspiel",
+      "Smaragd",
+      "Reserve"
+    ],
+    "correct": 2,
+    "explanation": "Smaragd represents Wachau's most powerful Rieslings with minimum 12.5% alcohol and no chaptalization allowed. Named after the emerald lizard that basks on the terraced walls, these wines capture the sun's full intensity.",
+    "sources": "The Oxford Companion to Wine; WSET Study Materials",
+    "confidence": "established",
+    "tags": [
+      "austria",
+      "wachau",
+      "riesling",
+      "smaragd"
+    ]
+  },
+  {
+    "id": "RA-079",
+    "domain": "regions_appellations",
+    "difficulty": 440,
+    "level": 3,
+    "format": "multiple_choice",
+    "question": "Which specific sub-zone of Soave DOCG is considered the region's most prestigious terroir for Garganega?",
+    "options": [
+      "Soave Superiore",
+      "Soave Classico",
+      "Recioto di Soave",
+      "Soave Colli Scaligeri"
+    ],
+    "correct": 1,
+    "explanation": "Soave Classico represents the historic heart of the appellation with volcanic soils that give Garganega its distinctive mineral backbone. The volcanic basalt here creates wines with electric acidity and remarkable aging potential.",
+    "sources": "Wine Grapes; The World Atlas of Wine",
+    "confidence": "established",
+    "tags": [
+      "italy",
+      "veneto",
+      "soave",
+      "garganega"
+    ]
+  },
+  {
+    "id": "RA-080",
+    "domain": "regions_appellations",
+    "difficulty": 460,
+    "level": 3,
+    "format": "match_pairs",
+    "question": "Match each Northern Rhône appellation with its defining characteristic:",
+    "pairs": {
+      "left": [
+        "Côte-Rôtie",
+        "Hermitage",
+        "Cornas",
+        "Saint-Joseph"
+      ],
+      "right": [
+        "Largest appellation, varied terroirs",
+        "Steepest slopes, Viognier co-fermentation allowed",
+        "Pure Syrah only, granite soils",
+        "Most powerful wines, Le Meal hill"
+      ]
+    },
+    "options": [],
+    "correct": [
+      1,
+      3,
+      2,
+      0
+    ],
+    "explanation": "Each Northern Rhône appellation has its distinct personality shaped by terroir and regulations. Côte-Rôtie's famous 'roasted slope' allows up to 20% Viognier to add perfume to the Syrah - like adding a silk scarf to a leather jacket.",
+    "sources": "The World Atlas of Wine; The Oxford Companion to Wine",
+    "confidence": "established",
+    "tags": [
+      "france",
+      "northern_rhone",
+      "syrah",
+      "appellations"
+    ]
+  },
+  {
+    "id": "RA-081",
+    "domain": "regions_appellations",
+    "difficulty": 320,
+    "level": 2,
+    "format": "multiple_choice",
+    "question": "Which French region is most famous for producing Vouvray wines?",
+    "options": [
+      "Loire Valley",
+      "Alsace",
+      "Burgundy",
+      "Rhône Valley"
+    ],
+    "correct": 0,
+    "explanation": "Vouvray is a Loire Valley appellation known for its Chenin Blanc wines that range from bone-dry to lusciously sweet. Think of it as Chenin Blanc's spiritual home — the grape shows incredible versatility here, from crisp Sec to honeyed Moelleux styles.",
+    "sources": "Oxford Companion to Wine; WSET Level 2 Study Guide",
+    "confidence": "established",
+    "tags": [
+      "loire_valley",
+      "vouvray",
+      "chenin_blanc"
+    ]
+  },
+  {
+    "id": "RA-082",
+    "domain": "regions_appellations",
+    "difficulty": 380,
+    "level": 2,
+    "format": "odd_one_out",
+    "question": "Which of these regions does NOT belong with the others in terms of their primary white grape variety?",
+    "options": [
+      "Sancerre",
+      "Pouilly-Fumé",
+      "Muscadet",
+      "Menetou-Salon"
+    ],
+    "correct": 2,
+    "explanation": "Muscadet is made from Melon de Bourgogne, while the other three are all Sauvignon Blanc appellations in the Loire Valley. Remember: Muscadet = Melon, the others = Sauvignon Blanc's Loire showcase.",
+    "sources": "Oxford Companion to Wine; WSET Level 2 Study Guide",
+    "confidence": "established",
+    "tags": [
+      "loire_valley",
+      "sauvignon_blanc",
+      "muscadet"
+    ]
+  },
+  {
+    "id": "RA-083",
+    "domain": "regions_appellations",
+    "difficulty": 290,
+    "level": 2,
+    "format": "multiple_choice",
+    "question": "In Burgundy's classification hierarchy, which level sits between Village wines and Grand Cru?",
+    "options": [
+      "Premier Cru",
+      "Regional",
+      "Communal",
+      "Monopole"
+    ],
+    "correct": 0,
+    "explanation": "Premier Cru is the middle tier of Burgundy's four-level pyramid: Regional → Village → Premier Cru → Grand Cru. Think of it as the 'first growth' stepping stone to the pinnacle Grand Cru sites.",
+    "sources": "Oxford Companion to Wine; WSET Level 2 Study Guide",
+    "confidence": "established",
+    "tags": [
+      "burgundy",
+      "classification",
+      "premier_cru"
+    ]
+  },
+  {
+    "id": "RA-084",
+    "domain": "regions_appellations",
+    "difficulty": 350,
+    "level": 2,
+    "format": "scenario",
+    "question": "A customer wants a crisp, dry white wine from Germany that pairs well with shellfish. They prefer something light and refreshing. Which style should you recommend?",
+    "options": [
+      "Spätlese",
+      "Kabinett",
+      "Auslese",
+      "Eiswein"
+    ],
+    "correct": 1,
+    "explanation": "Kabinett is the lightest, driest style in Germany's Prädikatswein system, perfect for shellfish pairings. It's like the gentle introduction to German Riesling — delicate, food-friendly, and refreshingly crisp.",
+    "sources": "Oxford Companion to Wine; WSET Level 2 Study Guide",
+    "confidence": "established",
+    "tags": [
+      "germany",
+      "kabinett",
+      "pradikatswein"
+    ]
+  },
+  {
+    "id": "RA-085",
+    "domain": "regions_appellations",
+    "difficulty": 340,
+    "level": 2,
+    "format": "match_pairs",
+    "question": "Match each wine region with its most famous grape variety:",
+    "pairs": {
+      "left": [
+        "Barossa Valley",
+        "Marlborough",
+        "Rioja",
+        "Sancerre"
+      ],
+      "right": [
+        "Tempranillo",
+        "Shiraz",
+        "Riesling",
+        "Sauvignon Blanc"
+      ]
+    },
+    "options": [],
+    "correct": [
+      1,
+      3,
+      0,
+      3
+    ],
+    "explanation": "These are textbook region-grape marriages: Barossa's powerful Shiraz, Marlborough's pungent Sauvignon Blanc, Rioja's noble Tempranillo, and Sancerre's mineral Sauvignon Blanc. Each region has made these varieties their calling card.",
+    "sources": "Oxford Companion to Wine; WSET Level 2 Study Guide",
+    "confidence": "established",
+    "tags": [
+      "regional_specialties",
+      "grape_varieties",
+      "classic_pairings"
+    ]
+  },
+  {
+    "id": "RA-086",
+    "domain": "regions_appellations",
+    "difficulty": 410,
+    "level": 3,
+    "format": "multiple_choice",
+    "question": "Which of these Bordeaux châteaux was promoted to First Growth status in the 1973 revision of the 1855 Classification?",
+    "options": [
+      "Château Mouton Rothschild",
+      "Château Pichon Baron",
+      "Château Cos d'Estournel",
+      "Château Montrose"
+    ],
+    "correct": 0,
+    "explanation": "Mouton Rothschild was elevated from Second to First Growth in 1973, the only change ever made to the 1855 Classification. Baron Philippe's famous motto 'Premier ne puis, second ne daigne, Mouton suis' became 'Premier je suis, second je fus, Mouton ne change.'",
+    "sources": "Oxford Companion to Wine; The World Atlas of Wine",
+    "confidence": "established",
+    "tags": [
+      "bordeaux",
+      "1855_classification",
+      "mouton_rothschild"
+    ]
+  },
+  {
+    "id": "RA-087",
+    "domain": "regions_appellations",
+    "difficulty": 480,
+    "level": 3,
+    "format": "odd_one_out",
+    "question": "Which of these Burgundy Grand Cru vineyards does NOT belong with the others in terms of their commune location?",
+    "options": [
+      "Chambertin",
+      "Clos de Vougeot",
+      "Musigny",
+      "Clos Saint-Denis"
+    ],
+    "correct": 0,
+    "explanation": "Chambertin is located in Gevrey-Chambertin, while the other three are all in the Côte de Nuits: Clos de Vougeot in Vougeot, Musigny in Chambolle-Musigny, and Clos Saint-Denis in Morey-Saint-Denis. Chambertin stands alone in its commune.",
+    "sources": "Oxford Companion to Wine; WSET Level 3 Study Guide",
+    "confidence": "established",
+    "tags": [
+      "burgundy",
+      "grand_cru",
+      "commune_locations"
+    ]
+  },
+  {
+    "id": "RA-088",
+    "domain": "regions_appellations",
+    "difficulty": 450,
+    "level": 3,
+    "format": "multiple_choice",
+    "question": "In the Northern Rhône, which appellation is exclusively dedicated to white wine production?",
+    "options": [
+      "Condrieu",
+      "Côte-Rôtie",
+      "Saint-Joseph",
+      "Crozes-Hermitage"
+    ],
+    "correct": 0,
+    "explanation": "Condrieu produces only white wines from 100% Viognier, making it the Northern Rhône's white wine jewel. Think of it as Viognier's palace — no other grape is permitted in this tiny, prestigious appellation perched on granite terraces.",
+    "sources": "Oxford Companion to Wine; WSET Level 3 Study Guide",
+    "confidence": "established",
+    "tags": [
+      "northern_rhone",
+      "condrieu",
+      "viognier"
+    ]
+  },
+  {
+    "id": "RA-089",
+    "domain": "regions_appellations",
+    "difficulty": 520,
+    "level": 3,
+    "format": "scenario",
+    "question": "A sommelier needs to recommend a Barolo that showcases the most elegant, perfumed style typical of the commune's calcareous-clay soils. Which commune should they choose?",
+    "options": [
+      "La Morra",
+      "Serralunga d'Alba",
+      "Monforte d'Alba",
+      "Castiglione Falletto"
+    ],
+    "correct": 0,
+    "explanation": "La Morra's calcareous-clay soils produce the most elegant, perfumed Barolos with softer tannins and floral aromatics. It's the 'feminine' side of Barolo — think silk scarves versus iron fists compared to the more structured wines from Serralunga's sandstone.",
+    "sources": "Oxford Companion to Wine; Wine Grapes",
+    "confidence": "established",
+    "tags": [
+      "barolo",
+      "la_morra",
+      "soil_types"
+    ]
+  },
+  {
+    "id": "RA-090",
+    "domain": "regions_appellations",
+    "difficulty": 470,
+    "level": 3,
+    "format": "match_pairs",
+    "question": "Match each German wine region with its most famous single vineyard site:",
+    "pairs": {
+      "left": [
+        "Mosel",
+        "Rheingau",
+        "Pfalz",
+        "Nahe"
+      ],
+      "right": [
+        "Forster Ungeheuer",
+        "Bernkasteler Doctor",
+        "Schloss Johannisberg",
+        "Niederhäuser Hermannshöhle"
+      ]
+    },
+    "options": [],
+    "correct": [
+      1,
+      2,
+      0,
+      3
+    ],
+    "explanation": "These are Germany's most legendary einzellagen: Mosel's Doctor for its steep slate, Rheingau's Johannisberg as Riesling's birthplace, Pfalz's Ungeheuer for power, and Nahe's Hermannshöhle for mineral complexity. Each represents their region's pinnacle expression.",
+    "sources": "Oxford Companion to Wine; The World Atlas of Wine",
+    "confidence": "established",
+    "tags": [
+      "germany",
+      "einzellagen",
+      "famous_vineyards"
+    ]
+  },
+  {
+    "id": "RA-091",
+    "domain": "regions_appellations",
+    "difficulty": 390,
+    "level": 3,
+    "format": "multiple_choice",
+    "question": "Which Portuguese wine region is famous for its fortified wines aged using the estufagem heating process?",
+    "options": [
+      "Madeira",
+      "Douro",
+      "Setúbal",
+      "Carcavelos"
+    ],
+    "correct": 0,
+    "explanation": "Madeira uses the unique estufagem process, heating wines to 45-50°C for months to replicate the effects of long sea voyages. It's like controlled cooking that creates Madeira's distinctive caramelized, oxidative character that can last centuries.",
+    "sources": "Oxford Companion to Wine; WSET Level 3 Study Guide",
+    "confidence": "established",
+    "tags": [
+      "madeira",
+      "estufagem",
+      "fortified_wine"
     ]
   }
 ]

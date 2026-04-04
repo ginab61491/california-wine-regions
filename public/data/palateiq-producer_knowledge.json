@@ -1,0 +1,5133 @@
+[
+  {
+    "id": "PK-001",
+    "domain": "producer_knowledge",
+    "difficulty": 150,
+    "level": 1,
+    "format": "multiple_choice",
+    "question": "Which Bordeaux château is known as the most expensive of the First Growths and produces only red wine?",
+    "options": [
+      "Château Lafite Rothschild",
+      "Château Pétrus",
+      "Château d'Yquem",
+      "Château Margaux"
+    ],
+    "correct": 1,
+    "explanation": "Pétrus, while not technically a First Growth, commands the highest prices among Bordeaux's most elite châteaux and produces exclusively Merlot-based red wine. Think of it as Bordeaux's crown jewel from the Right Bank.",
+    "sources": "The Oxford Companion to Wine; The World Atlas of Wine",
+    "confidence": "established",
+    "tags": [
+      "bordeaux",
+      "first_growths",
+      "pomerol",
+      "merlot"
+    ]
+  },
+  {
+    "id": "PK-002",
+    "domain": "producer_knowledge",
+    "difficulty": 200,
+    "level": 1,
+    "format": "odd_one_out",
+    "question": "Which of these Champagne houses does NOT belong with the others?",
+    "options": [
+      "Krug",
+      "Bollinger",
+      "Dom Pérignon",
+      "Jacques Selosse"
+    ],
+    "correct": 3,
+    "explanation": "Jacques Selosse is a small grower-producer known for natural winemaking methods, while the others are large négociant houses with traditional approaches. Selosse is like the rebel artist among classical symphonists.",
+    "sources": "The Oxford Companion to Wine; WSET Level 3 Study Materials",
+    "confidence": "established",
+    "tags": [
+      "champagne",
+      "grower_producer",
+      "negociant",
+      "selosse"
+    ]
+  },
+  {
+    "id": "PK-003",
+    "domain": "producer_knowledge",
+    "difficulty": 180,
+    "level": 1,
+    "format": "multiple_choice",
+    "question": "Domaine de la Romanée-Conti is most famous for producing wines from which grape variety?",
+    "options": [
+      "Chardonnay",
+      "Pinot Noir",
+      "Cabernet Sauvignon",
+      "Syrah"
+    ],
+    "correct": 1,
+    "explanation": "DRC is Burgundy's most legendary producer, crafting the world's most expensive Pinot Noir from Grand Cru vineyards including Romanée-Conti itself. Their bottles are like liquid history, with prices to match.",
+    "sources": "The Oxford Companion to Wine; The World Atlas of Wine",
+    "confidence": "established",
+    "tags": [
+      "burgundy",
+      "drc",
+      "pinot_noir",
+      "grand_cru"
+    ]
+  },
+  {
+    "id": "PK-004",
+    "domain": "producer_knowledge",
+    "difficulty": 220,
+    "level": 1,
+    "format": "match_pairs",
+    "question": "Match each producer to their home region:",
+    "pairs": {
+      "left": [
+        "Screaming Eagle",
+        "Egon Müller",
+        "Penfolds",
+        "Vega Sicilia"
+      ],
+      "right": [
+        "Ribera del Duero",
+        "Napa Valley",
+        "Mosel",
+        "Barossa Valley"
+      ]
+    },
+    "options": [],
+    "correct": [
+      1,
+      2,
+      3,
+      0
+    ],
+    "explanation": "These are flagship producers from their respective regions - Screaming Eagle put Napa cult wines on the map, Egon Müller crafts Germany's most prized Rieslings, Penfolds created Australia's icon Grange, and Vega Sicilia is Spain's most prestigious estate.",
+    "sources": "The World Atlas of Wine; WSET Level 2 Study Materials",
+    "confidence": "established",
+    "tags": [
+      "cult_wines",
+      "flagship_producers",
+      "regional_icons"
+    ]
+  },
+  {
+    "id": "PK-005",
+    "domain": "producer_knowledge",
+    "difficulty": 160,
+    "level": 1,
+    "format": "multiple_choice",
+    "question": "Which producer is credited with creating the first Super Tuscan wine?",
+    "options": [
+      "Ornellaia",
+      "Antinori",
+      "Tenuta San Guido",
+      "Frescobaldi"
+    ],
+    "correct": 2,
+    "explanation": "Tenuta San Guido created Sassicaia in the 1960s, the original Super Tuscan that broke Italian wine law by using Cabernet Sauvignon in Tuscany. It's like the rebel that started a revolution and became royalty.",
+    "sources": "The Oxford Companion to Wine; The Wine Bible",
+    "confidence": "established",
+    "tags": [
+      "super_tuscan",
+      "sassicaia",
+      "tuscany",
+      "cabernet_sauvignon"
+    ]
+  },
+  {
+    "id": "PK-006",
+    "domain": "producer_knowledge",
+    "difficulty": 190,
+    "level": 1,
+    "format": "scenario",
+    "question": "A customer asks for a wine from the producer who makes 'Grange,' one of Australia's most famous wines. Which producer should you recommend?",
+    "options": [
+      "Henschke",
+      "Penfolds",
+      "Wolf Blass",
+      "Wynns"
+    ],
+    "correct": 1,
+    "explanation": "Penfolds Grange is Australia's most iconic wine, created by Max Schubert in the 1950s as a Shiraz-based blend. It's often called Australia's first growth, earning cult status through decades of exceptional quality.",
+    "sources": "The Oxford Companion to Wine; The World Atlas of Wine",
+    "confidence": "established",
+    "tags": [
+      "australia",
+      "penfolds",
+      "grange",
+      "shiraz"
+    ]
+  },
+  {
+    "id": "PK-007",
+    "domain": "producer_knowledge",
+    "difficulty": 240,
+    "level": 2,
+    "format": "multiple_choice",
+    "question": "Which Burgundy domaine is known for biodynamic viticulture and was co-founded by Lalou Bize-Leroy?",
+    "options": [
+      "Domaine Leflaive",
+      "Domaine Leroy",
+      "Domaine Roulot",
+      "Domaine Coche-Dury"
+    ],
+    "correct": 1,
+    "explanation": "Domaine Leroy, led by the formidable Lalou Bize-Leroy, practices strict biodynamics and produces some of Burgundy's most concentrated and expensive wines. Think of Lalou as Burgundy's iron lady with a velvet touch for Pinot Noir.",
+    "sources": "The Oxford Companion to Wine; WSET Level 3 Study Materials",
+    "confidence": "established",
+    "tags": [
+      "burgundy",
+      "leroy",
+      "biodynamic",
+      "lalou_bize_leroy"
+    ]
+  },
+  {
+    "id": "PK-008",
+    "domain": "producer_knowledge",
+    "difficulty": 280,
+    "level": 2,
+    "format": "odd_one_out",
+    "question": "Which of these producers does NOT belong with the others in terms of their regional classification?",
+    "options": [
+      "Château Latour",
+      "Château Haut-Brion",
+      "Château Pichon Baron",
+      "Château Margaux"
+    ],
+    "correct": 2,
+    "explanation": "Château Pichon Baron is a Second Growth, while the others are all First Growths in the 1855 Bordeaux Classification. Pichon Baron is excellent but sits one tier below these legendary estates.",
+    "sources": "The Oxford Companion to Wine; The World Atlas of Wine",
+    "confidence": "established",
+    "tags": [
+      "bordeaux",
+      "1855_classification",
+      "first_growth",
+      "second_growth"
+    ]
+  },
+  {
+    "id": "PK-009",
+    "domain": "producer_knowledge",
+    "difficulty": 320,
+    "level": 2,
+    "format": "multiple_choice",
+    "question": "Giacomo Conterno's 'Monfortino' Barolo is made only in exceptional vintages from which vineyard?",
+    "options": [
+      "Cannubi",
+      "Francia",
+      "Brunate",
+      "Cascina Francia"
+    ],
+    "correct": 3,
+    "explanation": "Monfortino comes exclusively from the Cascina Francia vineyard and is only made in the best years, representing traditional Barolo winemaking at its pinnacle. It's like the holy grail of Nebbiolo - rare, revered, and worth the decades-long wait.",
+    "sources": "The Oxford Companion to Wine; Wine Grapes",
+    "confidence": "established",
+    "tags": [
+      "barolo",
+      "giacomo_conterno",
+      "monfortino",
+      "cascina_francia"
+    ]
+  },
+  {
+    "id": "PK-010",
+    "domain": "producer_knowledge",
+    "difficulty": 350,
+    "level": 2,
+    "format": "match_pairs",
+    "question": "Match each Loire Valley producer to their signature wine style:",
+    "pairs": {
+      "left": [
+        "Domaine Huet",
+        "François Cotat",
+        "Didier Dagueneau",
+        "Nicolas Joly"
+      ],
+      "right": [
+        "Sancerre",
+        "Vouvray",
+        "Pouilly-Fumé",
+        "Savennières"
+      ]
+    },
+    "options": [],
+    "correct": [
+      1,
+      0,
+      2,
+      3
+    ],
+    "explanation": "These Loire masters each define their appellations - Huet crafts legendary sweet and dry Vouvray, Cotat makes mineral-driven Sancerre, Dagueneau revolutionized Pouilly-Fumé, and Joly champions biodynamic Savennières. Each producer is synonymous with their region's potential.",
+    "sources": "The Oxford Companion to Wine; WSET Level 3 Study Materials",
+    "confidence": "established",
+    "tags": [
+      "loire_valley",
+      "vouvray",
+      "sancerre",
+      "pouilly_fume",
+      "savenниeres"
+    ]
+  },
+  {
+    "id": "PK-011",
+    "domain": "producer_knowledge",
+    "difficulty": 260,
+    "level": 2,
+    "format": "scenario",
+    "question": "A collector is looking for the most traditional expression of Amarone and wants a producer known for never compromising on old-school methods. Which producer should you recommend?",
+    "options": [
+      "Allegrini",
+      "Giuseppe Quintarelli",
+      "Tommasi",
+      "Zenato"
+    ],
+    "correct": 1,
+    "explanation": "Giuseppe Quintarelli was the undisputed master of traditional Amarone, using ancient methods and never bending to modern trends until his passing. His wines are like liquid time capsules, preserving Amarone's soul in every bottle.",
+    "sources": "The Oxford Companion to Wine; The Wine Bible",
+    "confidence": "established",
+    "tags": [
+      "amarone",
+      "quintarelli",
+      "traditional_methods",
+      "valpolicella"
+    ]
+  },
+  {
+    "id": "PK-012",
+    "domain": "producer_knowledge",
+    "difficulty": 300,
+    "level": 2,
+    "format": "multiple_choice",
+    "question": "Which Rhône producer is famous for their single-vineyard Côte-Rôtie 'La Mouline' and 'La Landonne'?",
+    "options": [
+      "M. Chapoutier",
+      "Paul Jaboulet Aîné",
+      "E. Guigal",
+      "Jean-Louis Chave"
+    ],
+    "correct": 2,
+    "explanation": "E. Guigal's 'La La' wines (La Mouline, La Landonne, and La Turque) are Côte-Rôtie's holy trinity, each expressing different terroirs with meticulous winemaking. These wines put Guigal on the map as the Northern Rhône's modern master.",
+    "sources": "The Oxford Companion to Wine; The World Atlas of Wine",
+    "confidence": "established",
+    "tags": [
+      "rhone",
+      "guigal",
+      "cote_rotie",
+      "la_mouline",
+      "la_landonne"
+    ]
+  },
+  {
+    "id": "PK-013",
+    "domain": "producer_knowledge",
+    "difficulty": 380,
+    "level": 2,
+    "format": "multiple_choice",
+    "question": "Salon Champagne is unique among prestige cuvées because it is made from which single grape variety?",
+    "options": [
+      "Pinot Noir",
+      "Pinot Meunier",
+      "Chardonnay",
+      "Pinot Blanc"
+    ],
+    "correct": 2,
+    "explanation": "Salon is made exclusively from Chardonnay grapes grown in Le Mesnil-sur-Oger, and only in exceptional years - making it one of the rarest and most sought-after Champagnes. It's like the unicorn of Champagne - pure, rare, and magical.",
+    "sources": "The Oxford Companion to Wine; WSET Level 3 Study Materials",
+    "confidence": "established",
+    "tags": [
+      "champagne",
+      "salon",
+      "chardonnay",
+      "blanc_de_blancs"
+    ]
+  },
+  {
+    "id": "PK-014",
+    "domain": "producer_knowledge",
+    "difficulty": 290,
+    "level": 2,
+    "format": "odd_one_out",
+    "question": "Which of these Spanish producers does NOT belong with the others in terms of their primary region?",
+    "options": [
+      "Vega Sicilia",
+      "López de Heredia",
+      "Álvaro Palacios",
+      "Pesquera"
+    ],
+    "correct": 1,
+    "explanation": "López de Heredia is based in Rioja, while the others are primarily associated with other regions - Vega Sicilia and Pesquera in Ribera del Duero, and Álvaro Palacios in Priorat. López de Heredia represents old-school Rioja tradition.",
+    "sources": "The Oxford Companion to Wine; The World Atlas of Wine",
+    "confidence": "established",
+    "tags": [
+      "spain",
+      "rioja",
+      "ribera_del_duero",
+      "priorat",
+      "lopez_de_heredia"
+    ]
+  },
+  {
+    "id": "PK-015",
+    "domain": "producer_knowledge",
+    "difficulty": 340,
+    "level": 2,
+    "format": "scenario",
+    "question": "A wine enthusiast wants to experience the legendary influence of consultant Michel Rolland's winemaking style. Which type of wine should you recommend?",
+    "options": [
+      "Traditional Burgundy Pinot Noir",
+      "Right Bank Bordeaux blends",
+      "Alsace Riesling",
+      "Champagne"
+    ],
+    "correct": 1,
+    "explanation": "Michel Rolland is the 'flying winemaker' most famous for consulting on Right Bank Bordeaux estates, promoting riper fruit and modern extraction techniques. His influence helped create the international style that made wines like Le Pin and Valandraud cult classics.",
+    "sources": "The Oxford Companion to Wine; The Wine Bible",
+    "confidence": "established",
+    "tags": [
+      "michel_rolland",
+      "consultant",
+      "right_bank",
+      "bordeaux",
+      "modern_style"
+    ]
+  },
+  {
+    "id": "PK-016",
+    "domain": "producer_knowledge",
+    "difficulty": 180,
+    "level": 1,
+    "format": "multiple_choice",
+    "question": "Which Champagne house is famous for producing only vintage Champagne and never releasing a non-vintage cuvée?",
+    "options": [
+      "Krug",
+      "Bollinger",
+      "Salon",
+      "Dom Pérignon"
+    ],
+    "correct": 2,
+    "explanation": "Salon is the ultimate perfectionist's Champagne house, producing wine only in exceptional vintages from 100% Chardonnay grown in Le Mesnil-sur-Oger. Think of them as the opposite of mass production—some decades they don't release anything at all.",
+    "sources": "The Oxford Companion to Wine; The Wine Bible",
+    "confidence": "established",
+    "tags": [
+      "champagne",
+      "france",
+      "vintage_only",
+      "luxury"
+    ]
+  },
+  {
+    "id": "PK-017",
+    "domain": "producer_knowledge",
+    "difficulty": 220,
+    "level": 1,
+    "format": "multiple_choice",
+    "question": "Penfolds Grange, Australia's most famous wine, is primarily made from which grape variety?",
+    "options": [
+      "Cabernet Sauvignon",
+      "Shiraz",
+      "Grenache",
+      "Pinot Noir"
+    ],
+    "correct": 1,
+    "explanation": "Grange is Australia's first icon wine, created by Max Schubert in the 1950s using predominantly Shiraz with small amounts of Cabernet Sauvignon. It's aged in new American oak and built to age for decades—think of it as Australia's answer to Bordeaux First Growths.",
+    "sources": "The World Atlas of Wine; The Wine Bible",
+    "confidence": "established",
+    "tags": [
+      "australia",
+      "penfolds",
+      "shiraz",
+      "icon_wine"
+    ]
+  },
+  {
+    "id": "PK-018",
+    "domain": "producer_knowledge",
+    "difficulty": 200,
+    "level": 1,
+    "format": "odd_one_out",
+    "question": "Which of these producers does NOT belong with the others as a Bordeaux First Growth?",
+    "options": [
+      "Château Lafite Rothschild",
+      "Château Margaux",
+      "Château Pichon Baron",
+      "Château Haut-Brion"
+    ],
+    "correct": 2,
+    "explanation": "Pichon Baron is a Second Growth (Deuxième Cru) from Pauillac, while the others are all First Growths from the 1855 Classification. Remember that only five châteaux achieved First Growth status, and Pichon Baron—despite its excellence—wasn't one of them.",
+    "sources": "The Oxford Companion to Wine; The World Atlas of Wine",
+    "confidence": "established",
+    "tags": [
+      "bordeaux",
+      "first_growth",
+      "classification",
+      "1855"
+    ]
+  },
+  {
+    "id": "PK-019",
+    "domain": "producer_knowledge",
+    "difficulty": 240,
+    "level": 1,
+    "format": "multiple_choice",
+    "question": "Which German producer is most famous for their Scharzhofberger Riesling and is considered one of the Mosel's greatest estates?",
+    "options": [
+      "Dr. Loosen",
+      "J.J. Prüm",
+      "Egon Müller",
+      "Dönnhoff"
+    ],
+    "correct": 2,
+    "explanation": "Egon Müller's Scharzhofberger vineyard produces some of the world's most expensive and sought-after Rieslings, with their Trockenbeerenauslese regularly selling for thousands of dollars per bottle. The Müller family has been perfecting this single vineyard for generations—it's like owning Romanée-Conti but for Riesling.",
+    "sources": "The Oxford Companion to Wine; The World Atlas of Wine",
+    "confidence": "established",
+    "tags": [
+      "germany",
+      "mosel",
+      "riesling",
+      "egon_muller"
+    ]
+  },
+  {
+    "id": "PK-020",
+    "domain": "producer_knowledge",
+    "difficulty": 160,
+    "level": 1,
+    "format": "multiple_choice",
+    "question": "Opus One is a famous joint venture between which two wine producers?",
+    "options": [
+      "Robert Mondavi and Château Margaux",
+      "Robert Mondavi and Château Mouton Rothschild",
+      "Screaming Eagle and Harlan Estate",
+      "Ridge and Stag's Leap Wine Cellars"
+    ],
+    "correct": 1,
+    "explanation": "Opus One represents the marriage of Napa Valley innovation and Bordeaux tradition, created by Robert Mondavi and Baron Philippe de Rothschild of Mouton in 1979. Think of it as diplomatic wine—bringing together the Old World and New World in one prestigious Cabernet blend.",
+    "sources": "The Wine Bible; The World Atlas of Wine",
+    "confidence": "established",
+    "tags": [
+      "napa_valley",
+      "joint_venture",
+      "mondavi",
+      "mouton_rothschild"
+    ]
+  },
+  {
+    "id": "PK-021",
+    "domain": "producer_knowledge",
+    "difficulty": 180,
+    "level": 1,
+    "format": "match_pairs",
+    "question": "Match each iconic producer to their home region:",
+    "pairs": {
+      "left": [
+        "Domaine de la Romanée-Conti",
+        "Château d'Yquem",
+        "Tenuta San Guido",
+        "Vega Sicilia"
+      ],
+      "right": [
+        "Sauternes",
+        "Tuscany",
+        "Burgundy",
+        "Ribera del Duero"
+      ]
+    },
+    "options": [],
+    "correct": [
+      2,
+      0,
+      1,
+      3
+    ],
+    "explanation": "Each of these producers defines their respective regions: DRC owns Burgundy's most legendary vineyards, d'Yquem rules Sauternes dessert wines, Tenuta San Guido created Sassicaia in coastal Tuscany, and Vega Sicilia has been Spain's most prestigious estate since 1864. Think of them as the regional ambassadors of fine wine.",
+    "sources": "The Oxford Companion to Wine; The World Atlas of Wine",
+    "confidence": "established",
+    "tags": [
+      "regional_icons",
+      "matching",
+      "luxury_producers",
+      "geography"
+    ]
+  },
+  {
+    "id": "PK-022",
+    "domain": "producer_knowledge",
+    "difficulty": 210,
+    "level": 1,
+    "format": "multiple_choice",
+    "question": "Which Rhône Valley producer is most famous for their Hermitage 'La Chapelle' and has been family-owned since 1834?",
+    "options": [
+      "M. Chapoutier",
+      "Paul Jaboulet Aîné",
+      "E. Guigal",
+      "Jean-Louis Chave"
+    ],
+    "correct": 1,
+    "explanation": "Paul Jaboulet Aîné's 'La Chapelle' is one of the Northern Rhône's most legendary wines, made from vines planted around the actual chapel on Hermitage hill. The wine can age for 50+ years and represents the pinnacle of traditional Hermitage winemaking—think of it as liquid history in a bottle.",
+    "sources": "The Oxford Companion to Wine; The Wine Bible",
+    "confidence": "established",
+    "tags": [
+      "rhone_valley",
+      "hermitage",
+      "jaboulet",
+      "la_chapelle"
+    ]
+  },
+  {
+    "id": "PK-023",
+    "domain": "producer_knowledge",
+    "difficulty": 190,
+    "level": 1,
+    "format": "multiple_choice",
+    "question": "Cloudy Bay, one of New Zealand's most internationally recognized wineries, is most famous for which grape variety?",
+    "options": [
+      "Chardonnay",
+      "Pinot Noir",
+      "Sauvignon Blanc",
+      "Riesling"
+    ],
+    "correct": 2,
+    "explanation": "Cloudy Bay put Marlborough Sauvignon Blanc on the world map in the 1980s with its intensely aromatic, gooseberry and passion fruit-driven style. They essentially created the template that made New Zealand Sauvignon Blanc a global phenomenon—think of them as the pioneers who taught the world what this grape could achieve in cool climates.",
+    "sources": "The Oxford Companion to Wine; The World Atlas of Wine",
+    "confidence": "established",
+    "tags": [
+      "new_zealand",
+      "marlborough",
+      "sauvignon_blanc",
+      "cloudy_bay"
+    ]
+  },
+  {
+    "id": "PK-024",
+    "domain": "producer_knowledge",
+    "difficulty": 230,
+    "level": 1,
+    "format": "scenario",
+    "question": "A customer wants to try a wine from 'the producer who makes the most expensive Burgundy in the world.' Which domaine should you recommend?",
+    "options": [
+      "Domaine Leroy",
+      "Domaine de la Romanée-Conti",
+      "Domaine Leflaive",
+      "Domaine Armand Rousseau"
+    ],
+    "correct": 1,
+    "explanation": "Domaine de la Romanée-Conti consistently produces the world's most expensive Burgundies, with their Romanée-Conti vineyard wines selling for tens of thousands of dollars per bottle. They own or have exclusive rights to several Grand Cru monopoles—imagine owning the Mona Lisa of vineyards.",
+    "sources": "The Oxford Companion to Wine; GuildSomm",
+    "confidence": "established",
+    "tags": [
+      "burgundy",
+      "drc",
+      "luxury",
+      "monopole"
+    ]
+  },
+  {
+    "id": "PK-025",
+    "domain": "producer_knowledge",
+    "difficulty": 170,
+    "level": 1,
+    "format": "multiple_choice",
+    "question": "Which Spanish producer is famous for their traditional winemaking methods and their wines from Rioja Alta, including the legendary 'Viña Tondonia'?",
+    "options": [
+      "Marqués de Riscal",
+      "López de Heredia",
+      "CVNE",
+      "La Rioja Alta"
+    ],
+    "correct": 1,
+    "explanation": "López de Heredia is Rioja's time capsule, using the same traditional methods since 1877, including aging wines in their own cooperage for decades before release. Their 'Viña Tondonia' can spend 10+ years in barrel and bottle before hitting the market—think of them as the guardians of old-school Rioja.",
+    "sources": "The Oxford Companion to Wine; The Wine Bible",
+    "confidence": "established",
+    "tags": [
+      "spain",
+      "rioja",
+      "traditional",
+      "lopez_de_heredia"
+    ]
+  },
+  {
+    "id": "PK-026",
+    "domain": "producer_knowledge",
+    "difficulty": 200,
+    "level": 1,
+    "format": "odd_one_out",
+    "question": "Which of these producers does NOT belong with the others as a Piedmont Barolo producer?",
+    "options": [
+      "Giacomo Conterno",
+      "Bruno Giacosa",
+      "Gaja",
+      "Quintarelli"
+    ],
+    "correct": 3,
+    "explanation": "Quintarelli is the master of Amarone in Veneto's Valpolicella region, while the others are legendary Barolo producers from Piedmont. Giuseppe Quintarelli was known as the 'grandfather of Amarone'—he's in the wrong region but definitely the right league of Italian wine royalty.",
+    "sources": "The Oxford Companion to Wine; The Wine Bible",
+    "confidence": "established",
+    "tags": [
+      "italy",
+      "piedmont",
+      "barolo",
+      "amarone"
+    ]
+  },
+  {
+    "id": "PK-027",
+    "domain": "producer_knowledge",
+    "difficulty": 250,
+    "level": 2,
+    "format": "multiple_choice",
+    "question": "Which Burgundy domaine was co-founded by Lalou Bize-Leroy and is known for its biodynamic viticulture and extremely low yields?",
+    "options": [
+      "Domaine Leroy",
+      "Domaine d'Auvenay",
+      "Domaine de la Romanée-Conti",
+      "Domaine Leflaive"
+    ],
+    "correct": 0,
+    "explanation": "Domaine Leroy, established by the formidable Lalou Bize-Leroy, practices extreme biodynamic viticulture with yields so low they're almost shocking—sometimes just 10-15 hl/ha. Her obsession with terroir expression and natural winemaking produces wines of incredible intensity and astronomical prices.",
+    "sources": "The Oxford Companion to Wine; The Wine Bible",
+    "confidence": "established",
+    "tags": [
+      "burgundy",
+      "biodynamic",
+      "leroy",
+      "low_yields"
+    ]
+  },
+  {
+    "id": "PK-028",
+    "domain": "producer_knowledge",
+    "difficulty": 280,
+    "level": 2,
+    "format": "multiple_choice",
+    "question": "Bartolo Mascarello's Barolo is famous for which traditional winemaking approach that he steadfastly maintained?",
+    "options": [
+      "Using only French oak barriques",
+      "Blending grapes from multiple vineyards",
+      "Extended cold maceration",
+      "Malolactic fermentation in new oak"
+    ],
+    "correct": 1,
+    "explanation": "Bartolo Mascarello was the traditionalist's traditionalist, blending fruit from multiple great vineyards (Cannubi, San Lorenzo, Rue, Rocche) to create a harmonious whole rather than single-vineyard bottlings. He believed this blending created more complete, balanced wines—like a master chef combining the best ingredients rather than showcasing just one.",
+    "sources": "The Oxford Companion to Wine; The Wine Bible",
+    "confidence": "established",
+    "tags": [
+      "piedmont",
+      "barolo",
+      "traditional",
+      "blending"
+    ]
+  },
+  {
+    "id": "PK-029",
+    "domain": "producer_knowledge",
+    "difficulty": 320,
+    "level": 2,
+    "format": "scenario",
+    "question": "A collector mentions wanting to buy wine from 'the producer Henri Jayer mentored, who now makes some of Burgundy's most sought-after wines.' Which domaine are they referring to?",
+    "options": [
+      "Domaine Emmanuel Rouget",
+      "Domaine Méo-Camuzet",
+      "Domaine Georges Roumier",
+      "Domaine Dujac"
+    ],
+    "correct": 0,
+    "explanation": "Emmanuel Rouget is Henri Jayer's nephew and protégé, inheriting not only his vineyards but also his legendary winemaking philosophy of minimal intervention and impeccable fruit selection. Rouget's wines command Jayer-like prices and reverence—he's literally carrying on the master's legacy vine by vine.",
+    "sources": "The Oxford Companion to Wine; GuildSomm",
+    "confidence": "established",
+    "tags": [
+      "burgundy",
+      "henri_jayer",
+      "emmanuel_rouget",
+      "mentorship"
+    ]
+  },
+  {
+    "id": "PK-030",
+    "domain": "producer_knowledge",
+    "difficulty": 290,
+    "level": 2,
+    "format": "match_pairs",
+    "question": "Match each Loire Valley producer to their signature wine style:",
+    "pairs": {
+      "left": [
+        "Domaine Huet",
+        "François Cotat",
+        "Didier Dagueneau",
+        "Nicolas Joly"
+      ],
+      "right": [
+        "Sancerre",
+        "Vouvray",
+        "Pouilly-Fumé",
+        "Savennières"
+      ]
+    },
+    "options": [],
+    "correct": [
+      1,
+      0,
+      2,
+      3
+    ],
+    "explanation": "Each producer represents the pinnacle of their Loire appellation: Huet perfected Vouvray's sweet and dry Chenin styles, Cotat makes Sancerre's most mineral Sauvignon Blanc, Dagueneau revolutionized Pouilly-Fumé with his 'Silex' cuvée, and Joly pioneered biodynamics at Savennières. Think of them as the Loire's four pillars of excellence.",
+    "sources": "The Oxford Companion to Wine; The Wine Bible",
+    "confidence": "established",
+    "tags": [
+      "loire_valley",
+      "terroir_specialists",
+      "signature_styles",
+      "appellation_masters"
+    ]
+  },
+  {
+    "id": "PK-031",
+    "domain": "producer_knowledge",
+    "difficulty": 180,
+    "level": 1,
+    "format": "multiple_choice",
+    "question": "Which Champagne house is famous for aging their wines in individual bottles for decades and never releasing a non-vintage cuvée?",
+    "options": [
+      "Krug",
+      "Salon",
+      "Bollinger",
+      "Dom Pérignon"
+    ],
+    "correct": 1,
+    "explanation": "Salon is the ultimate purist's Champagne house — they make only vintage Champagne from 100% Chardonnay, and only in years they deem exceptional. Think of them as the opposite of a commercial house: they'd rather make nothing than compromise their standards.",
+    "sources": "The Oxford Companion to Wine; Wine Atlas of the World",
+    "confidence": "established",
+    "tags": [
+      "champagne",
+      "salon",
+      "vintage_only",
+      "luxury_producers"
+    ]
+  },
+  {
+    "id": "PK-032",
+    "domain": "producer_knowledge",
+    "difficulty": 320,
+    "level": 2,
+    "format": "odd_one_out",
+    "question": "Which of these Italian producers does NOT belong with the others in terms of their primary wine region?",
+    "options": [
+      "Biondi-Santi",
+      "Giacomo Conterno",
+      "Antinori",
+      "Tenuta San Guido"
+    ],
+    "correct": 1,
+    "explanation": "Giacomo Conterno is the odd one out as a Piedmont Barolo producer, while the other three are all Tuscan powerhouses. Remember Conterno by their legendary 'Monfortino' — a Barolo so traditional and age-worthy it's like liquid history in a bottle.",
+    "sources": "The Oxford Companion to Wine; Wine Grapes",
+    "confidence": "established",
+    "tags": [
+      "italy",
+      "piedmont",
+      "tuscany",
+      "regional_classification"
+    ]
+  },
+  {
+    "id": "PK-033",
+    "domain": "producer_knowledge",
+    "difficulty": 450,
+    "level": 3,
+    "format": "multiple_choice",
+    "question": "Which Bordeaux château is known for producing the most expensive wine among the Pomerol estates?",
+    "options": [
+      "Château Pétrus",
+      "Château Le Pin",
+      "Château Lafleur",
+      "Château Trotanoy"
+    ],
+    "correct": 0,
+    "explanation": "Pétrus consistently commands the highest prices in Pomerol, often exceeding even First Growth Bordeaux. Think of it as Pomerol's crown jewel — this tiny 11.4-hectare estate produces wine so coveted that it's become the ultimate symbol of luxury Merlot.",
+    "sources": "The Oxford Companion to Wine; The World Atlas of Wine",
+    "confidence": "established",
+    "tags": [
+      "bordeaux",
+      "pomerol",
+      "luxury_wines"
+    ]
+  },
+  {
+    "id": "PK-034",
+    "domain": "producer_knowledge",
+    "difficulty": 520,
+    "level": 3,
+    "format": "odd_one_out",
+    "question": "Which of these producers does NOT belong with the others as a traditional Champagne house?",
+    "options": [
+      "Krug",
+      "Bollinger",
+      "Jacques Selosse",
+      "Pol Roger"
+    ],
+    "correct": 2,
+    "explanation": "Jacques Selosse is a grower-producer (récoltant-manipulant) focused on terroir expression and minimal intervention, while the others are traditional grandes marques houses. Selosse revolutionized Champagne by treating it like Burgundy — emphasizing vineyard sites over house style.",
+    "sources": "The Oxford Companion to Wine; WSET Level 3 Study Materials",
+    "confidence": "established",
+    "tags": [
+      "champagne",
+      "house_styles",
+      "grower_champagne"
+    ]
+  },
+  {
+    "id": "PK-035",
+    "domain": "producer_knowledge",
+    "difficulty": 480,
+    "level": 3,
+    "format": "multiple_choice",
+    "question": "Antinori, one of Italy's most historic wine families, has been making wine for approximately how many generations?",
+    "options": [
+      "15 generations",
+      "26 generations",
+      "8 generations",
+      "35 generations"
+    ],
+    "correct": 1,
+    "explanation": "The Antinori family has been producing wine for 26 generations, dating back to 1385 in Florence. Picture this: they were already making wine when the Renaissance was just beginning — that's the kind of deep-rooted tradition that defines Italian wine nobility.",
+    "sources": "The Oxford Companion to Wine; Wine Grapes",
+    "confidence": "established",
+    "tags": [
+      "italy",
+      "tuscany",
+      "wine_families"
+    ]
+  },
+  {
+    "id": "PK-036",
+    "domain": "producer_knowledge",
+    "difficulty": 460,
+    "level": 3,
+    "format": "scenario",
+    "question": "A customer asks for a wine from 'the producer that makes Screaming Eagle' but wants something more affordable from the same winemaker. What should you recommend?",
+    "options": [
+      "Harlan Estate",
+      "The Hilt wines",
+      "Dalla Valle",
+      "Colgin Cellars"
+    ],
+    "correct": 1,
+    "explanation": "Heidi Peterson Barrett, Screaming Eagle's longtime winemaker, also produces The Hilt wines from Santa Barbara County at much more accessible prices. Think of it as getting Barrett's magic touch without the cult wine premium — same winemaker, different vineyard sources.",
+    "sources": "GuildSomm; Wine Spectator Archives",
+    "confidence": "established",
+    "tags": [
+      "california",
+      "napa",
+      "winemakers"
+    ]
+  },
+  {
+    "id": "PK-037",
+    "domain": "producer_knowledge",
+    "difficulty": 500,
+    "level": 3,
+    "format": "match_pairs",
+    "question": "Match each German producer to their most famous vineyard site:",
+    "pairs": {
+      "left": [
+        "Egon Müller",
+        "J.J. Prüm",
+        "Dr. Loosen",
+        "Dönnhoff"
+      ],
+      "right": [
+        "Himmelreich",
+        "Scharzhofberger",
+        "Wehlener Sonnenuhr",
+        "Hermannshöhle"
+      ]
+    },
+    "options": [],
+    "correct": [
+      1,
+      2,
+      0,
+      3
+    ],
+    "explanation": "These producer-vineyard pairings represent the pinnacle of German Riesling. Egon Müller's Scharzhofberger is like Germany's Romanée-Conti — a legendary site that produces some of the world's most expensive white wines.",
+    "sources": "The Oxford Companion to Wine; WSET Level 3 Study Materials",
+    "confidence": "established",
+    "tags": [
+      "germany",
+      "riesling",
+      "vineyard_sites"
+    ]
+  },
+  {
+    "id": "PK-038",
+    "domain": "producer_knowledge",
+    "difficulty": 440,
+    "level": 3,
+    "format": "multiple_choice",
+    "question": "Catena Zapata is most famous for pioneering high-altitude viticulture in which country?",
+    "options": [
+      "Chile",
+      "Argentina",
+      "Uruguay",
+      "Bolivia"
+    ],
+    "correct": 1,
+    "explanation": "Nicolás Catena revolutionized Argentine wine by planting vineyards at extreme altitudes in Mendoza, proving that elevation could create world-class wines. Think of him as Argentina's altitude pioneer — he literally took wine to new heights in the Andes foothills.",
+    "sources": "The Oxford Companion to Wine; The World Atlas of Wine",
+    "confidence": "established",
+    "tags": [
+      "argentina",
+      "high_altitude",
+      "mendoza"
+    ]
+  },
+  {
+    "id": "PK-039",
+    "domain": "producer_knowledge",
+    "difficulty": 540,
+    "level": 4,
+    "format": "multiple_choice",
+    "question": "Bruno Giacosa was known for which distinctive labeling practice on his greatest Barolo and Barbaresco wines?",
+    "options": [
+      "Gold capsules for exceptional vintages",
+      "Red labels for estate fruit, white labels for purchased grapes",
+      "Roman numerals for vineyard blocks",
+      "Hand-written vintage dates"
+    ],
+    "correct": 1,
+    "explanation": "Giacosa used red labels (etichetta rossa) for wines from his own vineyards and white labels for wines from purchased grapes, with red labels commanding higher prices and prestige. It's like his personal quality code — red meant 'this is from my best dirt.'",
+    "sources": "The Oxford Companion to Wine; GuildSomm",
+    "confidence": "established",
+    "tags": [
+      "piedmont",
+      "barolo",
+      "labeling_systems"
+    ]
+  },
+  {
+    "id": "PK-040",
+    "domain": "producer_knowledge",
+    "difficulty": 580,
+    "level": 4,
+    "format": "odd_one_out",
+    "question": "Which of these producers does NOT belong with the others as a cult Napa Valley Cabernet Sauvignon producer?",
+    "options": [
+      "Harlan Estate",
+      "Screaming Eagle",
+      "Williams Selyem",
+      "Colgin Cellars"
+    ],
+    "correct": 2,
+    "explanation": "Williams Selyem is a Sonoma Coast producer famous for Pinot Noir, not Napa Cabernet Sauvignon. While the others command cult status for their powerful Napa reds, Williams Selyem built their reputation on elegant, Burgundian-style Pinots from cool coastal sites.",
+    "sources": "GuildSomm; Wine Spectator",
+    "confidence": "established",
+    "tags": [
+      "california",
+      "napa",
+      "cult_wines",
+      "pinot_noir"
+    ]
+  },
+  {
+    "id": "PK-041",
+    "domain": "producer_knowledge",
+    "difficulty": 620,
+    "level": 4,
+    "format": "scenario",
+    "question": "A collector mentions Henri Jayer's influence and asks for a current producer who worked directly with the Burgundy legend. Which domaine should you recommend?",
+    "options": [
+      "Domaine Emmanuel Rouget",
+      "Domaine Méo-Camuzet",
+      "Domaine Anne Gros",
+      "Domaine Georges Roumier"
+    ],
+    "correct": 0,
+    "explanation": "Emmanuel Rouget is Henri Jayer's nephew and direct protégé, inheriting both vineyards and winemaking philosophy from the master. Think of Rouget as Jayer's chosen successor — he learned at the feet of Burgundy's most influential modern winemaker.",
+    "sources": "The Oxford Companion to Wine; GuildSomm",
+    "confidence": "established",
+    "tags": [
+      "burgundy",
+      "winemaker_influence",
+      "henri_jayer"
+    ]
+  },
+  {
+    "id": "PK-042",
+    "domain": "producer_knowledge",
+    "difficulty": 560,
+    "level": 4,
+    "format": "multiple_choice",
+    "question": "Quilceda Creek, one of Washington State's most prestigious producers, is most famous for which grape variety?",
+    "options": [
+      "Syrah",
+      "Cabernet Sauvignon",
+      "Merlot",
+      "Riesling"
+    ],
+    "correct": 1,
+    "explanation": "Quilceda Creek established Washington's reputation for world-class Cabernet Sauvignon, consistently earning perfect scores from critics. Alex Golitzin proved that Washington could rival Napa — his Cabernets put the Columbia Valley on the fine wine map.",
+    "sources": "The Oxford Companion to Wine; WSET Level 3 Study Materials",
+    "confidence": "established",
+    "tags": [
+      "washington_state",
+      "cabernet_sauvignon",
+      "columbia_valley"
+    ]
+  },
+  {
+    "id": "PK-043",
+    "domain": "producer_knowledge",
+    "difficulty": 480,
+    "level": 3,
+    "format": "multiple_choice",
+    "question": "Kanonkop Estate in South Africa is most famous for producing exceptional wines from which grape variety?",
+    "options": [
+      "Chenin Blanc",
+      "Pinotage",
+      "Cabernet Sauvignon",
+      "Chardonnay"
+    ],
+    "correct": 1,
+    "explanation": "Kanonkop is South Africa's Pinotage specialist, elevating this uniquely South African variety to international acclaim. They've turned what many considered a rustic grape into liquid poetry — proving Pinotage could be both distinctive and world-class.",
+    "sources": "The Oxford Companion to Wine; The World Atlas of Wine",
+    "confidence": "established",
+    "tags": [
+      "south_africa",
+      "pinotage",
+      "stellenbosch"
+    ]
+  },
+  {
+    "id": "PK-044",
+    "domain": "producer_knowledge",
+    "difficulty": 650,
+    "level": 4,
+    "format": "match_pairs",
+    "question": "Match each Super Tuscan pioneer to their breakthrough wine:",
+    "pairs": {
+      "left": [
+        "Tenuta San Guido",
+        "Ornellaia",
+        "Antinori",
+        "Felsina"
+      ],
+      "right": [
+        "Tignanello",
+        "Sassicaia",
+        "Ornellaia",
+        "Fontalloro"
+      ]
+    },
+    "options": [],
+    "correct": [
+      1,
+      2,
+      0,
+      3
+    ],
+    "explanation": "These producer-wine pairings launched the Super Tuscan revolution in the 1970s and 80s. Sassicaia was the original rebel — Mario Incisa della Rocchetta's Bordeaux-style blend that proved Tuscany could transcend Chianti's traditional boundaries.",
+    "sources": "The Oxford Companion to Wine; Wine Grapes",
+    "confidence": "established",
+    "tags": [
+      "italy",
+      "super_tuscans",
+      "wine_history"
+    ]
+  },
+  {
+    "id": "PK-045",
+    "domain": "producer_knowledge",
+    "difficulty": 590,
+    "level": 4,
+    "format": "scenario",
+    "question": "A customer wants to experience the most traditional style of Rioja and asks for a producer that still uses old-school methods with extended aging. Which producer should you recommend?",
+    "options": [
+      "Marqués de Riscal",
+      "López de Heredia",
+      "CVNE",
+      "La Rioja Alta"
+    ],
+    "correct": 1,
+    "explanation": "López de Heredia remains the most traditional Rioja producer, using century-old methods including extended barrel aging and manual riddling for their sparkling wines. They're like a time capsule — visiting their bodega is stepping into Rioja's 19th-century past.",
+    "sources": "The Oxford Companion to Wine; WSET Level 3 Study Materials",
+    "confidence": "established",
+    "tags": [
+      "spain",
+      "rioja",
+      "traditional_methods"
+    ]
+  },
+  {
+    "id": "PK-046",
+    "domain": "producer_knowledge",
+    "difficulty": 520,
+    "level": 3,
+    "format": "multiple_choice",
+    "question": "Domaine Huet in the Loire Valley is most famous for producing exceptional wines from which grape variety?",
+    "options": [
+      "Sauvignon Blanc",
+      "Chenin Blanc",
+      "Muscadet",
+      "Cabernet Franc"
+    ],
+    "correct": 1,
+    "explanation": "Domaine Huet is Vouvray's most prestigious producer, crafting legendary Chenin Blanc wines that can age for decades. They've mastered Chenin's chameleon-like nature — creating everything from bone-dry to lusciously sweet wines that capture the Loire's essence.",
+    "sources": "The Oxford Companion to Wine; WSET Level 3 Study Materials",
+    "confidence": "established",
+    "tags": [
+      "loire_valley",
+      "chenin_blanc",
+      "vouvray"
+    ]
+  },
+  {
+    "id": "PK-047",
+    "domain": "producer_knowledge",
+    "difficulty": 670,
+    "level": 4,
+    "format": "odd_one_out",
+    "question": "Which of these producers does NOT belong with the others in terms of their approach to Amarone production?",
+    "options": [
+      "Giuseppe Quintarelli",
+      "Dal Forno Romano",
+      "Allegrini",
+      "Tommasi"
+    ],
+    "correct": 2,
+    "explanation": "Allegrini represents modern, internationally-styled Amarone production, while the others maintain more traditional approaches with longer aging and less intervention. Allegrini embraced modernity while Quintarelli and Dal Forno remained guardians of old-school Amarone tradition.",
+    "sources": "The Oxford Companion to Wine; GuildSomm",
+    "confidence": "established",
+    "tags": [
+      "italy",
+      "veneto",
+      "amarone",
+      "winemaking_philosophy"
+    ]
+  },
+  {
+    "id": "PK-048",
+    "domain": "producer_knowledge",
+    "difficulty": 480,
+    "level": 3,
+    "format": "multiple_choice",
+    "question": "Which Bordeaux château produces Pétrus, one of the world's most expensive wines?",
+    "options": [
+      "Château Pétrus",
+      "Château Le Pin",
+      "Château Lafleur",
+      "Château Trotanoy"
+    ],
+    "correct": 0,
+    "explanation": "Pétrus is both the château name and wine name - this Pomerol estate produces one of Bordeaux's most coveted and expensive wines from nearly 100% Merlot. Think of it as the 'unicorn' of Bordeaux: tiny production, no château building, just legendary wine.",
+    "sources": "The Oxford Companion to Wine; The World Atlas of Wine",
+    "confidence": "established",
+    "tags": [
+      "bordeaux",
+      "pomerol",
+      "luxury_wines"
+    ]
+  },
+  {
+    "id": "PK-049",
+    "domain": "producer_knowledge",
+    "difficulty": 520,
+    "level": 3,
+    "format": "odd_one_out",
+    "question": "Which of these producers does NOT belong with the others as a Burgundy Grand Cru specialist?",
+    "options": [
+      "Domaine de la Romanée-Conti",
+      "Domaine Leroy",
+      "Domaine Leflaive",
+      "Domaine Huet"
+    ],
+    "correct": 3,
+    "explanation": "Domaine Huet is a Loire Valley producer famous for Vouvray Chenin Blanc, while the others are legendary Burgundy estates. Huet's sweet wines age like Burgundy's greatest, but they're made from completely different grapes in a different region entirely.",
+    "sources": "The Oxford Companion to Wine; WSET Study Materials",
+    "confidence": "established",
+    "tags": [
+      "burgundy",
+      "loire_valley",
+      "regional_specialists"
+    ]
+  },
+  {
+    "id": "PK-050",
+    "domain": "producer_knowledge",
+    "difficulty": 450,
+    "level": 3,
+    "format": "multiple_choice",
+    "question": "Krug Champagne is most famous for which distinctive production method?",
+    "options": [
+      "Using only estate-grown grapes",
+      "Fermenting all wines in small oak barrels",
+      "Producing only rosé Champagne",
+      "Never using malolactic fermentation"
+    ],
+    "correct": 1,
+    "explanation": "Krug ferments every wine in small oak barrels, creating their signature rich, complex style that's instantly recognizable. While most Champagne houses use stainless steel, Krug treats each parcel like a fine Burgundy - it's winemaking as haute couture.",
+    "sources": "The Oxford Companion to Wine; The Wine Bible",
+    "confidence": "established",
+    "tags": [
+      "champagne",
+      "production_methods",
+      "luxury_producers"
+    ]
+  },
+  {
+    "id": "PK-051",
+    "domain": "producer_knowledge",
+    "difficulty": 500,
+    "level": 3,
+    "format": "match_pairs",
+    "question": "Match each iconic producer to their signature wine:",
+    "pairs": {
+      "left": [
+        "Tenuta San Guido",
+        "Ornellaia",
+        "Biondi-Santi",
+        "Antinori"
+      ],
+      "right": [
+        "Tignanello",
+        "Sassicaia",
+        "Ornellaia",
+        "Brunello di Montalcino Riserva"
+      ]
+    },
+    "options": [],
+    "correct": [
+      1,
+      2,
+      3,
+      0
+    ],
+    "explanation": "These pairings represent Tuscany's greatest hits: Sassicaia launched the Super Tuscan movement, Ornellaia perfected Bordeaux blends in Italy, Biondi-Santi created modern Brunello, and Tignanello revolutionized Chianti. Each wine changed Italian winemaking forever.",
+    "sources": "The Oxford Companion to Wine; The World Atlas of Wine",
+    "confidence": "established",
+    "tags": [
+      "tuscany",
+      "super_tuscans",
+      "italian_icons"
+    ]
+  },
+  {
+    "id": "PK-052",
+    "domain": "producer_knowledge",
+    "difficulty": 470,
+    "level": 3,
+    "format": "multiple_choice",
+    "question": "Ridge Vineyards in California is most famous for which wine that has been made since 1962?",
+    "options": [
+      "Opus One",
+      "Monte Bello",
+      "Screaming Eagle",
+      "Harlan Estate"
+    ],
+    "correct": 1,
+    "explanation": "Ridge Monte Bello is California's longest-running cult Cabernet, made from the same Santa Cruz Mountains vineyard since 1962. Think of it as Napa's wise elder - it was winning international acclaim when most cult wines were just a twinkle in their founders' eyes.",
+    "sources": "The Wine Bible; The World Atlas of Wine",
+    "confidence": "established",
+    "tags": [
+      "california",
+      "santa_cruz_mountains",
+      "historic_producers"
+    ]
+  },
+  {
+    "id": "PK-053",
+    "domain": "producer_knowledge",
+    "difficulty": 530,
+    "level": 3,
+    "format": "scenario",
+    "question": "A customer wants to try a wine from 'the German producer that makes the world's most expensive Riesling.' Which estate should you recommend?",
+    "options": [
+      "Dr. Loosen",
+      "J.J. Prüm",
+      "Egon Müller",
+      "Dönnhoff"
+    ],
+    "correct": 2,
+    "explanation": "Egon Müller's Scharzhofberger Riesling Trockenbeerenauslese regularly sells for thousands of dollars per bottle, making it the world's most expensive Riesling. The Saar Valley's unique microclimate and Müller's perfectionist approach create liquid gold that collectors fight over.",
+    "sources": "The Oxford Companion to Wine; Wine Grapes",
+    "confidence": "established",
+    "tags": [
+      "germany",
+      "riesling",
+      "luxury_wines"
+    ]
+  },
+  {
+    "id": "PK-054",
+    "domain": "producer_knowledge",
+    "difficulty": 490,
+    "level": 3,
+    "format": "multiple_choice",
+    "question": "Vega Sicilia, Spain's most prestigious producer, is located in which region?",
+    "options": [
+      "Rioja",
+      "Ribera del Duero",
+      "Priorat",
+      "Rias Baixas"
+    ],
+    "correct": 1,
+    "explanation": "Vega Sicilia sits in Ribera del Duero and has been Spain's most expensive wine since the 19th century. Their 'Único' spends decades aging before release - imagine a Spanish Bordeaux with the patience of a Buddhist monk.",
+    "sources": "The Oxford Companion to Wine; The World Atlas of Wine",
+    "confidence": "established",
+    "tags": [
+      "spain",
+      "ribera_del_duero",
+      "tempranillo"
+    ]
+  },
+  {
+    "id": "PK-055",
+    "domain": "producer_knowledge",
+    "difficulty": 510,
+    "level": 3,
+    "format": "odd_one_out",
+    "question": "Which of these producers does NOT belong with the others as a Napa Valley cult Cabernet specialist?",
+    "options": [
+      "Screaming Eagle",
+      "Harlan Estate",
+      "Williams Selyem",
+      "Stag's Leap Wine Cellars"
+    ],
+    "correct": 2,
+    "explanation": "Williams Selyem is a Sonoma Pinot Noir specialist, while the others are Napa Cabernet legends. Williams Selyem pioneered Burgundian-style Pinot in California - think delicate Russian River fog versus Napa Valley sunshine and power.",
+    "sources": "The Wine Bible; WSET Study Materials",
+    "confidence": "established",
+    "tags": [
+      "napa_valley",
+      "sonoma",
+      "cult_wines"
+    ]
+  },
+  {
+    "id": "PK-056",
+    "domain": "producer_knowledge",
+    "difficulty": 460,
+    "level": 3,
+    "format": "multiple_choice",
+    "question": "Henschke's 'Hill of Grace' vineyard in Australia is planted with which grape variety from vines over 150 years old?",
+    "options": [
+      "Cabernet Sauvignon",
+      "Shiraz",
+      "Pinot Noir",
+      "Chardonnay"
+    ],
+    "correct": 1,
+    "explanation": "Henschke's Hill of Grace Shiraz comes from vines planted in the 1860s, making them among the world's oldest producing vines. These ancient Shiraz vines survived phylloxera and produce wine with a depth that only comes from roots deeper than most buildings are tall.",
+    "sources": "The Oxford Companion to Wine; The World Atlas of Wine",
+    "confidence": "established",
+    "tags": [
+      "australia",
+      "shiraz",
+      "old_vines"
+    ]
+  },
+  {
+    "id": "PK-057",
+    "domain": "producer_knowledge",
+    "difficulty": 540,
+    "level": 3,
+    "format": "multiple_choice",
+    "question": "Jacques Selosse is considered revolutionary in Champagne for which winemaking approach?",
+    "options": [
+      "Using only Pinot Noir",
+      "Biodynamic viticulture and solera-style blending",
+      "Producing only non-vintage Champagne",
+      "Using the traditional méthode champenoise"
+    ],
+    "correct": 1,
+    "explanation": "Selosse combines biodynamic farming with solera-style perpetual blending, creating Champagnes that taste more like aged Burgundy than traditional bubbly. He's the 'mad scientist' of Champagne - his wines taste like no one else's because his methods are like no one else's.",
+    "sources": "The Oxford Companion to Wine; GuildSomm",
+    "confidence": "established",
+    "tags": [
+      "champagne",
+      "biodynamic",
+      "innovative_producers"
+    ]
+  },
+  {
+    "id": "PK-058",
+    "domain": "producer_knowledge",
+    "difficulty": 525,
+    "level": 3,
+    "format": "match_pairs",
+    "question": "Match each Rhône Valley producer to their most famous wine:",
+    "pairs": {
+      "left": [
+        "E. Guigal",
+        "Paul Jaboulet Aîné",
+        "M. Chapoutier",
+        "Domaine Jean-Louis Chave"
+      ],
+      "right": [
+        "Hermitage 'La Chapelle'",
+        "Côte-Rôtie 'La Mouline'",
+        "Hermitage 'Le Pavillon'",
+        "Hermitage"
+      ]
+    },
+    "options": [],
+    "correct": [
+      1,
+      0,
+      2,
+      3
+    ],
+    "explanation": "These are the Northern Rhône's 'big four' - Guigal's La Mouline revolutionized Côte-Rôtie, Jaboulet's La Chapelle was the reference Hermitage for decades, Chapoutier's Le Pavillon showcases biodynamic Hermitage, and Chave represents pure Hermitage tradition. Each defined their appellation's modern reputation.",
+    "sources": "The Oxford Companion to Wine; The World Atlas of Wine",
+    "confidence": "established",
+    "tags": [
+      "rhone_valley",
+      "syrah",
+      "northern_rhone"
+    ]
+  },
+  {
+    "id": "PK-059",
+    "domain": "producer_knowledge",
+    "difficulty": 485,
+    "level": 3,
+    "format": "scenario",
+    "question": "A customer asks for 'the New Zealand producer that put Marlborough Sauvignon Blanc on the world map.' Which winery should you recommend?",
+    "options": [
+      "Oyster Bay",
+      "Villa Maria",
+      "Cloudy Bay",
+      "Whitehaven"
+    ],
+    "correct": 2,
+    "explanation": "Cloudy Bay's 1985 vintage was the first Marlborough Sauvignon Blanc to gain international acclaim, essentially creating the category of 'New Zealand Sauvignon Blanc.' Think of them as the pioneer who showed the world that New Zealand could make wine worth talking about.",
+    "sources": "The Oxford Companion to Wine; The World Atlas of Wine",
+    "confidence": "established",
+    "tags": [
+      "new_zealand",
+      "sauvignon_blanc",
+      "marlborough"
+    ]
+  },
+  {
+    "id": "PK-060",
+    "domain": "producer_knowledge",
+    "difficulty": 515,
+    "level": 3,
+    "format": "multiple_choice",
+    "question": "Domaine Roulot in Burgundy is most famous for producing exceptional wines from which grape variety?",
+    "options": [
+      "Pinot Noir",
+      "Chardonnay",
+      "Aligoté",
+      "Gamay"
+    ],
+    "correct": 1,
+    "explanation": "Jean-Marc Roulot makes Meursault's most sought-after white Burgundies, proving that great Chardonnay is about precision, not power. His wines have a mineral purity that makes other white Burgundies seem heavy-handed - like comparing a perfectly cut diamond to costume jewelry.",
+    "sources": "The Oxford Companion to Wine; WSET Study Materials",
+    "confidence": "established",
+    "tags": [
+      "burgundy",
+      "chardonnay",
+      "meursault"
+    ]
+  },
+  {
+    "id": "PK-061",
+    "domain": "producer_knowledge",
+    "difficulty": 455,
+    "level": 3,
+    "format": "multiple_choice",
+    "question": "Bollinger Champagne is distinctive for which traditional production method?",
+    "options": [
+      "Using only estate-grown grapes",
+      "Fermenting in oak barrels and riddling by hand",
+      "Producing only vintage Champagne",
+      "Using only Chardonnay grapes"
+    ],
+    "correct": 1,
+    "explanation": "Bollinger still ferments in old oak barrels and riddles by hand on wooden pupitres, maintaining 19th-century methods that most houses abandoned decades ago. They're Champagne's traditionalists - like finding a craftsman still making watches with hand tools in the age of mass production.",
+    "sources": "The Oxford Companion to Wine; The Wine Bible",
+    "confidence": "established",
+    "tags": [
+      "champagne",
+      "traditional_methods",
+      "oak_fermentation"
+    ]
+  },
+  {
+    "id": "PK-062",
+    "domain": "producer_knowledge",
+    "difficulty": 505,
+    "level": 3,
+    "format": "odd_one_out",
+    "question": "Which of these producers does NOT belong with the others as a Piedmont Nebbiolo specialist?",
+    "options": [
+      "Giacomo Conterno",
+      "Bruno Giacosa",
+      "Gaja",
+      "Quintarelli"
+    ],
+    "correct": 3,
+    "explanation": "Quintarelli is the legendary Amarone producer from Veneto, while the others are Piedmont's Barolo and Barbaresco masters. Quintarelli's dried-grape Amarone is as far from Nebbiolo as you can get while still making world-class Italian red wine.",
+    "sources": "The Oxford Companion to Wine; Wine Grapes",
+    "confidence": "established",
+    "tags": [
+      "piedmont",
+      "veneto",
+      "nebbiolo",
+      "amarone"
+    ]
+  },
+  {
+    "id": "PK-063",
+    "domain": "producer_knowledge",
+    "difficulty": 480,
+    "level": 3,
+    "format": "multiple_choice",
+    "question": "Which Bordeaux château is famous for being the only First Growth estate located on the Left Bank that produces a white wine?",
+    "options": [
+      "Château Haut-Brion",
+      "Château Lafite Rothschild",
+      "Château Latour",
+      "Château Margaux"
+    ],
+    "correct": 0,
+    "explanation": "Haut-Brion stands apart from its First Growth peers by producing Haut-Brion Blanc, a prestigious white wine from Sauvignon Blanc and Sémillon. Think of it as the rebel First Growth - while the others focus solely on red wine, Haut-Brion shows its versatility with both colors.",
+    "sources": "The Oxford Companion to Wine; The World Atlas of Wine",
+    "confidence": "established",
+    "tags": [
+      "bordeaux",
+      "first_growth",
+      "white_wine",
+      "haut_brion"
+    ]
+  },
+  {
+    "id": "PK-064",
+    "domain": "producer_knowledge",
+    "difficulty": 520,
+    "level": 3,
+    "format": "odd_one_out",
+    "question": "Which of these producers does NOT belong with the others in terms of their primary wine style?",
+    "options": [
+      "Domaine de la Côte",
+      "Kistler",
+      "Williams Selyem",
+      "Littorai"
+    ],
+    "correct": 1,
+    "explanation": "Kistler is renowned for powerful, oak-influenced Chardonnay, while the others are celebrated Pinot Noir specialists from California's cool coastal regions. Remember Kistler as the 'Chardonnay king' among these Pinot Noir royalty.",
+    "sources": "Wine Grapes; GuildSomm",
+    "confidence": "established",
+    "tags": [
+      "california",
+      "pinot_noir",
+      "chardonnay",
+      "sonoma"
+    ]
+  },
+  {
+    "id": "PK-065",
+    "domain": "producer_knowledge",
+    "difficulty": 460,
+    "level": 3,
+    "format": "match_pairs",
+    "question": "Match each iconic Champagne house to their distinctive characteristic:",
+    "pairs": {
+      "left": [
+        "Dom Pérignon",
+        "Cristal",
+        "Pol Roger",
+        "Veuve Clicquot"
+      ],
+      "right": [
+        "Clear bottle to show purity",
+        "Winston Churchill's favorite",
+        "Widow who revolutionized riddling",
+        "Vintage-only prestige cuvée"
+      ]
+    },
+    "options": [],
+    "correct": [
+      3,
+      0,
+      1,
+      2
+    ],
+    "explanation": "Each house has a signature story: Dom Pérignon only makes vintage, Cristal uses clear bottles to showcase wine purity, Pol Roger was Churchill's beloved Champagne, and Veuve Clicquot's widow invented the riddling table. These details make great conversation starters at tastings.",
+    "sources": "The Oxford Companion to Wine; The Wine Bible",
+    "confidence": "established",
+    "tags": [
+      "champagne",
+      "prestige_cuvee",
+      "history",
+      "production_methods"
+    ]
+  },
+  {
+    "id": "PK-066",
+    "domain": "producer_knowledge",
+    "difficulty": 500,
+    "level": 3,
+    "format": "scenario",
+    "question": "A customer wants to experience 'the most traditional Barolo possible' and asks for a producer who refuses to use new oak or modern techniques. Which producer should you recommend?",
+    "options": [
+      "Gaja",
+      "Bartolo Mascarello",
+      "Angelo Gaja",
+      "Ceretto"
+    ],
+    "correct": 1,
+    "explanation": "Bartolo Mascarello was the ultimate traditionalist, famously refusing to separate his vineyard sites and aging in large old casks only. He's the poster child for 'old school' Barolo - think of him as the guardian of ancient traditions in a modernizing world.",
+    "sources": "The Oxford Companion to Wine; Wine Grapes",
+    "confidence": "established",
+    "tags": [
+      "barolo",
+      "traditional_winemaking",
+      "piedmont",
+      "mascarello"
+    ]
+  },
+  {
+    "id": "PK-067",
+    "domain": "producer_knowledge",
+    "difficulty": 850,
+    "level": 5,
+    "format": "multiple_choice",
+    "question": "Which Burgundy domaine is famous for their Montrachet and is considered one of the greatest white wine producers in the world?",
+    "options": [
+      "Domaine Leflaive",
+      "Domaine de la Romanée-Conti",
+      "Domaine Leroy",
+      "Domaine Armand Rousseau"
+    ],
+    "correct": 0,
+    "explanation": "Domaine Leflaive has been the benchmark for white Burgundy since the 1980s, with their Montrachet considered liquid gold. Think of them as the Chardonnay whisperers of Puligny-Montrachet.",
+    "sources": "The Oxford Companion to Wine; WSET Level 3 Study Materials",
+    "confidence": "established",
+    "tags": [
+      "burgundy",
+      "white_wine",
+      "grand_cru"
+    ]
+  },
+  {
+    "id": "PK-068",
+    "domain": "producer_knowledge",
+    "difficulty": 750,
+    "level": 5,
+    "format": "multiple_choice",
+    "question": "Château Margaux, one of Bordeaux's First Growths, is located in which commune?",
+    "options": [
+      "Margaux",
+      "Pauillac",
+      "Saint-Julien",
+      "Saint-Estèphe"
+    ],
+    "correct": 0,
+    "explanation": "Château Margaux gives its name to the entire Margaux commune, making it the only First Growth to do so. It's like being so famous that the whole neighborhood takes your name.",
+    "sources": "The World Atlas of Wine; The Oxford Companion to Wine",
+    "confidence": "established",
+    "tags": [
+      "bordeaux",
+      "first_growth",
+      "left_bank"
+    ]
+  },
+  {
+    "id": "PK-069",
+    "domain": "producer_knowledge",
+    "difficulty": 800,
+    "level": 5,
+    "format": "odd_one_out",
+    "question": "Which of these producers does NOT belong with the others as a Napa Valley icon?",
+    "options": [
+      "Harlan Estate",
+      "Screaming Eagle",
+      "Williams Selyem",
+      "Opus One"
+    ],
+    "correct": 2,
+    "explanation": "Williams Selyem is a Sonoma County Pinot Noir specialist, while the others are Napa Valley Cabernet legends. It's like finding a ballet dancer in a football huddle - both are elite, but different games entirely.",
+    "sources": "The Wine Bible; WSET Level 3 Study Materials",
+    "confidence": "established",
+    "tags": [
+      "california",
+      "napa_valley",
+      "sonoma"
+    ]
+  },
+  {
+    "id": "PK-070",
+    "domain": "producer_knowledge",
+    "difficulty": 900,
+    "level": 6,
+    "format": "multiple_choice",
+    "question": "Angelo Gaja revolutionized Piedmont winemaking by being the first producer to plant which international grape variety in Barbaresco?",
+    "options": [
+      "Cabernet Sauvignon",
+      "Chardonnay",
+      "Merlot",
+      "Sauvignon Blanc"
+    ],
+    "correct": 0,
+    "explanation": "Gaja shocked the traditional Piedmont world in 1982 by planting Cabernet Sauvignon in his Barbaresco vineyards, creating 'Darmagi.' Think of him as the rebel who brought French grapes to Italian soil and made it work brilliantly.",
+    "sources": "The Oxford Companion to Wine; Wine Grapes",
+    "confidence": "established",
+    "tags": [
+      "piedmont",
+      "barbaresco",
+      "international_varieties"
+    ]
+  },
+  {
+    "id": "PK-071",
+    "domain": "producer_knowledge",
+    "difficulty": 850,
+    "level": 5,
+    "format": "match_pairs",
+    "question": "Match each Champagne house to their distinctive production characteristic:",
+    "pairs": {
+      "left": [
+        "Salon",
+        "Bollinger",
+        "Krug",
+        "Dom Pérignon"
+      ],
+      "right": [
+        "Uses only Chardonnay from Le Mesnil-sur-Oger",
+        "Ferments in oak barrels",
+        "Ages on cork instead of crown caps",
+        "Only produces vintage Champagne"
+      ]
+    },
+    "options": [],
+    "correct": [
+      0,
+      2,
+      1,
+      3
+    ],
+    "explanation": "Each house has a signature obsession: Salon's single-vineyard Chardonnay purity, Bollinger's traditional cork aging, Krug's oak fermentation for complexity, and Dom Pérignon's vintage-only philosophy. These details separate the great from the legendary.",
+    "sources": "The Oxford Companion to Wine; GuildSomm",
+    "confidence": "established",
+    "tags": [
+      "champagne",
+      "production_methods",
+      "terroir"
+    ]
+  },
+  {
+    "id": "PK-072",
+    "domain": "producer_knowledge",
+    "difficulty": 780,
+    "level": 5,
+    "format": "multiple_choice",
+    "question": "Tenuta San Guido's Sassicaia was the first Super Tuscan and is primarily made from which grape variety?",
+    "options": [
+      "Cabernet Sauvignon",
+      "Sangiovese",
+      "Merlot",
+      "Cabernet Franc"
+    ],
+    "correct": 0,
+    "explanation": "Sassicaia broke Italian wine law in the 1960s by planting Cabernet Sauvignon instead of traditional Sangiovese, creating the Super Tuscan category. It's the wine that proved Tuscany could rival Bordeaux on its own terms.",
+    "sources": "The Wine Bible; The Oxford Companion to Wine",
+    "confidence": "established",
+    "tags": [
+      "tuscany",
+      "super_tuscan",
+      "cabernet_sauvignon"
+    ]
+  },
+  {
+    "id": "PK-073",
+    "domain": "producer_knowledge",
+    "difficulty": 950,
+    "level": 6,
+    "format": "scenario",
+    "question": "A collector asks for a wine from 'the Oregon producer founded by the Burgundian family that helped legitimize Pinot Noir in the Willamette Valley.' Which producer should you recommend?",
+    "options": [
+      "Domaine Drouhin Oregon",
+      "Eyrie Vineyards",
+      "Archery Summit",
+      "Sokol Blosser"
+    ],
+    "correct": 0,
+    "explanation": "Domaine Drouhin Oregon was established by the famous Burgundy négociant house in 1988, bringing Old World credibility to Oregon Pinot Noir. When Burgundians invest in your region, you know you've made it to the big leagues.",
+    "sources": "The Wine Bible; WSET Level 3 Study Materials",
+    "confidence": "established",
+    "tags": [
+      "oregon",
+      "pinot_noir",
+      "burgundy_connection"
+    ]
+  },
+  {
+    "id": "PK-074",
+    "domain": "producer_knowledge",
+    "difficulty": 820,
+    "level": 5,
+    "format": "multiple_choice",
+    "question": "Which Spanish producer is famous for their 'Único' wine and is considered Spain's most prestigious estate?",
+    "options": [
+      "Vega Sicilia",
+      "López de Heredia",
+      "Marqués de Riscal",
+      "CVNE"
+    ],
+    "correct": 0,
+    "explanation": "Vega Sicilia's 'Único' has been Spain's most coveted wine since 1864, spending up to 10 years aging before release. It's like the Spanish equivalent of Bordeaux's First Growths - legendary, expensive, and worth every penny.",
+    "sources": "The Oxford Companion to Wine; The Wine Bible",
+    "confidence": "established",
+    "tags": [
+      "spain",
+      "ribera_del_duero",
+      "tempranillo"
+    ]
+  },
+  {
+    "id": "PK-075",
+    "domain": "producer_knowledge",
+    "difficulty": 900,
+    "level": 6,
+    "format": "odd_one_out",
+    "question": "Which of these producers does NOT belong with the others in terms of their primary regional focus?",
+    "options": [
+      "Giuseppe Quintarelli",
+      "Dal Forno Romano",
+      "Allegrini",
+      "Giacomo Conterno"
+    ],
+    "correct": 3,
+    "explanation": "Giacomo Conterno is a Piedmont Barolo legend, while the others are Veneto Amarone masters. It's like having a Bordeaux château crash an Italian dinner party - prestigious, but from a different world entirely.",
+    "sources": "The Oxford Companion to Wine; Wine Grapes",
+    "confidence": "established",
+    "tags": [
+      "piedmont",
+      "veneto",
+      "amarone",
+      "barolo"
+    ]
+  },
+  {
+    "id": "PK-076",
+    "domain": "producer_knowledge",
+    "difficulty": 750,
+    "level": 5,
+    "format": "multiple_choice",
+    "question": "Dr. Loosen is a famous German producer most known for exceptional wines from which region?",
+    "options": [
+      "Mosel",
+      "Rheingau",
+      "Pfalz",
+      "Nahe"
+    ],
+    "correct": 0,
+    "explanation": "Dr. Loosen's steep Mosel vineyards produce some of Germany's most elegant Rieslings, with their blue slate soils creating wines of incredible finesse. Think of them as the master sculptors of German Riesling's delicate side.",
+    "sources": "The Oxford Companion to Wine; WSET Level 3 Study Materials",
+    "confidence": "established",
+    "tags": [
+      "germany",
+      "mosel",
+      "riesling"
+    ]
+  },
+  {
+    "id": "PK-077",
+    "domain": "producer_knowledge",
+    "difficulty": 880,
+    "level": 6,
+    "format": "match_pairs",
+    "question": "Match each Rhône Valley producer to their most famous single vineyard wine:",
+    "pairs": {
+      "left": [
+        "M. Chapoutier",
+        "E. Guigal",
+        "Paul Jaboulet Aîné",
+        "Jean-Louis Chave"
+      ],
+      "right": [
+        "Hermitage 'Le Pavillon'",
+        "Hermitage 'La Chapelle'",
+        "Côte-Rôtie 'La Mouline'",
+        "Hermitage (no vineyard designation)"
+      ]
+    },
+    "options": [],
+    "correct": [
+      0,
+      2,
+      1,
+      3
+    ],
+    "explanation": "Each producer has their signature Hermitage or Côte-Rôtie that defines northern Rhône greatness. These wines are like the crown jewels of Syrah - each one a masterpiece from different hands working the same noble grape.",
+    "sources": "The Oxford Companion to Wine; GuildSomm",
+    "confidence": "established",
+    "tags": [
+      "rhone_valley",
+      "syrah",
+      "hermitage"
+    ]
+  },
+  {
+    "id": "PK-078",
+    "domain": "producer_knowledge",
+    "difficulty": 820,
+    "level": 5,
+    "format": "multiple_choice",
+    "question": "Biondi-Santi is credited with creating the modern style of which famous Italian wine?",
+    "options": [
+      "Brunello di Montalcino",
+      "Chianti Classico",
+      "Barolo",
+      "Amarone"
+    ],
+    "correct": 0,
+    "explanation": "Ferruccio Biondi-Santi first bottled Brunello di Montalcino in 1888, establishing both the wine and the 100% Sangiovese requirement. He's literally the father of one of Italy's greatest wines - imagine inventing an entire wine category!",
+    "sources": "The Oxford Companion to Wine; The Wine Bible",
+    "confidence": "established",
+    "tags": [
+      "tuscany",
+      "brunello",
+      "sangiovese"
+    ]
+  },
+  {
+    "id": "PK-079",
+    "domain": "producer_knowledge",
+    "difficulty": 950,
+    "level": 6,
+    "format": "scenario",
+    "question": "A customer mentions wanting to try a wine from 'the Washington State producer that makes the most collectible Cabernet Sauvignon and was founded by a Boeing engineer.' Which winery should you recommend?",
+    "options": [
+      "Quilceda Creek",
+      "Leonetti Cellar",
+      "Woodward Canyon",
+      "Andrew Will"
+    ],
+    "correct": 0,
+    "explanation": "Quilceda Creek was founded by Alex Golitzin, a Boeing engineer whose Cabernet Sauvignon consistently scores 100 points and sells for hundreds of dollars. It's proof that rocket science skills translate beautifully to winemaking precision.",
+    "sources": "The Wine Bible; WSET Level 3 Study Materials",
+    "confidence": "established",
+    "tags": [
+      "washington_state",
+      "cabernet_sauvignon",
+      "cult_wine"
+    ]
+  },
+  {
+    "id": "PK-080",
+    "domain": "producer_knowledge",
+    "difficulty": 800,
+    "level": 5,
+    "format": "multiple_choice",
+    "question": "Didier Dagueneau revolutionized winemaking in which Loire Valley appellation before his death in 2008?",
+    "options": [
+      "Pouilly-Fumé",
+      "Sancerre",
+      "Muscadet",
+      "Chinon"
+    ],
+    "correct": 0,
+    "explanation": "Dagueneau transformed Pouilly-Fumé from simple Loire whites into world-class Sauvignon Blanc through obsessive vineyard work and precise winemaking. He was the maverick who proved Loire Valley could compete with Burgundy's best whites.",
+    "sources": "The Oxford Companion to Wine; The Wine Bible",
+    "confidence": "established",
+    "tags": [
+      "loire_valley",
+      "sauvignon_blanc",
+      "pouilly_fume"
+    ]
+  },
+  {
+    "id": "PK-081",
+    "domain": "producer_knowledge",
+    "difficulty": 750,
+    "level": 5,
+    "format": "odd_one_out",
+    "question": "Which of these producers does NOT belong with the others as a Bordeaux Left Bank estate?",
+    "options": [
+      "Château Lafite Rothschild",
+      "Château Latour",
+      "Château Haut-Brion",
+      "Château Mouton Rothschild"
+    ],
+    "correct": 2,
+    "explanation": "Château Haut-Brion is located in Pessac-Léognan (Graves) on the Left Bank, but it's geographically separate from the Médoc where the other First Growths reside. It's the outsider that earned its place at the top table through sheer quality.",
+    "sources": "The World Atlas of Wine; The Oxford Companion to Wine",
+    "confidence": "established",
+    "tags": [
+      "bordeaux",
+      "first_growth",
+      "graves"
+    ]
+  },
+  {
+    "id": "PK-082",
+    "domain": "producer_knowledge",
+    "difficulty": 800,
+    "level": 5,
+    "format": "multiple_choice",
+    "question": "Which Champagne house is famous for using only first-press juice and never producing a non-vintage cuvée?",
+    "options": [
+      "Krug",
+      "Salon",
+      "Bollinger",
+      "Dom Pérignon"
+    ],
+    "correct": 1,
+    "explanation": "Salon is unique in Champagne for producing only one wine - their vintage Blanc de Blancs from Le Mesnil-sur-Oger - and only in exceptional years. They're the ultimate perfectionist house, making wine only when conditions are ideal.",
+    "sources": "The Oxford Companion to Wine; The World Atlas of Wine",
+    "confidence": "established",
+    "tags": [
+      "champagne",
+      "salon",
+      "blanc_de_blancs"
+    ]
+  },
+  {
+    "id": "PK-083",
+    "domain": "producer_knowledge",
+    "difficulty": 750,
+    "level": 5,
+    "format": "odd_one_out",
+    "question": "Which of these producers does NOT belong with the others as a traditional Burgundy négociant house?",
+    "options": [
+      "Louis Jadot",
+      "Joseph Drouhin",
+      "Domaine de la Romanée-Conti",
+      "Bouchard Père & Fils"
+    ],
+    "correct": 2,
+    "explanation": "DRC is a domaine (estate) that owns and farms its own vineyards, while the others are négociant houses that buy grapes or wine from multiple growers. Think of DRC as the ultimate boutique estate versus the traditional merchant houses.",
+    "sources": "The Oxford Companion to Wine; WSET Level 3 Study Materials",
+    "confidence": "established",
+    "tags": [
+      "burgundy",
+      "negociant",
+      "domaine",
+      "drc"
+    ]
+  },
+  {
+    "id": "PK-084",
+    "domain": "producer_knowledge",
+    "difficulty": 850,
+    "level": 5,
+    "format": "multiple_choice",
+    "question": "Penfolds Grange, Australia's most famous wine, is primarily made from which grape variety?",
+    "options": [
+      "Cabernet Sauvignon",
+      "Shiraz",
+      "Grenache",
+      "Malbec"
+    ],
+    "correct": 1,
+    "explanation": "Grange is Australia's first icon wine, created by Max Schubert in the 1950s using predominantly Shiraz with small amounts of Cabernet Sauvignon. It proved that Australian wine could age magnificently and compete with the world's best.",
+    "sources": "The World Atlas of Wine; The Oxford Companion to Wine",
+    "confidence": "established",
+    "tags": [
+      "australia",
+      "penfolds",
+      "grange",
+      "shiraz"
+    ]
+  },
+  {
+    "id": "PK-085",
+    "domain": "producer_knowledge",
+    "difficulty": 780,
+    "level": 5,
+    "format": "scenario",
+    "question": "A customer asks for 'the Tuscan producer that created the first Super Tuscan' and wants to understand the historical significance. Which estate should you recommend?",
+    "options": [
+      "Ornellaia",
+      "Tenuta San Guido (Sassicaia)",
+      "Antinori (Tignanello)",
+      "Solaia"
+    ],
+    "correct": 1,
+    "explanation": "Tenuta San Guido's Sassicaia (first vintage 1968) is credited as the original Super Tuscan, planted with Cabernet Sauvignon outside traditional regulations. Mario Incisa della Rocchetta's vision launched an entire movement that revolutionized Italian winemaking.",
+    "sources": "The Oxford Companion to Wine; The World Atlas of Wine",
+    "confidence": "established",
+    "tags": [
+      "tuscany",
+      "super_tuscan",
+      "sassicaia",
+      "tenuta_san_guido"
+    ]
+  },
+  {
+    "id": "PK-086",
+    "domain": "producer_knowledge",
+    "difficulty": 820,
+    "level": 5,
+    "format": "match_pairs",
+    "question": "Match each Bordeaux First Growth to their commune:",
+    "pairs": {
+      "left": [
+        "Château Lafite Rothschild",
+        "Château Margaux",
+        "Château Haut-Brion",
+        "Château Latour"
+      ],
+      "right": [
+        "Margaux",
+        "Pauillac",
+        "Pessac-Léognan",
+        "Saint-Estèphe"
+      ]
+    },
+    "options": [],
+    "correct": [
+      1,
+      0,
+      2,
+      1
+    ],
+    "explanation": "The First Growths span three communes: two in Pauillac (Lafite and Latour), one in Margaux (Château Margaux), and Haut-Brion uniquely in Pessac-Léognan in Graves. Remember that Pauillac dominates with half the First Growths.",
+    "sources": "The World Atlas of Wine; The Oxford Companion to Wine",
+    "confidence": "established",
+    "tags": [
+      "bordeaux",
+      "first_growth",
+      "communes",
+      "classification"
+    ]
+  },
+  {
+    "id": "PK-087",
+    "domain": "producer_knowledge",
+    "difficulty": 900,
+    "level": 6,
+    "format": "multiple_choice",
+    "question": "Which winemaker is credited with introducing temperature-controlled fermentation to Napa Valley in the 1930s?",
+    "options": [
+      "Robert Mondavi",
+      "André Tchelistcheff",
+      "Joe Heitz",
+      "Warren Winiarski"
+    ],
+    "correct": 1,
+    "explanation": "André Tchelistcheff, the 'Dean of American Winemaking,' brought European techniques to Beaulieu Vineyard and mentored a generation of Napa winemakers. His scientific approach and temperature control revolutionized California winemaking quality.",
+    "sources": "The Wine Bible; The Oxford Companion to Wine",
+    "confidence": "established",
+    "tags": [
+      "napa_valley",
+      "tchelistcheff",
+      "winemaking_history",
+      "temperature_control"
+    ]
+  },
+  {
+    "id": "PK-088",
+    "domain": "producer_knowledge",
+    "difficulty": 1050,
+    "level": 6,
+    "format": "odd_one_out",
+    "question": "Which of these producers does NOT belong with the others as a cult Burgundy domaine known for extremely limited production?",
+    "options": [
+      "Domaine Leroy",
+      "Domaine du Comte Liger-Belair",
+      "Domaine Armand Rousseau",
+      "Louis Latour"
+    ],
+    "correct": 3,
+    "explanation": "Louis Latour is a large négociant house with substantial production, while the others are tiny domaines with cult followings and minuscule yields. Leroy, Liger-Belair, and Rousseau represent the pinnacle of artisanal Burgundy.",
+    "sources": "The Oxford Companion to Wine; GuildSomm",
+    "confidence": "established",
+    "tags": [
+      "burgundy",
+      "cult_producers",
+      "negociant",
+      "domaine"
+    ]
+  },
+  {
+    "id": "PK-089",
+    "domain": "producer_knowledge",
+    "difficulty": 950,
+    "level": 6,
+    "format": "scenario",
+    "question": "A collector mentions Henri Jayer's legendary status and asks for a current Burgundy producer who learned directly from the master and continues his low-intervention philosophy. Which domaine should you recommend?",
+    "options": [
+      "Emmanuel Rouget",
+      "Domaine de la Romanée-Conti",
+      "Domaine Dujac",
+      "Domaine Hudelot-Noëllat"
+    ],
+    "correct": 0,
+    "explanation": "Emmanuel Rouget is Henri Jayer's nephew and direct protégé, inheriting both his vineyards and winemaking philosophy of minimal intervention and natural methods. He's the closest thing to experiencing Jayer's legendary touch today.",
+    "sources": "The Oxford Companion to Wine; GuildSomm",
+    "confidence": "established",
+    "tags": [
+      "burgundy",
+      "henri_jayer",
+      "emmanuel_rouget",
+      "winemaking_philosophy"
+    ]
+  },
+  {
+    "id": "PK-090",
+    "domain": "producer_knowledge",
+    "difficulty": 980,
+    "level": 6,
+    "format": "multiple_choice",
+    "question": "Bartolo Mascarello was famous for which traditional practice that he refused to abandon despite modern trends?",
+    "options": [
+      "Using only indigenous yeasts",
+      "Aging in large Slavonian oak botti",
+      "Refusing to destem grapes",
+      "Blending multiple vineyard sites"
+    ],
+    "correct": 1,
+    "explanation": "Mascarello was the ultimate traditionalist, famously aging his Barolo in large old Slavonian oak casks (botti) while others moved to French barriques. His labels even featured anti-barrique slogans - he believed tradition made the greatest wines.",
+    "sources": "The Oxford Companion to Wine; The World Atlas of Wine",
+    "confidence": "established",
+    "tags": [
+      "barolo",
+      "mascarello",
+      "traditional_winemaking",
+      "slavonian_oak"
+    ]
+  },
+  {
+    "id": "PK-091",
+    "domain": "producer_knowledge",
+    "difficulty": 1020,
+    "level": 6,
+    "format": "match_pairs",
+    "question": "Match each Rhône Valley producer to their most celebrated single vineyard wine:",
+    "pairs": {
+      "left": [
+        "M. Chapoutier",
+        "E. Guigal",
+        "Jean-Louis Chave",
+        "Domaine de la Janasse"
+      ],
+      "right": [
+        "La Mouline",
+        "Hermitage",
+        "Le Pavillon",
+        "Châteauneuf-du-Pape Vieilles Vignes"
+      ]
+    },
+    "options": [],
+    "correct": [
+      2,
+      0,
+      1,
+      3
+    ],
+    "explanation": "These represent the pinnacle of Northern and Southern Rhône: Chapoutier's Le Pavillon (Hermitage), Guigal's La Mouline (Côte-Rôtie), Chave's legendary Hermitage blend, and Janasse's old vine Châteauneuf. Each defines excellence in their appellation.",
+    "sources": "The World Atlas of Wine; The Oxford Companion to Wine",
+    "confidence": "established",
+    "tags": [
+      "rhone_valley",
+      "single_vineyard",
+      "guigal",
+      "chapoutier"
+    ]
+  },
+  {
+    "id": "PK-092",
+    "domain": "producer_knowledge",
+    "difficulty": 870,
+    "level": 5,
+    "format": "multiple_choice",
+    "question": "Opus One was created as a joint venture between which two legendary producers?",
+    "options": [
+      "Robert Mondavi and Château Margaux",
+      "Robert Mondavi and Château Mouton Rothschild",
+      "Screaming Eagle and Harlan Estate",
+      "Caymus and Château Lafite"
+    ],
+    "correct": 1,
+    "explanation": "Opus One (1979) united Robert Mondavi's New World innovation with Baron Philippe de Rothschild's Old World expertise from Mouton Rothschild. This partnership legitimized Napa Valley on the world stage and created the template for luxury Bordeaux blends.",
+    "sources": "The Wine Bible; The World Atlas of Wine",
+    "confidence": "established",
+    "tags": [
+      "napa_valley",
+      "opus_one",
+      "mondavi",
+      "mouton_rothschild"
+    ]
+  },
+  {
+    "id": "PK-093",
+    "domain": "producer_knowledge",
+    "difficulty": 790,
+    "level": 5,
+    "format": "scenario",
+    "question": "A customer wants to experience 'the most traditional Champagne house that still riddling by hand and uses oak barrels for fermentation.' Which producer should you recommend?",
+    "options": [
+      "Krug",
+      "Bollinger",
+      "Veuve Clicquot",
+      "Moët & Chandon"
+    ],
+    "correct": 1,
+    "explanation": "Bollinger maintains the most traditional methods: hand riddling, oak barrel fermentation for their base wines, and extended lees aging. They're one of the few houses that still ferments in wood, giving their wines distinctive richness and complexity.",
+    "sources": "The Oxford Companion to Wine; WSET Level 3 Study Materials",
+    "confidence": "established",
+    "tags": [
+      "champagne",
+      "bollinger",
+      "traditional_methods",
+      "oak_fermentation"
+    ]
+  },
+  {
+    "id": "PK-094",
+    "domain": "producer_knowledge",
+    "difficulty": 1080,
+    "level": 6,
+    "format": "multiple_choice",
+    "question": "Giuseppe Quintarelli was legendary for which distinctive practice in Amarone production?",
+    "options": [
+      "Using only corvina grapes",
+      "Extended appassimento for 6+ months",
+      "Aging in concrete tanks only",
+      "Blending with Cabernet Sauvignon"
+    ],
+    "correct": 1,
+    "explanation": "Quintarelli pushed appassimento (grape drying) to extremes, often 6-8 months versus the typical 3-4, concentrating flavors to legendary intensity. His obsessive attention to drying created Amarones of unmatched depth and longevity.",
+    "sources": "The Oxford Companion to Wine; The World Atlas of Wine",
+    "confidence": "established",
+    "tags": [
+      "amarone",
+      "quintarelli",
+      "appassimento",
+      "veneto"
+    ]
+  },
+  {
+    "id": "PK-095",
+    "domain": "producer_knowledge",
+    "difficulty": 920,
+    "level": 6,
+    "format": "odd_one_out",
+    "question": "Which of these producers does NOT belong with the others as a pioneer of high-altitude viticulture in Argentina?",
+    "options": [
+      "Catena Zapata",
+      "Cheval des Andes",
+      "Achaval Ferrer",
+      "Trapiche"
+    ],
+    "correct": 3,
+    "explanation": "Trapiche is a large commercial producer, while the others are boutique estates that pioneered premium high-altitude Malbec. Catena, Cheval des Andes, and Achaval Ferrer specifically focused on proving that extreme altitude could produce world-class wines.",
+    "sources": "The World Atlas of Wine; The Oxford Companion to Wine",
+    "confidence": "established",
+    "tags": [
+      "argentina",
+      "high_altitude",
+      "malbec",
+      "catena_zapata"
+    ]
+  },
+  {
+    "id": "PK-096",
+    "domain": "producer_knowledge",
+    "difficulty": 1010,
+    "level": 6,
+    "format": "scenario",
+    "question": "A sommelier colleague mentions 'the German producer whose Rieslings regularly sell for over $300 and come from the Scharzhofberg vineyard.' Which estate are they discussing?",
+    "options": [
+      "Dr. Loosen",
+      "J.J. Prüm",
+      "Egon Müller",
+      "Dönnhoff"
+    ],
+    "correct": 2,
+    "explanation": "Egon Müller's Scharzhofberger Riesling TBA can reach astronomical prices, making it among the world's most expensive wines. The estate's combination of perfect terroir, meticulous viticulture, and rare botrytis vintages creates liquid gold.",
+    "sources": "The Oxford Companion to Wine; The World Atlas of Wine",
+    "confidence": "established",
+    "tags": [
+      "germany",
+      "egon_muller",
+      "scharzhofberg",
+      "riesling_tba"
+    ]
+  },
+  {
+    "id": "PK-097",
+    "domain": "producer_knowledge",
+    "difficulty": 800,
+    "level": 5,
+    "format": "multiple_choice",
+    "question": "Which Bordeaux château is famous for producing only red wine and refusing to make a second wine?",
+    "options": [
+      "Château Le Pin",
+      "Château Pétrus",
+      "Château Lafleur",
+      "Château Trotanoy"
+    ],
+    "correct": 0,
+    "explanation": "Château Le Pin produces only one wine from their tiny 2.7-hectare vineyard in Pomerol, with no second wine or white wine production. This ultra-exclusive approach, combined with their garage winery origins, helped establish the 'garagiste' movement in Bordeaux.",
+    "sources": "The Oxford Companion to Wine; The World Atlas of Wine",
+    "confidence": "established",
+    "tags": [
+      "bordeaux",
+      "pomerol",
+      "garage_wines",
+      "cult_producers"
+    ]
+  },
+  {
+    "id": "PK-098",
+    "domain": "producer_knowledge",
+    "difficulty": 750,
+    "level": 5,
+    "format": "odd_one_out",
+    "question": "Which of these Champagne houses does NOT belong with the others in terms of their founding period?",
+    "options": [
+      "Ruinart",
+      "Veuve Clicquot",
+      "Krug",
+      "Dom Pérignon"
+    ],
+    "correct": 3,
+    "explanation": "Dom Pérignon was launched as a prestige cuvée by Moët & Chandon in 1936, while the others are historic houses founded centuries earlier. Ruinart (1729) is actually the oldest Champagne house, making Dom Pérignon the modern newcomer in this group.",
+    "sources": "The Oxford Companion to Wine; WSET Level 3 Study Materials",
+    "confidence": "established",
+    "tags": [
+      "champagne",
+      "historic_houses",
+      "prestige_cuvee",
+      "moet_chandon"
+    ]
+  },
+  {
+    "id": "PK-099",
+    "domain": "producer_knowledge",
+    "difficulty": 850,
+    "level": 5,
+    "format": "match_pairs",
+    "question": "Match each Super Tuscan pioneer to their breakthrough wine:",
+    "pairs": {
+      "left": [
+        "Tenuta San Guido",
+        "Ornellaia",
+        "Antinori",
+        "Isole e Olena"
+      ],
+      "right": [
+        "Tignanello",
+        "Ornellaia",
+        "Cepparello",
+        "Sassicaia"
+      ]
+    },
+    "options": [],
+    "correct": [
+      3,
+      1,
+      0,
+      2
+    ],
+    "explanation": "These four estates created the blueprint for Super Tuscans, with each wine breaking traditional rules in its own way. Sassicaia started it all in 1968, using Cabernet Sauvignon outside of Bordeaux's influence, while the others followed with their own innovative blends.",
+    "sources": "Wine Grapes; The Oxford Companion to Wine",
+    "confidence": "established",
+    "tags": [
+      "super_tuscan",
+      "tuscany",
+      "cabernet_sauvignon",
+      "innovative_winemaking"
+    ]
+  },
+  {
+    "id": "PK-100",
+    "domain": "producer_knowledge",
+    "difficulty": 900,
+    "level": 6,
+    "format": "scenario",
+    "question": "A customer mentions they love 'wines that taste like liquid rocks' and asks for a German Riesling producer known for extremely mineral-driven wines from slate soils. Which producer should you recommend?",
+    "options": [
+      "Dr. Loosen",
+      "Egon Müller",
+      "J.J. Prüm",
+      "Donnhoff"
+    ],
+    "correct": 0,
+    "explanation": "Dr. Loosen is famous for emphasizing terroir expression, particularly the blue slate soils of the Mosel that create intensely mineral wines. Ernst Loosen often describes his wines as 'liquid slate,' making this the perfect match for a customer seeking mineral-driven Rieslings.",
+    "sources": "The Oxford Companion to Wine; GuildSomm",
+    "confidence": "established",
+    "tags": [
+      "german_riesling",
+      "mosel",
+      "terroir",
+      "slate_soils"
+    ]
+  },
+  {
+    "id": "PK-101",
+    "domain": "producer_knowledge",
+    "difficulty": 1000,
+    "level": 6,
+    "format": "multiple_choice",
+    "question": "Domaine Leroy in Burgundy is famous for which distinctive vineyard practice that sets them apart from most producers?",
+    "options": [
+      "Using only indigenous yeasts",
+      "Biodynamic viticulture since 1988",
+      "Hand-harvesting at night",
+      "Aging wines for 10 years before release"
+    ],
+    "correct": 1,
+    "explanation": "Lalou Bize-Leroy converted all Domaine Leroy vineyards to biodynamic farming in 1988, making them pioneers in this practice in Burgundy. This commitment to biodynamics, combined with extremely low yields, produces some of Burgundy's most concentrated and expensive wines.",
+    "sources": "The Oxford Companion to Wine; WSET Diploma Study Materials",
+    "confidence": "established",
+    "tags": [
+      "burgundy",
+      "biodynamic",
+      "lalou_bize-leroy",
+      "premium_burgundy"
+    ]
+  },
+  {
+    "id": "PK-102",
+    "domain": "producer_knowledge",
+    "difficulty": 950,
+    "level": 6,
+    "format": "odd_one_out",
+    "question": "Which of these Napa Valley producers does NOT belong with the others in terms of their primary grape variety focus?",
+    "options": [
+      "Screaming Eagle",
+      "Harlan Estate",
+      "Schramsberg",
+      "Colgin"
+    ],
+    "correct": 2,
+    "explanation": "Schramsberg is Napa's premier sparkling wine producer, focusing on Chardonnay and Pinot Noir for traditional method sparkling wines, while the others are cult Cabernet Sauvignon producers. Schramsberg has been making bubbles since 1862, earning them the nickname 'Napa's Champagne house.'",
+    "sources": "The World Atlas of Wine; GuildSomm",
+    "confidence": "established",
+    "tags": [
+      "napa_valley",
+      "sparkling_wine",
+      "cult_cabernet",
+      "schramsberg"
+    ]
+  },
+  {
+    "id": "PK-103",
+    "domain": "producer_knowledge",
+    "difficulty": 800,
+    "level": 5,
+    "format": "multiple_choice",
+    "question": "Kanonkop Estate in South Africa is most famous for producing exceptional wines from which grape variety?",
+    "options": [
+      "Chenin Blanc",
+      "Pinotage",
+      "Cabernet Sauvignon",
+      "Syrah"
+    ],
+    "correct": 1,
+    "explanation": "Kanonkop is considered the king of Pinotage, South Africa's signature grape variety, and their Paul Sauer blend often includes significant Pinotage. They've been perfecting this uniquely South African variety since the 1970s, proving that Pinotage can make world-class wines when handled expertly.",
+    "sources": "The Oxford Companion to Wine; Wine Grapes",
+    "confidence": "established",
+    "tags": [
+      "south_africa",
+      "pinotage",
+      "stellenbosch",
+      "signature_variety"
+    ]
+  },
+  {
+    "id": "PK-104",
+    "domain": "producer_knowledge",
+    "difficulty": 1050,
+    "level": 6,
+    "format": "scenario",
+    "question": "A wine collector mentions wanting a Burgundy from 'the domaine that Henri Jayer considered his successor and who makes wines with the same low-intervention philosophy.' Which producer should you recommend?",
+    "options": [
+      "Domaine de la Romanée-Conti",
+      "Emmanuel Rouget",
+      "Domaine Hudelot-Noëllat",
+      "Domaine Méo-Camuzet"
+    ],
+    "correct": 1,
+    "explanation": "Emmanuel Rouget is Henri Jayer's nephew and inherited his vineyards and winemaking philosophy when Jayer retired in 1995. Rouget continues Jayer's legendary low-intervention techniques, including long cold macerations and minimal new oak, making him the direct heir to Jayer's approach.",
+    "sources": "The Oxford Companion to Wine; GuildSomm",
+    "confidence": "established",
+    "tags": [
+      "burgundy",
+      "henri_jayer",
+      "emmanuel_rouget",
+      "low_intervention"
+    ]
+  },
+  {
+    "id": "PK-105",
+    "domain": "producer_knowledge",
+    "difficulty": 900,
+    "level": 6,
+    "format": "match_pairs",
+    "question": "Match each iconic Piedmont producer to their most famous single vineyard:",
+    "pairs": {
+      "left": [
+        "Bruno Giacosa",
+        "Giacomo Conterno",
+        "Angelo Gaja",
+        "Bartolo Mascarello"
+      ],
+      "right": [
+        "Monfortino",
+        "Sori San Lorenzo",
+        "Cannubi",
+        "Falletto"
+      ]
+    },
+    "options": [],
+    "correct": [
+      3,
+      0,
+      1,
+      2
+    ],
+    "explanation": "These legendary Piedmont producers each have signature vineyards that define their reputations. Giacosa's Falletto Riserva and Conterno's Monfortino represent traditional Barolo at its finest, while Gaja's Sori San Lorenzo showcases modern techniques, and Mascarello's Cannubi embodies old-school authenticity.",
+    "sources": "The Oxford Companion to Wine; The World Atlas of Wine",
+    "confidence": "established",
+    "tags": [
+      "piedmont",
+      "barolo",
+      "single_vineyard",
+      "nebbiolo"
+    ]
+  },
+  {
+    "id": "PK-106",
+    "domain": "producer_knowledge",
+    "difficulty": 850,
+    "level": 5,
+    "format": "multiple_choice",
+    "question": "Cloudy Bay winery in New Zealand was founded by which established wine region's producer seeking to explore Marlborough's potential?",
+    "options": [
+      "Burgundy (France)",
+      "Western Australia",
+      "Champagne (France)",
+      "Bordeaux (France)"
+    ],
+    "correct": 1,
+    "explanation": "Cloudy Bay was founded in 1985 by David Hohnen from Cape Mentelle in Western Australia, who recognized Marlborough's potential for Sauvignon Blanc. This Australian connection helped establish the trans-Tasman wine relationship and put Marlborough Sauvignon Blanc on the global map.",
+    "sources": "The Oxford Companion to Wine; The World Atlas of Wine",
+    "confidence": "established",
+    "tags": [
+      "new_zealand",
+      "marlborough",
+      "sauvignon_blanc",
+      "australian_connection"
+    ]
+  },
+  {
+    "id": "PK-107",
+    "domain": "producer_knowledge",
+    "difficulty": 1200,
+    "level": 7,
+    "format": "multiple_choice",
+    "question": "Which Bordeaux First Growth is located in Pessac-Léognan and produces both red and white wines?",
+    "options": [
+      "Château Haut-Brion",
+      "Château Lafite Rothschild",
+      "Château Latour",
+      "Château Mouton Rothschild"
+    ],
+    "correct": 0,
+    "explanation": "Haut-Brion stands alone among the First Growths as the only estate outside the Médoc, situated in Graves (now Pessac-Léognan). Think of it as the rebel First Growth - different terroir, different commune, and the only one making world-class white wine alongside their legendary red.",
+    "sources": "The Oxford Companion to Wine; The World Atlas of Wine",
+    "confidence": "established",
+    "tags": [
+      "bordeaux",
+      "first_growth",
+      "pessac_leognan"
+    ]
+  },
+  {
+    "id": "PK-108",
+    "domain": "producer_knowledge",
+    "difficulty": 1150,
+    "level": 7,
+    "format": "odd_one_out",
+    "question": "Which of these producers does NOT belong with the others as a traditional Champagne house founded in the 18th or 19th century?",
+    "options": [
+      "Krug",
+      "Bollinger",
+      "Jacques Selosse",
+      "Salon"
+    ],
+    "correct": 2,
+    "explanation": "Jacques Selosse is the modern revolutionary among these classics - founded only in the 1960s and famous for radical techniques like barrel fermentation and solera systems. The others are historic houses with centuries of tradition behind them.",
+    "sources": "The Oxford Companion to Wine; Wine Grapes",
+    "confidence": "established",
+    "tags": [
+      "champagne",
+      "producers",
+      "history"
+    ]
+  },
+  {
+    "id": "PK-109",
+    "domain": "producer_knowledge",
+    "difficulty": 1250,
+    "level": 7,
+    "format": "multiple_choice",
+    "question": "Domaine de la Romanée-Conti (DRC) is most famous for their monopole ownership of which Burgundy Grand Cru vineyard?",
+    "options": [
+      "La Tâche",
+      "Romanée-Conti",
+      "Richebourg",
+      "Romanée-Saint-Vivant"
+    ],
+    "correct": 1,
+    "explanation": "The Romanée-Conti vineyard is DRC's crown jewel and their namesake monopole - all 4.46 acres belong solely to them. It's like owning the Mona Lisa of vineyards; no other producer can make wine from this legendary plot.",
+    "sources": "The Oxford Companion to Wine; The World Atlas of Wine",
+    "confidence": "established",
+    "tags": [
+      "burgundy",
+      "drc",
+      "monopole",
+      "grand_cru"
+    ]
+  },
+  {
+    "id": "PK-110",
+    "domain": "producer_knowledge",
+    "difficulty": 1180,
+    "level": 7,
+    "format": "scenario",
+    "question": "A customer asks for 'the Napa Valley winery that proved Cabernet Sauvignon could age as well as Bordeaux' after winning the famous 1976 Paris Tasting. Which producer should you recommend?",
+    "options": [
+      "Stag's Leap Wine Cellars",
+      "Screaming Eagle",
+      "Harlan Estate",
+      "Opus One"
+    ],
+    "correct": 0,
+    "explanation": "Stag's Leap Wine Cellars' 1973 Cabernet Sauvignon shocked the wine world by beating top Bordeaux in Steven Spurrier's blind tasting. This single victory launched Napa's reputation and proved New World wines could compete with the old masters.",
+    "sources": "The Oxford Companion to Wine; The Wine Bible",
+    "confidence": "established",
+    "tags": [
+      "napa_valley",
+      "paris_tasting",
+      "cabernet_sauvignon",
+      "history"
+    ]
+  },
+  {
+    "id": "PK-111",
+    "domain": "producer_knowledge",
+    "difficulty": 1220,
+    "level": 7,
+    "format": "match_pairs",
+    "question": "Match each German Riesling producer to their most famous vineyard site:",
+    "pairs": {
+      "left": [
+        "Egon Müller",
+        "J.J. Prüm",
+        "Dr. Loosen",
+        "Dönnhoff"
+      ],
+      "right": [
+        "Wehlener Sonnenuhr",
+        "Scharzhofberg",
+        "Ürziger Würzgarten",
+        "Oberhäuser Brücke"
+      ]
+    },
+    "options": [],
+    "correct": [
+      1,
+      0,
+      2,
+      3
+    ],
+    "explanation": "These vineyard-producer partnerships are legendary in German wine - each site's unique terroir has been perfected by generations of the same family. Scharzhofberg's slate gives Egon Müller's wines their ethereal minerality that commands auction prices.",
+    "sources": "The Oxford Companion to Wine; Wine Grapes",
+    "confidence": "established",
+    "tags": [
+      "germany",
+      "riesling",
+      "vineyard_sites",
+      "producers"
+    ]
+  },
+  {
+    "id": "PK-112",
+    "domain": "producer_knowledge",
+    "difficulty": 1190,
+    "level": 7,
+    "format": "multiple_choice",
+    "question": "Which Tuscan producer is credited with creating Brunello di Montalcino in its modern form in the late 19th century?",
+    "options": [
+      "Antinori",
+      "Biondi-Santi",
+      "Frescobaldi",
+      "Ricasoli"
+    ],
+    "correct": 1,
+    "explanation": "Ferruccio Biondi-Santi essentially invented modern Brunello in the 1880s by isolating the best Sangiovese clones and aging them longer than anyone thought possible. Think of him as Brunello's founding father - his family still makes wines from the same philosophy today.",
+    "sources": "The Oxford Companion to Wine; The World Atlas of Wine",
+    "confidence": "established",
+    "tags": [
+      "tuscany",
+      "brunello",
+      "biondi_santi",
+      "history"
+    ]
+  },
+  {
+    "id": "PK-113",
+    "domain": "producer_knowledge",
+    "difficulty": 1160,
+    "level": 7,
+    "format": "multiple_choice",
+    "question": "López de Heredia in Rioja is famous for which traditional practice that sets them apart from modern producers?",
+    "options": [
+      "Extended aging in large old oak barrels",
+      "Foot-treading all grapes",
+      "Using only indigenous yeasts",
+      "Harvesting by moonlight"
+    ],
+    "correct": 0,
+    "explanation": "López de Heredia ages their wines for decades in massive old American oak barrels, releasing wines when most producers have forgotten the vintage existed. Their cellars are like a time machine - some wines spend 30+ years in barrel before release.",
+    "sources": "The Oxford Companion to Wine; The Wine Bible",
+    "confidence": "established",
+    "tags": [
+      "rioja",
+      "lopez_de_heredia",
+      "aging",
+      "traditional_methods"
+    ]
+  },
+  {
+    "id": "PK-114",
+    "domain": "producer_knowledge",
+    "difficulty": 1240,
+    "level": 7,
+    "format": "odd_one_out",
+    "question": "Which of these producers does NOT belong with the others as a Washington State winery?",
+    "options": [
+      "Quilceda Creek",
+      "Leonetti Cellar",
+      "Eyrie Vineyards",
+      "Woodward Canyon"
+    ],
+    "correct": 2,
+    "explanation": "Eyrie Vineyards is Oregon's pioneer, not Washington - David Lett planted the first Pinot Noir in Willamette Valley in 1965. The others are all Washington legends who helped establish the state's reputation for Bordeaux varieties.",
+    "sources": "The Oxford Companion to Wine; The Wine Bible",
+    "confidence": "established",
+    "tags": [
+      "washington_state",
+      "oregon",
+      "producers",
+      "regions"
+    ]
+  },
+  {
+    "id": "PK-115",
+    "domain": "producer_knowledge",
+    "difficulty": 1210,
+    "level": 7,
+    "format": "scenario",
+    "question": "A customer wants to try 'the Australian wine that put Barossa Valley on the world map and is made from vines planted in the 1860s.' Which wine should you recommend?",
+    "options": [
+      "Penfolds Grange",
+      "Henschke Hill of Grace",
+      "Wolf Blass Black Label",
+      "Torbreck RunRig"
+    ],
+    "correct": 1,
+    "explanation": "Henschke's Hill of Grace comes from a single vineyard of Shiraz vines planted in 1860 - some of the world's oldest producing vines. These ancient vines produce wine with a concentration and complexity that seems to capture 160+ years of Barossa history in every bottle.",
+    "sources": "The Oxford Companion to Wine; The World Atlas of Wine",
+    "confidence": "established",
+    "tags": [
+      "australia",
+      "barossa_valley",
+      "henschke",
+      "old_vines"
+    ]
+  },
+  {
+    "id": "PK-116",
+    "domain": "producer_knowledge",
+    "difficulty": 1170,
+    "level": 7,
+    "format": "multiple_choice",
+    "question": "Domaine Huet in the Loire Valley is most famous for producing exceptional wines from which grape variety?",
+    "options": [
+      "Sauvignon Blanc",
+      "Chenin Blanc",
+      "Cabernet Franc",
+      "Muscadet"
+    ],
+    "correct": 1,
+    "explanation": "Domaine Huet is the undisputed master of Chenin Blanc in Vouvray, crafting everything from bone-dry to lusciously sweet wines from this versatile grape. Their Chenin Blanc ages for decades, developing honeyed complexity that showcases why this grape is Loire's white wine royalty.",
+    "sources": "The Oxford Companion to Wine; Wine Grapes",
+    "confidence": "established",
+    "tags": [
+      "loire_valley",
+      "huet",
+      "chenin_blanc",
+      "vouvray"
+    ]
+  },
+  {
+    "id": "PK-117",
+    "domain": "producer_knowledge",
+    "difficulty": 1300,
+    "level": 7,
+    "format": "match_pairs",
+    "question": "Match each Piedmont producer to their most famous single vineyard Barolo:",
+    "pairs": {
+      "left": [
+        "Giacomo Conterno",
+        "Bruno Giacosa",
+        "Giuseppe Rinaldi",
+        "Roberto Voerzio"
+      ],
+      "right": [
+        "Monfortino",
+        "Collina Rionda",
+        "Brunate-Le Coste",
+        "Cerequio"
+      ]
+    },
+    "options": [],
+    "correct": [
+      0,
+      1,
+      2,
+      3
+    ],
+    "explanation": "These vineyard-producer combinations represent Barolo's aristocracy - each pairing has defined excellence for generations. Conterno's Monfortino from Francia vineyard is particularly legendary, released only in exceptional vintages after decades of aging.",
+    "sources": "The Oxford Companion to Wine; The World Atlas of Wine",
+    "confidence": "established",
+    "tags": [
+      "piedmont",
+      "barolo",
+      "single_vineyard",
+      "producers"
+    ]
+  },
+  {
+    "id": "PK-118",
+    "domain": "producer_knowledge",
+    "difficulty": 1280,
+    "level": 7,
+    "format": "multiple_choice",
+    "question": "Ridge Vineyards in California is most famous for which wine that helped establish the reputation of old-vine Zinfandel?",
+    "options": [
+      "Geyserville",
+      "Lytton Springs",
+      "Monte Bello",
+      "Paso Robles"
+    ],
+    "correct": 0,
+    "explanation": "Ridge's Geyserville has been the flagship expression of old-vine Sonoma Zinfandel since the 1960s, proving this grape could make serious, age-worthy wine. Paul Draper's minimalist approach lets these ancient vines speak with a voice that's purely Californian yet timelessly elegant.",
+    "sources": "The Oxford Companion to Wine; The Wine Bible",
+    "confidence": "established",
+    "tags": [
+      "california",
+      "ridge",
+      "zinfandel",
+      "geyserville"
+    ]
+  },
+  {
+    "id": "PK-119",
+    "domain": "producer_knowledge",
+    "difficulty": 1260,
+    "level": 7,
+    "format": "scenario",
+    "question": "A collector asks for 'the Champagne house that only makes vintage wine and never produces a non-vintage cuvée.' Which producer should you recommend?",
+    "options": [
+      "Salon",
+      "Krug",
+      "Dom Pérignon",
+      "Cristal"
+    ],
+    "correct": 0,
+    "explanation": "Salon is Champagne's ultimate purist - they make only one wine, only in exceptional years, only from Chardonnay, only from Le Mesnil-sur-Oger. When they don't like a vintage, they simply don't make wine that year, making their releases incredibly rare and sought-after.",
+    "sources": "The Oxford Companion to Wine; Wine Grapes",
+    "confidence": "established",
+    "tags": [
+      "champagne",
+      "salon",
+      "vintage_only",
+      "chardonnay"
+    ]
+  },
+  {
+    "id": "PK-120",
+    "domain": "producer_knowledge",
+    "difficulty": 1230,
+    "level": 7,
+    "format": "odd_one_out",
+    "question": "Which of these producers does NOT belong with the others as a pioneer of modern Argentine winemaking?",
+    "options": [
+      "Catena Zapata",
+      "Cheval des Andes",
+      "Achaval Ferrer",
+      "Concha y Toro"
+    ],
+    "correct": 3,
+    "explanation": "Concha y Toro is Chile's giant, not Argentina's - they're based in Maipo Valley and are one of the world's largest wine companies. The others are all Argentine pioneers who helped elevate the country's reputation, particularly with high-altitude Malbec.",
+    "sources": "The Oxford Companion to Wine; The World Atlas of Wine",
+    "confidence": "established",
+    "tags": [
+      "argentina",
+      "chile",
+      "producers",
+      "south_america"
+    ]
+  },
+  {
+    "id": "PK-121",
+    "domain": "producer_knowledge",
+    "difficulty": 1290,
+    "level": 7,
+    "format": "multiple_choice",
+    "question": "Williams Selyem in Sonoma is most famous for pioneering which winemaking approach with Pinot Noir?",
+    "options": [
+      "Whole cluster fermentation",
+      "Small-lot, single-vineyard bottlings",
+      "Extended cold maceration",
+      "Native yeast fermentation"
+    ],
+    "correct": 1,
+    "explanation": "Williams Selyem revolutionized California Pinot Noir by treating it like Burgundy - making tiny lots from specific vineyards rather than blending everything together. They proved that California could make Pinot Noir with the same site-specific character that makes Burgundy legendary.",
+    "sources": "The Oxford Companion to Wine; The Wine Bible",
+    "confidence": "established",
+    "tags": [
+      "sonoma",
+      "williams_selyem",
+      "pinot_noir",
+      "single_vineyard"
+    ]
+  },
+  {
+    "id": "PK-122",
+    "domain": "producer_knowledge",
+    "difficulty": 1150,
+    "level": 7,
+    "format": "multiple_choice",
+    "question": "Which Champagne house is famous for their 'Grande Cuvée' and uses a solera-like system for their non-vintage blend?",
+    "options": [
+      "Krug",
+      "Bollinger",
+      "Salon",
+      "Dom Pérignon"
+    ],
+    "correct": 0,
+    "explanation": "Krug's Grande Cuvée is blended from over 120 wines from different years, creating complexity through their unique perpetual reserve system. Think of it as Champagne's answer to sherry's solera - layers of time in every bottle.",
+    "sources": "The Oxford Companion to Wine; The Wine Bible",
+    "confidence": "established",
+    "tags": [
+      "champagne",
+      "krug",
+      "blending_techniques"
+    ]
+  },
+  {
+    "id": "PK-123",
+    "domain": "producer_knowledge",
+    "difficulty": 1200,
+    "level": 7,
+    "format": "odd_one_out",
+    "question": "Which of these producers does NOT belong with the others as a Burgundy Grand Cru monopole owner?",
+    "options": [
+      "Domaine de la Romanée-Conti",
+      "Domaine Taupenot-Merme",
+      "Domaine de la Vougeraie",
+      "Domaine Faiveley"
+    ],
+    "correct": 1,
+    "explanation": "Domaine Taupenot-Merme is a respected Burgundy producer but doesn't own any Grand Cru monopoles, while the others each control exclusive Grand Cru vineyards. Monopoles are Burgundy's crown jewels - entire vineyards owned by a single domaine.",
+    "sources": "The Oxford Companion to Wine; The World Atlas of Wine",
+    "confidence": "established",
+    "tags": [
+      "burgundy",
+      "monopole",
+      "grand_cru"
+    ]
+  },
+  {
+    "id": "PK-124",
+    "domain": "producer_knowledge",
+    "difficulty": 1250,
+    "level": 7,
+    "format": "multiple_choice",
+    "question": "Bruno Giacosa was most famous for which distinctive labeling practice that indicated his highest quality wines?",
+    "options": [
+      "Red labels for exceptional vintages",
+      "Gold capsules for reserve wines",
+      "Hand-numbered bottles",
+      "Special parchment paper labels"
+    ],
+    "correct": 0,
+    "explanation": "Bruno Giacosa's red labels were reserved for wines from his own vineyards in exceptional years - the ultimate seal of approval from the 'Master of Nebbiolo.' These red-label Barolos and Barbarescos are among Piedmont's most sought-after wines.",
+    "sources": "The Oxford Companion to Wine; Wine Grapes",
+    "confidence": "established",
+    "tags": [
+      "piedmont",
+      "bruno_giacosa",
+      "labeling",
+      "barolo"
+    ]
+  },
+  {
+    "id": "PK-125",
+    "domain": "producer_knowledge",
+    "difficulty": 1180,
+    "level": 7,
+    "format": "match_pairs",
+    "question": "Match each Bordeaux First Growth to their primary grape variety in their grand vin:",
+    "pairs": {
+      "left": [
+        "Château Lafite-Rothschild",
+        "Château Mouton-Rothschild",
+        "Château Margaux",
+        "Château Latour"
+      ],
+      "right": [
+        "Cabernet Sauvignon",
+        "Merlot",
+        "Cabernet Sauvignon",
+        "Cabernet Sauvignon"
+      ]
+    },
+    "options": [],
+    "correct": [
+      0,
+      0,
+      0,
+      0
+    ],
+    "explanation": "All four Left Bank First Growths are built on Cabernet Sauvignon's backbone, though in varying proportions. Remember: Left Bank = Cabernet Sauvignon country, while Right Bank favors Merlot.",
+    "sources": "The Oxford Companion to Wine; The World Atlas of Wine",
+    "confidence": "established",
+    "tags": [
+      "bordeaux",
+      "first_growth",
+      "cabernet_sauvignon"
+    ]
+  },
+  {
+    "id": "PK-126",
+    "domain": "producer_knowledge",
+    "difficulty": 1220,
+    "level": 7,
+    "format": "multiple_choice",
+    "question": "Henschke's Hill of Grace vineyard in Australia is planted with which grape variety from vines dating to the 1860s?",
+    "options": [
+      "Shiraz",
+      "Cabernet Sauvignon",
+      "Grenache",
+      "Riesling"
+    ],
+    "correct": 0,
+    "explanation": "Henschke's Hill of Grace Shiraz comes from 150+ year-old vines, making it one of the world's oldest continuously producing vineyards. These ancient vines produce wines of incredible concentration - liquid history in every bottle.",
+    "sources": "The Oxford Companion to Wine; The Wine Bible",
+    "confidence": "established",
+    "tags": [
+      "australia",
+      "henschke",
+      "shiraz",
+      "old_vines"
+    ]
+  },
+  {
+    "id": "PK-127",
+    "domain": "producer_knowledge",
+    "difficulty": 1170,
+    "level": 7,
+    "format": "scenario",
+    "question": "A customer asks for 'the Loire Valley producer who revolutionized Sancerre with stainless steel and late harvesting before tragically dying in a microlight accident.' Which domaine should you recommend?",
+    "options": [
+      "Domaine Henri Bourgeois",
+      "Domaine Didier Dagueneau",
+      "Domaine Pascal Jolivet",
+      "Domaine Lucien Crochet"
+    ],
+    "correct": 1,
+    "explanation": "Didier Dagueneau transformed Sancerre winemaking with his perfectionist approach and innovative techniques until his death in 2008. His son Benjamin continues the legacy at this cult domaine where every bottle reflects obsessive attention to detail.",
+    "sources": "The Oxford Companion to Wine; The Wine Bible",
+    "confidence": "established",
+    "tags": [
+      "loire_valley",
+      "sancerre",
+      "dagueneau",
+      "sauvignon_blanc"
+    ]
+  },
+  {
+    "id": "PK-128",
+    "domain": "producer_knowledge",
+    "difficulty": 1190,
+    "level": 7,
+    "format": "multiple_choice",
+    "question": "Antinori's Tignanello was groundbreaking because it was one of the first Tuscan wines to include which grape variety?",
+    "options": [
+      "Cabernet Sauvignon",
+      "Merlot",
+      "Syrah",
+      "Cabernet Franc"
+    ],
+    "correct": 0,
+    "explanation": "Tignanello (first vintage 1971) was revolutionary for blending Sangiovese with Cabernet Sauvignon and aging in small French oak - helping birth the Super Tuscan movement. It proved that Tuscany could make world-class wines beyond traditional DOC rules.",
+    "sources": "The Oxford Companion to Wine; The World Atlas of Wine",
+    "confidence": "established",
+    "tags": [
+      "tuscany",
+      "antinori",
+      "super_tuscan",
+      "cabernet_sauvignon"
+    ]
+  },
+  {
+    "id": "PK-129",
+    "domain": "producer_knowledge",
+    "difficulty": 1160,
+    "level": 7,
+    "format": "multiple_choice",
+    "question": "Stag's Leap Wine Cellars achieved fame by winning which competition with their 1973 Cabernet Sauvignon?",
+    "options": [
+      "The Judgment of Paris",
+      "The Great Wine Tasting of 1979",
+      "The California Wine Olympics",
+      "The Napa Valley Wine Auction"
+    ],
+    "correct": 0,
+    "explanation": "Stag's Leap's 1973 Cabernet Sauvignon shocked the wine world by beating top Bordeaux at the 1976 Judgment of Paris. This victory put Napa Valley on the global wine map and proved California could make world-class Cabernet.",
+    "sources": "The Oxford Companion to Wine; The Wine Bible",
+    "confidence": "established",
+    "tags": [
+      "napa_valley",
+      "stags_leap",
+      "judgment_of_paris",
+      "cabernet_sauvignon"
+    ]
+  },
+  {
+    "id": "PK-130",
+    "domain": "producer_knowledge",
+    "difficulty": 1240,
+    "level": 7,
+    "format": "odd_one_out",
+    "question": "Which of these producers does NOT belong with the others as a traditional Barolo producer from the commune of Serralunga d'Alba?",
+    "options": [
+      "Giacomo Conterno",
+      "Ettore Germano",
+      "Roberto Voerzio",
+      "Cappellano"
+    ],
+    "correct": 2,
+    "explanation": "Roberto Voerzio is based in La Morra, while the others are from Serralunga d'Alba. Serralunga produces Barolo's most powerful, structured wines - think iron fist in a velvet glove compared to La Morra's silkier style.",
+    "sources": "The Oxford Companion to Wine; The World Atlas of Wine",
+    "confidence": "established",
+    "tags": [
+      "piedmont",
+      "barolo",
+      "serralunga",
+      "la_morra"
+    ]
+  },
+  {
+    "id": "PK-131",
+    "domain": "producer_knowledge",
+    "difficulty": 1210,
+    "level": 7,
+    "format": "multiple_choice",
+    "question": "Torres in Spain was pioneering for introducing which practice to Spanish winemaking in the 1960s?",
+    "options": [
+      "Temperature-controlled fermentation",
+      "Malolactic fermentation",
+      "Carbonic maceration",
+      "Extended lees aging"
+    ],
+    "correct": 0,
+    "explanation": "Miguel Torres Sr. revolutionized Spanish winemaking by introducing stainless steel and temperature control, preserving freshness in Spain's hot climate. This innovation helped Spanish wines compete internationally and influenced a generation of winemakers.",
+    "sources": "The Oxford Companion to Wine; The Wine Bible",
+    "confidence": "established",
+    "tags": [
+      "spain",
+      "torres",
+      "temperature_control",
+      "innovation"
+    ]
+  },
+  {
+    "id": "PK-132",
+    "domain": "producer_knowledge",
+    "difficulty": 1280,
+    "level": 7,
+    "format": "match_pairs",
+    "question": "Match each Oregon producer to their founding significance:",
+    "pairs": {
+      "left": [
+        "The Eyrie Vineyards",
+        "Domaine Drouhin Oregon",
+        "Archery Summit",
+        "Sokol Blosser"
+      ],
+      "right": [
+        "First to plant Pinot Noir in Willamette Valley",
+        "Burgundian family investment validating Oregon",
+        "Founded by former Napa winemaker",
+        "Early pioneer of biodynamic viticulture"
+      ]
+    },
+    "options": [],
+    "correct": [
+      0,
+      1,
+      2,
+      3
+    ],
+    "explanation": "Each producer represents a different chapter in Oregon's wine story - from David Lett's pioneering vision to international validation to sustainable practices. Oregon's success story is written through these diverse contributions.",
+    "sources": "The Oxford Companion to Wine; The Wine Bible",
+    "confidence": "established",
+    "tags": [
+      "oregon",
+      "pinot_noir",
+      "pioneers",
+      "willamette_valley"
+    ]
+  },
+  {
+    "id": "PK-133",
+    "domain": "producer_knowledge",
+    "difficulty": 1300,
+    "level": 8,
+    "format": "multiple_choice",
+    "question": "Domaine Leflaive's transition to biodynamic viticulture was led by which family member in the 1990s?",
+    "options": [
+      "Anne-Claude Leflaive",
+      "Olivier Leflaive",
+      "Vincent Leflaive",
+      "Pierre Leflaive"
+    ],
+    "correct": 0,
+    "explanation": "Anne-Claude Leflaive transformed this legendary Puligny-Montrachet domaine into a biodynamic pioneer, proving that even traditional Burgundy estates could embrace radical farming methods. Her leadership showed that biodynamics could enhance rather than compromise quality.",
+    "sources": "The Oxford Companion to Wine; Wine Grapes",
+    "confidence": "established",
+    "tags": [
+      "burgundy",
+      "leflaive",
+      "biodynamic",
+      "puligny_montrachet"
+    ]
+  },
+  {
+    "id": "PK-134",
+    "domain": "producer_knowledge",
+    "difficulty": 1350,
+    "level": 8,
+    "format": "scenario",
+    "question": "A collector seeks 'the Rhône producer whose La Landonne and La Mouline bottlings from Côte-Rôtie represent the pinnacle of single-vineyard Syrah.' Which domaine should you recommend?",
+    "options": [
+      "M. Chapoutier",
+      "E. Guigal",
+      "Paul Jaboulet Aîné",
+      "Domaine Jamet"
+    ],
+    "correct": 1,
+    "explanation": "E. Guigal's 'La Las' (La Landonne, La Mouline, and La Turque) are Côte-Rôtie's holy trinity, aged 42 months in new oak and representing different terroir expressions. These wines command cult status and define modern Côte-Rôtie excellence.",
+    "sources": "The Oxford Companion to Wine; The World Atlas of Wine",
+    "confidence": "established",
+    "tags": [
+      "rhone_valley",
+      "guigal",
+      "cote_rotie",
+      "syrah"
+    ]
+  },
+  {
+    "id": "PK-135",
+    "domain": "producer_knowledge",
+    "difficulty": 1420,
+    "level": 8,
+    "format": "multiple_choice",
+    "question": "Jacques Selosse's revolutionary approach to Champagne production primarily focuses on which aspect?",
+    "options": [
+      "Terroir expression through single-vineyard cuvées",
+      "Extended lees aging in bottle",
+      "Use of indigenous yeasts and oak fermentation",
+      "Perpetual reserve blending systems"
+    ],
+    "correct": 2,
+    "explanation": "Anselme Selosse treats Champagne like Burgundy, using indigenous yeasts, oak fermentation, and minimal intervention to express terroir rather than house style. His approach has influenced a generation of grower-Champagne producers seeking authenticity over consistency.",
+    "sources": "The Oxford Companion to Wine; GuildSomm",
+    "confidence": "consensus",
+    "tags": [
+      "champagne",
+      "selosse",
+      "terroir",
+      "indigenous_yeasts"
+    ]
+  },
+  {
+    "id": "PK-136",
+    "domain": "producer_knowledge",
+    "difficulty": 1380,
+    "level": 8,
+    "format": "odd_one_out",
+    "question": "Which of these cult Napa Valley producers does NOT belong with the others in terms of their production philosophy?",
+    "options": [
+      "Screaming Eagle",
+      "Harlan Estate",
+      "Sine Qua Non",
+      "Bryant Family Vineyard"
+    ],
+    "correct": 2,
+    "explanation": "Sine Qua Non is actually based in Ventura County (Central Coast), not Napa Valley, and is known for constantly changing wine names and labels. The others are all Napa Valley cult Cabernet producers with consistent luxury positioning.",
+    "sources": "The Oxford Companion to Wine; The Wine Bible",
+    "confidence": "established",
+    "tags": [
+      "napa_valley",
+      "cult_wines",
+      "sine_qua_non",
+      "central_coast"
+    ]
+  },
+  {
+    "id": "PK-137",
+    "domain": "producer_knowledge",
+    "difficulty": 1200,
+    "level": 7,
+    "format": "multiple_choice",
+    "question": "Which Bordeaux First Growth château is located in Pauillac and is famous for its distinctive label featuring five arrows?",
+    "options": [
+      "Château Lafite Rothschild",
+      "Château Mouton Rothschild",
+      "Château Latour",
+      "Château Margaux"
+    ],
+    "correct": 1,
+    "explanation": "Château Mouton Rothschild's label features the distinctive five arrows of the Rothschild family crest. Remember: Mouton was promoted from Second to First Growth in 1973, making it the only classification change in the 1855 system.",
+    "sources": "The Oxford Companion to Wine; The World Atlas of Wine",
+    "confidence": "established",
+    "tags": [
+      "bordeaux",
+      "first_growth",
+      "pauillac"
+    ]
+  },
+  {
+    "id": "PK-138",
+    "domain": "producer_knowledge",
+    "difficulty": 1250,
+    "level": 7,
+    "format": "odd_one_out",
+    "question": "Which of these Champagne houses does NOT belong with the others as a member of the prestigious Grandes Marques association?",
+    "options": [
+      "Dom Pérignon",
+      "Krug",
+      "Bollinger",
+      "Pol Roger"
+    ],
+    "correct": 0,
+    "explanation": "Dom Pérignon is actually a prestige cuvée of Moët & Chandon, not an independent house. The other three are all historic independent Champagne houses and founding members of the Grandes Marques.",
+    "sources": "The Oxford Companion to Wine; WSET Level 3 Study Materials",
+    "confidence": "established",
+    "tags": [
+      "champagne",
+      "grandes_marques",
+      "prestige_cuvee"
+    ]
+  },
+  {
+    "id": "PK-139",
+    "domain": "producer_knowledge",
+    "difficulty": 1150,
+    "level": 7,
+    "format": "multiple_choice",
+    "question": "Penfolds Grange, Australia's most iconic wine, is primarily made from which grape variety?",
+    "options": [
+      "Cabernet Sauvignon",
+      "Shiraz",
+      "Grenache",
+      "Merlot"
+    ],
+    "correct": 1,
+    "explanation": "Penfolds Grange is predominantly Shiraz, often with a small percentage of Cabernet Sauvignon. Created by Max Schubert in the 1950s, it was Australia's first wine to gain international cult status and proved Shiraz could age magnificently.",
+    "sources": "The World Atlas of Wine; Wine Grapes",
+    "confidence": "established",
+    "tags": [
+      "australia",
+      "shiraz",
+      "cult_wine"
+    ]
+  },
+  {
+    "id": "PK-140",
+    "domain": "producer_knowledge",
+    "difficulty": 1300,
+    "level": 7,
+    "format": "match_pairs",
+    "question": "Match each Burgundy Grand Cru monopole to its owner:",
+    "pairs": {
+      "left": [
+        "La Romanée",
+        "Clos de Tart",
+        "La Grande Rue",
+        "Clos des Lambrays"
+      ],
+      "right": [
+        "Domaine François Lamarche",
+        "Moët Hennessy",
+        "Domaine des Lambrays",
+        "Comte Liger-Belair"
+      ]
+    },
+    "options": [],
+    "correct": [
+      3,
+      1,
+      0,
+      2
+    ],
+    "explanation": "These four Grand Cru monopoles represent some of Burgundy's most exclusive vineyards. Remember: monopoles are entirely owned by a single producer, making them extremely rare and valuable in Burgundy's fragmented landscape.",
+    "sources": "The Oxford Companion to Wine; WSET Diploma Study Materials",
+    "confidence": "established",
+    "tags": [
+      "burgundy",
+      "grand_cru",
+      "monopole"
+    ]
+  },
+  {
+    "id": "PK-141",
+    "domain": "producer_knowledge",
+    "difficulty": 1180,
+    "level": 7,
+    "format": "multiple_choice",
+    "question": "Which Italian producer is credited with creating the first Super Tuscan wine, Sassicaia, in the 1940s?",
+    "options": [
+      "Marchesi Antinori",
+      "Tenuta San Guido",
+      "Ornellaia",
+      "Biondi-Santi"
+    ],
+    "correct": 1,
+    "explanation": "Tenuta San Guido's Sassicaia, created by Marchese Mario Incisa della Rocchetta, was the first Super Tuscan. Planted with Cabernet Sauvignon cuttings from Château Lafite, it revolutionized Tuscan winemaking and inspired the entire Super Tuscan movement.",
+    "sources": "The Oxford Companion to Wine; Wine Grapes",
+    "confidence": "established",
+    "tags": [
+      "italy",
+      "super_tuscan",
+      "sassicaia"
+    ]
+  },
+  {
+    "id": "PK-142",
+    "domain": "producer_knowledge",
+    "difficulty": 1220,
+    "level": 7,
+    "format": "scenario",
+    "question": "A customer asks for a German Riesling from 'the estate that owns the most famous vineyard in the Mosel and whose wines can cost over $1000 per bottle.' Which producer should you recommend?",
+    "options": [
+      "Dr. Loosen",
+      "J.J. Prüm",
+      "Egon Müller",
+      "Fritz Haag"
+    ],
+    "correct": 2,
+    "explanation": "Egon Müller owns the legendary Scharzhofberg vineyard and produces some of the world's most expensive Rieslings. Their Trockenbeerenauslese can sell for thousands of dollars, representing the absolute pinnacle of German winemaking precision.",
+    "sources": "The World Atlas of Wine; WSET Level 3 Study Materials",
+    "confidence": "established",
+    "tags": [
+      "germany",
+      "riesling",
+      "scharzhofberg"
+    ]
+  },
+  {
+    "id": "PK-143",
+    "domain": "producer_knowledge",
+    "difficulty": 1160,
+    "level": 7,
+    "format": "multiple_choice",
+    "question": "Vega Sicilia in Ribera del Duero is famous for aging their flagship wine 'Único' for how many years before release?",
+    "options": [
+      "5 years",
+      "7 years",
+      "10 years",
+      "15 years"
+    ],
+    "correct": 2,
+    "explanation": "Vega Sicilia ages Único for approximately 10 years before release, combining traditional Spanish oak aging with modern techniques. This extended aging creates wines of extraordinary complexity and longevity, justifying their status as Spain's most prestigious red wines.",
+    "sources": "The Oxford Companion to Wine; The World Atlas of Wine",
+    "confidence": "established",
+    "tags": [
+      "spain",
+      "ribera_del_duero",
+      "aging"
+    ]
+  },
+  {
+    "id": "PK-144",
+    "domain": "producer_knowledge",
+    "difficulty": 1280,
+    "level": 7,
+    "format": "odd_one_out",
+    "question": "Which of these Napa Valley producers does NOT belong with the others as a cult Cabernet Sauvignon producer?",
+    "options": [
+      "Screaming Eagle",
+      "Harlan Estate",
+      "Aubert",
+      "Colgin"
+    ],
+    "correct": 2,
+    "explanation": "Aubert is famous for cult-status Chardonnay and Pinot Noir, not Cabernet Sauvignon. The other three are iconic Napa Cabernet producers whose wines sell for hundreds or thousands of dollars and require allocation lists to purchase.",
+    "sources": "The Wine Bible; GuildSomm",
+    "confidence": "established",
+    "tags": [
+      "napa_valley",
+      "cult_wine",
+      "cabernet_sauvignon"
+    ]
+  },
+  {
+    "id": "PK-145",
+    "domain": "producer_knowledge",
+    "difficulty": 1190,
+    "level": 7,
+    "format": "multiple_choice",
+    "question": "Which Rhône Valley producer is famous for their single-vineyard Côte-Rôtie wines 'La Mouline' and 'La Landonne'?",
+    "options": [
+      "M. Chapoutier",
+      "Paul Jaboulet Aîné",
+      "E. Guigal",
+      "Jean-Louis Chave"
+    ],
+    "correct": 2,
+    "explanation": "E. Guigal's 'La La La' wines (La Mouline, La Landonne, and La Turque) are among the world's most sought-after Syrahs. These single-vineyard Côte-Rôties spend 42 months in new oak and represent the pinnacle of Northern Rhône winemaking.",
+    "sources": "The World Atlas of Wine; WSET Level 3 Study Materials",
+    "confidence": "established",
+    "tags": [
+      "rhone_valley",
+      "cote_rotie",
+      "syrah"
+    ]
+  },
+  {
+    "id": "PK-146",
+    "domain": "producer_knowledge",
+    "difficulty": 1240,
+    "level": 7,
+    "format": "scenario",
+    "question": "A collector mentions wanting 'the Piedmont producer whose Barolo Riserva bottles are only released in exceptional vintages and feature a distinctive white label.' Which estate should you recommend?",
+    "options": [
+      "Giacomo Conterno",
+      "Gaja",
+      "Bruno Giacosa",
+      "Bartolo Mascarello"
+    ],
+    "correct": 2,
+    "explanation": "Bruno Giacosa's white labels indicate his Riserva wines made only in exceptional vintages from his own vineyards. These represent the absolute pinnacle of traditional Piedmontese winemaking and are among Italy's most collectible wines.",
+    "sources": "The Oxford Companion to Wine; Wine Grapes",
+    "confidence": "established",
+    "tags": [
+      "piedmont",
+      "barolo",
+      "riserva"
+    ]
+  },
+  {
+    "id": "PK-147",
+    "domain": "producer_knowledge",
+    "difficulty": 1650,
+    "level": 9,
+    "format": "multiple_choice",
+    "question": "Which Champagne house is famous for their exclusive use of the first pressing (cuvée) and never using the second pressing (taille)?",
+    "options": [
+      "Krug",
+      "Salon",
+      "Jacques Selosse",
+      "Bollinger"
+    ],
+    "correct": 1,
+    "explanation": "Salon uses only Chardonnay from the cuvée (first pressing), never the taille, creating their ethereally pure style. This obsessive selection from just Le Mesnil-sur-Oger makes them the purist's Champagne house.",
+    "sources": "The Oxford Companion to Wine; WSET Diploma materials",
+    "confidence": "established",
+    "tags": [
+      "champagne",
+      "production_methods",
+      "salon"
+    ]
+  },
+  {
+    "id": "PK-148",
+    "domain": "producer_knowledge",
+    "difficulty": 1580,
+    "level": 9,
+    "format": "odd_one_out",
+    "question": "Which of these Burgundy producers does NOT belong with the others in terms of their biodynamic farming approach?",
+    "options": [
+      "Domaine Leroy",
+      "Domaine de la Romanée-Conti",
+      "Domaine Leflaive",
+      "Domaine Roulot"
+    ],
+    "correct": 3,
+    "explanation": "Domaine Roulot practices organic viticulture but not biodynamics, while the other three are committed biodynamic practitioners. Jean-Marc Roulot focuses on precision and purity through organic methods rather than biodynamic preparations.",
+    "sources": "The Oxford Companion to Wine; GuildSomm",
+    "confidence": "established",
+    "tags": [
+      "burgundy",
+      "biodynamic",
+      "viticulture"
+    ]
+  },
+  {
+    "id": "PK-149",
+    "domain": "producer_knowledge",
+    "difficulty": 1620,
+    "level": 9,
+    "format": "scenario",
+    "question": "A customer wants to experience 'the Piedmont producer who still uses the traditional long macerations and large Slavonian oak that represents old-school Barolo at its finest.' Which producer should you recommend?",
+    "options": [
+      "Bartolo Mascarello",
+      "Angelo Gaja",
+      "Luciano Sandrone",
+      "Roberto Voerzio"
+    ],
+    "correct": 0,
+    "explanation": "Bartolo Mascarello epitomizes traditionalist Barolo with 30+ day macerations and aging in large Slavonian botti. His philosophy of 'wine is made in the vineyard' and rejection of modernist techniques makes him the purest expression of old-school Barolo.",
+    "sources": "Wine Grapes; The Oxford Companion to Wine",
+    "confidence": "established",
+    "tags": [
+      "piedmont",
+      "barolo",
+      "traditional_methods"
+    ]
+  },
+  {
+    "id": "PK-150",
+    "domain": "producer_knowledge",
+    "difficulty": 1700,
+    "level": 9,
+    "format": "match_pairs",
+    "question": "Match each iconic Rhône producer to their most famous single vineyard:",
+    "pairs": {
+      "left": [
+        "M. Chapoutier",
+        "E. Guigal",
+        "Paul Jaboulet Aîné",
+        "Jean-Louis Chave"
+      ],
+      "right": [
+        "La Chapelle",
+        "Le Pavillon",
+        "La Mouline",
+        "Cuvée Cathelin"
+      ]
+    },
+    "options": [],
+    "correct": [
+      1,
+      2,
+      0,
+      3
+    ],
+    "explanation": "These legendary Rhône sites define their producers: Chapoutier's Le Pavillon (Hermitage), Guigal's La Mouline (Côte-Rôtie), Jaboulet's La Chapelle (Hermitage), and Chave's Cuvée Cathelin (Hermitage). Each represents the pinnacle of Northern Rhône Syrah from these historic domaines.",
+    "sources": "The World Atlas of Wine; WSET Diploma materials",
+    "confidence": "established",
+    "tags": [
+      "rhone",
+      "single_vineyard",
+      "syrah"
+    ]
+  },
+  {
+    "id": "PK-151",
+    "domain": "producer_knowledge",
+    "difficulty": 1590,
+    "level": 9,
+    "format": "multiple_choice",
+    "question": "Which Loire Valley producer is famous for their sweet Vouvray made from botrytis-affected Chenin Blanc and their pioneering work with biodynamics?",
+    "options": [
+      "Domaine Huet",
+      "Didier Dagueneau",
+      "François Cotat",
+      "Nicolas Joly"
+    ],
+    "correct": 0,
+    "explanation": "Domaine Huet has been the reference for sweet Vouvray since 1928 and converted to biodynamics in 1988 under Noël Pinguet. Their Le Mont, Le Haut-Lieu, and Clos du Bourg vineyards produce some of Loire's most age-worthy sweet wines.",
+    "sources": "The Oxford Companion to Wine; Wine Grapes",
+    "confidence": "established",
+    "tags": [
+      "loire",
+      "vouvray",
+      "chenin_blanc",
+      "biodynamic"
+    ]
+  },
+  {
+    "id": "PK-152",
+    "domain": "producer_knowledge",
+    "difficulty": 1750,
+    "level": 10,
+    "format": "multiple_choice",
+    "question": "Which Burgundy producer is famous for their 'Cuvée Dames Hospitalieres' from Beaune Premier Cru and their pioneering use of whole-cluster fermentation in the 1980s?",
+    "options": [
+      "Louis Jadot",
+      "Bouchard Père & Fils",
+      "Joseph Drouhin",
+      "Hospices de Beaune"
+    ],
+    "correct": 3,
+    "explanation": "The Hospices de Beaune's Cuvée Dames Hospitalieres from Beaune Premier Cru is one of their most prestigious cuvées, and they pioneered whole-cluster fermentation techniques decades before it became fashionable. This charitable institution's auction wines represent Burgundy's philanthropic winemaking tradition.",
+    "sources": "The Oxford Companion to Wine; WSET Diploma materials",
+    "confidence": "established",
+    "tags": [
+      "burgundy",
+      "hospices",
+      "whole_cluster",
+      "beaune"
+    ]
+  },
+  {
+    "id": "PK-153",
+    "domain": "producer_knowledge",
+    "difficulty": 1820,
+    "level": 10,
+    "format": "scenario",
+    "question": "A Master Sommelier candidate asks about 'the Tuscan producer whose 1955 Brunello Riserva is considered the greatest Italian wine ever made and who maintained traditional methods until the 1970s.' Which estate should you discuss?",
+    "options": [
+      "Biondi-Santi",
+      "Casanova di Neri",
+      "Poggio di Sotto",
+      "Soldera"
+    ],
+    "correct": 0,
+    "explanation": "Biondi-Santi's 1955 Brunello Riserva is legendary among Italian wine cognoscenti, representing the pinnacle of traditional Sangiovese Grosso winemaking. Franco Biondi-Santi's adherence to long aging in large Slavonian oak created wines of extraordinary longevity that defined Brunello's reputation.",
+    "sources": "Wine Grapes; The Oxford Companion to Wine",
+    "confidence": "established",
+    "tags": [
+      "tuscany",
+      "brunello",
+      "biondi_santi",
+      "legendary_vintage"
+    ]
+  },
+  {
+    "id": "PK-154",
+    "domain": "producer_knowledge",
+    "difficulty": 1680,
+    "level": 9,
+    "format": "odd_one_out",
+    "question": "Which of these German Riesling producers does NOT belong with the others in terms of their Mosel region location?",
+    "options": [
+      "Egon Müller",
+      "J.J. Prüm",
+      "Dr. Loosen",
+      "Dönnhoff"
+    ],
+    "correct": 3,
+    "explanation": "Dönnhoff is located in the Nahe region, while the others are Mosel producers. Helmut Dönnhoff's Nahe estate produces exceptional Riesling from volcanic and slate soils, but geographically belongs to a different German wine region entirely.",
+    "sources": "The World Atlas of Wine; WSET Diploma materials",
+    "confidence": "established",
+    "tags": [
+      "germany",
+      "riesling",
+      "mosel",
+      "nahe"
+    ]
+  },
+  {
+    "id": "PK-155",
+    "domain": "producer_knowledge",
+    "difficulty": 1790,
+    "level": 10,
+    "format": "multiple_choice",
+    "question": "Which Piedmont producer is famous for their 'Sori San Lorenzo' vineyard and was among the first to introduce French barriques to Barbaresco in the 1960s?",
+    "options": [
+      "Angelo Gaja",
+      "Bruno Giacosa",
+      "Produttori del Barbaresco",
+      "Antinori"
+    ],
+    "correct": 0,
+    "explanation": "Angelo Gaja's Sori San Lorenzo vineyard and his introduction of French barriques revolutionized Barbaresco winemaking. His modernist approach in the 1960s-70s, including temperature-controlled fermentation and new oak aging, transformed Piedmont's international reputation.",
+    "sources": "Wine Grapes; The Oxford Companion to Wine",
+    "confidence": "established",
+    "tags": [
+      "piedmont",
+      "barbaresco",
+      "gaja",
+      "modernist"
+    ]
+  },
+  {
+    "id": "PK-156",
+    "domain": "producer_knowledge",
+    "difficulty": 1720,
+    "level": 10,
+    "format": "match_pairs",
+    "question": "Match each cult Napa Valley producer to their founding winemaker:",
+    "pairs": {
+      "left": [
+        "Screaming Eagle",
+        "Harlan Estate",
+        "Colgin Cellars",
+        "Bryant Family"
+      ],
+      "right": [
+        "Heidi Peterson Barrett",
+        "Bob Levy",
+        "Helen Turley",
+        "Michel Rolland"
+      ]
+    },
+    "options": [],
+    "correct": [
+      0,
+      1,
+      2,
+      0
+    ],
+    "explanation": "These cult Napa producers were defined by their founding winemakers: Screaming Eagle and Bryant Family both worked with Heidi Peterson Barrett, Harlan with Bob Levy, and Colgin with Helen Turley. These partnerships established the cult wine movement's signature style of ultra-premium Cabernet Sauvignon.",
+    "sources": "GuildSomm; The Wine Bible",
+    "confidence": "established",
+    "tags": [
+      "napa",
+      "cult_wines",
+      "winemakers",
+      "cabernet_sauvignon"
+    ]
+  },
+  {
+    "id": "PK-157",
+    "domain": "producer_knowledge",
+    "difficulty": 1650,
+    "level": 9,
+    "format": "scenario",
+    "question": "A collector asks for 'the Spanish producer from Rioja that still ages their wines in American oak for decades and releases Gran Reservas from the 1960s.' Which bodega should you recommend?",
+    "options": [
+      "Marqués de Riscal",
+      "López de Heredia",
+      "CVNE",
+      "La Rioja Alta"
+    ],
+    "correct": 1,
+    "explanation": "López de Heredia's Viña Tondonia releases wines with 20+ years of aging, including Gran Reservas from decades past. Their commitment to traditional American oak aging and extended cellaring creates wines of extraordinary complexity and longevity that epitomize classical Rioja.",
+    "sources": "The Oxford Companion to Wine; The World Atlas of Wine",
+    "confidence": "established",
+    "tags": [
+      "rioja",
+      "lopez_de_heredia",
+      "extended_aging",
+      "american_oak"
+    ]
+  },
+  {
+    "id": "PK-158",
+    "domain": "producer_knowledge",
+    "difficulty": 1780,
+    "level": 10,
+    "format": "multiple_choice",
+    "question": "Which Australian producer's 'Mount Edelstone' vineyard was planted in 1912 and represents one of the oldest Shiraz vineyards in Eden Valley?",
+    "options": [
+      "Penfolds",
+      "Henschke",
+      "Torbreck",
+      "Wolf Blass"
+    ],
+    "correct": 1,
+    "explanation": "Henschke's Mount Edelstone vineyard, planted in 1912, produces one of Australia's most age-worthy Shiraz wines from centenarian vines. The Henschke family's stewardship of these ancient Eden Valley vineyards represents Australia's viticultural heritage at its finest.",
+    "sources": "Wine Grapes; The Oxford Companion to Wine",
+    "confidence": "established",
+    "tags": [
+      "australia",
+      "henschke",
+      "old_vines",
+      "shiraz",
+      "eden_valley"
+    ]
+  },
+  {
+    "id": "PK-159",
+    "domain": "producer_knowledge",
+    "difficulty": 1840,
+    "level": 10,
+    "format": "odd_one_out",
+    "question": "Which of these Champagne houses does NOT belong with the others in terms of their ownership structure as farmer-producers (récoltant-manipulant)?",
+    "options": [
+      "Jacques Selosse",
+      "Pierre Peters",
+      "Egly-Ouriet",
+      "Pol Roger"
+    ],
+    "correct": 3,
+    "explanation": "Pol Roger is a négociant-manipulant (NM) house that purchases grapes, while the others are récoltant-manipulants (RM) who grow their own grapes. This distinction represents the fundamental divide in Champagne between grower-producers and traditional houses.",
+    "sources": "The Oxford Companion to Wine; WSET Diploma materials",
+    "confidence": "established",
+    "tags": [
+      "champagne",
+      "rm_nm",
+      "grower_champagne",
+      "ownership"
+    ]
+  },
+  {
+    "id": "PK-160",
+    "domain": "producer_knowledge",
+    "difficulty": 1720,
+    "level": 10,
+    "format": "scenario",
+    "question": "An advanced sommelier asks about 'the Oregon producer founded by a Burgundian family whose Pinot Noir from Dundee Hills helped establish Oregon's international reputation.' Which domaine should you discuss?",
+    "options": [
+      "Domaine Drouhin",
+      "Eyrie Vineyards",
+      "Archery Summit",
+      "Sokol Blosser"
+    ],
+    "correct": 0,
+    "explanation": "Domaine Drouhin Oregon, founded by the Burgundian Drouhin family in 1988, brought Burgundian expertise to Dundee Hills. Véronique Drouhin-Boss's winemaking helped legitimize Oregon Pinot Noir on the international stage through her family's established Burgundian reputation.",
+    "sources": "The Wine Bible; WSET Diploma materials",
+    "confidence": "established",
+    "tags": [
+      "oregon",
+      "domaine_drouhin",
+      "pinot_noir",
+      "burgundian_influence"
+    ]
+  },
+  {
+    "id": "PK-161",
+    "domain": "producer_knowledge",
+    "difficulty": 1860,
+    "level": 10,
+    "format": "match_pairs",
+    "question": "Match each Washington State producer to their signature vineyard source:",
+    "pairs": {
+      "left": [
+        "Quilceda Creek",
+        "Leonetti Cellar",
+        "Cayuse",
+        "L'Ecole No 41"
+      ],
+      "right": [
+        "Champoux Vineyard",
+        "Seven Hills Vineyard",
+        "En Chamberlin Vineyard",
+        "Pepper Bridge Vineyard"
+      ]
+    },
+    "options": [],
+    "correct": [
+      0,
+      3,
+      2,
+      1
+    ],
+    "explanation": "These Washington State pioneers are defined by their vineyard partnerships: Quilceda Creek with Champoux, Leonetti with Pepper Bridge, Cayuse with En Chamberlin, and L'Ecole No 41 with Seven Hills. These relationships established Washington's reputation for site-specific winemaking excellence.",
+    "sources": "GuildSomm; The Wine Bible",
+    "confidence": "consensus",
+    "tags": [
+      "washington_state",
+      "vineyard_sources",
+      "terroir",
+      "partnerships"
+    ]
+  },
+  {
+    "id": "PK-162",
+    "domain": "producer_knowledge",
+    "difficulty": 1650,
+    "level": 9,
+    "format": "multiple_choice",
+    "question": "Which Champagne house is famous for their 'Clos du Mesnil' blanc de blancs made exclusively from their walled vineyard in Le Mesnil-sur-Oger?",
+    "options": [
+      "Krug",
+      "Salon",
+      "Jacques Selosse",
+      "Bollinger"
+    ],
+    "correct": 0,
+    "explanation": "Krug's Clos du Mesnil comes from their 1.84-hectare walled vineyard planted entirely to Chardonnay in 1698. This single-vineyard Champagne represents the ultimate expression of Le Mesnil-sur-Oger's chalky terroir, with production limited to around 10,000 bottles in good years.",
+    "sources": "The Oxford Companion to Wine; Wine Atlas of the World",
+    "confidence": "established",
+    "tags": [
+      "champagne",
+      "krug",
+      "single_vineyard",
+      "blanc_de_blancs"
+    ]
+  },
+  {
+    "id": "PK-163",
+    "domain": "producer_knowledge",
+    "difficulty": 1580,
+    "level": 9,
+    "format": "odd_one_out",
+    "question": "Which of these producers does NOT belong with the others as a traditional producer from Barolo's commune of La Morra?",
+    "options": [
+      "Elio Altare",
+      "Giuseppe Rinaldi",
+      "Giacomo Conterno",
+      "Roberto Voerzio"
+    ],
+    "correct": 2,
+    "explanation": "Giacomo Conterno is based in Monforte d'Alba, not La Morra. The other three are all La Morra producers, though Altare and Voerzio represent the modernist movement while Rinaldi maintains traditionalist methods.",
+    "sources": "Wine Atlas of the World; The Oxford Companion to Wine",
+    "confidence": "established",
+    "tags": [
+      "barolo",
+      "la_morra",
+      "piedmont",
+      "communes"
+    ]
+  },
+  {
+    "id": "PK-164",
+    "domain": "producer_knowledge",
+    "difficulty": 1620,
+    "level": 9,
+    "format": "scenario",
+    "question": "A customer asks for 'the Burgundy producer whose Montrachet is considered the holy grail of white Burgundy and who was mentored by Henri Jayer.' Which domaine should you recommend?",
+    "options": [
+      "Domaine de la Romanée-Conti",
+      "Domaine Coche-Dury",
+      "Domaine Ramonet",
+      "Domaine Leflaive"
+    ],
+    "correct": 1,
+    "explanation": "Jean-François Coche-Dury learned from Henri Jayer and produces arguably Burgundy's most sought-after white wines, including a legendary Montrachet. His microscopic yields and perfectionist approach create wines that sell for thousands of dollars and are nearly impossible to obtain.",
+    "sources": "The Oxford Companion to Wine; GuildSomm",
+    "confidence": "established",
+    "tags": [
+      "burgundy",
+      "coche_dury",
+      "montrachet",
+      "henri_jayer"
+    ]
+  },
+  {
+    "id": "PK-165",
+    "domain": "producer_knowledge",
+    "difficulty": 1590,
+    "level": 9,
+    "format": "multiple_choice",
+    "question": "Alvaro Palacios is credited with revitalizing which Spanish wine region through his work with old-vine Garnacha?",
+    "options": [
+      "Jumilla",
+      "Priorat",
+      "Campo de Borja",
+      "Calatayud"
+    ],
+    "correct": 1,
+    "explanation": "Palacios transformed Priorat from obscurity to international acclaim starting in the 1990s with wines like 'L'Ermita' from century-old Garnacha vines. His success sparked a renaissance in this Catalonian region known for its llicorella slate soils and terraced vineyards.",
+    "sources": "The Oxford Companion to Wine; Wine Atlas of the World",
+    "confidence": "established",
+    "tags": [
+      "spain",
+      "priorat",
+      "alvaro_palacios",
+      "garnacha"
+    ]
+  },
+  {
+    "id": "PK-166",
+    "domain": "producer_knowledge",
+    "difficulty": 1640,
+    "level": 9,
+    "format": "match_pairs",
+    "question": "Match each cult Napa Valley producer to their signature vineyard location:",
+    "pairs": {
+      "left": [
+        "Screaming Eagle",
+        "Harlan Estate",
+        "Colgin Cellars",
+        "Bryant Family"
+      ],
+      "right": [
+        "Pritchard Hill",
+        "Oakville",
+        "Napa Valley (hillside)",
+        "Howell Mountain"
+      ]
+    },
+    "options": [],
+    "correct": [
+      1,
+      2,
+      0,
+      3
+    ],
+    "explanation": "These cult producers are defined by their specific terroir: Screaming Eagle from Oakville's famous bench, Harlan from their estate vineyard, Colgin from Pritchard Hill's volcanic soils, and Bryant Family from Howell Mountain's elevation and afternoon fog protection.",
+    "sources": "Wine Atlas of the World; GuildSomm",
+    "confidence": "established",
+    "tags": [
+      "napa_valley",
+      "cult_wines",
+      "vineyard_sites",
+      "terroir"
+    ]
+  },
+  {
+    "id": "PK-167",
+    "domain": "producer_knowledge",
+    "difficulty": 1560,
+    "level": 9,
+    "format": "multiple_choice",
+    "question": "Quilceda Creek in Washington State is most famous for producing exceptional wines from which grape variety?",
+    "options": [
+      "Syrah",
+      "Merlot",
+      "Cabernet Sauvignon",
+      "Riesling"
+    ],
+    "correct": 2,
+    "explanation": "Quilceda Creek, founded by Alex Golitzin (nephew of André Tchelistcheff), established Washington's reputation for world-class Cabernet Sauvignon. Their Columbia Valley Cabernet consistently ranks among America's finest, proving the region's potential for Bordeaux varieties.",
+    "sources": "The Oxford Companion to Wine; Wine Atlas of the World",
+    "confidence": "established",
+    "tags": [
+      "washington_state",
+      "quilceda_creek",
+      "cabernet_sauvignon",
+      "columbia_valley"
+    ]
+  },
+  {
+    "id": "PK-168",
+    "domain": "producer_knowledge",
+    "difficulty": 1670,
+    "level": 9,
+    "format": "scenario",
+    "question": "A collector mentions wanting 'the German estate that owns Wehlener Sonnenuhr's best sites and whose Auslesen can age for decades.' Which producer should you recommend?",
+    "options": [
+      "Dr. Loosen",
+      "J.J. Prüm",
+      "Egon Müller",
+      "Maximin Grünhaus"
+    ],
+    "correct": 1,
+    "explanation": "J.J. Prüm owns prime parcels in Wehlener Sonnenuhr and is legendary for their ethereal, long-lived Rieslings that develop incredible complexity over decades. Their blue-foil Auslesen represent the pinnacle of Mosel Riesling's aging potential.",
+    "sources": "The Oxford Companion to Wine; Wine Atlas of the World",
+    "confidence": "established",
+    "tags": [
+      "germany",
+      "mosel",
+      "jj_prum",
+      "wehlener_sonnenuhr"
+    ]
+  },
+  {
+    "id": "PK-169",
+    "domain": "producer_knowledge",
+    "difficulty": 1600,
+    "level": 9,
+    "format": "odd_one_out",
+    "question": "Which of these producers does NOT belong with the others as a pioneer of New Zealand Sauvignon Blanc?",
+    "options": [
+      "Cloudy Bay",
+      "Villa Maria",
+      "Oyster Bay",
+      "Seresin"
+    ],
+    "correct": 3,
+    "explanation": "Seresin is primarily known for biodynamic Pinot Noir, not Sauvignon Blanc. The other three were instrumental in establishing New Zealand's international reputation for Sauvignon Blanc, with Cloudy Bay leading the charge in Marlborough.",
+    "sources": "The Oxford Companion to Wine; Wine Atlas of the World",
+    "confidence": "established",
+    "tags": [
+      "new_zealand",
+      "sauvignon_blanc",
+      "marlborough",
+      "pioneers"
+    ]
+  },
+  {
+    "id": "PK-170",
+    "domain": "producer_knowledge",
+    "difficulty": 1610,
+    "level": 9,
+    "format": "multiple_choice",
+    "question": "Which Tuscan producer created 'Ornellaia' and helped establish Bolgheri as a premium wine region?",
+    "options": [
+      "Antinori",
+      "Tenuta San Guido",
+      "Lodovico Antinori",
+      "Frescobaldi"
+    ],
+    "correct": 2,
+    "explanation": "Lodovico Antinori (Piero's brother) founded Tenuta dell'Ornellaia in 1981, creating the iconic Bordeaux blend that put Bolgheri on the map alongside Sassicaia. His vision transformed this coastal Tuscan zone into Italy's answer to Bordeaux's Left Bank.",
+    "sources": "The Oxford Companion to Wine; Wine Atlas of the World",
+    "confidence": "established",
+    "tags": [
+      "tuscany",
+      "bolgheri",
+      "ornellaia",
+      "lodovico_antinori"
+    ]
+  },
+  {
+    "id": "PK-171",
+    "domain": "producer_knowledge",
+    "difficulty": 1580,
+    "level": 9,
+    "format": "multiple_choice",
+    "question": "Kanonkop Estate in Stellenbosch is most famous for their exceptional wines made from which grape variety?",
+    "options": [
+      "Cabernet Sauvignon",
+      "Pinotage",
+      "Syrah",
+      "Chenin Blanc"
+    ],
+    "correct": 1,
+    "explanation": "Kanonkop's 'Paul Sauer' Pinotage is considered South Africa's finest expression of this uniquely South African variety (Pinot Noir × Cinsaut cross). The estate has perfected Pinotage winemaking, creating wines that rival international Pinot Noir in elegance and complexity.",
+    "sources": "The Oxford Companion to Wine; Wine Atlas of the World",
+    "confidence": "established",
+    "tags": [
+      "south_africa",
+      "stellenbosch",
+      "kanonkop",
+      "pinotage"
+    ]
+  },
+  {
+    "id": "PK-172",
+    "domain": "producer_knowledge",
+    "difficulty": 1720,
+    "level": 10,
+    "format": "scenario",
+    "question": "A Master Sommelier candidate asks about 'the Burgundy producer whose Clos de Tart monopole was sold in 2017 after decades of family ownership, ending an era of traditional winemaking.' Which domaine should you discuss?",
+    "options": [
+      "Domaine du Clos de Tart (Mommessin)",
+      "Domaine de la Romanée-Conti",
+      "Domaine Dujac",
+      "Domaine Ponsot"
+    ],
+    "correct": 0,
+    "explanation": "Domaine du Clos de Tart was sold by the Mommessin family to François Pinault in 2017 for a reported €200 million, ending their stewardship since 1932. This 7.53-hectare Morey-Saint-Denis Grand Cru monopole represents one of Burgundy's most significant ownership changes in recent history.",
+    "sources": "The Oxford Companion to Wine; GuildSomm",
+    "confidence": "established",
+    "tags": [
+      "burgundy",
+      "clos_de_tart",
+      "monopole",
+      "ownership_change"
+    ]
+  },
+  {
+    "id": "PK-173",
+    "domain": "producer_knowledge",
+    "difficulty": 1750,
+    "level": 10,
+    "format": "multiple_choice",
+    "question": "Which Champagne house's 'Cuvée Sir Winston Churchill' is made exclusively in exceptional vintages and uses a secret blend known only to the cellar master?",
+    "options": [
+      "Pol Roger",
+      "Krug",
+      "Louis Roederer",
+      "Perrier-Jouët"
+    ],
+    "correct": 0,
+    "explanation": "Pol Roger created this prestige cuvée in honor of Churchill, who was a devoted customer. The exact blend composition remains one of Champagne's best-kept secrets, known only to the current cellar master, and it's only produced in years deemed worthy of Churchill's legacy.",
+    "sources": "The Oxford Companion to Wine; GuildSomm",
+    "confidence": "established",
+    "tags": [
+      "champagne",
+      "pol_roger",
+      "winston_churchill",
+      "prestige_cuvee"
+    ]
+  },
+  {
+    "id": "PK-174",
+    "domain": "producer_knowledge",
+    "difficulty": 1680,
+    "level": 10,
+    "format": "odd_one_out",
+    "question": "Which of these producers does NOT belong with the others as a member of the original 'Gang of Five' that revolutionized Rhône Valley winemaking in the 1980s?",
+    "options": [
+      "Jean-Luc Colombo",
+      "Michel Chapoutier",
+      "Jean-Louis Chave",
+      "Philippe Guigal"
+    ],
+    "correct": 2,
+    "explanation": "Jean-Louis Chave represents traditional Rhône winemaking spanning 24 generations, not the modernist 'Gang of Five' movement. The others were part of the group that introduced temperature-controlled fermentation, new oak, and international grape varieties to challenge traditional methods.",
+    "sources": "GuildSomm; The Oxford Companion to Wine",
+    "confidence": "consensus",
+    "tags": [
+      "rhone_valley",
+      "gang_of_five",
+      "modernist_movement",
+      "traditional_methods"
+    ]
+  },
+  {
+    "id": "PK-175",
+    "domain": "producer_knowledge",
+    "difficulty": 1740,
+    "level": 10,
+    "format": "match_pairs",
+    "question": "Match each historic Bordeaux estate to their specific contribution to winemaking innovation:",
+    "pairs": {
+      "left": [
+        "Château d'Yquem",
+        "Château Haut-Brion",
+        "Château Margaux",
+        "Château Pichon Baron"
+      ],
+      "right": [
+        "First to use stainless steel fermentation",
+        "Perfected noble rot wine production",
+        "Pioneered modern cellar hygiene",
+        "First classified growth to hire a consultant"
+      ]
+    },
+    "options": [],
+    "correct": [
+      1,
+      2,
+      0,
+      3
+    ],
+    "explanation": "These châteaux pioneered key innovations: d'Yquem perfected botrytis cultivation techniques, Haut-Brion introduced stainless steel in the 1960s, Margaux revolutionized cellar cleanliness under Paul Pontallier, and Pichon Baron was among the first to hire Michel Rolland as consultant.",
+    "sources": "The Oxford Companion to Wine; GuildSomm",
+    "confidence": "established",
+    "tags": [
+      "bordeaux",
+      "winemaking_innovation",
+      "historical_significance",
+      "technology"
+    ]
+  },
+  {
+    "id": "PK-176",
+    "domain": "producer_knowledge",
+    "difficulty": 1760,
+    "level": 10,
+    "format": "scenario",
+    "question": "An advanced collector asks about 'the Amarone producer whose appassimento method uses bamboo racks and whose wines are never released until at least 10 years after harvest.' Which estate exemplifies this traditional approach?",
+    "options": [
+      "Giuseppe Quintarelli",
+      "Dal Forno Romano",
+      "Allegrini",
+      "Masi"
+    ],
+    "correct": 0,
+    "explanation": "Giuseppe Quintarelli was legendary for his ultra-traditional methods, using bamboo racks for grape drying and aging wines far longer than legally required. His Amarone and Recioto represent the pinnacle of traditional Valpolicella winemaking, with some wines not released for 15+ years.",
+    "sources": "The Oxford Companion to Wine; GuildSomm",
+    "confidence": "established",
+    "tags": [
+      "amarone",
+      "quintarelli",
+      "traditional_methods",
+      "appassimento"
+    ]
+  },
+  {
+    "id": "PK-177",
+    "domain": "producer_knowledge",
+    "difficulty": 1650,
+    "level": 9,
+    "format": "multiple_choice",
+    "question": "Which Burgundy producer is famous for their monopole ownership of Clos de la Roche and their traditional winemaking methods using indigenous yeasts?",
+    "options": [
+      "Domaine Ponsot",
+      "Domaine Armand Rousseau",
+      "Domaine Georges Roumier",
+      "Domaine Dujac"
+    ],
+    "correct": 0,
+    "explanation": "Domaine Ponsot owns the monopole Clos de la Roche 'Cuvée Vieilles Vignes' and is renowned for their non-interventionist approach using only indigenous yeasts. Think of them as Burgundy's rebels with a cause—they've never used commercial yeasts and age their wines longer than most.",
+    "sources": "The Oxford Companion to Wine; WSET Level 3 Study Materials",
+    "confidence": "established",
+    "tags": [
+      "burgundy",
+      "monopole",
+      "traditional_methods"
+    ]
+  },
+  {
+    "id": "PK-178",
+    "domain": "producer_knowledge",
+    "difficulty": 1600,
+    "level": 9,
+    "format": "odd_one_out",
+    "question": "Which of these Champagne houses does NOT belong with the others in terms of their classification as a négociant-manipulant (NM)?",
+    "options": [
+      "Dom Pérignon",
+      "Egly-Ouriet",
+      "Pol Roger",
+      "Veuve Clicquot"
+    ],
+    "correct": 1,
+    "explanation": "Egly-Ouriet is a récoltant-manipulant (RM) who grows their own grapes, while the others are négociant-manipulants who purchase grapes from growers. Remember: RM producers are the artisanal grower-producers, while NM houses are the large commercial operations.",
+    "sources": "The Oxford Companion to Wine; GuildSomm",
+    "confidence": "established",
+    "tags": [
+      "champagne",
+      "classification",
+      "producer_types"
+    ]
+  },
+  {
+    "id": "PK-179",
+    "domain": "producer_knowledge",
+    "difficulty": 1580,
+    "level": 9,
+    "format": "multiple_choice",
+    "question": "Tenuta dell'Ornellaia in Bolgheri is most famous for which flagship wine that helped establish the region's reputation for Bordeaux-style blends?",
+    "options": [
+      "Ornellaia",
+      "Masseto",
+      "Le Serre Nuove",
+      "Le Volte"
+    ],
+    "correct": 0,
+    "explanation": "Ornellaia (the wine) put Ornellaia (the estate) and Bolgheri on the map as Italy's answer to Left Bank Bordeaux. While Masseto is their cult Merlot, Ornellaia is the flagship Cabernet-based blend that defined the estate's identity.",
+    "sources": "Wine Grapes; The World Atlas of Wine",
+    "confidence": "established",
+    "tags": [
+      "italy",
+      "bolgheri",
+      "super_tuscan"
+    ]
+  },
+  {
+    "id": "PK-180",
+    "domain": "producer_knowledge",
+    "difficulty": 1620,
+    "level": 9,
+    "format": "match_pairs",
+    "question": "Match each Napa Valley cult producer to their founding winemaker or key figure:",
+    "pairs": {
+      "left": [
+        "Screaming Eagle",
+        "Harlan Estate",
+        "Colgin Cellars",
+        "Bryant Family Vineyard"
+      ],
+      "right": [
+        "Helen Turley",
+        "Bill Harlan",
+        "Ann Colgin",
+        "Heidi Peterson Barrett"
+      ]
+    },
+    "options": [],
+    "correct": [
+      3,
+      1,
+      2,
+      0
+    ],
+    "explanation": "These cult producers are defined by their founding visionaries: Harlan built his empire, Colgin created her boutique winery, while the Barrett sisters (Heidi and Helen Turley) were the winemaking wizards behind multiple cult brands. Think of them as Napa's dream team of the 1990s.",
+    "sources": "The Wine Bible; GuildSomm",
+    "confidence": "established",
+    "tags": [
+      "napa_valley",
+      "cult_wines",
+      "winemakers"
+    ]
+  },
+  {
+    "id": "PK-181",
+    "domain": "producer_knowledge",
+    "difficulty": 1670,
+    "level": 9,
+    "format": "scenario",
+    "question": "A collector asks for 'the German estate that owns the famous Himmelreich vineyard in Graach and whose Riesling Spätlesen from great vintages can age for 50+ years.' Which producer should you recommend?",
+    "options": [
+      "J.J. Prüm",
+      "Dr. Loosen",
+      "Egon Müller",
+      "Weingut Keller"
+    ],
+    "correct": 0,
+    "explanation": "J.J. Prüm owns prime sites in Graacher Himmelreich and is legendary for producing Rieslings with extraordinary aging potential. Their wines are like German precision engineering in a bottle—built to last decades and improve with time.",
+    "sources": "The Oxford Companion to Wine; The World Atlas of Wine",
+    "confidence": "established",
+    "tags": [
+      "germany",
+      "mosel",
+      "riesling",
+      "aging_potential"
+    ]
+  },
+  {
+    "id": "PK-182",
+    "domain": "producer_knowledge",
+    "difficulty": 1550,
+    "level": 9,
+    "format": "multiple_choice",
+    "question": "Williams Selyem in Sonoma County is most famous for pioneering which winemaking technique that became standard practice for premium Pinot Noir in California?",
+    "options": [
+      "Whole cluster fermentation",
+      "Cold soaking and punch-downs",
+      "Native yeast fermentation",
+      "Stem inclusion"
+    ],
+    "correct": 1,
+    "explanation": "Williams Selyem popularized cold soaking (cold maceration) and manual punch-downs for Pinot Noir in California, techniques borrowed from Burgundy. They showed that California Pinot could be elegant and complex, not just jammy—think of them as the Burgundy whisperers of Sonoma.",
+    "sources": "The Wine Bible; GuildSomm",
+    "confidence": "established",
+    "tags": [
+      "sonoma",
+      "pinot_noir",
+      "winemaking_techniques"
+    ]
+  },
+  {
+    "id": "PK-183",
+    "domain": "producer_knowledge",
+    "difficulty": 2100,
+    "level": 11,
+    "format": "multiple_choice",
+    "question": "Which Champagne house is famous for their 'Clos Saint-Hilaire' monopole vineyard and their use of solera-style blending for their prestige cuvée?",
+    "options": [
+      "Billecart-Salmon",
+      "Krug",
+      "Pol Roger",
+      "Salon"
+    ],
+    "correct": 1,
+    "explanation": "Krug's 'Clos Saint-Hilaire' is their monopole vineyard in Villers-Marmery, and they're renowned for their solera-style perpetual reserve system that creates their Grande Cuvée. Think of it as Champagne's answer to sherry's complexity-building technique.",
+    "sources": "The Oxford Companion to Wine; GuildSomm",
+    "confidence": "established",
+    "tags": [
+      "champagne",
+      "krug",
+      "monopole",
+      "solera"
+    ]
+  },
+  {
+    "id": "PK-184",
+    "domain": "producer_knowledge",
+    "difficulty": 2250,
+    "level": 11,
+    "format": "odd_one_out",
+    "question": "Which of these Burgundy producers does NOT belong with the others in terms of their ownership of Grand Cru monopoles?",
+    "options": [
+      "Domaine de la Romanée-Conti",
+      "Domaine Taupenot-Merme",
+      "Domaine des Lambrays",
+      "Domaine de la Vougeraie"
+    ],
+    "correct": 1,
+    "explanation": "Domaine Taupenot-Merme owns no Grand Cru monopoles, while the others each control entire Grand Cru vineyards: DRC has Romanée-Conti and La Tâche, Lambrays owns Clos des Lambrays, and Vougeraie owns Clos Blanc de Vougeot. It's the difference between renting an apartment and owning the building.",
+    "sources": "The Oxford Companion to Wine; WSET Diploma Materials",
+    "confidence": "established",
+    "tags": [
+      "burgundy",
+      "monopole",
+      "grand_cru",
+      "domaine"
+    ]
+  },
+  {
+    "id": "PK-185",
+    "domain": "producer_knowledge",
+    "difficulty": 2150,
+    "level": 11,
+    "format": "multiple_choice",
+    "question": "Torres in Penedès is credited with introducing which revolutionary technique to Spanish winemaking in the 1960s?",
+    "options": [
+      "Temperature-controlled fermentation",
+      "Malolactic fermentation",
+      "Carbonic maceration",
+      "Extended lees aging"
+    ],
+    "correct": 0,
+    "explanation": "Miguel Torres Sr. introduced stainless steel tanks and temperature-controlled fermentation to Spain in the 1960s, transforming the quality potential of Spanish white wines. Before this, most Spanish wines fermented at ambient temperatures, often resulting in oxidized, heavy styles.",
+    "sources": "The Wine Bible; The Oxford Companion to Wine",
+    "confidence": "established",
+    "tags": [
+      "torres",
+      "spain",
+      "penedes",
+      "temperature_control"
+    ]
+  },
+  {
+    "id": "PK-186",
+    "domain": "producer_knowledge",
+    "difficulty": 2300,
+    "level": 11,
+    "format": "match_pairs",
+    "question": "Match each legendary Piedmont producer to their most famous single vineyard:",
+    "pairs": {
+      "left": [
+        "Giacomo Conterno",
+        "Bruno Giacosa",
+        "Bartolo Mascarello",
+        "Giuseppe Rinaldi"
+      ],
+      "right": [
+        "Cannubi",
+        "Falletto",
+        "Monfortino",
+        "Brunate-Le Coste"
+      ]
+    },
+    "options": [],
+    "correct": [
+      2,
+      1,
+      0,
+      3
+    ],
+    "explanation": "These are the holy grail vineyard-producer combinations in Barolo: Conterno's Monfortino from Cascina Francia, Giacosa's Falletto Riserva, Mascarello's Cannubi blend, and Rinaldi's Brunate-Le Coste. Each represents decades of single-vineyard mastery passed down through generations.",
+    "sources": "The Oxford Companion to Wine; GuildSomm",
+    "confidence": "established",
+    "tags": [
+      "piedmont",
+      "barolo",
+      "single_vineyard",
+      "legendary_producers"
+    ]
+  },
+  {
+    "id": "PK-187",
+    "domain": "producer_knowledge",
+    "difficulty": 2200,
+    "level": 11,
+    "format": "scenario",
+    "question": "A collector asks for 'the Loire Valley producer whose Sancerre Rouge from Clos de la Poussie represents the pinnacle of Loire Pinot Noir and who tragically died young, leaving behind a legendary reputation.' Which domaine should you recommend?",
+    "options": [
+      "Henri Bourgeois",
+      "Lucien Crochet",
+      "Didier Dagueneau",
+      "Pascal Cotat"
+    ],
+    "correct": 2,
+    "explanation": "Didier Dagueneau's Sancerre Rouge from Clos de la Poussie was considered the greatest expression of Loire Pinot Noir before his death in 2008. His perfectionist approach and innovative techniques elevated Loire reds to Burgundian levels of complexity and ageability.",
+    "sources": "The Wine Bible; GuildSomm",
+    "confidence": "established",
+    "tags": [
+      "loire",
+      "sancerre",
+      "pinot_noir",
+      "dagueneau"
+    ]
+  },
+  {
+    "id": "PK-188",
+    "domain": "producer_knowledge",
+    "difficulty": 2100,
+    "level": 11,
+    "format": "multiple_choice",
+    "question": "Screaming Eagle's original vineyard in Napa Valley was planted by which pioneering winemaker before Jean Phillips purchased the property?",
+    "options": [
+      "André Tchelistcheff",
+      "Joe Heitz",
+      "Robert Mondavi",
+      "Charles Wagner"
+    ],
+    "correct": 1,
+    "explanation": "Joe Heitz planted the original Screaming Eagle vineyard on the Oakville hillside in the 1940s before Jean Phillips bought the 57-acre property in 1986. Heitz's foresight in selecting this specific site laid the foundation for what would become Napa's most expensive Cabernet Sauvignon.",
+    "sources": "The Wine Bible; GuildSomm",
+    "confidence": "established",
+    "tags": [
+      "screaming_eagle",
+      "napa",
+      "heitz",
+      "phillips"
+    ]
+  },
+  {
+    "id": "PK-189",
+    "domain": "producer_knowledge",
+    "difficulty": 2350,
+    "level": 11,
+    "format": "odd_one_out",
+    "question": "Which of these German Riesling producers does NOT belong with the others in terms of their Saar region location?",
+    "options": [
+      "Egon Müller",
+      "Van Volxem",
+      "Peter Lauer",
+      "Zilliken"
+    ],
+    "correct": 2,
+    "explanation": "Peter Lauer is located in the Mosel's Ayl, while the others are all Saar producers: Egon Müller in Wiltingen, Van Volxem in Wiltingen, and Zilliken in Saarburg. The Saar's slate soils and cooler climate create a distinct mineral intensity that Mosel wines don't quite match.",
+    "sources": "The Oxford Companion to Wine; WSET Diploma Materials",
+    "confidence": "established",
+    "tags": [
+      "germany",
+      "saar",
+      "mosel",
+      "riesling"
+    ]
+  },
+  {
+    "id": "PK-190",
+    "domain": "producer_knowledge",
+    "difficulty": 2250,
+    "level": 11,
+    "format": "multiple_choice",
+    "question": "Biondi-Santi's monopole vineyard 'Il Greppo' in Montalcino was first planted with Brunello clones in which decade?",
+    "options": [
+      "1860s",
+      "1880s",
+      "1900s",
+      "1920s"
+    ],
+    "correct": 0,
+    "explanation": "Clemente Santi first planted Sangiovese Grosso (Brunello) clones at Il Greppo in the 1860s, making Biondi-Santi the founding family of Brunello di Montalcino. Their 1888 vintage is considered the first true Brunello, stored in their historic cellars for over a century.",
+    "sources": "The Oxford Companion to Wine; Wine Grapes",
+    "confidence": "established",
+    "tags": [
+      "biondi_santi",
+      "brunello",
+      "montalcino",
+      "il_greppo"
+    ]
+  },
+  {
+    "id": "PK-191",
+    "domain": "producer_knowledge",
+    "difficulty": 2400,
+    "level": 11,
+    "format": "scenario",
+    "question": "A Master Sommelier candidate asks about 'the Champagne house whose 'S' cuvée is made only from Chardonnay grown in Le Mesnil-sur-Oger and represents the ultimate expression of Côte des Blancs terroir.' Which house should you discuss?",
+    "options": [
+      "Salon",
+      "Krug",
+      "Jacques Selosse",
+      "Pierre Peters"
+    ],
+    "correct": 0,
+    "explanation": "Salon's 'S' (their only cuvée) is made exclusively from Chardonnay grown in their Le Mesnil-sur-Oger vineyards and only produced in exceptional vintages. This singular focus on one grape, one village, and one vision makes it Champagne's most terroir-specific expression.",
+    "sources": "The Oxford Companion to Wine; GuildSomm",
+    "confidence": "established",
+    "tags": [
+      "salon",
+      "champagne",
+      "le_mesnil",
+      "chardonnay"
+    ]
+  },
+  {
+    "id": "PK-192",
+    "domain": "producer_knowledge",
+    "difficulty": 2150,
+    "level": 11,
+    "format": "multiple_choice",
+    "question": "Henschke's 'Hill of Grace' vineyard in Eden Valley contains Shiraz vines planted in which decade?",
+    "options": [
+      "1850s",
+      "1860s",
+      "1870s",
+      "1880s"
+    ],
+    "correct": 1,
+    "explanation": "Henschke's Hill of Grace vineyard was planted in the 1860s by Nicolaus Stanitzki, making these among the world's oldest producing Shiraz vines. These 160-year-old vines on a single hillside produce one of Australia's most revered and age-worthy wines, with yields naturally declining to minuscule levels.",
+    "sources": "The Oxford Companion to Wine; The Wine Bible",
+    "confidence": "established",
+    "tags": [
+      "henschke",
+      "hill_of_grace",
+      "eden_valley",
+      "old_vines"
+    ]
+  },
+  {
+    "id": "PK-193",
+    "domain": "producer_knowledge",
+    "difficulty": 2300,
+    "level": 11,
+    "format": "match_pairs",
+    "question": "Match each Rhône Valley legend to their signature innovation:",
+    "pairs": {
+      "left": [
+        "Marcel Guigal",
+        "Henri Bonneau",
+        "Michel Chapoutier",
+        "Paul Jaboulet Aîné"
+      ],
+      "right": [
+        "Biodynamic viticulture",
+        "La La wines",
+        "Châteauneuf-du-Pape Réserve des Célestins",
+        "La Chapelle vineyard"
+      ]
+    },
+    "options": [],
+    "correct": [
+      1,
+      2,
+      0,
+      3
+    ],
+    "explanation": "These innovations defined modern Rhône: Guigal's La Mouline, La Landonne, and La Turque ('La La wines'), Bonneau's legendary Réserve des Célestins, Chapoutier's pioneering biodynamics, and Jaboulet's La Chapelle from Hermitage. Each represents a different path to Rhône greatness.",
+    "sources": "The Oxford Companion to Wine; GuildSomm",
+    "confidence": "established",
+    "tags": [
+      "rhone",
+      "guigal",
+      "bonneau",
+      "chapoutier",
+      "jaboulet"
+    ]
+  },
+  {
+    "id": "PK-194",
+    "domain": "producer_knowledge",
+    "difficulty": 2200,
+    "level": 11,
+    "format": "multiple_choice",
+    "question": "Domaine Huet in Vouvray was among the first Loire producers to adopt which farming practice in the 1990s?",
+    "options": [
+      "Organic viticulture",
+      "Biodynamic viticulture",
+      "Lutte raisonnée",
+      "Sustainable farming"
+    ],
+    "correct": 1,
+    "explanation": "Noël Pinguet led Domaine Huet's conversion to biodynamic viticulture in the 1990s, making them pioneers in the Loire Valley. Their Chenin Blanc vineyards now follow Rudolf Steiner's principles, producing wines with extraordinary mineral purity and aging potential that seem to capture the essence of Vouvray's limestone-clay soils.",
+    "sources": "The Oxford Companion to Wine; WSET Diploma Materials",
+    "confidence": "established",
+    "tags": [
+      "huet",
+      "vouvray",
+      "biodynamic",
+      "pinguet"
+    ]
+  },
+  {
+    "id": "PK-195",
+    "domain": "producer_knowledge",
+    "difficulty": 2250,
+    "level": 11,
+    "format": "scenario",
+    "question": "A collector mentions wanting 'the Tuscan producer whose Sassicaia was originally made only for family consumption and wasn't commercially released until the 1960s.' Which estate should you recommend?",
+    "options": [
+      "Tenuta dell'Ornellaia",
+      "Tenuta San Guido",
+      "Castello di Bolgheri",
+      "Le Macchiole"
+    ],
+    "correct": 1,
+    "explanation": "Tenuta San Guido's Sassicaia was created by Mario Incisa della Rocchetta in the 1940s as a personal project, inspired by Bordeaux wines. The first commercial release wasn't until 1968, making it the original Super Tuscan that proved Bolgheri could produce world-class Cabernet Sauvignon.",
+    "sources": "The Oxford Companion to Wine; The Wine Bible",
+    "confidence": "established",
+    "tags": [
+      "sassicaia",
+      "tenuta_san_guido",
+      "super_tuscan",
+      "bolgheri"
+    ]
+  },
+  {
+    "id": "PK-196",
+    "domain": "producer_knowledge",
+    "difficulty": 2350,
+    "level": 11,
+    "format": "odd_one_out",
+    "question": "Which of these Washington State producers does NOT belong with the others in terms of their focus on Bordeaux-style red blends?",
+    "options": [
+      "Quilceda Creek",
+      "Leonetti Cellar",
+      "Woodward Canyon",
+      "Chateau Ste. Michelle"
+    ],
+    "correct": 3,
+    "explanation": "Chateau Ste. Michelle produces a wide range of varietals and styles, while the others are boutique producers focused primarily on premium Bordeaux-style red blends. Think of it as the difference between a department store and three luxury boutiques specializing in bespoke suits.",
+    "sources": "The Wine Bible; GuildSomm",
+    "confidence": "established",
+    "tags": [
+      "washington",
+      "bordeaux_blends",
+      "boutique_producers",
+      "quilceda_creek"
+    ]
+  },
+  {
+    "id": "PK-197",
+    "domain": "producer_knowledge",
+    "difficulty": 2400,
+    "level": 11,
+    "format": "multiple_choice",
+    "question": "Giuseppe Quintarelli's Amarone production philosophy included which unique practice that set him apart from other Valpolicella producers?",
+    "options": [
+      "Using only indigenous yeasts",
+      "Extended appassimento for 6+ months",
+      "Aging in large Slavonian oak only",
+      "Blending in small amounts of Cabernet Sauvignon"
+    ],
+    "correct": 3,
+    "explanation": "Quintarelli was famous for secretly blending small amounts of Cabernet Sauvignon and Nebbiolo into his Amarone, a practice that was technically illegal but created extraordinary complexity. His 'Alzero' was openly labeled as a blend, but his regular Amarone contained these 'forbidden' grapes that added structure and longevity.",
+    "sources": "The Oxford Companion to Wine; GuildSomm",
+    "confidence": "consensus",
+    "tags": [
+      "quintarelli",
+      "amarone",
+      "cabernet_sauvignon",
+      "blending"
+    ]
+  },
+  {
+    "id": "PK-198",
+    "domain": "producer_knowledge",
+    "difficulty": 2200,
+    "level": 11,
+    "format": "multiple_choice",
+    "question": "Which Champagne house is famous for their 'Clos du Mesnil' blanc de blancs and their philosophy of 'one plot, one cuvée' that showcases individual terroir expressions?",
+    "options": [
+      "Krug",
+      "Salon",
+      "Jacques Selosse",
+      "Bollinger"
+    ],
+    "correct": 0,
+    "explanation": "Krug's 'Clos du Mesnil' comes from their walled 1.84-hectare vineyard in Le Mesnil-sur-Oger, representing their ultimate expression of single-vineyard Chardonnay. Think of Krug as the Burgundian approach to Champagne - they're obsessed with showcasing individual plots and vintages rather than house style consistency.",
+    "sources": "The Oxford Companion to Wine; Wine Grapes",
+    "confidence": "established",
+    "tags": [
+      "champagne",
+      "krug",
+      "terroir",
+      "blanc_de_blancs"
+    ]
+  },
+  {
+    "id": "PK-199",
+    "domain": "producer_knowledge",
+    "difficulty": 2350,
+    "level": 11,
+    "format": "odd_one_out",
+    "question": "Which of these legendary Burgundy producers does NOT belong with the others in terms of their approach to whole-cluster fermentation?",
+    "options": [
+      "Domaine de la Romanée-Conti",
+      "Domaine Leroy",
+      "Domaine Roulot",
+      "Henri Jayer"
+    ],
+    "correct": 2,
+    "explanation": "Domaine Roulot is primarily a white wine producer in Meursault, while the others are famous red wine producers who utilize whole-cluster fermentation techniques. Jean-Marc Roulot's genius lies in his precise handling of Chardonnay, not stems and clusters like his red wine counterparts.",
+    "sources": "The Oxford Companion to Wine; GuildSomm",
+    "confidence": "established",
+    "tags": [
+      "burgundy",
+      "winemaking",
+      "whole_cluster",
+      "domaine_roulot"
+    ]
+  },
+  {
+    "id": "PK-200",
+    "domain": "producer_knowledge",
+    "difficulty": 2100,
+    "level": 11,
+    "format": "scenario",
+    "question": "A collector asks for 'the Napa Valley producer whose Cabernet Sauvignon from Martha's Vineyard helped establish the region's reputation in the famous 1976 Paris Tasting.' Which estate should you recommend?",
+    "options": [
+      "Stag's Leap Wine Cellars",
+      "Heitz Wine Cellars",
+      "Ridge Vineyards",
+      "Opus One"
+    ],
+    "correct": 1,
+    "explanation": "Heitz Wine Cellars' Martha's Vineyard Cabernet Sauvignon was one of the legendary wines that competed in the 1976 Judgment of Paris, though Stag's Leap Wine Cellars' S.L.V. actually won the red category. Joe Heitz's Martha's Vineyard remains an icon of Napa's eucalyptus-kissed terroir expression.",
+    "sources": "The Wine Bible; GuildSomm",
+    "confidence": "established",
+    "tags": [
+      "napa_valley",
+      "heitz",
+      "marthas_vineyard",
+      "judgment_of_paris"
+    ]
+  }
+]

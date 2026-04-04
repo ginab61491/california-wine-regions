@@ -2,7 +2,7 @@
   {
     "id": "FP-001",
     "domain": "food_pairing",
-    "difficulty": 233,
+    "difficulty": 172,
     "level": 1,
     "format": "multiple_choice",
     "question": "Which classic pairing principle explains why a squeeze of lemon on fried fish works similarly to pairing Muscadet with oysters?",
@@ -25,7 +25,7 @@
   {
     "id": "FP-002",
     "domain": "food_pairing",
-    "difficulty": 204,
+    "difficulty": 214,
     "level": 1,
     "format": "odd_one_out",
     "question": "Which food does NOT follow the principle of 'what grows together goes together'?",
@@ -47,7 +47,7 @@
   {
     "id": "FP-003",
     "domain": "food_pairing",
-    "difficulty": 166,
+    "difficulty": 235,
     "level": 1,
     "format": "multiple_choice",
     "question": "Why do tannic red wines pair well with grilled red meat?",
@@ -70,7 +70,7 @@
   {
     "id": "FP-004",
     "domain": "food_pairing",
-    "difficulty": 277,
+    "difficulty": 166,
     "level": 1,
     "format": "scenario",
     "question": "A guest orders a plate of fresh asparagus with hollandaise sauce. Which wine would you recommend?",
@@ -93,8 +93,8 @@
   {
     "id": "FP-005",
     "domain": "food_pairing",
-    "difficulty": 418,
-    "level": 2,
+    "difficulty": 603,
+    "level": 4,
     "format": "multiple_choice",
     "question": "What compound in artichokes makes wine taste sweeter, complicating pairing?",
     "options": [
@@ -116,8 +116,8 @@
   {
     "id": "FP-006",
     "domain": "food_pairing",
-    "difficulty": 456,
-    "level": 2,
+    "difficulty": 562,
+    "level": 4,
     "format": "match_pairs",
     "question": "Match each sauce type with its ideal wine pairing principle.",
     "pairs": {
@@ -152,8 +152,8 @@
   {
     "id": "FP-007",
     "domain": "food_pairing",
-    "difficulty": 447,
-    "level": 2,
+    "difficulty": 591,
+    "level": 4,
     "format": "multiple_choice",
     "question": "When pairing wine with umami-rich foods like aged Parmesan or miso, what happens to the perception of tannic red wines?",
     "options": [
@@ -175,8 +175,8 @@
   {
     "id": "FP-008",
     "domain": "food_pairing",
-    "difficulty": 567,
-    "level": 3,
+    "difficulty": 877,
+    "level": 5,
     "format": "scenario",
     "question": "A table orders a cheese course featuring Roquefort, Comté, Époisses, and Crottin de Chavignol. They want one bottle for all four cheeses. What is your best recommendation?",
     "options": [
@@ -199,8 +199,8 @@
   {
     "id": "FP-009",
     "domain": "food_pairing",
-    "difficulty": 653,
-    "level": 3,
+    "difficulty": 756,
+    "level": 5,
     "format": "odd_one_out",
     "question": "Which pairing does NOT rely on the principle of contrasting flavors?",
     "options": [
@@ -221,8 +221,8 @@
   {
     "id": "FP-010",
     "domain": "food_pairing",
-    "difficulty": 819,
-    "level": 4,
+    "difficulty": 1094,
+    "level": 6,
     "format": "multiple_choice",
     "question": "How does the cooking method of braising versus grilling affect wine pairing for the same cut of beef?",
     "options": [
@@ -245,8 +245,8 @@
   {
     "id": "FP-011",
     "domain": "food_pairing",
-    "difficulty": 769,
-    "level": 4,
+    "difficulty": 1066,
+    "level": 6,
     "format": "match_pairs",
     "question": "Match each difficult-to-pair food with the best wine strategy.",
     "pairs": {
@@ -282,8 +282,8 @@
   {
     "id": "FP-012",
     "domain": "food_pairing",
-    "difficulty": 797,
-    "level": 4,
+    "difficulty": 1068,
+    "level": 6,
     "format": "scenario",
     "question": "A guest is having a 7-course kaiseki meal featuring raw fish, grilled eel, pickled vegetables, and miso soup. They request wine pairings for the entire meal. Which approach is most appropriate?",
     "options": [
@@ -306,8 +306,8 @@
   {
     "id": "FP-013",
     "domain": "food_pairing",
-    "difficulty": 1076,
-    "level": 5,
+    "difficulty": 1192,
+    "level": 7,
     "format": "multiple_choice",
     "question": "In the context of wine and food pairing, what is the 'bridge ingredient' technique?",
     "options": [
@@ -329,8 +329,8 @@
   {
     "id": "FP-014",
     "domain": "food_pairing",
-    "difficulty": 1043,
-    "level": 5,
+    "difficulty": 1257,
+    "level": 7,
     "format": "multiple_choice",
     "question": "Why does Muscadet sur lie pair exceptionally well with raw oysters beyond just acidity?",
     "options": [
@@ -353,8 +353,8 @@
   {
     "id": "FP-015",
     "domain": "food_pairing",
-    "difficulty": 1236,
-    "level": 6,
+    "difficulty": 1315,
+    "level": 8,
     "format": "scenario",
     "question": "A guest with advanced wine knowledge orders venison tartare with a quail egg yolk, truffle shavings, and a hazelnut vinaigrette. Which wine pairing demonstrates the deepest understanding of flavor interactions?",
     "options": [
@@ -378,8 +378,8 @@
   {
     "id": "FP-016",
     "domain": "food_pairing",
-    "difficulty": 1149,
-    "level": 6,
+    "difficulty": 1441,
+    "level": 8,
     "format": "multiple_choice",
     "question": "Which volatile compound shared by both Gewürztraminer and lychee-glazed duck makes the pairing work on a molecular level?",
     "options": [
@@ -402,8 +402,8 @@
   {
     "id": "FP-017",
     "domain": "food_pairing",
-    "difficulty": 1422,
-    "level": 7,
+    "difficulty": 1646,
+    "level": 9,
     "format": "odd_one_out",
     "question": "Which pairing does NOT demonstrate a scientifically validated synergistic interaction?",
     "options": [
@@ -425,8 +425,8 @@
   {
     "id": "FP-018",
     "domain": "food_pairing",
-    "difficulty": 1347,
-    "level": 7,
+    "difficulty": 1634,
+    "level": 9,
     "format": "multiple_choice",
     "question": "When capsaicin from chili peppers binds to TRPV1 receptors, how does ethanol in wine interact with this process?",
     "options": [
@@ -449,8 +449,8 @@
   {
     "id": "FP-019",
     "domain": "food_pairing",
-    "difficulty": 1646,
-    "level": 8,
+    "difficulty": 1743,
+    "level": 10,
     "format": "scenario",
     "question": "You are building a wine pairing for a dish of A5 Wagyu beef tataki with ponzu, daikon, and shiso. The wine list includes: (A) 2015 Burgundy Premier Cru, (B) 2018 Barossa Shiraz, (C) 2010 Champagne Vintage Brut, (D) 2016 Willamette Valley Pinot Noir. Which pairing best addresses ALL components?",
     "options": [
@@ -474,8 +474,8 @@
   {
     "id": "FP-020",
     "domain": "food_pairing",
-    "difficulty": 1941,
-    "level": 9,
+    "difficulty": 2239,
+    "level": 11,
     "format": "multiple_choice",
     "question": "In molecular gastronomy pairing theory, the 'food-bridge hypothesis' proposes that successful pairings share key volatile compounds. Which analytical technique is primarily used to identify these shared volatiles?",
     "options": [
@@ -498,7 +498,7 @@
   {
     "id": "FP-021",
     "domain": "food_pairing",
-    "difficulty": 251,
+    "difficulty": 137,
     "level": 1,
     "format": "multiple_choice",
     "question": "Which is the most important rule when pairing wine with dessert?",
@@ -521,7 +521,7 @@
   {
     "id": "FP-022",
     "domain": "food_pairing",
-    "difficulty": 181,
+    "difficulty": 240,
     "level": 1,
     "format": "scenario",
     "question": "A guest orders a Caesar salad as their starter. Which wine should you suggest?",
@@ -544,8 +544,8 @@
   {
     "id": "FP-023",
     "domain": "food_pairing",
-    "difficulty": 401,
-    "level": 2,
+    "difficulty": 637,
+    "level": 4,
     "format": "multiple_choice",
     "question": "Which cheese category generally pairs best with tannic red wines?",
     "options": [
@@ -567,8 +567,8 @@
   {
     "id": "FP-024",
     "domain": "food_pairing",
-    "difficulty": 678,
-    "level": 3,
+    "difficulty": 723,
+    "level": 5,
     "format": "multiple_choice",
     "question": "Why does Champagne pair so well with potato chips?",
     "options": [
@@ -591,8 +591,8 @@
   {
     "id": "FP-025",
     "domain": "food_pairing",
-    "difficulty": 627,
-    "level": 3,
+    "difficulty": 784,
+    "level": 5,
     "format": "match_pairs",
     "question": "Match each regional cheese with its classic regional wine partner.",
     "pairs": {
@@ -627,8 +627,8 @@
   {
     "id": "FP-026",
     "domain": "food_pairing",
-    "difficulty": 867,
-    "level": 4,
+    "difficulty": 1096,
+    "level": 6,
     "format": "odd_one_out",
     "question": "Which pairing strategy is NOT appropriate for a dish with high chili heat?",
     "options": [
@@ -651,8 +651,8 @@
   {
     "id": "FP-027",
     "domain": "food_pairing",
-    "difficulty": 936,
-    "level": 5,
+    "difficulty": 1280,
+    "level": 7,
     "format": "scenario",
     "question": "A guest requests a wine pairing for bone marrow on toast with parsley and caper salad. Which wine best addresses both the rich marrow and the bright condiment?",
     "options": [
@@ -675,8 +675,8 @@
   {
     "id": "FP-028",
     "domain": "food_pairing",
-    "difficulty": 1070,
-    "level": 5,
+    "difficulty": 1185,
+    "level": 7,
     "format": "multiple_choice",
     "question": "What is the role of salivary proline-rich proteins (PRPs) in the perception of food and wine pairings involving tannins?",
     "options": [
@@ -699,8 +699,8 @@
   {
     "id": "FP-029",
     "domain": "food_pairing",
-    "difficulty": 1253,
-    "level": 6,
+    "difficulty": 1440,
+    "level": 8,
     "format": "multiple_choice",
     "question": "Regarding the Maillard reaction and wine pairing, which statement is most accurate?",
     "options": [
@@ -723,8 +723,8 @@
   {
     "id": "FP-030",
     "domain": "food_pairing",
-    "difficulty": 1436,
-    "level": 7,
+    "difficulty": 1635,
+    "level": 9,
     "format": "odd_one_out",
     "question": "Which compound is NOT relevant to understanding why certain wines pair well with mushroom-based dishes?",
     "options": [
@@ -747,8 +747,8 @@
   {
     "id": "FP-031",
     "domain": "food_pairing",
-    "difficulty": 1346,
-    "level": 7,
+    "difficulty": 1577,
+    "level": 9,
     "format": "scenario",
     "question": "You are pairing wines for a multi-course tasting featuring sea urchin with yuzu, followed by squab with cherry jus, then aged Gruyère with honeycomb. The sommelier team proposes: Course 1: Fino Sherry, Course 2: Cornas (Northern Rhône Syrah), Course 3: Jurançon moelleux. What is the flaw in this progression?",
     "options": [
@@ -771,8 +771,8 @@
   {
     "id": "FP-032",
     "domain": "food_pairing",
-    "difficulty": 1667,
-    "level": 8,
+    "difficulty": 1921,
+    "level": 10,
     "format": "multiple_choice",
     "question": "Research on trigeminal interactions shows that carbonation in sparkling wine activates which receptor, and how does this affect pairing with fatty foods?",
     "options": [
@@ -796,8 +796,8 @@
   {
     "id": "FP-033",
     "domain": "food_pairing",
-    "difficulty": 1751,
-    "level": 9,
+    "difficulty": 2037,
+    "level": 11,
     "format": "multiple_choice",
     "question": "In studies of retronasal olfaction during food-wine interaction, what phenomenon explains why a pairing can create entirely new aromas not present in either the food or wine alone?",
     "options": [
@@ -820,7 +820,7 @@
   {
     "id": "FP-034",
     "domain": "food_pairing",
-    "difficulty": 209,
+    "difficulty": 200,
     "level": 1,
     "format": "multiple_choice",
     "question": "Which wine style generally pairs best with spicy Thai green curry?",
@@ -843,8 +843,8 @@
   {
     "id": "FP-035",
     "domain": "food_pairing",
-    "difficulty": 1668,
-    "level": 8,
+    "difficulty": 1889,
+    "level": 10,
     "format": "odd_one_out",
     "question": "Which interaction is NOT a documented mechanism by which food modifies wine perception?",
     "options": [
@@ -867,8 +867,8 @@
   {
     "id": "FP-036",
     "domain": "food_pairing",
-    "difficulty": 1786,
-    "level": 9,
+    "difficulty": 2030,
+    "level": 11,
     "format": "scenario",
     "question": "A Master Sommelier candidate must pair a single wine with a dish of seared diver scallop, cauliflower purée, brown butter, capers, raisins, and pine nuts. Considering textural weight, acid balance, aromatic bridges, and sweet-savory interplay, which wine shows the deepest understanding?",
     "options": [
@@ -891,8 +891,8 @@
   {
     "id": "FP-037",
     "domain": "food_pairing",
-    "difficulty": 1773,
-    "level": 9,
+    "difficulty": 2479,
+    "level": 11,
     "format": "match_pairs",
     "question": "Match each volatile compound bridge to the correct food-wine pairing it explains.",
     "pairs": {
@@ -930,8 +930,8 @@
   {
     "id": "FP-038",
     "domain": "food_pairing",
-    "difficulty": 1147,
-    "level": 6,
+    "difficulty": 1490,
+    "level": 8,
     "format": "scenario",
     "question": "A guest wants to pair wine with a Thanksgiving meal featuring roast turkey, cranberry sauce, sweet potato casserole, and green bean casserole. Which single bottle addresses the broadest range of these dishes?",
     "options": [
@@ -954,7 +954,7 @@
   {
     "id": "FP-039",
     "domain": "food_pairing",
-    "difficulty": 245,
+    "difficulty": 225,
     "level": 1,
     "format": "multiple_choice",
     "question": "What is the simplest guideline for matching wine weight to food weight?",
@@ -977,8 +977,8 @@
   {
     "id": "FP-040",
     "domain": "food_pairing",
-    "difficulty": 1585,
-    "level": 8,
+    "difficulty": 1859,
+    "level": 10,
     "format": "multiple_choice",
     "question": "In the context of multi-sensory perception, how does the visual presentation of a dish influence wine pairing perception according to crossmodal correspondence research?",
     "options": [
@@ -1001,7 +1001,7 @@
   {
     "id": "HC-001",
     "domain": "history_culture",
-    "difficulty": 167,
+    "difficulty": 154,
     "level": 1,
     "format": "multiple_choice",
     "question": "What devastating vine pest arrived in Europe in the 1860s, destroying most of the continent's vineyards?",
@@ -1024,7 +1024,7 @@
   {
     "id": "HC-002",
     "domain": "history_culture",
-    "difficulty": 261,
+    "difficulty": 206,
     "level": 1,
     "format": "multiple_choice",
     "question": "Which event in 1976 shocked the wine world by having California wines beat French wines in a blind tasting?",
@@ -1047,7 +1047,7 @@
   {
     "id": "HC-003",
     "domain": "history_culture",
-    "difficulty": 219,
+    "difficulty": 105,
     "level": 1,
     "format": "odd_one_out",
     "question": "Which of these was NOT a first-growth (Premier Cru) in the original 1855 Bordeaux Classification?",
@@ -1070,7 +1070,7 @@
   {
     "id": "HC-004",
     "domain": "history_culture",
-    "difficulty": 170,
+    "difficulty": 222,
     "level": 1,
     "format": "multiple_choice",
     "question": "Which country is considered the birthplace of winemaking, with evidence of viticulture dating back approximately 8,000 years?",
@@ -1094,7 +1094,7 @@
   {
     "id": "HC-005",
     "domain": "history_culture",
-    "difficulty": 279,
+    "difficulty": 189,
     "level": 1,
     "format": "scenario",
     "question": "A guest asks whether Dom Pérignon really 'invented' Champagne. What is the historically accurate response?",
@@ -1118,7 +1118,7 @@
   {
     "id": "HC-006",
     "domain": "history_culture",
-    "difficulty": 182,
+    "difficulty": 132,
     "level": 1,
     "format": "match_pairs",
     "question": "Match each wine law milestone with its country and approximate year.",
@@ -1162,8 +1162,8 @@
   {
     "id": "HC-007",
     "domain": "history_culture",
-    "difficulty": 405,
-    "level": 2,
+    "difficulty": 669,
+    "level": 4,
     "format": "multiple_choice",
     "question": "What was the primary solution that saved European viticulture from phylloxera?",
     "options": [
@@ -1186,8 +1186,8 @@
   {
     "id": "HC-008",
     "domain": "history_culture",
-    "difficulty": 431,
-    "level": 2,
+    "difficulty": 570,
+    "level": 4,
     "format": "multiple_choice",
     "question": "What role did Louis Pasteur play in the history of wine?",
     "options": [
@@ -1210,8 +1210,8 @@
   {
     "id": "HC-009",
     "domain": "history_culture",
-    "difficulty": 450,
-    "level": 2,
+    "difficulty": 693,
+    "level": 4,
     "format": "odd_one_out",
     "question": "Which figure was NOT directly instrumental in the development of California's modern wine industry?",
     "options": [
@@ -1234,8 +1234,8 @@
   {
     "id": "HC-010",
     "domain": "history_culture",
-    "difficulty": 550,
-    "level": 3,
+    "difficulty": 760,
+    "level": 5,
     "format": "multiple_choice",
     "question": "US Prohibition (1920-1933) devastated the American wine industry, but which legal loophole allowed some winemaking to continue?",
     "options": [
@@ -1257,8 +1257,8 @@
   {
     "id": "HC-011",
     "domain": "history_culture",
-    "difficulty": 593,
-    "level": 3,
+    "difficulty": 791,
+    "level": 5,
     "format": "match_pairs",
     "question": "Match each ancient civilization with its primary contribution to wine history.",
     "pairs": {
@@ -1295,8 +1295,8 @@
   {
     "id": "HC-012",
     "domain": "history_culture",
-    "difficulty": 521,
-    "level": 3,
+    "difficulty": 792,
+    "level": 5,
     "format": "scenario",
     "question": "A guest asks why Château Mouton Rothschild was not originally classified as a First Growth in 1855. What is the correct historical explanation?",
     "options": [
@@ -1319,8 +1319,8 @@
   {
     "id": "HC-013",
     "domain": "history_culture",
-    "difficulty": 800,
-    "level": 4,
+    "difficulty": 1086,
+    "level": 6,
     "format": "multiple_choice",
     "question": "Which specific wines won in each category at the 1976 Judgment of Paris?",
     "options": [
@@ -1343,8 +1343,8 @@
   {
     "id": "HC-014",
     "domain": "history_culture",
-    "difficulty": 858,
-    "level": 4,
+    "difficulty": 1039,
+    "level": 6,
     "format": "multiple_choice",
     "question": "What was André Tchelistcheff's most significant technical contribution to Napa Valley winemaking?",
     "options": [
@@ -1367,8 +1367,8 @@
   {
     "id": "HC-015",
     "domain": "history_culture",
-    "difficulty": 1060,
-    "level": 5,
+    "difficulty": 1265,
+    "level": 7,
     "format": "odd_one_out",
     "question": "Which event did NOT directly result from the phylloxera crisis?",
     "options": [
@@ -1391,8 +1391,8 @@
   {
     "id": "HC-016",
     "domain": "history_culture",
-    "difficulty": 1051,
-    "level": 5,
+    "difficulty": 1185,
+    "level": 7,
     "format": "multiple_choice",
     "question": "What was the significance of the 1976 Judgment of Paris for the global wine industry beyond just California?",
     "options": [
@@ -1414,8 +1414,8 @@
   {
     "id": "HC-017",
     "domain": "history_culture",
-    "difficulty": 954,
-    "level": 5,
+    "difficulty": 1151,
+    "level": 7,
     "format": "scenario",
     "question": "A collector shows you a bottle labeled 'Château Lafite 1870.' They claim it was pre-phylloxera and therefore grown on ungrafted vines. Is this plausible?",
     "options": [
@@ -1439,8 +1439,8 @@
   {
     "id": "HC-018",
     "domain": "history_culture",
-    "difficulty": 1270,
-    "level": 6,
+    "difficulty": 1329,
+    "level": 8,
     "format": "multiple_choice",
     "question": "Which ancient Roman author wrote the most comprehensive treatise on viticulture and wine, including descriptions of grape varieties, vineyard management, and winemaking techniques?",
     "options": [
@@ -1462,8 +1462,8 @@
   {
     "id": "HC-019",
     "domain": "history_culture",
-    "difficulty": 1146,
-    "level": 6,
+    "difficulty": 1388,
+    "level": 8,
     "format": "match_pairs",
     "question": "Match each historical figure to their key contribution to wine history.",
     "pairs": {
@@ -1500,8 +1500,8 @@
   {
     "id": "HC-020",
     "domain": "history_culture",
-    "difficulty": 1383,
-    "level": 7,
+    "difficulty": 1506,
+    "level": 9,
     "format": "multiple_choice",
     "question": "What was the historical significance of the Winzergenossenschaft (cooperative winery) movement in Germany, and when did it originate?",
     "options": [
@@ -1524,8 +1524,8 @@
   {
     "id": "HC-021",
     "domain": "history_culture",
-    "difficulty": 1322,
-    "level": 7,
+    "difficulty": 1561,
+    "level": 9,
     "format": "odd_one_out",
     "question": "Which event did NOT occur in 1855, the year of the famous Bordeaux Classification?",
     "options": [
@@ -1548,8 +1548,8 @@
   {
     "id": "HC-022",
     "domain": "history_culture",
-    "difficulty": 1367,
-    "level": 7,
+    "difficulty": 1695,
+    "level": 9,
     "format": "scenario",
     "question": "A student asks about the historical relationship between the English and the development of specific wine regions. Which answer is most complete?",
     "options": [
@@ -1574,8 +1574,8 @@
   {
     "id": "HC-023",
     "domain": "history_culture",
-    "difficulty": 1637,
-    "level": 8,
+    "difficulty": 1762,
+    "level": 10,
     "format": "multiple_choice",
     "question": "What was the legal and commercial significance of the 1911 Champagne riots?",
     "options": [
@@ -1598,8 +1598,8 @@
   {
     "id": "HC-024",
     "domain": "history_culture",
-    "difficulty": 1639,
-    "level": 8,
+    "difficulty": 1777,
+    "level": 10,
     "format": "multiple_choice",
     "question": "What critical role did the Cistercian monks play in the development of Burgundy's vineyard classification, and what was their methodology?",
     "options": [
@@ -1623,8 +1623,8 @@
   {
     "id": "HC-025",
     "domain": "history_culture",
-    "difficulty": 1955,
-    "level": 9,
+    "difficulty": 2413,
+    "level": 11,
     "format": "odd_one_out",
     "question": "Which statement about the history of phylloxera is NOT accurate?",
     "options": [
@@ -1648,8 +1648,8 @@
   {
     "id": "HC-026",
     "domain": "history_culture",
-    "difficulty": 1806,
-    "level": 9,
+    "difficulty": 2306,
+    "level": 11,
     "format": "multiple_choice",
     "question": "In the context of wine authentication, what technique was used to detect fraud in supposedly pre-1945 wines by measuring the presence of cesium-137?",
     "options": [
@@ -1673,7 +1673,7 @@
   {
     "id": "HC-027",
     "domain": "history_culture",
-    "difficulty": 238,
+    "difficulty": 248,
     "level": 1,
     "format": "multiple_choice",
     "question": "Which country produces the most wine by volume in the world?",
@@ -1697,7 +1697,7 @@
   {
     "id": "HC-028",
     "domain": "history_culture",
-    "difficulty": 128,
+    "difficulty": 241,
     "level": 1,
     "format": "odd_one_out",
     "question": "Which of these is NOT one of the original four First Growths from the 1855 Bordeaux Classification?",
@@ -1720,8 +1720,8 @@
   {
     "id": "HC-029",
     "domain": "history_culture",
-    "difficulty": 450,
-    "level": 2,
+    "difficulty": 577,
+    "level": 4,
     "format": "scenario",
     "question": "A student claims that the ancient Greeks fermented wine in large clay amphorae and added seawater and pine resin to preserve it. Is this historically accurate?",
     "options": [
@@ -1744,8 +1744,8 @@
   {
     "id": "HC-030",
     "domain": "history_culture",
-    "difficulty": 676,
-    "level": 3,
+    "difficulty": 780,
+    "level": 5,
     "format": "multiple_choice",
     "question": "Why was the Methuen Treaty of 1703 significant for the development of Port wine?",
     "options": [
@@ -1768,8 +1768,8 @@
   {
     "id": "HC-031",
     "domain": "history_culture",
-    "difficulty": 822,
-    "level": 4,
+    "difficulty": 912,
+    "level": 6,
     "format": "match_pairs",
     "question": "Match each wine fraud case with its key detail.",
     "pairs": {
@@ -1805,8 +1805,8 @@
   {
     "id": "HC-032",
     "domain": "history_culture",
-    "difficulty": 863,
-    "level": 4,
+    "difficulty": 1071,
+    "level": 6,
     "format": "multiple_choice",
     "question": "What was the Marquis de Pombal's contribution to wine history, and why is it considered groundbreaking?",
     "options": [
@@ -1830,8 +1830,8 @@
   {
     "id": "HC-033",
     "domain": "history_culture",
-    "difficulty": 1179,
-    "level": 6,
+    "difficulty": 1365,
+    "level": 8,
     "format": "scenario",
     "question": "A collector presents a bottle of Tokaji Aszú labeled '6 Puttonyos.' They ask about the historical significance of the puttonyos system. What is the most complete answer?",
     "options": [
@@ -1855,8 +1855,8 @@
   {
     "id": "HC-034",
     "domain": "history_culture",
-    "difficulty": 1913,
-    "level": 9,
+    "difficulty": 2243,
+    "level": 11,
     "format": "multiple_choice",
     "question": "Recent archaeogenomic studies have revealed what about the domestication history of Vitis vinifera?",
     "options": [
@@ -1880,8 +1880,8 @@
   {
     "id": "HC-035",
     "domain": "history_culture",
-    "difficulty": 1958,
-    "level": 9,
+    "difficulty": 2098,
+    "level": 11,
     "format": "scenario",
     "question": "An MS exam question asks: 'Explain how the 19th-century interplay of oidium (1850s), phylloxera (1860s-1900s), and downy mildew (1878) collectively reshaped European viticulture and wine commerce.' Which answer is most comprehensive?",
     "options": [
@@ -1906,7 +1906,7 @@
   {
     "id": "HC-036",
     "domain": "history_culture",
-    "difficulty": 142,
+    "difficulty": 204,
     "level": 1,
     "format": "multiple_choice",
     "question": "What is a Georgian qvevri?",
@@ -1930,8 +1930,8 @@
   {
     "id": "HC-037",
     "domain": "history_culture",
-    "difficulty": 1393,
-    "level": 7,
+    "difficulty": 1564,
+    "level": 9,
     "format": "multiple_choice",
     "question": "What was the significance of the Abbé Rozier's 'Cours Complet d'Agriculture' (1781-1800) for viticulture?",
     "options": [
@@ -1954,8 +1954,8 @@
   {
     "id": "HC-038",
     "domain": "history_culture",
-    "difficulty": 1674,
-    "level": 8,
+    "difficulty": 1877,
+    "level": 10,
     "format": "odd_one_out",
     "question": "Which statement about the history of Champagne is NOT accurate?",
     "options": [
@@ -1979,8 +1979,8 @@
   {
     "id": "HC-039",
     "domain": "history_culture",
-    "difficulty": 1897,
-    "level": 9,
+    "difficulty": 2210,
+    "level": 11,
     "format": "multiple_choice",
     "question": "The 'Vinland' references in Norse sagas (c. 1000 CE) have been debated for over a century. What is the current scholarly consensus on whether Norse explorers encountered wild grapevines in North America?",
     "options": [
@@ -2004,8 +2004,8 @@
   {
     "id": "HC-040",
     "domain": "history_culture",
-    "difficulty": 1074,
-    "level": 5,
+    "difficulty": 1108,
+    "level": 7,
     "format": "multiple_choice",
     "question": "What was the impact of the 18th Amendment (US Prohibition, 1920-1933) on American wine grape acreage?",
     "options": [
@@ -2028,7 +2028,7 @@
   {
     "id": "SB-001",
     "domain": "service_business",
-    "difficulty": 218,
+    "difficulty": 235,
     "level": 1,
     "format": "multiple_choice",
     "question": "What is the generally recommended serving temperature for full-bodied red wines?",
@@ -2051,7 +2051,7 @@
   {
     "id": "SB-002",
     "domain": "service_business",
-    "difficulty": 214,
+    "difficulty": 204,
     "level": 1,
     "format": "multiple_choice",
     "question": "In professional wine service, who at the table should taste the wine first?",
@@ -2074,7 +2074,7 @@
   {
     "id": "SB-003",
     "domain": "service_business",
-    "difficulty": 253,
+    "difficulty": 228,
     "level": 1,
     "format": "odd_one_out",
     "question": "Which is NOT a recognized wine fault?",
@@ -2098,7 +2098,7 @@
   {
     "id": "SB-004",
     "domain": "service_business",
-    "difficulty": 230,
+    "difficulty": 218,
     "level": 1,
     "format": "multiple_choice",
     "question": "What are the three ideal conditions for long-term wine storage?",
@@ -2122,7 +2122,7 @@
   {
     "id": "SB-005",
     "domain": "service_business",
-    "difficulty": 188,
+    "difficulty": 239,
     "level": 1,
     "format": "scenario",
     "question": "A guest sends back a bottle of wine claiming it is 'corked.' You smell the wine and detect wet cardboard and muted fruit. What is the correct course of action?",
@@ -2146,8 +2146,8 @@
   {
     "id": "SB-006",
     "domain": "service_business",
-    "difficulty": 438,
-    "level": 2,
+    "difficulty": 600,
+    "level": 4,
     "format": "match_pairs",
     "question": "Match each wine style with its recommended serving temperature range.",
     "pairs": {
@@ -2182,8 +2182,8 @@
   {
     "id": "SB-007",
     "domain": "service_business",
-    "difficulty": 373,
-    "level": 2,
+    "difficulty": 612,
+    "level": 4,
     "format": "multiple_choice",
     "question": "When should you decant a wine?",
     "options": [
@@ -2206,8 +2206,8 @@
   {
     "id": "SB-008",
     "domain": "service_business",
-    "difficulty": 397,
-    "level": 2,
+    "difficulty": 694,
+    "level": 4,
     "format": "multiple_choice",
     "question": "What is the standard restaurant wine markup, and what is the 'sweet spot' price point strategy?",
     "options": [
@@ -2230,8 +2230,8 @@
   {
     "id": "SB-009",
     "domain": "service_business",
-    "difficulty": 567,
-    "level": 3,
+    "difficulty": 808,
+    "level": 5,
     "format": "scenario",
     "question": "A guest orders a 2005 Barolo. You notice significant sediment in the bottle. What is the proper service approach?",
     "options": [
@@ -2254,8 +2254,8 @@
   {
     "id": "SB-010",
     "domain": "service_business",
-    "difficulty": 577,
-    "level": 3,
+    "difficulty": 799,
+    "level": 5,
     "format": "odd_one_out",
     "question": "Which is NOT a standard element found on an Old World (European) wine label?",
     "options": [
@@ -2277,8 +2277,8 @@
   {
     "id": "SB-011",
     "domain": "service_business",
-    "difficulty": 775,
-    "level": 4,
+    "difficulty": 994,
+    "level": 6,
     "format": "multiple_choice",
     "question": "What is the ISO 3591 standard wine tasting glass, and why is it significant?",
     "options": [
@@ -2301,8 +2301,8 @@
   {
     "id": "SB-012",
     "domain": "service_business",
-    "difficulty": 734,
-    "level": 4,
+    "difficulty": 1086,
+    "level": 6,
     "format": "match_pairs",
     "question": "Match each wine fault with its primary chemical cause.",
     "pairs": {
@@ -2339,8 +2339,8 @@
   {
     "id": "SB-013",
     "domain": "service_business",
-    "difficulty": 847,
-    "level": 4,
+    "difficulty": 1064,
+    "level": 6,
     "format": "scenario",
     "question": "A sommelier notices that a guest is ordering an expensive bottle solely to impress their dining companions, but the wine won't pair well with their food choices. What is the ethically correct approach?",
     "options": [
@@ -2363,8 +2363,8 @@
   {
     "id": "SB-014",
     "domain": "service_business",
-    "difficulty": 944,
-    "level": 5,
+    "difficulty": 1151,
+    "level": 7,
     "format": "multiple_choice",
     "question": "What is the concept of 'by-the-glass program management' in a restaurant context?",
     "options": [
@@ -2387,8 +2387,8 @@
   {
     "id": "SB-015",
     "domain": "service_business",
-    "difficulty": 1069,
-    "level": 5,
+    "difficulty": 1225,
+    "level": 7,
     "format": "odd_one_out",
     "question": "Which factor is LEAST important when designing a restaurant wine list?",
     "options": [
@@ -2410,8 +2410,8 @@
   {
     "id": "SB-016",
     "domain": "service_business",
-    "difficulty": 1205,
-    "level": 6,
+    "difficulty": 1426,
+    "level": 8,
     "format": "multiple_choice",
     "question": "How does the shape of a wine glass affect aromatic perception?",
     "options": [
@@ -2434,8 +2434,8 @@
   {
     "id": "SB-017",
     "domain": "service_business",
-    "difficulty": 1273,
-    "level": 6,
+    "difficulty": 1419,
+    "level": 8,
     "format": "scenario",
     "question": "A restaurant owner asks you to build a 200-selection wine list for a new upscale Italian restaurant. What organizational structure would you recommend?",
     "options": [
@@ -2458,8 +2458,8 @@
   {
     "id": "SB-018",
     "domain": "service_business",
-    "difficulty": 1460,
-    "level": 7,
+    "difficulty": 1604,
+    "level": 9,
     "format": "multiple_choice",
     "question": "What is the 'sommelier's dilemma' regarding Brettanomyces in a wine service context?",
     "options": [
@@ -2482,8 +2482,8 @@
   {
     "id": "SB-019",
     "domain": "service_business",
-    "difficulty": 1416,
-    "level": 7,
+    "difficulty": 1691,
+    "level": 9,
     "format": "match_pairs",
     "question": "Match each label term with its correct regulatory meaning.",
     "pairs": {
@@ -2520,8 +2520,8 @@
   {
     "id": "SB-020",
     "domain": "service_business",
-    "difficulty": 1649,
-    "level": 8,
+    "difficulty": 1849,
+    "level": 10,
     "format": "scenario",
     "question": "A VIP guest orders a 1982 Château Latour from your cellar. Upon opening, you detect slight volatile acidity but the wine is otherwise showing beautifully with complex tertiary development. The guest has not yet tasted. What is the correct approach?",
     "options": [
@@ -2544,8 +2544,8 @@
   {
     "id": "SB-021",
     "domain": "service_business",
-    "difficulty": 1583,
-    "level": 8,
+    "difficulty": 1705,
+    "level": 10,
     "format": "multiple_choice",
     "question": "In wine program financial management, what is 'velocity-adjusted pour cost' and why does it matter?",
     "options": [
@@ -2568,7 +2568,7 @@
   {
     "id": "SB-022",
     "domain": "service_business",
-    "difficulty": 278,
+    "difficulty": 159,
     "level": 1,
     "format": "multiple_choice",
     "question": "How should Champagne be opened professionally?",
@@ -2591,8 +2591,8 @@
   {
     "id": "SB-023",
     "domain": "service_business",
-    "difficulty": 320,
-    "level": 2,
+    "difficulty": 592,
+    "level": 4,
     "format": "odd_one_out",
     "question": "Which is NOT a legitimate reason for a guest to return a bottle of wine at a restaurant?",
     "options": [
@@ -2614,8 +2614,8 @@
   {
     "id": "SB-024",
     "domain": "service_business",
-    "difficulty": 559,
-    "level": 3,
+    "difficulty": 786,
+    "level": 5,
     "format": "multiple_choice",
     "question": "What percentage of wine bottles are estimated to be affected by TCA cork taint?",
     "options": [
@@ -2638,8 +2638,8 @@
   {
     "id": "SB-025",
     "domain": "service_business",
-    "difficulty": 663,
-    "level": 3,
+    "difficulty": 790,
+    "level": 5,
     "format": "scenario",
     "question": "A guest asks for a wine recommendation but has a strict budget of $50. Your list has a Burgundy at $48 (low margin, excellent quality) and a Languedoc at $45 (high margin, good quality). The sommelier ethic says to recommend:",
     "options": [
@@ -2662,8 +2662,8 @@
   {
     "id": "SB-026",
     "domain": "service_business",
-    "difficulty": 793,
-    "level": 4,
+    "difficulty": 905,
+    "level": 6,
     "format": "multiple_choice",
     "question": "What is the recommended approach for a sommelier encountering a wine showing possible 'premox' (premature oxidation)?",
     "options": [
@@ -2686,8 +2686,8 @@
   {
     "id": "SB-027",
     "domain": "service_business",
-    "difficulty": 953,
-    "level": 5,
+    "difficulty": 1267,
+    "level": 7,
     "format": "match_pairs",
     "question": "Match each New World label term with its approximate equivalent in traditional European labeling.",
     "pairs": {
@@ -2722,8 +2722,8 @@
   {
     "id": "SB-028",
     "domain": "service_business",
-    "difficulty": 1957,
-    "level": 9,
+    "difficulty": 2077,
+    "level": 11,
     "format": "scenario",
     "question": "You are the head sommelier designing a wine program for a Michelin-starred restaurant with a $500,000 annual wine budget. The chef's menu changes seasonally. What is the most comprehensive approach to inventory management?",
     "options": [
@@ -2747,8 +2747,8 @@
   {
     "id": "SB-029",
     "domain": "service_business",
-    "difficulty": 1942,
-    "level": 9,
+    "difficulty": 2231,
+    "level": 11,
     "format": "multiple_choice",
     "question": "What is the significance of the 'three-tier system' in US wine distribution, and how does it affect restaurant wine programs?",
     "options": [
@@ -2771,8 +2771,8 @@
   {
     "id": "SB-030",
     "domain": "service_business",
-    "difficulty": 1849,
-    "level": 9,
+    "difficulty": 2063,
+    "level": 11,
     "format": "odd_one_out",
     "question": "Which approach is NOT consistent with Master Sommelier-level wine service philosophy?",
     "options": [
@@ -2795,8 +2795,8 @@
   {
     "id": "SB-031",
     "domain": "service_business",
-    "difficulty": 1451,
-    "level": 7,
+    "difficulty": 1622,
+    "level": 9,
     "format": "multiple_choice",
     "question": "What is the Coravin system, and how has it changed by-the-glass wine programs?",
     "options": [
@@ -2819,8 +2819,8 @@
   {
     "id": "SB-032",
     "domain": "service_business",
-    "difficulty": 966,
-    "level": 5,
+    "difficulty": 1233,
+    "level": 7,
     "format": "scenario",
     "question": "Two guests at a table disagree: one wants a bold Napa Cabernet, the other wants a crisp Sancerre, and they are sharing a mixed grill with salad. What is the best sommelier solution?",
     "options": [
@@ -2843,7 +2843,7 @@
   {
     "id": "SB-033",
     "domain": "service_business",
-    "difficulty": 262,
+    "difficulty": 223,
     "level": 1,
     "format": "multiple_choice",
     "question": "How full should a standard wine glass be filled?",
@@ -2866,8 +2866,8 @@
   {
     "id": "SB-034",
     "domain": "service_business",
-    "difficulty": 1420,
-    "level": 7,
+    "difficulty": 1630,
+    "level": 9,
     "format": "multiple_choice",
     "question": "What is 'double-decanting,' and when is it appropriate?",
     "options": [
@@ -2890,8 +2890,8 @@
   {
     "id": "SB-035",
     "domain": "service_business",
-    "difficulty": 1884,
-    "level": 9,
+    "difficulty": 2258,
+    "level": 11,
     "format": "multiple_choice",
     "question": "In the context of the CMS Master Sommelier exam service component, what demonstrates the highest level of 'invisible service'?",
     "options": [
@@ -2914,7 +2914,7 @@
   {
     "id": "BT-001",
     "domain": "blind_tasting",
-    "difficulty": 197,
+    "difficulty": 141,
     "level": 1,
     "format": "multiple_choice",
     "question": "In the CMS deductive tasting grid, what are the three main phases of evaluating a wine?",
@@ -2937,7 +2937,7 @@
   {
     "id": "BT-002",
     "domain": "blind_tasting",
-    "difficulty": 185,
+    "difficulty": 192,
     "level": 1,
     "format": "multiple_choice",
     "question": "What does a deep purple-ruby color with blue-violet hues typically indicate about a red wine?",
@@ -2961,7 +2961,7 @@
   {
     "id": "BT-003",
     "domain": "blind_tasting",
-    "difficulty": 135,
+    "difficulty": 106,
     "level": 1,
     "format": "odd_one_out",
     "question": "Which aroma is NOT typically associated with oak aging?",
@@ -2985,7 +2985,7 @@
   {
     "id": "BT-004",
     "domain": "blind_tasting",
-    "difficulty": 189,
+    "difficulty": 176,
     "level": 1,
     "format": "multiple_choice",
     "question": "In blind tasting, high acidity combined with green fruit aromas (green apple, citrus) and light body in a white wine most likely indicates what climate?",
@@ -3009,8 +3009,8 @@
   {
     "id": "BT-005",
     "domain": "blind_tasting",
-    "difficulty": 457,
-    "level": 2,
+    "difficulty": 647,
+    "level": 4,
     "format": "match_pairs",
     "question": "Match each classic varietal marker with its grape variety.",
     "pairs": {
@@ -3047,8 +3047,8 @@
   {
     "id": "BT-006",
     "domain": "blind_tasting",
-    "difficulty": 366,
-    "level": 2,
+    "difficulty": 681,
+    "level": 4,
     "format": "multiple_choice",
     "question": "When assessing a red wine's tannin level blind, what physical sensation are you primarily evaluating?",
     "options": [
@@ -3071,8 +3071,8 @@
   {
     "id": "BT-007",
     "domain": "blind_tasting",
-    "difficulty": 382,
-    "level": 2,
+    "difficulty": 658,
+    "level": 4,
     "format": "scenario",
     "question": "You are blind tasting a white wine: pale straw color, high acidity, aromas of green apple, wet stone, and a hint of lees, with a saline finish. No oak influence. What is your most likely conclusion?",
     "options": [
@@ -3095,8 +3095,8 @@
   {
     "id": "BT-008",
     "domain": "blind_tasting",
-    "difficulty": 539,
-    "level": 3,
+    "difficulty": 764,
+    "level": 5,
     "format": "multiple_choice",
     "question": "What visual cue distinguishes a Pinot Noir from a Cabernet Sauvignon when examining color blind?",
     "options": [
@@ -3119,8 +3119,8 @@
   {
     "id": "BT-009",
     "domain": "blind_tasting",
-    "difficulty": 634,
-    "level": 3,
+    "difficulty": 808,
+    "level": 5,
     "format": "odd_one_out",
     "question": "Which is NOT a classic indicator of New World style (as opposed to Old World) in blind tasting?",
     "options": [
@@ -3142,8 +3142,8 @@
   {
     "id": "BT-010",
     "domain": "blind_tasting",
-    "difficulty": 763,
-    "level": 4,
+    "difficulty": 1000,
+    "level": 6,
     "format": "multiple_choice",
     "question": "In the CMS deductive grid, what is the purpose of the 'Initial Conclusion' step before the 'Final Conclusion'?",
     "options": [
@@ -3166,8 +3166,8 @@
   {
     "id": "BT-011",
     "domain": "blind_tasting",
-    "difficulty": 748,
-    "level": 4,
+    "difficulty": 919,
+    "level": 6,
     "format": "match_pairs",
     "question": "Match each aromatic descriptor category with the stage of wine development it indicates.",
     "pairs": {
@@ -3203,8 +3203,8 @@
   {
     "id": "BT-012",
     "domain": "blind_tasting",
-    "difficulty": 761,
-    "level": 4,
+    "difficulty": 1045,
+    "level": 6,
     "format": "scenario",
     "question": "You blind taste a red wine: medium ruby with garnet rim, moderate-plus acidity, medium tannin (fine-grained), red cherry and cranberry fruit, earthy/mushroom notes, and a long finish with sous-bois character. Alcohol feels moderate (about 13%). What is your most likely conclusion?",
     "options": [
@@ -3227,8 +3227,8 @@
   {
     "id": "BT-013",
     "domain": "blind_tasting",
-    "difficulty": 994,
-    "level": 5,
+    "difficulty": 1154,
+    "level": 7,
     "format": "multiple_choice",
     "question": "How can you distinguish American oak from French oak influence in blind tasting?",
     "options": [
@@ -3251,8 +3251,8 @@
   {
     "id": "BT-014",
     "domain": "blind_tasting",
-    "difficulty": 965,
-    "level": 5,
+    "difficulty": 1198,
+    "level": 7,
     "format": "odd_one_out",
     "question": "Which is NOT a reliable structural indicator for distinguishing cool-climate from warm-climate wines in blind tasting?",
     "options": [
@@ -3274,8 +3274,8 @@
   {
     "id": "BT-015",
     "domain": "blind_tasting",
-    "difficulty": 1044,
-    "level": 5,
+    "difficulty": 1259,
+    "level": 7,
     "format": "multiple_choice",
     "question": "What specific aroma compound is responsible for the 'cat pee' / boxwood descriptor sometimes associated with Sauvignon Blanc, and what does its presence indicate?",
     "options": [
@@ -3298,8 +3298,8 @@
   {
     "id": "BT-016",
     "domain": "blind_tasting",
-    "difficulty": 1169,
-    "level": 6,
+    "difficulty": 1331,
+    "level": 8,
     "format": "scenario",
     "question": "You blind taste a white wine: medium-deep gold color, aromas of beeswax, lanolin, quince, chamomile, and honeycomb. Palate shows high acidity, full body, waxy texture, and a long mineral finish. No obvious oak. What is your most likely identification?",
     "options": [
@@ -3322,8 +3322,8 @@
   {
     "id": "BT-017",
     "domain": "blind_tasting",
-    "difficulty": 1209,
-    "level": 6,
+    "difficulty": 1436,
+    "level": 8,
     "format": "multiple_choice",
     "question": "In blind tasting, what does a pronounced 'green' character (bell pepper, herbal, vegetal) in a Cabernet Sauvignon indicate about the growing conditions?",
     "options": [
@@ -3346,8 +3346,8 @@
   {
     "id": "BT-018",
     "domain": "blind_tasting",
-    "difficulty": 1252,
-    "level": 6,
+    "difficulty": 1458,
+    "level": 8,
     "format": "match_pairs",
     "question": "Match each blind tasting structural profile with the most likely grape variety.",
     "pairs": {
@@ -3383,8 +3383,8 @@
   {
     "id": "BT-019",
     "domain": "blind_tasting",
-    "difficulty": 1337,
-    "level": 7,
+    "difficulty": 1539,
+    "level": 9,
     "format": "multiple_choice",
     "question": "What is the significance of 'reduction' in a blind tasting context, and how do you differentiate between benign and problematic reduction?",
     "options": [
@@ -3408,8 +3408,8 @@
   {
     "id": "BT-020",
     "domain": "blind_tasting",
-    "difficulty": 1420,
-    "level": 7,
+    "difficulty": 1696,
+    "level": 9,
     "format": "scenario",
     "question": "You are blind tasting a red wine at an advanced CMS session. Deep, opaque ruby-purple color. Nose: blackberry, cassis, mint/eucalyptus, dark chocolate, and new oak (vanilla, cedar). Palate: full body, high alcohol (14.5%+), ripe firm tannins, moderate acidity, long finish. What is your working hypothesis?",
     "options": [
@@ -3432,8 +3432,8 @@
   {
     "id": "BT-021",
     "domain": "blind_tasting",
-    "difficulty": 1462,
-    "level": 7,
+    "difficulty": 1531,
+    "level": 9,
     "format": "odd_one_out",
     "question": "Which descriptor is NOT associated with the tertiary development stage of aged red wine?",
     "options": [
@@ -3455,8 +3455,8 @@
   {
     "id": "BT-022",
     "domain": "blind_tasting",
-    "difficulty": 1555,
-    "level": 8,
+    "difficulty": 1902,
+    "level": 10,
     "format": "multiple_choice",
     "question": "In blind tasting, how do you distinguish Syrah from the Northern Rhône versus Shiraz from the Barossa Valley?",
     "options": [
@@ -3479,8 +3479,8 @@
   {
     "id": "BT-023",
     "domain": "blind_tasting",
-    "difficulty": 1633,
-    "level": 8,
+    "difficulty": 1911,
+    "level": 10,
     "format": "match_pairs",
     "question": "Match each age-related color change with the correct wine type.",
     "pairs": {
@@ -3515,8 +3515,8 @@
   {
     "id": "BT-024",
     "domain": "blind_tasting",
-    "difficulty": 1603,
-    "level": 8,
+    "difficulty": 1755,
+    "level": 10,
     "format": "scenario",
     "question": "In an MS exam blind tasting flight, you encounter a white wine: deep gold, viscous, aromas of saffron, dried apricot, beeswax, orange peel, and a hint of oxidative nuttiness. Palate: full body, medium acidity, phenolic grip on the palate (textural tannin), very long finish. No residual sugar. What should your deductive reasoning process consider?",
     "options": [
@@ -3540,8 +3540,8 @@
   {
     "id": "BT-025",
     "domain": "blind_tasting",
-    "difficulty": 1843,
-    "level": 9,
+    "difficulty": 2393,
+    "level": 11,
     "format": "multiple_choice",
     "question": "At the MS exam level, what is the single most common cognitive error that causes experienced tasters to misidentify wines, and how is it mitigated?",
     "options": [
@@ -3564,8 +3564,8 @@
   {
     "id": "BT-026",
     "domain": "blind_tasting",
-    "difficulty": 1780,
-    "level": 9,
+    "difficulty": 2126,
+    "level": 11,
     "format": "multiple_choice",
     "question": "In the context of the CMS deductive tasting grid, how does the concept of 'parallel processing' apply to advanced blind identification?",
     "options": [
@@ -3588,7 +3588,7 @@
   {
     "id": "BT-027",
     "domain": "blind_tasting",
-    "difficulty": 229,
+    "difficulty": 129,
     "level": 1,
     "format": "multiple_choice",
     "question": "What does it mean when a wine has 'legs' or 'tears' on the glass?",
@@ -3612,7 +3612,7 @@
   {
     "id": "BT-028",
     "domain": "blind_tasting",
-    "difficulty": 233,
+    "difficulty": 210,
     "level": 1,
     "format": "scenario",
     "question": "You blind taste a red wine with pronounced aromas of banana and bubblegum/candy (amyl acetate). What winemaking technique most likely produced these aromas?",
@@ -3636,8 +3636,8 @@
   {
     "id": "BT-029",
     "domain": "blind_tasting",
-    "difficulty": 401,
-    "level": 2,
+    "difficulty": 562,
+    "level": 4,
     "format": "odd_one_out",
     "question": "Which aromatic note is NOT typically associated with Sauvignon Blanc?",
     "options": [
@@ -3660,8 +3660,8 @@
   {
     "id": "BT-030",
     "domain": "blind_tasting",
-    "difficulty": 873,
-    "level": 4,
+    "difficulty": 1049,
+    "level": 6,
     "format": "multiple_choice",
     "question": "What is the significance of 'volatile acidity' (VA) detection in blind tasting, and at what threshold does it become a fault?",
     "options": [
@@ -3684,8 +3684,8 @@
   {
     "id": "BT-031",
     "domain": "blind_tasting",
-    "difficulty": 988,
-    "level": 5,
+    "difficulty": 1223,
+    "level": 7,
     "format": "match_pairs",
     "question": "Match each structural analysis clue with what it helps determine in blind tasting.",
     "pairs": {
@@ -3720,8 +3720,8 @@
   {
     "id": "BT-032",
     "domain": "blind_tasting",
-    "difficulty": 1163,
-    "level": 6,
+    "difficulty": 1374,
+    "level": 8,
     "format": "multiple_choice",
     "question": "How can you distinguish Nebbiolo from Sangiovese in blind tasting when both show high acid, moderate-to-high tannin, and garnet/ruby color?",
     "options": [
@@ -3744,8 +3744,8 @@
   {
     "id": "BT-033",
     "domain": "blind_tasting",
-    "difficulty": 1393,
-    "level": 7,
+    "difficulty": 1621,
+    "level": 9,
     "format": "scenario",
     "question": "You encounter a white wine in a blind flight: medium straw-gold, aromas of flint, chalk, green apple, lemon, and a very subtle smoky/gunflint character. Palate: laser-like acidity, medium body, bone-dry, pronounced minerality with a steely, saline finish. No oak. No malolactic character. What is your deductive process?",
     "options": [
@@ -3769,8 +3769,8 @@
   {
     "id": "BT-034",
     "domain": "blind_tasting",
-    "difficulty": 1911,
-    "level": 9,
+    "difficulty": 2307,
+    "level": 11,
     "format": "multiple_choice",
     "question": "In MS-level blind tasting, the concept of 'diagnostic aromas' refers to aroma compounds that are nearly unique to specific grape varieties. Which pairing of diagnostic aroma and variety is correct?",
     "options": [
@@ -3794,8 +3794,8 @@
   {
     "id": "BT-035",
     "domain": "blind_tasting",
-    "difficulty": 1831,
-    "level": 9,
+    "difficulty": 2174,
+    "level": 11,
     "format": "scenario",
     "question": "In an MS exam tasting flight, you encounter a red wine that initially presents like Northern Rhône Syrah (dark fruit, pepper, violet, smoked meat) but on the palate reveals unexpected high acidity with fine-grained tannin and a more Burgundian structure. You also notice a faint gamey/blood note. How should you process this conflicting data?",
     "options": [

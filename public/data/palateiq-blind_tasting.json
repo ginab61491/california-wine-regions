@@ -2,8 +2,8 @@
   {
     "id": "BT-001",
     "domain": "blind_tasting",
-    "difficulty": 2200,
-    "level": 10,
+    "difficulty": 2471,
+    "level": 11,
     "format": "multiple_choice",
     "question": "In blind tasting, which specific aromatic compound is responsible for the 'wet concrete' or 'petrichor' note that can indicate a wine from volcanic soils, particularly in regions like Santorini or Mount Etna?",
     "options": [
@@ -25,8 +25,8 @@
   {
     "id": "BT-002",
     "domain": "blind_tasting",
-    "difficulty": 2350,
-    "level": 10,
+    "difficulty": 2261,
+    "level": 11,
     "format": "odd_one_out",
     "question": "When identifying Burgundian Pinot Noir in blind tasting, which of these tertiary characteristics does NOT typically develop in properly aged red Burgundy?",
     "options": [
@@ -49,8 +49,8 @@
   {
     "id": "BT-003",
     "domain": "blind_tasting",
-    "difficulty": 2400,
-    "level": 10,
+    "difficulty": 2417,
+    "level": 11,
     "format": "multiple_choice",
     "question": "In the CMS deductive tasting method, when a red wine shows purple-black core with ruby rim, medium+ intensity, and clear clarity, what age range does this sight analysis most precisely indicate?",
     "options": [
@@ -73,8 +73,8 @@
   {
     "id": "BT-004",
     "domain": "blind_tasting",
-    "difficulty": 2150,
-    "level": 10,
+    "difficulty": 2057,
+    "level": 11,
     "format": "scenario",
     "question": "You're blind tasting a white wine showing: pale lemon-green, high acidity, medium body, 12.5% ABV, with aromas of lime zest, wet slate, and a distinctive diesel/petrol note. The wine has a long, mineral finish. Based on these CMS deductive markers, what is the most likely grape variety and climate?",
     "options": [
@@ -97,8 +97,8 @@
   {
     "id": "BT-005",
     "domain": "blind_tasting",
-    "difficulty": 2300,
-    "level": 10,
+    "difficulty": 2342,
+    "level": 11,
     "format": "match_pairs",
     "question": "Match each New World vs Old World style marker to its correct regional expression:",
     "pairs": {
@@ -135,8 +135,8 @@
   {
     "id": "BT-006",
     "domain": "blind_tasting",
-    "difficulty": 2250,
-    "level": 10,
+    "difficulty": 2465,
+    "level": 11,
     "format": "multiple_choice",
     "question": "When blind tasting Cabernet Sauvignon, the presence of 2-methoxy-3-isobutylpyrazine creates which specific aromatic signature that can indicate cooler climate or underripe fruit?",
     "options": [
@@ -159,8 +159,8 @@
   {
     "id": "BT-007",
     "domain": "blind_tasting",
-    "difficulty": 2400,
-    "level": 10,
+    "difficulty": 2096,
+    "level": 11,
     "format": "multiple_choice",
     "question": "In advanced blind tasting of aged Champagne, which combination of characteristics most reliably indicates extended lees aging (5+ years) using the traditional method?",
     "options": [
@@ -183,8 +183,8 @@
   {
     "id": "BT-008",
     "domain": "blind_tasting",
-    "difficulty": 2350,
-    "level": 10,
+    "difficulty": 2005,
+    "level": 11,
     "format": "odd_one_out",
     "question": "When identifying American oak influence in blind tasting, which aromatic compound does NOT typically result from American oak aging?",
     "options": [
@@ -207,8 +207,8 @@
   {
     "id": "BT-009",
     "domain": "blind_tasting",
-    "difficulty": 2200,
-    "level": 10,
+    "difficulty": 2070,
+    "level": 11,
     "format": "scenario",
     "question": "You're tasting a red wine showing: deep ruby-garnet, medium+ intensity, aromas of black olive, garrigue herbs, leather, and dark fruit. Medium+ tannins, medium+ acidity, 14% alcohol, full body. Based on these CMS deductive markers, what is the most likely grape and region?",
     "options": [
@@ -231,8 +231,8 @@
   {
     "id": "BT-010",
     "domain": "blind_tasting",
-    "difficulty": 2450,
-    "level": 10,
+    "difficulty": 2155,
+    "level": 11,
     "format": "multiple_choice",
     "question": "In blind tasting methodology, when analyzing structure, which tannin characteristic most reliably indicates grape tannins versus oak tannins in red wine?",
     "options": [
@@ -255,8 +255,8 @@
   {
     "id": "BT-011",
     "domain": "blind_tasting",
-    "difficulty": 2300,
-    "level": 10,
+    "difficulty": 2225,
+    "level": 11,
     "format": "multiple_choice",
     "question": "When blind tasting fortified wine, which structural combination most definitively indicates Port versus Sherry production method?",
     "options": [
@@ -279,8 +279,8 @@
   {
     "id": "BT-012",
     "domain": "blind_tasting",
-    "difficulty": 2250,
-    "level": 10,
+    "difficulty": 2018,
+    "level": 11,
     "format": "match_pairs",
     "question": "Match each classic varietal marker to its corresponding aromatic compound:",
     "pairs": {
@@ -317,8 +317,8 @@
   {
     "id": "BT-013",
     "domain": "blind_tasting",
-    "difficulty": 2400,
-    "level": 10,
+    "difficulty": 2049,
+    "level": 11,
     "format": "multiple_choice",
     "question": "In advanced CMS deductive tasting, when a white wine shows amber-gold color with orange reflections, what does this most precisely indicate about the wine's production or age?",
     "options": [
@@ -341,8 +341,8 @@
   {
     "id": "BT-014",
     "domain": "blind_tasting",
-    "difficulty": 2350,
-    "level": 10,
+    "difficulty": 2342,
+    "level": 11,
     "format": "scenario",
     "question": "During a Master Sommelier blind tasting, you encounter a sparkling wine with: persistent fine bubbles, pale gold color, high acidity, bone dry, complex autolytic character, and 12.5% alcohol. The wine shows remarkable length and mineral precision. What production method and likely origin does this profile indicate?",
     "options": [
@@ -365,8 +365,8 @@
   {
     "id": "BT-015",
     "domain": "blind_tasting",
-    "difficulty": 2200,
-    "level": 10,
+    "difficulty": 2010,
+    "level": 11,
     "format": "odd_one_out",
     "question": "When identifying common blind tasting traps, which of these characteristics would NOT typically mislead tasters about a wine's true origin?",
     "options": [
@@ -389,8 +389,8 @@
   {
     "id": "BT-016",
     "domain": "blind_tasting",
-    "difficulty": 2200,
-    "level": 10,
+    "difficulty": 2213,
+    "level": 11,
     "format": "multiple_choice",
     "question": "In Master Sommelier blind tasting, when analyzing a red wine showing pronounced rotundone (black pepper) character alongside violet florals and dark fruit, which specific viticultural factor most reliably distinguishes Northern Rhône Syrah from Australian Shiraz expressing similar aromatic intensity?",
     "options": [
@@ -413,8 +413,8 @@
   {
     "id": "BT-017",
     "domain": "blind_tasting",
-    "difficulty": 2300,
-    "level": 10,
+    "difficulty": 2178,
+    "level": 11,
     "format": "odd_one_out",
     "question": "When blind tasting aged Riesling showing pronounced petrol/TDN character, which of these aromatic descriptors does NOT belong to the classic TDN development profile?",
     "options": [
@@ -437,8 +437,8 @@
   {
     "id": "BT-018",
     "domain": "blind_tasting",
-    "difficulty": 2400,
-    "level": 10,
+    "difficulty": 2236,
+    "level": 11,
     "format": "match_pairs",
     "question": "Match each specific blind tasting trap to the correct identification strategy used by Master Sommeliers:",
     "pairs": {
@@ -474,8 +474,8 @@
   {
     "id": "BT-019",
     "domain": "blind_tasting",
-    "difficulty": 2100,
-    "level": 10,
+    "difficulty": 2029,
+    "level": 11,
     "format": "scenario",
     "question": "During a Master Sommelier exam, you're presented with a sparkling wine showing: fine persistent mousse, pale gold color, bone dry, high acidity, complex brioche and hazelnut aromatics, 12% alcohol, and remarkable length. The wine displays subtle oxidative notes suggesting extended aging. What is the most precise identification?",
     "options": [
@@ -498,8 +498,8 @@
   {
     "id": "BT-020",
     "domain": "blind_tasting",
-    "difficulty": 2350,
-    "level": 10,
+    "difficulty": 2085,
+    "level": 11,
     "format": "multiple_choice",
     "question": "In advanced CMS deductive tasting of fortified wine, when analyzing a wine showing amber-tawny color, oxidative character, and 20% alcohol, which specific structural element most definitively distinguishes solera-aged Sherry from vintage Port of similar age?",
     "options": [
@@ -517,6 +517,815 @@
       "port",
       "fortified",
       "structure"
+    ]
+  },
+  {
+    "id": "BT-021",
+    "domain": "blind_tasting",
+    "difficulty": 300,
+    "level": 2,
+    "format": "multiple_choice",
+    "question": "In the CMS deductive tasting method, what is the correct order of the five steps?",
+    "options": [
+      "Sight → Nose → Palate → Initial Conclusion → Final Conclusion",
+      "Nose → Sight → Palate → Initial Conclusion → Final Conclusion",
+      "Sight → Palate → Nose → Initial Conclusion → Final Conclusion",
+      "Sight → Nose → Initial Conclusion → Palate → Final Conclusion"
+    ],
+    "correct": 0,
+    "explanation": "The CMS deductive method follows a logical progression from visual to aromatic to taste analysis, building evidence systematically. Think of it as building a case like a detective — gather all the clues before drawing conclusions.",
+    "sources": "Court of Master Sommeliers Study Guide; GuildSomm",
+    "confidence": "established",
+    "tags": [
+      "cms_method",
+      "tasting_structure",
+      "deductive_method"
+    ]
+  },
+  {
+    "id": "BT-022",
+    "domain": "blind_tasting",
+    "difficulty": 320,
+    "level": 2,
+    "format": "multiple_choice",
+    "question": "Which of these characteristics most reliably indicates a cool climate wine during blind tasting?",
+    "options": [
+      "High alcohol (14%+), low acidity, jammy fruit",
+      "High acidity, lower alcohol (11-13%), green/citrus fruit notes",
+      "Medium alcohol (13-14%), balanced acidity, tropical fruit",
+      "Low acidity, high alcohol, dried fruit character"
+    ],
+    "correct": 1,
+    "explanation": "Cool climates struggle to ripen grapes fully, preserving natural acidity while developing fresh, tart fruit flavors. It's like the difference between a crisp green apple and a sun-baked raisin — climate writes its signature in every sip.",
+    "sources": "WSET Level 2 Study Materials; The World Atlas of Wine",
+    "confidence": "established",
+    "tags": [
+      "climate_markers",
+      "cool_climate",
+      "structural_analysis"
+    ]
+  },
+  {
+    "id": "BT-023",
+    "domain": "blind_tasting",
+    "difficulty": 280,
+    "level": 2,
+    "format": "odd_one_out",
+    "question": "Which of these aromas does NOT typically indicate American oak influence in wine?",
+    "options": [
+      "Vanilla",
+      "Coconut",
+      "Cedar",
+      "Dill"
+    ],
+    "correct": 2,
+    "explanation": "Cedar is the calling card of French oak, while American oak delivers the sweet vanilla-coconut-dill trinity. Remember: American oak is like a spice rack, French oak is like a cedar chest.",
+    "sources": "WSET Level 2 Study Materials; Wine Science (Jamie Goode)",
+    "confidence": "established",
+    "tags": [
+      "oak_identification",
+      "american_oak",
+      "french_oak"
+    ]
+  },
+  {
+    "id": "BT-024",
+    "domain": "blind_tasting",
+    "difficulty": 350,
+    "level": 2,
+    "format": "multiple_choice",
+    "question": "In blind tasting, what does a red wine's color evolution from purple to garnet to tawny primarily indicate?",
+    "options": [
+      "Different grape varieties",
+      "Different regions of origin",
+      "Progressive aging and development",
+      "Different winemaking techniques"
+    ],
+    "correct": 2,
+    "explanation": "Red wine color fades like autumn leaves — vibrant purple youth mellows to garnet maturity, then to tawny old age. This anthocyanin breakdown is wine's most reliable aging clock.",
+    "sources": "WSET Level 2 Study Materials; The Oxford Companion to Wine",
+    "confidence": "established",
+    "tags": [
+      "age_indicators",
+      "color_evolution",
+      "wine_aging"
+    ]
+  },
+  {
+    "id": "BT-025",
+    "domain": "blind_tasting",
+    "difficulty": 290,
+    "level": 2,
+    "format": "multiple_choice",
+    "question": "Which aromatic compound is responsible for the distinctive 'bell pepper' or 'green capsicum' note in Cabernet Sauvignon?",
+    "options": [
+      "Rotundone",
+      "Pyrazines",
+      "Terpenes",
+      "Thiols"
+    ],
+    "correct": 1,
+    "explanation": "Pyrazines create that unmistakable green bell pepper signature in Cabernet Sauvignon, especially from cooler sites. Think of pyrazines as Cab Sauv's green fingerprint — once you know it, you'll spot it every time.",
+    "sources": "Wine Grapes (Robinson, Harding & Vouillamoz); WSET Level 3 Study Materials",
+    "confidence": "established",
+    "tags": [
+      "varietal_markers",
+      "cabernet_sauvignon",
+      "pyrazines"
+    ]
+  },
+  {
+    "id": "BT-026",
+    "domain": "blind_tasting",
+    "difficulty": 330,
+    "level": 2,
+    "format": "match_pairs",
+    "question": "Match each grape variety to its classic aromatic marker:",
+    "pairs": {
+      "left": [
+        "Sauvignon Blanc",
+        "Riesling",
+        "Pinot Noir",
+        "Syrah"
+      ],
+      "right": [
+        "Petrol/kerosene notes",
+        "Black pepper spice",
+        "Red cherry and earth",
+        "Grapefruit and gooseberry"
+      ]
+    },
+    "options": [],
+    "correct": [
+      3,
+      0,
+      2,
+      1
+    ],
+    "explanation": "Each variety has its aromatic calling card — Sauvignon Blanc's tropical thiols, Riesling's TDN petrol development, Pinot's delicate red fruit, and Syrah's peppery rotundone. These are like wine's DNA signatures in the glass.",
+    "sources": "WSET Level 2 Study Materials; Wine Grapes (Robinson, Harding & Vouillamoz)",
+    "confidence": "established",
+    "tags": [
+      "varietal_markers",
+      "aromatic_compounds",
+      "grape_identification"
+    ]
+  },
+  {
+    "id": "BT-027",
+    "domain": "blind_tasting",
+    "difficulty": 310,
+    "level": 2,
+    "format": "multiple_choice",
+    "question": "What is the primary difference between New World and Old World wine styles in blind tasting?",
+    "options": [
+      "New World wines are always more expensive",
+      "Old World wines have higher alcohol levels",
+      "New World wines typically show riper fruit and higher alcohol; Old World wines show more restraint and earthiness",
+      "Old World wines are always aged in oak"
+    ],
+    "correct": 2,
+    "explanation": "New World warmth creates bold, fruit-forward wines with higher alcohol, while Old World tradition emphasizes terroir, restraint, and earthy complexity. It's the difference between a California sunshine smile and a Burgundian whisper.",
+    "sources": "WSET Level 2 Study Materials; The World Atlas of Wine",
+    "confidence": "established",
+    "tags": [
+      "new_world",
+      "old_world",
+      "style_markers"
+    ]
+  },
+  {
+    "id": "BT-028",
+    "domain": "blind_tasting",
+    "difficulty": 270,
+    "level": 2,
+    "format": "multiple_choice",
+    "question": "When analyzing wine structure in blind tasting, which component provides the 'grip' and astringency in red wines?",
+    "options": [
+      "Acidity",
+      "Alcohol",
+      "Tannins",
+      "Residual sugar"
+    ],
+    "correct": 2,
+    "explanation": "Tannins create that mouth-drying, gripping sensation that makes you want to chew the wine. They're like wine's handshake — firm tannins grip your palate and don't let go.",
+    "sources": "WSET Level 2 Study Materials; Wine Science (Jamie Goode)",
+    "confidence": "established",
+    "tags": [
+      "structural_analysis",
+      "tannins",
+      "red_wine_structure"
+    ]
+  },
+  {
+    "id": "BT-029",
+    "domain": "blind_tasting",
+    "difficulty": 340,
+    "level": 2,
+    "format": "scenario",
+    "question": "You're blind tasting a white wine that shows pale lemon color, high acidity, light body, 11.5% alcohol, with citrus and green apple aromas. What climate and style does this profile suggest?",
+    "options": [
+      "Warm climate, New World style",
+      "Cool climate, restrained style",
+      "Hot climate, concentrated style",
+      "Moderate climate, oak-aged style"
+    ],
+    "correct": 1,
+    "explanation": "The combination of high acidity, low alcohol, and tart fruit flavors screams cool climate restraint. This profile reads like a wine that never saw a warm day — all tension and bright energy.",
+    "sources": "WSET Level 2 Study Materials; Court of Master Sommeliers Study Guide",
+    "confidence": "established",
+    "tags": [
+      "climate_identification",
+      "structural_analysis",
+      "white_wine_tasting"
+    ]
+  },
+  {
+    "id": "BT-030",
+    "domain": "blind_tasting",
+    "difficulty": 360,
+    "level": 2,
+    "format": "multiple_choice",
+    "question": "In sparkling wine evaluation, what does a persistent, fine mousse (bubble structure) typically indicate?",
+    "options": [
+      "Tank method production",
+      "Traditional method with quality production",
+      "Injection method carbonation",
+      "Natural fermentation in bottle is incomplete"
+    ],
+    "correct": 1,
+    "explanation": "Fine, persistent bubbles are the hallmark of traditional method sparkling wines where secondary fermentation creates elegant, long-lasting mousse. Think of bubbles as tiny messengers — the finer they are, the more sophisticated the message.",
+    "sources": "WSET Level 2 Study Materials; The Oxford Companion to Wine",
+    "confidence": "established",
+    "tags": [
+      "sparkling_wine",
+      "traditional_method",
+      "mousse_analysis"
+    ]
+  },
+  {
+    "id": "BT-031",
+    "domain": "blind_tasting",
+    "difficulty": 420,
+    "level": 3,
+    "format": "multiple_choice",
+    "question": "When blind tasting aged white wine, which color progression most accurately indicates proper bottle aging?",
+    "options": [
+      "Pale lemon → deep gold → amber → brown",
+      "Green-yellow → lemon → gold → amber",
+      "Water-white → pale lemon → medium lemon → deep lemon",
+      "Lemon-green → straw → gold → tawny"
+    ],
+    "correct": 1,
+    "explanation": "White wine aging follows a predictable color evolution as compounds oxidize and concentrate over time. The green-yellow to amber progression is like watching wine's slow transformation from youth to wisdom.",
+    "sources": "WSET Level 3 Study Materials; The Oxford Companion to Wine",
+    "confidence": "established",
+    "tags": [
+      "age_indicators",
+      "white_wine_aging",
+      "color_evolution"
+    ]
+  },
+  {
+    "id": "BT-032",
+    "domain": "blind_tasting",
+    "difficulty": 450,
+    "level": 3,
+    "format": "odd_one_out",
+    "question": "Which of these characteristics would NOT typically indicate extended lees contact in white wine production?",
+    "options": [
+      "Creamy, brioche-like aromas",
+      "Enhanced mouthfeel and texture",
+      "Bright, primary fruit character",
+      "Subtle nutty, yeasty complexity"
+    ],
+    "correct": 2,
+    "explanation": "Extended lees contact develops secondary, savory complexity while softening primary fruit character. Bright primary fruit suggests minimal lees influence — it's like comparing fresh bread to aged cheese.",
+    "sources": "WSET Level 3 Study Materials; Wine Science (Jamie Goode)",
+    "confidence": "established",
+    "tags": [
+      "lees_contact",
+      "white_winemaking",
+      "secondary_character"
+    ]
+  },
+  {
+    "id": "BT-033",
+    "domain": "blind_tasting",
+    "difficulty": 480,
+    "level": 3,
+    "format": "scenario",
+    "question": "You're tasting a red wine showing: medium ruby color, high acidity, light-medium body, 12.5% alcohol, with red cherry, rose petal, and earthy mushroom aromas. What grape variety and likely region does this profile suggest?",
+    "options": [
+      "Cabernet Sauvignon from Bordeaux",
+      "Pinot Noir from Burgundy or cool climate region",
+      "Sangiovese from Tuscany",
+      "Tempranillo from Rioja"
+    ],
+    "correct": 1,
+    "explanation": "This classic Pinot Noir profile combines delicate red fruit, floral notes, and earthy complexity with the variety's signature high acidity and elegant structure. Pinot Noir is wine's prima ballerina — graceful, expressive, and unmistakably refined.",
+    "sources": "WSET Level 3 Study Materials; Wine Grapes (Robinson, Harding & Vouillamoz)",
+    "confidence": "established",
+    "tags": [
+      "pinot_noir",
+      "varietal_identification",
+      "burgundy_style"
+    ]
+  },
+  {
+    "id": "BT-034",
+    "domain": "blind_tasting",
+    "difficulty": 440,
+    "level": 3,
+    "format": "multiple_choice",
+    "question": "In advanced blind tasting, what does the presence of TDN (1,1,6-trimethyl-1,2-dihydronaphthalene) most reliably indicate?",
+    "options": [
+      "Oak aging in American barrels",
+      "Malolactic fermentation completion",
+      "Riesling grape variety with bottle age",
+      "Botrytis cinerea infection"
+    ],
+    "correct": 2,
+    "explanation": "TDN creates the distinctive petrol/kerosene aroma that develops in aged Riesling, especially from warmer sites or with bottle age. It's Riesling's secret handshake — once you recognize it, you'll never mistake the variety again.",
+    "sources": "Wine Grapes (Robinson, Harding & Vouillamoz); WSET Level 3 Study Materials",
+    "confidence": "established",
+    "tags": [
+      "tdn",
+      "riesling",
+      "aged_wine_markers"
+    ]
+  },
+  {
+    "id": "BT-035",
+    "domain": "blind_tasting",
+    "difficulty": 470,
+    "level": 3,
+    "format": "match_pairs",
+    "question": "Match each fortified wine style to its characteristic production marker:",
+    "pairs": {
+      "left": [
+        "Vintage Port",
+        "Fino Sherry",
+        "Tawny Port",
+        "Oloroso Sherry"
+      ],
+      "right": [
+        "Biological aging under flor",
+        "Oxidative aging in small barrels",
+        "Fortification during fermentation, bottle-aged",
+        "Fortification during fermentation, cask-aged"
+      ]
+    },
+    "options": [],
+    "correct": [
+      2,
+      0,
+      3,
+      1
+    ],
+    "explanation": "Each fortified style has distinct production signatures that show in the glass — Port's grape spirit fortification versus Sherry's complete fermentation, biological versus oxidative aging. These production methods are like wine's birth certificates.",
+    "sources": "WSET Level 3 Study Materials; The Oxford Companion to Wine",
+    "confidence": "established",
+    "tags": [
+      "fortified_wine",
+      "port",
+      "sherry",
+      "production_methods"
+    ]
+  },
+  {
+    "id": "BT-036",
+    "domain": "blind_tasting",
+    "difficulty": 300,
+    "level": 2,
+    "format": "multiple_choice",
+    "question": "In the CMS deductive tasting method, which step comes immediately after analyzing the wine's appearance (sight)?",
+    "options": [
+      "Nose analysis",
+      "Palate analysis",
+      "Initial conclusion",
+      "Final conclusion"
+    ],
+    "correct": 0,
+    "explanation": "The CMS deductive method follows a strict sequence: sight → nose → palate → initial conclusion → final conclusion. Think of it as building evidence layer by layer, like a detective gathering clues.",
+    "sources": "Court of Master Sommeliers materials; GuildSomm",
+    "confidence": "established",
+    "tags": [
+      "cms_method",
+      "tasting_sequence",
+      "deductive_approach"
+    ]
+  },
+  {
+    "id": "BT-037",
+    "domain": "blind_tasting",
+    "difficulty": 350,
+    "level": 2,
+    "format": "multiple_choice",
+    "question": "Which combination of characteristics most reliably indicates a cool climate white wine?",
+    "options": [
+      "High acidity, lower alcohol, green fruit flavors",
+      "Low acidity, higher alcohol, tropical fruit flavors",
+      "Medium acidity, medium alcohol, stone fruit flavors",
+      "High alcohol, full body, dried fruit flavors"
+    ],
+    "correct": 0,
+    "explanation": "Cool climates produce the 'Holy Trinity' of freshness: high acidity (grapes retain tartaric acid), lower alcohol (less sugar accumulation), and green/citrus notes (slower ripening preserves primary fruit character). It's nature's refrigerator effect.",
+    "sources": "WSET Level 2; The World Atlas of Wine",
+    "confidence": "established",
+    "tags": [
+      "climate_markers",
+      "cool_climate",
+      "acidity"
+    ]
+  },
+  {
+    "id": "BT-038",
+    "domain": "blind_tasting",
+    "difficulty": 280,
+    "level": 2,
+    "format": "odd_one_out",
+    "question": "Which of these aromas does NOT typically indicate French oak influence in wine?",
+    "options": [
+      "Vanilla",
+      "Cedar",
+      "Spice",
+      "Coconut"
+    ],
+    "correct": 3,
+    "explanation": "Coconut is the telltale signature of American oak, created by whiskey lactones that are much higher in American versus French oak. French oak gives cedar, vanilla, and baking spices, but coconut screams 'Stars and Stripes.'",
+    "sources": "Wine Science (Jamie Goode); WSET Level 2",
+    "confidence": "established",
+    "tags": [
+      "oak_identification",
+      "french_oak",
+      "american_oak"
+    ]
+  },
+  {
+    "id": "BT-039",
+    "domain": "blind_tasting",
+    "difficulty": 320,
+    "level": 2,
+    "format": "multiple_choice",
+    "question": "When a red wine shows a color progression from purple to garnet, what does this primarily indicate?",
+    "options": [
+      "The wine is from a warm climate",
+      "The wine is aging and developing",
+      "The wine has high tannins",
+      "The wine is from a specific grape variety"
+    ],
+    "correct": 1,
+    "explanation": "Red wine color is like a biological clock – anthocyanins break down over time, shifting from youthful purple to mature garnet to elderly tawny. It's the wine's way of showing its age through chemistry.",
+    "sources": "The Oxford Companion to Wine; WSET Level 2",
+    "confidence": "established",
+    "tags": [
+      "color_evolution",
+      "aging_indicators",
+      "anthocyanins"
+    ]
+  },
+  {
+    "id": "BT-040",
+    "domain": "blind_tasting",
+    "difficulty": 370,
+    "level": 2,
+    "format": "multiple_choice",
+    "question": "Which aromatic compound creates the distinctive 'black pepper' note that is a classic marker for Syrah?",
+    "options": [
+      "Rotundone",
+      "Pyrazines",
+      "Terpenes",
+      "Thiols"
+    ],
+    "correct": 0,
+    "explanation": "Rotundone is Syrah's signature calling card – the same compound that makes black peppercorns spicy. When you smell that distinctive pepper note, you're literally smelling the same molecule, making Syrah identification almost foolproof.",
+    "sources": "Wine Grapes (Robinson, Harding & Vouillamoz); Wine Science (Jamie Goode)",
+    "confidence": "established",
+    "tags": [
+      "syrah_markers",
+      "rotundone",
+      "varietal_identification"
+    ]
+  },
+  {
+    "id": "BT-041",
+    "domain": "blind_tasting",
+    "difficulty": 290,
+    "level": 2,
+    "format": "match_pairs",
+    "question": "Match each grape variety to its most reliable aromatic marker:",
+    "pairs": {
+      "left": [
+        "Sauvignon Blanc",
+        "Cabernet Sauvignon",
+        "Riesling",
+        "Gewürztraminer"
+      ],
+      "right": [
+        "Lychee and rose",
+        "Petrol/kerosene",
+        "Bell pepper/green capsicum",
+        "Grapefruit and gooseberry"
+      ]
+    },
+    "options": [],
+    "correct": [
+      3,
+      2,
+      1,
+      0
+    ],
+    "explanation": "Each variety has its aromatic fingerprint: Sauvignon Blanc's thiols create grapefruit zing, Cabernet's pyrazines give green pepper, Riesling's TDN develops petrol notes, and Gewürztraminer's terpenes smell like exotic lychee. Think of them as the wine's DNA expressed in aroma.",
+    "sources": "Wine Grapes (Robinson, Harding & Vouillamoz); WSET Level 2",
+    "confidence": "established",
+    "tags": [
+      "varietal_markers",
+      "aromatic_compounds",
+      "identification"
+    ]
+  },
+  {
+    "id": "BT-042",
+    "domain": "blind_tasting",
+    "difficulty": 340,
+    "level": 2,
+    "format": "multiple_choice",
+    "question": "What is the primary structural difference that distinguishes New World from Old World wine styles?",
+    "options": [
+      "New World wines typically show higher alcohol and riper fruit flavors",
+      "Old World wines always have higher acidity",
+      "New World wines never use oak aging",
+      "Old World wines are always lighter in color"
+    ],
+    "correct": 0,
+    "explanation": "New World's warmer climates and riper picking philosophies create the 'fruit bomb' profile – higher alcohol, more pronounced fruit, fuller body. Old World prioritizes balance and terroir expression over pure fruit intensity, like comparing a Hollywood blockbuster to European art cinema.",
+    "sources": "The World Atlas of Wine; WSET Level 2",
+    "confidence": "established",
+    "tags": [
+      "new_world",
+      "old_world",
+      "style_differences"
+    ]
+  },
+  {
+    "id": "BT-043",
+    "domain": "blind_tasting",
+    "difficulty": 310,
+    "level": 2,
+    "format": "multiple_choice",
+    "question": "In structural analysis during blind tasting, what component provides the 'grip' and drying sensation in red wines?",
+    "options": [
+      "Acidity",
+      "Tannins",
+      "Alcohol",
+      "Residual sugar"
+    ],
+    "correct": 1,
+    "explanation": "Tannins are red wine's backbone – they bind to proteins in your saliva, creating that astringent, mouth-drying sensation. Think of tannins as wine's handshake: firm tannins give a strong grip, soft tannins offer a gentle touch.",
+    "sources": "WSET Level 2; Wine Science (Jamie Goode)",
+    "confidence": "established",
+    "tags": [
+      "tannins",
+      "structure",
+      "mouthfeel"
+    ]
+  },
+  {
+    "id": "BT-044",
+    "domain": "blind_tasting",
+    "difficulty": 360,
+    "level": 2,
+    "format": "scenario",
+    "question": "You're blind tasting a white wine showing: pale lemon-green color, high acidity, light body, 11% alcohol, with lime zest and wet stone aromas. What does this profile most likely indicate?",
+    "options": [
+      "Cool climate Sauvignon Blanc",
+      "Warm climate Chardonnay",
+      "Off-dry Riesling",
+      "Oaked Semillon"
+    ],
+    "correct": 0,
+    "explanation": "This is the textbook cool climate Sauvignon Blanc profile – the pale green tinge, racy acidity, low alcohol, and citrus-mineral combination scream 'cool climate SB.' The wet stone note is classic terroir expression from mineral soils.",
+    "sources": "WSET Level 2; The World Atlas of Wine",
+    "confidence": "established",
+    "tags": [
+      "sauvignon_blanc",
+      "cool_climate",
+      "identification"
+    ]
+  },
+  {
+    "id": "BT-045",
+    "domain": "blind_tasting",
+    "difficulty": 330,
+    "level": 2,
+    "format": "multiple_choice",
+    "question": "When evaluating sparkling wine, what does a fine, persistent mousse (bubble structure) typically indicate?",
+    "options": [
+      "Traditional method production",
+      "Tank method production",
+      "High residual sugar",
+      "Low acidity"
+    ],
+    "correct": 0,
+    "explanation": "Fine, persistent bubbles are the hallmark of traditional method sparkling wine – the secondary fermentation in bottle creates smaller, longer-lasting bubbles than tank method. It's like comparing champagne bubbles to soda bubbles: quality shows in the persistence.",
+    "sources": "WSET Level 2; The Oxford Companion to Wine",
+    "confidence": "established",
+    "tags": [
+      "sparkling_wine",
+      "traditional_method",
+      "mousse"
+    ]
+  },
+  {
+    "id": "BT-046",
+    "domain": "blind_tasting",
+    "difficulty": 380,
+    "level": 2,
+    "format": "multiple_choice",
+    "question": "Which color evolution most accurately indicates proper bottle aging in white wine?",
+    "options": [
+      "Pale lemon → medium lemon → deep lemon",
+      "Water-white → pale lemon → medium gold",
+      "Pale lemon → medium gold → amber",
+      "Green-tinged → pale gold → deep amber"
+    ],
+    "correct": 2,
+    "explanation": "White wine aging follows the golden path: pale lemon (youth) → medium gold (maturity) → amber (full age). Like autumn leaves, the progression from pale to gold to amber tells the story of time and oxidative development.",
+    "sources": "WSET Level 2; The Oxford Companion to Wine",
+    "confidence": "established",
+    "tags": [
+      "white_wine",
+      "aging_indicators",
+      "color_evolution"
+    ]
+  },
+  {
+    "id": "BT-047",
+    "domain": "blind_tasting",
+    "difficulty": 400,
+    "level": 3,
+    "format": "odd_one_out",
+    "question": "Which of these characteristics would NOT typically indicate extended lees contact in white wine production?",
+    "options": [
+      "Creamy texture",
+      "Brioche aromas",
+      "Bright citrus acidity",
+      "Nutty complexity"
+    ],
+    "correct": 2,
+    "explanation": "Extended lees contact creates richness and complexity but doesn't enhance acidity – that bright citrus zing comes from the grapes themselves or cool climate conditions. Lees aging is about adding texture and flavor, not preserving freshness.",
+    "sources": "WSET Level 3; Wine Science (Jamie Goode)",
+    "confidence": "established",
+    "tags": [
+      "lees_contact",
+      "white_wine",
+      "texture"
+    ]
+  },
+  {
+    "id": "BT-048",
+    "domain": "blind_tasting",
+    "difficulty": 450,
+    "level": 3,
+    "format": "scenario",
+    "question": "You're tasting a red wine showing: medium ruby color, high acidity, light-medium body, 12.5% alcohol, with red cherry, violet, and forest floor aromas. What grape variety and climate does this profile most strongly suggest?",
+    "options": [
+      "Cool climate Pinot Noir",
+      "Warm climate Grenache",
+      "Cool climate Cabernet Sauvignon",
+      "Warm climate Merlot"
+    ],
+    "correct": 0,
+    "explanation": "This is classic cool climate Pinot Noir – the combination of high acidity, moderate alcohol, red fruit (not black), floral violets, and earthy forest floor creates Pinot's signature profile. The delicate structure and earthy complexity are Pinot's calling cards.",
+    "sources": "WSET Level 3; The World Atlas of Wine",
+    "confidence": "established",
+    "tags": [
+      "pinot_noir",
+      "cool_climate",
+      "identification"
+    ]
+  },
+  {
+    "id": "BT-049",
+    "domain": "blind_tasting",
+    "difficulty": 420,
+    "level": 3,
+    "format": "multiple_choice",
+    "question": "In advanced blind tasting, the presence of TDN (1,1,6-trimethyl-1,2-dihydronaphthalene) most reliably indicates what?",
+    "options": [
+      "Aged Riesling development",
+      "Malolactic fermentation",
+      "American oak aging",
+      "Botrytis influence"
+    ],
+    "correct": 0,
+    "explanation": "TDN is Riesling's age signature – this compound develops over time, creating the distinctive petrol/kerosene aroma that marks mature Riesling. It's like Riesling's fingerprint that appears with age, making identification almost certain when present.",
+    "sources": "Wine Grapes (Robinson, Harding & Vouillamoz); WSET Level 3",
+    "confidence": "established",
+    "tags": [
+      "riesling",
+      "tdn",
+      "aging_markers"
+    ]
+  },
+  {
+    "id": "BT-050",
+    "domain": "blind_tasting",
+    "difficulty": 480,
+    "level": 3,
+    "format": "match_pairs",
+    "question": "Match each fortified wine style to its most characteristic production marker:",
+    "pairs": {
+      "left": [
+        "Vintage Port",
+        "Fino Sherry",
+        "Tawny Port",
+        "Pedro Ximénez Sherry"
+      ],
+      "right": [
+        "Biological aging under flor",
+        "Oxidative aging in wood",
+        "Bottle aging with sediment",
+        "Sun-dried grape concentration"
+      ]
+    },
+    "options": [],
+    "correct": [
+      2,
+      0,
+      1,
+      3
+    ],
+    "explanation": "Each fortified style has its production fingerprint: Vintage Port develops in bottle with sediment, Fino ages under protective flor yeast, Tawny oxidizes deliberately in wood, and PX concentrates through sun-drying. These markers are like production DNA in the glass.",
+    "sources": "WSET Level 3; The Oxford Companion to Wine",
+    "confidence": "established",
+    "tags": [
+      "fortified_wine",
+      "production_methods",
+      "sherry",
+      "port"
+    ]
+  },
+  {
+    "id": "BT-051",
+    "domain": "blind_tasting",
+    "difficulty": 320,
+    "level": 2,
+    "format": "multiple_choice",
+    "question": "In the CMS deductive tasting method, after completing your initial conclusion, what is the final step?",
+    "options": [
+      "Final conclusion - state your best guess with confidence level",
+      "Re-examine the wine's appearance for missed details",
+      "Compare your notes with other tasters",
+      "Taste the wine again to confirm your analysis"
+    ],
+    "correct": 0,
+    "explanation": "The CMS method ends with your final conclusion, where you commit to your best identification and state your confidence level. Think of it as your courtroom closing argument - you've presented all the evidence, now deliver your verdict with conviction.",
+    "sources": "Court of Master Sommeliers educational materials; GuildSomm",
+    "confidence": "established",
+    "tags": [
+      "cms_method",
+      "tasting_process",
+      "deductive_method"
+    ]
+  },
+  {
+    "id": "BT-052",
+    "domain": "blind_tasting",
+    "difficulty": 480,
+    "level": 3,
+    "format": "match_pairs",
+    "question": "Match each oak aging characteristic to its most reliable identification marker in blind tasting:",
+    "pairs": {
+      "left": [
+        "American oak influence",
+        "French oak influence",
+        "Extended oak aging",
+        "New oak contact"
+      ],
+      "right": [
+        "Vanilla and coconut aromatics",
+        "Cedar and baking spice notes",
+        "Integrated wood flavors",
+        "Pronounced toast and char"
+      ]
+    },
+    "options": [],
+    "correct": [
+      0,
+      1,
+      2,
+      3
+    ],
+    "explanation": "American oak's high vanillin content creates those signature vanilla-coconut notes, while French oak offers more subtle cedar-spice complexity. Remember: American oak shouts, French oak whispers, and time integrates everything into harmony.",
+    "sources": "WSET Level 3 Study Materials; The Oxford Companion to Wine",
+    "confidence": "established",
+    "tags": [
+      "oak_identification",
+      "american_oak",
+      "french_oak",
+      "aging_markers"
     ]
   }
 ]

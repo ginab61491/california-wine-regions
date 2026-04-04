@@ -2,7 +2,7 @@
   {
     "id": "TS-001",
     "domain": "tasting_sensory",
-    "difficulty": 258,
+    "difficulty": 217,
     "level": 1,
     "format": "multiple_choice",
     "question": "What does the term 'dry' mean when describing a wine?",
@@ -25,7 +25,7 @@
   {
     "id": "TS-002",
     "domain": "tasting_sensory",
-    "difficulty": 196,
+    "difficulty": 164,
     "level": 1,
     "format": "multiple_choice",
     "question": "In wine tasting, what does 'body' refer to?",
@@ -48,7 +48,7 @@
   {
     "id": "TS-003",
     "domain": "tasting_sensory",
-    "difficulty": 142,
+    "difficulty": 151,
     "level": 1,
     "format": "odd_one_out",
     "question": "Which of the following is NOT a standard component assessed on the palate in the WSET Systematic Approach to Tasting?",
@@ -71,7 +71,7 @@
   {
     "id": "TS-004",
     "domain": "tasting_sensory",
-    "difficulty": 170,
+    "difficulty": 123,
     "level": 1,
     "format": "multiple_choice",
     "question": "What does 'finish' or 'length' refer to in wine tasting?",
@@ -94,7 +94,7 @@
   {
     "id": "TS-005",
     "domain": "tasting_sensory",
-    "difficulty": 262,
+    "difficulty": 131,
     "level": 1,
     "format": "multiple_choice",
     "question": "Which of the following is a primary aroma in wine?",
@@ -117,7 +117,7 @@
   {
     "id": "TS-006",
     "domain": "tasting_sensory",
-    "difficulty": 137,
+    "difficulty": 194,
     "level": 1,
     "format": "multiple_choice",
     "question": "Which flavor is most typical of unoaked Chardonnay from a cool climate?",
@@ -140,7 +140,7 @@
   {
     "id": "TS-007",
     "domain": "tasting_sensory",
-    "difficulty": 240,
+    "difficulty": 107,
     "level": 1,
     "format": "odd_one_out",
     "question": "Which of these is NOT a secondary aroma/flavor (derived from winemaking)?",
@@ -163,7 +163,7 @@
   {
     "id": "TS-008",
     "domain": "tasting_sensory",
-    "difficulty": 132,
+    "difficulty": 114,
     "level": 1,
     "format": "multiple_choice",
     "question": "A pale lemon color in a white wine most likely indicates what?",
@@ -186,7 +186,7 @@
   {
     "id": "TS-009",
     "domain": "tasting_sensory",
-    "difficulty": 195,
+    "difficulty": 119,
     "level": 1,
     "format": "match_pairs",
     "question": "Match each aroma compound to its characteristic descriptor.",
@@ -222,7 +222,7 @@
   {
     "id": "TS-010",
     "domain": "tasting_sensory",
-    "difficulty": 229,
+    "difficulty": 170,
     "level": 1,
     "format": "multiple_choice",
     "question": "What sensation does high tannin create in the mouth?",
@@ -245,8 +245,8 @@
   {
     "id": "TS-011",
     "domain": "tasting_sensory",
-    "difficulty": 418,
-    "level": 2,
+    "difficulty": 601,
+    "level": 4,
     "format": "multiple_choice",
     "question": "In the WSET Systematic Approach to Tasting, which term describes a wine with flavors that are easily identified and pronounced?",
     "options": [
@@ -268,8 +268,8 @@
   {
     "id": "TS-012",
     "domain": "tasting_sensory",
-    "difficulty": 323,
-    "level": 2,
+    "difficulty": 685,
+    "level": 4,
     "format": "odd_one_out",
     "question": "Which of the following is NOT a tertiary aroma associated with bottle aging?",
     "options": [
@@ -291,8 +291,8 @@
   {
     "id": "TS-013",
     "domain": "tasting_sensory",
-    "difficulty": 452,
-    "level": 2,
+    "difficulty": 631,
+    "level": 4,
     "format": "multiple_choice",
     "question": "What does the term 'volatile acidity' (VA) refer to, and at what point is it considered a fault?",
     "options": [
@@ -314,8 +314,8 @@
   {
     "id": "TS-014",
     "domain": "tasting_sensory",
-    "difficulty": 406,
-    "level": 2,
+    "difficulty": 648,
+    "level": 4,
     "format": "match_pairs",
     "question": "Match each wine fault to its characteristic aroma/indicator.",
     "pairs": {
@@ -352,8 +352,8 @@
   {
     "id": "TS-015",
     "domain": "tasting_sensory",
-    "difficulty": 393,
-    "level": 2,
+    "difficulty": 607,
+    "level": 4,
     "format": "multiple_choice",
     "question": "An orange-tinged rim on a red wine most likely indicates what?",
     "options": [
@@ -375,8 +375,8 @@
   {
     "id": "TS-016",
     "domain": "tasting_sensory",
-    "difficulty": 668,
-    "level": 3,
+    "difficulty": 806,
+    "level": 5,
     "format": "multiple_choice",
     "question": "In the CMS deductive tasting grid, what does assessing 'structural' components on the palate help determine?",
     "options": [
@@ -398,8 +398,8 @@
   {
     "id": "TS-017",
     "domain": "tasting_sensory",
-    "difficulty": 520,
-    "level": 3,
+    "difficulty": 850,
+    "level": 5,
     "format": "odd_one_out",
     "question": "Which of these descriptors does NOT belong to the WSET SAT category of secondary aromas?",
     "options": [
@@ -422,8 +422,8 @@
   {
     "id": "TS-018",
     "domain": "tasting_sensory",
-    "difficulty": 639,
-    "level": 3,
+    "difficulty": 762,
+    "level": 5,
     "format": "multiple_choice",
     "question": "Which compound is primarily responsible for the 'cat pee' or boxwood descriptor in Sauvignon Blanc?",
     "options": [
@@ -445,8 +445,8 @@
   {
     "id": "TS-019",
     "domain": "tasting_sensory",
-    "difficulty": 544,
-    "level": 3,
+    "difficulty": 839,
+    "level": 5,
     "format": "match_pairs",
     "question": "Match each wine color observation to its most likely interpretation.",
     "pairs": {
@@ -481,8 +481,8 @@
   {
     "id": "TS-020",
     "domain": "tasting_sensory",
-    "difficulty": 730,
-    "level": 4,
+    "difficulty": 906,
+    "level": 6,
     "format": "multiple_choice",
     "question": "At what threshold concentration is TCA (2,4,6-trichloroanisole) generally detectable by most tasters?",
     "options": [
@@ -505,8 +505,8 @@
   {
     "id": "TS-021",
     "domain": "tasting_sensory",
-    "difficulty": 873,
-    "level": 4,
+    "difficulty": 1069,
+    "level": 6,
     "format": "multiple_choice",
     "question": "Which compound is responsible for the 'reduced' aroma of rotten egg in wine?",
     "options": [
@@ -529,8 +529,8 @@
   {
     "id": "TS-022",
     "domain": "tasting_sensory",
-    "difficulty": 796,
-    "level": 4,
+    "difficulty": 1069,
+    "level": 6,
     "format": "odd_one_out",
     "question": "Which of the following is NOT produced by Brettanomyces yeast?",
     "options": [
@@ -552,8 +552,8 @@
   {
     "id": "TS-023",
     "domain": "tasting_sensory",
-    "difficulty": 817,
-    "level": 4,
+    "difficulty": 947,
+    "level": 6,
     "format": "match_pairs",
     "question": "Match each aroma family to its chemical class.",
     "pairs": {
@@ -590,8 +590,8 @@
   {
     "id": "TS-024",
     "domain": "tasting_sensory",
-    "difficulty": 1012,
-    "level": 5,
+    "difficulty": 1238,
+    "level": 7,
     "format": "multiple_choice",
     "question": "In advanced blind tasting, if a white wine shows pronounced aromas of petrol, lime, and wet slate with high acidity and low alcohol, which is the most likely identification?",
     "options": [
@@ -614,8 +614,8 @@
   {
     "id": "TS-025",
     "domain": "tasting_sensory",
-    "difficulty": 1059,
-    "level": 5,
+    "difficulty": 1162,
+    "level": 7,
     "format": "multiple_choice",
     "question": "Which structural feature most reliably distinguishes Nebbiolo from Sangiovese in a blind tasting of young wines?",
     "options": [
@@ -639,8 +639,8 @@
   {
     "id": "TS-026",
     "domain": "tasting_sensory",
-    "difficulty": 924,
-    "level": 5,
+    "difficulty": 1120,
+    "level": 7,
     "format": "odd_one_out",
     "question": "Which descriptor is NOT typically associated with Brettanomyces at low levels that some consider a positive complexity contribution?",
     "options": [
@@ -663,8 +663,8 @@
   {
     "id": "TS-027",
     "domain": "tasting_sensory",
-    "difficulty": 978,
-    "level": 5,
+    "difficulty": 1282,
+    "level": 7,
     "format": "match_pairs",
     "question": "Match each tasting observation in a red wine to the deductive conclusion it supports.",
     "pairs": {
@@ -699,8 +699,8 @@
   {
     "id": "TS-028",
     "domain": "tasting_sensory",
-    "difficulty": 1154,
-    "level": 6,
+    "difficulty": 1417,
+    "level": 8,
     "format": "multiple_choice",
     "question": "In the CMS deductive tasting methodology, after assessing sight, nose, and palate, what is the recommended order for the 'initial conclusion'?",
     "options": [
@@ -722,8 +722,8 @@
   {
     "id": "TS-029",
     "domain": "tasting_sensory",
-    "difficulty": 1262,
-    "level": 6,
+    "difficulty": 1303,
+    "level": 8,
     "format": "multiple_choice",
     "question": "What is the primary sensory mechanism by which tannins cause astringency?",
     "options": [
@@ -746,8 +746,8 @@
   {
     "id": "TS-030",
     "domain": "tasting_sensory",
-    "difficulty": 1157,
-    "level": 6,
+    "difficulty": 1473,
+    "level": 8,
     "format": "odd_one_out",
     "question": "In advanced blind tasting of Pinot Noir, which aroma is LEAST likely to appear as a primary varietal marker?",
     "options": [
@@ -769,8 +769,8 @@
   {
     "id": "TS-031",
     "domain": "tasting_sensory",
-    "difficulty": 1233,
-    "level": 6,
+    "difficulty": 1440,
+    "level": 8,
     "format": "match_pairs",
     "question": "Match each aging-derived compound to the aroma it contributes in mature wines.",
     "pairs": {
@@ -807,8 +807,8 @@
   {
     "id": "TS-032",
     "domain": "tasting_sensory",
-    "difficulty": 1343,
-    "level": 7,
+    "difficulty": 1699,
+    "level": 9,
     "format": "multiple_choice",
     "question": "In sensory science, what is 'cross-modal interaction' as it applies to wine tasting?",
     "options": [
@@ -831,8 +831,8 @@
   {
     "id": "TS-033",
     "domain": "tasting_sensory",
-    "difficulty": 1344,
-    "level": 7,
+    "difficulty": 1576,
+    "level": 9,
     "format": "multiple_choice",
     "question": "What is the chemical basis for the 'minerality' perception that some tasters describe in certain wines?",
     "options": [
@@ -855,8 +855,8 @@
   {
     "id": "TS-034",
     "domain": "tasting_sensory",
-    "difficulty": 1440,
-    "level": 7,
+    "difficulty": 1582,
+    "level": 9,
     "format": "odd_one_out",
     "question": "Which compound does NOT contribute to the 'reductive' spectrum of aromas in wine?",
     "options": [
@@ -879,8 +879,8 @@
   {
     "id": "TS-035",
     "domain": "tasting_sensory",
-    "difficulty": 1456,
-    "level": 7,
+    "difficulty": 1651,
+    "level": 9,
     "format": "match_pairs",
     "question": "Match each sensory perception threshold concept to its definition.",
     "pairs": {
@@ -916,8 +916,8 @@
   {
     "id": "TS-036",
     "domain": "tasting_sensory",
-    "difficulty": 1611,
-    "level": 8,
+    "difficulty": 1735,
+    "level": 10,
     "format": "multiple_choice",
     "question": "In a Master Sommelier exam blind tasting context, which combination of structural cues would most strongly suggest a Grand Cru Burgundy (Pinot Noir) versus a high-quality Willamette Valley Pinot Noir?",
     "options": [
@@ -941,8 +941,8 @@
   {
     "id": "TS-037",
     "domain": "tasting_sensory",
-    "difficulty": 1652,
-    "level": 8,
+    "difficulty": 1933,
+    "level": 10,
     "format": "multiple_choice",
     "question": "What role does retronasal olfaction play in wine tasting, and how does it differ from orthonasal olfaction?",
     "options": [
@@ -965,8 +965,8 @@
   {
     "id": "TS-038",
     "domain": "tasting_sensory",
-    "difficulty": 1566,
-    "level": 8,
+    "difficulty": 1918,
+    "level": 10,
     "format": "odd_one_out",
     "question": "At the MS exam tasting level, which of these is NOT a recognized 'signpost' for identifying Syrah in a blind tasting?",
     "options": [
@@ -990,8 +990,8 @@
   {
     "id": "TS-039",
     "domain": "tasting_sensory",
-    "difficulty": 1926,
-    "level": 9,
+    "difficulty": 2059,
+    "level": 11,
     "format": "multiple_choice",
     "question": "At Master Sommelier exam level, which analytical approach best distinguishes between a mature (15+ year) left-bank Bordeaux and a mature Napa Valley Cabernet Sauvignon?",
     "options": [
@@ -1015,8 +1015,8 @@
   {
     "id": "TS-040",
     "domain": "tasting_sensory",
-    "difficulty": 1757,
-    "level": 9,
+    "difficulty": 2324,
+    "level": 11,
     "format": "multiple_choice",
     "question": "In the context of wine perception science, what is 'perceptual constancy' and why does it matter for expert blind tasters?",
     "options": [
@@ -1039,8 +1039,8 @@
   {
     "id": "TS-041",
     "domain": "tasting_sensory",
-    "difficulty": 1739,
-    "level": 9,
+    "difficulty": 2312,
+    "level": 11,
     "format": "odd_one_out",
     "question": "At the MS exam level, which of these is NOT a recognized structural indicator of high-altitude viticulture when assessing a wine blind?",
     "options": [
@@ -1063,8 +1063,8 @@
   {
     "id": "TS-042",
     "domain": "tasting_sensory",
-    "difficulty": 1958,
-    "level": 9,
+    "difficulty": 2291,
+    "level": 11,
     "format": "match_pairs",
     "question": "Match each advanced sensory concept to its practical application in Master Sommelier-level blind tasting.",
     "pairs": {
@@ -1101,7 +1101,7 @@
   {
     "id": "TS-043",
     "domain": "tasting_sensory",
-    "difficulty": 180,
+    "difficulty": 244,
     "level": 1,
     "format": "multiple_choice",
     "question": "What is the term for the smell of a wine?",
@@ -1124,7 +1124,7 @@
   {
     "id": "TS-044",
     "domain": "tasting_sensory",
-    "difficulty": 133,
+    "difficulty": 240,
     "level": 1,
     "format": "odd_one_out",
     "question": "Which of the following is NOT one of the basic tastes perceivable on the palate?",
@@ -1147,7 +1147,7 @@
   {
     "id": "TS-045",
     "domain": "tasting_sensory",
-    "difficulty": 154,
+    "difficulty": 121,
     "level": 1,
     "format": "multiple_choice",
     "question": "Which aroma is most commonly associated with Sauvignon Blanc?",
@@ -1170,7 +1170,7 @@
   {
     "id": "TS-046",
     "domain": "tasting_sensory",
-    "difficulty": 227,
+    "difficulty": 232,
     "level": 1,
     "format": "match_pairs",
     "question": "Match each grape variety to its most recognized primary aroma descriptor.",
@@ -1206,8 +1206,8 @@
   {
     "id": "TS-047",
     "domain": "tasting_sensory",
-    "difficulty": 375,
-    "level": 2,
+    "difficulty": 566,
+    "level": 4,
     "format": "multiple_choice",
     "question": "What does a 'green tinge' on the rim of a white wine typically indicate?",
     "options": [
@@ -1229,8 +1229,8 @@
   {
     "id": "TS-048",
     "domain": "tasting_sensory",
-    "difficulty": 368,
-    "level": 2,
+    "difficulty": 689,
+    "level": 4,
     "format": "multiple_choice",
     "question": "What does 'development' refer to in the WSET SAT nose assessment?",
     "options": [
@@ -1252,8 +1252,8 @@
   {
     "id": "TS-049",
     "domain": "tasting_sensory",
-    "difficulty": 614,
-    "level": 3,
+    "difficulty": 792,
+    "level": 5,
     "format": "odd_one_out",
     "question": "Which of these is NOT a recognized component of the WSET SAT palate assessment for red wines?",
     "options": [
@@ -1275,8 +1275,8 @@
   {
     "id": "TS-050",
     "domain": "tasting_sensory",
-    "difficulty": 640,
-    "level": 3,
+    "difficulty": 751,
+    "level": 5,
     "format": "multiple_choice",
     "question": "What does the term 'closed' mean when describing a wine's aromatic profile?",
     "options": [
@@ -1298,8 +1298,8 @@
   {
     "id": "TS-051",
     "domain": "tasting_sensory",
-    "difficulty": 814,
-    "level": 4,
+    "difficulty": 912,
+    "level": 6,
     "format": "match_pairs",
     "question": "Match each wine fault to the compound responsible.",
     "pairs": {
@@ -1336,8 +1336,8 @@
   {
     "id": "TS-052",
     "domain": "tasting_sensory",
-    "difficulty": 768,
-    "level": 4,
+    "difficulty": 926,
+    "level": 6,
     "format": "multiple_choice",
     "question": "What is the key difference between 'volatile acidity' and 'fixed acidity' in wine?",
     "options": [
@@ -1360,8 +1360,8 @@
   {
     "id": "TS-053",
     "domain": "tasting_sensory",
-    "difficulty": 959,
-    "level": 5,
+    "difficulty": 1151,
+    "level": 7,
     "format": "multiple_choice",
     "question": "When blind tasting a white wine that shows pronounced aromas of honey, dried apricot, and botrytis-like complexity with very high residual sugar but balanced by searing acidity, which of these is the most likely identification?",
     "options": [
@@ -1385,8 +1385,8 @@
   {
     "id": "TS-054",
     "domain": "tasting_sensory",
-    "difficulty": 1245,
-    "level": 6,
+    "difficulty": 1348,
+    "level": 8,
     "format": "multiple_choice",
     "question": "In the CMS deductive tasting method, what is the significance of describing tannin as 'ripe and fine-grained' versus 'green and stalky'?",
     "options": [
@@ -1409,8 +1409,8 @@
   {
     "id": "TS-055",
     "domain": "tasting_sensory",
-    "difficulty": 1329,
-    "level": 7,
+    "difficulty": 1649,
+    "level": 9,
     "format": "multiple_choice",
     "question": "What is the 'buffer capacity' of a wine, and how does it affect sensory perception of acidity?",
     "options": [
@@ -1434,8 +1434,8 @@
   {
     "id": "TS-056",
     "domain": "tasting_sensory",
-    "difficulty": 1641,
-    "level": 8,
+    "difficulty": 1785,
+    "level": 10,
     "format": "odd_one_out",
     "question": "In MS-level blind tasting of aged white Burgundy vs. aged white Rhône (Roussanne/Marsanne), which aromatic marker is NOT a reliable differentiator?",
     "options": [
@@ -1459,8 +1459,8 @@
   {
     "id": "TS-057",
     "domain": "tasting_sensory",
-    "difficulty": 1734,
-    "level": 9,
+    "difficulty": 2427,
+    "level": 11,
     "format": "match_pairs",
     "question": "Match each advanced tasting scenario to the key deductive reasoning step used at the MS exam level.",
     "pairs": {
@@ -1495,8 +1495,8 @@
   {
     "id": "TS-058",
     "domain": "tasting_sensory",
-    "difficulty": 400,
-    "level": 2,
+    "difficulty": 685,
+    "level": 4,
     "format": "multiple_choice",
     "question": "What aroma descriptor is most associated with wines that have undergone malolactic fermentation?",
     "options": [
@@ -1519,8 +1519,8 @@
   {
     "id": "TS-059",
     "domain": "tasting_sensory",
-    "difficulty": 1167,
-    "level": 6,
+    "difficulty": 1344,
+    "level": 8,
     "format": "multiple_choice",
     "question": "What is 'typicity' in wine evaluation and why is it important for blind tasting?",
     "options": [
@@ -1542,7 +1542,7 @@
   {
     "id": "TS-060",
     "domain": "tasting_sensory",
-    "difficulty": 175,
+    "difficulty": 160,
     "level": 1,
     "format": "multiple_choice",
     "question": "What are 'legs' or 'tears' on the side of a wine glass?",
@@ -1565,7 +1565,7 @@
   {
     "id": "TS-061",
     "domain": "tasting_sensory",
-    "difficulty": 255,
+    "difficulty": 242,
     "level": 1,
     "format": "odd_one_out",
     "question": "Which of these is NOT a typical aroma of oak aging?",
@@ -1588,8 +1588,8 @@
   {
     "id": "TS-062",
     "domain": "tasting_sensory",
-    "difficulty": 541,
-    "level": 3,
+    "difficulty": 871,
+    "level": 5,
     "format": "multiple_choice",
     "question": "In the WSET SAT, what does 'medium(+)' alcohol indicate as an approximate range?",
     "options": [
@@ -1611,8 +1611,8 @@
   {
     "id": "TS-063",
     "domain": "tasting_sensory",
-    "difficulty": 811,
-    "level": 4,
+    "difficulty": 1032,
+    "level": 6,
     "format": "multiple_choice",
     "question": "What compound is primarily responsible for the 'smoky' or 'campfire' aroma found in wines affected by wildfire smoke exposure?",
     "options": [
@@ -1635,8 +1635,8 @@
   {
     "id": "TS-064",
     "domain": "tasting_sensory",
-    "difficulty": 968,
-    "level": 5,
+    "difficulty": 1123,
+    "level": 7,
     "format": "match_pairs",
     "question": "Match each white wine structural profile to its most likely grape variety in a blind tasting context.",
     "pairs": {
@@ -1671,8 +1671,8 @@
   {
     "id": "TS-065",
     "domain": "tasting_sensory",
-    "difficulty": 1410,
-    "level": 7,
+    "difficulty": 1686,
+    "level": 9,
     "format": "odd_one_out",
     "question": "Which of these factors does NOT directly influence the perception threshold of volatile compounds in wine?",
     "options": [
@@ -1694,8 +1694,8 @@
   {
     "id": "TS-066",
     "domain": "tasting_sensory",
-    "difficulty": 1644,
-    "level": 8,
+    "difficulty": 1739,
+    "level": 10,
     "format": "multiple_choice",
     "question": "In a deductive tasting at the MS level, a red wine shows medium(+) ruby color, pronounced intensity of black cherry, dried herb, iron/blood, very high acid, high fine-grained tannin, medium(+) alcohol, and a long finish. Which of these is the most likely conclusion?",
     "options": [
@@ -1718,8 +1718,8 @@
   {
     "id": "TS-067",
     "domain": "tasting_sensory",
-    "difficulty": 1848,
-    "level": 9,
+    "difficulty": 2380,
+    "level": 11,
     "format": "multiple_choice",
     "question": "In the most advanced blind tasting contexts, what is the concept of 'palate fatigue' and how do MS candidates strategically manage it?",
     "options": [
@@ -1742,7 +1742,7 @@
   {
     "id": "TS-068",
     "domain": "tasting_sensory",
-    "difficulty": 230,
+    "difficulty": 224,
     "level": 1,
     "format": "match_pairs",
     "question": "Match each wine tasting term to its meaning.",
@@ -1777,8 +1777,8 @@
   {
     "id": "TS-069",
     "domain": "tasting_sensory",
-    "difficulty": 1075,
-    "level": 5,
+    "difficulty": 1120,
+    "level": 7,
     "format": "multiple_choice",
     "question": "How does the 'spritz' detection threshold work in still wines, and what can trace CO2 indicate?",
     "options": [
@@ -1801,8 +1801,8 @@
   {
     "id": "TS-070",
     "domain": "tasting_sensory",
-    "difficulty": 1525,
-    "level": 8,
+    "difficulty": 1964,
+    "level": 10,
     "format": "match_pairs",
     "question": "Match each advanced tasting concept to its application in MS exam-level deductive tasting.",
     "pairs": {
@@ -1837,8 +1837,8 @@
   {
     "id": "TS-071",
     "domain": "tasting_sensory",
-    "difficulty": 1833,
-    "level": 9,
+    "difficulty": 2086,
+    "level": 11,
     "format": "odd_one_out",
     "question": "At MS exam level, which of these is NOT a reliable indicator for distinguishing top Côte-Rôtie from top Hermitage in a blind tasting of Northern Rhône Syrah?",
     "options": [
@@ -1862,8 +1862,8 @@
   {
     "id": "TS-072",
     "domain": "tasting_sensory",
-    "difficulty": 359,
-    "level": 2,
+    "difficulty": 551,
+    "level": 4,
     "format": "odd_one_out",
     "question": "Which of the following is NOT a recognized category in the WSET SAT visual assessment?",
     "options": [
@@ -1884,8 +1884,8 @@
   {
     "id": "TS-073",
     "domain": "tasting_sensory",
-    "difficulty": 829,
-    "level": 4,
+    "difficulty": 982,
+    "level": 6,
     "format": "odd_one_out",
     "question": "Which of these compounds is NOT classified as a terpene responsible for floral aromas in wine?",
     "options": [
@@ -1908,7 +1908,7 @@
   {
     "id": "TS-074",
     "domain": "tasting_sensory",
-    "difficulty": 166,
+    "difficulty": 178,
     "level": 1,
     "format": "multiple_choice",
     "question": "What does 'tannin' feel like in your mouth?",
@@ -1931,8 +1931,8 @@
   {
     "id": "TS-075",
     "domain": "tasting_sensory",
-    "difficulty": 441,
-    "level": 2,
+    "difficulty": 673,
+    "level": 4,
     "format": "multiple_choice",
     "question": "In the WSET SAT, what is meant by 'flavor intensity' on the palate?",
     "options": [
@@ -1954,7 +1954,7 @@
   {
     "id": "WM-001",
     "domain": "winemaking",
-    "difficulty": 139,
+    "difficulty": 222,
     "level": 1,
     "format": "multiple_choice",
     "question": "What is alcoholic fermentation in winemaking?",
@@ -1977,7 +1977,7 @@
   {
     "id": "WM-002",
     "domain": "winemaking",
-    "difficulty": 192,
+    "difficulty": 114,
     "level": 1,
     "format": "multiple_choice",
     "question": "What is the primary purpose of oak barrels in winemaking?",
@@ -2000,7 +2000,7 @@
   {
     "id": "WM-003",
     "domain": "winemaking",
-    "difficulty": 193,
+    "difficulty": 112,
     "level": 1,
     "format": "odd_one_out",
     "question": "Which of the following is NOT a step in basic red winemaking?",
@@ -2022,7 +2022,7 @@
   {
     "id": "WM-004",
     "domain": "winemaking",
-    "difficulty": 134,
+    "difficulty": 105,
     "level": 1,
     "format": "match_pairs",
     "question": "Match each winemaking term to its basic definition.",
@@ -2057,7 +2057,7 @@
   {
     "id": "WM-005",
     "domain": "winemaking",
-    "difficulty": 177,
+    "difficulty": 153,
     "level": 1,
     "format": "multiple_choice",
     "question": "What is malolactic fermentation (MLF)?",
@@ -2080,7 +2080,7 @@
   {
     "id": "WM-006",
     "domain": "winemaking",
-    "difficulty": 156,
+    "difficulty": 163,
     "level": 1,
     "format": "multiple_choice",
     "question": "What is the main difference between French oak and American oak in winemaking?",
@@ -2103,7 +2103,7 @@
   {
     "id": "WM-007",
     "domain": "winemaking",
-    "difficulty": 161,
+    "difficulty": 143,
     "level": 1,
     "format": "odd_one_out",
     "question": "Which of the following is NOT a method for producing sparkling wine?",
@@ -2126,7 +2126,7 @@
   {
     "id": "WM-008",
     "domain": "winemaking",
-    "difficulty": 271,
+    "difficulty": 212,
     "level": 1,
     "format": "multiple_choice",
     "question": "What is the purpose of sulfur dioxide (SO₂) in winemaking?",
@@ -2149,7 +2149,7 @@
   {
     "id": "WM-009",
     "domain": "winemaking",
-    "difficulty": 245,
+    "difficulty": 239,
     "level": 1,
     "format": "match_pairs",
     "question": "Match each sparkling wine method to its key characteristic.",
@@ -2186,8 +2186,8 @@
   {
     "id": "WM-010",
     "domain": "winemaking",
-    "difficulty": 444,
-    "level": 2,
+    "difficulty": 660,
+    "level": 4,
     "format": "multiple_choice",
     "question": "What is 'cold soak' (cold maceration) and what is its primary purpose?",
     "options": [
@@ -2210,8 +2210,8 @@
   {
     "id": "WM-011",
     "domain": "winemaking",
-    "difficulty": 320,
-    "level": 2,
+    "difficulty": 658,
+    "level": 4,
     "format": "multiple_choice",
     "question": "What is carbonic maceration and which wine region is it most associated with?",
     "options": [
@@ -2233,8 +2233,8 @@
   {
     "id": "WM-012",
     "domain": "winemaking",
-    "difficulty": 400,
-    "level": 2,
+    "difficulty": 592,
+    "level": 4,
     "format": "odd_one_out",
     "question": "Which of the following is NOT a method of producing sweet wine?",
     "options": [
@@ -2256,8 +2256,8 @@
   {
     "id": "WM-013",
     "domain": "winemaking",
-    "difficulty": 350,
-    "level": 2,
+    "difficulty": 602,
+    "level": 4,
     "format": "match_pairs",
     "question": "Match each sweet wine production method to the wine most associated with it.",
     "pairs": {
@@ -2294,8 +2294,8 @@
   {
     "id": "WM-014",
     "domain": "winemaking",
-    "difficulty": 592,
-    "level": 3,
+    "difficulty": 860,
+    "level": 5,
     "format": "multiple_choice",
     "question": "In Port production, at what approximate sugar level is fermentation arrested by the addition of grape spirit (aguardente)?",
     "options": [
@@ -2318,8 +2318,8 @@
   {
     "id": "WM-015",
     "domain": "winemaking",
-    "difficulty": 569,
-    "level": 3,
+    "difficulty": 747,
+    "level": 5,
     "format": "multiple_choice",
     "question": "What is the difference between 'biological aging' and 'oxidative aging' in Sherry production?",
     "options": [
@@ -2342,8 +2342,8 @@
   {
     "id": "WM-016",
     "domain": "winemaking",
-    "difficulty": 616,
-    "level": 3,
+    "difficulty": 806,
+    "level": 5,
     "format": "odd_one_out",
     "question": "Which of these is NOT a recognized toast level for oak barrels?",
     "options": [
@@ -2365,8 +2365,8 @@
   {
     "id": "WM-017",
     "domain": "winemaking",
-    "difficulty": 551,
-    "level": 3,
+    "difficulty": 713,
+    "level": 5,
     "format": "match_pairs",
     "question": "Match each Sherry style to its aging method.",
     "pairs": {
@@ -2403,8 +2403,8 @@
   {
     "id": "WM-018",
     "domain": "winemaking",
-    "difficulty": 831,
-    "level": 4,
+    "difficulty": 972,
+    "level": 6,
     "format": "multiple_choice",
     "question": "What is the primary chemical reaction in malolactic fermentation, and which enzyme catalyzes it?",
     "options": [
@@ -2427,8 +2427,8 @@
   {
     "id": "WM-019",
     "domain": "winemaking",
-    "difficulty": 766,
-    "level": 4,
+    "difficulty": 950,
+    "level": 6,
     "format": "multiple_choice",
     "question": "What is 'bâtonnage' and what effect does it have on wine?",
     "options": [
@@ -2451,8 +2451,8 @@
   {
     "id": "WM-020",
     "domain": "winemaking",
-    "difficulty": 828,
-    "level": 4,
+    "difficulty": 1019,
+    "level": 6,
     "format": "odd_one_out",
     "question": "Which of these is NOT a recognized fining agent used in winemaking?",
     "options": [
@@ -2474,8 +2474,8 @@
   {
     "id": "WM-021",
     "domain": "winemaking",
-    "difficulty": 780,
-    "level": 4,
+    "difficulty": 1081,
+    "level": 6,
     "format": "match_pairs",
     "question": "Match each fermentation vessel to its primary winemaking characteristic.",
     "pairs": {
@@ -2512,8 +2512,8 @@
   {
     "id": "WM-022",
     "domain": "winemaking",
-    "difficulty": 1078,
-    "level": 5,
+    "difficulty": 1156,
+    "level": 7,
     "format": "multiple_choice",
     "question": "In the traditional method of sparkling wine production, what is 'dosage' (liqueur d'expédition)?",
     "options": [
@@ -2536,8 +2536,8 @@
   {
     "id": "WM-023",
     "domain": "winemaking",
-    "difficulty": 1026,
-    "level": 5,
+    "difficulty": 1124,
+    "level": 7,
     "format": "multiple_choice",
     "question": "What is the difference between 'cross-flow filtration' and 'traditional pad (depth) filtration'?",
     "options": [
@@ -2559,8 +2559,8 @@
   {
     "id": "WM-024",
     "domain": "winemaking",
-    "difficulty": 952,
-    "level": 5,
+    "difficulty": 1116,
+    "level": 7,
     "format": "odd_one_out",
     "question": "Which of the following is NOT a principle or practice associated with biodynamic viticulture?",
     "options": [
@@ -2582,8 +2582,8 @@
   {
     "id": "WM-025",
     "domain": "winemaking",
-    "difficulty": 1068,
-    "level": 5,
+    "difficulty": 1204,
+    "level": 7,
     "format": "match_pairs",
     "question": "Match each viticultural practice to its primary purpose.",
     "pairs": {
@@ -2619,8 +2619,8 @@
   {
     "id": "WM-026",
     "domain": "winemaking",
-    "difficulty": 1229,
-    "level": 6,
+    "difficulty": 1439,
+    "level": 8,
     "format": "multiple_choice",
     "question": "What is the chemical role of SO₂ as an antioxidant in wine, specifically in its 'free' form?",
     "options": [
@@ -2643,8 +2643,8 @@
   {
     "id": "WM-027",
     "domain": "winemaking",
-    "difficulty": 1240,
-    "level": 6,
+    "difficulty": 1487,
+    "level": 8,
     "format": "multiple_choice",
     "question": "What is 'extended maceration' and how does it differ from post-fermentation maceration?",
     "options": [
@@ -2666,8 +2666,8 @@
   {
     "id": "WM-028",
     "domain": "winemaking",
-    "difficulty": 1243,
-    "level": 6,
+    "difficulty": 1303,
+    "level": 8,
     "format": "odd_one_out",
     "question": "Which of these is NOT a characteristic of 'natural wine' as generally understood by the movement?",
     "options": [
@@ -2689,8 +2689,8 @@
   {
     "id": "WM-029",
     "domain": "winemaking",
-    "difficulty": 1171,
-    "level": 6,
+    "difficulty": 1468,
+    "level": 8,
     "format": "match_pairs",
     "question": "Match each fortification style to its production specifics.",
     "pairs": {
@@ -2726,8 +2726,8 @@
   {
     "id": "WM-030",
     "domain": "winemaking",
-    "difficulty": 1439,
-    "level": 7,
+    "difficulty": 1508,
+    "level": 9,
     "format": "multiple_choice",
     "question": "What is the 'Pasteur effect' and its relevance to wine fermentation?",
     "options": [
@@ -2750,8 +2750,8 @@
   {
     "id": "WM-031",
     "domain": "winemaking",
-    "difficulty": 1389,
-    "level": 7,
+    "difficulty": 1546,
+    "level": 9,
     "format": "multiple_choice",
     "question": "What is the role of 'nitrogen nutrition' (YAN - Yeast Assimilable Nitrogen) during fermentation, and what happens when it is deficient?",
     "options": [
@@ -2775,8 +2775,8 @@
   {
     "id": "WM-032",
     "domain": "winemaking",
-    "difficulty": 1477,
-    "level": 7,
+    "difficulty": 1609,
+    "level": 9,
     "format": "odd_one_out",
     "question": "Which of these is NOT a mechanism by which micro-oxygenation or controlled oxygen exposure benefits red wine during aging?",
     "options": [
@@ -2799,8 +2799,8 @@
   {
     "id": "WM-033",
     "domain": "winemaking",
-    "difficulty": 1397,
-    "level": 7,
+    "difficulty": 1513,
+    "level": 9,
     "format": "match_pairs",
     "question": "Match each winemaking intervention to its specific chemical mechanism.",
     "pairs": {
@@ -2836,8 +2836,8 @@
   {
     "id": "WM-034",
     "domain": "winemaking",
-    "difficulty": 1653,
-    "level": 8,
+    "difficulty": 1745,
+    "level": 10,
     "format": "multiple_choice",
     "question": "In the production of top-quality traditional method sparkling wine, what specific reactions occur during autolysis and how do they affect the wine?",
     "options": [
@@ -2860,8 +2860,8 @@
   {
     "id": "WM-035",
     "domain": "winemaking",
-    "difficulty": 1534,
-    "level": 8,
+    "difficulty": 1977,
+    "level": 10,
     "format": "multiple_choice",
     "question": "What is the biochemical pathway by which Saccharomyces cerevisiae produces ethanol from glucose during wine fermentation?",
     "options": [
@@ -2884,8 +2884,8 @@
   {
     "id": "WM-036",
     "domain": "winemaking",
-    "difficulty": 1590,
-    "level": 8,
+    "difficulty": 1821,
+    "level": 10,
     "format": "odd_one_out",
     "question": "Which of these is NOT a recognized mechanism by which oak tannins differ from grape seed tannins in their interaction with wine?",
     "options": [
@@ -2908,8 +2908,8 @@
   {
     "id": "WM-037",
     "domain": "winemaking",
-    "difficulty": 1919,
-    "level": 9,
+    "difficulty": 2373,
+    "level": 11,
     "format": "multiple_choice",
     "question": "In the context of reductive winemaking (e.g., some Chablis producers), what is the specific mechanism by which a reductive environment preserves thiol compounds in white wine?",
     "options": [
@@ -2932,8 +2932,8 @@
   {
     "id": "WM-038",
     "domain": "winemaking",
-    "difficulty": 1964,
-    "level": 9,
+    "difficulty": 2440,
+    "level": 11,
     "format": "multiple_choice",
     "question": "What is the 'copigmentation' phenomenon and its importance for red wine color stability?",
     "options": [
@@ -2956,8 +2956,8 @@
   {
     "id": "WM-039",
     "domain": "winemaking",
-    "difficulty": 1950,
-    "level": 9,
+    "difficulty": 2120,
+    "level": 11,
     "format": "odd_one_out",
     "question": "At the highest level of winemaking understanding, which of these is NOT an accurate statement about the role of oxygen in barrel aging?",
     "options": [
@@ -2980,8 +2980,8 @@
   {
     "id": "WM-040",
     "domain": "winemaking",
-    "difficulty": 1766,
-    "level": 9,
+    "difficulty": 2481,
+    "level": 11,
     "format": "match_pairs",
     "question": "Match each advanced winemaking concept to its precise scientific mechanism.",
     "pairs": {
@@ -3017,7 +3017,7 @@
   {
     "id": "WM-041",
     "domain": "winemaking",
-    "difficulty": 219,
+    "difficulty": 154,
     "level": 1,
     "format": "multiple_choice",
     "question": "What is the main ingredient used to make wine?",
@@ -3039,7 +3039,7 @@
   {
     "id": "WM-042",
     "domain": "winemaking",
-    "difficulty": 227,
+    "difficulty": 136,
     "level": 1,
     "format": "odd_one_out",
     "question": "Which of the following is NOT a type of wine?",
@@ -3061,7 +3061,7 @@
   {
     "id": "WM-043",
     "domain": "winemaking",
-    "difficulty": 125,
+    "difficulty": 154,
     "level": 1,
     "format": "multiple_choice",
     "question": "Why is rosé wine pink?",
@@ -3084,7 +3084,7 @@
   {
     "id": "WM-044",
     "domain": "winemaking",
-    "difficulty": 264,
+    "difficulty": 161,
     "level": 1,
     "format": "multiple_choice",
     "question": "What does 'chaptalization' mean in winemaking?",
@@ -3107,7 +3107,7 @@
   {
     "id": "WM-045",
     "domain": "winemaking",
-    "difficulty": 189,
+    "difficulty": 179,
     "level": 1,
     "format": "match_pairs",
     "question": "Match each winemaking step to the correct production stage for white wine.",
@@ -3142,7 +3142,7 @@
   {
     "id": "WM-046",
     "domain": "winemaking",
-    "difficulty": 188,
+    "difficulty": 144,
     "level": 1,
     "format": "multiple_choice",
     "question": "What is the difference between new oak and used (neutral) oak barrels?",
@@ -3165,8 +3165,8 @@
   {
     "id": "WM-047",
     "domain": "winemaking",
-    "difficulty": 414,
-    "level": 2,
+    "difficulty": 649,
+    "level": 4,
     "format": "multiple_choice",
     "question": "What is 'lees aging' (élevage sur lies) and why is it used?",
     "options": [
@@ -3188,8 +3188,8 @@
   {
     "id": "WM-048",
     "domain": "winemaking",
-    "difficulty": 337,
-    "level": 2,
+    "difficulty": 678,
+    "level": 4,
     "format": "odd_one_out",
     "question": "Which of the following is NOT a method of concentrating grape must for sweet wine production?",
     "options": [
@@ -3211,8 +3211,8 @@
   {
     "id": "WM-049",
     "domain": "winemaking",
-    "difficulty": 409,
-    "level": 2,
+    "difficulty": 592,
+    "level": 4,
     "format": "match_pairs",
     "question": "Match each maceration technique to the wine style it typically produces.",
     "pairs": {
@@ -3248,8 +3248,8 @@
   {
     "id": "WM-050",
     "domain": "winemaking",
-    "difficulty": 596,
-    "level": 3,
+    "difficulty": 814,
+    "level": 5,
     "format": "multiple_choice",
     "question": "What is the solera system used in Sherry production?",
     "options": [
@@ -3271,8 +3271,8 @@
   {
     "id": "WM-051",
     "domain": "winemaking",
-    "difficulty": 576,
-    "level": 3,
+    "difficulty": 862,
+    "level": 5,
     "format": "multiple_choice",
     "question": "What is the key difference between organic and biodynamic viticulture?",
     "options": [
@@ -3294,8 +3294,8 @@
   {
     "id": "WM-052",
     "domain": "winemaking",
-    "difficulty": 661,
-    "level": 3,
+    "difficulty": 772,
+    "level": 5,
     "format": "odd_one_out",
     "question": "Which of these is NOT a common viticultural method for controlling vine vigor?",
     "options": [
@@ -3318,8 +3318,8 @@
   {
     "id": "WM-053",
     "domain": "winemaking",
-    "difficulty": 821,
-    "level": 4,
+    "difficulty": 1061,
+    "level": 6,
     "format": "multiple_choice",
     "question": "What is the optimal temperature range for red wine fermentation and why?",
     "options": [
@@ -3342,8 +3342,8 @@
   {
     "id": "WM-054",
     "domain": "winemaking",
-    "difficulty": 846,
-    "level": 4,
+    "difficulty": 1057,
+    "level": 6,
     "format": "match_pairs",
     "question": "Match each pruning/training system to its typical application.",
     "pairs": {
@@ -3378,8 +3378,8 @@
   {
     "id": "WM-055",
     "domain": "winemaking",
-    "difficulty": 826,
-    "level": 4,
+    "difficulty": 1072,
+    "level": 6,
     "format": "multiple_choice",
     "question": "What is 'flash détente' and when is it used?",
     "options": [
@@ -3401,8 +3401,8 @@
   {
     "id": "WM-056",
     "domain": "winemaking",
-    "difficulty": 931,
-    "level": 5,
+    "difficulty": 1114,
+    "level": 7,
     "format": "multiple_choice",
     "question": "What is the difference between 'riddling' (remuage) and 'disgorgement' (dégorgement) in Champagne production?",
     "options": [
@@ -3425,8 +3425,8 @@
   {
     "id": "WM-057",
     "domain": "winemaking",
-    "difficulty": 943,
-    "level": 5,
+    "difficulty": 1283,
+    "level": 7,
     "format": "match_pairs",
     "question": "Match each vessel material to the specific property it imparts to wine during aging.",
     "pairs": {
@@ -3463,8 +3463,8 @@
   {
     "id": "WM-058",
     "domain": "winemaking",
-    "difficulty": 1126,
-    "level": 6,
+    "difficulty": 1477,
+    "level": 8,
     "format": "multiple_choice",
     "question": "What is 'délestage' (rack and return) and how does it differ from pump-over (remontage)?",
     "options": [
@@ -3487,8 +3487,8 @@
   {
     "id": "WM-059",
     "domain": "winemaking",
-    "difficulty": 1247,
-    "level": 6,
+    "difficulty": 1490,
+    "level": 8,
     "format": "odd_one_out",
     "question": "Which of these is NOT a recognized benefit of using wild/indigenous yeast for fermentation versus selected commercial strains?",
     "options": [
@@ -3511,8 +3511,8 @@
   {
     "id": "WM-060",
     "domain": "winemaking",
-    "difficulty": 1168,
-    "level": 6,
+    "difficulty": 1311,
+    "level": 8,
     "format": "match_pairs",
     "question": "Match each oak origin/type to its characteristic flavor compound profile.",
     "pairs": {
@@ -3549,8 +3549,8 @@
   {
     "id": "WM-061",
     "domain": "winemaking",
-    "difficulty": 1380,
-    "level": 7,
+    "difficulty": 1549,
+    "level": 9,
     "format": "multiple_choice",
     "question": "What is the chemical mechanism behind tartrate instability in wine, and how is it addressed?",
     "options": [
@@ -3573,8 +3573,8 @@
   {
     "id": "WM-062",
     "domain": "winemaking",
-    "difficulty": 1338,
-    "level": 7,
+    "difficulty": 1562,
+    "level": 9,
     "format": "multiple_choice",
     "question": "In the production of Tokaji Aszú, what is the significance of 'puttonyos' and how does the classification relate to residual sugar?",
     "options": [
@@ -3597,8 +3597,8 @@
   {
     "id": "WM-063",
     "domain": "winemaking",
-    "difficulty": 1457,
-    "level": 7,
+    "difficulty": 1675,
+    "level": 9,
     "format": "odd_one_out",
     "question": "Which of these is NOT a scientifically established mechanism by which biodynamic preparation 500 (horn manure) could influence soil biology?",
     "options": [
@@ -3621,8 +3621,8 @@
   {
     "id": "WM-064",
     "domain": "winemaking",
-    "difficulty": 1672,
-    "level": 8,
+    "difficulty": 1914,
+    "level": 10,
     "format": "match_pairs",
     "question": "Match each sparkling wine process detail to its technical specification.",
     "pairs": {
@@ -3659,8 +3659,8 @@
   {
     "id": "WM-065",
     "domain": "winemaking",
-    "difficulty": 1620,
-    "level": 8,
+    "difficulty": 1921,
+    "level": 10,
     "format": "multiple_choice",
     "question": "What is the Crabtree effect and why is it important in wine fermentation?",
     "options": [
@@ -3682,8 +3682,8 @@
   {
     "id": "WM-066",
     "domain": "winemaking",
-    "difficulty": 1958,
-    "level": 9,
+    "difficulty": 2383,
+    "level": 11,
     "format": "multiple_choice",
     "question": "What is the specific biochemical mechanism by which flor yeast (Saccharomyces cerevisiae var. bayanus/capensis) modifies Fino Sherry during biological aging?",
     "options": [
@@ -3707,8 +3707,8 @@
   {
     "id": "WM-067",
     "domain": "winemaking",
-    "difficulty": 1817,
-    "level": 9,
+    "difficulty": 2196,
+    "level": 11,
     "format": "odd_one_out",
     "question": "Which of the following is NOT an accurate statement about the chemistry of anthocyanin stabilization in red wine?",
     "options": [
@@ -3732,8 +3732,8 @@
   {
     "id": "WM-068",
     "domain": "winemaking",
-    "difficulty": 1749,
-    "level": 9,
+    "difficulty": 2416,
+    "level": 11,
     "format": "match_pairs",
     "question": "Match each advanced winemaking phenomenon to its precise chemical basis.",
     "pairs": {
@@ -3770,7 +3770,7 @@
   {
     "id": "WM-069",
     "domain": "winemaking",
-    "difficulty": 144,
+    "difficulty": 138,
     "level": 1,
     "format": "multiple_choice",
     "question": "What organism converts grape juice into wine?",
@@ -3793,7 +3793,7 @@
   {
     "id": "WM-070",
     "domain": "winemaking",
-    "difficulty": 131,
+    "difficulty": 124,
     "level": 1,
     "format": "multiple_choice",
     "question": "What is the main difference between how red wine and white wine are made?",
@@ -3816,8 +3816,8 @@
   {
     "id": "WM-071",
     "domain": "winemaking",
-    "difficulty": 437,
-    "level": 2,
+    "difficulty": 582,
+    "level": 4,
     "format": "multiple_choice",
     "question": "What is 'fining' in winemaking?",
     "options": [
@@ -3839,8 +3839,8 @@
   {
     "id": "WM-072",
     "domain": "winemaking",
-    "difficulty": 659,
-    "level": 3,
+    "difficulty": 899,
+    "level": 5,
     "format": "match_pairs",
     "question": "Match each toast level to the primary flavors it imparts to wine.",
     "pairs": {
@@ -3875,8 +3875,8 @@
   {
     "id": "WM-073",
     "domain": "winemaking",
-    "difficulty": 780,
-    "level": 4,
+    "difficulty": 984,
+    "level": 6,
     "format": "odd_one_out",
     "question": "Which of the following is NOT a factor that determines harvest timing?",
     "options": [
@@ -3899,8 +3899,8 @@
   {
     "id": "WM-074",
     "domain": "winemaking",
-    "difficulty": 1007,
-    "level": 5,
+    "difficulty": 1230,
+    "level": 7,
     "format": "multiple_choice",
     "question": "What is the difference between 'passito' and 'appassimento' as winemaking techniques?",
     "options": [
@@ -3923,8 +3923,8 @@
   {
     "id": "WM-075",
     "domain": "winemaking",
-    "difficulty": 1133,
-    "level": 6,
+    "difficulty": 1440,
+    "level": 8,
     "format": "multiple_choice",
     "question": "What is the role of 'tartaric acid' in winemaking, and why is it preferred over other acids for acidification?",
     "options": [

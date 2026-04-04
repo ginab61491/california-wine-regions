@@ -2,8 +2,8 @@
   {
     "id": "HC-001",
     "domain": "history_culture",
-    "difficulty": 2100,
-    "level": 10,
+    "difficulty": 2335,
+    "level": 11,
     "format": "multiple_choice",
     "question": "Which specific rootstock combination did Hermann Jaeger first successfully graft European Vitis vinifera onto in Missouri during the 1870s phylloxera crisis?",
     "options": [
@@ -25,8 +25,8 @@
   {
     "id": "HC-002",
     "domain": "history_culture",
-    "difficulty": 2200,
-    "level": 10,
+    "difficulty": 2493,
+    "level": 11,
     "format": "odd_one_out",
     "question": "Which of these châteaux was NOT classified in the original 1855 Bordeaux Classification but was later elevated?",
     "options": [
@@ -48,8 +48,8 @@
   {
     "id": "HC-003",
     "domain": "history_culture",
-    "difficulty": 2300,
-    "level": 10,
+    "difficulty": 2070,
+    "level": 11,
     "format": "multiple_choice",
     "question": "At the 1976 Judgment of Paris, which specific Burgundy producer's wine placed second among the white wines, behind Chateau Montelena?",
     "options": [
@@ -71,8 +71,8 @@
   {
     "id": "HC-004",
     "domain": "history_culture",
-    "difficulty": 2150,
-    "level": 10,
+    "difficulty": 2500,
+    "level": 11,
     "format": "multiple_choice",
     "question": "Which technique did Madame Clicquot's cellar master Antoine de Müller actually develop in 1816 that revolutionized Champagne production?",
     "options": [
@@ -94,8 +94,8 @@
   {
     "id": "HC-005",
     "domain": "history_culture",
-    "difficulty": 2250,
-    "level": 10,
+    "difficulty": 2093,
+    "level": 11,
     "format": "match_pairs",
     "question": "Match each ancient winemaking civilization with their specific viticultural innovation:",
     "pairs": {
@@ -131,8 +131,8 @@
   {
     "id": "HC-006",
     "domain": "history_culture",
-    "difficulty": 2180,
-    "level": 10,
+    "difficulty": 2146,
+    "level": 11,
     "format": "multiple_choice",
     "question": "Which specific provision in the 1935 French AOC law established the legal framework that most distinguished it from earlier wine regulations?",
     "options": [
@@ -154,8 +154,8 @@
   {
     "id": "HC-007",
     "domain": "history_culture",
-    "difficulty": 2050,
-    "level": 10,
+    "difficulty": 2352,
+    "level": 11,
     "format": "scenario",
     "question": "A Master Sommelier candidate is studying Prohibition's aftermath on American wine. They discover that one specific consequence allowed European wine imports to dominate the American fine wine market until the 1960s. What was this consequence?",
     "options": [
@@ -177,8 +177,8 @@
   {
     "id": "HC-008",
     "domain": "history_culture",
-    "difficulty": 2280,
-    "level": 10,
+    "difficulty": 2435,
+    "level": 11,
     "format": "multiple_choice",
     "question": "Which specific discovery by Louis Pasteur in his 1866 'Études sur le Vin' most directly revolutionized wine stability and international trade?",
     "options": [
@@ -200,8 +200,8 @@
   {
     "id": "HC-009",
     "domain": "history_culture",
-    "difficulty": 2320,
-    "level": 10,
+    "difficulty": 2081,
+    "level": 11,
     "format": "odd_one_out",
     "question": "Which of these innovations attributed to André Tchelistcheff did NOT actually originate with him at Beaulieu Vineyard?",
     "options": [
@@ -223,8 +223,8 @@
   {
     "id": "HC-010",
     "domain": "history_culture",
-    "difficulty": 2400,
-    "level": 10,
+    "difficulty": 2202,
+    "level": 11,
     "format": "multiple_choice",
     "question": "Robert Parker's 100-point scoring system was directly adapted from which specific American educational assessment model?",
     "options": [
@@ -246,8 +246,8 @@
   {
     "id": "HC-011",
     "domain": "history_culture",
-    "difficulty": 2150,
-    "level": 10,
+    "difficulty": 2249,
+    "level": 11,
     "format": "multiple_choice",
     "question": "The modern concept of terroir was first systematically codified in which specific French wine region's classification system?",
     "options": [
@@ -269,8 +269,8 @@
   {
     "id": "HC-012",
     "domain": "history_culture",
-    "difficulty": 2200,
-    "level": 10,
+    "difficulty": 2126,
+    "level": 11,
     "format": "match_pairs",
     "question": "Match each wine law system with its specific defining characteristic:",
     "pairs": {
@@ -307,8 +307,8 @@
   {
     "id": "HC-013",
     "domain": "history_culture",
-    "difficulty": 2350,
-    "level": 10,
+    "difficulty": 2036,
+    "level": 11,
     "format": "scenario",
     "question": "A wine historian discovers that Robert Mondavi's most significant contribution to New World winemaking wasn't a specific technique, but rather a business model innovation. What was this innovation?",
     "options": [
@@ -330,8 +330,8 @@
   {
     "id": "HC-014",
     "domain": "history_culture",
-    "difficulty": 2250,
-    "level": 10,
+    "difficulty": 2435,
+    "level": 11,
     "format": "multiple_choice",
     "question": "Which specific aspect of globalization most fundamentally changed traditional Old World winemaking practices in the 1990s?",
     "options": [
@@ -353,8 +353,8 @@
   {
     "id": "HC-015",
     "domain": "history_culture",
-    "difficulty": 2300,
-    "level": 10,
+    "difficulty": 2115,
+    "level": 11,
     "format": "multiple_choice",
     "question": "Jancis Robinson's most significant contribution to wine education was establishing which specific methodology that became the global standard?",
     "options": [
@@ -371,6 +371,600 @@
       "jancis_robinson",
       "wine_education",
       "tasting_methodology"
+    ]
+  },
+  {
+    "id": "HC-016",
+    "domain": "history_culture",
+    "difficulty": 300,
+    "level": 2,
+    "format": "multiple_choice",
+    "question": "What devastating insect caused the phylloxera crisis that destroyed European vineyards in the late 19th century?",
+    "options": [
+      "Root aphid (Daktulosphaira vitifoliae)",
+      "Colorado potato beetle",
+      "European corn borer",
+      "Grape berry moth"
+    ],
+    "correct": 0,
+    "explanation": "Phylloxera is a tiny root aphid that feeds on vine roots, eventually killing the plant. Think of it as the wine world's most expensive pest - it literally ate through Europe's wine heritage until grafting saved the day.",
+    "sources": "The Oxford Companion to Wine; Wine Grapes",
+    "confidence": "established",
+    "tags": [
+      "phylloxera",
+      "crisis",
+      "insects"
+    ]
+  },
+  {
+    "id": "HC-017",
+    "domain": "history_culture",
+    "difficulty": 350,
+    "level": 2,
+    "format": "multiple_choice",
+    "question": "In what year was the famous 1855 Bordeaux Classification established?",
+    "options": [
+      "1853",
+      "1855",
+      "1857",
+      "1861"
+    ],
+    "correct": 1,
+    "explanation": "The 1855 Classification was created for the Paris Exposition, ranking Bordeaux châteaux by price and reputation. Remember it as Napoleon III's wine shopping list - he wanted to show off France's finest to the world.",
+    "sources": "The Oxford Companion to Wine; The World Atlas of Wine",
+    "confidence": "established",
+    "tags": [
+      "bordeaux",
+      "classification",
+      "1855"
+    ]
+  },
+  {
+    "id": "HC-018",
+    "domain": "history_culture",
+    "difficulty": 280,
+    "level": 2,
+    "format": "multiple_choice",
+    "question": "The Judgment of Paris tasting took place in which year?",
+    "options": [
+      "1974",
+      "1975",
+      "1976",
+      "1977"
+    ],
+    "correct": 2,
+    "explanation": "Steven Spurrier's blind tasting in 1976 shocked the wine world when California wines beat French classics. Think '76 as America's wine independence year - just like 1776, but with Chardonnay instead of tea.",
+    "sources": "The Wine Bible; The Oxford Companion to Wine",
+    "confidence": "established",
+    "tags": [
+      "judgment_of_paris",
+      "1976",
+      "california"
+    ]
+  },
+  {
+    "id": "HC-019",
+    "domain": "history_culture",
+    "difficulty": 320,
+    "level": 2,
+    "format": "odd_one_out",
+    "question": "Which of these is NOT associated with the historical development of Champagne?",
+    "options": [
+      "Dom Pérignon",
+      "Widow Clicquot",
+      "Riddling process",
+      "Solera system"
+    ],
+    "correct": 3,
+    "explanation": "The solera system is used for Sherry production in Spain, not Champagne. The others are all Champagne legends - Dom Pérignon perfected the method, Clicquot invented riddling, making Champagne the sparkling success story we know today.",
+    "sources": "The Oxford Companion to Wine; The World Atlas of Wine",
+    "confidence": "established",
+    "tags": [
+      "champagne",
+      "history",
+      "solera"
+    ]
+  },
+  {
+    "id": "HC-020",
+    "domain": "history_culture",
+    "difficulty": 290,
+    "level": 2,
+    "format": "multiple_choice",
+    "question": "Which country is considered the birthplace of wine, with archaeological evidence dating back 8,000 years?",
+    "options": [
+      "Greece",
+      "Georgia",
+      "Turkey",
+      "Iran"
+    ],
+    "correct": 1,
+    "explanation": "Georgia's qvevri winemaking tradition represents the world's oldest continuous wine culture. Think of Georgia as wine's ground zero - those clay vessels buried in the earth have been making wine since before the pyramids were built.",
+    "sources": "Wine Grapes; The Oxford Companion to Wine",
+    "confidence": "established",
+    "tags": [
+      "georgia",
+      "ancient",
+      "qvevri"
+    ]
+  },
+  {
+    "id": "HC-021",
+    "domain": "history_culture",
+    "difficulty": 310,
+    "level": 2,
+    "format": "multiple_choice",
+    "question": "What does AOC stand for in French wine law?",
+    "options": [
+      "Appellation d'Origine Contrôlée",
+      "Association d'Origine Certifiée",
+      "Appellation d'Origine Certifiée",
+      "Association d'Origine Contrôlée"
+    ],
+    "correct": 0,
+    "explanation": "Appellation d'Origine Contrôlée established in 1935, controls where, how, and with what grapes French wines are made. Think of AOC as wine's birth certificate - it tells you exactly who the wine is and where it comes from.",
+    "sources": "The Oxford Companion to Wine; WSET Level 2",
+    "confidence": "established",
+    "tags": [
+      "aoc",
+      "french_law",
+      "appellation"
+    ]
+  },
+  {
+    "id": "HC-022",
+    "domain": "history_culture",
+    "difficulty": 340,
+    "level": 2,
+    "format": "scenario",
+    "question": "A sommelier is explaining American wine history to guests. They mention that Prohibition lasted from 1920-1933 and had lasting effects on American wine culture. What was one major consequence of Prohibition on American winemaking?",
+    "options": [
+      "It improved wine quality through selective breeding",
+      "It destroyed most vineyards and winemaking knowledge",
+      "It led to the immediate creation of the AVA system",
+      "It increased wine exports to Europe"
+    ],
+    "correct": 1,
+    "explanation": "Prohibition devastated American wine culture, destroying vineyards and breaking the chain of winemaking knowledge. Think of it as America's wine dark age - it took decades to rebuild what 13 years of Prohibition destroyed.",
+    "sources": "The Wine Bible; The Oxford Companion to Wine",
+    "confidence": "established",
+    "tags": [
+      "prohibition",
+      "american_wine",
+      "history"
+    ]
+  },
+  {
+    "id": "HC-023",
+    "domain": "history_culture",
+    "difficulty": 270,
+    "level": 2,
+    "format": "multiple_choice",
+    "question": "Who is credited with developing pasteurization, which revolutionized wine preservation?",
+    "options": [
+      "Robert Koch",
+      "Louis Pasteur",
+      "Antoine Lavoisier",
+      "Joseph Lister"
+    ],
+    "correct": 1,
+    "explanation": "Louis Pasteur's work on fermentation and pasteurization transformed wine from a local, perishable product into something that could travel the world. His microscope revealed wine's invisible workforce - the yeasts that make fermentation possible.",
+    "sources": "Wine Science; The Oxford Companion to Wine",
+    "confidence": "established",
+    "tags": [
+      "pasteur",
+      "pasteurization",
+      "science"
+    ]
+  },
+  {
+    "id": "HC-024",
+    "domain": "history_culture",
+    "difficulty": 330,
+    "level": 2,
+    "format": "match_pairs",
+    "question": "Match each wine region with the century when its major classification system was established:",
+    "pairs": {
+      "left": [
+        "Bordeaux 1855 Classification",
+        "Burgundy Grand Cru system",
+        "Champagne AOC",
+        "Chianti Classico"
+      ],
+      "right": [
+        "20th century",
+        "14th century",
+        "19th century",
+        "18th century"
+      ]
+    },
+    "options": [],
+    "correct": [
+      2,
+      1,
+      0,
+      0
+    ],
+    "explanation": "These classification systems developed over centuries, with Burgundy's monastic origins being the oldest. Think of wine classifications as historical layers - each generation added their own system to organize quality and place.",
+    "sources": "The Oxford Companion to Wine; The World Atlas of Wine",
+    "confidence": "established",
+    "tags": [
+      "classification",
+      "history",
+      "regions"
+    ]
+  },
+  {
+    "id": "HC-025",
+    "domain": "history_culture",
+    "difficulty": 360,
+    "level": 2,
+    "format": "multiple_choice",
+    "question": "What does AVA stand for in American wine law?",
+    "options": [
+      "American Viticultural Area",
+      "Approved Vineyard Association",
+      "American Vintage Appellation",
+      "Authorized Varietal Area"
+    ],
+    "correct": 0,
+    "explanation": "American Viticultural Area defines geographic boundaries for American wine regions based on distinctive geographic features. Unlike European systems, AVAs are purely geographic - they're like wine zip codes that don't dictate grape varieties or winemaking methods.",
+    "sources": "WSET Level 2; The Oxford Companion to Wine",
+    "confidence": "established",
+    "tags": [
+      "ava",
+      "american_wine",
+      "appellation"
+    ]
+  },
+  {
+    "id": "HC-026",
+    "domain": "history_culture",
+    "difficulty": 400,
+    "level": 3,
+    "format": "multiple_choice",
+    "question": "Which specific rootstock species provided the solution to the phylloxera crisis in European vineyards?",
+    "options": [
+      "Vitis riparia",
+      "Vitis labrusca",
+      "American Vitis species hybrids",
+      "Vitis rotundifolia"
+    ],
+    "correct": 2,
+    "explanation": "Various American Vitis species and their hybrids (mainly riparia, rupestris, and berlandieri) became rootstocks for European vinifera. These American roots had co-evolved with phylloxera, developing natural resistance - nature's own insurance policy against the tiny destroyer.",
+    "sources": "Wine Grapes; The Oxford Companion to Wine",
+    "confidence": "established",
+    "tags": [
+      "phylloxera",
+      "rootstock",
+      "american_vines"
+    ]
+  },
+  {
+    "id": "HC-027",
+    "domain": "history_culture",
+    "difficulty": 420,
+    "level": 3,
+    "format": "odd_one_out",
+    "question": "Which of these châteaux was NOT part of the original 1855 Bordeaux Classification?",
+    "options": [
+      "Château Lafite Rothschild",
+      "Château Mouton Rothschild",
+      "Château Latour",
+      "Château Margaux"
+    ],
+    "correct": 1,
+    "explanation": "Mouton Rothschild was classified as a Second Growth in 1855 and only elevated to First Growth in 1973 - the sole change to the classification. Baron Philippe's famous motto 'First I am, second I was, Mouton does not change' became wine history's greatest comeback story.",
+    "sources": "The Oxford Companion to Wine; The World Atlas of Wine",
+    "confidence": "established",
+    "tags": [
+      "bordeaux",
+      "1855",
+      "mouton_rothschild"
+    ]
+  },
+  {
+    "id": "HC-028",
+    "domain": "history_culture",
+    "difficulty": 380,
+    "level": 3,
+    "format": "multiple_choice",
+    "question": "At the 1976 Judgment of Paris, which California winery's Chardonnay won the white wine tasting?",
+    "options": [
+      "Stag's Leap Wine Cellars",
+      "Chateau Montelena",
+      "Freemark Abbey",
+      "Chalone Vineyard"
+    ],
+    "correct": 1,
+    "explanation": "Chateau Montelena's 1973 Chardonnay triumphed over top white Burgundies, shocking French judges who thought they were tasting French wine. This victory put Napa Valley on the world wine map and proved terroir wasn't exclusively French property.",
+    "sources": "The Wine Bible; The Oxford Companion to Wine",
+    "confidence": "established",
+    "tags": [
+      "judgment_of_paris",
+      "chateau_montelena",
+      "chardonnay"
+    ]
+  },
+  {
+    "id": "HC-029",
+    "domain": "history_culture",
+    "difficulty": 450,
+    "level": 3,
+    "format": "scenario",
+    "question": "A wine student researching Champagne history discovers that many stories about Dom Pérignon are myths. What is the historically accurate contribution of Dom Pérignon to Champagne production?",
+    "options": [
+      "He invented the Champagne method",
+      "He discovered how to make wine sparkle",
+      "He perfected blending techniques and quality control",
+      "He created the first Champagne house"
+    ],
+    "correct": 2,
+    "explanation": "Dom Pérignon was a master blender who elevated Champagne quality through meticulous grape selection and blending, not the inventor of sparkling wine. Think of him as Champagne's first quality control expert - he turned bubbles from accident into art through obsessive attention to detail.",
+    "sources": "The Oxford Companion to Wine; The World Atlas of Wine",
+    "confidence": "established",
+    "tags": [
+      "dom_perignon",
+      "champagne",
+      "history"
+    ]
+  },
+  {
+    "id": "HC-030",
+    "domain": "history_culture",
+    "difficulty": 410,
+    "level": 3,
+    "format": "match_pairs",
+    "question": "Match each historical wine figure with their most significant contribution:",
+    "pairs": {
+      "left": [
+        "André Tchelistcheff",
+        "Robert Parker",
+        "Jancis Robinson",
+        "Robert Mondavi"
+      ],
+      "right": [
+        "100-point scoring system",
+        "Premium varietal marketing",
+        "MW qualification standards",
+        "Cold fermentation techniques"
+      ]
+    },
+    "options": [],
+    "correct": [
+      3,
+      0,
+      2,
+      1
+    ],
+    "explanation": "Each figure revolutionized different aspects of wine culture - from technical innovation to criticism to education to marketing. These pioneers shaped how we make, evaluate, learn about, and sell wine in the modern era.",
+    "sources": "The Wine Bible; The Oxford Companion to Wine",
+    "confidence": "established",
+    "tags": [
+      "wine_figures",
+      "innovation",
+      "history"
+    ]
+  },
+  {
+    "id": "HC-031",
+    "domain": "history_culture",
+    "difficulty": 300,
+    "level": 2,
+    "format": "multiple_choice",
+    "question": "Which American rootstock species became the primary solution for grafting European vines during the phylloxera crisis?",
+    "options": [
+      "Vitis riparia",
+      "Vitis labrusca",
+      "Vitis rotundifolia",
+      "Vitis aestivalis"
+    ],
+    "correct": 0,
+    "explanation": "Vitis riparia, native to North America, proved naturally resistant to phylloxera and became the foundation for most modern rootstock programs. Think of it as the 'lifeline' that saved European viticulture—without it, we'd have lost centuries of winemaking heritage.",
+    "sources": "The Oxford Companion to Wine; Wine Grapes",
+    "confidence": "established",
+    "tags": [
+      "phylloxera",
+      "rootstock",
+      "crisis"
+    ]
+  },
+  {
+    "id": "HC-032",
+    "domain": "history_culture",
+    "difficulty": 350,
+    "level": 2,
+    "format": "odd_one_out",
+    "question": "Which of these was NOT one of the original five First Growth châteaux in the 1855 Bordeaux Classification?",
+    "options": [
+      "Château Lafite Rothschild",
+      "Château Mouton Rothschild",
+      "Château Margaux",
+      "Château Haut-Brion"
+    ],
+    "correct": 1,
+    "explanation": "Château Mouton Rothschild was originally classified as a Second Growth and wasn't elevated to First Growth status until 1973—the only change ever made to the 1855 Classification. Baron Philippe's famous motto 'First I am, second I was, Mouton does not change' became 'First I am, second I was, Mouton has changed!'",
+    "sources": "The Oxford Companion to Wine; The World Atlas of Wine",
+    "confidence": "established",
+    "tags": [
+      "bordeaux",
+      "classification",
+      "1855"
+    ]
+  },
+  {
+    "id": "HC-033",
+    "domain": "history_culture",
+    "difficulty": 380,
+    "level": 3,
+    "format": "multiple_choice",
+    "question": "Which California Cabernet Sauvignon won the red wine category at the 1976 Judgment of Paris?",
+    "options": [
+      "Stag's Leap Wine Cellars S.L.V.",
+      "Heitz Cellar Martha's Vineyard",
+      "Mayacamas Vineyards",
+      "Ridge Monte Bello"
+    ],
+    "correct": 0,
+    "explanation": "Stag's Leap Wine Cellars' 1973 S.L.V. Cabernet Sauvignon shocked the wine world by beating legendary Bordeaux estates in blind tasting. The 'S.L.V.' stands for 'Stag's Leap Vineyard'—a name that became synonymous with California's arrival on the global stage.",
+    "sources": "The Oxford Companion to Wine; The Wine Bible",
+    "confidence": "established",
+    "tags": [
+      "judgment_paris",
+      "california",
+      "cabernet"
+    ]
+  },
+  {
+    "id": "HC-034",
+    "domain": "history_culture",
+    "difficulty": 320,
+    "level": 2,
+    "format": "multiple_choice",
+    "question": "What specific innovation did Madame Clicquot actually contribute to Champagne production?",
+    "options": [
+      "Riddling (remuage)",
+      "Secondary fermentation",
+      "Dosage",
+      "Cork and wire cage"
+    ],
+    "correct": 0,
+    "explanation": "Madame Clicquot developed riddling (remuage) around 1816, the technique of gradually turning bottles to collect sediment in the neck for removal. Her kitchen table with holes drilled in it was the first riddling rack—practical innovation born from necessity that's still used today.",
+    "sources": "The Oxford Companion to Wine; The Wine Bible",
+    "confidence": "established",
+    "tags": [
+      "champagne",
+      "clicquot",
+      "riddling"
+    ]
+  },
+  {
+    "id": "HC-035",
+    "domain": "history_culture",
+    "difficulty": 400,
+    "level": 3,
+    "format": "match_pairs",
+    "question": "Match each ancient wine civilization with their key contribution to viticulture:",
+    "pairs": {
+      "left": [
+        "Georgia",
+        "Ancient Rome",
+        "Ancient Greece",
+        "Ancient Egypt"
+      ],
+      "right": [
+        "Qvevri clay vessel fermentation",
+        "Systematic vineyard management",
+        "Amphora storage and transport",
+        "Sweet wine production techniques"
+      ]
+    },
+    "options": [],
+    "correct": [
+      0,
+      1,
+      2,
+      3
+    ],
+    "explanation": "Each civilization left distinct winemaking fingerprints: Georgia's 8,000-year-old qvevri tradition, Rome's agricultural manuals, Greece's amphora trade networks, and Egypt's honeyed wines. Think of them as the 'building blocks' of modern wine culture—each adding a crucial layer.",
+    "sources": "The Oxford Companion to Wine; Wine Science",
+    "confidence": "established",
+    "tags": [
+      "ancient",
+      "civilization",
+      "techniques"
+    ]
+  },
+  {
+    "id": "HC-036",
+    "domain": "history_culture",
+    "difficulty": 450,
+    "level": 3,
+    "format": "multiple_choice",
+    "question": "What was the most significant aspect of the 1935 French AOC law that distinguished it from previous wine regulations?",
+    "options": [
+      "Geographic boundaries",
+      "Grape variety restrictions",
+      "Legal protection of place names",
+      "Yield limitations"
+    ],
+    "correct": 2,
+    "explanation": "The 1935 AOC law created legal protection for geographic wine names, establishing that only wines from specific regions could use those names—the birth of modern terroir law. It's like creating a 'copyright' for place—Champagne could only come from Champagne, forever changing global wine trade.",
+    "sources": "The Oxford Companion to Wine; WSET Level 3",
+    "confidence": "established",
+    "tags": [
+      "aoc",
+      "french_law",
+      "terroir"
+    ]
+  },
+  {
+    "id": "HC-037",
+    "domain": "history_culture",
+    "difficulty": 280,
+    "level": 2,
+    "format": "scenario",
+    "question": "A wine educator is explaining Prohibition's impact to students. They mention that one consequence allowed mediocre 'sacramental wines' to legally continue production while quality wineries shut down. What was the long-term effect of this on American wine?",
+    "options": [
+      "It preserved traditional winemaking techniques",
+      "It lowered overall wine quality standards for decades",
+      "It encouraged premium wine imports",
+      "It led to better vineyard management"
+    ],
+    "correct": 1,
+    "explanation": "Prohibition allowed low-quality 'sacramental' and medicinal wines to continue while shutting down quality producers, creating a generation that associated American wine with poor quality. It's the 'lost decades' of American winemaking—we had to rebuild our reputation from scratch starting in the 1960s.",
+    "sources": "The Wine Bible; The Oxford Companion to Wine",
+    "confidence": "established",
+    "tags": [
+      "prohibition",
+      "american_wine",
+      "quality"
+    ]
+  },
+  {
+    "id": "HC-038",
+    "domain": "history_culture",
+    "difficulty": 420,
+    "level": 3,
+    "format": "multiple_choice",
+    "question": "Which specific discovery by Louis Pasteur revolutionized wine stability and international shipping?",
+    "options": [
+      "Malolactic fermentation",
+      "Pasteurization (controlled heating)",
+      "Sulfur dioxide as preservative",
+      "Filtration techniques"
+    ],
+    "correct": 1,
+    "explanation": "Pasteur's pasteurization process—gentle heating to kill harmful microorganisms—made wine stable enough for long-distance transport without spoilage. Think of it as wine's 'passport to the world'—suddenly, wines could travel across oceans and arrive in perfect condition, launching global wine trade.",
+    "sources": "The Oxford Companion to Wine; Wine Science",
+    "confidence": "established",
+    "tags": [
+      "pasteur",
+      "pasteurization",
+      "stability"
+    ]
+  },
+  {
+    "id": "HC-039",
+    "domain": "history_culture",
+    "difficulty": 380,
+    "level": 3,
+    "format": "odd_one_out",
+    "question": "Which of these innovations was NOT actually developed by André Tchelistcheff at Beaulieu Vineyard?",
+    "options": [
+      "Cold fermentation techniques",
+      "Malolactic fermentation control",
+      "Stainless steel fermentation tanks",
+      "Systematic vineyard frost protection"
+    ],
+    "correct": 2,
+    "explanation": "Stainless steel tanks were pioneered by other California wineries in the 1960s, not Tchelistcheff. His genius lay in temperature control, ML management, and frost protection—the 'foundation stones' of modern California winemaking that earned him the title 'Dean of American Winemakers.'",
+    "sources": "The Wine Bible; GuildSomm",
+    "confidence": "established",
+    "tags": [
+      "tchelistcheff",
+      "california",
+      "innovation"
     ]
   }
 ]

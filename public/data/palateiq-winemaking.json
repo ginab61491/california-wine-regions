@@ -2,8 +2,8 @@
   {
     "id": "WM-001",
     "domain": "winemaking",
-    "difficulty": 2200,
-    "level": 10,
+    "difficulty": 2202,
+    "level": 11,
     "format": "multiple_choice",
     "question": "In traditional method sparkling wine production, what is the minimum time on lees required for Champagne AOP vintage wines before disgorgement?",
     "options": [
@@ -26,8 +26,8 @@
   {
     "id": "WM-002",
     "domain": "winemaking",
-    "difficulty": 2300,
-    "level": 10,
+    "difficulty": 2321,
+    "level": 11,
     "format": "odd_one_out",
     "question": "Which of these yeast strains does NOT belong with the others in terms of fermentation characteristics?",
     "options": [
@@ -50,8 +50,8 @@
   {
     "id": "WM-003",
     "domain": "winemaking",
-    "difficulty": 2400,
-    "level": 10,
+    "difficulty": 2416,
+    "level": 11,
     "format": "multiple_choice",
     "question": "In Sherry production, what is the specific gravity range that determines when a wine will be classified for biological aging versus oxidative aging?",
     "options": [
@@ -74,8 +74,8 @@
   {
     "id": "WM-004",
     "domain": "winemaking",
-    "difficulty": 2100,
-    "level": 10,
+    "difficulty": 2001,
+    "level": 11,
     "format": "match_pairs",
     "question": "Match each oak cooperage region with its characteristic flavor contribution:",
     "pairs": {
@@ -112,8 +112,8 @@
   {
     "id": "WM-005",
     "domain": "winemaking",
-    "difficulty": 2350,
-    "level": 10,
+    "difficulty": 2017,
+    "level": 11,
     "format": "scenario",
     "question": "A winemaker discovers their Pinot Noir has stuck fermentation at 8 Brix with a temperature of 85°F (29°C). The most likely cause and immediate solution is:",
     "options": [
@@ -136,8 +136,8 @@
   {
     "id": "WM-006",
     "domain": "winemaking",
-    "difficulty": 2250,
-    "level": 10,
+    "difficulty": 2327,
+    "level": 11,
     "format": "multiple_choice",
     "question": "In Port production, what is the specific timing for the addition of aguardente to achieve the desired residual sugar levels?",
     "options": [
@@ -160,8 +160,8 @@
   {
     "id": "WM-007",
     "domain": "winemaking",
-    "difficulty": 2150,
-    "level": 10,
+    "difficulty": 2044,
+    "level": 11,
     "format": "multiple_choice",
     "question": "Which malolactic bacteria strain is most commonly used in commercial winemaking due to its reliability and predictable flavor impact?",
     "options": [
@@ -184,8 +184,8 @@
   {
     "id": "WM-008",
     "domain": "winemaking",
-    "difficulty": 2400,
-    "level": 10,
+    "difficulty": 2317,
+    "level": 11,
     "format": "odd_one_out",
     "question": "Which of these compounds does NOT contribute to the 'vanilla' aroma associated with oak aging?",
     "options": [
@@ -208,8 +208,8 @@
   {
     "id": "WM-009",
     "domain": "winemaking",
-    "difficulty": 2300,
-    "level": 10,
+    "difficulty": 2354,
+    "level": 11,
     "format": "multiple_choice",
     "question": "In the production of Eiswein, what is the minimum must weight required under German wine law?",
     "options": [
@@ -232,8 +232,8 @@
   {
     "id": "WM-010",
     "domain": "winemaking",
-    "difficulty": 2200,
-    "level": 10,
+    "difficulty": 2356,
+    "level": 11,
     "format": "scenario",
     "question": "A winemaker wants to produce a wine using carbonic maceration for 40% of the blend and traditional fermentation for 60%. The most likely wine style and region this technique is associated with is:",
     "options": [
@@ -256,8 +256,8 @@
   {
     "id": "WM-011",
     "domain": "winemaking",
-    "difficulty": 2450,
-    "level": 10,
+    "difficulty": 2335,
+    "level": 11,
     "format": "multiple_choice",
     "question": "What is the optimal pH range for malolactic fermentation to proceed efficiently without risk of spoilage bacteria?",
     "options": [
@@ -280,8 +280,8 @@
   {
     "id": "WM-012",
     "domain": "winemaking",
-    "difficulty": 2350,
-    "level": 10,
+    "difficulty": 2324,
+    "level": 11,
     "format": "match_pairs",
     "question": "Match each fining agent with its primary removal target:",
     "pairs": {
@@ -318,8 +318,8 @@
   {
     "id": "WM-013",
     "domain": "winemaking",
-    "difficulty": 2250,
-    "level": 10,
+    "difficulty": 2281,
+    "level": 11,
     "format": "multiple_choice",
     "question": "In traditional method sparkling wine, what causes the characteristic 'mousse' texture and persistent bubbles?",
     "options": [
@@ -342,8 +342,8 @@
   {
     "id": "WM-014",
     "domain": "winemaking",
-    "difficulty": 2400,
-    "level": 10,
+    "difficulty": 2375,
+    "level": 11,
     "format": "odd_one_out",
     "question": "Which of these factors does NOT directly influence the rate of extraction during red wine maceration?",
     "options": [
@@ -366,8 +366,8 @@
   {
     "id": "WM-015",
     "domain": "winemaking",
-    "difficulty": 2300,
-    "level": 10,
+    "difficulty": 2487,
+    "level": 11,
     "format": "scenario",
     "question": "A winemaker producing Sauternes notices uneven botrytis development across their vineyard in late October. The optimal harvesting strategy would be:",
     "options": [
@@ -390,8 +390,8 @@
   {
     "id": "WM-016",
     "domain": "winemaking",
-    "difficulty": 2200,
-    "level": 10,
+    "difficulty": 2267,
+    "level": 11,
     "format": "multiple_choice",
     "question": "In the production of Tokaji Aszú 6 puttonyos, what is the specific ratio of aszú berries to must/base wine that defines this classification under Hungarian wine law?",
     "options": [
@@ -414,8 +414,8 @@
   {
     "id": "WM-017",
     "domain": "winemaking",
-    "difficulty": 2150,
-    "level": 10,
+    "difficulty": 2252,
+    "level": 11,
     "format": "odd_one_out",
     "question": "Which of these indigenous yeast strains does NOT belong with the others in terms of their specific fermentation temperature tolerance?",
     "options": [
@@ -438,8 +438,8 @@
   {
     "id": "WM-018",
     "domain": "winemaking",
-    "difficulty": 2300,
-    "level": 10,
+    "difficulty": 2223,
+    "level": 11,
     "format": "match_pairs",
     "question": "Match each specific cooperage forest with its characteristic tannin profile in wine:",
     "pairs": {
@@ -476,8 +476,8 @@
   {
     "id": "WM-019",
     "domain": "winemaking",
-    "difficulty": 2250,
-    "level": 10,
+    "difficulty": 2282,
+    "level": 11,
     "format": "scenario",
     "question": "A winemaker in Jerez notices their fino sherry has developed a patchy, inconsistent flor layer in November. The alcohol is 15.2%, pH is 3.1, and cellar humidity is 65%. What is the most likely cause and appropriate intervention?",
     "options": [
@@ -500,8 +500,8 @@
   {
     "id": "WM-020",
     "domain": "winemaking",
-    "difficulty": 2180,
-    "level": 10,
+    "difficulty": 2463,
+    "level": 11,
     "format": "multiple_choice",
     "question": "In the production of Vin de Constance, what is the specific minimum potential alcohol requirement for the grapes at harvest under South African wine law?",
     "options": [
@@ -519,6 +519,1051 @@
       "south_africa",
       "constantia",
       "brix_levels"
+    ]
+  },
+  {
+    "id": "WM-021",
+    "domain": "winemaking",
+    "difficulty": 320,
+    "level": 2,
+    "format": "multiple_choice",
+    "question": "What is the ideal temperature range for red wine fermentation to extract color and tannins while preserving fruit character?",
+    "options": [
+      "60-65°F (15-18°C)",
+      "75-85°F (24-29°C)",
+      "90-95°F (32-35°C)",
+      "100-105°F (38-41°C)"
+    ],
+    "correct": 1,
+    "explanation": "Red wines ferment best between 75-85°F, hot enough to extract color and tannins from the skins, but cool enough to preserve those gorgeous fruit aromas. Think of it like making tea—too cool and you get weak extraction, too hot and you cook the delicate flavors.",
+    "sources": "WSET Level 2 Study Materials; The Wine Bible (Karen MacNeil)",
+    "confidence": "established",
+    "tags": [
+      "fermentation",
+      "temperature_control",
+      "red_wine"
+    ]
+  },
+  {
+    "id": "WM-022",
+    "domain": "winemaking",
+    "difficulty": 290,
+    "level": 2,
+    "format": "multiple_choice",
+    "question": "Which type of oak is known for imparting more vanilla and coconut flavors to wine?",
+    "options": [
+      "French oak",
+      "American oak",
+      "Hungarian oak",
+      "Slavonian oak"
+    ],
+    "correct": 1,
+    "explanation": "American oak delivers those bold vanilla and coconut notes thanks to higher levels of compounds like methyl-octalactone. French oak whispers elegance with spice and toast, while American oak shouts 'hello there!' with sweet, creamy flavors.",
+    "sources": "WSET Level 2 Study Materials; The Oxford Companion to Wine",
+    "confidence": "established",
+    "tags": [
+      "oak_aging",
+      "flavor_compounds",
+      "american_oak"
+    ]
+  },
+  {
+    "id": "WM-023",
+    "domain": "winemaking",
+    "difficulty": 340,
+    "level": 2,
+    "format": "odd_one_out",
+    "question": "Which of these does NOT belong with the others as a method for making sweet wine?",
+    "options": [
+      "Late harvest",
+      "Ice wine",
+      "Carbonic maceration",
+      "Noble rot"
+    ],
+    "correct": 2,
+    "explanation": "Carbonic maceration is a red wine technique for soft, fruity wines like Beaujolais Nouveau—it has nothing to do with sweetness. The others all concentrate sugars by removing water, whether through dehydration, freezing, or botrytis magic.",
+    "sources": "WSET Level 2 Study Materials; The Wine Bible (Karen MacNeil)",
+    "confidence": "established",
+    "tags": [
+      "sweet_wine",
+      "carbonic_maceration",
+      "winemaking_methods"
+    ]
+  },
+  {
+    "id": "WM-024",
+    "domain": "winemaking",
+    "difficulty": 310,
+    "level": 2,
+    "format": "multiple_choice",
+    "question": "In traditional method sparkling wine production, what creates the bubbles in the wine?",
+    "options": [
+      "Injecting CO2 under pressure",
+      "A second fermentation in the bottle",
+      "Adding sugar and carbonated water",
+      "Fermenting at very low temperatures"
+    ],
+    "correct": 1,
+    "explanation": "The magic happens with a second fermentation right in the bottle—yeast converts added sugar to alcohol and CO2, creating those persistent, elegant bubbles. It's like having a tiny fermentation party in every bottle that lasts for months.",
+    "sources": "WSET Level 2 Study Materials; The Oxford Companion to Wine",
+    "confidence": "established",
+    "tags": [
+      "sparkling_wine",
+      "traditional_method",
+      "fermentation"
+    ]
+  },
+  {
+    "id": "WM-025",
+    "domain": "winemaking",
+    "difficulty": 280,
+    "level": 2,
+    "format": "multiple_choice",
+    "question": "What is malolactic fermentation also commonly called?",
+    "options": [
+      "Primary fermentation",
+      "Secondary fermentation",
+      "Tertiary fermentation",
+      "Cold fermentation"
+    ],
+    "correct": 1,
+    "explanation": "Winemakers call it 'secondary fermentation' even though it's technically not a fermentation at all—it's bacteria converting sharp malic acid into softer lactic acid. Think of it as the wine's spa treatment, smoothing out those harsh edges.",
+    "sources": "WSET Level 2 Study Materials; The Wine Bible (Karen MacNeil)",
+    "confidence": "established",
+    "tags": [
+      "malolactic_fermentation",
+      "secondary_fermentation",
+      "acid_conversion"
+    ]
+  },
+  {
+    "id": "WM-026",
+    "domain": "winemaking",
+    "difficulty": 350,
+    "level": 2,
+    "format": "scenario",
+    "question": "A winemaker wants to preserve fresh fruit flavors in their Sauvignon Blanc. Which fermentation approach would be most appropriate?",
+    "options": [
+      "Warm fermentation in old oak barrels",
+      "Cold fermentation in stainless steel tanks",
+      "Extended skin contact before fermentation",
+      "Fermentation with wild yeasts only"
+    ],
+    "correct": 1,
+    "explanation": "Cold fermentation in stainless steel is the classic move for preserving those bright, zippy fruit flavors that make Sauvignon Blanc sing. Stainless steel won't add any flavors, and cool temperatures keep those delicate aromatics from evaporating away.",
+    "sources": "WSET Level 2 Study Materials; The Oxford Companion to Wine",
+    "confidence": "established",
+    "tags": [
+      "white_wine",
+      "temperature_control",
+      "fruit_preservation"
+    ]
+  },
+  {
+    "id": "WM-027",
+    "domain": "winemaking",
+    "difficulty": 300,
+    "level": 2,
+    "format": "multiple_choice",
+    "question": "In Port production, when is the fermentation stopped by adding grape spirit?",
+    "options": [
+      "Before fermentation begins",
+      "When about half the sugar has been converted to alcohol",
+      "After fermentation is completely finished",
+      "Only during the aging process"
+    ],
+    "correct": 1,
+    "explanation": "The magic timing is halfway through fermentation—this preserves the natural grape sweetness while creating that warming 20% alcohol strength. It's like hitting the pause button on fermentation at exactly the right moment to capture both sugar and alcohol.",
+    "sources": "WSET Level 2 Study Materials; The Oxford Companion to Wine",
+    "confidence": "established",
+    "tags": [
+      "fortified_wine",
+      "port",
+      "fermentation_control"
+    ]
+  },
+  {
+    "id": "WM-028",
+    "domain": "winemaking",
+    "difficulty": 330,
+    "level": 2,
+    "format": "match_pairs",
+    "question": "Match each sparkling wine production method with its key characteristic:",
+    "pairs": {
+      "left": [
+        "Traditional Method",
+        "Tank Method",
+        "Transfer Method",
+        "Ancestral Method"
+      ],
+      "right": [
+        "Second fermentation in large tanks",
+        "No disgorgement required",
+        "Second fermentation in bottle, then transferred to tank",
+        "Second fermentation in individual bottles"
+      ]
+    },
+    "options": [],
+    "correct": [
+      3,
+      0,
+      2,
+      1
+    ],
+    "explanation": "Each method has its signature move: Traditional keeps it all in bottle for elegance, Tank Method uses big vessels for efficiency, Transfer Method combines both approaches, and Ancestral Method bottles during primary fermentation—no added sugar needed.",
+    "sources": "WSET Level 2 Study Materials; The Oxford Companion to Wine",
+    "confidence": "established",
+    "tags": [
+      "sparkling_wine",
+      "production_methods",
+      "fermentation_techniques"
+    ]
+  },
+  {
+    "id": "WM-029",
+    "domain": "winemaking",
+    "difficulty": 270,
+    "level": 2,
+    "format": "multiple_choice",
+    "question": "What does sulfur dioxide (SO2) primarily do in winemaking?",
+    "options": [
+      "Increases alcohol content",
+      "Acts as a preservative and antioxidant",
+      "Adds sweetness to the wine",
+      "Increases acidity levels"
+    ],
+    "correct": 1,
+    "explanation": "SO2 is wine's bodyguard—it fights off harmful bacteria and prevents oxidation that would turn your wine brown and lifeless. Think of it as the wine's immune system, keeping everything fresh and stable from grape to glass.",
+    "sources": "WSET Level 2 Study Materials; Wine Science (Jamie Goode)",
+    "confidence": "established",
+    "tags": [
+      "sulfur_dioxide",
+      "preservation",
+      "antioxidant"
+    ]
+  },
+  {
+    "id": "WM-030",
+    "domain": "winemaking",
+    "difficulty": 320,
+    "level": 2,
+    "format": "multiple_choice",
+    "question": "Which vessel material is most commonly used for fermentation when the goal is to avoid adding any flavors to the wine?",
+    "options": [
+      "New French oak barrels",
+      "Concrete tanks",
+      "Stainless steel tanks",
+      "Clay amphora"
+    ],
+    "correct": 2,
+    "explanation": "Stainless steel is the chameleon of winemaking vessels—completely neutral, easy to clean, and lets the grape's true personality shine through. It's like having a crystal-clear window to the fruit's natural character.",
+    "sources": "WSET Level 2 Study Materials; The Oxford Companion to Wine",
+    "confidence": "established",
+    "tags": [
+      "stainless_steel",
+      "neutral_vessels",
+      "fermentation_vessels"
+    ]
+  },
+  {
+    "id": "WM-031",
+    "domain": "winemaking",
+    "difficulty": 360,
+    "level": 2,
+    "format": "multiple_choice",
+    "question": "In red winemaking, what is the primary purpose of punching down or pumping over during fermentation?",
+    "options": [
+      "To increase alcohol content",
+      "To extract color and tannins from grape skins",
+      "To prevent malolactic fermentation",
+      "To reduce the wine's acidity"
+    ],
+    "correct": 1,
+    "explanation": "These techniques keep the grape skins in contact with the fermenting juice, extracting all that gorgeous color and structure-building tannins. Without this contact, you'd get something closer to rosé than a full-bodied red—the skins are where the magic lives.",
+    "sources": "WSET Level 2 Study Materials; The Wine Bible (Karen MacNeil)",
+    "confidence": "established",
+    "tags": [
+      "red_wine",
+      "extraction",
+      "maceration"
+    ]
+  },
+  {
+    "id": "WM-032",
+    "domain": "winemaking",
+    "difficulty": 310,
+    "level": 2,
+    "format": "odd_one_out",
+    "question": "Which of these does NOT belong with the others as a cause of stuck fermentation?",
+    "options": [
+      "Temperature too high",
+      "Yeast running out of nutrients",
+      "Alcohol level becoming toxic to yeast",
+      "Adding too much sulfur dioxide"
+    ],
+    "correct": 3,
+    "explanation": "While SO2 can inhibit fermentation if added at the wrong time, it's not typically a cause of stuck fermentation once it's already started. The other three are classic fermentation killers—heat stress, nutrient starvation, and alcohol poisoning all stop yeast dead in their tracks.",
+    "sources": "WSET Level 2 Study Materials; Wine Science (Jamie Goode)",
+    "confidence": "established",
+    "tags": [
+      "stuck_fermentation",
+      "yeast_health",
+      "fermentation_problems"
+    ]
+  },
+  {
+    "id": "WM-033",
+    "domain": "winemaking",
+    "difficulty": 340,
+    "level": 2,
+    "format": "multiple_choice",
+    "question": "What is the main difference between vintage Port and tawny Port in terms of aging?",
+    "options": [
+      "Vintage Port is aged in bottle, tawny Port in wood",
+      "Vintage Port is aged in wood, tawny Port in bottle",
+      "Both are aged the same way but for different lengths",
+      "Vintage Port uses different grapes than tawny Port"
+    ],
+    "correct": 0,
+    "explanation": "Vintage Port develops its character in the bottle's reductive environment, staying dark and powerful, while tawny Port slowly oxidizes in wooden casks, developing those gorgeous amber hues and nutty flavors. It's like comparing a bodybuilder to a yoga instructor—both strong, but in completely different ways.",
+    "sources": "WSET Level 2 Study Materials; The Oxford Companion to Wine",
+    "confidence": "established",
+    "tags": [
+      "port",
+      "aging_methods",
+      "vintage_vs_tawny"
+    ]
+  },
+  {
+    "id": "WM-034",
+    "domain": "winemaking",
+    "difficulty": 380,
+    "level": 2,
+    "format": "scenario",
+    "question": "A winemaker notices their red wine fermentation has been stuck at 5° Brix for three days at 70°F. What is the most likely immediate solution?",
+    "options": [
+      "Add more sulfur dioxide",
+      "Increase temperature and add yeast nutrients",
+      "Begin malolactic fermentation immediately",
+      "Transfer to stainless steel tanks"
+    ],
+    "correct": 1,
+    "explanation": "At 70°F, the yeast are probably cold and hungry—warming them up and feeding them nutrients usually gets fermentation rolling again. Think of it like reviving a sluggish campfire: add heat and fuel, and the flames return to life.",
+    "sources": "WSET Level 2 Study Materials; Wine Science (Jamie Goode)",
+    "confidence": "established",
+    "tags": [
+      "stuck_fermentation",
+      "problem_solving",
+      "yeast_management"
+    ]
+  },
+  {
+    "id": "WM-035",
+    "domain": "winemaking",
+    "difficulty": 290,
+    "level": 2,
+    "format": "multiple_choice",
+    "question": "What is the primary effect of malolactic fermentation on a wine's taste and mouthfeel?",
+    "options": [
+      "Increases sweetness and body",
+      "Reduces acidity and adds creaminess",
+      "Increases alcohol and tannins",
+      "Adds fruit flavors and color"
+    ],
+    "correct": 1,
+    "explanation": "Malolactic fermentation transforms sharp, green-apple malic acid into softer, creamier lactic acid—like the difference between biting a tart apple versus sipping smooth yogurt. It's the reason Chardonnay can taste buttery and Pinot Noir feels silky.",
+    "sources": "WSET Level 2 Study Materials; The Wine Bible (Karen MacNeil)",
+    "confidence": "established",
+    "tags": [
+      "malolactic_fermentation",
+      "acidity",
+      "mouthfeel"
+    ]
+  },
+  {
+    "id": "WM-036",
+    "domain": "winemaking",
+    "difficulty": 480,
+    "level": 3,
+    "format": "multiple_choice",
+    "question": "Which yeast strain is most commonly used for high-alcohol fermentations due to its exceptional alcohol tolerance?",
+    "options": [
+      "Saccharomyces cerevisiae EC-1118",
+      "Saccharomyces cerevisiae D47",
+      "Saccharomyces cerevisiae BM45",
+      "Saccharomyces cerevisiae RC212"
+    ],
+    "correct": 0,
+    "explanation": "EC-1118 is the marathon runner of the yeast world, capable of fermenting to 18% alcohol or higher without giving up. Originally isolated from Champagne, it's become the go-to strain when you need reliability and power—think of it as the Swiss Army knife of fermentation.",
+    "sources": "WSET Level 3 Study Materials; Wine Science (Jamie Goode)",
+    "confidence": "established",
+    "tags": [
+      "yeast_strains",
+      "alcohol_tolerance",
+      "fermentation_management"
+    ]
+  },
+  {
+    "id": "WM-037",
+    "domain": "winemaking",
+    "difficulty": 520,
+    "level": 3,
+    "format": "multiple_choice",
+    "question": "In the production of Sauternes, what is the optimal water activity (aw) level for Botrytis cinerea to develop beneficially rather than as gray rot?",
+    "options": [
+      "0.99-1.0",
+      "0.93-0.98",
+      "0.85-0.90",
+      "0.70-0.80"
+    ],
+    "correct": 1,
+    "explanation": "Botrytis needs that Goldilocks zone of 0.93-0.98 water activity—just dry enough to concentrate flavors without becoming destructive gray rot. It's like the difference between a gentle morning mist that enhances the garden versus a torrential downpour that destroys it.",
+    "sources": "WSET Level 3 Study Materials; Wine Science (Jamie Goode)",
+    "confidence": "established",
+    "tags": [
+      "botrytis",
+      "noble_rot",
+      "water_activity"
+    ]
+  },
+  {
+    "id": "WM-038",
+    "domain": "winemaking",
+    "difficulty": 460,
+    "level": 3,
+    "format": "odd_one_out",
+    "question": "Which of these fining agents does NOT work primarily through electrostatic attraction?",
+    "options": [
+      "Bentonite",
+      "Egg whites",
+      "PVPP",
+      "Isinglass"
+    ],
+    "correct": 2,
+    "explanation": "PVPP (polyvinylpolypyrrolidone) is the odd one out—it works through hydrogen bonding to remove phenolic compounds, not electrostatic charge. The others are all charged particles that attract oppositely charged wine components like tiny magnets cleaning up the wine.",
+    "sources": "WSET Level 3 Study Materials; Wine Science (Jamie Goode)",
+    "confidence": "established",
+    "tags": [
+      "fining_agents",
+      "wine_chemistry",
+      "clarification"
+    ]
+  },
+  {
+    "id": "WM-039",
+    "domain": "winemaking",
+    "difficulty": 500,
+    "level": 3,
+    "format": "multiple_choice",
+    "question": "What is the typical toast level that maximizes vanillin extraction while minimizing harsh tannin compounds in new oak barrels?",
+    "options": [
+      "Light toast",
+      "Medium toast",
+      "Medium-plus toast",
+      "Heavy toast"
+    ],
+    "correct": 2,
+    "explanation": "Medium-plus toast hits the sweet spot where vanillin peaks while harsh tannins start breaking down—it's like perfectly caramelizing onions where the sugars develop but the bitterness disappears. This level gives you complexity without overwhelming the wine.",
+    "sources": "WSET Level 3 Study Materials; The Oxford Companion to Wine",
+    "confidence": "established",
+    "tags": [
+      "oak_toast_levels",
+      "vanillin",
+      "tannin_management"
+    ]
+  },
+  {
+    "id": "WM-040",
+    "domain": "winemaking",
+    "difficulty": 440,
+    "level": 3,
+    "format": "match_pairs",
+    "question": "Match each Sherry style with its primary aging method:",
+    "pairs": {
+      "left": [
+        "Fino",
+        "Amontillado",
+        "Oloroso",
+        "Pedro Ximénez"
+      ],
+      "right": [
+        "Oxidative aging only",
+        "Biological then oxidative aging",
+        "Biological aging under flor",
+        "Sweet wine aging"
+      ]
+    },
+    "options": [],
+    "correct": [
+      2,
+      1,
+      0,
+      3
+    ],
+    "explanation": "Each Sherry style follows its own aging path: Fino stays protected under flor, Amontillado starts biological then goes oxidative when flor dies, Oloroso jumps straight to oxidative aging, and PX gets the sweet wine treatment. It's like different life paths all leading to greatness.",
+    "sources": "WSET Level 3 Study Materials; The Oxford Companion to Wine",
+    "confidence": "established",
+    "tags": [
+      "sherry",
+      "aging_methods",
+      "flor_yeast"
+    ]
+  },
+  {
+    "id": "WM-041",
+    "domain": "winemaking",
+    "difficulty": 490,
+    "level": 3,
+    "format": "multiple_choice",
+    "question": "In whole cluster fermentation, what percentage of stems typically needs to be lignified to avoid excessive green tannin extraction?",
+    "options": [
+      "30-40%",
+      "50-60%",
+      "70-80%",
+      "90-95%"
+    ],
+    "correct": 2,
+    "explanation": "Stems need to be 70-80% lignified (brown and woody) to contribute structure without harsh green notes—think of them as needing to be fully 'mature' like aged wood rather than green twigs. This lignification transforms potential bitterness into elegant spice and lift.",
+    "sources": "WSET Level 3 Study Materials; Wine Science (Jamie Goode)",
+    "confidence": "established",
+    "tags": [
+      "whole_cluster",
+      "stem_inclusion",
+      "lignification"
+    ]
+  },
+  {
+    "id": "WM-042",
+    "domain": "winemaking",
+    "difficulty": 510,
+    "level": 3,
+    "format": "scenario",
+    "question": "A winemaker producing Gewürztraminer notices sluggish malolactic fermentation despite optimal temperature and pH. The wine has 13.5% alcohol and was treated with lysozyme post-primary fermentation. What is the most likely inhibiting factor?",
+    "options": [
+      "Alcohol level is too high",
+      "Lysozyme is inhibiting ML bacteria",
+      "pH is actually too low for the variety",
+      "Natural antimicrobial compounds in Gewürztraminer"
+    ],
+    "correct": 1,
+    "explanation": "Lysozyme, while great for controlling unwanted bacteria, can also inhibit the beneficial ML bacteria if residual levels are too high. It's like using too much hand sanitizer—it kills everything, good and bad. The timing of lysozyme addition is crucial for ML success.",
+    "sources": "WSET Level 3 Study Materials; Wine Science (Jamie Goode)",
+    "confidence": "established",
+    "tags": [
+      "malolactic_inhibition",
+      "lysozyme",
+      "gewurztraminer"
+    ]
+  },
+  {
+    "id": "WM-043",
+    "domain": "winemaking",
+    "difficulty": 470,
+    "level": 3,
+    "format": "multiple_choice",
+    "question": "What is the primary reason for using concrete eggs or other ovoid fermentation vessels in modern winemaking?",
+    "options": [
+      "They impart mineral flavors to the wine",
+      "They create natural convection currents for lees stirring",
+      "They are more economical than stainless steel",
+      "They prevent malolactic fermentation"
+    ],
+    "correct": 1,
+    "explanation": "The egg shape creates natural convection currents that gently circulate the wine and lees without mechanical intervention—it's like having a built-in stirring system powered by physics. This gives you the benefits of lees contact with elegant, natural movement.",
+    "sources": "WSET Level 3 Study Materials; The Oxford Companion to Wine",
+    "confidence": "established",
+    "tags": [
+      "concrete_eggs",
+      "convection_currents",
+      "lees_stirring"
+    ]
+  },
+  {
+    "id": "WM-044",
+    "domain": "winemaking",
+    "difficulty": 530,
+    "level": 3,
+    "format": "multiple_choice",
+    "question": "In biodynamic winemaking, what is the maximum allowable sulfur dioxide addition according to Demeter certification standards?",
+    "options": [
+      "No sulfur dioxide allowed",
+      "70 mg/L for reds, 90 mg/L for whites",
+      "100 mg/L for reds, 120 mg/L for whites",
+      "150 mg/L for all wines"
+    ],
+    "correct": 1,
+    "explanation": "Demeter allows limited SO2—70 mg/L for reds and 90 mg/L for whites—recognizing that some preservation is necessary while maintaining biodynamic principles. It's a pragmatic compromise between ideological purity and practical winemaking needs.",
+    "sources": "WSET Level 3 Study Materials; The Oxford Companion to Wine",
+    "confidence": "established",
+    "tags": [
+      "biodynamic",
+      "sulfur_dioxide_limits",
+      "demeter_certification"
+    ]
+  },
+  {
+    "id": "WM-045",
+    "domain": "winemaking",
+    "difficulty": 450,
+    "level": 3,
+    "format": "multiple_choice",
+    "question": "Which compound is primarily responsible for the 'wet cardboard' off-flavor associated with cork taint?",
+    "options": [
+      "2,4,6-Trichloroanisole (TCA)",
+      "4-Ethylphenol",
+      "Acetic acid",
+      "Hydrogen sulfide"
+    ],
+    "correct": 0,
+    "explanation": "TCA (2,4,6-Trichloroanisole) is the villain behind that unmistakable musty, wet cardboard smell that ruins wine experiences. Even at incredibly low concentrations, it completely masks a wine's fruit character—it's like having a single drop of ink cloud an entire glass of water.",
+    "sources": "WSET Level 3 Study Materials; Wine Science (Jamie Goode)",
+    "confidence": "established",
+    "tags": [
+      "cork_taint",
+      "TCA",
+      "wine_faults"
+    ]
+  },
+  {
+    "id": "WM-046",
+    "domain": "winemaking",
+    "difficulty": 480,
+    "level": 3,
+    "format": "odd_one_out",
+    "question": "Which of these does NOT belong with the others as a natural wine certification or movement principle?",
+    "options": [
+      "Association des Vins Naturels",
+      "Vins S.A.I.N.S.",
+      "Sustainable Winegrowing New Zealand",
+      "VinNatur"
+    ],
+    "correct": 2,
+    "explanation": "Sustainable Winegrowing New Zealand focuses on environmental sustainability rather than natural wine principles—it allows many conventional interventions that natural wine movements reject. The others are specifically about minimal intervention winemaking with strict limitations on additives and processing.",
+    "sources": "WSET Level 3 Study Materials; The Oxford Companion to Wine",
+    "confidence": "established",
+    "tags": [
+      "natural_wine",
+      "certification_bodies",
+      "sustainable_viticulture"
+    ]
+  },
+  {
+    "id": "WM-047",
+    "domain": "winemaking",
+    "difficulty": 280,
+    "level": 2,
+    "format": "multiple_choice",
+    "question": "What is the typical temperature range for white wine fermentation to preserve delicate aromas?",
+    "options": [
+      "50-59°F (10-15°C)",
+      "60-68°F (15-20°C)",
+      "70-77°F (21-25°C)",
+      "80-86°F (27-30°C)"
+    ],
+    "correct": 1,
+    "explanation": "White wines ferment best at 60-68°F to maintain those beautiful floral and citrus notes — think of it like keeping flowers fresh in a cool room. Higher temperatures would cook off those delicate aromatics we treasure in whites.",
+    "sources": "WSET Level 2; The Wine Bible",
+    "confidence": "established",
+    "tags": [
+      "fermentation",
+      "temperature_control",
+      "white_wine"
+    ]
+  },
+  {
+    "id": "WM-048",
+    "domain": "winemaking",
+    "difficulty": 320,
+    "level": 2,
+    "format": "odd_one_out",
+    "question": "Which of these does NOT belong with the others as a factor that can cause stuck fermentation?",
+    "options": [
+      "Temperature too high",
+      "Insufficient nutrients",
+      "Excessive alcohol levels",
+      "Too much acidity"
+    ],
+    "correct": 3,
+    "explanation": "High acidity actually helps fermentation proceed smoothly by creating an inhospitable environment for spoilage bacteria. The other three are classic fermentation killers — think of yeast as athletes who need the right temperature, food, and can only handle so much alcohol before they give up.",
+    "sources": "WSET Level 2; Wine Science",
+    "confidence": "established",
+    "tags": [
+      "stuck_fermentation",
+      "yeast",
+      "troubleshooting"
+    ]
+  },
+  {
+    "id": "WM-049",
+    "domain": "winemaking",
+    "difficulty": 350,
+    "level": 2,
+    "format": "multiple_choice",
+    "question": "In the traditional method of sparkling wine production, what happens during the second fermentation?",
+    "options": [
+      "Sugar is converted to alcohol in tanks",
+      "Carbon dioxide is injected into the wine",
+      "Yeast converts added sugar to alcohol and CO2 in the bottle",
+      "The wine is blended with other base wines"
+    ],
+    "correct": 2,
+    "explanation": "The magic of traditional method sparklers happens when yeast works inside each individual bottle, creating those fine, persistent bubbles naturally. It's like having tiny champagne makers working inside every bottle — no shortcuts, just patient craftsmanship.",
+    "sources": "WSET Level 2; The Oxford Companion to Wine",
+    "confidence": "established",
+    "tags": [
+      "traditional_method",
+      "sparkling_wine",
+      "second_fermentation"
+    ]
+  },
+  {
+    "id": "WM-050",
+    "domain": "winemaking",
+    "difficulty": 290,
+    "level": 2,
+    "format": "multiple_choice",
+    "question": "What is the primary difference between new oak and used oak barrels in terms of flavor impact?",
+    "options": [
+      "Used oak provides more tannins",
+      "New oak imparts more vanilla and spice flavors",
+      "Used oak adds more color to wine",
+      "New oak allows more oxygen contact"
+    ],
+    "correct": 1,
+    "explanation": "New oak is like a fresh spice rack — it generously gives vanilla, coconut, and sweet spices to wine, while used oak has already shared most of its flavors and mainly provides gentle oxygenation. After 3-4 uses, barrels become 'neutral' flavor-wise.",
+    "sources": "WSET Level 2; The Wine Bible",
+    "confidence": "established",
+    "tags": [
+      "oak_aging",
+      "barrel_management",
+      "flavor_development"
+    ]
+  },
+  {
+    "id": "WM-051",
+    "domain": "winemaking",
+    "difficulty": 380,
+    "level": 2,
+    "format": "scenario",
+    "question": "A winemaker wants to make a fresh, crisp Riesling with bright acidity and no oak influence. Which combination of techniques would be most appropriate?",
+    "options": [
+      "Warm fermentation in new oak barrels with malolactic fermentation",
+      "Cool fermentation in stainless steel tanks, avoiding malolactic fermentation",
+      "Extended maceration with oak chips and malolactic fermentation",
+      "Fermentation in used oak barrels with extended lees contact"
+    ],
+    "correct": 1,
+    "explanation": "Stainless steel preserves that electric Riesling character we love, while avoiding malolactic keeps the wine's natural tartness intact. Think of it as letting the grape speak purely without any winemaking interference — just clean, bright, and singing with acidity.",
+    "sources": "WSET Level 2; The Oxford Companion to Wine",
+    "confidence": "established",
+    "tags": [
+      "riesling",
+      "stainless_steel",
+      "acid_preservation"
+    ]
+  },
+  {
+    "id": "WM-052",
+    "domain": "winemaking",
+    "difficulty": 310,
+    "level": 2,
+    "format": "multiple_choice",
+    "question": "What is the main purpose of sulfur dioxide (SO2) in winemaking?",
+    "options": [
+      "To increase alcohol content",
+      "To prevent oxidation and microbial spoilage",
+      "To add flavor complexity",
+      "To speed up fermentation"
+    ],
+    "correct": 1,
+    "explanation": "SO2 is wine's bodyguard — protecting against oxygen (which browns wine) and bad bacteria that could spoil the party. It's been used for centuries because it's incredibly effective at keeping wine fresh and stable without changing the fundamental character.",
+    "sources": "WSET Level 2; Wine Science",
+    "confidence": "established",
+    "tags": [
+      "sulfur_dioxide",
+      "preservation",
+      "wine_stability"
+    ]
+  },
+  {
+    "id": "WM-053",
+    "domain": "winemaking",
+    "difficulty": 340,
+    "level": 2,
+    "format": "match_pairs",
+    "question": "Match each sweet wine production method with its key characteristic:",
+    "pairs": {
+      "left": [
+        "Late Harvest",
+        "Ice Wine",
+        "Botrytis/Noble Rot",
+        "Fortification"
+      ],
+      "right": [
+        "Grapes frozen on vine",
+        "Beneficial fungus concentrates sugars",
+        "Fermentation stopped with spirits",
+        "Grapes left to dehydrate naturally"
+      ]
+    },
+    "options": [],
+    "correct": [
+      3,
+      0,
+      1,
+      2
+    ],
+    "explanation": "Each method concentrates sugars differently — late harvest uses time, ice wine uses freezing, botrytis uses beneficial mold, and fortification preserves existing sugars. Think of them as nature's different ways of making liquid gold.",
+    "sources": "WSET Level 2; The Oxford Companion to Wine",
+    "confidence": "established",
+    "tags": [
+      "sweet_wine",
+      "concentration_methods",
+      "production_techniques"
+    ]
+  },
+  {
+    "id": "WM-054",
+    "domain": "winemaking",
+    "difficulty": 270,
+    "level": 2,
+    "format": "multiple_choice",
+    "question": "In red winemaking, what is the primary purpose of maceration?",
+    "options": [
+      "To convert sugar to alcohol",
+      "To extract color, tannins, and flavor from grape skins",
+      "To remove sediment from the wine",
+      "To add oak flavors to the wine"
+    ],
+    "correct": 1,
+    "explanation": "Maceration is where red wine gets its personality — the juice soaks with the skins like tea steeping, pulling out the color, tannins, and flavors that make red wine red. Without this step, you'd just have white wine from red grapes!",
+    "sources": "WSET Level 2; The Wine Bible",
+    "confidence": "established",
+    "tags": [
+      "maceration",
+      "red_winemaking",
+      "extraction"
+    ]
+  },
+  {
+    "id": "WM-055",
+    "domain": "winemaking",
+    "difficulty": 360,
+    "level": 2,
+    "format": "multiple_choice",
+    "question": "What distinguishes the Charmat method from traditional method sparkling wine production?",
+    "options": [
+      "Second fermentation occurs in large pressurized tanks instead of individual bottles",
+      "Grapes are pressed more gently",
+      "Base wines are aged longer before blending",
+      "Higher pressure is used during riddling"
+    ],
+    "correct": 0,
+    "explanation": "Charmat method makes bubbles in big tanks rather than bottle-by-bottle, creating wines that are fresh and fruity rather than complex and yeasty. Think Prosecco versus Champagne — both delicious, but the tank method preserves primary fruit flavors beautifully.",
+    "sources": "WSET Level 2; The Oxford Companion to Wine",
+    "confidence": "established",
+    "tags": [
+      "charmat_method",
+      "sparkling_wine",
+      "production_methods"
+    ]
+  },
+  {
+    "id": "WM-056",
+    "domain": "winemaking",
+    "difficulty": 330,
+    "level": 2,
+    "format": "odd_one_out",
+    "question": "Which of these does NOT belong with the others as a characteristic of malolactic fermentation?",
+    "options": [
+      "Converts malic acid to lactic acid",
+      "Reduces wine's acidity",
+      "Creates buttery flavors",
+      "Increases alcohol content"
+    ],
+    "correct": 3,
+    "explanation": "Malolactic fermentation is all about acid conversion, not alcohol production — that party already happened during primary fermentation. MLF transforms sharp apple-like malic acid into softer lactic acid, often adding that creamy, buttery character we associate with rich Chardonnays.",
+    "sources": "WSET Level 2; Wine Science",
+    "confidence": "established",
+    "tags": [
+      "malolactic_fermentation",
+      "acid_conversion",
+      "flavor_development"
+    ]
+  },
+  {
+    "id": "WM-057",
+    "domain": "winemaking",
+    "difficulty": 420,
+    "level": 3,
+    "format": "multiple_choice",
+    "question": "What is the optimal pH range for malolactic fermentation to proceed efficiently?",
+    "options": [
+      "2.8-3.0",
+      "3.0-3.4",
+      "3.4-3.8",
+      "3.8-4.2"
+    ],
+    "correct": 2,
+    "explanation": "MLF bacteria thrive in the 3.4-3.8 pH sweet spot — too acidic and they struggle, too high and spoilage bacteria crash the party. Think of it as the Goldilocks zone where beneficial bacteria can work their magic transforming harsh malic acid into smooth lactic acid.",
+    "sources": "Wine Science; WSET Level 3",
+    "confidence": "established",
+    "tags": [
+      "malolactic_fermentation",
+      "ph_management",
+      "bacterial_activity"
+    ]
+  },
+  {
+    "id": "WM-058",
+    "domain": "winemaking",
+    "difficulty": 480,
+    "level": 3,
+    "format": "scenario",
+    "question": "A winemaker's Pinot Noir fermentation has been stuck at 6° Brix for 4 days at 75°F (24°C). Alcohol is currently 11.5%. What is the most appropriate immediate intervention?",
+    "options": [
+      "Add more yeast nutrients and gently warm to 80°F",
+      "Cool the fermentation to 65°F and add fresh yeast",
+      "Add grape concentrate to increase sugar levels",
+      "Immediately press and finish as a lighter style wine"
+    ],
+    "correct": 0,
+    "explanation": "At 11.5% alcohol with sugar remaining, the yeast are likely nutrient-starved rather than alcohol-stressed — feeding them and a gentle temperature boost often restarts the party. It's like giving tired workers a snack and some coffee rather than replacing them entirely.",
+    "sources": "WSET Level 3; Wine Science",
+    "confidence": "established",
+    "tags": [
+      "stuck_fermentation",
+      "nutrient_management",
+      "troubleshooting"
+    ]
+  },
+  {
+    "id": "WM-059",
+    "domain": "winemaking",
+    "difficulty": 440,
+    "level": 3,
+    "format": "multiple_choice",
+    "question": "Which compound is primarily responsible for the 'green bell pepper' aroma that can result from whole cluster fermentation with unripe stems?",
+    "options": [
+      "Rotundone",
+      "Methoxypyrazines",
+      "Thiols",
+      "Terpenes"
+    ],
+    "correct": 1,
+    "explanation": "Methoxypyrazines are the culprits behind that vegetal bell pepper note — they're concentrated in unripe stems and can dominate a wine if you're not careful. The key is using only lignified, brown stems that contribute structure without the green meanness.",
+    "sources": "Wine Science; WSET Level 3",
+    "confidence": "established",
+    "tags": [
+      "whole_cluster",
+      "methoxypyrazines",
+      "stem_inclusion"
+    ]
+  },
+  {
+    "id": "WM-060",
+    "domain": "winemaking",
+    "difficulty": 460,
+    "level": 3,
+    "format": "match_pairs",
+    "question": "Match each oak forest region with its characteristic tannin profile:",
+    "pairs": {
+      "left": [
+        "Vosges",
+        "Allier",
+        "Tronçais",
+        "American Oak"
+      ],
+      "right": [
+        "Fine, elegant tannins",
+        "Firm, structured tannins",
+        "Sweet, vanilla-rich compounds",
+        "Tight grain, subtle tannins"
+      ]
+    },
+    "options": [],
+    "correct": [
+      0,
+      1,
+      3,
+      2
+    ],
+    "explanation": "French forests each have signatures — Vosges gives finesse, Allier provides backbone, Tronçais offers subtlety, while American oak delivers that unmistakable vanilla sweetness. It's like choosing between different spice blends for your wine's personality.",
+    "sources": "The Oxford Companion to Wine; WSET Level 3",
+    "confidence": "established",
+    "tags": [
+      "oak_forests",
+      "tannin_profiles",
+      "cooperage"
+    ]
+  },
+  {
+    "id": "WM-061",
+    "domain": "winemaking",
+    "difficulty": 510,
+    "level": 3,
+    "format": "multiple_choice",
+    "question": "In the production of traditional method sparkling wine, what is the typical pressure inside the bottle after second fermentation?",
+    "options": [
+      "2-3 atmospheres",
+      "4-5 atmospheres",
+      "6-7 atmospheres",
+      "8-9 atmospheres"
+    ],
+    "correct": 2,
+    "explanation": "Traditional method sparklers pack about 6 atmospheres of pressure — roughly three times the pressure in a car tire! This intense pressure creates those persistent, fine bubbles that define quality sparkling wine, requiring specially designed bottles to contain all that energy.",
+    "sources": "WSET Level 3; The Oxford Companion to Wine",
+    "confidence": "established",
+    "tags": [
+      "traditional_method",
+      "pressure",
+      "sparkling_wine_production"
+    ]
+  },
+  {
+    "id": "WM-062",
+    "domain": "winemaking",
+    "difficulty": 320,
+    "level": 2,
+    "format": "multiple_choice",
+    "question": "What is the primary purpose of cold soaking red grapes before fermentation begins?",
+    "options": [
+      "To extract color compounds without extracting harsh tannins",
+      "To kill wild yeast and bacteria on the grape skins",
+      "To concentrate the juice by removing excess water",
+      "To convert malic acid to lactic acid before fermentation"
+    ],
+    "correct": 0,
+    "explanation": "Cold soaking extracts anthocyanins (color compounds) from grape skins at low temperatures without alcohol present, avoiding the extraction of harsh seed tannins that occurs during hot fermentation. Think of it as a gentle color bath before the real party starts.",
+    "sources": "The Oxford Companion to Wine; WSET Level 2 Study Materials",
+    "confidence": "established",
+    "tags": [
+      "maceration",
+      "red_winemaking",
+      "extraction"
+    ]
+  },
+  {
+    "id": "WM-063",
+    "domain": "winemaking",
+    "difficulty": 480,
+    "level": 3,
+    "format": "odd_one_out",
+    "question": "Which of these does NOT belong with the others as a method used specifically for concentrating grape must or juice?",
+    "options": [
+      "Reverse osmosis",
+      "Vacuum evaporation",
+      "Cryoextraction",
+      "Bâtonnage"
+    ],
+    "correct": 3,
+    "explanation": "Bâtonnage is lees stirring to add texture and complexity to finished wine, while the others are concentration techniques that remove water from grape juice or must. Remember: bâtonnage adds richness, but it doesn't make the grapes themselves more concentrated.",
+    "sources": "The Oxford Companion to Wine; WSET Level 3 Study Materials",
+    "confidence": "established",
+    "tags": [
+      "concentration",
+      "lees_contact",
+      "winemaking_techniques"
     ]
   }
 ]

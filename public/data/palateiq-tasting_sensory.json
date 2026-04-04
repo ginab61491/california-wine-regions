@@ -2,8 +2,8 @@
   {
     "id": "TS-001",
     "domain": "tasting_sensory",
-    "difficulty": 2100,
-    "level": 10,
+    "difficulty": 2268,
+    "level": 11,
     "format": "multiple_choice",
     "question": "Which specific aroma compound is primarily responsible for the 'cat pee' character found in some Sauvignon Blanc wines, particularly those from Marlborough?",
     "options": [
@@ -26,8 +26,8 @@
   {
     "id": "TS-002",
     "domain": "tasting_sensory",
-    "difficulty": 2200,
-    "level": 10,
+    "difficulty": 2161,
+    "level": 11,
     "format": "odd_one_out",
     "question": "Which of these aroma compounds does NOT belong with the others in terms of their biosynthetic origin in wine?",
     "options": [
@@ -50,8 +50,8 @@
   {
     "id": "TS-003",
     "domain": "tasting_sensory",
-    "difficulty": 2300,
-    "level": 10,
+    "difficulty": 2418,
+    "level": 11,
     "format": "multiple_choice",
     "question": "At what specific concentration threshold does Brettanomyces become detectable to most tasters as 4-ethylphenol in red wine?",
     "options": [
@@ -74,8 +74,8 @@
   {
     "id": "TS-004",
     "domain": "tasting_sensory",
-    "difficulty": 2000,
-    "level": 10,
+    "difficulty": 2063,
+    "level": 11,
     "format": "scenario",
     "question": "A sommelier notices a wine with pronounced green bell pepper aromas that intensify significantly when the glass is swirled vigorously. The wine shows good fruit concentration otherwise. What is the most likely cause of this specific sensory phenomenon?",
     "options": [
@@ -98,8 +98,8 @@
   {
     "id": "TS-005",
     "domain": "tasting_sensory",
-    "difficulty": 2250,
-    "level": 10,
+    "difficulty": 2095,
+    "level": 11,
     "format": "match_pairs",
     "question": "Match each specific aroma compound with its characteristic descriptor in wine tasting:",
     "pairs": {
@@ -136,8 +136,8 @@
   {
     "id": "TS-006",
     "domain": "tasting_sensory",
-    "difficulty": 2150,
-    "level": 10,
+    "difficulty": 2012,
+    "level": 11,
     "format": "multiple_choice",
     "question": "In the CMS deductive tasting grid, what specific structural assessment should immediately follow the detection of significant residual sugar in a white wine?",
     "options": [
@@ -160,8 +160,8 @@
   {
     "id": "TS-007",
     "domain": "tasting_sensory",
-    "difficulty": 2400,
-    "level": 10,
+    "difficulty": 2474,
+    "level": 11,
     "format": "multiple_choice",
     "question": "Which specific wavelength range of light is most responsible for causing lightstrike (goût de lumière) in wines stored in clear glass bottles?",
     "options": [
@@ -184,8 +184,8 @@
   {
     "id": "TS-008",
     "domain": "tasting_sensory",
-    "difficulty": 2050,
-    "level": 10,
+    "difficulty": 2021,
+    "level": 11,
     "format": "odd_one_out",
     "question": "Which of these sensory phenomena does NOT involve retronasal olfaction during wine tasting?",
     "options": [
@@ -208,8 +208,8 @@
   {
     "id": "TS-009",
     "domain": "tasting_sensory",
-    "difficulty": 2300,
-    "level": 10,
+    "difficulty": 2131,
+    "level": 11,
     "format": "scenario",
     "question": "A sommelier tastes a 10-year-old Riesling that shows pronounced petrol notes alongside residual fruit character. The wine has good acidity and no obvious faults. What does this specific aromatic development most likely indicate about the wine's production?",
     "options": [
@@ -233,8 +233,8 @@
   {
     "id": "TS-010",
     "domain": "tasting_sensory",
-    "difficulty": 2200,
-    "level": 10,
+    "difficulty": 2499,
+    "level": 11,
     "format": "multiple_choice",
     "question": "In WSET Systematic Approach to Tasting, what specific color descriptor indicates a white wine has likely undergone significant oxidative handling or aging?",
     "options": [
@@ -258,8 +258,8 @@
   {
     "id": "TS-011",
     "domain": "tasting_sensory",
-    "difficulty": 2350,
-    "level": 10,
+    "difficulty": 2453,
+    "level": 11,
     "format": "multiple_choice",
     "question": "Which specific ester compound is primarily responsible for the banana and pear drop aromas associated with carbonic maceration in Beaujolais wines?",
     "options": [
@@ -283,8 +283,8 @@
   {
     "id": "TS-012",
     "domain": "tasting_sensory",
-    "difficulty": 2100,
-    "level": 10,
+    "difficulty": 2311,
+    "level": 11,
     "format": "match_pairs",
     "question": "Match each wine fault with its specific chemical cause:",
     "pairs": {
@@ -322,8 +322,8 @@
   {
     "id": "TS-013",
     "domain": "tasting_sensory",
-    "difficulty": 2250,
-    "level": 10,
+    "difficulty": 2127,
+    "level": 11,
     "format": "scenario",
     "question": "During a blind tasting, a sommelier detects strong eucalyptus and mint aromas in a red wine with full body and high tannins. The wine shows no obvious faults but the eucalyptus character dominates the fruit. What does this most likely indicate about the vineyard location?",
     "options": [
@@ -346,8 +346,8 @@
   {
     "id": "TS-014",
     "domain": "tasting_sensory",
-    "difficulty": 2400,
-    "level": 10,
+    "difficulty": 2308,
+    "level": 11,
     "format": "multiple_choice",
     "question": "What is the specific mechanism by which cross-modal sensory perception affects the assessment of tannin astringency in red wine?",
     "options": [
@@ -370,8 +370,8 @@
   {
     "id": "TS-015",
     "domain": "tasting_sensory",
-    "difficulty": 2180,
-    "level": 10,
+    "difficulty": 2083,
+    "level": 11,
     "format": "odd_one_out",
     "question": "Which of these aromatic compounds does NOT belong with the others in terms of their primary sensory impact on wine character?",
     "options": [
@@ -394,8 +394,8 @@
   {
     "id": "TS-016",
     "domain": "tasting_sensory",
-    "difficulty": 2200,
-    "level": 10,
+    "difficulty": 2284,
+    "level": 11,
     "format": "multiple_choice",
     "question": "Which specific phenolic compound is primarily responsible for the 'green' astringency detected in wines made from underripe grape seeds, distinct from skin tannin astringency?",
     "options": [
@@ -417,8 +417,8 @@
   {
     "id": "TS-017",
     "domain": "tasting_sensory",
-    "difficulty": 2350,
-    "level": 10,
+    "difficulty": 2073,
+    "level": 11,
     "format": "odd_one_out",
     "question": "Which of these aroma compounds does NOT belong with the others in terms of their specific formation pathway during wine aging?",
     "options": [
@@ -440,8 +440,8 @@
   {
     "id": "TS-018",
     "domain": "tasting_sensory",
-    "difficulty": 2150,
-    "level": 10,
+    "difficulty": 2415,
+    "level": 11,
     "format": "scenario",
     "question": "A Master Sommelier candidate tastes a wine showing intense black olive, leather, and barnyard aromas with a slightly metallic finish. The wine has good fruit underneath and normal acidity. Lab analysis shows 4-ethylphenol at 620 μg/L and 4-ethylguaiacol at 150 μg/L. What is the most precise assessment?",
     "options": [
@@ -463,8 +463,8 @@
   {
     "id": "TS-019",
     "domain": "tasting_sensory",
-    "difficulty": 2300,
-    "level": 10,
+    "difficulty": 2059,
+    "level": 11,
     "format": "match_pairs",
     "question": "Match each specific sensory adaptation phenomenon with its precise mechanism in wine tasting:",
     "pairs": {
@@ -500,8 +500,8 @@
   {
     "id": "TS-020",
     "domain": "tasting_sensory",
-    "difficulty": 2400,
-    "level": 10,
+    "difficulty": 2422,
+    "level": 11,
     "format": "multiple_choice",
     "question": "In the CMS deductive tasting grid, when assessing a wine with detectable volatile acidity that enhances rather than detracts from the overall impression, what specific terminology should be used in the conclusion?",
     "options": [
@@ -518,6 +518,824 @@
       "CMS_deductive_grid",
       "volatile_acidity",
       "tasting_terminology"
+    ]
+  },
+  {
+    "id": "TS-021",
+    "domain": "tasting_sensory",
+    "difficulty": 300,
+    "level": 2,
+    "format": "multiple_choice",
+    "question": "In the WSET Systematic Approach to Tasting, what is the correct order of assessment for a wine's appearance?",
+    "options": [
+      "Color intensity, color, clarity",
+      "Clarity, color intensity, color",
+      "Color, clarity, color intensity",
+      "Clarity, color, color intensity"
+    ],
+    "correct": 3,
+    "explanation": "The WSET SAT follows a logical progression: first check if you can see through the wine (clarity), then identify what color it is, then assess how deep that color appears (intensity). Think of it like describing a person - you'd notice if they're there, what they look like, then how striking they appear.",
+    "sources": "WSET Study Materials; The Wine Bible",
+    "confidence": "established",
+    "tags": [
+      "WSET",
+      "SAT",
+      "appearance",
+      "methodology"
+    ]
+  },
+  {
+    "id": "TS-022",
+    "domain": "tasting_sensory",
+    "difficulty": 350,
+    "level": 2,
+    "format": "odd_one_out",
+    "question": "Which of these characteristics does NOT belong when assessing a wine's palate structure?",
+    "options": [
+      "Sweetness",
+      "Acidity",
+      "Aroma intensity",
+      "Tannin"
+    ],
+    "correct": 2,
+    "explanation": "Aroma intensity belongs to the nose assessment, not palate structure. On the palate, we focus on what we taste and feel - the wine's 'skeleton' of sweetness, acidity, tannin, alcohol and body. Aroma intensity is about what hits your nose when you smell the glass.",
+    "sources": "WSET Study Materials; Court of Master Sommeliers",
+    "confidence": "established",
+    "tags": [
+      "palate",
+      "structure",
+      "WSET",
+      "tasting"
+    ]
+  },
+  {
+    "id": "TS-023",
+    "domain": "tasting_sensory",
+    "difficulty": 280,
+    "level": 2,
+    "format": "multiple_choice",
+    "question": "What is the primary cause of cork taint (TCA) in wine?",
+    "options": [
+      "Oxidation during storage",
+      "Contaminated cork bark",
+      "High alcohol levels",
+      "Excessive sulfur dioxide"
+    ],
+    "correct": 1,
+    "explanation": "TCA forms when natural fungi in cork bark interact with chlorine-based sanitizers, creating that unmistakable wet cardboard smell. The cork itself becomes the delivery system for this fault - it's why synthetic closures were developed as an alternative.",
+    "sources": "Wine Science; The Oxford Companion to Wine",
+    "confidence": "established",
+    "tags": [
+      "wine_faults",
+      "TCA",
+      "cork_taint",
+      "chemistry"
+    ]
+  },
+  {
+    "id": "TS-024",
+    "domain": "tasting_sensory",
+    "difficulty": 320,
+    "level": 2,
+    "format": "scenario",
+    "question": "A customer complains their white wine smells like 'wet newspaper' and tastes flat. The wine appears normal in color. What is the most likely issue?",
+    "options": [
+      "The wine is too cold",
+      "Cork taint (TCA)",
+      "The wine is oxidized",
+      "Volatile acidity"
+    ],
+    "correct": 1,
+    "explanation": "The 'wet newspaper' descriptor is classic TCA - cork taint strips away fruit aromas and leaves that musty, damp cardboard character. The normal color rules out oxidation, and the flatness comes from TCA suppressing the wine's aromatic compounds.",
+    "sources": "The Wine Bible; WSET Study Materials",
+    "confidence": "established",
+    "tags": [
+      "wine_faults",
+      "TCA",
+      "customer_service",
+      "diagnosis"
+    ]
+  },
+  {
+    "id": "TS-025",
+    "domain": "tasting_sensory",
+    "difficulty": 290,
+    "level": 2,
+    "format": "multiple_choice",
+    "question": "Which type of aromas develop during the winemaking process?",
+    "options": [
+      "Primary aromas",
+      "Secondary aromas",
+      "Tertiary aromas",
+      "Quaternary aromas"
+    ],
+    "correct": 1,
+    "explanation": "Secondary aromas come from fermentation and winemaking techniques - think bread, butter, vanilla, or spice. Primary aromas are from the grape itself, tertiary from aging. Remember it chronologically: grape (primary), winery (secondary), cellar time (tertiary).",
+    "sources": "WSET Study Materials; The Oxford Companion to Wine",
+    "confidence": "established",
+    "tags": [
+      "aroma_classification",
+      "winemaking",
+      "secondary_aromas",
+      "WSET"
+    ]
+  },
+  {
+    "id": "TS-026",
+    "domain": "tasting_sensory",
+    "difficulty": 310,
+    "level": 2,
+    "format": "match_pairs",
+    "question": "Match each aroma type with its source:",
+    "pairs": {
+      "left": [
+        "Primary aromas",
+        "Secondary aromas",
+        "Tertiary aromas",
+        "Wine faults"
+      ],
+      "right": [
+        "Winemaking processes",
+        "Grape variety and terroir",
+        "Aging and development",
+        "Chemical contamination"
+      ]
+    },
+    "options": [],
+    "correct": [
+      1,
+      0,
+      2,
+      3
+    ],
+    "explanation": "Think of wine's life story: primary aromas come from the grape's DNA and where it grew, secondary from what the winemaker did, tertiary from time's patient work. Faults are unwanted guests that crash the party from contamination.",
+    "sources": "WSET Study Materials; The Wine Bible",
+    "confidence": "established",
+    "tags": [
+      "aroma_classification",
+      "wine_development",
+      "WSET",
+      "fundamentals"
+    ]
+  },
+  {
+    "id": "TS-027",
+    "domain": "tasting_sensory",
+    "difficulty": 340,
+    "level": 2,
+    "format": "multiple_choice",
+    "question": "What does a brown color in a young white wine typically indicate?",
+    "options": [
+      "High acidity",
+      "Premature oxidation",
+      "High alcohol",
+      "Residual sugar"
+    ],
+    "correct": 1,
+    "explanation": "Brown hues in young white wine signal oxidation - the wine has been exposed to too much oxygen, turning it the color of a cut apple left on the counter. Healthy young whites should show bright, pale colors with green or yellow tints.",
+    "sources": "WSET Study Materials; The Oxford Companion to Wine",
+    "confidence": "established",
+    "tags": [
+      "color_assessment",
+      "oxidation",
+      "white_wine",
+      "wine_faults"
+    ]
+  },
+  {
+    "id": "TS-028",
+    "domain": "tasting_sensory",
+    "difficulty": 330,
+    "level": 2,
+    "format": "multiple_choice",
+    "question": "Which sensation is detected by taste buds rather than through smell?",
+    "options": [
+      "Vanilla",
+      "Sweetness",
+      "Black pepper",
+      "Floral notes"
+    ],
+    "correct": 1,
+    "explanation": "Only sweetness hits your actual taste buds - along with sour, salty, bitter, and umami. Everything else we call 'taste' is actually aroma detected through retronasal olfaction when you swallow. Your tongue is simpler than you think!",
+    "sources": "Wine Science; The Oxford Companion to Wine",
+    "confidence": "established",
+    "tags": [
+      "sensory_science",
+      "taste_vs_flavor",
+      "sweetness",
+      "physiology"
+    ]
+  },
+  {
+    "id": "TS-029",
+    "domain": "tasting_sensory",
+    "difficulty": 480,
+    "level": 3,
+    "format": "multiple_choice",
+    "question": "In the CMS deductive tasting grid, what structural component should be assessed immediately after acidity in white wines?",
+    "options": [
+      "Alcohol",
+      "Body",
+      "Residual sugar",
+      "Finish"
+    ],
+    "correct": 2,
+    "explanation": "The CMS grid logically moves from acidity to residual sugar because these two elements directly interact - sugar perception decreases with higher acidity, so you need to assess them in sequence. It's like adjusting a recipe where one ingredient affects how you taste the next.",
+    "sources": "Court of Master Sommeliers; GuildSomm",
+    "confidence": "established",
+    "tags": [
+      "CMS",
+      "deductive_tasting",
+      "residual_sugar",
+      "methodology"
+    ]
+  },
+  {
+    "id": "TS-030",
+    "domain": "tasting_sensory",
+    "difficulty": 450,
+    "level": 3,
+    "format": "odd_one_out",
+    "question": "Which of these compounds does NOT contribute to primary fruit aromas in wine?",
+    "options": [
+      "Terpenes",
+      "Diacetyl",
+      "Esters",
+      "Thiols"
+    ],
+    "correct": 1,
+    "explanation": "Diacetyl creates that buttery, creamy character from malolactic fermentation - it's a secondary aroma from winemaking, not from the grape. The others are all grape-derived compounds that give us those fresh fruit and floral notes we associate with varietal character.",
+    "sources": "Wine Science; The Oxford Companion to Wine",
+    "confidence": "established",
+    "tags": [
+      "aroma_compounds",
+      "diacetyl",
+      "primary_aromas",
+      "winemaking"
+    ]
+  },
+  {
+    "id": "TS-031",
+    "domain": "tasting_sensory",
+    "difficulty": 420,
+    "level": 3,
+    "format": "scenario",
+    "question": "During service, you notice a red wine has a slight vinegar smell but the fruit is still present and the wine tastes balanced. What is the most appropriate action?",
+    "options": [
+      "Immediately replace the bottle",
+      "Taste again to confirm it's volatile acidity",
+      "Serve it as the VA adds complexity",
+      "Decant the wine to blow off the VA"
+    ],
+    "correct": 1,
+    "explanation": "Low levels of volatile acidity can actually enhance a wine's complexity rather than being a fault - many great wines have detectable VA. Always taste to confirm before making a judgment, as some customers mistake VA for the wine's natural character.",
+    "sources": "The Oxford Companion to Wine; Court of Master Sommeliers",
+    "confidence": "established",
+    "tags": [
+      "volatile_acidity",
+      "wine_service",
+      "quality_assessment",
+      "VA"
+    ]
+  },
+  {
+    "id": "TS-032",
+    "domain": "tasting_sensory",
+    "difficulty": 460,
+    "level": 3,
+    "format": "multiple_choice",
+    "question": "What causes the 'struck match' or 'rotten egg' smell sometimes found in wine?",
+    "options": [
+      "Excessive oak aging",
+      "Reduction (hydrogen sulfide)",
+      "Brettanomyces contamination",
+      "High alcohol fermentation"
+    ],
+    "correct": 1,
+    "explanation": "Hydrogen sulfide creates those sulfur-like reduction smells when wine lacks oxygen during fermentation or aging. It's like the wine held its breath too long - often a gentle swirl or decanting can help these aromas blow off and reveal the fruit underneath.",
+    "sources": "Wine Science; The Oxford Companion to Wine",
+    "confidence": "established",
+    "tags": [
+      "reduction",
+      "hydrogen_sulfide",
+      "wine_faults",
+      "chemistry"
+    ]
+  },
+  {
+    "id": "TS-033",
+    "domain": "tasting_sensory",
+    "difficulty": 440,
+    "level": 3,
+    "format": "match_pairs",
+    "question": "Match each tannin assessment term with its corresponding mouthfeel:",
+    "pairs": {
+      "left": [
+        "Silky",
+        "Grippy",
+        "Chalky",
+        "Velvety"
+      ],
+      "right": [
+        "Smooth and refined texture",
+        "Drying, mouth-coating sensation",
+        "Fine-grained, luxurious feel",
+        "Firm but not harsh grip"
+      ]
+    },
+    "options": [],
+    "correct": [
+      0,
+      3,
+      1,
+      2
+    ],
+    "explanation": "Tannin texture vocabulary is like describing fabric - silky is smooth and refined, grippy has firm hold, chalky coats your mouth like dust, and velvety feels luxurious and fine-grained. These descriptors help communicate the wine's structural personality.",
+    "sources": "WSET Study Materials; Court of Master Sommeliers",
+    "confidence": "established",
+    "tags": [
+      "tannin_assessment",
+      "mouthfeel",
+      "texture",
+      "vocabulary"
+    ]
+  },
+  {
+    "id": "TS-034",
+    "domain": "tasting_sensory",
+    "difficulty": 490,
+    "level": 3,
+    "format": "multiple_choice",
+    "question": "Which specific aroma compound is responsible for the 'petrol' or 'kerosene' notes that develop in aged Riesling?",
+    "options": [
+      "Rotundone",
+      "TDN (1,1,6-trimethyl-1,2-dihydronaphthalene)",
+      "Sotolon",
+      "4-mercapto-4-methylpentan-2-one"
+    ],
+    "correct": 1,
+    "explanation": "TDN develops in Riesling as the wine ages, creating those distinctive petrol notes that many consider a hallmark of mature Riesling. It forms from carotenoid breakdown and is more pronounced in warmer climates - think of it as Riesling's aging signature.",
+    "sources": "Wine Grapes; Wine Science",
+    "confidence": "established",
+    "tags": [
+      "TDN",
+      "Riesling",
+      "aging_aromas",
+      "aroma_compounds"
+    ]
+  },
+  {
+    "id": "TS-035",
+    "domain": "tasting_sensory",
+    "difficulty": 470,
+    "level": 3,
+    "format": "multiple_choice",
+    "question": "What is the primary mechanism behind retronasal olfaction in wine tasting?",
+    "options": [
+      "Aromas travel from mouth to nose through the throat",
+      "Alcohol evaporation enhances smell sensitivity",
+      "Saliva dissolves aromatic compounds",
+      "Temperature change releases volatile compounds"
+    ],
+    "correct": 0,
+    "explanation": "When you swallow wine, aromas travel up the back of your throat to your nasal cavity - this retronasal pathway gives you a 'second smell' that's often more intense than the direct sniff. It's why wine tastes different than it smells, and why holding wine in your mouth reveals more complexity.",
+    "sources": "Wine Science; The Oxford Companion to Wine",
+    "confidence": "established",
+    "tags": [
+      "retronasal_olfaction",
+      "sensory_science",
+      "tasting_physiology",
+      "aroma_perception"
+    ]
+  },
+  {
+    "id": "TS-036",
+    "domain": "tasting_sensory",
+    "difficulty": 280,
+    "level": 2,
+    "format": "multiple_choice",
+    "question": "In the WSET Systematic Approach to Tasting, which component is assessed first when examining a wine's appearance?",
+    "options": [
+      "Clarity",
+      "Intensity",
+      "Color",
+      "Rim variation"
+    ],
+    "correct": 0,
+    "explanation": "Clarity comes first in the WSET SAT appearance assessment because you need to determine if the wine is clear, hazy, or cloudy before evaluating its other visual characteristics. Think of it as checking the wine's 'health' before describing its beauty.",
+    "sources": "WSET Level 2 Study Materials; WSET Level 3 Study Materials",
+    "confidence": "established",
+    "tags": [
+      "WSET_SAT",
+      "appearance",
+      "methodology"
+    ]
+  },
+  {
+    "id": "TS-037",
+    "domain": "tasting_sensory",
+    "difficulty": 320,
+    "level": 2,
+    "format": "odd_one_out",
+    "question": "Which of these does NOT belong when describing wine body on the palate?",
+    "options": [
+      "Light",
+      "Medium",
+      "Full",
+      "Crisp"
+    ],
+    "correct": 3,
+    "explanation": "Crisp describes acidity level, not body weight. Body refers to the wine's weight and texture in your mouth - light feels like skim milk, full like whole cream. Crisp is about that mouth-watering zing of acidity.",
+    "sources": "WSET Level 2 Study Materials; The Wine Bible (Karen MacNeil)",
+    "confidence": "established",
+    "tags": [
+      "palate_structure",
+      "body",
+      "acidity"
+    ]
+  },
+  {
+    "id": "TS-038",
+    "domain": "tasting_sensory",
+    "difficulty": 300,
+    "level": 2,
+    "format": "multiple_choice",
+    "question": "What type of aromas are created during fermentation and other winemaking processes?",
+    "options": [
+      "Primary aromas",
+      "Secondary aromas",
+      "Tertiary aromas",
+      "Quaternary aromas"
+    ],
+    "correct": 1,
+    "explanation": "Secondary aromas come from winemaking - think yeast, oak, malolactic fermentation creating that buttery character. Primary is the grape itself, tertiary develops with aging. Remember: grape, make, age.",
+    "sources": "WSET Level 2 Study Materials; WSET Level 3 Study Materials",
+    "confidence": "established",
+    "tags": [
+      "aroma_classification",
+      "winemaking",
+      "secondary_aromas"
+    ]
+  },
+  {
+    "id": "TS-039",
+    "domain": "tasting_sensory",
+    "difficulty": 350,
+    "level": 2,
+    "format": "scenario",
+    "question": "A customer returns a bottle saying it smells like 'musty cardboard' and the wine tastes muted and flat. The color appears normal. What is most likely the issue?",
+    "options": [
+      "Oxidation",
+      "Cork taint (TCA)",
+      "Volatile acidity",
+      "Heat damage"
+    ],
+    "correct": 1,
+    "explanation": "That musty cardboard smell is the classic signature of TCA cork taint, which strips fruit aromas and leaves wines tasting flat and lifeless. The normal color rules out oxidation - TCA is a silent fruit killer.",
+    "sources": "WSET Level 2 Study Materials; The Wine Bible (Karen MacNeil)",
+    "confidence": "established",
+    "tags": [
+      "wine_faults",
+      "TCA",
+      "cork_taint",
+      "customer_service"
+    ]
+  },
+  {
+    "id": "TS-040",
+    "domain": "tasting_sensory",
+    "difficulty": 270,
+    "level": 2,
+    "format": "match_pairs",
+    "question": "Match each basic taste with where it is primarily detected:",
+    "pairs": {
+      "left": [
+        "Sweet",
+        "Sour",
+        "Bitter",
+        "Salty"
+      ],
+      "right": [
+        "Tip of tongue",
+        "Sides of tongue",
+        "Back of tongue",
+        "Throughout tongue"
+      ]
+    },
+    "options": [],
+    "correct": [
+      0,
+      1,
+      2,
+      3
+    ],
+    "explanation": "While taste buds are actually distributed throughout the tongue, the traditional zones still help sommeliers focus attention during tasting. Sweet hits first, sour makes your mouth water, bitter lingers at the back.",
+    "sources": "WSET Level 2 Study Materials; Wine Science (Jamie Goode)",
+    "confidence": "established",
+    "tags": [
+      "taste_basics",
+      "tongue_mapping",
+      "sensory_assessment"
+    ]
+  },
+  {
+    "id": "TS-041",
+    "domain": "tasting_sensory",
+    "difficulty": 380,
+    "level": 3,
+    "format": "multiple_choice",
+    "question": "Which aroma compound is primarily responsible for the herbaceous 'green bell pepper' character in some red wines?",
+    "options": [
+      "Rotundone",
+      "3-isobutyl-2-methoxypyrazine (IBMP)",
+      "Linalool",
+      "TDN"
+    ],
+    "correct": 1,
+    "explanation": "IBMP is the methoxypyrazine behind that distinctive green bell pepper note, especially prominent in underripe Cabernet Sauvignon and Carmenère. It's incredibly potent - detectable at just nanogram levels, making it a powerful varietal signature.",
+    "sources": "Wine Grapes (Robinson, Harding & Vouillamoz); Wine Science (Jamie Goode)",
+    "confidence": "established",
+    "tags": [
+      "aroma_compounds",
+      "pyrazines",
+      "IBMP",
+      "varietal_character"
+    ]
+  },
+  {
+    "id": "TS-042",
+    "domain": "tasting_sensory",
+    "difficulty": 420,
+    "level": 3,
+    "format": "odd_one_out",
+    "question": "Which of these compounds does NOT belong with the others in terms of their aromatic contribution to wine?",
+    "options": [
+      "Linalool",
+      "Geraniol",
+      "Nerol",
+      "4-ethylphenol"
+    ],
+    "correct": 3,
+    "explanation": "The first three are all terpenes responsible for floral aromas in varieties like Muscat and Gewürztraminer, while 4-ethylphenol is a phenolic compound from Brettanomyces that creates barnyard/medicinal off-flavors. One brings beauty, the other brings Brett.",
+    "sources": "Wine Science (Jamie Goode); WSET Level 3 Study Materials",
+    "confidence": "established",
+    "tags": [
+      "aroma_compounds",
+      "terpenes",
+      "brettanomyces",
+      "wine_faults"
+    ]
+  },
+  {
+    "id": "TS-043",
+    "domain": "tasting_sensory",
+    "difficulty": 340,
+    "level": 2,
+    "format": "multiple_choice",
+    "question": "What does a deep golden or amber color in a young white wine typically indicate?",
+    "options": [
+      "High acidity",
+      "Skin contact or oxidative winemaking",
+      "Low alcohol",
+      "Residual sugar"
+    ],
+    "correct": 1,
+    "explanation": "Golden to amber colors in young whites signal either skin contact (like orange wines) or oxidative handling during winemaking. Fresh white wines should be pale - when they're golden young, the winemaker made a stylistic choice or something went wrong.",
+    "sources": "WSET Level 2 Study Materials; The Oxford Companion to Wine (Robinson & Harding)",
+    "confidence": "established",
+    "tags": [
+      "color_assessment",
+      "white_wine",
+      "oxidation",
+      "skin_contact"
+    ]
+  },
+  {
+    "id": "TS-044",
+    "domain": "tasting_sensory",
+    "difficulty": 450,
+    "level": 3,
+    "format": "scenario",
+    "question": "During a blind tasting, you detect a wine with pronounced wet wool and struck match aromas that dissipate after vigorous swirling. The wine shows good fruit underneath. What is the most likely cause?",
+    "options": [
+      "TCA cork taint",
+      "Reduction",
+      "Volatile acidity",
+      "Heat damage"
+    ],
+    "correct": 1,
+    "explanation": "Reduction creates those sulfur-driven wet wool and struck match aromas, but the key clue is they blow off with aeration - reduction is reversible with oxygen exposure. If it improves with swirling, it's likely just reductive winemaking, not a permanent fault.",
+    "sources": "WSET Level 3 Study Materials; Wine Science (Jamie Goode)",
+    "confidence": "established",
+    "tags": [
+      "wine_faults",
+      "reduction",
+      "sulfur_compounds",
+      "aeration"
+    ]
+  },
+  {
+    "id": "TS-045",
+    "domain": "tasting_sensory",
+    "difficulty": 390,
+    "level": 3,
+    "format": "multiple_choice",
+    "question": "In the CMS deductive tasting grid, what structural element should be assessed immediately after tannin in red wines?",
+    "options": [
+      "Alcohol",
+      "Body",
+      "Acidity",
+      "Finish"
+    ],
+    "correct": 0,
+    "explanation": "Alcohol follows tannin in the CMS grid because both contribute to the wine's structural backbone and weight. Think of building the wine's architecture - tannin provides the framework, alcohol adds the weight and heat. Body comes after you've assessed these individual components.",
+    "sources": "GuildSomm; Court of Master Sommeliers materials",
+    "confidence": "established",
+    "tags": [
+      "CMS_grid",
+      "tasting_methodology",
+      "alcohol_assessment",
+      "red_wine"
+    ]
+  },
+  {
+    "id": "TS-046",
+    "domain": "tasting_sensory",
+    "difficulty": 310,
+    "level": 2,
+    "format": "match_pairs",
+    "question": "Match each wine fault with its characteristic aroma descriptor:",
+    "pairs": {
+      "left": [
+        "Cork taint (TCA)",
+        "Volatile acidity",
+        "Oxidation",
+        "Brettanomyces"
+      ],
+      "right": [
+        "Vinegar/nail polish",
+        "Musty cardboard",
+        "Sherry/bruised apple",
+        "Barnyard/medicinal"
+      ]
+    },
+    "options": [],
+    "correct": [
+      1,
+      0,
+      2,
+      3
+    ],
+    "explanation": "Each fault has its signature calling card - TCA kills fruit and smells musty, VA gives that sharp vinegar bite, oxidation creates nutty sherry notes, and Brett brings the farmyard funk. Learn these aromatic fingerprints to diagnose problems quickly.",
+    "sources": "WSET Level 2 Study Materials; The Wine Bible (Karen MacNeil)",
+    "confidence": "established",
+    "tags": [
+      "wine_faults",
+      "aroma_descriptors",
+      "fault_identification"
+    ]
+  },
+  {
+    "id": "TS-047",
+    "domain": "tasting_sensory",
+    "difficulty": 480,
+    "level": 3,
+    "format": "multiple_choice",
+    "question": "What is the primary mechanism behind retronasal olfaction during wine tasting?",
+    "options": [
+      "Aromas traveling from the mouth up through the nasal passage",
+      "Direct contact of wine with nasal receptors",
+      "Evaporation of alcohol carrying aroma compounds",
+      "Chemical reaction between wine and saliva"
+    ],
+    "correct": 0,
+    "explanation": "Retronasal olfaction occurs when volatile compounds travel from your mouth up through the back of your throat to reach your olfactory receptors. This is why 'taste' is mostly smell - you're actually smelling the wine from the inside while it's in your mouth.",
+    "sources": "Wine Science (Jamie Goode); WSET Level 3 Study Materials",
+    "confidence": "established",
+    "tags": [
+      "sensory_science",
+      "retronasal_olfaction",
+      "taste_vs_flavor"
+    ]
+  },
+  {
+    "id": "TS-048",
+    "domain": "tasting_sensory",
+    "difficulty": 360,
+    "level": 3,
+    "format": "multiple_choice",
+    "question": "Which specific compound is responsible for the spicy 'white pepper' character in Syrah/Shiraz?",
+    "options": [
+      "Rotundone",
+      "Eugenol",
+      "Cinnamaldehyde",
+      "Piperine"
+    ],
+    "correct": 0,
+    "explanation": "Rotundone gives Syrah that distinctive white pepper spiciness, and not everyone can smell it - about 20% of people are anosmic to this compound. It's also found in black peppercorns, making the wine-spice connection literal, not just metaphorical.",
+    "sources": "Wine Grapes (Robinson, Harding & Vouillamoz); Wine Science (Jamie Goode)",
+    "confidence": "established",
+    "tags": [
+      "aroma_compounds",
+      "rotundone",
+      "syrah",
+      "varietal_character"
+    ]
+  },
+  {
+    "id": "TS-049",
+    "domain": "tasting_sensory",
+    "difficulty": 290,
+    "level": 2,
+    "format": "multiple_choice",
+    "question": "Which of these sensations is actually detected by taste buds rather than smell receptors?",
+    "options": [
+      "Vanilla",
+      "Acidity",
+      "Berry fruit",
+      "Floral notes"
+    ],
+    "correct": 1,
+    "explanation": "Acidity is one of the five basic tastes (along with sweet, salty, bitter, and umami) actually detected by taste buds. Everything else we call 'taste' in wine is really aroma detected by smell receptors. Your tongue feels the acid, your nose smells the vanilla.",
+    "sources": "WSET Level 2 Study Materials; Wine Science (Jamie Goode)",
+    "confidence": "established",
+    "tags": [
+      "taste_vs_flavor",
+      "acidity",
+      "basic_tastes",
+      "sensory_science"
+    ]
+  },
+  {
+    "id": "TS-050",
+    "domain": "tasting_sensory",
+    "difficulty": 430,
+    "level": 3,
+    "format": "scenario",
+    "question": "A sommelier tastes a 12-year-old Riesling showing intense petrol/kerosene aromas alongside vibrant acidity and residual fruit. The wine has no obvious faults. What does this aromatic development most likely indicate?",
+    "options": [
+      "The wine is oxidized",
+      "Normal TDN development from bottle aging",
+      "Heat damage during storage",
+      "Premature aging from poor cork"
+    ],
+    "correct": 1,
+    "explanation": "TDN (1,1,6-trimethyl-1,2-dihydronaphthalene) naturally develops in Riesling with bottle age, creating those distinctive petrol notes that are considered a positive sign of maturity, not a fault. It's Riesling's aromatic evolution - like a wine growing into its character.",
+    "sources": "Wine Science (Jamie Goode); WSET Level 3 Study Materials",
+    "confidence": "established",
+    "tags": [
+      "aroma_compounds",
+      "TDN",
+      "riesling",
+      "bottle_aging",
+      "tertiary_aromas"
+    ]
+  },
+  {
+    "id": "TS-051",
+    "domain": "tasting_sensory",
+    "difficulty": 320,
+    "level": 2,
+    "format": "multiple_choice",
+    "question": "In the WSET Systematic Approach to Tasting, what is the correct sequence for assessing a wine's palate?",
+    "options": [
+      "Sweetness, acidity, tannin, alcohol, body, flavor intensity, finish",
+      "Acidity, sweetness, tannin, body, alcohol, flavor intensity, finish",
+      "Sweetness, tannin, acidity, alcohol, body, flavor intensity, finish",
+      "Alcohol, sweetness, acidity, tannin, body, flavor intensity, finish"
+    ],
+    "correct": 0,
+    "explanation": "The WSET SAT follows a logical progression from sweetness (detected immediately) through structural elements to finish. Think of it as building a wine's structural profile from first impression to final memory.",
+    "sources": "WSET Study Materials Level 2; WSET Study Materials Level 3",
+    "confidence": "established",
+    "tags": [
+      "WSET_SAT",
+      "palate_assessment",
+      "tasting_methodology"
+    ]
+  },
+  {
+    "id": "TS-052",
+    "domain": "tasting_sensory",
+    "difficulty": 480,
+    "level": 3,
+    "format": "odd_one_out",
+    "question": "Which of these aromatic compounds does NOT belong with the others in terms of their chemical family classification?",
+    "options": [
+      "Linalool",
+      "Geraniol",
+      "Isoamyl acetate",
+      "Citronellol"
+    ],
+    "correct": 2,
+    "explanation": "Isoamyl acetate is an ester (responsible for banana/pear aromas), while the others are all monoterpenes found in aromatic grape varieties like Muscat and Gewürztraminer. Esters smell fruity, terpenes smell floral.",
+    "sources": "Wine Science (Jamie Goode); The Oxford Companion to Wine",
+    "confidence": "established",
+    "tags": [
+      "aroma_compounds",
+      "terpenes",
+      "esters",
+      "chemical_classification"
     ]
   }
 ]
