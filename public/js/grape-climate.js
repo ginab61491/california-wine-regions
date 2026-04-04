@@ -21,6 +21,16 @@ document.addEventListener('DOMContentLoaded', () => {
 
   function renderList(c) {
     c.innerHTML = `
+      <div class="gc-hero-pair">
+        <div class="gc-hero-img-wrap">
+          <img class="gc-hero-img" src="https://images.unsplash.com/photo-1506377247377-2a5b3b417ebb?w=400&h=280&fit=crop" alt="Foggy coastal vineyard" loading="lazy">
+          <span class="gc-hero-label">Cool Climate</span>
+        </div>
+        <div class="gc-hero-img-wrap">
+          <img class="gc-hero-img" src="https://images.unsplash.com/photo-1560493676-04071c5f467b?w=400&h=280&fit=crop" alt="Sun-drenched vineyard in warm climate" loading="lazy">
+          <span class="gc-hero-label">Warm Climate</span>
+        </div>
+      </div>
       <div class="gc-header-crumb">Learn</div>
       <h1 class="gc-header-title">Same Grape,<br><em>Different Climates</em></h1>
       ${data.map(g => `
