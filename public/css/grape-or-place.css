@@ -214,6 +214,10 @@
   border-radius: 10px;
   text-align: center;
 }
+.gop-feedback-correct {
+  background: rgba(107,127,94,0.08);
+  border-left: 3px solid var(--gop-correct);
+}
 .gop-feedback-wrong {
   background: rgba(160,97,75,0.08);
   border-left: 3px solid var(--gop-incorrect);

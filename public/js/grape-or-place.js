@@ -168,12 +168,20 @@ document.addEventListener('DOMContentLoaded', () => {
 
   function showCorrectFeedback() {
     const card = document.getElementById('gop-card');
+    const term = gameTerms[currentIndex];
     card.classList.add('gop-correct-flash');
+
+    // Show explainer with correct styling
+    feedbackText.textContent = term.explainer;
+    feedbackEl.style.display = '';
+    feedbackEl.className = 'gop-feedback gop-feedback-correct';
+
     setTimeout(() => {
       card.classList.remove('gop-correct-flash');
+      feedbackEl.style.display = 'none';
       currentIndex++;
       showTerm();
-    }, 500);
+    }, 2000);
   }
 
   function showWrongFeedback(term, userAnswer) {
