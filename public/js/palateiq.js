@@ -795,8 +795,6 @@ document.addEventListener('DOMContentLoaded', () => {
           }
         }, 400);
       }, 600);
-
-    }, 150); // pulse delay
   }
 
   function showEloDelta(delta) {
