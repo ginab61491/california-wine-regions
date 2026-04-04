@@ -5,7 +5,9 @@
   "main": "server.js",
   "scripts": {
     "start": "node server.js",
-    "dev": "nodemon server.js"
+    "dev": "nodemon server.js",
+    "build": "npx tsc",
+    "test:engine": "npx tsc && node public/js/lib/palateiq-engine.test.js"
   },
   "dependencies": {
     "@anthropic-ai/sdk": "^0.39.0",
@@ -15,6 +17,8 @@
     "express": "^4.19.2"
   },
   "devDependencies": {
-    "nodemon": "^3.1.0"
+    "@types/node": "^25.5.2",
+    "nodemon": "^3.1.0",
+    "typescript": "^6.0.2"
   }
 }
