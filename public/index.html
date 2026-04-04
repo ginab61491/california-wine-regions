@@ -2792,12 +2792,12 @@
           <!-- Stats row -->
           <div class="piq-metrics">
             <div class="piq-metric">
-              <span class="piq-metric-num" id="piq-m-mastered">0</span>
-              <span class="piq-metric-label">Cards Seen</span>
+              <span class="piq-metric-num piq-streak-display"><span class="piq-candle" id="piq-candle">🕯</span><span id="piq-m-daily-streak">0</span></span>
+              <span class="piq-metric-label">Day Streak</span>
             </div>
             <div class="piq-metric">
-              <span class="piq-metric-num" id="piq-m-streak">0</span>
-              <span class="piq-metric-label">Best Streak</span>
+              <span class="piq-metric-num" id="piq-m-mastered">0</span>
+              <span class="piq-metric-label">Mastered</span>
             </div>
             <div class="piq-metric">
               <span class="piq-metric-num" id="piq-m-accuracy">--</span>
@@ -2822,10 +2822,22 @@
             </div>
           </div>
 
+          <!-- Review nudge (shown when spaced repetition cards due) -->
+          <div class="piq-review-nudge" id="piq-review-nudge" style="display:none">
+            <span class="piq-review-text" id="piq-review-text">You have 0 cards to review</span>
+            <button class="piq-cta piq-cta-secondary piq-cta-sm" id="piq-start-review">Review Now</button>
+          </div>
+
           <!-- CTAs -->
           <div class="piq-ctas">
             <button class="piq-cta piq-cta-primary" id="piq-start-10">Quick 10</button>
             <button class="piq-cta piq-cta-secondary" id="piq-start-deep">Deep Practice</button>
+          </div>
+
+          <!-- Challenge mode -->
+          <div class="piq-challenge" id="piq-challenge">
+            <span class="piq-challenge-text">Feeling bold? Try cards from <strong id="piq-challenge-level">Level 3</strong></span>
+            <button class="piq-challenge-btn" id="piq-start-challenge">Test Your Reach</button>
           </div>
 
         </div>
@@ -2912,6 +2924,13 @@
                 <div class="piq-spectrum-fill" id="piq-sum-spectrum-fill"></div>
                 <div class="piq-spectrum-pin" id="piq-sum-spectrum-pin"></div>
               </div>
+            </div>
+
+            <!-- Sign-in prompt (shown for unauthenticated users) -->
+            <div class="piq-signin-prompt" id="piq-signin-prompt" style="display:none">
+              <p class="piq-signin-text">Sign in to save your progress and track your growth over time.</p>
+              <button class="piq-signin-btn" id="piq-signin-btn">Sign in with Google</button>
+              <button class="piq-signin-dismiss" id="piq-signin-dismiss">Maybe later</button>
             </div>
 
             <div class="piq-summary-ctas">

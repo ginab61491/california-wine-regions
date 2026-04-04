@@ -268,6 +268,133 @@
   margin-top: 4px;
 }
 
+/* --- Daily Streak Candle --- */
+.piq-streak-display {
+  display: flex;
+  align-items: center;
+  gap: 4px;
+  justify-content: center;
+}
+.piq-candle {
+  font-size: 1.2rem;
+  opacity: 0.3;
+  transition: all 0.3s ease;
+  filter: grayscale(1);
+}
+.piq-candle.lit {
+  opacity: 1;
+  filter: grayscale(0);
+  animation: piq-candle-glow 2s ease-in-out infinite alternate;
+}
+@keyframes piq-candle-glow {
+  from { transform: scale(1); filter: brightness(1); }
+  to { transform: scale(1.1); filter: brightness(1.15); }
+}
+
+/* --- Review Nudge --- */
+.piq-review-nudge {
+  text-align: center;
+  padding: 14px 20px;
+  margin: 16px auto 0;
+  max-width: 400px;
+  background: rgba(114,47,55,0.04);
+  border: 1px solid rgba(114,47,55,0.1);
+  border-radius: 10px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 12px;
+}
+.piq-review-text {
+  font-family: 'Crimson Text', Georgia, serif;
+  font-style: italic;
+  font-size: 0.88rem;
+  color: var(--piq-text-muted);
+}
+.piq-cta-sm {
+  padding: 8px 18px !important;
+  font-size: 0.72rem !important;
+}
+
+/* --- Challenge Mode --- */
+.piq-challenge {
+  text-align: center;
+  margin: 20px auto 0;
+  max-width: 400px;
+  padding: 16px;
+}
+.piq-challenge-text {
+  font-family: 'Crimson Text', Georgia, serif;
+  font-style: italic;
+  font-size: 0.88rem;
+  color: var(--piq-text-muted);
+  display: block;
+  margin-bottom: 10px;
+}
+.piq-challenge-text strong {
+  color: var(--piq-accent);
+  font-style: normal;
+}
+.piq-challenge-btn {
+  font-family: 'Montserrat', sans-serif;
+  font-size: 0.72rem;
+  font-weight: 500;
+  letter-spacing: 0.06em;
+  color: var(--piq-accent);
+  background: transparent;
+  border: 1px solid var(--piq-accent);
+  border-radius: 6px;
+  padding: 8px 20px;
+  cursor: pointer;
+  transition: all 0.2s;
+}
+.piq-challenge-btn:hover {
+  background: rgba(114,47,55,0.06);
+  transform: translateY(-1px);
+}
+
+/* --- Sign-in Prompt --- */
+.piq-signin-prompt {
+  text-align: center;
+  padding: 24px 20px;
+  margin: 24px 0;
+  border-top: 1px solid var(--piq-card-edge);
+}
+.piq-signin-text {
+  font-family: 'Crimson Text', Georgia, serif;
+  font-size: 1rem;
+  color: var(--piq-text-muted);
+  margin-bottom: 14px;
+  line-height: 1.5;
+}
+.piq-signin-btn {
+  display: inline-block;
+  font-family: 'Montserrat', sans-serif;
+  font-size: 0.82rem;
+  font-weight: 500;
+  color: #fff;
+  background: #4285f4;
+  border: none;
+  border-radius: 6px;
+  padding: 10px 24px;
+  cursor: pointer;
+  transition: all 0.2s;
+  margin-bottom: 8px;
+}
+.piq-signin-btn:hover { background: #3367d6; transform: translateY(-1px); }
+.piq-signin-dismiss {
+  display: block;
+  margin: 0 auto;
+  font-family: 'Montserrat', sans-serif;
+  font-size: 0.68rem;
+  color: var(--piq-text-faint);
+  background: none;
+  border: none;
+  cursor: pointer;
+  padding: 4px 8px;
+}
+.piq-signin-dismiss:hover { color: var(--piq-text-muted); }
+
 /* --- Domain Pills --- */
 .piq-domain-chooser {
   text-align: center;

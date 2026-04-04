@@ -465,6 +465,42 @@ app.post('/api/diary', (req, res) => {
   }
 });
 
+// ── Palate IQ — per-user stats persistence ────────────
+const PIQ_DIR = path.join(__dirname, 'data', 'palateiq');
+if (!fs.existsSync(PIQ_DIR)) fs.mkdirSync(PIQ_DIR, { recursive: true });
+
+function piqPath(email) {
+  const safe = email.toLowerCase().replace(/[^a-z0-9]/g, '_');
+  return path.join(PIQ_DIR, safe + '.json');
+}
+
+// Get stats
+app.get('/api/palateiq/stats', (req, res) => {
+  const email = req.query.email;
+  if (!email) return res.status(400).json({ error: 'email required' });
+  try {
+    const file = piqPath(email);
+    if (fs.existsSync(file)) {
+      res.json(JSON.parse(fs.readFileSync(file, 'utf8')));
+    } else {
+      res.json(null);
+    }
+  } catch { res.json(null); }
+});
+
+// Save stats
+app.post('/api/palateiq/stats', (req, res) => {
+  const { email, stats } = req.body;
+  if (!email || !stats) return res.status(400).json({ error: 'email and stats required' });
+  try {
+    fs.writeFileSync(piqPath(email), JSON.stringify(stats, null, 2));
+    res.json({ ok: true });
+  } catch (err) {
+    console.error('PIQ save error:', err);
+    res.status(500).json({ error: 'Failed to save stats' });
+  }
+});
+
 app.listen(PORT, () => {
   console.log(`\n🍷 Wine Education Site running at http://localhost:${PORT}`);
   console.log(`   API key configured: ${process.env.ANTHROPIC_API_KEY ? 'Yes' : 'NO — set ANTHROPIC_API_KEY in .env'}\n`);

@@ -13,8 +13,10 @@ document.addEventListener('DOMContentLoaded', () => {
   let sessionStartElo = 0;
   let currentCard = null;
   let answered = false;
+  let challengeMode = false;
+  let challengeStartElo = 0;
 
-  // ── Stats (localStorage) ──────────────────────────────
+  // ── Stats (localStorage + server sync) ────────────────
 
   const DEFAULT_STATS = {
     elo: 1000, streak: 0, bestStreak: 0,
@@ -22,8 +24,16 @@ document.addEventListener('DOMContentLoaded', () => {
     todayCount: 0, todayDate: new Date().toDateString(),
     seenIds: [], domainElo: {},
     domainCorrect: {}, domainAnswered: {},
-    levelUnlocked: 1
+    levelUnlocked: 1,
+    dailyStreak: 0,          // consecutive days practiced
+    lastPracticeDate: '',     // YYYY-MM-DD
+    cardHistory: {},          // cardId → { correct: N, lastSeen: timestamp, interval: days }
+    masteredCount: 0,
   };
+
+  function getUser() {
+    try { return JSON.parse(localStorage.getItem('sommplicity_user')); } catch { return null; }
+  }
 
   function loadStats() {
     try {
@@ -31,7 +41,90 @@ document.addEventListener('DOMContentLoaded', () => {
       return s ? { ...DEFAULT_STATS, ...s } : { ...DEFAULT_STATS };
     } catch { return { ...DEFAULT_STATS }; }
   }
-  function saveStats(s) { localStorage.setItem('piq_stats', JSON.stringify(s)); }
+
+  function saveStats(s) {
+    localStorage.setItem('piq_stats', JSON.stringify(s));
+    // Async server sync for signed-in users
+    const user = getUser();
+    if (user && user.email) {
+      fetch('/api/palateiq/stats', {
+        method: 'POST',
+        headers: { 'Content-Type': 'application/json' },
+        body: JSON.stringify({ email: user.email, stats: s })
+      }).catch(() => {}); // silent fail, local is source of truth
+    }
+  }
+
+  // Load from server on init (merge with local)
+  async function syncFromServer() {
+    const user = getUser();
+    if (!user || !user.email) return;
+    try {
+      const res = await fetch(`/api/palateiq/stats?email=${encodeURIComponent(user.email)}`);
+      if (!res.ok) return;
+      const remote = await res.json();
+      if (!remote) return;
+      const local = loadStats();
+      // Use whichever has more answers (more recent)
+      if ((remote.totalAnswered || 0) > (local.totalAnswered || 0)) {
+        const merged = { ...DEFAULT_STATS, ...remote };
+        localStorage.setItem('piq_stats', JSON.stringify(merged));
+      }
+    } catch {} // offline — use local
+  }
+
+  // ── Daily Streak ──────────────────────────────────────
+
+  function updateDailyStreak(stats) {
+    const today = new Date().toISOString().slice(0, 10);
+    const yesterday = new Date(Date.now() - 86400000).toISOString().slice(0, 10);
+
+    if (stats.lastPracticeDate === today) return stats; // already counted today
+
+    if (stats.lastPracticeDate === yesterday) {
+      stats.dailyStreak = (stats.dailyStreak || 0) + 1;
+    } else if (stats.lastPracticeDate !== today) {
+      stats.dailyStreak = 1; // reset quietly
+    }
+    stats.lastPracticeDate = today;
+    return stats;
+  }
+
+  // ── Spaced Repetition ─────────────────────────────────
+
+  function updateCardHistory(stats, cardId, correct) {
+    if (!stats.cardHistory) stats.cardHistory = {};
+    const h = stats.cardHistory[cardId] || { correct: 0, lastSeen: 0, interval: 1 };
+    h.lastSeen = Date.now();
+    if (correct) {
+      h.correct++;
+      h.interval = Math.min(30, h.interval * 2); // double interval up to 30 days
+    } else {
+      h.interval = 1; // reset on incorrect
+    }
+    stats.cardHistory[cardId] = h;
+
+    // Count mastered (3+ correct at increasing intervals)
+    let mastered = 0;
+    Object.values(stats.cardHistory).forEach(ch => { if (ch.correct >= 3) mastered++; });
+    stats.masteredCount = mastered;
+
+    return stats;
+  }
+
+  function getReviewCards(stats) {
+    if (!stats.cardHistory) return [];
+    const now = Date.now();
+    const due = [];
+    Object.keys(stats.cardHistory).forEach(id => {
+      const h = stats.cardHistory[id];
+      const dueAt = h.lastSeen + h.interval * 86400000;
+      if (dueAt <= now && h.correct < 3) {
+        due.push(id);
+      }
+    });
+    return due;
+  }
 
   // ── Elo Math ──────────────────────────────────────────
 
@@ -150,10 +243,33 @@ document.addEventListener('DOMContentLoaded', () => {
     document.getElementById('piq-hero-level').textContent = `Level ${level}`;
     document.getElementById('piq-hero-name').textContent = LEVEL_NAMES[Math.min(level, 10)] || '';
     document.getElementById('piq-hero-elo').textContent = Math.round(s.elo);
-    document.getElementById('piq-m-mastered').textContent = s.seenIds.length;
-    document.getElementById('piq-m-streak').textContent = s.bestStreak || 0;
+    document.getElementById('piq-m-mastered').textContent = s.masteredCount || 0;
+    document.getElementById('piq-m-daily-streak').textContent = s.dailyStreak || 0;
+    // Candle glow if streak > 0
+    const candle = document.getElementById('piq-candle');
+    if (candle) candle.classList.toggle('lit', (s.dailyStreak || 0) > 0);
     document.getElementById('piq-m-accuracy').textContent = s.totalAnswered > 0
       ? Math.round((s.totalCorrect / s.totalAnswered) * 100) + '%' : '--';
+
+    // Review nudge
+    const reviewIds = getReviewCards(s);
+    const nudge = document.getElementById('piq-review-nudge');
+    if (reviewIds.length > 0) {
+      nudge.style.display = '';
+      document.getElementById('piq-review-text').textContent = `You have ${reviewIds.length} card${reviewIds.length === 1 ? '' : 's'} to review`;
+    } else {
+      nudge.style.display = 'none';
+    }
+
+    // Challenge mode
+    const challengeLevel = Math.min(level + 2, MAX_LEVEL);
+    const challengeEl = document.getElementById('piq-challenge');
+    if (level <= MAX_LEVEL - 2 && s.totalAnswered >= 10) {
+      challengeEl.style.display = '';
+      document.getElementById('piq-challenge-level').textContent = `Level ${challengeLevel}`;
+    } else {
+      challengeEl.style.display = 'none';
+    }
 
     updateSpectrumBar(s.elo);
     drawRadar(s);
@@ -627,6 +743,18 @@ document.addEventListener('DOMContentLoaded', () => {
         s.domainElo[currentCard.domain], currentCard.difficulty, isCorrect, s.totalAnswered
       );
 
+      // Challenge mode: don't affect main Elo
+      if (challengeMode) {
+        showEloDelta(delta);
+        setTimeout(() => {
+          document.getElementById('piq-card-expl').textContent = currentCard.explanation;
+          document.getElementById('piq-card-src').textContent = currentCard.sources || '';
+          document.getElementById('piq-card-flipper').classList.add('flipped');
+          setTimeout(() => { document.getElementById('piq-continue').classList.add('visible'); }, 400);
+        }, 600);
+        return;
+      }
+
       s.totalAnswered++;
       if (isCorrect) { s.totalCorrect++; s.streak = (s.streak || 0) + 1; }
       else { s.streak = 0; }
@@ -637,6 +765,11 @@ document.addEventListener('DOMContentLoaded', () => {
       if (!s.domainAnswered) s.domainAnswered = {};
       s.domainCorrect[currentCard.domain] = (s.domainCorrect[currentCard.domain] || 0) + (isCorrect ? 1 : 0);
       s.domainAnswered[currentCard.domain] = (s.domainAnswered[currentCard.domain] || 0) + 1;
+
+      // Spaced repetition tracking
+      updateCardHistory(s, currentCard.id, isCorrect);
+      // Daily streak
+      updateDailyStreak(s);
 
       const newLevel = eloToLevel(s.elo);
       const oldLevel = eloToLevel(oldElo);
@@ -711,10 +844,19 @@ document.addEventListener('DOMContentLoaded', () => {
       eloDelta >= 0 ? 'var(--piq-correct, #6B7F5E)' : 'var(--piq-incorrect, #A0614B)';
     document.getElementById('piq-sum-streak').textContent = sessionStreakHigh;
 
+    // Challenge mode label
+    const titleEl = document.querySelector('.piq-summary-title');
+    if (titleEl) titleEl.textContent = challengeMode ? 'Challenge Complete' : 'Session Complete';
+
     // Summary spectrum
     updateSpectrum('piq-sum-spectrum-pin', 'piq-sum-spectrum-fill', s.elo);
 
+    // Show sign-in prompt for unauthenticated users
+    const prompt = document.getElementById('piq-signin-prompt');
+    if (prompt) prompt.style.display = getUser() ? 'none' : '';
+
     showScreen('piq-summary');
+    challengeMode = false;
   }
 
   // Summary CTAs
@@ -728,8 +870,76 @@ document.addEventListener('DOMContentLoaded', () => {
 
   // ── Entry CTAs ────────────────────────────────────────
 
-  document.getElementById('piq-start-10').addEventListener('click', () => startSession(10));
-  document.getElementById('piq-start-deep').addEventListener('click', () => startSession(25));
+  document.getElementById('piq-start-10').addEventListener('click', () => { challengeMode = false; startSession(10); });
+  document.getElementById('piq-start-deep').addEventListener('click', () => { challengeMode = false; startSession(25); });
+
+  // Review mode
+  const reviewBtn = document.getElementById('piq-start-review');
+  if (reviewBtn) {
+    reviewBtn.addEventListener('click', () => {
+      challengeMode = false;
+      const s = loadStats();
+      const reviewIds = getReviewCards(s);
+      const reviewCards = allCards.filter(c => reviewIds.includes(c.id)).slice(0, 15);
+      if (reviewCards.length === 0) return;
+      sessionStartElo = s.elo;
+      sessionCards = reviewCards;
+      sessionIndex = 0;
+      sessionCorrect = 0;
+      sessionStreak = 0;
+      sessionStreakHigh = 0;
+      sessionLimit = reviewCards.length;
+      showScreen('piq-session');
+      showSessionCard();
+    });
+  }
+
+  // Challenge mode
+  const challengeBtn = document.getElementById('piq-start-challenge');
+  if (challengeBtn) {
+    challengeBtn.addEventListener('click', () => {
+      const s = loadStats();
+      const level = eloToLevel(s.elo);
+      const targetLevel = Math.min(level + 2, MAX_LEVEL);
+      challengeMode = true;
+      challengeStartElo = s.elo;
+      // Pick cards from target level
+      const pool = allCards.filter(c => c.level >= targetLevel);
+      const deck = [];
+      const used = new Set();
+      for (let i = 0; i < 10 && pool.length > 0; i++) {
+        const idx = Math.floor(Math.random() * pool.length);
+        if (used.has(pool[idx].id)) { i--; continue; }
+        used.add(pool[idx].id);
+        deck.push(pool[idx]);
+      }
+      sessionStartElo = s.elo;
+      sessionCards = deck;
+      sessionIndex = 0;
+      sessionCorrect = 0;
+      sessionStreak = 0;
+      sessionStreakHigh = 0;
+      sessionLimit = deck.length;
+      showScreen('piq-session');
+      showSessionCard();
+    });
+  }
+
+  // Sign-in prompt
+  const signinBtn = document.getElementById('piq-signin-btn');
+  if (signinBtn) {
+    signinBtn.addEventListener('click', () => {
+      if (typeof google !== 'undefined' && google.accounts) {
+        google.accounts.id.prompt();
+      }
+    });
+  }
+  const signinDismiss = document.getElementById('piq-signin-dismiss');
+  if (signinDismiss) {
+    signinDismiss.addEventListener('click', () => {
+      document.getElementById('piq-signin-prompt').style.display = 'none';
+    });
+  }
 
   // Domain pills
   document.querySelectorAll('.piq-dpill').forEach(pill => {
@@ -769,6 +979,9 @@ document.addEventListener('DOMContentLoaded', () => {
   async function init() {
     if (initialized) return;
     initialized = true;
+
+    // Sync stats from server if signed in
+    await syncFromServer();
 
     const files = [
       'palateiq-cards-1.json', 'palateiq-cards-2.json', 'palateiq-cards-3.json',
