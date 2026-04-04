@@ -55,6 +55,13 @@ Save the full audit log to /docs/audits/audit-YYYY-MM-DD.md so I have
 a paper trail.
 
 
+## Session Start Check
+When I start a new session, immediately check /docs/audits/ for any
+files with unresolved INCORRECT or QUESTIONABLE flags. If found, tell me before
+doing anything else: "You have X unresolved accuracy flags from
+[date]. Want to review them?"
+
+
 ## Tech Stack
 - React + TypeScript + Tailwind
 - Anthropic API for AI features
