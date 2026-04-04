@@ -33,11 +33,12 @@ document.addEventListener('DOMContentLoaded', () => {
     about:       'About Sommplicity',
     chat:        'Sommelier AI',
     palateiq:    'Palate IQ',
+    grapeorplace: 'Grape or Place?',
   };
 
   // Section → parent group for dropdown active states
   const sectionGroups = {
-    grapes: 'Learn', dailywine: 'Learn', pairing: 'Learn', regions: 'Learn', producers: 'Learn', palateiq: 'Learn',
+    grapes: 'Learn', dailywine: 'Learn', pairing: 'Learn', regions: 'Learn', producers: 'Learn', palateiq: 'Learn', grapeorplace: 'Learn',
     study: 'Study', cmsprep: 'Study', wset3prep: 'Study',
     catrip: 'Visit', caregions: 'Visit', events: 'Visit',
     analyzer: 'Sip', diary: 'Sip', palate: 'Sip', vault: 'Sip', recs: 'Sip',
@@ -55,6 +56,7 @@ document.addEventListener('DOMContentLoaded', () => {
     pairing:     '/learn/food-pairing',
     dailywine:   '/learn/daily-emails',
     palateiq:    '/learn/palate-iq',
+    grapeorplace: '/learn/grape-or-place',
     study:       '/study/classes',
     cmsprep:     '/study/cms-prep',
     wset3prep:   '/study/wset3-prep',

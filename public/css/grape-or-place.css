@@ -1,0 +1,393 @@
+/* ============================================================
+   GRAPE OR PLACE? — Wine Term Classification Game
+   ============================================================ */
+
+#grapeorplace-section {
+  --gop-bg: #FAF7F2;
+  --gop-card: #FFFDF9;
+  --gop-text: #2C1810;
+  --gop-text-muted: #6B5D52;
+  --gop-text-faint: #9E9189;
+  --gop-accent: #722F37;
+  --gop-gold: #B8943E;
+  --gop-correct: #6B7F5E;
+  --gop-incorrect: #A0614B;
+  --gop-card-edge: #E8DFD2;
+  background: var(--gop-bg);
+  color: var(--gop-text);
+  padding: 0;
+}
+
+.gop-scroll {
+  flex: 1;
+  overflow-y: auto;
+  -webkit-overflow-scrolling: touch;
+}
+
+/* ── Landing ─────────────────────────────────────────── */
+
+.gop-landing {
+  max-width: 520px;
+  margin: 0 auto;
+  padding: 60px 24px 48px;
+  text-align: center;
+}
+
+.gop-title {
+  font-family: 'Playfair Display', Georgia, serif;
+  font-size: clamp(2rem, 5vw, 2.8rem);
+  font-weight: 400;
+  color: var(--gop-text);
+  margin-bottom: 8px;
+  letter-spacing: 0.01em;
+}
+
+.gop-tagline {
+  font-family: 'Crimson Text', Georgia, serif;
+  font-style: italic;
+  font-size: 1.05rem;
+  color: var(--gop-text-muted);
+  margin-bottom: 24px;
+  line-height: 1.5;
+}
+
+.gop-desc {
+  font-family: 'Montserrat', sans-serif;
+  font-size: 0.85rem;
+  color: var(--gop-text-muted);
+  line-height: 1.6;
+  margin-bottom: 32px;
+}
+
+.gop-play-btn {
+  display: inline-block;
+  padding: 16px 56px;
+  background: linear-gradient(135deg, var(--gop-accent) 0%, #5B2333 100%);
+  color: #fff;
+  border: none;
+  border-radius: 12px;
+  font-family: 'Montserrat', sans-serif;
+  font-size: 1rem;
+  font-weight: 500;
+  letter-spacing: 0.06em;
+  cursor: pointer;
+  transition: all 0.25s ease;
+  box-shadow: 0 4px 16px rgba(114,47,55,0.2), inset 0 1px 0 rgba(255,255,255,0.15);
+}
+
+.gop-play-btn:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 6px 24px rgba(114,47,55,0.25);
+}
+
+/* How to play */
+.gop-how-toggle {
+  display: inline-block;
+  margin-top: 24px;
+  font-family: 'Montserrat', sans-serif;
+  font-size: 0.72rem;
+  color: var(--gop-text-faint);
+  background: none;
+  border: none;
+  cursor: pointer;
+  letter-spacing: 0.06em;
+}
+.gop-how-toggle:hover { color: var(--gop-text-muted); }
+.gop-how-toggle::after { content: ' +'; }
+.gop-how-toggle.open::after { content: ' -'; }
+
+.gop-how-content {
+  text-align: left;
+  max-width: 400px;
+  margin: 16px auto 0;
+  font-family: 'Montserrat', sans-serif;
+  font-size: 0.78rem;
+  color: var(--gop-text-muted);
+  line-height: 1.7;
+}
+.gop-how-content li { margin-bottom: 6px; }
+
+/* ── Playing ─────────────────────────────────────────── */
+
+.gop-playing {
+  max-width: 520px;
+  margin: 0 auto;
+  padding: 20px 16px 32px;
+}
+
+/* HUD */
+.gop-hud {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 16px;
+  padding: 0 4px;
+}
+.gop-hud-score,
+.gop-hud-round {
+  font-family: 'Montserrat', sans-serif;
+  font-size: 0.72rem;
+  color: var(--gop-text-faint);
+  letter-spacing: 0.04em;
+}
+.gop-hud-streak {
+  font-family: 'Montserrat', sans-serif;
+  font-size: 0.68rem;
+  font-weight: 600;
+  color: var(--gop-gold);
+  min-width: 30px;
+  text-align: center;
+}
+
+/* Timer */
+.gop-timer {
+  width: 100%;
+  height: 3px;
+  background: var(--gop-card-edge);
+  border-radius: 2px;
+  overflow: hidden;
+  margin-bottom: 24px;
+}
+.gop-timer-fill {
+  height: 100%;
+  background: var(--gop-accent);
+  border-radius: 2px;
+  transition: none;
+  will-change: width;
+}
+.gop-timer-fill.gop-timer-urgent {
+  background: var(--gop-incorrect);
+}
+
+/* Card */
+.gop-card {
+  background: var(--gop-card);
+  border-radius: 16px;
+  padding: 56px 32px;
+  text-align: center;
+  position: relative;
+  min-height: 180px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  border-top: 1px solid rgba(255,255,255,0.6);
+  border-left: 1px solid rgba(255,255,255,0.4);
+  border-bottom: 2.5px solid var(--gop-card-edge);
+  border-right: 1.5px solid var(--gop-card-edge);
+  box-shadow:
+    0 1px 2px rgba(44,24,16,0.06),
+    0 4px 8px rgba(44,24,16,0.04),
+    0 12px 28px rgba(44,24,16,0.06);
+  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='200' height='200'%3E%3Cfilter id='n'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.75' numOctaves='4' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='200' height='200' filter='url(%23n)' opacity='0.03'/%3E%3C/svg%3E");
+  transition: box-shadow 0.3s ease;
+}
+
+.gop-card.gop-correct-flash {
+  box-shadow:
+    0 0 0 3px rgba(107,127,94,0.3),
+    0 1px 2px rgba(44,24,16,0.06),
+    0 12px 28px rgba(44,24,16,0.06);
+}
+
+.gop-term {
+  font-family: 'Playfair Display', Georgia, serif;
+  font-size: clamp(1.8rem, 6vw, 2.6rem);
+  font-weight: 700;
+  color: var(--gop-text);
+  line-height: 1.2;
+  letter-spacing: 0.01em;
+}
+
+@keyframes gop-fade-in {
+  from { opacity: 0; transform: translateY(8px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+.gop-fade-in {
+  animation: gop-fade-in 0.3s ease-out;
+}
+
+/* Feedback overlay on card */
+.gop-feedback {
+  margin-top: 16px;
+  padding: 14px 18px;
+  border-radius: 10px;
+  text-align: center;
+}
+.gop-feedback-wrong {
+  background: rgba(160,97,75,0.08);
+  border-left: 3px solid var(--gop-incorrect);
+}
+.gop-feedback-text {
+  font-family: 'Crimson Text', Georgia, serif;
+  font-size: 0.9rem;
+  line-height: 1.6;
+  color: var(--gop-text-muted);
+}
+
+/* Answer buttons */
+.gop-buttons {
+  display: flex;
+  gap: 10px;
+  margin-top: 24px;
+  max-width: 520px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.gop-btn {
+  flex: 1;
+  padding: 16px 12px;
+  border: 1.5px solid var(--gop-card-edge);
+  border-radius: 10px;
+  background: var(--gop-card);
+  font-family: 'Montserrat', sans-serif;
+  font-size: 0.82rem;
+  font-weight: 600;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  cursor: pointer;
+  transition: all 0.2s ease;
+  box-shadow: 0 1px 3px rgba(0,0,0,0.04);
+}
+
+.gop-btn:hover:not(:disabled) {
+  transform: translateY(-2px);
+  box-shadow: 0 3px 12px rgba(0,0,0,0.08);
+}
+
+.gop-btn:active:not(:disabled) {
+  transform: translateY(0);
+}
+
+.gop-btn:disabled {
+  opacity: 0.4;
+  cursor: not-allowed;
+}
+
+.gop-btn-place { color: var(--gop-accent); border-color: rgba(114,47,55,0.2); }
+.gop-btn-place:hover:not(:disabled) { border-color: var(--gop-accent); background: rgba(114,47,55,0.04); }
+
+.gop-btn-both { color: var(--gop-gold); border-color: rgba(184,148,62,0.2); }
+.gop-btn-both:hover:not(:disabled) { border-color: var(--gop-gold); background: rgba(184,148,62,0.04); }
+
+.gop-btn-grape { color: var(--gop-correct); border-color: rgba(107,127,94,0.2); }
+.gop-btn-grape:hover:not(:disabled) { border-color: var(--gop-correct); background: rgba(107,127,94,0.04); }
+
+/* Keyboard hints */
+.gop-key-hints {
+  display: flex;
+  justify-content: center;
+  gap: 32px;
+  margin-top: 12px;
+  font-family: 'Montserrat', sans-serif;
+  font-size: 0.58rem;
+  color: var(--gop-text-faint);
+  letter-spacing: 0.04em;
+}
+.gop-key-hint kbd {
+  font-family: inherit;
+  background: var(--gop-card-edge);
+  padding: 1px 6px;
+  border-radius: 3px;
+  font-size: 0.55rem;
+  margin-right: 3px;
+}
+
+/* ── Results ─────────────────────────────────────────── */
+
+.gop-results {
+  max-width: 520px;
+  margin: 0 auto;
+  padding: 48px 24px;
+  text-align: center;
+}
+
+.gop-res-score {
+  font-family: 'Playfair Display', Georgia, serif;
+  font-size: 3rem;
+  font-weight: 700;
+  color: var(--gop-text);
+  margin-bottom: 8px;
+}
+
+.gop-res-tier {
+  font-family: 'Crimson Text', Georgia, serif;
+  font-style: italic;
+  font-size: 1.2rem;
+  color: var(--gop-accent);
+  margin-bottom: 32px;
+}
+
+.gop-res-ctas {
+  display: flex;
+  gap: 12px;
+  justify-content: center;
+  margin-bottom: 32px;
+}
+
+/* Mistakes review */
+.gop-mistakes-section {
+  text-align: left;
+  margin-top: 24px;
+  border-top: 1px solid var(--gop-card-edge);
+  padding-top: 24px;
+}
+
+.gop-mistakes-title {
+  font-family: 'Montserrat', sans-serif;
+  font-size: 0.68rem;
+  font-weight: 600;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  color: var(--gop-text-faint);
+  margin-bottom: 12px;
+}
+
+.gop-mistake {
+  padding: 12px 14px;
+  background: var(--gop-card);
+  border-radius: 8px;
+  border-left: 3px solid var(--gop-incorrect);
+  margin-bottom: 8px;
+}
+
+.gop-mistake-term {
+  font-family: 'Playfair Display', Georgia, serif;
+  font-size: 0.95rem;
+  font-weight: 600;
+  color: var(--gop-text);
+}
+
+.gop-mistake-answer {
+  font-family: 'Montserrat', sans-serif;
+  font-size: 0.6rem;
+  font-weight: 600;
+  letter-spacing: 0.1em;
+  color: var(--gop-accent);
+  margin-left: 8px;
+}
+
+.gop-mistake-expl {
+  font-family: 'Crimson Text', Georgia, serif;
+  font-size: 0.85rem;
+  color: var(--gop-text-muted);
+  line-height: 1.5;
+  margin: 4px 0 0;
+}
+
+/* ── Mobile ──────────────────────────────────────────── */
+
+@media (max-width: 768px) {
+  .gop-landing { padding: 40px 20px 32px; }
+  .gop-playing { padding: 16px 12px 24px; }
+  .gop-card { padding: 40px 20px; min-height: 150px; }
+  .gop-buttons { gap: 8px; }
+  .gop-btn { padding: 14px 8px; font-size: 0.75rem; }
+  .gop-key-hints { display: none; }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .gop-fade-in { animation: none; }
+  .gop-card.gop-correct-flash { transition: none; }
+}
