@@ -87,11 +87,6 @@ document.addEventListener('DOMContentLoaded', () => {
             <div class="ls-label-vintage">${data.vintage}</div>
           </div>
 
-          ${isOldWorld ? `<div class="ls-missing-grape ${activeZone === 'missing_grape' ? 'active' : ''}" data-zone="missing_grape">
-            <div class="ls-missing-grape-title">Where's the grape?</div>
-            <div class="ls-missing-grape-hint">Tap to find out</div>
-          </div>` : ''}
-
           <div class="ls-label-bottom">
             <div class="ls-label-divider" style="width:40px;margin-bottom:12px"></div>
             <div class="ls-zone ${activeZone === 'volume' || activeZone === 'abv' ? 'active' : ''}" data-zone="volume">
@@ -102,6 +97,10 @@ document.addEventListener('DOMContentLoaded', () => {
             </div>
           </div>
         </div>
+        ${isOldWorld ? `<div class="ls-missing-grape ${activeZone === 'missing_grape' ? 'active' : ''}" data-zone="missing_grape">
+          <div class="ls-missing-grape-title">Where's the grape?</div>
+          <div class="ls-missing-grape-hint">Tap to find out</div>
+        </div>` : ''}
         <div class="ls-tap-hint">Tap any element on the label to learn what it means</div>
       </div>
 
