@@ -13,7 +13,7 @@ document.addEventListener('DOMContentLoaded', () => {
   let initialized = false;
   let gameActive = false;
   const ROUND_SIZE = 20;
-  const TIME_LIMIT = 3000; // 3 seconds
+  const TIME_LIMIT = 8000; // 8 seconds
 
   const TIERS = [
     { max: 5, label: 'House Wine' },
