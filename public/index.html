@@ -36,6 +36,7 @@
 
   <!-- Stylesheets -->
   <link rel="stylesheet" href="css/styles.css" />
+  <link rel="stylesheet" href="css/palateiq.css" />
   <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css" />
 
   <!-- Scripts (defer where possible) -->
@@ -2754,143 +2755,166 @@
          SECTION: Palate IQ
     ════════════════════════════════════════════ -->
     <section class="section" id="palateiq-section">
-      <div class="piq-scroll">
-        <div class="section-header">
-          <h1>Palate IQ</h1>
-          <span class="section-tagline">Train your wine knowledge with adaptive flashcards</span>
-        </div>
+      <div class="piq-scroll" id="piq-scroll">
 
-        <div class="piq-body">
-          <!-- Score + Stats Bar -->
-          <div class="piq-stats-bar">
-            <div class="piq-stat">
-              <span class="piq-stat-label">Palate IQ</span>
-              <span class="piq-stat-value" id="piq-elo">1000</span>
+        <!-- ═══ ENTRY SCREEN ═══ -->
+        <div class="piq-screen piq-entry" id="piq-entry">
+
+          <!-- Spectrum Bar -->
+          <div class="piq-spectrum-wrap">
+            <div class="piq-spectrum" id="piq-spectrum">
+              <div class="piq-spectrum-fill" id="piq-spectrum-fill"></div>
+              <div class="piq-spectrum-pin" id="piq-spectrum-pin"></div>
             </div>
-            <div class="piq-stat">
-              <span class="piq-stat-label">Streak</span>
-              <span class="piq-stat-value" id="piq-streak">0</span>
-            </div>
-            <div class="piq-stat">
-              <span class="piq-stat-label">Cards Today</span>
-              <span class="piq-stat-value" id="piq-today">0</span>
-            </div>
-            <div class="piq-stat">
-              <span class="piq-stat-label">Accuracy</span>
-              <span class="piq-stat-value" id="piq-accuracy">--</span>
+            <div class="piq-spectrum-labels">
+              <span>Beginner</span><span>Intermediate</span><span>Advanced</span><span>Master</span>
             </div>
           </div>
 
-          <!-- Domain Filter Pills -->
-          <div class="piq-domain-bar">
-            <button class="piq-domain-pill active" data-domain="all">All Topics</button>
-            <button class="piq-domain-pill" data-domain="grape_varieties">Grapes</button>
-            <button class="piq-domain-pill" data-domain="regions_appellations">Regions</button>
-            <button class="piq-domain-pill" data-domain="tasting_sensory">Tasting</button>
-            <button class="piq-domain-pill" data-domain="winemaking">Winemaking</button>
-            <button class="piq-domain-pill" data-domain="food_pairing">Food Pairing</button>
-            <button class="piq-domain-pill" data-domain="history_culture">History</button>
-            <button class="piq-domain-pill" data-domain="service_business">Service</button>
-            <button class="piq-domain-pill" data-domain="blind_tasting">Blind Tasting</button>
-            <button class="piq-domain-pill" data-domain="producer_knowledge">Producers</button>
+          <!-- Level title -->
+          <div class="piq-hero-level">
+            <span class="piq-hero-level-num" id="piq-hero-level">Level 1</span>
+            <span class="piq-hero-elo" id="piq-hero-elo">1000</span>
           </div>
 
-          <!-- Level Browser -->
-          <div class="piq-level-browser">
-            <span class="piq-level-browser-label">Browse by Level</span>
-            <div class="piq-level-pills">
-              <button class="piq-level-pill active" data-level="0">
-                <span class="piq-level-pill-name">Adaptive</span>
-                <span class="piq-level-pill-count">0</span>
-              </button>
-              <button class="piq-level-pill" data-level="1">
-                <span class="piq-level-pill-name">1</span>
-                <span class="piq-level-pill-count">0</span>
-              </button>
-              <button class="piq-level-pill" data-level="2">
-                <span class="piq-level-pill-name">2</span>
-                <span class="piq-level-pill-count">0</span>
-              </button>
-              <button class="piq-level-pill" data-level="3">
-                <span class="piq-level-pill-name">3</span>
-                <span class="piq-level-pill-count">0</span>
-              </button>
-              <button class="piq-level-pill" data-level="4">
-                <span class="piq-level-pill-name">4</span>
-                <span class="piq-level-pill-count">0</span>
-              </button>
-              <button class="piq-level-pill" data-level="5">
-                <span class="piq-level-pill-name">5</span>
-                <span class="piq-level-pill-count">0</span>
-              </button>
-              <button class="piq-level-pill" data-level="6">
-                <span class="piq-level-pill-name">6</span>
-                <span class="piq-level-pill-count">0</span>
-              </button>
-              <button class="piq-level-pill" data-level="7">
-                <span class="piq-level-pill-name">7</span>
-                <span class="piq-level-pill-count">0</span>
-              </button>
-              <button class="piq-level-pill" data-level="8">
-                <span class="piq-level-pill-name">8</span>
-                <span class="piq-level-pill-count">0</span>
-              </button>
-              <button class="piq-level-pill" data-level="9">
-                <span class="piq-level-pill-name">9</span>
-                <span class="piq-level-pill-count">0</span>
-              </button>
-              <button class="piq-level-pill" data-level="10">
-                <span class="piq-level-pill-name">10</span>
-                <span class="piq-level-pill-count">0</span>
-              </button>
-              <button class="piq-level-pill" data-level="11">
-                <span class="piq-level-pill-name">11</span>
-                <span class="piq-level-pill-count">0</span>
-              </button>
+          <!-- Stats row -->
+          <div class="piq-metrics">
+            <div class="piq-metric">
+              <span class="piq-metric-num" id="piq-m-mastered">0</span>
+              <span class="piq-metric-label">Cards Seen</span>
             </div>
-            <div class="piq-browse-nav">
-              <button class="piq-browse-btn" id="piq-browse-prev">&larr; Prev</button>
-              <span class="piq-browse-counter" id="piq-browse-counter"></span>
-              <button class="piq-browse-btn" id="piq-browse-next">Next &rarr;</button>
+            <div class="piq-metric">
+              <span class="piq-metric-num" id="piq-m-streak">0</span>
+              <span class="piq-metric-label">Best Streak</span>
+            </div>
+            <div class="piq-metric">
+              <span class="piq-metric-num" id="piq-m-accuracy">--</span>
+              <span class="piq-metric-label">Accuracy</span>
             </div>
           </div>
 
-          <!-- Card Area -->
-          <div class="piq-card-area" id="piq-card-area">
-            <div class="piq-card" id="piq-card">
-              <div class="piq-card-meta">
-                <span class="piq-card-domain" id="piq-card-domain"></span>
-                <span class="piq-card-level" id="piq-card-level"></span>
-              </div>
-              <p class="piq-card-question" id="piq-card-question"></p>
-
-              <!-- Multiple Choice / Odd One Out / Scenario -->
-              <div class="piq-options" id="piq-options"></div>
-
-              <!-- Match Pairs -->
-              <div class="piq-pairs" id="piq-pairs" style="display:none"></div>
-
-              <!-- Explanation (shown after answer) -->
-              <div class="piq-explanation" id="piq-explanation" style="display:none">
-                <p id="piq-explanation-text"></p>
-                <span class="piq-source" id="piq-source"></span>
-              </div>
-
-              <!-- Next button -->
-              <button class="piq-next-btn" id="piq-next-btn" style="display:none">Next Card</button>
+          <!-- Domain pills -->
+          <div class="piq-domain-chooser">
+            <span class="piq-chooser-label">Focus Area</span>
+            <div class="piq-domain-pills" id="piq-domain-pills">
+              <button class="piq-dpill active" data-domain="all">All Topics</button>
+              <button class="piq-dpill" data-domain="grape_varieties">Grapes</button>
+              <button class="piq-dpill" data-domain="regions_appellations">Regions</button>
+              <button class="piq-dpill" data-domain="tasting_sensory">Tasting</button>
+              <button class="piq-dpill" data-domain="winemaking">Winemaking</button>
+              <button class="piq-dpill" data-domain="food_pairing">Food Pairing</button>
+              <button class="piq-dpill" data-domain="history_culture">History</button>
+              <button class="piq-dpill" data-domain="service_business">Service</button>
+              <button class="piq-dpill" data-domain="blind_tasting">Blind Tasting</button>
+              <button class="piq-dpill" data-domain="producer_knowledge">Producers</button>
             </div>
           </div>
 
-          <!-- Level Progress -->
-          <div class="piq-level-bar">
-            <span class="piq-level-label">Level <span id="piq-level-num">1</span></span>
-            <div class="piq-level-track">
-              <div class="piq-level-fill" id="piq-level-fill" style="width:0%"></div>
-            </div>
-            <span class="piq-level-next" id="piq-level-next">Next: Level 2</span>
+          <!-- CTAs -->
+          <div class="piq-ctas">
+            <button class="piq-cta piq-cta-primary" id="piq-start-10">Quick 10</button>
+            <button class="piq-cta piq-cta-secondary" id="piq-start-deep">Deep Practice</button>
           </div>
 
         </div>
+
+        <!-- ═══ CARD SCREEN ═══ -->
+        <div class="piq-screen piq-session" id="piq-session" style="display:none">
+
+          <!-- Top bar -->
+          <div class="piq-topbar">
+            <span class="piq-topbar-domain" id="piq-tb-domain"></span>
+            <span class="piq-topbar-count" id="piq-tb-count"></span>
+            <button class="piq-topbar-close" id="piq-tb-close">&times;</button>
+          </div>
+
+          <!-- Card stack -->
+          <div class="piq-card-stage" id="piq-card-stage">
+            <!-- Stack shadows -->
+            <div class="piq-stack-card piq-stack-3"></div>
+            <div class="piq-stack-card piq-stack-2"></div>
+
+            <!-- Main card with flip -->
+            <div class="piq-card-flipper" id="piq-card-flipper">
+              <!-- Front -->
+              <div class="piq-card piq-card-front" id="piq-card-front">
+                <div class="piq-card-inner">
+                  <div class="piq-card-head">
+                    <span class="piq-card-domain-tag" id="piq-card-dtag"></span>
+                    <span class="piq-card-dots" id="piq-card-dots"></span>
+                  </div>
+                  <p class="piq-card-q" id="piq-card-q"></p>
+                </div>
+              </div>
+              <!-- Back -->
+              <div class="piq-card piq-card-back" id="piq-card-back">
+                <div class="piq-card-inner">
+                  <div class="piq-card-back-label">Explanation</div>
+                  <p class="piq-card-expl" id="piq-card-expl"></p>
+                  <span class="piq-card-src" id="piq-card-src"></span>
+                </div>
+              </div>
+            </div>
+
+            <!-- Elo delta float -->
+            <div class="piq-elo-delta" id="piq-elo-delta"></div>
+          </div>
+
+          <!-- Options (outside card, below) -->
+          <div class="piq-options-area" id="piq-options-area"></div>
+
+          <!-- Continue -->
+          <button class="piq-continue" id="piq-continue" style="display:none">Continue</button>
+
+        </div>
+
+        <!-- ═══ SUMMARY SCREEN ═══ -->
+        <div class="piq-screen piq-summary" id="piq-summary" style="display:none">
+          <div class="piq-summary-inner">
+            <h2 class="piq-summary-title">Session Complete</h2>
+            <div class="piq-summary-big" id="piq-sum-accuracy">--</div>
+            <span class="piq-summary-sub">Accuracy</span>
+
+            <div class="piq-summary-row">
+              <div class="piq-summary-stat">
+                <span class="piq-summary-stat-num" id="piq-sum-answered">0</span>
+                <span class="piq-summary-stat-label">Cards</span>
+              </div>
+              <div class="piq-summary-stat">
+                <span class="piq-summary-stat-num" id="piq-sum-correct">0</span>
+                <span class="piq-summary-stat-label">Correct</span>
+              </div>
+              <div class="piq-summary-stat">
+                <span class="piq-summary-stat-num" id="piq-sum-elo-delta">+0</span>
+                <span class="piq-summary-stat-label">Elo Change</span>
+              </div>
+              <div class="piq-summary-stat">
+                <span class="piq-summary-stat-num" id="piq-sum-streak">0</span>
+                <span class="piq-summary-stat-label">Best Streak</span>
+              </div>
+            </div>
+
+            <!-- Spectrum bar -->
+            <div class="piq-spectrum-wrap piq-spectrum-wrap--summary">
+              <div class="piq-spectrum" id="piq-sum-spectrum">
+                <div class="piq-spectrum-fill" id="piq-sum-spectrum-fill"></div>
+                <div class="piq-spectrum-pin" id="piq-sum-spectrum-pin"></div>
+              </div>
+            </div>
+
+            <div class="piq-summary-ctas">
+              <button class="piq-cta piq-cta-primary" id="piq-again">Practice Again</button>
+              <button class="piq-cta piq-cta-secondary" id="piq-back-home">Back to Menu</button>
+            </div>
+          </div>
+        </div>
+
+        <!-- ═══ LEVEL UP OVERLAY ═══ -->
+        <div class="piq-levelup" id="piq-levelup" style="display:none">
+          <div class="piq-levelup-glow"></div>
+          <span class="piq-levelup-text" id="piq-levelup-text">Level 2</span>
+        </div>
+
       </div>
     </section>
 

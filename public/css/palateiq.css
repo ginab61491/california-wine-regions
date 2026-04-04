@@ -1,0 +1,955 @@
+/* ============================================================
+   PALATE IQ — Wine Flashcard Experience
+   Luxury editorial meets tactile physicality.
+   ============================================================ */
+
+/* --- Custom Properties --- */
+#palateiq-section {
+  --piq-bg: #FAF7F2;
+  --piq-card: #FFFDF9;
+  --piq-text: #2C1810;
+  --piq-text-muted: #6B5D52;
+  --piq-text-faint: #9E9189;
+  --piq-accent: #722F37;
+  --piq-gold: #B8943E;
+  --piq-correct: #6B7F5E;
+  --piq-incorrect: #A0614B;
+  --piq-card-edge: #E8DFD2;
+  --piq-card-border: rgba(255,255,255,0.5);
+}
+
+/* --- Keyframes --- */
+@keyframes piq-float-up {
+  from { opacity: 1; transform: translateY(0); }
+  to   { opacity: 0; transform: translateY(-30px); }
+}
+
+@keyframes piq-shake {
+  0%, 100% { transform: translateX(0); }
+  25%      { transform: translateX(-4px); }
+  75%      { transform: translateX(4px); }
+}
+
+@keyframes piq-pulse {
+  0%, 100% { transform: scale(1); }
+  50%      { transform: scale(0.98); }
+}
+
+@keyframes piq-check-draw {
+  from { stroke-dashoffset: 20; }
+  to   { stroke-dashoffset: 0; }
+}
+
+@keyframes piq-levelup-in {
+  from { opacity: 0; transform: scale(0.9); }
+  to   { opacity: 1; transform: scale(1); }
+}
+
+@keyframes piq-levelup-out {
+  from { opacity: 1; transform: scale(1); }
+  to   { opacity: 0; transform: scale(1.05); }
+}
+
+
+/* ============================================================
+   SECTION & SCROLL CONTAINER
+   ============================================================ */
+
+#palateiq-section {
+  background-color: var(--piq-bg);
+  color: var(--piq-text);
+  min-height: 100%;
+  display: flex;
+  flex-direction: column;
+}
+
+.piq-scroll {
+  flex: 1;
+  overflow-y: auto;
+  -webkit-overflow-scrolling: touch;
+  scrollbar-width: thin;
+  scrollbar-color: var(--piq-card-edge) transparent;
+}
+
+.piq-scroll::-webkit-scrollbar {
+  width: 5px;
+}
+
+.piq-scroll::-webkit-scrollbar-track {
+  background: transparent;
+}
+
+.piq-scroll::-webkit-scrollbar-thumb {
+  background: var(--piq-card-edge);
+  border-radius: 3px;
+}
+
+
+/* ============================================================
+   SCREENS — visibility toggling
+   ============================================================ */
+
+.piq-screen {
+  display: none;
+}
+
+.piq-screen.active {
+  display: block;
+}
+
+
+/* ============================================================
+   ENTRY SCREEN  (.piq-entry)
+   ============================================================ */
+
+.piq-entry {
+  padding: 32px 20px 40px;
+}
+
+/* --- Spectrum Bar --- */
+.piq-spectrum-wrap {
+  max-width: 480px;
+  margin: 0 auto;
+  position: relative;
+}
+
+.piq-spectrum-bar {
+  width: 100%;
+  height: 10px;
+  border-radius: 5px;
+  background: linear-gradient(
+    to right,
+    #E8DCA0 0%,
+    #D4A54A 25%,
+    #C4868E 50%,
+    #8C4053 75%,
+    #2E1525 100%
+  );
+  position: relative;
+  overflow: visible;
+  box-shadow:
+    inset 0 1px 2px rgba(0,0,0,0.08),
+    0 1px 0 rgba(255,255,255,0.5);
+}
+
+.piq-spectrum-fill {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  border-radius: 5px;
+  pointer-events: none;
+}
+
+.piq-spectrum-pin {
+  position: absolute;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  width: 2px;
+  height: 24px;
+  background: var(--piq-gold);
+  transition: left 600ms cubic-bezier(0.34, 1.56, 0.64, 1);
+  z-index: 2;
+  pointer-events: none;
+}
+
+.piq-spectrum-pin::before {
+  content: '';
+  position: absolute;
+  top: -4px;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 6px;
+  height: 6px;
+  border-radius: 50%;
+  background: var(--piq-gold);
+  box-shadow: 0 0 6px rgba(184,148,62,0.5);
+}
+
+.piq-spectrum-labels {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 8px;
+  font-family: 'Montserrat', sans-serif;
+  font-size: 0.55rem;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+  color: var(--piq-text-faint);
+}
+
+/* --- Hero Level --- */
+.piq-hero-level {
+  text-align: center;
+  margin: 28px 0 20px;
+}
+
+.piq-hero-level-num {
+  font-family: 'Playfair Display', serif;
+  font-size: 2rem;
+  color: var(--piq-text);
+  line-height: 1.2;
+  font-weight: 700;
+}
+
+.piq-hero-elo {
+  font-family: 'Montserrat', sans-serif;
+  font-size: 0.72rem;
+  color: var(--piq-text-muted);
+  margin-top: 4px;
+  letter-spacing: 0.03em;
+}
+
+/* --- Metrics Row --- */
+.piq-metrics {
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  gap: 32px;
+  margin: 24px 0;
+}
+
+.piq-metric {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.piq-metric-num {
+  font-family: 'Playfair Display', serif;
+  font-size: 1.6rem;
+  color: var(--piq-text);
+  line-height: 1.2;
+  font-weight: 600;
+}
+
+.piq-metric-label {
+  font-family: 'Montserrat', sans-serif;
+  font-size: 0.58rem;
+  text-transform: uppercase;
+  letter-spacing: 0.12em;
+  color: var(--piq-text-muted);
+  margin-top: 4px;
+}
+
+/* --- Domain Pills --- */
+.piq-domain-chooser {
+  text-align: center;
+  margin: 28px auto 0;
+  max-width: 480px;
+}
+
+.piq-chooser-label {
+  font-family: 'Montserrat', sans-serif;
+  font-size: 0.58rem;
+  text-transform: uppercase;
+  letter-spacing: 0.12em;
+  color: var(--piq-text-faint);
+  margin-bottom: 12px;
+}
+
+.piq-domain-pills {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 6px;
+}
+
+.piq-dpill {
+  font-family: 'Montserrat', sans-serif;
+  font-size: 0.68rem;
+  padding: 6px 14px;
+  border-radius: 20px;
+  border: 1px solid var(--piq-card-edge);
+  background: transparent;
+  color: var(--piq-text-muted);
+  cursor: pointer;
+  transition: all 0.2s ease;
+  white-space: nowrap;
+  user-select: none;
+  -webkit-user-select: none;
+}
+
+.piq-dpill:hover {
+  border-color: var(--piq-accent);
+  color: var(--piq-accent);
+}
+
+.piq-dpill.active {
+  background: var(--piq-accent);
+  color: #fff;
+  border-color: var(--piq-accent);
+}
+
+/* --- CTAs --- */
+.piq-ctas {
+  display: flex;
+  justify-content: center;
+  gap: 12px;
+  margin-top: 32px;
+}
+
+.piq-cta-primary,
+.piq-cta-secondary {
+  font-family: 'Montserrat', sans-serif;
+  font-size: 0.85rem;
+  font-weight: 500;
+  padding: 14px 36px;
+  border-radius: 10px;
+  cursor: pointer;
+  transition: all 0.25s ease;
+  text-decoration: none;
+  display: inline-block;
+  text-align: center;
+  line-height: 1.3;
+  letter-spacing: 0.02em;
+}
+
+.piq-cta-primary {
+  background: linear-gradient(135deg, var(--piq-accent) 0%, #5B2333 100%);
+  color: #fff;
+  border: none;
+  box-shadow:
+    inset 0 1px 0 rgba(255,255,255,0.15),
+    0 2px 8px rgba(114,47,55,0.25),
+    0 6px 20px rgba(114,47,55,0.15);
+}
+
+.piq-cta-primary:hover {
+  transform: translateY(-2px);
+  box-shadow:
+    inset 0 1px 0 rgba(255,255,255,0.15),
+    0 4px 12px rgba(114,47,55,0.3),
+    0 10px 28px rgba(114,47,55,0.2);
+}
+
+.piq-cta-primary:active {
+  transform: translateY(0);
+}
+
+.piq-cta-secondary {
+  background: transparent;
+  border: 1.5px solid var(--piq-accent);
+  color: var(--piq-accent);
+}
+
+.piq-cta-secondary:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 4px 14px rgba(114,47,55,0.12);
+  background: rgba(114,47,55,0.04);
+}
+
+.piq-cta-secondary:active {
+  transform: translateY(0);
+}
+
+
+/* ============================================================
+   CARD SESSION SCREEN  (.piq-session)
+   ============================================================ */
+
+/* --- Top Bar --- */
+.piq-topbar {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 12px 20px;
+}
+
+.piq-topbar-domain {
+  font-family: 'Montserrat', sans-serif;
+  font-size: 0.6rem;
+  text-transform: uppercase;
+  letter-spacing: 0.08em;
+  padding: 4px 12px;
+  border-radius: 12px;
+  background: rgba(114,47,55,0.08);
+  color: var(--piq-accent);
+  font-weight: 600;
+}
+
+.piq-topbar-count {
+  font-family: 'Montserrat', sans-serif;
+  font-size: 0.72rem;
+  color: var(--piq-text-muted);
+  letter-spacing: 0.03em;
+}
+
+.piq-topbar-close {
+  width: 32px;
+  height: 32px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border: none;
+  background: transparent;
+  font-size: 1.2rem;
+  color: var(--piq-text-faint);
+  cursor: pointer;
+  border-radius: 8px;
+  transition: all 0.2s ease;
+}
+
+.piq-topbar-close:hover {
+  background: rgba(0,0,0,0.04);
+  color: var(--piq-text);
+}
+
+/* --- Card Stage --- */
+.piq-card-stage {
+  position: relative;
+  perspective: 1200px;
+  max-width: 480px;
+  margin: 0 auto;
+  padding: 0 16px;
+}
+
+/* --- Stack Cards (behind main card) --- */
+.piq-stack-card {
+  position: absolute;
+  top: 0;
+  left: 16px;
+  right: 16px;
+  height: 100%;
+  border-radius: 14px;
+  background: var(--piq-card);
+  border-top: 1px solid rgba(255,255,255,0.4);
+  border-left: 1px solid rgba(255,255,255,0.3);
+  border-bottom: 2.5px solid var(--piq-card-edge);
+  border-right: 1.5px solid var(--piq-card-edge);
+  box-shadow:
+    0 1px 2px rgba(44,24,16,0.04),
+    0 4px 8px rgba(44,24,16,0.03);
+  pointer-events: none;
+}
+
+.piq-stack-2 {
+  transform: translateY(3px) translateX(1.5px);
+  opacity: 0.5;
+  filter: blur(0.5px);
+  z-index: 1;
+}
+
+.piq-stack-3 {
+  transform: translateY(6px) translateX(3px);
+  opacity: 0.3;
+  filter: blur(1px);
+  z-index: 0;
+}
+
+/* --- Card Flipper --- */
+.piq-card-flipper {
+  position: relative;
+  width: 100%;
+  transform-style: preserve-3d;
+  transition: transform 600ms cubic-bezier(0.68, -0.15, 0.265, 1.35);
+  z-index: 2;
+}
+
+.piq-card-flipper.flipped {
+  transform: rotateY(180deg);
+}
+
+/* --- THE CARD --- */
+.piq-card {
+  background-color: var(--piq-card);
+  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='200' height='200'%3E%3Cfilter id='n'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.75' numOctaves='4' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='200' height='200' filter='url(%23n)' opacity='0.03'/%3E%3C/svg%3E");
+  background-repeat: repeat;
+  border-radius: 14px;
+  padding: 0;
+  box-shadow:
+    0 1px 2px rgba(44,24,16,0.06),
+    0 4px 8px rgba(44,24,16,0.04),
+    0 12px 28px rgba(44,24,16,0.06);
+  border-top: 1px solid rgba(255,255,255,0.6);
+  border-left: 1px solid rgba(255,255,255,0.4);
+  border-bottom: 2.5px solid var(--piq-card-edge);
+  border-right: 1.5px solid var(--piq-card-edge);
+  transform: rotateX(1deg);
+  position: relative;
+  overflow: hidden;
+}
+
+.piq-card-front,
+.piq-card-back {
+  backface-visibility: hidden;
+  -webkit-backface-visibility: hidden;
+  width: 100%;
+  min-height: 100%;
+}
+
+.piq-card-front {
+  position: relative;
+}
+
+.piq-card-back {
+  position: absolute;
+  top: 0;
+  left: 0;
+  transform: rotateY(180deg);
+  background-color: var(--piq-card);
+  background-image:
+    linear-gradient(135deg, rgba(114,47,55,0.04) 0%, rgba(114,47,55,0.02) 100%),
+    url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='200' height='200'%3E%3Cfilter id='n'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.75' numOctaves='4' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='200' height='200' filter='url(%23n)' opacity='0.03'/%3E%3C/svg%3E");
+  border-radius: 14px;
+}
+
+/* --- Card Inner --- */
+.piq-card-inner {
+  padding: 28px 24px;
+}
+
+.piq-card-head {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 20px;
+}
+
+.piq-card-domain-tag {
+  font-family: 'Montserrat', sans-serif;
+  font-size: 0.58rem;
+  text-transform: uppercase;
+  letter-spacing: 0.1em;
+  padding: 3px 10px;
+  border-radius: 10px;
+  background: rgba(114,47,55,0.06);
+  color: var(--piq-accent);
+  font-weight: 600;
+}
+
+.piq-card-dots {
+  display: flex;
+  gap: 4px;
+  align-items: center;
+}
+
+.piq-card-dots span {
+  width: 6px;
+  height: 6px;
+  border-radius: 50%;
+  background: var(--piq-card-edge);
+  display: inline-block;
+  transition: background 0.2s ease;
+}
+
+.piq-card-dots span.filled {
+  background: var(--piq-accent);
+}
+
+.piq-card-q {
+  font-family: 'Playfair Display', serif;
+  font-size: 1.15rem;
+  color: var(--piq-text);
+  line-height: 1.55;
+  text-align: left;
+  font-weight: 400;
+}
+
+.piq-card-back-label {
+  font-family: 'Montserrat', sans-serif;
+  font-size: 0.55rem;
+  text-transform: uppercase;
+  letter-spacing: 0.14em;
+  color: var(--piq-text-faint);
+  margin-bottom: 12px;
+  font-weight: 600;
+}
+
+.piq-card-expl {
+  font-family: 'Crimson Text', serif;
+  font-size: 0.95rem;
+  line-height: 1.75;
+  color: var(--piq-text-muted);
+}
+
+.piq-card-src {
+  font-family: 'Montserrat', sans-serif;
+  font-size: 0.58rem;
+  font-style: italic;
+  color: var(--piq-text-faint);
+  margin-top: 16px;
+}
+
+/* --- Elo Delta Flyout --- */
+.piq-elo-delta {
+  position: absolute;
+  left: 50%;
+  top: -8px;
+  transform: translateX(-50%);
+  font-family: 'Montserrat', sans-serif;
+  font-size: 0.85rem;
+  font-weight: 600;
+  pointer-events: none;
+  z-index: 10;
+  animation: piq-float-up 800ms ease-out forwards;
+}
+
+.piq-elo-delta.positive {
+  color: var(--piq-gold);
+}
+
+.piq-elo-delta.negative {
+  color: var(--piq-incorrect);
+}
+
+/* --- Options Area --- */
+.piq-options-area {
+  max-width: 480px;
+  margin: 16px auto 0;
+  padding: 0 16px;
+}
+
+.piq-opt {
+  display: block;
+  width: 100%;
+  text-align: left;
+  padding: 14px 18px 14px 22px;
+  background: var(--piq-card);
+  border-radius: 10px;
+  border: none;
+  border-left: 3px solid transparent;
+  box-shadow:
+    0 1px 3px rgba(0,0,0,0.04),
+    0 4px 12px rgba(0,0,0,0.03);
+  font-family: 'Playfair Display', serif;
+  font-size: 0.92rem;
+  color: var(--piq-text);
+  margin-bottom: 8px;
+  cursor: pointer;
+  transition: all 0.2s ease;
+  position: relative;
+  line-height: 1.45;
+}
+
+.piq-opt:hover {
+  transform: translateY(-1px);
+  border-left-color: var(--piq-accent);
+  box-shadow:
+    0 2px 6px rgba(0,0,0,0.06),
+    0 8px 20px rgba(0,0,0,0.05);
+}
+
+.piq-opt:active {
+  transform: translateY(0);
+}
+
+.piq-opt.selected {
+  animation: piq-pulse 250ms ease;
+}
+
+/* Correct answer */
+.piq-opt.correct {
+  background: rgba(107,127,94,0.1);
+  border-left-color: var(--piq-correct);
+  pointer-events: none;
+}
+
+.piq-opt.correct::after {
+  content: '';
+  position: absolute;
+  right: 16px;
+  top: 50%;
+  transform: translateY(-50%);
+  width: 18px;
+  height: 18px;
+  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='18' height='18' viewBox='0 0 18 18' fill='none'%3E%3Cpath d='M4 9.5L7.5 13L14 5' stroke='%236B7F5E' stroke-width='2' stroke-linecap='round' stroke-linejoin='round' stroke-dasharray='20' stroke-dashoffset='0'/%3E%3C/svg%3E");
+  background-repeat: no-repeat;
+  background-size: contain;
+  animation: piq-check-draw 400ms ease-out forwards;
+}
+
+/* Incorrect answer */
+.piq-opt.incorrect {
+  background: rgba(160,97,75,0.1);
+  border-left-color: var(--piq-incorrect);
+  pointer-events: none;
+  animation: piq-shake 300ms ease;
+}
+
+/* Disabled state after answering */
+.piq-opt.disabled {
+  pointer-events: none;
+  opacity: 0.55;
+}
+
+/* --- Continue Button --- */
+.piq-continue {
+  display: block;
+  max-width: 480px;
+  margin: 16px auto;
+  padding: 14px;
+  width: calc(100% - 32px);
+  text-align: center;
+  font-family: 'Montserrat', sans-serif;
+  font-size: 0.8rem;
+  font-weight: 500;
+  letter-spacing: 0.03em;
+  color: var(--piq-text-muted);
+  background: var(--piq-card);
+  border: 1px solid var(--piq-card-edge);
+  border-radius: 10px;
+  cursor: pointer;
+  transition: all 0.2s ease;
+}
+
+.piq-continue:hover {
+  border-color: var(--piq-accent);
+  color: var(--piq-accent);
+  box-shadow: 0 2px 8px rgba(114,47,55,0.08);
+}
+
+
+/* ============================================================
+   SUMMARY SCREEN  (.piq-summary)
+   ============================================================ */
+
+.piq-summary {
+  max-width: 520px;
+  margin: 0 auto;
+  padding: 40px 24px;
+  text-align: center;
+}
+
+.piq-summary-title {
+  font-family: 'Playfair Display', serif;
+  font-size: 1.4rem;
+  color: var(--piq-text);
+  text-align: center;
+  font-weight: 600;
+  margin-bottom: 8px;
+}
+
+.piq-summary-big {
+  font-family: 'Playfair Display', serif;
+  font-size: 3.5rem;
+  color: var(--piq-accent);
+  text-align: center;
+  line-height: 1.15;
+  font-weight: 700;
+  margin: 12px 0 4px;
+}
+
+.piq-summary-sub {
+  font-family: 'Montserrat', sans-serif;
+  font-size: 0.62rem;
+  text-transform: uppercase;
+  letter-spacing: 0.12em;
+  color: var(--piq-text-muted);
+}
+
+.piq-summary-row {
+  display: flex;
+  justify-content: center;
+  gap: 24px;
+  margin: 32px 0;
+}
+
+.piq-summary-stat {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.piq-summary-stat-num {
+  font-family: 'Playfair Display', serif;
+  font-size: 1.3rem;
+  color: var(--piq-text);
+  font-weight: 600;
+  line-height: 1.2;
+}
+
+.piq-summary-stat-label {
+  font-family: 'Montserrat', sans-serif;
+  font-size: 0.56rem;
+  text-transform: uppercase;
+  letter-spacing: 0.12em;
+  color: var(--piq-text-muted);
+  margin-top: 4px;
+}
+
+
+/* ============================================================
+   LEVEL UP OVERLAY
+   ============================================================ */
+
+.piq-levelup {
+  position: fixed;
+  inset: 0;
+  z-index: 1000;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: radial-gradient(
+    ellipse at center,
+    rgba(250,247,242,0.3) 0%,
+    rgba(44,24,16,0.65) 100%
+  );
+  animation: piq-levelup-in 400ms ease-out forwards;
+}
+
+.piq-levelup.fade-out {
+  animation: piq-levelup-out 600ms ease-in forwards;
+}
+
+.piq-levelup-glow {
+  position: absolute;
+  width: 320px;
+  height: 320px;
+  border-radius: 50%;
+  background: radial-gradient(
+    circle,
+    rgba(184,148,62,0.2) 0%,
+    rgba(184,148,62,0.05) 50%,
+    transparent 70%
+  );
+  pointer-events: none;
+}
+
+.piq-levelup-text {
+  font-family: 'Playfair Display', serif;
+  font-size: 2.5rem;
+  color: var(--piq-gold);
+  text-align: center;
+  position: relative;
+  z-index: 1;
+  font-weight: 700;
+  text-shadow: 0 2px 12px rgba(184,148,62,0.3);
+  line-height: 1.3;
+}
+
+
+/* ============================================================
+   REDUCED MOTION
+   ============================================================ */
+
+@media (prefers-reduced-motion: reduce) {
+  .piq-card-flipper {
+    transition: none;
+  }
+
+  .piq-spectrum-pin {
+    transition: none;
+  }
+
+  .piq-elo-delta {
+    animation: none;
+    opacity: 1;
+  }
+
+  .piq-opt.selected {
+    animation: none;
+  }
+
+  .piq-opt.incorrect {
+    animation: none;
+  }
+
+  .piq-opt.correct::after {
+    animation: none;
+  }
+
+  .piq-levelup {
+    animation: none;
+    opacity: 1;
+  }
+
+  .piq-levelup.fade-out {
+    animation: none;
+    opacity: 0;
+  }
+
+  .piq-cta-primary:hover,
+  .piq-cta-secondary:hover,
+  .piq-opt:hover,
+  .piq-continue:hover {
+    transform: none;
+  }
+}
+
+
+/* ============================================================
+   MOBILE (max-width: 768px)
+   ============================================================ */
+
+@media (max-width: 768px) {
+  .piq-entry {
+    padding: 24px 16px 32px;
+  }
+
+  .piq-card-stage {
+    max-width: none;
+    padding: 0 16px;
+  }
+
+  .piq-card-inner {
+    padding: 24px 20px;
+  }
+
+  .piq-card-q {
+    font-size: 1.05rem;
+  }
+
+  .piq-options-area {
+    max-width: none;
+    padding: 0 16px;
+  }
+
+  .piq-opt {
+    padding: 12px 16px 12px 18px;
+    font-size: 0.88rem;
+  }
+
+  .piq-continue {
+    max-width: none;
+    width: calc(100% - 32px);
+  }
+
+  .piq-metrics {
+    gap: 20px;
+  }
+
+  .piq-metric-num {
+    font-size: 1.35rem;
+  }
+
+  .piq-metric-label {
+    font-size: 0.52rem;
+  }
+
+  .piq-dpill {
+    padding: 5px 11px;
+    font-size: 0.62rem;
+  }
+
+  .piq-ctas {
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+  }
+
+  .piq-cta-primary,
+  .piq-cta-secondary {
+    width: 100%;
+    max-width: 320px;
+  }
+
+  .piq-hero-level-num {
+    font-size: 1.7rem;
+  }
+
+  .piq-summary {
+    padding: 32px 20px;
+  }
+
+  .piq-summary-big {
+    font-size: 2.8rem;
+  }
+
+  .piq-summary-row {
+    gap: 18px;
+  }
+
+  .piq-levelup-text {
+    font-size: 2rem;
+  }
+}
