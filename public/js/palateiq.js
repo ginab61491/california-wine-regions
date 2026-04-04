@@ -368,7 +368,9 @@ document.addEventListener('DOMContentLoaded', () => {
     // Card front
     document.getElementById('piq-card-dtag').textContent = label;
     document.getElementById('piq-card-dtag').style.background = DOMAIN_COLORS[currentCard.domain] || '#722F37';
-    document.getElementById('piq-card-q').textContent = currentCard.question;
+    const qEl = document.getElementById('piq-card-q');
+    qEl.textContent = currentCard.question;
+    qEl.classList.remove('piq-q-scenario');
 
     // Difficulty dots
     const dotCount = currentCard.level <= 4 ? 1 : currentCard.level <= 7 ? 2 : 3;
@@ -387,26 +389,198 @@ document.addEventListener('DOMContentLoaded', () => {
     document.getElementById('piq-elo-delta').className = 'piq-elo-delta';
     document.getElementById('piq-elo-delta').textContent = '';
 
-    // Render options
-    renderOptions(currentCard);
+    // Render by format
+    renderCard(currentCard);
   }
 
-  function renderOptions(card) {
+  function renderCard(card) {
     const area = document.getElementById('piq-options-area');
-    if (card.format === 'match_pairs' && card.pairs) {
-      // For now, show as multiple choice about the first pair
-      // (match_pairs gets full treatment in a later session)
-      area.innerHTML = '<p class="piq-opt-note">Match pairs coming soon. Skipping...</p>';
-      setTimeout(() => { sessionIndex++; showSessionCard(); }, 500);
-      return;
-    }
+    area.innerHTML = '';
+    area.className = 'piq-options-area';
 
+    switch (card.format) {
+      case 'match_pairs':
+        renderMatchPairs(card, area);
+        break;
+      case 'odd_one_out':
+        renderOddOneOut(card, area);
+        break;
+      case 'scenario':
+        renderScenario(card, area);
+        break;
+      default: // multiple_choice, image_id
+        renderMC(card, area);
+    }
+  }
+
+  // ── Multiple Choice ───────────────────────────────────
+
+  function renderMC(card, area) {
     area.innerHTML = (card.options || []).map((opt, i) =>
       `<button class="piq-opt" data-idx="${i}"><span class="piq-opt-text">${opt}</span></button>`
     ).join('');
-
     area.querySelectorAll('.piq-opt').forEach(btn => {
       btn.addEventListener('click', () => handleAnswer(parseInt(btn.dataset.idx)));
+    });
+  }
+
+  // ── Scenario (narrative setup) ────────────────────────
+
+  function renderScenario(card, area) {
+    // Scenario uses italic serif for the question (already in the card front)
+    // Make question italic for scenario feel
+    const qEl = document.getElementById('piq-card-q');
+    qEl.classList.add('piq-q-scenario');
+
+    // Options are longer — same rendering as MC
+    renderMC(card, area);
+  }
+
+  // ── Odd One Out (grid of mini-cards) ──────────────────
+
+  function renderOddOneOut(card, area) {
+    area.classList.add('piq-ooo-area');
+    area.innerHTML = `<div class="piq-ooo-grid">${
+      (card.options || []).map((opt, i) =>
+        `<button class="piq-ooo-item" data-idx="${i}"><span>${opt}</span></button>`
+      ).join('')
+    }</div>`;
+
+    let selectedIdx = null;
+    area.querySelectorAll('.piq-ooo-item').forEach(btn => {
+      btn.addEventListener('click', () => {
+        if (answered) return;
+        // Toggle selection
+        if (selectedIdx === parseInt(btn.dataset.idx)) {
+          btn.classList.remove('selected');
+          selectedIdx = null;
+          return;
+        }
+        area.querySelectorAll('.piq-ooo-item').forEach(b => b.classList.remove('selected'));
+        btn.classList.add('selected');
+        selectedIdx = parseInt(btn.dataset.idx);
+
+        // Auto-submit on selection (like MC)
+        handleAnswer(selectedIdx);
+      });
+    });
+  }
+
+  // ── Match Pairs (tap-to-connect) ──────────────────────
+
+  function renderMatchPairs(card, area) {
+    if (!card.pairs) { renderMC(card, area); return; }
+
+    const left = card.pairs.left;
+    const right = card.pairs.right;
+
+    // Shuffle right side
+    const rightItems = right.map((text, origIdx) => ({ text, origIdx }));
+    for (let i = rightItems.length - 1; i > 0; i--) {
+      const j = Math.floor(Math.random() * (i + 1));
+      [rightItems[i], rightItems[j]] = [rightItems[j], rightItems[i]];
+    }
+
+    area.classList.add('piq-pairs-area');
+    area.innerHTML = `
+      <div class="piq-mp-container">
+        <svg class="piq-mp-lines" id="piq-mp-lines"></svg>
+        <div class="piq-mp-cols">
+          <div class="piq-mp-left">${left.map((l, i) =>
+            `<button class="piq-mp-item piq-mp-l" data-idx="${i}">${l}</button>`
+          ).join('')}</div>
+          <div class="piq-mp-right">${rightItems.map((r, i) =>
+            `<button class="piq-mp-item piq-mp-r" data-orig="${r.origIdx}" data-idx="${i}">${r.text}</button>`
+          ).join('')}</div>
+        </div>
+      </div>
+      <button class="piq-mp-check" id="piq-mp-check">Check Matches</button>
+    `;
+
+    const matches = {}; // leftIdx → rightOrigIdx
+    let selectedLeft = null;
+
+    area.querySelectorAll('.piq-mp-l').forEach(btn => {
+      btn.addEventListener('click', () => {
+        if (answered) return;
+        area.querySelectorAll('.piq-mp-l').forEach(b => b.classList.remove('glow'));
+        btn.classList.add('glow');
+        selectedLeft = parseInt(btn.dataset.idx);
+      });
+    });
+
+    area.querySelectorAll('.piq-mp-r').forEach(btn => {
+      btn.addEventListener('click', () => {
+        if (answered || selectedLeft === null) return;
+        // Remove any previous match for this left or this right
+        Object.keys(matches).forEach(k => {
+          if (matches[k] === parseInt(btn.dataset.orig)) delete matches[k];
+        });
+        matches[selectedLeft] = parseInt(btn.dataset.orig);
+
+        // Visual: dim matched items, draw lines
+        updatePairLines(area, matches, left, rightItems);
+
+        area.querySelectorAll('.piq-mp-l').forEach(b => b.classList.remove('glow'));
+        selectedLeft = null;
+
+        // Show check button when all matched
+        if (Object.keys(matches).length === left.length) {
+          document.getElementById('piq-mp-check').classList.add('visible');
+        }
+      });
+    });
+
+    document.getElementById('piq-mp-check').addEventListener('click', () => {
+      if (answered) return;
+      answered = true;
+
+      const correctArr = card.correct;
+      let allCorrect = true;
+      for (let i = 0; i < left.length; i++) {
+        const isRight = matches[i] === correctArr[i];
+        const leftBtn = area.querySelector(`.piq-mp-l[data-idx="${i}"]`);
+        leftBtn.classList.add(isRight ? 'correct' : 'incorrect');
+        if (!isRight) allCorrect = false;
+      }
+
+      finishAnswer(allCorrect);
+    });
+  }
+
+  function updatePairLines(area, matches, left, rightItems) {
+    const svg = area.querySelector('.piq-mp-lines');
+    if (!svg) return;
+    const container = area.querySelector('.piq-mp-container');
+    const rect = container.getBoundingClientRect();
+    svg.setAttribute('width', rect.width);
+    svg.setAttribute('height', rect.height);
+    svg.innerHTML = '';
+
+    Object.keys(matches).forEach(leftIdx => {
+      const rightOrig = matches[leftIdx];
+      const leftEl = area.querySelector(`.piq-mp-l[data-idx="${leftIdx}"]`);
+      const rightEl = area.querySelector(`.piq-mp-r[data-orig="${rightOrig}"]`);
+      if (!leftEl || !rightEl) return;
+
+      const lr = leftEl.getBoundingClientRect();
+      const rr = rightEl.getBoundingClientRect();
+      const x1 = lr.right - rect.left;
+      const y1 = lr.top + lr.height / 2 - rect.top;
+      const x2 = rr.left - rect.left;
+      const y2 = rr.top + rr.height / 2 - rect.top;
+      const cpx = (x1 + x2) / 2;
+
+      const path = document.createElementNS('http://www.w3.org/2000/svg', 'path');
+      path.setAttribute('d', `M${x1},${y1} C${cpx},${y1} ${cpx},${y2} ${x2},${y2}`);
+      path.setAttribute('fill', 'none');
+      path.setAttribute('stroke', 'var(--piq-gold, #B8943E)');
+      path.setAttribute('stroke-width', '2');
+      path.setAttribute('opacity', '0.6');
+      svg.appendChild(path);
+
+      leftEl.classList.add('matched');
+      rightEl.classList.add('matched');
     });
   }
 
@@ -417,23 +591,30 @@ document.addEventListener('DOMContentLoaded', () => {
     const correctIdx = Array.isArray(currentCard.correct) ? currentCard.correct[0] : currentCard.correct;
     const isCorrect = idx === correctIdx;
 
-    // Animate selected option
-    const opts = document.querySelectorAll('.piq-opt');
+    // Works for MC, scenario, and odd-one-out
+    const opts = document.querySelectorAll('.piq-opt, .piq-ooo-item');
     const selected = opts[idx];
-    selected.classList.add('selected');
+    if (selected) selected.classList.add('selected');
 
     setTimeout(() => {
       if (isCorrect) {
-        selected.classList.add('correct');
-        sessionCorrect++;
-        sessionStreak++;
-        sessionStreakHigh = Math.max(sessionStreakHigh, sessionStreak);
+        if (selected) selected.classList.add('correct');
       } else {
-        selected.classList.add('incorrect');
-        sessionStreak = 0;
-        // Highlight correct
+        if (selected) selected.classList.add('incorrect');
         if (opts[correctIdx]) opts[correctIdx].classList.add('correct');
       }
+      finishAnswer(isCorrect);
+    }, 150);
+  }
+
+  function finishAnswer(isCorrect) {
+    if (isCorrect) {
+      sessionCorrect++;
+      sessionStreak++;
+      sessionStreakHigh = Math.max(sessionStreakHigh, sessionStreak);
+    } else {
+      sessionStreak = 0;
+    }
 
       // Update stats
       const s = loadStats();
@@ -611,9 +792,6 @@ document.addEventListener('DOMContentLoaded', () => {
       if (seen.has(c.id)) return false;
       seen.add(c.id); return true;
     });
-
-    // Only MC/odd-one-out/scenario for now
-    allCards = allCards.filter(c => c.format !== 'match_pairs');
 
     updateEntry();
     showScreen('piq-entry');
