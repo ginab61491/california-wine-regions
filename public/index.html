@@ -2787,19 +2787,21 @@
     <section class="section" id="labelschool-section">
       <div class="ls-scroll">
         <div class="ls-body">
+          <!-- Hero image -->
+          <div class="ls-hero">
+            <img class="ls-hero-img" src="https://images.unsplash.com/photo-1586370434639-0fe43b2d32e6?w=600&h=240&fit=crop&crop=center" alt="Wine bottle label close-up" loading="lazy">
+          </div>
+
           <div class="ls-header">
-            <div class="ls-breadcrumb">
-              <span class="ls-crumb">Learn · Label School</span>
-              <span class="ls-badge">WSET 2-5</span>
-            </div>
             <h1 class="ls-title">Label School</h1>
             <p class="ls-subtitle">What is this bottle actually telling you?</p>
           </div>
 
-          <!-- Mode toggle -->
-          <div class="ls-mode-toggle">
-            <button class="ls-mode-btn active" data-mode="school">Explore Labels</button>
-            <button class="ls-mode-btn" data-mode="quiz">Quiz</button>
+          <!-- Mode toggle (sliding bar) -->
+          <div class="ls-toggle-bar">
+            <div class="ls-toggle-slider" id="ls-toggle-slider"></div>
+            <button class="ls-toggle-opt active" data-mode="school">Explore Labels</button>
+            <button class="ls-toggle-opt" data-mode="quiz">Quiz</button>
           </div>
 
           <!-- Dynamic content -->

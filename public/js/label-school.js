@@ -324,11 +324,14 @@ document.addEventListener('DOMContentLoaded', () => {
 
   // ── Mode toggle ───────────────────────────────────────
 
-  document.querySelectorAll('.ls-mode-btn').forEach(btn => {
+  document.querySelectorAll('.ls-toggle-opt').forEach(btn => {
     btn.addEventListener('click', () => {
-      document.querySelectorAll('.ls-mode-btn').forEach(b => b.classList.remove('active'));
+      document.querySelectorAll('.ls-toggle-opt').forEach(b => b.classList.remove('active'));
       btn.classList.add('active');
       mode = btn.dataset.mode;
+      // Slide the toggle
+      const bar = document.querySelector('.ls-toggle-bar');
+      if (bar) bar.classList.toggle('quiz-active', mode === 'quiz');
       activeRole = null;
       if (mode === 'quiz') { quizStarted = false; quizComplete = false; }
       render();
