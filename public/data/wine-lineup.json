@@ -1,0 +1,74 @@
+{
+  "categories": {
+    "body": {
+      "label": "Body", "low": "Light", "high": "Full", "color": "#8b7355", "order": 1,
+      "description": "How heavy the wine feels on your palate",
+      "wines": [
+        {"name":"Vinho Verde","region":"Portugal","grape":"Loureiro / Alvarinho","hint":"Atlantic Portugal, slight spritz, young vines","reveal":"Featherlight — ~9% ABV, no oak, high acid, slight spritz","rank":1,"compare":"Low alcohol and spritz give it far less weight than {next}."},
+        {"name":"Muscadet","region":"Loire Valley","grape":"Melon de Bourgogne","hint":"Loire Atlantic coast, neutral grape, sur lie tradition","reveal":"Bone-dry, lean, ocean-spray minerality — no oak","rank":3,"compare":"More mid-palate presence from sur lie aging, but still firmly light."},
+        {"name":"Pinot Grigio","region":"Veneto","grape":"Pinot Grigio","hint":"Northern Italian, stainless steel fermentation","reveal":"Light, crisp — cool ferment, early bottling, no oak","rank":5,"compare":"Slightly more fruit extract, but stainless steel keeps it light."},
+        {"name":"Albarino","region":"Rias Baixas","grape":"Albarino","hint":"Galician coast, aromatic white, granite soils","reveal":"Aromatic, peach, saline — unoaked but more extract","rank":7,"compare":"More aromatic extract and slightly higher alcohol give it more presence."},
+        {"name":"Chablis","region":"Burgundy","grape":"Chardonnay","hint":"Cool-climate Burgundy, Kimmeridgian limestone","reveal":"Steely, unoaked, citrus — but Chardonnay's natural extract adds weight","rank":9,"compare":"Chardonnay's inherent extract gives this more palate weight."},
+        {"name":"White Burgundy","region":"Cote de Beaune","grape":"Chardonnay","hint":"Cote de Beaune, barrel-influenced Chardonnay","reveal":"Nutty, mineral, partial oak — MLF adds creamy texture","rank":11,"compare":"Barrel fermentation and MLF give this a creamy richness."},
+        {"name":"Viognier","region":"Condrieu","grape":"Viognier","hint":"Northern Rhone, aromatic white, steep granite slopes","reveal":"Floral, stone fruit, oily texture — naturally low acid, high extract","rank":13,"compare":"Viognier's naturally low acid and high glycerol make it feel heavier."},
+        {"name":"Oaked Napa Chardonnay","region":"Napa Valley","grape":"Chardonnay","hint":"Warm-climate California, new oak program","reveal":"Rich, buttery, vanilla — ~14% ABV, new oak, full MLF","rank":15,"compare":"High alcohol, new oak, and full MLF make this the heaviest."}
+      ]
+    },
+    "acidity": {
+      "label": "Acidity", "low": "Low", "high": "High", "color": "#6b8e6b", "order": 2,
+      "description": "The sharpness and freshness that makes your mouth water",
+      "wines": [
+        {"name":"Viognier","region":"Condrieu","grape":"Viognier","hint":"Northern Rhone, aromatic white, steep granite slopes","reveal":"Soft, oily texture — inherently one of the lowest-acid white grapes","rank":1,"compare":"Genetically one of the lowest-acid white grapes — noticeably softer."},
+        {"name":"Gewurztraminer","region":"Alsace","grape":"Gewurztraminer","hint":"Alsace, highly aromatic, pink-skinned grape","reveal":"Low acid despite cool climate — genetically a low-acid grape with oily mouthfeel","rank":3,"compare":"Low-acid grape, but Alsace's climate gives it a touch more freshness."},
+        {"name":"Oaked Chardonnay","region":"California","grape":"Chardonnay","hint":"Warm-climate California, barrel fermented","reveal":"Soft, buttery — full MLF converts malic to softer lactic acid","rank":6,"compare":"MLF softens the acid, but Chardonnay naturally has more structure."},
+        {"name":"Pinot Gris","region":"Alsace","grape":"Pinot Gris","hint":"Alsace, mutation of Pinot Noir, smoky character","reveal":"Medium acid — more than Gewurztraminer, less than Sauvignon Blanc","rank":8,"compare":"Medium acid — more freshness than the soft butteriness of oaked Chardonnay."},
+        {"name":"Sauvignon Blanc","region":"Marlborough","grape":"Sauvignon Blanc","hint":"New Zealand South Island, cool maritime climate","reveal":"Zingy, grapefruit — naturally high-acid grape amplified by cool climate","rank":11,"compare":"High natural acid amplified by cool climate — notably sharper."},
+        {"name":"Muscadet","region":"Loire Valley","grape":"Melon de Bourgogne","hint":"Loire Atlantic coast, neutral grape, sur lie tradition","reveal":"Razor-sharp, lemony — neutral grape lets the bracing acid sing unmasked","rank":13,"compare":"The neutral grape lets the acid sing unmasked — sharper than aromatic fruit."},
+        {"name":"Assyrtiko","region":"Santorini","grape":"Assyrtiko","hint":"Greek volcanic island, ancient bush vines","reveal":"Searing acid even in heat — volcanic soils amplify the electric character","rank":15,"compare":"Retains piercing acidity even in Santorini's heat — more electric."},
+        {"name":"Champagne Brut","region":"Champagne","grape":"Chard / Pinot / Meunier","hint":"France's northernmost vineyards, traditional method","reveal":"Razor acid — underripe grapes + CO2 amplify perceived acidity to extremes","rank":17,"compare":"Underripe grapes + CO2 amplification = highest perceived acidity."}
+      ]
+    },
+    "sweetness": {
+      "label": "Sweetness", "low": "Dry", "high": "Sweet", "color": "#a07850", "order": 3,
+      "description": "How much residual sugar remains after fermentation",
+      "wines": [
+        {"name":"Muscadet","region":"Loire Valley","grape":"Melon de Bourgogne","hint":"Loire Atlantic coast, neutral grape, sur lie tradition","reveal":"Bone-dry — virtually zero residual sugar (<2 g/L)","rank":1,"compare":"Fermented completely dry — less residual sugar than anything."},
+        {"name":"Sancerre","region":"Loire Valley","grape":"Sauvignon Blanc","hint":"Central Loire, Kimmeridgian and flint soils","reveal":"Dry, flinty — Loire Sauvignon is always vinified bone-dry","rank":3,"compare":"Also bone-dry, but fruit aromatics can give a slightly riper impression."},
+        {"name":"Alsace Riesling","region":"Alsace","grape":"Riesling","hint":"Alsace, continental climate, varied geology","reveal":"Typically dry, though some producers leave a whisper of RS","rank":6,"compare":"Typically dry, though less predictably so — some bottles are off-dry."},
+        {"name":"Riesling Kabinett","region":"Mosel","grape":"Riesling","hint":"Mosel steep slate slopes, Pradikat system","reveal":"Off-dry — 30-60 g/L RS, but extreme acidity masks the sweetness","rank":9,"compare":"The residual sugar is measurable (30-60 g/L) — a clear step up in sweetness."},
+        {"name":"Vouvray Demi-Sec","region":"Loire Valley","grape":"Chenin Blanc","hint":"Touraine, tuffeau limestone caves, Chenin Blanc","reveal":"Medium-sweet — demi-sec means ~20-40 g/L RS, perceptibly sweet","rank":12,"compare":"The demi-sec designation means noticeably sweeter."},
+        {"name":"Moscato d'Asti","region":"Piedmont","grape":"Moscato","hint":"Piedmont hills, aromatic Muscat family, frizzante","reveal":"Sweet — fermentation stopped early to retain ~100 g/L RS at ~5.5% ABV","rank":14,"compare":"Stopped fermentation leaves far more sugar than demi-sec styles."},
+        {"name":"Sauternes","region":"Bordeaux","grape":"Semillon","hint":"Left Bank Bordeaux, morning fog, Semillon-based","reveal":"Luscious — noble rot concentrates sugars to 120-150 g/L RS","rank":17,"compare":"Botrytized grapes produce far more concentrated sweetness."},
+        {"name":"Pedro Ximenez","region":"Jerez","grape":"PX","hint":"Andalucia, solera system, sun-dried grape tradition","reveal":"Treacle-sweet — sun-dried grapes concentrate sugar to 300-400 g/L RS","rank":19,"compare":"Sun-dried grapes produce 300-400 g/L RS — roughly double Sauternes."}
+      ]
+    },
+    "tannin": {
+      "label": "Tannin", "low": "Soft", "high": "Grippy", "color": "#7a4a5a", "order": 4,
+      "description": "The drying, gripping sensation from grape skins and oak",
+      "wines": [
+        {"name":"Beaujolais","region":"Beaujolais","grape":"Gamay","hint":"Granite hills south of Burgundy, carbonic maceration","reveal":"Juicy, silky — carbonic maceration extracts color but minimal tannin","rank":1,"compare":"Carbonic maceration and thin skins mean virtually zero grip."},
+        {"name":"Pinot Noir","region":"Burgundy","grape":"Pinot Noir","hint":"Cote d'Or limestone, whole-cluster tradition","reveal":"Delicate tannin — thin-skinned, gentle extraction, silky texture","rank":4,"compare":"Thin skins give delicate tannin, but more structure than carbonic juiciness."},
+        {"name":"Grenache","region":"Chateauneuf-du-Pape","grape":"Grenache","hint":"Southern Rhone, galets roules, old bush vines","reveal":"Soft, round tannins — thin skins despite high alcohol","rank":7,"compare":"Thin skins keep tannin soft despite concentration."},
+        {"name":"Merlot","region":"St-Emilion","grape":"Merlot","hint":"Right Bank Bordeaux, clay-limestone plateau","reveal":"Plush, medium tannin — medium-thick skins, velvety rather than gripping","rank":9,"compare":"Medium tannin — plush rather than gripping, but more structured."},
+        {"name":"Syrah","region":"Northern Rhone","grape":"Syrah","hint":"Steep granite slopes, continental-meets-Mediterranean","reveal":"Firm, fine-grained tannin — thick-skinned with clear structural grip","rank":12,"compare":"Thick skins and firm extraction — a clear step up in grip."},
+        {"name":"Cabernet Sauvignon","region":"Napa Valley","grape":"Cabernet Sauvignon","hint":"Warm Napa benchland, volcanic and alluvial soils","reveal":"Firm, powerful tannin — very thick skins, high pip-to-juice ratio, new oak","rank":14,"compare":"Thick skins + high pip ratio + new oak = more structural grip."},
+        {"name":"Tannat","region":"Madiran","grape":"Tannat","hint":"Southwest France, Pyrenean foothills","reveal":"Massive tannin — the grape's name literally comes from tannin","rank":17,"compare":"Named for its tannin — more astringent and chewy."},
+        {"name":"Barolo","region":"Piedmont","grape":"Nebbiolo","hint":"Langhe hills, calcareous marl, long aging tradition","reveal":"Fierce tannin, pale color — long maceration produces decades of grip","rank":18,"compare":"Pale color belies extreme tannin — long maceration produces grip that rivals the highest."}
+      ]
+    },
+    "alcohol": {
+      "label": "Alcohol", "low": "Low", "high": "High", "color": "#5a6b8a", "order": 5,
+      "description": "The warmth and heat you feel, driven by climate and winemaking",
+      "wines": [
+        {"name":"Moscato d'Asti","region":"Piedmont","grape":"Moscato","hint":"Piedmont hills, aromatic Muscat family, frizzante","reveal":"~5.5% ABV — fermentation stopped very early to retain sweetness","rank":1,"abv":"5.5%","compare":"Deliberately stopped fermentation keeps this at ~5.5%."},
+        {"name":"Riesling Kabinett","region":"Mosel","grape":"Riesling","hint":"Mosel steep slate slopes, Pradikat system","reveal":"~8% ABV — cool climate + early harvest + residual sugar = low alcohol","rank":3,"abv":"8%","compare":"At ~8%, notably higher, but still well below table wine levels."},
+        {"name":"Vinho Verde","region":"Portugal","grape":"Loureiro / Alvarinho","hint":"Atlantic Portugal, granite soils, pergola-trained vines","reveal":"~9.5% ABV — Atlantic influence, picked relatively early","rank":5,"abv":"9.5%","compare":"Early picking keeps alcohol moderate — higher but still light."},
+        {"name":"Prosecco","region":"Veneto","grape":"Glera","hint":"Veneto hills, Charmat method, tank-fermented","reveal":"~11% ABV — Charmat method and cool-climate Glera keep it moderate","rank":7,"abv":"11%","compare":"The Charmat method keeps alcohol at ~11% — a step up."},
+        {"name":"Sancerre","region":"Loire Valley","grape":"Sauvignon Blanc","hint":"Central Loire, Kimmeridgian and flint soils","reveal":"~12.5% ABV — cool continental climate, WSET's medium band","rank":10,"abv":"12.5%","compare":"Cool climate keeps this at ~12.5%, a notable step up."},
+        {"name":"Oaked Chardonnay","region":"Napa Valley","grape":"Chardonnay","hint":"Warm-climate California, new oak program","reveal":"~14.5% ABV — warm Napa climate fully ripens grapes, WSET's high band","rank":13,"abv":"14.5%","compare":"Warm climate drives full ripeness — a big jump to the high band."},
+        {"name":"Barossa Shiraz","region":"Barossa Valley","grape":"Shiraz","hint":"South Australian warmth, old vine heritage","reveal":"~15% ABV — hot, dry climate produces very ripe grapes","rank":15,"abv":"15%","compare":"Hot climate and full extraction push this notably higher."},
+        {"name":"Amarone","region":"Veneto","grape":"Corvina blend","hint":"Veneto, appassimento tradition, dried-grape method","reveal":"~15.5-16% ABV — grape drying concentrates sugar before fermentation","rank":17,"abv":"15.5-16%","compare":"Dried grapes concentrate sugar beyond what any climate alone produces."}
+      ]
+    }
+  }
+}

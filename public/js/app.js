@@ -36,11 +36,12 @@ document.addEventListener('DOMContentLoaded', () => {
     grapeorplace: 'Grape or Place?',
     labelschool:  'Label School',
     grapeclimate: 'Grape & Climate',
+    lineup:       'The Lineup',
   };
 
   // Section → parent group for dropdown active states
   const sectionGroups = {
-    grapes: 'Learn', dailywine: 'Learn', pairing: 'Learn', regions: 'Learn', producers: 'Learn', palateiq: 'Learn', grapeorplace: 'Learn', labelschool: 'Learn', grapeclimate: 'Learn',
+    grapes: 'Learn', dailywine: 'Learn', pairing: 'Learn', regions: 'Learn', producers: 'Learn', palateiq: 'Learn', grapeorplace: 'Learn', labelschool: 'Learn', grapeclimate: 'Learn', lineup: 'Learn',
     study: 'Study', cmsprep: 'Study', wset3prep: 'Study',
     catrip: 'Visit', caregions: 'Visit', events: 'Visit',
     analyzer: 'Sip', diary: 'Sip', palate: 'Sip', vault: 'Sip', recs: 'Sip',
@@ -61,6 +62,7 @@ document.addEventListener('DOMContentLoaded', () => {
     grapeorplace: '/learn/grape-or-place',
     labelschool:  '/learn/label-school',
     grapeclimate: '/learn/grape-climate',
+    lineup:       '/learn/the-lineup',
     study:       '/study/classes',
     cmsprep:     '/study/cms-prep',
     wset3prep:   '/study/wset3-prep',
