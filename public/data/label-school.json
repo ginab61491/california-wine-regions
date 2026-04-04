@@ -1,94 +1,260 @@
 {
-  "labels": {
-    "chablis": {
-      "region": "France — Burgundy",
-      "title": "Chablis",
-      "subtitle": "Premier Cru · Fourchaume",
-      "producer": "Domaine William Fevre",
-      "vintage": "2020",
-      "volume": "750ml",
-      "abv": "13%",
-      "appellation": "Chablis Premier Cru · Appellation Controlee",
-      "country": "Product of France",
-      "zones": [
-        {"id":"producer","label":"Producer","explanation":"The estate or house that made the wine. In Burgundy, domaine-bottled wines (\"Mis en bouteille au domaine\") signal that the producer grew the grapes and made the wine.","wset":"WSET 2: Identifying the producer helps assess quality and style expectations."},
-        {"id":"appellation","label":"Appellation","explanation":"\"Chablis Premier Cru\" is a legally protected designation under French AOC/AOP law. Chablis is ALWAYS 100% Chardonnay. Premier Cru is the second-highest vineyard classification in Burgundy.","wset":"WSET 2 Key Concept: Old World labels name the PLACE, not the grape. If you see Chablis, you must know it means Chardonnay."},
-        {"id":"vineyard","label":"Vineyard","explanation":"\"Fourchaume\" is one of the most respected Premier Cru vineyard sites in Chablis, on the Right Bank of the Serein river. In Burgundy, the specific vineyard (\"climat\") tells you more about the wine's character than almost anything else on the label.","wset":"WSET 3+: Vineyard-level geography is central to understanding Burgundy's hierarchy."},
-        {"id":"vintage","label":"Vintage","explanation":"The year the grapes were harvested. 2020 was a warm, early vintage in Chablis producing richer wines with good concentration.","wset":"WSET 2: Vintage indicates the harvest year and affects style, quality, and readiness to drink."},
-        {"id":"volume","label":"Volume & ABV","explanation":"750ml is the standard bottle size. 13% ABV is moderate-to-full for white Burgundy. ABV gives clues about ripeness and body.","wset":"WSET 2: ABV is an indicator of body and ripeness level."},
-        {"id":"country","label":"Country of Origin","explanation":"\"Product of France\" confirms the wine's geographic origin and the regulatory framework (French AOC/AOP) governing its production.","wset":"WSET 2: Country of origin determines which wine laws and labeling conventions apply."}
+  "labels": [
+    {
+      "id": "chablis", "country": "France", "region": "Burgundy", "type": "white", "color": "#8B9E6B",
+      "lines": [
+        {"text": "Domaine William Fevre", "role": "producer", "size": "sm"},
+        {"text": "CHABLIS", "role": "appellation", "size": "xl"},
+        {"text": "Premier Cru", "role": "classification", "size": "md"},
+        {"text": "Fourchaume", "role": "vineyard", "size": "md-i"},
+        {"text": "2020", "role": "vintage", "size": "lg"},
+        {"text": "Appellation Chablis Premier Cru Controlee", "role": "legal", "size": "xs"},
+        {"text": "750ml · 13% vol", "role": "technical", "size": "xs"},
+        {"text": "Produit de France", "role": "origin", "size": "xs"}
       ],
-      "missingGrape": true,
-      "missingGrapeNote": "No grape variety is listed anywhere on this label. That's not an oversight. Chablis is ALWAYS Chardonnay. The appellation law requires it, so stating the grape would be redundant. This is the #1 concept WSET 2 tests: Old World = Place, New World = Grape."
+      "teachings": {
+        "producer": {"title": "Producer", "text": "The domaine (estate) that grew the grapes and made the wine. \"Mis en bouteille au domaine\" means estate-bottled, a quality signal in Burgundy.", "level": 1},
+        "appellation": {"title": "Appellation — The Hidden Grape", "text": "Chablis is ALWAYS 100% Chardonnay. No grape is listed because the appellation legally requires it. This is the core Old World principle: the place name carries the grape information.", "level": 1},
+        "classification": {"title": "Quality Classification", "text": "Premier Cru is the second-highest vineyard tier in Burgundy (below Grand Cru). It signals superior terroir, stricter yields, and higher minimum alcohol.", "level": 2},
+        "vineyard": {"title": "Named Vineyard (Climat)", "text": "\"Fourchaume\" is a specific Premier Cru vineyard on the Right Bank of the Serein river in Chablis. In Burgundy, the vineyard name tells you more about character than almost anything else.", "level": 3},
+        "vintage": {"title": "Vintage Year", "text": "The year the grapes were harvested. 2020 was warm in Chablis, producing richer, rounder wines than the steelier 2019. Vintage is your weather report in a number.", "level": 1},
+        "legal": {"title": "Legal Appellation Statement", "text": "\"Appellation Controlee\" (now AOP) is France's guarantee that the wine meets all legal requirements for that named region: grape varieties, yields, winemaking methods, geography.", "level": 2},
+        "technical": {"title": "Volume & ABV", "text": "750ml standard bottle. 13% ABV, moderate-to-full for white Burgundy. Higher ABV often indicates warmer vintages and riper fruit.", "level": 1},
+        "origin": {"title": "Country of Origin", "text": "Legally required for export. Confirms French AOC/AOP regulations govern this wine's production.", "level": 1}
+      }
     },
-    "chianti": {
-      "region": "Italy — Tuscany",
-      "title": "Chianti Classico",
-      "subtitle": "Denominazione di Origine Controllata e Garantita",
-      "producer": "Castello di Volpaia",
-      "vintage": "2019",
-      "volume": "750ml",
-      "abv": "13.5%",
-      "appellation": "Chianti Classico DOCG · Riserva",
-      "country": "Product of Italy",
-      "zones": [
-        {"id":"producer","label":"Producer","explanation":"\"Castello di Volpaia\" is an estate in the heart of the Chianti Classico zone. Italian labels typically feature the producer prominently, often with historical estate names.","wset":"WSET 2: The producer indicates quality tier and style."},
-        {"id":"appellation","label":"DOCG Classification","explanation":"\"DOCG\" (Denominazione di Origine Controllata e Garantita) is Italy's highest wine classification. Chianti Classico DOCG is the original, historic Chianti zone, distinct from basic \"Chianti\" which covers a much larger area.","wset":"WSET 2: Italy's quality pyramid: Vino, IGT, DOC, DOCG. DOCG is the top."},
-        {"id":"riserva","label":"Riserva","explanation":"\"Riserva\" is a legally defined term in Italy requiring extended aging. For Chianti Classico Riserva: minimum 24 months aging (including at least 3 months in bottle).","wset":"WSET 2: Riserva/Reserva terms are legally regulated in Italy and Spain, guaranteeing minimum aging periods."},
-        {"id":"vintage","label":"Vintage","explanation":"2019 is widely considered an exceptional vintage in Tuscany, praised for elegance and long-term aging potential.","wset":"WSET 2: Vintage variation matters. Great vintages can significantly affect quality and value."},
-        {"id":"grape","label":"Grape (Hidden)","explanation":"No grape is listed. Chianti Classico must be at least 80% Sangiovese by law (DOCG regulations). The remaining 20% can include approved local or international varieties.","wset":"WSET 2: Another Old World example. The appellation dictates grape composition. Chianti = primarily Sangiovese."},
-        {"id":"country","label":"Country of Origin","explanation":"\"Product of Italy\" confirms Italian DOC/DOCG regulations apply, governing grape varieties, yields, aging requirements, and geographic boundaries.","wset":"WSET 2: Italian wine law is one of the most detailed systems you'll encounter."}
+    {
+      "id": "chianti", "country": "Italy", "region": "Tuscany", "type": "red", "color": "#9E6B6B",
+      "lines": [
+        {"text": "Castello di Volpaia", "role": "producer", "size": "sm"},
+        {"text": "CHIANTI CLASSICO", "role": "appellation", "size": "xl"},
+        {"text": "Denominazione di Origine Controllata e Garantita", "role": "legal", "size": "xs"},
+        {"text": "Riserva", "role": "classification", "size": "lg"},
+        {"text": "2019", "role": "vintage", "size": "lg"},
+        {"text": "750ml · 13.5% vol", "role": "technical", "size": "xs"},
+        {"text": "Prodotto in Italia", "role": "origin", "size": "xs"}
       ],
-      "missingGrape": true,
-      "missingGrapeNote": "No grape on the label. Chianti Classico is at least 80% Sangiovese by DOCG law. Old World pattern: the PLACE name carries the grape information within it."
+      "teachings": {
+        "producer": {"title": "Producer (Castello)", "text": "An estate in the heart of the Chianti Classico zone. \"Castello\" (castle) names are common in Tuscany, many wineries occupy historic fortified properties.", "level": 1},
+        "appellation": {"title": "Appellation — Place as Grape", "text": "Chianti Classico must be at least 80% Sangiovese by DOCG law. No grape is listed. \"Classico\" means the original, historic zone, distinct from the much larger basic \"Chianti\" area.", "level": 1},
+        "classification": {"title": "Riserva — Legal Aging", "text": "In Italy, Riserva is legally defined: Chianti Classico Riserva requires minimum 24 months aging, including 3 months in bottle. This is NOT a marketing term, it carries legal force.", "level": 2},
+        "legal": {"title": "DOCG Classification", "text": "DOCG (Denominazione di Origine Controllata e Garantita) is Italy's highest tier. The wine passed chemical analysis AND a tasting panel. Italy's pyramid: Vino, IGT, DOC, DOCG.", "level": 2},
+        "vintage": {"title": "Vintage Year", "text": "2019 is widely considered exceptional in Tuscany: elegant, layered, with long aging potential.", "level": 1},
+        "technical": {"title": "Volume & ABV", "text": "13.5%, typical for medium-to-full Sangiovese. Tuscan Sangiovese tends toward higher acidity and moderate alcohol.", "level": 1},
+        "origin": {"title": "Country of Origin", "text": "Confirms Italian DOCG regulations apply, governing grape varieties, yields, aging, and geographic boundaries.", "level": 1}
+      }
     },
-    "rioja": {
-      "region": "Spain — Rioja",
-      "title": "Rioja",
-      "subtitle": "Denominacion de Origen Calificada",
-      "producer": "Bodegas Lopez de Heredia",
-      "vintage": "2011",
-      "volume": "750ml",
-      "abv": "13.5%",
-      "appellation": "Rioja DOCa · Reserva",
-      "country": "Product of Spain",
-      "zones": [
-        {"id":"producer","label":"Producer","explanation":"\"Lopez de Heredia\" is one of Rioja's oldest and most traditional bodegas, founded 1877. They're known for exceptionally long aging.","wset":"WSET 2: Producer reputation is especially important in regions with broad appellations like Rioja."},
-        {"id":"appellation","label":"DOCa Classification","explanation":"\"DOCa\" (Denominacion de Origen Calificada) is Spain's highest regional classification. Only Rioja and Priorat hold this status.","wset":"WSET 2: Spain's quality hierarchy: Vino, VdlT, DO, DOCa. Rioja is one of only two DOCa regions."},
-        {"id":"reserva","label":"Reserva","explanation":"\"Reserva\" in Spain is a legally defined aging category. For red Rioja Reserva: minimum 36 months total aging, with at least 12 months in oak barrels. The hierarchy: Joven, Crianza, Reserva, Gran Reserva.","wset":"WSET 2 Key Concept: Spanish aging terms are legally regulated. Reserva = minimum 3 years aging (1 in oak) for reds."},
-        {"id":"vintage","label":"Vintage","explanation":"2011 on a Reserva released many years later is typical of traditional Rioja producers who age wines extensively before release.","wset":"WSET 2: The gap between vintage and release date reveals the producer's aging philosophy."},
-        {"id":"country","label":"Country of Origin","explanation":"\"Product of Spain\" confirms Spanish wine law (DOCa) governs everything from permitted grape varieties to minimum aging requirements.","wset":"WSET 2: Country determines regulatory framework. Spanish aging terms have different requirements than Italian ones."}
+    {
+      "id": "rioja", "country": "Spain", "region": "Rioja", "type": "red", "color": "#9E8B6B",
+      "lines": [
+        {"text": "Lopez de Heredia", "role": "producer", "size": "sm"},
+        {"text": "VINA TONDONIA", "role": "brand", "size": "xl"},
+        {"text": "RIOJA", "role": "appellation", "size": "lg"},
+        {"text": "Denominacion de Origen Calificada", "role": "legal", "size": "xs"},
+        {"text": "Reserva", "role": "classification", "size": "md"},
+        {"text": "2011", "role": "vintage", "size": "lg"},
+        {"text": "750ml · 13.5% vol", "role": "technical", "size": "xs"},
+        {"text": "Producto de Espana", "role": "origin", "size": "xs"}
       ],
-      "missingGrape": true,
-      "missingGrapeNote": "No grape listed. Rioja reds are traditionally Tempranillo-dominant (often blended with Garnacha, Graciano, or Mazuelo). Old World convention: the region name implies the grape."
+      "teachings": {
+        "producer": {"title": "Producer (Bodega)", "text": "Lopez de Heredia, founded 1877. One of Rioja's oldest and most traditional producers. Known for decades-long aging before release.", "level": 1},
+        "brand": {"title": "Wine/Brand Name", "text": "\"Vina Tondonia\" is the estate's flagship wine, named after its vineyard. In Spain, wines often carry proprietary brand names alongside the regional appellation.", "level": 2},
+        "appellation": {"title": "Regional Appellation", "text": "Rioja reds are traditionally Tempranillo-dominant, often blended with Garnacha, Graciano, or Mazuelo. No grape listed, Old World convention.", "level": 1},
+        "classification": {"title": "Reserva — Aging Hierarchy", "text": "Spain's legally defined aging tiers for red Rioja: Joven, Crianza (1yr oak, 2yr total), Reserva (1yr oak, 3yr total), Gran Reserva (2yr oak, 5yr total).", "level": 2},
+        "legal": {"title": "DOCa — Highest Spanish Tier", "text": "DOCa (Denominacion de Origen Calificada) is Spain's top classification. Only Rioja and Priorat hold this status.", "level": 2},
+        "vintage": {"title": "Vintage Year", "text": "2011 on a Reserva released many years later. Traditional Rioja producers age extensively before release.", "level": 2},
+        "technical": {"title": "Volume & ABV", "text": "13.5%, typical for aged Rioja. Extended barrel and bottle aging can integrate alcohol and soften tannins.", "level": 1},
+        "origin": {"title": "Country of Origin", "text": "Confirms Spanish DOCa regulations. Aging terms have different legal requirements than Italian or French ones.", "level": 1}
+      }
     },
-    "marlborough": {
-      "region": "New Zealand — Marlborough",
-      "title": "Sauvignon Blanc",
-      "subtitle": "Marlborough",
-      "producer": "Cloudy Bay",
-      "vintage": "2023",
-      "volume": "750ml",
-      "abv": "13%",
-      "appellation": "Marlborough · New Zealand",
-      "country": "Product of New Zealand",
-      "zones": [
-        {"id":"grape","label":"Grape Variety","explanation":"\"Sauvignon Blanc\" front and center. This is the defining New World convention: the GRAPE is the star, not the place.","wset":"WSET 2 Key Concept: New World labels name the GRAPE. Old World labels name the PLACE. This is the fundamental distinction."},
-        {"id":"producer","label":"Producer/Brand","explanation":"\"Cloudy Bay\" is the brand/producer. New World labels tend to emphasize the brand as a quality signal.","wset":"WSET 2: In the New World, the producer/brand often carries more weight than the regional name."},
-        {"id":"region","label":"Region","explanation":"\"Marlborough\" is New Zealand's most famous wine region, renowned for intensely aromatic Sauvignon Blanc.","wset":"WSET 2: Knowing key region + grape pairings (Marlborough = Sauvignon Blanc) helps predict style."},
-        {"id":"vintage","label":"Vintage","explanation":"2023. Most New World Sauvignon Blanc is made to drink young, so a recent vintage is desirable.","wset":"WSET 2: Vintage context depends on the wine's style. Young-drinking whites vs. age-worthy reds."},
-        {"id":"abv","label":"ABV","explanation":"13%. Moderate alcohol for Marlborough Sauvignon Blanc. The cool maritime climate preserves acidity while achieving good ripeness.","wset":"WSET 2: ABV reflects climate and winemaking. Cooler climates tend toward lower ABV with higher acidity."},
-        {"id":"country","label":"Country of Origin","explanation":"\"Product of New Zealand.\" New Zealand has its own Geographical Indications system, but it's far less prescriptive than European appellation laws.","wset":"WSET 2: New World wine laws are generally less restrictive than Old World. More winemaker freedom."}
+    {
+      "id": "mosel", "country": "Germany", "region": "Mosel", "type": "white", "color": "#6B8B9E",
+      "lines": [
+        {"text": "Weingut Joh. Jos. Prum", "role": "producer", "size": "sm"},
+        {"text": "WEHLENER SONNENUHR", "role": "vineyard", "size": "xl"},
+        {"text": "Riesling Spatlese", "role": "classification", "size": "lg"},
+        {"text": "Qualitatswein mit Pradikat", "role": "legal", "size": "xs"},
+        {"text": "Mosel", "role": "appellation", "size": "md"},
+        {"text": "2021", "role": "vintage", "size": "lg"},
+        {"text": "750ml · 7.5% vol", "role": "technical", "size": "xs"},
+        {"text": "Erzeugerabfullung · Produkt Deutschlands", "role": "origin", "size": "xs"}
       ],
-      "missingGrape": false
+      "teachings": {
+        "producer": {"title": "Weingut (Estate)", "text": "\"Weingut\" means wine estate. Joh. Jos. Prum is one of the Mosel's legendary Riesling producers.", "level": 1},
+        "vineyard": {"title": "Village + Vineyard", "text": "\"Wehlener Sonnenuhr\" = the Sonnenuhr vineyard in the village of Wehlen. German labels use Village+Vineyard format. Sonnenuhr (\"sundial\") is one of the most famous steep-slope Mosel sites.", "level": 3},
+        "classification": {"title": "Pradikat Level — Ripeness Scale", "text": "Spatlese (\"late harvest\") is a ripeness level: Kabinett, Spatlese, Auslese, Beerenauslese, Trockenbeerenauslese, Eiswein. Each requires higher grape sugar.", "level": 2},
+        "legal": {"title": "Qualitatswein mit Pradikat", "text": "Germany's highest quality category (now Pradikatswein). No chaptalization allowed. Below: Qualitatswein, Landwein, Deutscher Wein.", "level": 3},
+        "appellation": {"title": "Wine Region", "text": "Mosel: steep slate slopes along the river create intense, mineral-driven Rieslings with piercing acidity and often low alcohol.", "level": 1},
+        "vintage": {"title": "Vintage Year", "text": "Vintage is especially important in Germany's cool climate. The difference between years dramatically affects ripeness and style.", "level": 1},
+        "technical": {"title": "Volume & ABV", "text": "7.5%, remarkably low. Classic Mosel Riesling: residual sugar balanced by razor acidity. Low alcohol preserves delicacy.", "level": 2},
+        "origin": {"title": "Estate Bottled & Origin", "text": "\"Erzeugerabfullung\" means estate-bottled. The producer grew the grapes and made the wine.", "level": 2}
+      }
+    },
+    {
+      "id": "napa", "country": "USA", "region": "Napa Valley", "type": "red", "color": "#7B6B9E",
+      "lines": [
+        {"text": "CAYMUS", "role": "producer", "size": "xl"},
+        {"text": "Cabernet Sauvignon", "role": "grape", "size": "lg"},
+        {"text": "Napa Valley", "role": "appellation", "size": "md"},
+        {"text": "2019", "role": "vintage", "size": "lg"},
+        {"text": "750ml · 14.8% vol", "role": "technical", "size": "xs"},
+        {"text": "Produced & Bottled by Caymus Vineyards, Rutherford, CA", "role": "origin", "size": "xs"}
+      ],
+      "teachings": {
+        "producer": {"title": "Brand/Producer", "text": "In the New World, the brand is often the biggest text. The name carries the quality signal, not a classification system.", "level": 1},
+        "grape": {"title": "Grape Variety — Front and Center", "text": "\"Cabernet Sauvignon\": the New World convention. The GRAPE is the star. This is the opposite of Old World labels.", "level": 1},
+        "appellation": {"title": "AVA (American Viticultural Area)", "text": "\"Napa Valley\" is an AVA, a legally defined area. Less prescriptive than European appellations. 85% of grapes must come from the named AVA.", "level": 2},
+        "vintage": {"title": "Vintage Year", "text": "2019 is a great Napa vintage. US law requires 95% of grapes from the stated vintage year.", "level": 1},
+        "technical": {"title": "Volume & ABV", "text": "14.8%, high alcohol typical of warm Napa Cabernet. Reflects full ripeness and rich, full-bodied style.", "level": 1},
+        "origin": {"title": "Bottling Statement", "text": "\"Produced & Bottled by\" means the winery fermented and bottled at least 75%. Different from \"Cellared and Bottled\" which indicates less involvement.", "level": 3}
+      }
+    },
+    {
+      "id": "marlborough", "country": "New Zealand", "region": "Marlborough", "type": "white", "color": "#6B9E7B",
+      "lines": [
+        {"text": "CLOUDY BAY", "role": "producer", "size": "xl"},
+        {"text": "Sauvignon Blanc", "role": "grape", "size": "lg"},
+        {"text": "Marlborough", "role": "appellation", "size": "md"},
+        {"text": "2023", "role": "vintage", "size": "lg"},
+        {"text": "750ml · 13.0% vol", "role": "technical", "size": "xs"},
+        {"text": "Product of New Zealand", "role": "origin", "size": "xs"}
+      ],
+      "teachings": {
+        "producer": {"title": "Brand", "text": "Cloudy Bay put Marlborough Sauvignon Blanc on the world map in the 1980s. New World labels emphasize the brand.", "level": 1},
+        "grape": {"title": "Grape Variety", "text": "Sauvignon Blanc, front and center, New World style. In New Zealand, the grape must be at least 85% of the wine.", "level": 1},
+        "appellation": {"title": "Region", "text": "Marlborough: internationally famous for intensely aromatic Sauvignon Blanc with passion fruit, cut grass, and crisp acidity.", "level": 1},
+        "vintage": {"title": "Vintage Year", "text": "2023. Most Marlborough Sauvignon Blanc is made for immediate drinking. Freshness is the point.", "level": 1},
+        "technical": {"title": "Volume & ABV", "text": "13%, moderate. Cool maritime climate preserves high acidity while achieving good ripeness.", "level": 1},
+        "origin": {"title": "Country of Origin", "text": "New Zealand's GI system is less prescriptive than European appellations. More winemaker freedom.", "level": 2}
+      }
+    },
+    {
+      "id": "champagne", "country": "France", "region": "Champagne", "type": "sparkling", "color": "#C4A265",
+      "lines": [
+        {"text": "Moet & Chandon", "role": "producer", "size": "sm"},
+        {"text": "DOM PERIGNON", "role": "brand", "size": "xl"},
+        {"text": "Brut", "role": "sweetness", "size": "md"},
+        {"text": "2013", "role": "vintage", "size": "lg"},
+        {"text": "Appellation Champagne Controlee", "role": "legal", "size": "xs"},
+        {"text": "750ml · 12.5% vol", "role": "technical", "size": "xs"},
+        {"text": "Elabore par Moet & Chandon, Epernay, France", "role": "origin", "size": "xs"}
+      ],
+      "teachings": {
+        "producer": {"title": "House (Maison)", "text": "Moet & Chandon is the parent house. In Champagne: NM (Negociant-Manipulant) buys grapes; RM (Recoltant-Manipulant) is a grower-producer.", "level": 2},
+        "brand": {"title": "Prestige Cuvee", "text": "Dom Perignon is a \"prestige cuvee\": always vintage, only produced in exceptional years. The house decides whether to \"declare\" a vintage.", "level": 2},
+        "sweetness": {"title": "Dosage / Sweetness Level", "text": "\"Brut\" = dry (<12g/L sugar). The scale: Brut Nature, Extra Brut, Brut, Extra Dry, Sec, Demi-Sec, Doux. \"Extra Dry\" is confusingly sweeter than \"Brut.\"", "level": 1},
+        "vintage": {"title": "Vintage Declaration", "text": "A vintage year means ALL grapes are from that year. Most Champagne is NV (blending years for consistency). Vintage = exceptional year statement.", "level": 1},
+        "legal": {"title": "AOC Champagne", "text": "Only sparkling wine from the Champagne region using methode champenoise can be called \"Champagne.\" Grapes and methods are strictly regulated.", "level": 1},
+        "technical": {"title": "Volume & ABV", "text": "12.5%, typical. Cool climate + second fermentation in bottle. The base wine is high-acid, moderate alcohol.", "level": 2},
+        "origin": {"title": "Elabore par (Made by)", "text": "Look for fine print codes: NM = buys grapes, RM = grower-producer, CM = cooperative. This tells you the production model.", "level": 3}
+      }
+    },
+    {
+      "id": "barolo", "country": "Italy", "region": "Piedmont", "type": "red", "color": "#8B6B6B",
+      "lines": [
+        {"text": "Giacomo Conterno", "role": "producer", "size": "sm"},
+        {"text": "BAROLO", "role": "appellation", "size": "xl"},
+        {"text": "Denominazione di Origine Controllata e Garantita", "role": "legal", "size": "xs"},
+        {"text": "Francia", "role": "vineyard", "size": "md-i"},
+        {"text": "2019", "role": "vintage", "size": "lg"},
+        {"text": "750ml · 14.5% vol", "role": "technical", "size": "xs"},
+        {"text": "Prodotto in Italia · Serralunga d'Alba", "role": "origin", "size": "xs"}
+      ],
+      "teachings": {
+        "producer": {"title": "Producer", "text": "Giacomo Conterno: legendary Barolo producer known for traditional long-maceration winemaking. Producer reputation is paramount in Barolo.", "level": 1},
+        "appellation": {"title": "Appellation — Nebbiolo's Kingdom", "text": "Barolo is always 100% Nebbiolo. No grape listed, DOCG defines it. Must age 38 months minimum (18 in wood). Riserva requires 62 months.", "level": 1},
+        "vineyard": {"title": "MGA (Vineyard Site)", "text": "\"Francia\" is a specific MGA (Menzione Geografica Aggiuntiva) in Serralunga d'Alba. Since 2010, Barolo has 181 officially designated vineyard sites, like Burgundy's climat system.", "level": 3},
+        "legal": {"title": "DOCG", "text": "Barolo DOCG: 100% Nebbiolo, minimum 38 months aging, minimum 13% ABV. These are legal requirements, not suggestions.", "level": 2},
+        "vintage": {"title": "Vintage Year", "text": "2019 is part of the celebrated 2019-2020-2021 Barolo triumvirate. Powerful and structured, rewards patience.", "level": 1},
+        "technical": {"title": "Volume & ABV", "text": "14.5%, high but typical. Nebbiolo achieves high sugar during its long, late ripening (often harvested October). Tannin and acidity balance the alcohol.", "level": 1},
+        "origin": {"title": "Village of Origin", "text": "\"Serralunga d'Alba\": one of five key communes. Serralunga = most structured, powerful Barolos. La Morra = more perfumed, elegant.", "level": 3}
+      }
+    },
+    {
+      "id": "bordeaux", "country": "France", "region": "Bordeaux", "type": "red", "color": "#6B4B6B",
+      "lines": [
+        {"text": "Chateau Leoville-Las Cases", "role": "producer", "size": "sm"},
+        {"text": "GRAND VIN DE LEOVILLE", "role": "brand", "size": "xl"},
+        {"text": "du Marquis de Las Cases", "role": "brand2", "size": "md-i"},
+        {"text": "Saint-Julien", "role": "appellation", "size": "md"},
+        {"text": "2016", "role": "vintage", "size": "lg"},
+        {"text": "Grand Cru Classe en 1855", "role": "classification", "size": "xs"},
+        {"text": "Appellation Saint-Julien Controlee", "role": "legal", "size": "xs"},
+        {"text": "750ml · 13.5% vol", "role": "technical", "size": "xs"},
+        {"text": "Mis en bouteille au Chateau", "role": "origin", "size": "xs"}
+      ],
+      "teachings": {
+        "producer": {"title": "Chateau", "text": "\"Chateau\" = Bordeaux wine estate. Leoville-Las Cases is a Deuxieme Grand Cru Classe (Second Growth), often called a \"Super Second\" rivaling First Growths.", "level": 1},
+        "brand": {"title": "Grand Vin", "text": "\"Grand Vin\" = the chateau's primary wine, their best production. Most serious chateaux also make a \"Second Wine\" from younger vines.", "level": 2},
+        "brand2": {"title": "Historic Name", "text": "The full historical name connecting the wine to its aristocratic lineage. These names have been on labels for centuries.", "level": 2},
+        "appellation": {"title": "Commune Appellation", "text": "Saint-Julien: one of six most prestigious Medoc communes. Sub-appellation within Haut-Medoc within Bordeaux. More specificity = higher quality.", "level": 2},
+        "vintage": {"title": "Vintage Year", "text": "2016 is one of the great recent Bordeaux vintages: structured, classic, built for decades of aging.", "level": 1},
+        "classification": {"title": "1855 Classification", "text": "The historic ranking of estates into five tiers (First to Fifth Growth). Barely changed in 170 years, frozen in time.", "level": 2},
+        "legal": {"title": "AOC Statement", "text": "Legally defines origin, permitted grapes (Cabernet Sauvignon, Merlot, Cabernet Franc, Petit Verdot), and production methods.", "level": 1},
+        "technical": {"title": "Volume & ABV", "text": "13.5%, moderate for Left Bank Bordeaux. Maritime climate keeps alcohol in check.", "level": 1},
+        "origin": {"title": "Chateau Bottled", "text": "\"Mis en bouteille au Chateau\" = estate-bottled. The gold standard in Bordeaux, guaranteeing provenance.", "level": 2}
+      }
+    },
+    {
+      "id": "mendoza", "country": "Argentina", "region": "Mendoza", "type": "red", "color": "#6B7B9E",
+      "lines": [
+        {"text": "CATENA ZAPATA", "role": "producer", "size": "xl"},
+        {"text": "Malbec", "role": "grape", "size": "lg"},
+        {"text": "Adrianna Vineyard", "role": "vineyard", "size": "md-i"},
+        {"text": "Gualtallary, Tupungato", "role": "appellation", "size": "md"},
+        {"text": "Mendoza, Argentina", "role": "region", "size": "sm"},
+        {"text": "2019", "role": "vintage", "size": "lg"},
+        {"text": "750ml · 14.0% vol", "role": "technical", "size": "xs"},
+        {"text": "Estate Grown & Bottled", "role": "origin", "size": "xs"}
+      ],
+      "teachings": {
+        "producer": {"title": "Brand/Producer", "text": "Catena Zapata: Argentina's most celebrated producer, credited with proving Malbec's potential as world-class.", "level": 1},
+        "grape": {"title": "Grape Variety", "text": "Malbec: Argentina's signature grape, originally from Cahors, France. In Mendoza's high altitude it produces deeply colored wines with violet and plum character.", "level": 1},
+        "vineyard": {"title": "Single Vineyard", "text": "\"Adrianna Vineyard\" at over 1,500m altitude. Naming the vineyard signals a premium, terroir-focused wine. New World embracing Old World specificity.", "level": 3},
+        "appellation": {"title": "Sub-Region & District", "text": "\"Gualtallary, Tupungato\": a specific district within the Uco Valley. Higher altitude = cooler nights, better acidity, more complexity.", "level": 2},
+        "region": {"title": "Broader Region", "text": "Mendoza produces ~70% of Argentina's wine. A desert irrigated by Andean snowmelt: extreme altitude, intense UV, dramatic day-night temperature swings.", "level": 1},
+        "vintage": {"title": "Vintage Year", "text": "2019. At high altitude, vintage variation matters. Extreme UV and temperature swings give distinctive intensity.", "level": 1},
+        "technical": {"title": "Volume & ABV", "text": "14.0%, typical for high-altitude Malbec. Strong sun concentrates sugars but cool nights preserve acidity.", "level": 1},
+        "origin": {"title": "Estate Grown & Bottled", "text": "The producer controlled everything from vine to bottle, signaling commitment to site-specific winemaking.", "level": 2}
+      }
     }
-  },
-  "uploadZones": [
-    {"id":"top","label":"Producer / Brand","y":0,"h":15,"color":"#B8943E","explanation":"Usually at the top. The estate, domaine, chateau, bodega, or brand name."},
-    {"id":"main","label":"Wine Name / Appellation","y":15,"h":25,"color":"#722F37","explanation":"The most prominent text. Could be a place name (Old World) or grape variety (New World). This is the key to reading the label."},
-    {"id":"classification","label":"Classification / Quality","y":40,"h":15,"color":"#6B7F5E","explanation":"Look for terms like: AOC/AOP, DOC/DOCG, DO/DOCa, Qualitatswein, Grand Cru, Reserva, Riserva, Premier Cru."},
-    {"id":"vintage","label":"Vintage Year","y":55,"h":10,"color":"#5B6B8A","explanation":"The harvest year. Tells you about weather conditions and helps predict style. NV (Non-Vintage) is common in Champagne."},
-    {"id":"details","label":"Volume, ABV & Origin","y":65,"h":20,"color":"#A0614B","explanation":"Legally required: bottle size, alcohol percentage, and country of origin. ABV hints at body and climate."},
-    {"id":"back","label":"Back Label / Importer","y":85,"h":15,"color":"#6B5D7A","explanation":"Often contains the importer, additional tasting notes, serving suggestions, and allergen information (Contains Sulfites)."}
+  ],
+  "quizQuestions": [
+    {"id":1,"level":1,"labelId":"chablis","highlight":"appellation","question":"This label says 'Chablis' but no grape variety is listed. What grape is this wine made from?","options":["Sauvignon Blanc","Chardonnay","Riesling","Pinot Grigio"],"answer":1,"explanation":"Chablis is always 100% Chardonnay. The appellation legally requires it. Old World labels name the place; the grape is implied."},
+    {"id":2,"level":1,"labelId":"napa","highlight":"grape","question":"Why is 'Cabernet Sauvignon' the most prominent text after the brand name?","options":["It's a marketing choice","New World labels lead with grape variety","It's legally required to be largest","The winemaker prefers it"],"answer":1,"explanation":"New World convention: the grape variety is the primary identifier. Old World labels show the place name instead."},
+    {"id":3,"level":1,"labelId":"chianti","highlight":"appellation","question":"What is the primary grape in Chianti Classico?","options":["Nebbiolo","Tempranillo","Sangiovese","Montepulciano"],"answer":2,"explanation":"Chianti Classico must be at least 80% Sangiovese by DOCG law. The place name tells you the grape."},
+    {"id":4,"level":1,"labelId":"marlborough","highlight":"appellation","question":"What does 'Marlborough' tell you about this wine's style?","options":["It will be oaky and rich","It will be aromatic with high acidity","It will be sweet","It will be full-bodied"],"answer":1,"explanation":"Marlborough's cool maritime climate produces intensely aromatic Sauvignon Blanc with passion fruit, cut grass, and crisp acidity."},
+    {"id":5,"level":1,"labelId":"rioja","highlight":"appellation","question":"What is the dominant grape in red Rioja?","options":["Garnacha","Cabernet Sauvignon","Merlot","Tempranillo"],"answer":3,"explanation":"Red Rioja is traditionally Tempranillo-dominant, often blended with Garnacha, Graciano, or Mazuelo."},
+    {"id":6,"level":1,"labelId":"napa","highlight":"technical","question":"This wine is 14.8% ABV. What does that suggest?","options":["Cool climate, low ripeness","Warm climate, full ripeness","Fortified wine","Nothing, ABV is random"],"answer":1,"explanation":"High ABV (14%+) indicates warm climate and fully ripe grapes. Napa's valleys produce rich, high-alcohol Cabernets."},
+    {"id":7,"level":1,"labelId":"mosel","highlight":"technical","question":"This Mosel Riesling is only 7.5% ABV. Why so low?","options":["It's diluted with water","Residual sugar remains instead of converting to alcohol","The grapes were unripe","It's a sparkling wine"],"answer":1,"explanation":"Fermentation is stopped before all sugar converts to alcohol. The result: low ABV, residual sweetness balanced by high acidity."},
+    {"id":8,"level":1,"labelId":"barolo","highlight":"appellation","question":"What grape is Barolo made from?","options":["Sangiovese","Barbera","Nebbiolo","Corvina"],"answer":2,"explanation":"Barolo is always 100% Nebbiolo. Another Old World label where the place tells you the grape."},
+    {"id":9,"level":1,"labelId":"champagne","highlight":"sweetness","question":"What does 'Brut' mean on a Champagne label?","options":["Vintage-dated","Dry (less than 12g/L residual sugar)","Aged more than 3 years","Made from Chardonnay only"],"answer":1,"explanation":"Brut means dry. The sweetness scale: Brut Nature, Extra Brut, Brut, Extra Dry, Sec, Demi-Sec, Doux."},
+    {"id":10,"level":1,"labelId":"champagne","highlight":"vintage","question":"Most Champagne is 'NV' (Non-Vintage). What does a vintage year mean?","options":["The wine is cheap","All grapes are from a single exceptional year","It's a different style","The bottle is old"],"answer":1,"explanation":"Vintage Champagne means all grapes from that year, which the house considered exceptional enough to declare."},
+    {"id":11,"level":1,"labelId":"mendoza","highlight":"grape","question":"This Argentine wine leads with 'Malbec.' Where did Malbec originally come from?","options":["Argentina","Chile","France (Cahors)","Spain"],"answer":2,"explanation":"Malbec originated in Cahors, southwest France. It was brought to Argentina in the mid-1800s and found its greatest expression in Mendoza."},
+    {"id":12,"level":1,"labelId":"bordeaux","highlight":"appellation","question":"What is the primary red grape of Bordeaux's Left Bank (Medoc)?","options":["Merlot","Pinot Noir","Cabernet Sauvignon","Syrah"],"answer":2,"explanation":"Cabernet Sauvignon dominates the Left Bank. Merlot dominates the Right Bank. Knowing which bank tells you the blend."},
+    {"id":13,"level":2,"labelId":"chianti","highlight":"classification","question":"What does 'Riserva' legally guarantee on this Italian label?","options":["The wine is organic","Minimum 24 months aging including 3 months in bottle","The grapes are hand-picked","It's from the best vineyard"],"answer":1,"explanation":"Riserva is legally defined: Chianti Classico Riserva requires minimum 24 months total aging, at least 3 months in bottle."},
+    {"id":14,"level":2,"labelId":"rioja","highlight":"classification","question":"Put Spain's aging terms in order from youngest to oldest:","options":["Crianza, Joven, Reserva, Gran Reserva","Joven, Crianza, Reserva, Gran Reserva","Reserva, Crianza, Gran Reserva, Joven","Joven, Reserva, Crianza, Gran Reserva"],"answer":1,"explanation":"Joven, Crianza (1yr oak), Reserva (1yr oak, 3yr total), Gran Reserva (2yr oak, 5yr total)."},
+    {"id":15,"level":2,"labelId":"chianti","highlight":"legal","question":"What does DOCG mean and how does it differ from DOC?","options":["They're the same","DOCG adds a guarantee: wines are tasted and chemically tested","DOCG is for sparkling only","DOCG means the wine is older"],"answer":1,"explanation":"DOCG adds \"Garantita\": wines must pass chemical analysis AND a tasting panel. Italy's pyramid: Vino, IGT, DOC, DOCG."},
+    {"id":16,"level":2,"labelId":"mosel","highlight":"classification","question":"What does 'Spatlese' indicate on a German label?","options":["The wine is dry","A specific ripeness level: late harvest","The vineyard is south-facing","The wine was aged in oak"],"answer":1,"explanation":"Spatlese (\"late harvest\") is a Pradikat ripeness level. It does NOT necessarily mean sweet. Spatlese can be dry (trocken) or sweet."},
+    {"id":17,"level":2,"labelId":"rioja","highlight":"legal","question":"What is DOCa and which Spanish regions hold this classification?","options":["Spain's entry level, all regions have it","Spain's highest, only Rioja and Priorat","An organic certification","A sparkling wine designation"],"answer":1,"explanation":"DOCa is Spain's top classification. Only Rioja and Priorat have earned this status."},
+    {"id":18,"level":2,"labelId":"napa","highlight":"appellation","question":"How much of the wine must come from the named AVA?","options":["100%","51%","85%","75%"],"answer":2,"explanation":"US law requires 85% of grapes from the stated AVA. If a specific vineyard is named, 95% must come from it."},
+    {"id":19,"level":2,"labelId":"chablis","highlight":"classification","question":"What is the hierarchy of Burgundy vineyard classifications?","options":["Grand Cru, Premier Cru, Village, Regional","Regional, Village, Premier Cru, Grand Cru","Premier Cru, Grand Cru, Village, Regional","There is no hierarchy"],"answer":0,"explanation":"From top: Grand Cru (1-2% of production), Premier Cru, Village, Regional (Bourgogne). Each reflects superior terroir."},
+    {"id":20,"level":2,"labelId":"bordeaux","highlight":"classification","question":"What does 'Grand Cru Classe en 1855' refer to?","options":["A recent quality assessment","The historic 1855 Classification ranking estates into five tiers","A grape variety designation","The founding year"],"answer":1,"explanation":"The 1855 Classification ranked estates into First through Fifth Growths. It has barely changed in 170 years."},
+    {"id":21,"level":2,"labelId":"champagne","highlight":"sweetness","question":"Which is SWEETER: 'Brut' or 'Extra Dry' Champagne?","options":["Brut is sweeter","Extra Dry is sweeter","They're the same","It depends on the producer"],"answer":1,"explanation":"Counter-intuitively, Extra Dry (12-17g/L) is sweeter than Brut (0-12g/L). This trips up almost everyone on WSET exams."},
+    {"id":22,"level":2,"labelId":"barolo","highlight":"legal","question":"What is the minimum aging requirement for Barolo DOCG?","options":["12 months","24 months","38 months total, 18 in wood","5 years"],"answer":2,"explanation":"Barolo requires 38 months total, at least 18 in wood. Riserva requires 62 months."},
+    {"id":23,"level":2,"labelId":"mendoza","highlight":"appellation","question":"Why is 'Gualtallary, Tupungato' more specific than just 'Mendoza'?","options":["It's a different country","It identifies a specific high-altitude district","It's a grape variety","It indicates oak aging"],"answer":1,"explanation":"Gualtallary is a district in the Uco Valley. Argentina increasingly uses sub-regional specificity: higher altitude = cooler nights, more complexity."},
+    {"id":24,"level":2,"labelId":"bordeaux","highlight":"origin","question":"What does 'Mis en bouteille au Chateau' mean?","options":["Made by a cooperative","Bottled at the estate","Imported from abroad","Aged in new oak"],"answer":1,"explanation":"Estate-bottled: made and bottled at the chateau. The gold standard in Bordeaux, guaranteeing provenance."},
+    {"id":25,"level":3,"labelId":"mosel","highlight":"vineyard","question":"\"Wehlener Sonnenuhr\" — what does this naming format tell you?","options":["It's a brand name","Village (Wehlen) + Vineyard (Sonnenuhr)","The winemaker's name","A grape clone"],"answer":1,"explanation":"German Village+Vineyard format: \"Wehlener\" (from Wehlen) + \"Sonnenuhr\" (sundial vineyard). The \"-er\" suffix converts the village name to an adjective."},
+    {"id":26,"level":3,"labelId":"mosel","highlight":"legal","question":"What does 'Qualitatswein mit Pradikat' prohibit that lower tiers allow?","options":["Blending vintages","Chaptalization (adding sugar before fermentation)","Stainless steel tanks","International sales"],"answer":1,"explanation":"Pradikatswein prohibits chaptalization. All sugar must come from the grape. This is why Pradikat levels are tied to natural ripeness."},
+    {"id":27,"level":3,"labelId":"chablis","highlight":"vineyard","question":"Why would knowing the specific climat (vineyard) matter in Burgundy?","options":["It's just marketing","Burgundy classifies quality by specific vineyard site","It tells you the grape","It indicates age"],"answer":1,"explanation":"Burgundy's system is built on terroir. Specific sites produce distinct wines. Two plots 50 meters apart can be different quality tiers."},
+    {"id":28,"level":3,"labelId":"napa","highlight":"origin","question":"'Produced & Bottled by' vs 'Cellared & Bottled by' — what's the difference?","options":["No difference","'Produced' = fermented 75%+; 'Cellared' = much less involvement","'Cellared' is higher quality","'Produced' is organic only"],"answer":1,"explanation":"\"Produced & Bottled\" = fermented and bottled 75%+. \"Cellared & Bottled\" = may have only stored and bottled purchased wine."},
+    {"id":29,"level":3,"labelId":"chianti","highlight":"appellation","question":"What's the difference between 'Chianti' and 'Chianti Classico'?","options":["Just different spellings","Classico is the original, smaller, historic zone with stricter rules","Classico means older","Classico uses different grapes"],"answer":1,"explanation":"Chianti Classico is the original medieval zone between Florence and Siena: much smaller and higher-quality than the expanded \"Chianti\" DOCG."},
+    {"id":30,"level":3,"labelId":"mosel","highlight":"classification","question":"Order the German Pradikat levels from least to most ripe:","options":["Kabinett, Spatlese, Auslese, BA, TBA","Spatlese, Kabinett, Auslese, TBA, BA","Auslese, Spatlese, Kabinett, BA, TBA","Kabinett, Auslese, Spatlese, BA, TBA"],"answer":0,"explanation":"Kabinett, Spatlese, Auslese, Beerenauslese (BA), Trockenbeerenauslese (TBA). Each requires higher must weight at harvest."},
+    {"id":31,"level":3,"labelId":"champagne","highlight":"origin","question":"On a Champagne label, what's the difference between NM and RM?","options":["NM is better quality","NM buys grapes (Negociant), RM grows their own (Recoltant)","RM makes rose only","They indicate sweetness"],"answer":1,"explanation":"NM buys grapes, most big houses. RM grows their own, the 'grower Champagne' movement. Both can be excellent."},
+    {"id":32,"level":3,"labelId":"barolo","highlight":"vineyard","question":"What does 'MGA' mean on a Barolo label?","options":["A marketing term","An officially designated vineyard site","The producer's initials","A government code"],"answer":1,"explanation":"MGA (Menzione Geografica Aggiuntiva) is Barolo's vineyard designation system with 181 named sites: Italy's answer to Burgundy's climats."},
+    {"id":33,"level":3,"labelId":"barolo","highlight":"origin","question":"Which Barolo commune is known for the most structured, powerful wines?","options":["La Morra","Barolo","Serralunga d'Alba","Verduno"],"answer":2,"explanation":"Serralunga d'Alba = most structured, powerful, long-lived. La Morra = more perfumed and elegant. The commune shapes the style."},
+    {"id":34,"level":3,"labelId":"bordeaux","highlight":"brand","question":"What does 'Grand Vin' on a Bordeaux label indicate?","options":["The wine is old","It's the chateau's primary/best wine","It's a Grand Cru","Hand-harvested"],"answer":1,"explanation":"\"Grand Vin\" = the chateau's top selection, distinct from their \"Second Wine\" made from younger vines or lesser lots."},
+    {"id":35,"level":3,"labelId":"mendoza","highlight":"vineyard","question":"Why would an Argentine label name a specific vineyard like 'Adrianna Vineyard'?","options":["Legal requirement","To signal a premium, terroir-focused wine","It's the owner's daughter","It indicates the grape"],"answer":1,"explanation":"Single-vineyard on a New World label = the producer believes that site produces distinctive wine. New World adopting Old World's terroir philosophy."},
+    {"id":36,"level":3,"labelId":"bordeaux","highlight":"appellation","question":"Bordeaux has nested appellations: Bordeaux, Haut-Medoc, Saint-Julien. What does this nesting indicate?","options":["Nothing, interchangeable","Greater specificity = higher quality and stricter rules","Smaller = cheaper","Only for marketing"],"answer":1,"explanation":"More geographic specificity signals higher quality. 'Saint-Julien' meets stricter standards than just 'Bordeaux.' The more specific, the more it tells you."}
   ]
 }

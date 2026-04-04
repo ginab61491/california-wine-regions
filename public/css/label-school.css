@@ -251,96 +251,196 @@
   color: var(--ls-text-faint); margin-top: 8px;
 }
 
-/* Upload mode */
-.ls-upload-drop {
-  border: 2px dashed rgba(184,148,62,0.25); border-radius: 12px;
-  padding: 48px 32px; cursor: pointer; text-align: center;
-  background: rgba(184,148,62,0.02); transition: all 0.25s;
+/* Scrollable pill selector */
+.ls-pill-scroll {
+  display: flex; gap: 6px; overflow-x: auto; padding-bottom: 12px; margin-bottom: 8px;
+  -webkit-overflow-scrolling: touch; scrollbar-width: none;
 }
-.ls-upload-drop:hover { border-color: rgba(184,148,62,0.5); }
-.ls-upload-icon { font-size: 2rem; margin-bottom: 10px; color: var(--ls-gold); }
-.ls-upload-title {
-  font-family: 'Cormorant Garamond', serif; font-size: 1rem; font-weight: 600;
-  color: var(--ls-gold); margin-bottom: 4px;
+.ls-pill-scroll::-webkit-scrollbar { display: none; }
+.ls-pill {
+  flex-shrink: 0; padding: 8px 14px; border-radius: 20px;
+  border: 1px solid var(--ls-card-edge); background: transparent;
+  cursor: pointer; transition: all 0.25s; text-align: left;
 }
-.ls-upload-hint {
-  font-family: 'Montserrat', sans-serif; font-size: 0.72rem; color: var(--ls-text-faint);
+.ls-pill:hover { border-color: var(--ls-gold); }
+.ls-pill-region {
+  font-family: 'Montserrat', sans-serif; font-size: 0.68rem; font-weight: 500;
+  color: var(--ls-text-muted); display: block; white-space: nowrap;
 }
-
-/* Upload zones guide */
-.ls-upload-zones { margin-top: 24px; }
-.ls-upload-zones-title {
-  font-family: 'Cormorant Garamond', serif; font-size: 0.75rem; font-weight: 600;
-  letter-spacing: 0.08em; text-transform: uppercase;
-  color: var(--ls-gold); margin-bottom: 12px;
-}
-.ls-upload-zone {
-  padding: 10px 12px; border-radius: 6px; margin-bottom: 6px;
-  cursor: pointer; border: 1px solid var(--ls-card-edge);
-  background: var(--ls-card); transition: all 0.2s;
-}
-.ls-upload-zone:hover { border-color: var(--ls-gold); }
-.ls-upload-zone.active {
-  background: rgba(184,148,62,0.05); border-color: rgba(184,148,62,0.2);
-}
-.ls-upload-zone-header { display: flex; align-items: center; gap: 8px; }
-.ls-upload-zone-dot {
-  width: 8px; height: 8px; border-radius: 50%; flex-shrink: 0;
-}
-.ls-upload-zone-name {
-  font-family: 'Montserrat', sans-serif; font-size: 0.82rem;
-  font-weight: 500; color: var(--ls-text);
-}
-.ls-upload-zone.active .ls-upload-zone-name { color: var(--ls-text); }
-.ls-upload-zone-expl {
-  font-family: 'Montserrat', sans-serif; font-size: 0.75rem;
-  color: var(--ls-text-muted); line-height: 1.6; margin-top: 8px; padding-left: 16px;
+.ls-pill.active .ls-pill-region { color: var(--ls-text); }
+.ls-pill-country {
+  font-family: 'Montserrat', sans-serif; font-size: 0.55rem; color: var(--ls-text-faint);
 }
 
-/* Uploaded image view */
-.ls-uploaded-wrap { position: relative; margin-bottom: 16px; }
-.ls-uploaded-img {
-  width: 100%; border-radius: 8px; border: 1px solid var(--ls-card-edge);
-}
-.ls-uploaded-reset {
-  position: absolute; top: 8px; right: 8px;
-  background: rgba(44,24,16,0.7); border: 1px solid rgba(255,255,255,0.2);
-  border-radius: 6px; color: #E8DDD0; font-size: 0.68rem;
-  padding: 4px 10px; cursor: pointer; font-family: 'Montserrat', sans-serif;
-}
-.ls-uploaded-overlay {
-  position: absolute; left: 0; right: 0; cursor: pointer;
-  transition: all 0.25s; display: flex; align-items: center;
-  justify-content: flex-end; padding-right: 8px;
-  border-top: 1px solid transparent; border-bottom: 1px solid transparent;
-}
-.ls-uploaded-overlay.active { border-color: currentColor; }
-.ls-uploaded-overlay-tag {
-  font-family: 'Montserrat', sans-serif; font-size: 0.55rem; font-weight: 600;
-  letter-spacing: 0.05em; text-transform: uppercase;
-  color: #fff; padding: 2px 8px; border-radius: 3px;
+.ls-world-badge {
+  font-family: 'Montserrat', sans-serif; font-size: 0.58rem; font-weight: 600;
+  letter-spacing: 0.1em; text-transform: uppercase;
+  padding: 4px 14px; border-radius: 20px; border: 1px solid;
 }
 
-/* Quick decode box */
-.ls-quick-decode {
-  margin-top: 20px; padding: 16px;
-  background: rgba(184,148,62,0.04); border-radius: 8px;
-  border: 1px solid rgba(184,148,62,0.1);
+/* Label accent line */
+.ls-label-accent {
+  position: absolute; top: 0; left: 30%; right: 30%; height: 2px; opacity: 0.5;
 }
-.ls-quick-decode-title {
-  font-family: 'Montserrat', sans-serif; font-size: 0.65rem; font-weight: 600;
-  letter-spacing: 0.08em; text-transform: uppercase;
-  color: var(--ls-gold); margin-bottom: 8px;
+
+/* Zone label floating above */
+.ls-zone-label {
+  display: block; font-family: 'Montserrat', sans-serif; font-size: 0.5rem;
+  font-weight: 600; letter-spacing: 0.12em; text-transform: uppercase;
+  margin-bottom: 2px; white-space: nowrap;
 }
-.ls-quick-decode-text {
-  font-family: 'Montserrat', sans-serif; font-size: 0.75rem;
-  color: var(--ls-text-muted); line-height: 1.6;
+
+/* Label ornament */
+.ls-label-ornament-line {
+  display: flex; align-items: center; justify-content: center; gap: 8px; margin: 6px 0 2px;
 }
-.ls-quick-decode-text strong { color: var(--ls-gold); }
+.ls-label-ornament-line::before, .ls-label-ornament-line::after {
+  content: ''; width: 30px; height: 0.5px; background: #C8B9A4;
+}
+.ls-label-ornament-dot {
+  width: 4px; height: 4px; border-radius: 50%; border: 0.5px solid; opacity: 0.5;
+}
+
+/* Mini label for quiz */
+.ls-wine-label--mini { margin-bottom: 16px; }
+.ls-label-surface--mini { padding: 20px 18px; min-height: auto; }
+
+/* Explanation level badge */
+.ls-expl-level {
+  margin-left: auto; font-family: 'Montserrat', sans-serif; font-size: 0.5rem;
+  font-weight: 600; letter-spacing: 0.1em; text-transform: uppercase;
+  padding: 2px 8px; border: 1px solid; border-radius: 10px;
+}
+
+/* ── Quiz Mode ─────────────────────────────────────── */
+
+.ls-quiz-icon { font-size: 2.5rem; margin-bottom: 10px; }
+.ls-quiz-heading {
+  font-family: 'Playfair Display', Georgia, serif; font-size: 1.15rem;
+  color: var(--ls-text); margin-bottom: 6px;
+}
+.ls-quiz-sub {
+  font-family: 'Montserrat', sans-serif; font-size: 0.78rem;
+  color: var(--ls-text-faint); line-height: 1.5;
+}
+
+/* Level buttons */
+.ls-quiz-level-btn {
+  width: 100%; padding: 18px 20px; margin-bottom: 10px;
+  border: 1px solid; border-radius: 8px; background: transparent;
+  cursor: pointer; text-align: left; transition: all 0.25s;
+  display: flex; align-items: flex-start; gap: 12px; position: relative;
+}
+.ls-quiz-level-btn:hover { filter: brightness(1.05); }
+.ls-quiz-level-accent {
+  position: absolute; top: 0; left: 0; width: 3px; height: 100%;
+  border-radius: 8px 0 0 8px; opacity: 0.6;
+}
+.ls-quiz-level-info { flex: 1; }
+.ls-quiz-level-title {
+  font-family: 'Playfair Display', Georgia, serif; font-size: 1rem;
+  color: var(--ls-text); margin-bottom: 4px;
+}
+.ls-quiz-level-sub {
+  font-family: 'Montserrat', sans-serif; font-size: 0.72rem;
+  color: var(--ls-text-faint); line-height: 1.5;
+}
+.ls-quiz-level-count {
+  font-family: 'Montserrat', sans-serif; font-size: 0.62rem;
+  font-weight: 600; letter-spacing: 0.05em; flex-shrink: 0; margin-top: 4px;
+}
+
+/* Progress bar */
+.ls-quiz-progress {
+  display: flex; align-items: center; gap: 10px; margin-bottom: 16px;
+}
+.ls-quiz-progress-bar {
+  flex: 1; height: 2px; background: var(--ls-card-edge); border-radius: 1px; overflow: hidden;
+}
+.ls-quiz-progress-fill { height: 100%; border-radius: 1px; transition: width 0.4s ease; }
+.ls-quiz-progress-num {
+  font-family: 'Montserrat', sans-serif; font-size: 0.62rem; color: var(--ls-text-faint);
+}
+.ls-quiz-progress-score {
+  font-family: 'Montserrat', sans-serif; font-size: 0.62rem; font-weight: 600;
+}
+
+/* Question */
+.ls-quiz-question {
+  font-family: 'Playfair Display', Georgia, serif; font-size: 0.95rem;
+  color: var(--ls-text); line-height: 1.55; margin: 16px 0;
+}
+
+/* Options */
+.ls-quiz-options { display: flex; flex-direction: column; gap: 6px; }
+.ls-quiz-opt {
+  padding: 12px 14px; border: 1px solid var(--ls-card-edge); border-radius: 6px;
+  background: var(--ls-card); cursor: pointer; color: var(--ls-text-muted);
+  font-family: 'Montserrat', sans-serif; font-size: 0.82rem; text-align: left;
+  transition: all 0.2s; display: flex; align-items: flex-start; gap: 10px; line-height: 1.4;
+}
+.ls-quiz-opt:hover:not(:disabled) { border-color: var(--ls-gold); }
+.ls-quiz-opt.selected { border-color: var(--ls-gold); background: rgba(184,148,62,0.05); color: var(--ls-text); }
+.ls-quiz-opt.correct { border-color: var(--ls-correct); background: rgba(107,127,94,0.08); color: var(--ls-correct); }
+.ls-quiz-opt.incorrect { border-color: #A0614B; background: rgba(160,97,75,0.08); color: #A0614B; }
+.ls-quiz-opt-letter {
+  font-size: 0.68rem; font-weight: 600; color: var(--ls-text-faint); min-width: 16px; margin-top: 1px;
+}
+.ls-quiz-check { margin-left: auto; flex-shrink: 0; }
+
+/* Explanation */
+.ls-quiz-explanation {
+  margin-top: 14px; padding: 16px 18px; border-radius: 8px;
+  animation: ls-slide-up 0.3s ease;
+}
+.ls-quiz-explanation.correct { background: rgba(107,127,94,0.05); border: 1px solid rgba(107,127,94,0.12); }
+.ls-quiz-explanation.incorrect { background: rgba(160,97,75,0.05); border: 1px solid rgba(160,97,75,0.12); }
+.ls-quiz-expl-status {
+  font-family: 'Montserrat', sans-serif; font-size: 0.75rem; font-weight: 600;
+  margin-bottom: 6px; letter-spacing: 0.04em;
+}
+.ls-quiz-explanation.correct .ls-quiz-expl-status { color: var(--ls-correct); }
+.ls-quiz-explanation.incorrect .ls-quiz-expl-status { color: #A0614B; }
+.ls-quiz-expl-text {
+  font-family: 'Crimson Text', Georgia, serif; font-size: 0.85rem;
+  color: var(--ls-text-muted); line-height: 1.7;
+}
+
+/* Action buttons */
+.ls-quiz-action {
+  width: 100%; padding: 13px; border: 1px solid var(--ls-card-edge);
+  border-radius: 6px; background: transparent; cursor: pointer;
+  color: var(--ls-text); font-family: 'Playfair Display', Georgia, serif;
+  font-size: 0.88rem; font-weight: 500; transition: all 0.2s;
+}
+.ls-quiz-action:disabled { opacity: 0.4; cursor: not-allowed; }
+.ls-quiz-action:hover:not(:disabled) { transform: translateY(-1px); }
+.ls-quiz-action--secondary {
+  font-family: 'Montserrat', sans-serif; font-size: 0.78rem; font-weight: 400;
+  color: var(--ls-text-muted);
+}
+.ls-quiz-action--tertiary {
+  font-family: 'Montserrat', sans-serif; font-size: 0.72rem; font-weight: 300;
+  color: var(--ls-text-faint);
+}
+
+/* Results */
+.ls-quiz-result-level {
+  font-family: 'Montserrat', sans-serif; font-size: 0.6rem; font-weight: 600;
+  letter-spacing: 0.15em; text-transform: uppercase; color: var(--ls-text-faint); margin-bottom: 8px;
+}
+.ls-quiz-result-score {
+  font-family: 'Playfair Display', Georgia, serif; font-size: 3rem; font-weight: 300; margin-bottom: 4px;
+}
+.ls-quiz-result-msg {
+  font-family: 'Crimson Text', Georgia, serif; font-size: 0.88rem;
+  color: var(--ls-text-faint); margin-bottom: 28px; line-height: 1.5;
+}
+.ls-quiz-result-ctas { display: flex; flex-direction: column; gap: 8px; }
 
 /* Mobile */
 @media (max-width: 768px) {
   .ls-body { padding: 24px 16px 40px; }
   .ls-label-surface { padding: 28px 22px; min-height: 360px; }
-  .ls-label-grid { gap: 6px; }
+  .ls-label-surface--mini { padding: 16px 14px; }
 }
