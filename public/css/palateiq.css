@@ -58,9 +58,7 @@
 #palateiq-section {
   background-color: var(--piq-bg);
   color: var(--piq-text);
-  min-height: 100%;
-  display: flex;
-  flex-direction: column;
+  overflow: hidden;
 }
 
 .piq-scroll {
