@@ -1,0 +1,149 @@
+/* ============================================================
+   SAME GRAPE, DIFFERENT CLIMATES
+   ============================================================ */
+#grapeclimate-section {
+  --gc-bg: #FAF7F2;
+  --gc-card: #FFFDF9;
+  --gc-text: #2C1810;
+  --gc-text-muted: #6B5D52;
+  --gc-text-faint: #9E9189;
+  --gc-edge: #E8DFD2;
+  background: var(--gc-bg); color: var(--gc-text); padding: 0;
+}
+.gc-scroll { flex:1; overflow-y:auto; -webkit-overflow-scrolling:touch; }
+.gc-body { max-width:520px; margin:0 auto; padding:32px 24px 48px; }
+
+/* Header */
+.gc-header-crumb { font-family:'Montserrat',sans-serif; font-size:0.55rem; letter-spacing:0.25em; text-transform:uppercase; color:var(--gc-text-faint); font-weight:600; margin-bottom:8px; }
+.gc-header-title { font-family:'Playfair Display',Georgia,serif; font-size:1.6rem; font-weight:400; color:var(--gc-text); line-height:1.15; margin-bottom:20px; }
+.gc-header-title em { font-style:italic; color:#B8943E; }
+
+/* Grape list */
+.gc-grape-btn {
+  display:flex; align-items:flex-start; gap:14px; width:100%; padding:0;
+  background:transparent; border:none; cursor:pointer; text-align:left;
+}
+.gc-grape-accent { width:3px; margin-top:14px; height:40px; border-radius:2px; flex-shrink:0; }
+.gc-grape-info { flex:1; padding:12px 0; border-bottom:1px solid var(--gc-edge); }
+.gc-grape-name-row { display:flex; align-items:baseline; gap:6px; margin-bottom:5px; }
+.gc-grape-name { font-family:'Playfair Display',Georgia,serif; font-size:0.95rem; font-weight:500; color:var(--gc-text); }
+.gc-grape-type { font-size:0.55rem; color:var(--gc-text-faint); }
+.gc-grape-chips { display:flex; flex-wrap:wrap; gap:4px; }
+.gc-grape-chip {
+  font-family:'Montserrat',sans-serif; font-size:0.55rem; color:var(--gc-text-faint);
+  background:rgba(44,24,16,0.03); padding:2px 8px; border-radius:8px; line-height:1.4;
+}
+.gc-grape-chip-snap { font-weight:500; }
+.gc-grape-arrow { font-size:0.82rem; color:var(--gc-edge); margin-top:18px; flex-shrink:0; }
+
+/* Detail view */
+.gc-back {
+  background:none; border:none; color:var(--gc-text-faint); font-family:'Montserrat',sans-serif;
+  font-size:0.75rem; cursor:pointer; padding:0; margin-bottom:4px;
+}
+.gc-back:hover { color:var(--gc-text-muted); }
+
+/* Quick hop pills */
+.gc-hop { display:flex; gap:3px; padding:10px 0; overflow-x:auto; -webkit-overflow-scrolling:touch; scrollbar-width:none; }
+.gc-hop::-webkit-scrollbar { display:none; }
+.gc-hop-pill {
+  flex-shrink:0; padding:5px 10px; border-radius:12px; border:1.5px solid transparent;
+  background:rgba(44,24,16,0.02); cursor:pointer; font-family:'Montserrat',sans-serif;
+  font-size:0.62rem; font-weight:500; color:var(--gc-text-faint); white-space:nowrap;
+}
+.gc-hop-pill:hover { border-color:var(--gc-edge); }
+.gc-hop-pill.active { color:var(--gc-text); }
+
+/* Grape detail header */
+.gc-detail-name { display:flex; align-items:center; gap:8px; margin-bottom:4px; }
+.gc-detail-accent { width:3px; height:24px; border-radius:2px; }
+.gc-detail-title { font-family:'Playfair Display',Georgia,serif; font-size:1.35rem; font-weight:400; color:var(--gc-text); }
+
+/* Region columns */
+.gc-regions-row { display:flex; gap:4px; margin-top:20px; margin-bottom:6px; }
+.gc-region-col { flex:1; text-align:center; min-width:0; }
+.gc-region-icon { font-size:1.1rem; margin-bottom:3px; }
+.gc-region-name { font-family:'Playfair Display',Georgia,serif; font-size:0.62rem; font-weight:500; color:var(--gc-text); line-height:1.2; }
+.gc-region-meta { font-family:'Montserrat',sans-serif; font-size:0.48rem; color:var(--gc-text-faint); margin-top:1px; }
+
+/* Snap descriptions */
+.gc-snaps-row { display:flex; gap:4px; margin-bottom:20px; }
+.gc-snap-col { flex:1; text-align:center; min-width:0; font-family:'Montserrat',sans-serif; font-size:0.55rem; font-weight:500; line-height:1.3; }
+
+/* Scale bars */
+.gc-scales { padding:16px 0; border-top:1px solid var(--gc-edge); }
+.gc-scale-row { margin-bottom:14px; }
+.gc-scale-label { font-family:'Montserrat',sans-serif; font-size:0.6rem; color:var(--gc-text-faint); font-weight:500; margin-bottom:6px; }
+.gc-scale-cols { display:flex; gap:8px; }
+.gc-scale-col { flex:1; min-width:0; }
+.gc-scale-bars { display:flex; align-items:flex-end; gap:1px; height:24px; }
+.gc-scale-bar { flex:1; border-radius:1.5px; transition:background 0.4s ease; }
+
+/* Analysis */
+.gc-analysis {
+  padding:18px; background:rgba(44,24,16,0.02); border:1px solid var(--gc-edge);
+  border-radius:8px; margin-bottom:20px;
+}
+.gc-analysis-title {
+  font-family:'Montserrat',sans-serif; font-size:0.55rem; letter-spacing:0.12em;
+  text-transform:uppercase; font-weight:600; margin-bottom:12px;
+}
+.gc-analysis-item { margin-bottom:10px; }
+.gc-analysis-item-title { font-family:'Montserrat',sans-serif; font-size:0.75rem; color:var(--gc-text); font-weight:500; margin-bottom:3px; }
+.gc-analysis-item-shift { font-size:0.62rem; font-weight:500; }
+.gc-analysis-item-text { font-family:'Crimson Text',Georgia,serif; font-size:0.78rem; color:var(--gc-text-muted); line-height:1.65; }
+.gc-analysis-same-title { font-family:'Montserrat',sans-serif; font-size:0.55rem; letter-spacing:0.12em; text-transform:uppercase; font-weight:600; color:var(--gc-text-faint); margin-bottom:8px; }
+.gc-analysis-same-text { font-family:'Crimson Text',Georgia,serif; font-size:0.78rem; color:var(--gc-text-muted); line-height:1.65; }
+
+/* Deep dives */
+.gc-dives-title { font-family:'Montserrat',sans-serif; font-size:0.55rem; letter-spacing:0.12em; color:var(--gc-text-faint); text-transform:uppercase; font-weight:600; margin-bottom:10px; }
+.gc-dive {
+  margin-bottom:4px; border:1px solid var(--gc-edge); border-radius:6px;
+  overflow:hidden; transition:all 0.25s;
+}
+.gc-dive.open { border-color:rgba(44,24,16,0.08); }
+.gc-dive-header {
+  display:flex; align-items:center; gap:10px; padding:12px 14px; cursor:pointer;
+}
+.gc-dive-icon { font-size:1.1rem; }
+.gc-dive-name { flex:1; font-family:'Playfair Display',Georgia,serif; font-size:0.82rem; font-weight:500; color:var(--gc-text); }
+.gc-dive-meta { font-family:'Montserrat',sans-serif; font-size:0.6rem; color:var(--gc-text-faint); margin-left:6px; }
+.gc-dive-arrow { font-size:0.68rem; color:var(--gc-text-faint); transition:transform 0.25s; }
+.gc-dive.open .gc-dive-arrow { transform:rotate(180deg); }
+
+.gc-dive-body { padding:0 14px 16px; }
+.gc-dive-sep { height:1px; background:var(--gc-edge); margin-bottom:14px; }
+.gc-dive-note {
+  font-family:'Crimson Text',Georgia,serif; font-size:0.8rem; color:var(--gc-text-muted);
+  line-height:1.75; margin-bottom:14px; padding-left:12px; border-left:2px solid;
+}
+.gc-dive-metrics { display:flex; gap:6px; flex-wrap:wrap; margin-bottom:12px; }
+.gc-dive-metric {
+  font-family:'Montserrat',sans-serif; font-size:0.55rem; padding:3px 8px;
+  border-radius:8px; background:rgba(44,24,16,0.02); border:1px solid var(--gc-edge); color:var(--gc-text-faint);
+}
+.gc-dive-metric-val { font-weight:500; }
+.gc-dive-price {
+  font-family:'Montserrat',sans-serif; font-size:0.55rem; padding:3px 9px;
+  border-radius:8px; font-weight:500;
+}
+.gc-dive-prod-label { font-family:'Montserrat',sans-serif; font-size:0.48rem; letter-spacing:0.1em; text-transform:uppercase; font-weight:600; color:var(--gc-text-faint); margin-bottom:4px; margin-top:10px; }
+.gc-dive-prods { display:flex; flex-wrap:wrap; gap:3px; }
+.gc-dive-prod {
+  font-family:'Montserrat',sans-serif; font-size:0.62rem; padding:3px 8px;
+  border-radius:10px; background:rgba(44,24,16,0.02); border:1px solid var(--gc-edge); color:var(--gc-text-faint);
+}
+
+/* Closing quote */
+.gc-closing { text-align:center; padding:12px 0 4px; }
+.gc-closing-text { font-family:'Playfair Display',Georgia,serif; font-size:0.88rem; color:var(--gc-text); line-height:1.6; }
+.gc-closing-text em { font-style:italic; }
+
+/* Animation */
+@keyframes gc-fade-up { from { opacity:0; transform:translateY(8px); } to { opacity:1; transform:translateY(0); } }
+.gc-animate { animation: gc-fade-up 0.3s ease; }
+
+@media (max-width:768px) {
+  .gc-body { padding:24px 16px 40px; }
+}
+@media (prefers-reduced-motion:reduce) { .gc-animate { animation:none; } }
