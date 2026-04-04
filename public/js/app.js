@@ -47,8 +47,46 @@ document.addEventListener('DOMContentLoaded', () => {
 
   let currentSection = null;
 
+  // ── Route map: sectionId → URL path ───────────────────
+  const sectionRoutes = {
+    grapes:      '/learn/grapes',
+    producers:   '/learn/producers',
+    regions:     '/learn/regions',
+    pairing:     '/learn/food-pairing',
+    dailywine:   '/learn/daily-emails',
+    palateiq:    '/learn/palate-iq',
+    study:       '/study/classes',
+    cmsprep:     '/study/cms-prep',
+    wset3prep:   '/study/wset3-prep',
+    catrip:      '/visit/plan-trip',
+    caregions:   '/visit/wine-country',
+    events:      '/visit/events',
+    analyzer:    '/sip/favorites',
+    diary:       '/sip/upload-bottle',
+    palate:      '/sip/my-palate',
+    vault:       '/sip/tasting-history',
+    recs:        '/sip/recommendations',
+    preferences: '/sip/account',
+    about:       '/about',
+    chat:        '/chat',
+  };
+  // Reverse map: path → sectionId
+  const routeToSection = {};
+  for (const [id, path] of Object.entries(sectionRoutes)) {
+    routeToSection[path] = id;
+  }
+
+  function sectionToHash(sectionId) {
+    return '#' + (sectionRoutes[sectionId] || '/' + sectionId);
+  }
+
+  function hashToSection(hash) {
+    const path = (hash || '').replace(/^#/, '');
+    return routeToSection[path] || null;
+  }
+
   // ── Show Home ──────────────────────────────────────────
-  function showHome() {
+  function showHome(pushState) {
     sections.forEach(s => s.classList.remove('active'));
     mainContent.classList.remove('section-active');
     mainContent.scrollTop = 0;
@@ -56,10 +94,13 @@ document.addEventListener('DOMContentLoaded', () => {
     updateHeaderState();
     updateBreadcrumb(null);
     clearActiveNav();
+    if (pushState !== false) {
+      history.pushState({ section: null }, '', '#/');
+    }
   }
 
   // ── Switch Section ─────────────────────────────────────
-  function switchSection(sectionId) {
+  function switchSection(sectionId, pushState) {
     sections.forEach(s => s.classList.remove('active'));
     mainContent.classList.add('section-active');
 
@@ -73,6 +114,10 @@ document.addEventListener('DOMContentLoaded', () => {
     updateActiveNav(sectionId);
     closeMobileNav();
 
+    if (pushState !== false) {
+      history.pushState({ section: sectionId }, '', sectionToHash(sectionId));
+    }
+
     // Lazy-init components
     if (sectionId === 'regions' && !window._regionsInit) {
       window._regionsInit = true;
@@ -80,7 +125,6 @@ document.addEventListener('DOMContentLoaded', () => {
     }
     if (sectionId === 'pairing' && !window._pairingInit) {
       window._pairingInit = true;
-      // Food pairing now handled by pairing-explorer.js
     }
     if (sectionId === 'analyzer' && !window._analyzerInit) {
       window._analyzerInit = true;
@@ -95,6 +139,16 @@ document.addEventListener('DOMContentLoaded', () => {
       window.caTripPlanner && window.caTripPlanner.buildRegionsGuide();
     }
   }
+
+  // ── Popstate: back/forward button support ─────────────
+  window.addEventListener('popstate', (e) => {
+    const section = e.state ? e.state.section : hashToSection(location.hash);
+    if (section) {
+      switchSection(section, false);
+    } else {
+      showHome(false);
+    }
+  });
 
   // ── Header state (transparent on home, solid on sections) ──
   function updateHeaderState() {
@@ -130,7 +184,7 @@ document.addEventListener('DOMContentLoaded', () => {
     const label = sectionLabels[sectionId] || sectionId;
     breadcrumb.innerHTML = `<a id="bc-home">Home</a><span class="breadcrumb-sep">/</span><span class="breadcrumb-current">${label}</span>`;
     breadcrumb.classList.add('visible');
-    document.getElementById('bc-home').addEventListener('click', showHome);
+    document.getElementById('bc-home').addEventListener('click', () => showHome());
   }
 
   // ── Active state on nav links ──
@@ -165,7 +219,7 @@ document.addEventListener('DOMContentLoaded', () => {
   });
 
   // Brand → home
-  document.getElementById('nav-home').addEventListener('click', showHome);
+  document.getElementById('nav-home').addEventListener('click', () => showHome());
 
   // ── Mobile hamburger ──
   function openMobileNav() {
@@ -189,8 +243,16 @@ document.addEventListener('DOMContentLoaded', () => {
   window.wineAnalyzer  = new WineAnalyzer();
   window.caTripPlanner = new CaTripPlanner();
 
-  // Start on home page
-  updateHeaderState();
+  // ── Deep link: load section from URL hash on page load ──
+  const initialSection = hashToSection(location.hash);
+  if (initialSection) {
+    switchSection(initialSection, false);
+    // Replace initial history entry so back doesn't double
+    history.replaceState({ section: initialSection }, '', sectionToHash(initialSection));
+  } else {
+    showHome(false);
+    history.replaceState({ section: null }, '', location.hash || '#/');
+  }
 
   // ── Topnav auth state ──
   function updateTopnavAuth() {
