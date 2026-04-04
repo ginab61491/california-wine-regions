@@ -1,0 +1,146 @@
+{"beginner":[
+{"dish":"Grilled Salmon with Lemon Butter","variation":"Now it has a spicy teriyaki glaze",
+ "wines":[
+   {"name":"Chardonnay","region":"Burgundy","color":"#C9A84E","match":"best","explore":"The buttery oak of Burgundy Chardonnay mirrors the lemon butter sauce. The wine's body matches salmon's medium weight perfectly.","whyBest":"Chardonnay's body matches salmon's weight, and its buttery oak character echoes the lemon butter sauce."},
+   {"name":"Cabernet Sauvignon","region":"Napa Valley","color":"#4A1D2E","match":"avoid","explore":"Cabernet's tannins chemically react with the oils in salmon to produce a bitter, metallic flavor. The wine's power buries the fish's delicacy.","whyBest":"Cabernet's tannins react with fish oils to produce a metallic flavor. A fundamental chemistry clash."},
+   {"name":"Riesling","region":"Alsace","color":"#9AAE3E","match":"good","explore":"The bright acidity cuts through the butter cleanly, and the citrus notes pick up the lemon. A slightly lighter feel than Chardonnay.","whyBest":"Riesling is excellent, but Chardonnay edges it because the oaky, buttery character specifically mirrors the lemon butter."}
+ ],
+ "varWines":[
+   {"name":"Gewurztraminer","region":"Alsace","color":"#D4A84B","match":"best","explore":"The wine's lychee and ginger aromatics echo the teriyaki's ginger and sweetness. Its residual sugar balances the glaze.","whyBest":"Gewurztraminer's lychee and ginger aromatics are a natural echo of teriyaki's flavor profile."},
+   {"name":"Chardonnay","region":"Burgundy","color":"#C9A84E","match":"avoid","explore":"The oaky butter that was perfect with lemon butter now feels muddy against soy sauce. Vanilla from oak clashes with ginger.","whyBest":"Oaked Chardonnay's butter and vanilla fight with soy and ginger. Too many competing rich flavors."},
+   {"name":"Riesling","region":"Mosel","color":"#9AAE3E","match":"good","explore":"The off-dry sweetness tames the spicy heat nicely, and the light body doesn't compete. But you'd miss the aromatic echo Gewurztraminer creates.","whyBest":"Riesling works well, but Gewurztraminer's exotic spice specifically mirrors teriyaki's ginger and star anise."}
+ ],
+ "principle":"Match weight first. Fish = medium-bodied wine. Then consider the sauce.","principleVar":"When the sauce changes, the wine changes. Spicy-sweet glazes need aromatic whites with sweetness."},
+
+{"dish":"Margherita Pizza","variation":"Now topped with spicy soppressata and honey",
+ "wines":[
+   {"name":"Sangiovese","region":"Chianti","color":"#A0522D","match":"best","explore":"The wine's tangy acidity locks into the tomato sauce. The earthy, cherry character complements mozzarella and basil.","whyBest":"Sangiovese and tomato share the same acidity profile. They evolved together on the Italian table."},
+   {"name":"Sauvignon Blanc","region":"Sancerre","color":"#6D9E48","match":"avoid","explore":"The wine tastes thin and grassy against the warm cheese. The herbal notes feel out of place with tomato sauce.","whyBest":"Sauvignon Blanc's herbaceous character fights the mozzarella. Wrong region, wrong weight."},
+   {"name":"Merlot","region":"Bordeaux","color":"#722F37","match":"good","explore":"Perfectly pleasant. The soft fruit and medium body don't clash. But compared to Sangiovese, something is missing.","whyBest":"Merlot works but Sangiovese's acidity specifically mirrors tomato sauce. Merlot is pleasant but not magical."}
+ ],
+ "varWines":[
+   {"name":"Lambrusco","region":"Emilia-Romagna","color":"#8B2500","match":"best","explore":"The bubbles scrub the spicy fat from your palate, and the slight sweetness tempers the soppressata's heat while complementing the honey.","whyBest":"Lambrusco's bubbles scrub the palate of spicy fat, and its sweetness tempers heat and complements the honey."},
+   {"name":"Sangiovese","region":"Chianti","color":"#A0522D","match":"good","explore":"Still handles the tomato sauce. But without bubbles, the spicy fat lingers, and the honey makes the dry wine taste austere.","whyBest":"Sangiovese still handles tomato, but Lambrusco is better because carbonation cuts through fat and sweetness matches honey."},
+   {"name":"Malbec","region":"Mendoza","color":"#4B0082","match":"avoid","explore":"The ripe plum fruit stacks with the honey to create a cloying wall of sweetness. By the third slice, your palate feels exhausted.","whyBest":"Malbec's ripe plum stacks with honey creating cloying sweetness. You need freshness, not more richness."}
+ ],
+ "principle":"Pair the sauce, not the crust. Tomato = high-acid wine. Cheese = medium body.","principleVar":"Spicy + sweet toppings need bubbles or off-dry wines to reset your palate."},
+
+{"dish":"Roast Chicken with Herbs","variation":"Now it's fried chicken with hot sauce",
+ "wines":[
+   {"name":"Pinot Noir","region":"Burgundy","color":"#C25B5B","match":"best","explore":"The earthy, herbal character echoes the rosemary and thyme. Medium body doesn't overwhelm the meat.","whyBest":"Pinot Noir's earthy, herbal character echoes the herbs. Medium body matches chicken's weight. The textbook pairing."},
+   {"name":"Chardonnay","region":"Napa Valley","color":"#C9A84E","match":"good","explore":"The buttery richness complements golden roasted skin. Enjoyable, but the wine doesn't echo the herbs the way Pinot does.","whyBest":"Chardonnay is fine but Pinot's earthy, herbal notes mirror the herbs. A flavor echo white wine can't create."},
+   {"name":"Shiraz","region":"Barossa Valley","color":"#2D1524","match":"avoid","explore":"The wine steamrolls the chicken. At 15% ABV with dense, jammy fruit, all you'd taste is the Shiraz. The chicken disappears.","whyBest":"Barossa Shiraz at 15% is three weight classes too heavy. The chicken disappears behind the wine's power."}
+ ],
+ "varWines":[
+   {"name":"Champagne","region":"Champagne","color":"#C9A84E","match":"best","explore":"The carbonation scrubs fried oil from your palate. The acidity cuts through the hot sauce's heat. A modern classic.","whyBest":"Champagne's carbonation scrubs fried oil from your palate, and high acidity tames hot sauce. A modern classic."},
+   {"name":"Riesling","region":"Finger Lakes","color":"#9AAE3E","match":"good","explore":"The off-dry sweetness tames the hot sauce. But without bubbles, the fried oil lingers more than with Champagne.","whyBest":"Riesling's sweetness handles heat, but Champagne's bubbles do double duty: cutting through both oil AND capsaicin."},
+   {"name":"Pinot Noir","region":"Burgundy","color":"#C25B5B","match":"avoid","explore":"The hot sauce burns right through Pinot's subtle cherry and earth. All you'd taste is heat and alcohol. A waste of Burgundy.","whyBest":"Delicate Pinot Noir gets steamrolled. The hot sauce burns through its subtle fruit and leaves only alcohol."}
+ ],
+ "principle":"Roast chicken is the sommelier's best friend. Almost everything works. Match the herbs and cooking method.","principleVar":"Fried food needs bubbles or high acid. Hot sauce needs sweetness or bubbles. Champagne + fried chicken is a modern classic."},
+
+{"dish":"Caesar Salad","variation":"Now grilled chicken Caesar with anchovies",
+ "wines":[
+   {"name":"Pinot Grigio","region":"Alto Adige","color":"#C9A84E","match":"best","explore":"Light and crisp, it slips in behind the salad without competing. The neutral profile lets the Parmesan and lemon dressing do the talking.","whyBest":"Pinot Grigio's light body and neutral profile don't compete with the salad. It refreshes without imposing flavor."},
+   {"name":"Viognier","region":"Condrieu","color":"#D4AB6A","match":"avoid","explore":"Heavy and floral, it would feel like wearing a fur coat to the beach. The low acidity can't match the lemon dressing.","whyBest":"Viognier's heavy, floral, low-acid profile overwhelms the greens and clashes with the lemon dressing."},
+   {"name":"Sauvignon Blanc","region":"Marlborough","color":"#6D9E48","match":"good","explore":"Herbaceous notes and bright acidity work nicely. But Marlborough's pungent intensity can compete with the salad rather than complement it.","whyBest":"Sauvignon Blanc works, but Pinot Grigio edges it because Marlborough's intensity competes rather than complements."}
+ ],
+ "varWines":[
+   {"name":"Vermentino","region":"Sardinia","color":"#8BB855","match":"best","explore":"The saline, sea-breeze character tastes like it grew up alongside anchovies. Because it did, on the same Mediterranean coast.","whyBest":"Vermentino's saline, coastal character is a natural partner for anchovies. They grew up together on the same coast."},
+   {"name":"Sauvignon Blanc","region":"Sancerre","color":"#6D9E48","match":"good","explore":"The flinty mineral character handles the anchovy's salt. But it lacks the saline, coastal echo that Vermentino creates.","whyBest":"Sancerre works, but Vermentino is better because its Mediterranean salinity is a natural anchovy companion."},
+   {"name":"Chardonnay","region":"Napa Valley","color":"#C9A84E","match":"avoid","explore":"The oak and butter create a queasy combination with anchovy's intense brininess. Woody and fishy together.","whyBest":"Napa Chardonnay's butter and oak clash with anchovy's brininess. An unpleasant combination."}
+ ],
+ "principle":"Salads need high-acid, light wines. The dressing matters more than the greens.","principleVar":"Anchovies add umami and salt. Reach for coastal Mediterranean whites. They grew up together."},
+
+{"dish":"Spaghetti Bolognese","variation":"Now a rich wild boar ragu with pappardelle",
+ "wines":[
+   {"name":"Sangiovese","region":"Chianti Classico","color":"#A0522D","match":"best","explore":"The wine's tangy acidity matches the tomato's tartness. The earthy, herbal character mirrors the slow-cooked meat. Italian grandmothers have served this for generations.","whyBest":"Sangiovese evolved alongside tomato-based pasta sauces in Tuscany. High acidity matches tomato, earthy character mirrors the meat."},
+   {"name":"Pinot Noir","region":"Oregon","color":"#C25B5B","match":"avoid","explore":"The heavy meat sauce buries Pinot's delicate cherry and earth completely. Like whispering in a loud room.","whyBest":"Pinot Noir is too light. The rich meat sauce overwhelms its delicate structure."},
+   {"name":"Montepulciano","region":"Abruzzo","color":"#5B2333","match":"good","explore":"Rustic and full-bodied, it handles the sauce. But you'd miss the precise acidity match that Sangiovese creates.","whyBest":"Montepulciano works, but Sangiovese's acidity specifically mirrors tomato's tartaric acid profile."}
+ ],
+ "varWines":[
+   {"name":"Barolo","region":"Barolo","color":"#8B5742","match":"best","explore":"The massive tannins bind to wild boar's proteins, softening the wine and tenderizing the perception of the meat. A legendary Piedmontese pairing.","whyBest":"Barolo's massive tannins bind to the proteins in wild boar, softening both simultaneously. Gamey richness demands structural power."},
+   {"name":"Sangiovese","region":"Brunello di Montalcino","color":"#A0522D","match":"good","explore":"Brunello has more power than Chianti and handles the gamey intensity better. But compared to Barolo, it doesn't grip the boar's richness as firmly.","whyBest":"Brunello handles intensity better, but Barolo's tannin structure is specifically what wild boar needs."},
+   {"name":"Sauvignon Blanc","region":"Loire","color":"#6D9E48","match":"avoid","explore":"The rich, gamey ragu would obliterate this wine entirely. Like bringing a bicycle to a truck race.","whyBest":"White wine has no tannin. It gets completely overwhelmed by the ragu's richness and gamey intensity."}
+ ],
+ "principle":"Italian food + Italian wine. Tomato demands acidity. Meat demands body.","principleVar":"Gamey, rich meats need powerful, tannic wines. The tannin-protein bond softens both the wine and the meat."},
+
+{"dish":"Grilled Steak, Medium-Rare","variation":"Now peppercorn-crusted steak with blue cheese",
+ "wines":[
+   {"name":"Cabernet Sauvignon","region":"Napa Valley","color":"#4A1D2E","match":"best","explore":"Tannins bind to the beef protein, making the wine smoother and the meat more tender. Fat carries Cabernet's cassis and cedar flavors deeper.","whyBest":"Cabernet's tannins bind to beef protein, making wine smoother and meat more tender. Fat carries the flavor deeper."},
+   {"name":"Malbec","region":"Mendoza","color":"#4B0082","match":"good","explore":"Plush, fruity, enough structure. Argentinians drink this with asado every day. But softer tannins create a less dramatic transformation.","whyBest":"Malbec is a great steak wine, but Cabernet's firmer tannin structure creates a stronger protein bond."},
+   {"name":"Riesling","region":"Mosel","color":"#9AAE3E","match":"avoid","explore":"At 7% ABV with delicate sweetness, completely destroyed by the steak. Like pairing a whisper with a shout.","whyBest":"Mosel Riesling at 7% is featherweight. The steak obliterates it. Weight must match weight."}
+ ],
+ "varWines":[
+   {"name":"Syrah","region":"Northern Rhone","color":"#2D1524","match":"best","explore":"Black pepper in the wine meets black pepper on the steak. They contain the same compound (rotundone). The flavors literally speak the same chemical language.","whyBest":"Syrah contains rotundone, the same compound as black pepper. Peppercorn crust + peppery wine = same chemical language."},
+   {"name":"Cabernet Sauvignon","region":"Bordeaux","color":"#4A1D2E","match":"good","explore":"Still handles the steak well. But Bordeaux's restraint gets slightly overwhelmed by blue cheese, and you'd miss the peppery echo.","whyBest":"Cabernet handles steak, but Syrah is better: pepper compound echoes the crust, and fuller body stands up to blue cheese."},
+   {"name":"Pinot Grigio","region":"Italy","color":"#C9A84E","match":"avoid","explore":"Blue cheese alone would crush this wine before the steak arrives. Like drinking slightly acidic water next to very strong cheese.","whyBest":"Pinot Grigio has neither the power for blue cheese nor the pepper for the crust."}
+ ],
+ "principle":"Red meat + tannic red wine. Protein softens tannin. Fat carries flavor. Wine pairing 101.","principleVar":"Pepper demands peppery wine (Syrah). Blue cheese demands bold wine. Never pair delicate with powerful."}
+],
+
+"intermediate":[
+{"dish":"Pan-Seared Duck Breast with Cherry Reduction","variation":"Now it's duck confit with lentils",
+ "wines":[
+   {"name":"Pinot Noir","region":"Gevrey-Chambertin","color":"#C25B5B","match":"best","explore":"The red cherry fruit mirrors the cherry reduction. Gevrey's earthy depth complements the gamey breast. Each bite makes the wine better.","whyBest":"Gevrey-Chambertin's cherry-fruited Pinot mirrors the reduction, while earthy depth complements the gamey breast."},
+   {"name":"Grenache","region":"Chateauneuf-du-Pape","color":"#C25831","match":"good","explore":"Rich enough for the duck, soft tannins don't fight gamey meat. But you'd miss the cherry-on-cherry echo.","whyBest":"Grenache handles duck well, but Pinot's cherry fruit specifically mirrors the cherry reduction."},
+   {"name":"Sauvignon Blanc","region":"Marlborough","color":"#6D9E48","match":"avoid","explore":"The duck's richness would flatten this wine instantly. You'd taste gamey meat with a thin, herbaceous afterthought.","whyBest":"Sauvignon Blanc is several weight classes too light. The gamey breast would flatten it."}
+ ],
+ "varWines":[
+   {"name":"Madiran","region":"Southwest France","color":"#3B1F2B","match":"best","explore":"Tannat is France's most tannic grape. Duck confit is France's fattiest dish. They evolved together in Southwest France. Tannin cuts through preserved duck fat like a knife.","whyBest":"Tannat and duck confit evolved together in Southwest France. Tannin cuts through preserved duck fat like a knife through butter."},
+   {"name":"Cahors Malbec","region":"Cahors","color":"#4B0082","match":"good","explore":"Darker and more tannic than Argentine Malbec. It handles the fat, but compared to Tannat, the tannin grip is slightly less firm.","whyBest":"Cahors works, but Madiran's Tannat has even more tannin, which confit's extreme fat content demands."},
+   {"name":"Pinot Noir","region":"Burgundy","color":"#C25B5B","match":"avoid","explore":"The preserved duck fat completely smothers Pinot's delicate fruit. Like trying to cut butter with a feather.","whyBest":"Pinot Noir, perfect for seared breast, is too delicate for duck preserved in its own fat."}
+ ],
+ "principle":"Duck is rich. You need either elegance that cuts through or structure that matches. The sauce tells you which.","principleVar":"Confit = preserved in fat. Fat demands tannin. Southwest French wines evolved alongside this dish."},
+
+{"dish":"Seared Scallops with Brown Butter and Capers","variation":"Now the scallops are in a Thai green curry",
+ "wines":[
+   {"name":"Burgundy Blanc","region":"Meursault","color":"#C9A84E","match":"best","explore":"Meursault's hazelnut and butter notes create a direct flavor echo with brown butter. The wine and the sauce speak the same language.","whyBest":"Meursault's hazelnut and butter notes from lees aging create a direct flavor echo with brown butter sauce."},
+   {"name":"Muscadet","region":"Loire","color":"#8BB855","match":"good","explore":"Salinity and mineral complement scallops and capers. But compared to Meursault, it feels lean against brown butter.","whyBest":"Muscadet works for shellfish, but Meursault's rich, nutty character mirrors brown butter. Muscadet is too lean for the sauce."},
+   {"name":"Cabernet Sauvignon","region":"Napa Valley","color":"#4A1D2E","match":"avoid","explore":"You'd taste something metallic and fishy. Cabernet's tannins react with scallop proteins to produce a bitter, metallic off-flavor.","whyBest":"Cabernet's tannins react with shellfish proteins to produce metallic off-flavor. A fundamental chemistry clash."}
+ ],
+ "varWines":[
+   {"name":"Gruner Veltliner","region":"Wachau","color":"#9AAE3E","match":"best","explore":"The white pepper spice echoes green curry's lemongrass and galangal. The herbal character and crisp acidity cut through coconut milk's richness.","whyBest":"Gruner Veltliner's white pepper echoes green curry spices, and its crisp acidity cuts through coconut milk."},
+   {"name":"Riesling","region":"Alsace","color":"#9AAE3E","match":"good","explore":"Off-dry sweetness handles the heat. But compared to Gruner, you miss the herbal, peppery echo with the curry spices.","whyBest":"Riesling handles heat well, but Gruner's peppery, herbal character specifically mirrors green curry's aromatics."},
+   {"name":"Burgundy Blanc","region":"Meursault","color":"#C9A84E","match":"avoid","explore":"The buttery richness that was perfect with brown butter now fights coconut milk for the same flavor space. Two rich, creamy things competing.","whyBest":"Meursault, perfect with brown butter, clashes with coconut milk. Two creamy flavors fighting for the same space."}
+ ],
+ "principle":"Shellfish = no tannin, ever. Then match the sauce: brown butter calls for nutty richness.","principleVar":"Asian spice needs aromatic whites. Coconut milk needs crisp acidity. The dish tells you the style."},
+
+{"dish":"Whole Roasted Branzino with Fennel","variation":"Now it's bouillabaisse with rouille",
+ "wines":[
+   {"name":"Vermentino","region":"Provence","color":"#8BB855","match":"best","explore":"Mediterranean fish + Mediterranean white. Vermentino's saline character echoes both the fennel's anise and the fish's brine.","whyBest":"Vermentino grows on the same coast where branzino swims. Its herbal, saline character mirrors fennel and sea-salt brine."},
+   {"name":"Albarino","region":"Rias Baixas","color":"#8BB855","match":"good","explore":"Stone fruit and salinity work. But Albarino is Atlantic, a different coastal profile. It works technically but lacks Mediterranean kinship.","whyBest":"Albarino's salinity works, but Vermentino's Mediterranean origin is a better geographic match."},
+   {"name":"Syrah","region":"Northern Rhone","color":"#2D1524","match":"avoid","explore":"Peppery tannins with delicate white fish create a metallic, unpleasant aftertaste. The wine's power buries the fish.","whyBest":"Syrah's tannins react with fish oils. One of wine pairing's fundamental chemistry clashes."}
+ ],
+ "varWines":[
+   {"name":"Bandol Rose","region":"Bandol","color":"#E8A0A0","match":"best","explore":"Bouillabaisse was born near Marseille. Bandol rose is made 30 minutes away. The rose has structure of a light red, enough for the rich rouille and saffron broth.","whyBest":"Bandol rose has structure for rouille and saffron broth, with freshness for fish stew. Made 30 minutes from where bouillabaisse was born."},
+   {"name":"Cassis Blanc","region":"Cassis","color":"#C9A84E","match":"good","explore":"The white wine of Cassis was literally designed by proximity for bouillabaisse. But compared to Bandol rose, slightly less body for the rouille.","whyBest":"Cassis Blanc is the purist's choice. Bandol rose edges it because rouille's richness benefits from rose's extra body."},
+   {"name":"Vermentino","region":"Provence","color":"#8BB855","match":"avoid","explore":"Perfect with simple roasted branzino, but too lean for bouillabaisse's richness. The rouille and saffron broth need more weight.","whyBest":"Vermentino, perfect with simple branzino, is too lean for rouille and saffron broth."}
+ ],
+ "principle":"Simple fish = simple white. Pair the cooking method: raw = lightest, grilled = medium, roasted = fullest.","principleVar":"Bouillabaisse is a stew, not a fillet. Provencal rose bridges fish and sauce with the structure of a light red."},
+
+{"dish":"Dark Chocolate Mousse","variation":"Now it's a lemon tart with meringue",
+ "wines":[
+   {"name":"Banyuls","region":"Roussillon","color":"#4B0082","match":"best","explore":"Fortified Grenache with dried cherry, cocoa, and coffee notes that share actual flavor compounds with dark chocolate.","whyBest":"Banyuls' cocoa and dried cherry notes mirror dark chocolate's flavor compounds. They share the same bittersweet character."},
+   {"name":"Tawny Port","region":"Douro","color":"#8B5742","match":"good","explore":"Twenty-year Tawny's caramel complements chocolate beautifully. But compared to Banyuls, the caramel direction is slightly different from chocolate's cocoa-cherry direction.","whyBest":"Tawny Port works beautifully, but Banyuls' cocoa notes overlap with dark chocolate more directly."},
+   {"name":"Moscato d'Asti","region":"Piedmont","color":"#9AAE3E","match":"avoid","explore":"At 5.5% with gentle sweetness, completely outgunned by dark chocolate's intensity. The chocolate makes the wine taste watery.","whyBest":"Moscato at 5.5% is outgunned by dark chocolate's bitterness. The wine tastes watery."}
+ ],
+ "varWines":[
+   {"name":"Sauternes","region":"Sauternes","color":"#C9A84E","match":"best","explore":"Citrus peel notes echo the lemon curd, sweetness matches the meringue, and acidity keeps everything fresh. Triple harmony.","whyBest":"Sauternes has citrus echoing lemon, sweetness matching meringue, and acidity keeping everything fresh. Triple harmony."},
+   {"name":"Moscato d'Asti","region":"Piedmont","color":"#9AAE3E","match":"good","explore":"Light, slightly sparkling, peachy-sweet. Charming but lacks the citrus-peel echo and botrytized texture that match the meringue.","whyBest":"Moscato is charming, but Sauternes' citrus-peel character echoes the lemon curd and its richness matches meringue."},
+   {"name":"Banyuls","region":"Roussillon","color":"#4B0082","match":"avoid","explore":"Dark, intense, cocoa-inflected character feels completely wrong with bright lemon. Like pairing dark chocolate with lemon.","whyBest":"Banyuls, perfect with chocolate, is too dark and heavy for a citrus dessert. Match the flavor family."}
+ ],
+ "principle":"The wine must be sweeter than the dessert. If the dessert is sweeter, the wine tastes sour. The only absolute rule.","principleVar":"Match the dessert's flavor family: chocolate = dark fortified, citrus = lighter sweet wines."},
+
+{"dish":"Oysters on the Half Shell","variation":"Now baked Oysters Rockefeller with spinach and Pernod",
+ "wines":[
+   {"name":"Muscadet","region":"Loire","color":"#8BB855","match":"best","explore":"Lean, saline, mineral. Muscadet tastes like the ocean. Sur lie aging adds texture. No other wine disappears into the oyster's brine so seamlessly.","whyBest":"Muscadet's salinity, leanness, and mineral character mirror the ocean. No other wine disappears into the oyster's brine so seamlessly."},
+   {"name":"Champagne","region":"Champagne","color":"#C9A84E","match":"good","explore":"Wonderful with oysters. Bubbles and mineral character complement brininess. But Champagne adds a layer of toast that's one step removed from pure oceanic harmony.","whyBest":"Champagne is excellent, but Muscadet edges it because its saline character literally mimics the ocean."},
+   {"name":"Chardonnay","region":"Napa Valley","color":"#C9A84E","match":"avoid","explore":"Oak, butter, and tropical fruit actively clash with raw oysters. The wood tannins create an unpleasant woody note against the brine.","whyBest":"Napa Chardonnay's oak, butter, and tropical fruit actively clash with raw oysters."}
+ ],
+ "varWines":[
+   {"name":"Chablis","region":"Chablis","color":"#C9A84E","match":"best","explore":"Unoaked Chardonnay grown on Kimmeridgian limestone: literally ancient oyster shell fossils. More body than Muscadet for baked preparations.","whyBest":"Chablis grows on ancient oyster shell fossils. More body than Muscadet for baked preparations. The terroir contains actual oysters."},
+   {"name":"Verdicchio","region":"Castelli di Jesi","color":"#8BB855","match":"good","explore":"Almond, mineral, saline. Verdicchio's weight handles the Pernod and spinach. But Chablis has that unique geological connection.","whyBest":"Verdicchio works well, but Chablis' oyster-fossil limestone gives it unique mineral kinship."},
+   {"name":"Muscadet","region":"Loire","color":"#8BB855","match":"avoid","explore":"Perfect with raw oysters, now too lean for Rockefeller's richness. The butter, spinach, and Pernod need more weight.","whyBest":"Muscadet, perfect raw, is too lean for butter, spinach, and Pernod in baked preparations."}
+ ],
+ "principle":"Raw shellfish = the leanest, most mineral wine. No oak, no butter, no fruit. Just salt and sea.","principleVar":"Cooking shellfish adds weight. The preparation changes the pairing. Always."}
+]}

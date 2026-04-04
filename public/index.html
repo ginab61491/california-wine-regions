@@ -42,6 +42,7 @@
   <link rel="stylesheet" href="css/grape-climate.css" />
   <link rel="stylesheet" href="css/wine-lineup.css" />
   <link rel="stylesheet" href="css/climate-slider.css" />
+  <link rel="stylesheet" href="css/dinner-rescue.css" />
   <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css" />
 
   <!-- Scripts (defer where possible) -->
@@ -116,6 +117,7 @@
             <a class="topnav-menu-item" data-section="grapeclimate">Grape & Climate</a>
             <a class="topnav-menu-item" data-section="lineup">The Lineup</a>
             <a class="topnav-menu-item" data-section="climateslider">Climate Slider</a>
+            <a class="topnav-menu-item" data-section="dinnerrescue">Dinner Rescue</a>
           </div>
         </div>
         <!-- Study dropdown -->
@@ -188,6 +190,7 @@
       <a class="mobile-nav-link" data-section="grapeclimate">Grape & Climate</a>
       <a class="mobile-nav-link" data-section="lineup">The Lineup</a>
       <a class="mobile-nav-link" data-section="climateslider">Climate Slider</a>
+      <a class="mobile-nav-link" data-section="dinnerrescue">Dinner Rescue</a>
 
       <span class="mobile-nav-group">Study</span>
       <a class="mobile-nav-link" data-section="study">Classes &amp; Certifications</a>
@@ -2767,6 +2770,28 @@
          SECTION: About Sommplicity
     ════════════════════════════════════════════ -->
     <!-- ═══════════════════════════════════════════
+         SECTION: Dinner Rescue
+    ════════════════════════════════════════════ -->
+    <section class="section" id="dinnerrescue-section">
+      <div class="dr-scroll">
+        <div class="dr-body">
+          <div class="dr-crumb">Learn</div>
+          <h1 class="dr-title">Dinner <em>Rescue</em></h1>
+          <p class="dr-subtitle">The food is ordered. Save the table.</p>
+          <div class="dr-toggle">
+            <button class="dr-toggle-btn active" data-tab="explore">Explore</button>
+            <button class="dr-toggle-btn" data-tab="quiz">Quiz</button>
+          </div>
+          <div class="dr-levels">
+            <button class="dr-level-btn active" data-level="beginner"><div class="dr-level-name">Beginner</div><div class="dr-level-desc">Classic pairings</div></button>
+            <button class="dr-level-btn" data-level="intermediate"><div class="dr-level-name">Intermediate</div><div class="dr-level-desc">Nuance & regions</div></button>
+          </div>
+          <div id="dr-content"></div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ═══════════════════════════════════════════
          SECTION: Climate Slider
     ════════════════════════════════════════════ -->
     <section class="section" id="climateslider-section">
@@ -3267,6 +3292,7 @@
   <script src="js/grape-climate.js"></script>
   <script src="js/wine-lineup.js"></script>
   <script src="js/climate-slider.js"></script>
+  <script src="js/dinner-rescue.js"></script>
   <script src="js/app.js"></script>
 </body>
 </html>
