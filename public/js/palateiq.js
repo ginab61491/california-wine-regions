@@ -112,8 +112,8 @@ document.addEventListener('DOMContentLoaded', () => {
   // ── Screen Management ─────────────────────────────────
 
   function showScreen(id) {
-    document.querySelectorAll('.piq-screen').forEach(s => s.style.display = 'none');
-    document.getElementById(id).style.display = '';
+    document.querySelectorAll('.piq-screen').forEach(s => s.classList.remove('active'));
+    document.getElementById(id).classList.add('active');
     document.getElementById('piq-scroll').scrollTop = 0;
   }
 
@@ -196,7 +196,7 @@ document.addEventListener('DOMContentLoaded', () => {
     document.getElementById('piq-card-src').textContent = '';
 
     // Hide continue, elo delta
-    document.getElementById('piq-continue').style.display = 'none';
+    document.getElementById('piq-continue').classList.remove('visible');
     document.getElementById('piq-elo-delta').className = 'piq-elo-delta';
     document.getElementById('piq-elo-delta').textContent = '';
 
@@ -286,7 +286,7 @@ document.addEventListener('DOMContentLoaded', () => {
 
         // Show continue
         setTimeout(() => {
-          document.getElementById('piq-continue').style.display = '';
+          document.getElementById('piq-continue').classList.add('visible');
 
           // Level up check
           if (newLevel > oldLevel) {
@@ -309,12 +309,10 @@ document.addEventListener('DOMContentLoaded', () => {
   function showLevelUp(level) {
     const overlay = document.getElementById('piq-levelup');
     document.getElementById('piq-levelup-text').textContent = `Level ${level}`;
-    overlay.style.display = 'flex';
     overlay.classList.add('active');
     setTimeout(() => {
       overlay.classList.remove('active');
-      setTimeout(() => { overlay.style.display = 'none'; }, 600);
-    }, 1800);
+    }, 2400);
   }
 
   // Continue to next card

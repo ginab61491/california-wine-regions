@@ -674,7 +674,7 @@
 
 /* --- Continue Button --- */
 .piq-continue {
-  display: block;
+  display: none;
   max-width: 480px;
   margin: 16px auto;
   padding: 14px;
@@ -690,6 +690,10 @@
   border-radius: 10px;
   cursor: pointer;
   transition: all 0.2s ease;
+}
+
+.piq-continue.visible {
+  display: block;
 }
 
 .piq-continue:hover {
@@ -776,7 +780,7 @@
   position: fixed;
   inset: 0;
   z-index: 1000;
-  display: flex;
+  display: none;
   align-items: center;
   justify-content: center;
   background: radial-gradient(
@@ -784,11 +788,13 @@
     rgba(250,247,242,0.3) 0%,
     rgba(44,24,16,0.65) 100%
   );
-  animation: piq-levelup-in 400ms ease-out forwards;
+  opacity: 0;
+  pointer-events: none;
 }
 
-.piq-levelup.fade-out {
-  animation: piq-levelup-out 600ms ease-in forwards;
+.piq-levelup.active {
+  display: flex;
+  animation: piq-levelup-in 400ms ease-out forwards;
 }
 
 .piq-levelup-glow {
