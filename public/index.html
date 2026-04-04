@@ -41,6 +41,7 @@
   <link rel="stylesheet" href="css/label-school.css" />
   <link rel="stylesheet" href="css/grape-climate.css" />
   <link rel="stylesheet" href="css/wine-lineup.css" />
+  <link rel="stylesheet" href="css/climate-slider.css" />
   <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css" />
 
   <!-- Scripts (defer where possible) -->
@@ -114,6 +115,7 @@
             <a class="topnav-menu-item" data-section="labelschool">Label School</a>
             <a class="topnav-menu-item" data-section="grapeclimate">Grape & Climate</a>
             <a class="topnav-menu-item" data-section="lineup">The Lineup</a>
+            <a class="topnav-menu-item" data-section="climateslider">Climate Slider</a>
           </div>
         </div>
         <!-- Study dropdown -->
@@ -185,6 +187,7 @@
       <a class="mobile-nav-link" data-section="labelschool">Label School</a>
       <a class="mobile-nav-link" data-section="grapeclimate">Grape & Climate</a>
       <a class="mobile-nav-link" data-section="lineup">The Lineup</a>
+      <a class="mobile-nav-link" data-section="climateslider">Climate Slider</a>
 
       <span class="mobile-nav-group">Study</span>
       <a class="mobile-nav-link" data-section="study">Classes &amp; Certifications</a>
@@ -2764,6 +2767,25 @@
          SECTION: About Sommplicity
     ════════════════════════════════════════════ -->
     <!-- ═══════════════════════════════════════════
+         SECTION: Climate Slider
+    ════════════════════════════════════════════ -->
+    <section class="section" id="climateslider-section">
+      <div class="cs-scroll">
+        <div class="cs-body">
+          <div class="cs-crumb">WSET Level 2</div>
+          <h1 class="cs-title">Climate Slider</h1>
+
+          <div class="cs-toggle">
+            <button class="cs-toggle-btn active" data-tab="explore">Explore</button>
+            <button class="cs-toggle-btn" data-tab="quiz">Quiz</button>
+          </div>
+
+          <div id="cs-content"></div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ═══════════════════════════════════════════
          SECTION: The Lineup
     ════════════════════════════════════════════ -->
     <section class="section" id="lineup-section">
@@ -3244,6 +3266,7 @@
   <script src="js/label-school.js"></script>
   <script src="js/grape-climate.js"></script>
   <script src="js/wine-lineup.js"></script>
+  <script src="js/climate-slider.js"></script>
   <script src="js/app.js"></script>
 </body>
 </html>

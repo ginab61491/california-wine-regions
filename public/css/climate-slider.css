@@ -1,0 +1,154 @@
+/* ============================================================
+   CLIMATE SLIDER
+   ============================================================ */
+#climateslider-section {
+  --cs-bg: #FAF7F2; --cs-card: #FFFDF9; --cs-text: #2C1810;
+  --cs-muted: #6B5D52; --cs-faint: #9E9189; --cs-edge: #E8DFD2;
+  --cs-correct: #6B7F5E; --cs-incorrect: #A0614B;
+  background: var(--cs-bg); color: var(--cs-text); padding: 0; overflow: hidden;
+}
+.cs-scroll { flex:1; overflow-y:auto; -webkit-overflow-scrolling:touch; min-height:0; }
+.cs-body { max-width:520px; margin:0 auto; padding:32px 24px 48px; }
+
+.cs-crumb { font-family:'Montserrat',sans-serif; font-size:0.6rem; letter-spacing:0.22em; text-transform:uppercase; color:var(--cs-faint); margin-bottom:10px; }
+.cs-title { font-family:'Playfair Display',Georgia,serif; font-size:clamp(1.8rem,7vw,2.4rem); font-weight:400; line-height:1.05; margin-bottom:18px; }
+
+/* Toggle */
+.cs-toggle { display:flex; gap:0; margin-bottom:24px; border-bottom:1px solid var(--cs-edge); }
+.cs-toggle-btn {
+  flex:1; padding:10px 0 8px; background:none; border:none;
+  border-bottom:2px solid transparent; color:var(--cs-faint);
+  cursor:pointer; font-family:'Montserrat',sans-serif; font-size:0.68rem;
+  font-weight:500; letter-spacing:0.1em; text-transform:uppercase;
+}
+.cs-toggle-btn.active { border-bottom-color:var(--cs-text); color:var(--cs-text); }
+
+/* Glass + zone header */
+.cs-zone-header { display:flex; align-items:center; gap:14px; margin-bottom:20px; }
+.cs-zone-label { font-family:'Playfair Display',Georgia,serif; font-size:1.5rem; margin-bottom:2px; transition:color 0.3s; }
+.cs-zone-temp { font-family:'Montserrat',sans-serif; font-size:0.6rem; color:var(--cs-faint); margin-bottom:8px; }
+.cs-wine-toggle { display:flex; gap:3px; background:rgba(44,24,16,0.03); border-radius:6px; padding:2px; width:fit-content; }
+.cs-wine-toggle-btn {
+  padding:3px 10px; border-radius:5px; font-family:'Montserrat',sans-serif;
+  font-size:0.6rem; border:none; cursor:pointer; background:transparent; color:var(--cs-faint);
+}
+.cs-wine-toggle-btn.active { background:rgba(44,24,16,0.06); color:var(--cs-text); }
+
+/* Main slider */
+.cs-slider-wrap { margin-bottom:28px; }
+.cs-slider-track { position:relative; height:44px; display:flex; align-items:center; }
+.cs-slider-bg { position:absolute; left:0; right:0; height:6px; border-radius:3px; }
+.cs-slider-fill { position:absolute; left:0; height:6px; border-radius:3px; transition:width 0.05s; }
+.cs-slider-input {
+  position:absolute; left:0; right:0; width:100%; height:44px;
+  -webkit-appearance:none; appearance:none; background:transparent;
+  cursor:grab; outline:none; margin:0; z-index:2;
+}
+.cs-slider-input::-webkit-slider-thumb {
+  -webkit-appearance:none; width:22px; height:22px; border-radius:50%;
+  background:var(--cs-text); border:2px solid var(--cs-bg);
+  box-shadow:0 2px 8px rgba(0,0,0,0.2); cursor:grab;
+}
+.cs-slider-input::-moz-range-thumb {
+  width:22px; height:22px; border-radius:50%;
+  background:var(--cs-text); border:2px solid var(--cs-bg); cursor:grab;
+}
+.cs-slider-input:disabled::-webkit-slider-thumb { opacity:0.35; cursor:default; }
+.cs-slider-labels { display:flex; justify-content:space-between; margin-top:5px; }
+.cs-slider-label { font-family:'Montserrat',sans-serif; font-size:0.6rem; letter-spacing:0.12em; text-transform:uppercase; transition:all 0.3s; }
+
+/* Attribute bars */
+.cs-attrs { display:flex; flex-direction:column; gap:16px; }
+.cs-attr { cursor:pointer; }
+.cs-attr-header { display:flex; justify-content:space-between; align-items:baseline; margin-bottom:6px; }
+.cs-attr-label { font-family:'Montserrat',sans-serif; font-size:0.75rem; font-weight:500; color:var(--cs-muted); }
+.cs-attr-val { font-family:'Montserrat',sans-serif; font-size:0.75rem; transition:all 0.3s; }
+.cs-attr-bar { position:relative; height:4px; border-radius:2px; background:rgba(44,24,16,0.04); overflow:visible; }
+.cs-attr-dot {
+  position:absolute; top:50%; transform:translate(-50%,-50%);
+  width:8px; height:8px; border-radius:50%; opacity:0.7;
+  transition:left 0.4s cubic-bezier(0.22,1,0.36,1);
+}
+.cs-attr-ends { display:flex; justify-content:space-between; margin-top:3px; }
+.cs-attr-end { font-family:'Montserrat',sans-serif; font-size:0.42rem; letter-spacing:0.1em; text-transform:uppercase; color:var(--cs-faint); opacity:0.5; }
+
+/* Tooltip */
+.cs-tip {
+  margin-top:8px; padding:10px 12px; border-radius:8px;
+  background:var(--cs-card); border:1px solid var(--cs-edge);
+  font-family:'Crimson Text',Georgia,serif; font-size:0.78rem;
+  color:var(--cs-muted); line-height:1.6;
+}
+
+/* Regions */
+.cs-regions-toggle {
+  background:none; border:none; cursor:pointer; padding:0; width:100%;
+  text-align:left; display:flex; align-items:center; justify-content:space-between;
+  color:var(--cs-text); font-family:'Montserrat',sans-serif; margin-top:28px;
+}
+.cs-regions-label { font-size:0.68rem; color:var(--cs-faint); }
+.cs-regions-arrow { font-size:0.6rem; color:var(--cs-faint); transition:transform 0.2s; }
+.cs-regions-arrow.open { transform:rotate(90deg); }
+.cs-regions-list { margin-top:10px; display:flex; flex-wrap:wrap; gap:6px; }
+.cs-region-pill {
+  font-family:'Montserrat',sans-serif; font-size:0.68rem;
+  padding:4px 10px; border-radius:6px; border:1px solid;
+}
+.cs-region-lat { opacity:0.5; font-size:0.55rem; margin-left:3px; }
+
+/* Quiz */
+.cs-quiz-levels { display:flex; gap:6px; margin-bottom:16px; }
+.cs-quiz-level-btn {
+  padding:5px 10px; border-radius:7px; font-family:'Montserrat',sans-serif;
+  font-size:0.6rem; letter-spacing:0.06em; text-transform:uppercase;
+  cursor:pointer; border:1px solid var(--cs-edge); background:transparent; color:var(--cs-faint);
+}
+.cs-quiz-level-btn.active { background:rgba(44,24,16,0.04); border-color:rgba(44,24,16,0.12); color:var(--cs-text); }
+.cs-quiz-score { font-family:'Montserrat',sans-serif; font-size:0.68rem; color:var(--cs-faint); margin-bottom:12px; }
+.cs-quiz-score-num { font-family:'Playfair Display',Georgia,serif; font-size:1rem; color:var(--cs-text); margin-right:3px; }
+
+.cs-quiz-card {
+  padding:14px 16px; border-radius:12px; background:var(--cs-card);
+  border:1px solid var(--cs-edge); margin-bottom:16px;
+}
+.cs-quiz-note {
+  font-family:'Crimson Text',Georgia,serif; font-size:0.92rem;
+  line-height:1.6; color:var(--cs-muted); font-style:italic;
+}
+.cs-quiz-hint-btn {
+  margin-top:8px; background:none; border:none; cursor:pointer;
+  font-family:'Montserrat',sans-serif; font-size:0.6rem; color:var(--cs-faint);
+  text-decoration:underline; text-underline-offset:2px; padding:0;
+}
+.cs-quiz-hint-text {
+  margin-top:6px; font-family:'Crimson Text',Georgia,serif; font-size:0.72rem;
+  color:var(--cs-faint); font-style:italic; line-height:1.5;
+}
+.cs-quiz-prompt { font-family:'Montserrat',sans-serif; font-size:0.68rem; color:var(--cs-faint); margin-bottom:10px; }
+
+/* Result */
+.cs-quiz-result { padding:14px; border-radius:12px; text-align:center; margin-bottom:10px; }
+.cs-quiz-result.correct { background:rgba(107,127,94,0.06); border:1px solid rgba(107,127,94,0.12); }
+.cs-quiz-result.incorrect { background:rgba(160,97,75,0.04); border:1px solid rgba(160,97,75,0.08); }
+.cs-quiz-result-word { font-family:'Playfair Display',Georgia,serif; font-size:1.35rem; }
+.cs-quiz-result-detail { font-family:'Montserrat',sans-serif; font-size:0.6rem; color:var(--cs-faint); margin-top:3px; }
+
+.cs-quiz-expl {
+  padding:11px 13px; border-radius:10px; margin-bottom:6px;
+}
+.cs-quiz-expl.why-correct { background:rgba(107,127,94,0.03); border:1px solid rgba(107,127,94,0.06); }
+.cs-quiz-expl.why-wrong { background:rgba(160,97,75,0.02); border:1px solid rgba(160,97,75,0.05); }
+.cs-quiz-expl-label {
+  font-family:'Montserrat',sans-serif; font-size:0.55rem; letter-spacing:0.1em;
+  text-transform:uppercase; margin-bottom:4px;
+}
+.cs-quiz-expl-text { font-family:'Crimson Text',Georgia,serif; font-size:0.75rem; color:var(--cs-muted); line-height:1.6; }
+
+.cs-btn {
+  width:100%; padding:14px; border-radius:12px; border:none; cursor:pointer;
+  font-family:'Montserrat',sans-serif; font-size:0.88rem; font-weight:500;
+  background:var(--cs-text); color:var(--cs-bg); margin-top:14px;
+}
+.cs-btn:hover { opacity:0.9; }
+
+@media (max-width:768px) { .cs-body { padding:24px 16px 40px; } }

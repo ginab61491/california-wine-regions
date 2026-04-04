@@ -1,0 +1,99 @@
+{
+  "zones": {
+    "cool": {
+      "label": "Cool", "temp": "< 16.5 C",
+      "whites": {
+        "fruit": {"val":"Citrus & green fruit","pos":10,"tip":"Less sun means grapes retain malic acid and develop underripe aroma precursors: citrus peel, green apple, gooseberry."},
+        "body": {"val":"Light","pos":12,"tip":"Less sugar means less alcohol means lighter body. High acidity also makes wines feel leaner. Think Mosel Riesling."},
+        "acidity": {"val":"High","pos":88,"tip":"The clearest climate signal. Grapes accumulate malic acid early; warmth burns it off. Cool climates don't have enough heat, so the malic acid stays."},
+        "alcohol": {"val":"11-12.5%","pos":12,"tip":"Alcohol comes from sugar, sugar from photosynthesis. Less warmth = less sugar = less alcohol."}
+      },
+      "reds": {
+        "fruit": {"val":"Red cherry & cranberry","pos":15,"tip":"Tart red berries rather than sweet dark ones. The aromatic precursors for dark fruit require more heat to form."},
+        "body": {"val":"Light-Medium","pos":20,"tip":"Low alcohol and high acid create a lean, bright palate. Cool-climate reds like Beaujolais and Burgundy are meant to be refreshing."},
+        "acidity": {"val":"High","pos":85,"tip":"Same principle as whites: preserved malic acid. Cool-climate Pinot Noir has a brightness that warm-climate reds lack."},
+        "alcohol": {"val":"11-13%","pos":18,"tip":"Thin-skinned cool-climate grapes like Pinot Noir and Gamay rarely exceed 13% ABV."}
+      },
+      "regions": [
+        {"name":"Mosel","lat":"50 N"},{"name":"Champagne","lat":"49 N"},{"name":"Alsace","lat":"48 N"},
+        {"name":"Chablis","lat":"48 N"},{"name":"Loire Valley","lat":"47 N"},{"name":"Burgundy","lat":"47 N"},
+        {"name":"Marlborough","lat":"42 S"},{"name":"Tasmania","lat":"42 S"}
+      ],
+      "regionNote": "Above 45 N or below 40 S"
+    },
+    "moderate": {
+      "label": "Moderate", "temp": "16.5-18.5 C",
+      "whites": {
+        "fruit": {"val":"Stone fruit","pos":48,"tip":"More warmth means fuller esters. Whites shift from citrus to peach, apricot, melon. Ripe but not cooked."},
+        "body": {"val":"Medium","pos":48,"tip":"Balanced sugar means enough alcohol for palate weight without heaviness. Moderate acid and alcohol create balance."},
+        "acidity": {"val":"Medium","pos":50,"tip":"Enough warmth to reduce harsh malic acid while retaining freshness. The balance point is why moderate wines are often the most food-friendly."},
+        "alcohol": {"val":"12.5-14%","pos":50,"tip":"WSET's medium to medium-high band. Enough weight to feel satisfying without heat."}
+      },
+      "reds": {
+        "fruit": {"val":"Plum & blackberry","pos":52,"tip":"Red and dark fruit mix: plum, blackberry, black cherry. Ripe but not overripe."},
+        "body": {"val":"Medium-Full","pos":55,"tip":"The interplay of moderate alcohol and tannin creates structure. Think Bordeaux: concentrated but balanced."},
+        "acidity": {"val":"Medium","pos":48,"tip":"Enough acid for food pairing and aging potential, without the sharp bite of cool-climate reds."},
+        "alcohol": {"val":"13-14.5%","pos":55,"tip":"Upper moderate. Oak-aged reds from Bordeaux, Rioja, and Tuscany typically land here."}
+      },
+      "regions": [
+        {"name":"Bordeaux","lat":"45 N"},{"name":"N. Rhone","lat":"45 N"},{"name":"Piedmont","lat":"45 N"},
+        {"name":"Willamette","lat":"45 N"},{"name":"Tuscany","lat":"43 N"},{"name":"Rioja","lat":"42 N"},
+        {"name":"Sonoma","lat":"38 N"},{"name":"Margaret River","lat":"34 S"}
+      ],
+      "regionNote": "38-47 N or 30-38 S, often moderated by ocean, altitude, or fog"
+    },
+    "warm": {
+      "label": "Warm", "temp": "> 18.5 C",
+      "whites": {
+        "fruit": {"val":"Tropical & baked","pos":88,"tip":"Intense heat pushes grapes to full ripeness and beyond. Tropical aromas (mango, pineapple) in whites, jammy and stewed fruit in reds."},
+        "body": {"val":"Full","pos":88,"tip":"High sugar means high alcohol + high glycerol means viscosity and weight. The wine coats your mouth."},
+        "acidity": {"val":"Low","pos":12,"tip":"Prolonged heat breaks down malic acid rapidly. Many warm winemakers legally acidify to prevent wines tasting flat."},
+        "alcohol": {"val":"14-15.5%","pos":88,"tip":"Intense photosynthesis = high sugar = high alcohol. At these levels you taste warmth in the back of your throat."}
+      },
+      "reds": {
+        "fruit": {"val":"Jammy & dried fruit","pos":90,"tip":"'Jammy' means fruit cooked on the vine. 'Stewed' and 'dried' are even more extreme. These are your clearest warm-climate signal."},
+        "body": {"val":"Full","pos":90,"tip":"High alcohol, high extract, high glycerol. Dense, powerful, mouth-coating. Think Barossa Shiraz, Napa Cabernet."},
+        "acidity": {"val":"Low","pos":10,"tip":"Heat destroys malic acid. Even with acidification, warm-climate reds feel softer and rounder."},
+        "alcohol": {"val":"14-16%","pos":90,"tip":"The highest for table wine. At 15%+, you feel the alcohol as heat."}
+      },
+      "regions": [
+        {"name":"Napa Valley","lat":"38 N"},{"name":"Paso Robles","lat":"36 N"},{"name":"S. Rhone","lat":"44 N"},
+        {"name":"Puglia","lat":"41 N"},{"name":"Mendoza","lat":"33 S"},{"name":"Barossa","lat":"35 S"},
+        {"name":"Stellenbosch","lat":"34 S"},{"name":"Central Valley","lat":"34 S"}
+      ],
+      "regionNote": "Below 42 N or above 30 S, low altitude, no maritime cooling"
+    }
+  },
+  "quiz": {
+    "beginner": [
+      {"note":"Green apple, lemon zest, high acidity, 11.5% ABV. Steely and mineral.","answer":"cool","whyCorrect":"Every indicator points cool: citrus fruit, high acidity (preserved malic acid), low alcohol.","whyNotModerate":"Moderate wines show stone fruit, not citrus, and 12.5-14% ABV.","whyNotWarm":"Warm climates produce tropical fruit, low acidity, and 14%+."},
+      {"note":"Ripe mango, pineapple, low acidity, 14.5% ABV. Full-bodied.","answer":"warm","whyCorrect":"Tropical fruit + low acid + high alcohol: the warm-climate trifecta.","whyNotCool":"Cool climates cannot produce tropical aromas. 14.5% is well above cool range.","whyNotModerate":"Tropical fruit pushes beyond moderate. Moderate whites show peach and melon."},
+      {"note":"Peach, apricot, medium acidity, 13% ABV. Balanced.","answer":"moderate","whyCorrect":"Stone fruit with medium acidity and 13% is the moderate signature.","whyNotCool":"Cool climates show citrus, higher acidity, 11-12.5%.","whyNotWarm":"Warm climates push to tropical. Medium acidity is too fresh for warm."},
+      {"note":"Cranberry, red cherry, high acidity, 12% ABV. Light-bodied.","answer":"cool","whyCorrect":"Red fruit, high acidity, low alcohol, light body. Cranberry is a cool-climate hallmark.","whyNotModerate":"Moderate reds show darker fruit and 13-14.5%.","whyNotWarm":"Warm reds are jammy with 14%+."},
+      {"note":"Jammy blackberry, stewed plum, low acidity, 15% ABV. Dense.","answer":"warm","whyCorrect":"'Jammy' = fruit cooked on the vine. Combined with stewed plum, low acid, 15%.","whyNotCool":"Cool climates produce fresh, tart fruit. 15% requires sugar levels cool grapes never reach.","whyNotModerate":"Moderate blackberry is fresh, not jammy. 15% exceeds moderate range."},
+      {"note":"Blackberry, black cherry, medium acidity, 13.5% ABV. Medium-full.","answer":"moderate","whyCorrect":"Dark fruit that's ripe but not jammy, with enough acidity for freshness. 13.5% is squarely moderate.","whyNotCool":"Cool climates rarely produce dark fruit. 13.5% is above cool range.","whyNotWarm":"Medium acidity and fresh (not jammy) fruit keep this out of warm."},
+      {"note":"Lime, grapefruit, razor-sharp acidity, 12% ABV. Bone-dry.","answer":"cool","whyCorrect":"Razor-sharp acidity = high retained malic acid = cool. Citrus fruit, low alcohol.","whyNotModerate":"Moderate climates round off acid. Fruit would shift to stone fruit.","whyNotWarm":"Nothing about this wine is consistent with warm climate."},
+      {"note":"Baked apple, fig, low acidity, 14.5% ABV. Oily.","answer":"warm","whyCorrect":"'Baked' and 'fig' = fruit transformed by heat. Low acidity, high alcohol, oily texture.","whyNotCool":"Cool climates produce fresh apple, not baked.","whyNotModerate":"Fig and baked apple exceed moderate ripeness."}
+    ],
+    "intermediate": [
+      {"note":"White peach, honeysuckle, medium-high acidity, 13% ABV.","answer":"moderate","whyCorrect":"Peach is the archetypal moderate descriptor. Medium-high acidity with 13%.","whyNotCool":"Peach requires more warmth than cool provides.","whyNotWarm":"Medium-high acidity is too fresh for warm."},
+      {"note":"Gooseberry, jalapeno, piercing acidity, 12.5% ABV. Herbaceous.","answer":"cool","whyCorrect":"Green/herbaceous notes from methoxypyrazines, compounds that break down in warm weather.","whyNotModerate":"Moderate climates break down pyrazines. You'd get passionfruit instead.","whyNotWarm":"Warm climates destroy methoxypyrazines completely."},
+      {"note":"Prune, dark chocolate, low acidity, 15.5% ABV. Chewy.","answer":"warm","whyCorrect":"Prune = dried/overripe fruit. 15.5% requires enormous sugar. Only sustained heat produces this.","whyNotCool":"Every metric is the opposite of cool.","whyNotModerate":"15.5% exceeds moderate. Prune is beyond moderate ripeness."},
+      {"note":"Red plum, dried herbs, medium acidity, 13.5% ABV. Earthy.","answer":"moderate","whyCorrect":"Red plum (ripe, not overripe) with herbal complexity is a moderate signature. Think Chianti Classico.","whyNotCool":"Cool reds show cranberry, not red plum.","whyNotWarm":"Medium acidity and fresh (not stewed) plum = moderate."},
+      {"note":"Lychee, rose petal, low acidity, 14% ABV. Oily texture.","answer":"warm","whyCorrect":"Low acid + 14% + oily = warm structurally. Caveat: Gewurztraminer shows these aromas in cool Alsace, but read structural cues on the exam.","whyNotCool":"Structural profile is incompatible with cool.","whyNotModerate":"Low acid and 14% push past moderate."},
+      {"note":"Mineral, wet stone, citrus pith, high acidity, 12% ABV. Austere.","answer":"cool","whyCorrect":"'Austere' = acidity dominating fruit. Mineral and citrus pith are cool-climate markers.","whyNotModerate":"Moderate climates produce enough ripeness to prevent austerity.","whyNotWarm":"Mineral austerity is impossible in warm climates."},
+      {"note":"Cassis, cedar, medium acidity, 14% ABV. Firm tannin.","answer":"moderate","whyCorrect":"Fresh cassis (not jammy) with firm structure. 14% is upper-moderate. Think Bordeaux.","whyNotCool":"Cool Cabernet shows green pepper, not cassis.","whyNotWarm":"Warm Cabernet = cassis jam, softer tannin, 14.5%+."},
+      {"note":"Blackcurrant jam, eucalyptus, low acidity, 15% ABV. Plush.","answer":"warm","whyCorrect":"'Jam' = fruit cooked by heat. Eucalyptus is a warm Australian marker. Low acid + 15%.","whyNotCool":"Cool produces cassis, not cassis jam.","whyNotModerate":"Jam and 15% exceed moderate."}
+    ],
+    "advanced": [
+      {"note":"Green apple, slate, petrol, high acidity, 8% ABV. Off-dry.","answer":"cool","whyCorrect":"Mosel Riesling Kabinett. 8% from stopped fermentation. Petrol is a cool-site Riesling marker.","whyNotModerate":"8% is far below moderate.","whyNotWarm":"Nothing is consistent with warm."},
+      {"note":"Apricot, almond, medium acidity, 13.5% ABV. Nutty.","answer":"moderate","whyCorrect":"Apricot = stone fruit (moderate). Nutty character is winemaking (lees aging). Climate markers are squarely moderate.","whyNotCool":"Cool shows citrus not apricot.","whyNotWarm":"Medium acidity too fresh for warm."},
+      {"note":"Tar, roses, dried cherry, high acidity, 14% ABV. Pale, fierce tannin.","answer":"moderate","whyCorrect":"Nebbiolo (Barolo). High acid + 14% seems contradictory, but Piedmont's long season preserves acid while building alcohol. Some grapes maintain acidity at full ripeness.","whyNotCool":"14% is above cool range. Dried cherry = moderate.","whyNotWarm":"High acidity rules out warm."},
+      {"note":"Fig, raisin, molasses, very low acidity, 15.5% ABV. Syrupy.","answer":"warm","whyCorrect":"Fig, raisin, molasses = extreme heat or dried-grape methods. 15.5% + syrupy = enormous sugar.","whyNotCool":"These flavors are chemically impossible in cool climates.","whyNotModerate":"Even the ripest moderate wines don't reach fig/raisin."},
+      {"note":"Passion fruit, boxwood, medium-high acidity, 13.5% ABV.","answer":"moderate","whyCorrect":"Passion fruit seems warm but develops in moderate Sauvignon Blanc. Boxwood (pyrazine) is a cooler marker. The mix of tropical and green = moderate sweet spot.","whyNotCool":"Pure cool Sauvignon shows gooseberry, not passion fruit.","whyNotWarm":"Boxwood and medium-high acidity rule out warm."},
+      {"note":"Brioche, citrus, toasted almond, very high acidity, 12% ABV. Fine mousse.","answer":"cool","whyCorrect":"Traditional method sparkling from France's coldest region. Brioche from lees aging. Searing acidity and citrus at just 12%.","whyNotModerate":"Very high acidity leans cool.","whyNotWarm":"Warm sparkling loses the acidity that defines great fizz."},
+      {"note":"Black olive, leather, garrigue, medium acidity, 14.5% ABV.","answer":"warm","whyCorrect":"Garrigue (thyme, rosemary, lavender) is the most specific warm-climate WSET marker. Black olive and leather are warm secondary aromas.","whyNotCool":"Garrigue is definitionally warm/Mediterranean.","whyNotModerate":"Garrigue pushes beyond moderate."},
+      {"note":"Red cherry, violet, white pepper, medium-high acidity, 13% ABV. Elegant.","answer":"moderate","whyCorrect":"Cool-moderate Syrah (Northern Rhone). Medium-high acidity + 13% = moderate. Warm enough for ripe fruit, cool enough for complexity.","whyNotCool":"Overall profile too ripe for cool.","whyNotWarm":"Warm Syrah shows black pepper (not white), jammy fruit, higher alcohol."}
+    ]
+  }
+}
