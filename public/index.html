@@ -43,6 +43,7 @@
   <link rel="stylesheet" href="css/wine-lineup.css" />
   <link rel="stylesheet" href="css/climate-slider.css" />
   <link rel="stylesheet" href="css/dinner-rescue.css" />
+  <link rel="stylesheet" href="css/grow-your-vine.css" />
   <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css" />
 
   <!-- Scripts (defer where possible) -->
@@ -118,6 +119,7 @@
             <a class="topnav-menu-item" data-section="lineup">The Lineup</a>
             <a class="topnav-menu-item" data-section="climateslider">Climate Slider</a>
             <a class="topnav-menu-item" data-section="dinnerrescue">Dinner Rescue</a>
+            <a class="topnav-menu-item" data-section="growyourvine">Grow Your Vine</a>
           </div>
         </div>
         <!-- Study dropdown -->
@@ -191,6 +193,7 @@
       <a class="mobile-nav-link" data-section="lineup">The Lineup</a>
       <a class="mobile-nav-link" data-section="climateslider">Climate Slider</a>
       <a class="mobile-nav-link" data-section="dinnerrescue">Dinner Rescue</a>
+      <a class="mobile-nav-link" data-section="growyourvine">Grow Your Vine</a>
 
       <span class="mobile-nav-group">Study</span>
       <a class="mobile-nav-link" data-section="study">Classes &amp; Certifications</a>
@@ -2770,6 +2773,28 @@
          SECTION: About Sommplicity
     ════════════════════════════════════════════ -->
     <!-- ═══════════════════════════════════════════
+         SECTION: Grow Your Vine
+    ════════════════════════════════════════════ -->
+    <section class="section" id="growyourvine-section">
+      <div class="gv-scroll">
+        <div class="gv-body">
+          <div class="gv-crumb">WSET Level 2-4</div>
+          <h1 class="gv-title">Grow Your <em>Vine</em></h1>
+          <div class="gv-toggle">
+            <button class="gv-toggle-btn active" data-tab="explore">Explore</button>
+            <button class="gv-toggle-btn" data-tab="quiz">Quiz</button>
+          </div>
+          <div class="gv-levels">
+            <button class="gv-level-btn active" data-level="beginner">Beginner</button>
+            <button class="gv-level-btn" data-level="intermediate">Intermediate</button>
+            <button class="gv-level-btn" data-level="advanced">Advanced</button>
+          </div>
+          <div id="gv-content"></div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ═══════════════════════════════════════════
          SECTION: Dinner Rescue
     ════════════════════════════════════════════ -->
     <section class="section" id="dinnerrescue-section">
@@ -3293,6 +3318,7 @@
   <script src="js/wine-lineup.js"></script>
   <script src="js/climate-slider.js"></script>
   <script src="js/dinner-rescue.js"></script>
+  <script src="js/grow-your-vine.js"></script>
   <script src="js/app.js"></script>
 </body>
 </html>
