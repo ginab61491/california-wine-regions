@@ -60,6 +60,9 @@ document.addEventListener('DOMContentLoaded', () => {
   function renderHome(c) {
     const cats = Object.entries(data.categories).sort((a, b) => a[1].order - b[1].order);
     c.innerHTML = `
+      <div class="lu-hero">
+        <img class="lu-hero-img" src="https://images.unsplash.com/photo-1516594915697-87eb3b1c14ea?w=800&h=300&fit=crop&crop=center" alt="A lineup of wine bottles" loading="lazy">
+      </div>
       <div class="lu-crumb">Learn</div>
       <h1 class="lu-title">The Lineup</h1>
       <p class="lu-subtitle">Three wines. One spectrum. Put them in order.</p>
