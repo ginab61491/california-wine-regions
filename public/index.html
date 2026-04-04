@@ -2761,20 +2761,32 @@
         <div class="piq-screen piq-entry" id="piq-entry">
 
           <!-- Spectrum Bar -->
-          <div class="piq-spectrum-wrap">
-            <div class="piq-spectrum" id="piq-spectrum">
-              <div class="piq-spectrum-fill" id="piq-spectrum-fill"></div>
+          <div class="piq-spectrum-wrap" id="piq-spectrum-scroll">
+            <div class="piq-spectrum-track">
+              <div class="piq-spectrum-seg" data-lvl="1"><span class="piq-seg-num">1</span></div>
+              <div class="piq-spectrum-seg" data-lvl="2"><span class="piq-seg-num">2</span></div>
+              <div class="piq-spectrum-seg" data-lvl="3"><span class="piq-seg-num">3</span></div>
+              <div class="piq-spectrum-seg" data-lvl="4"><span class="piq-seg-num">4</span></div>
+              <div class="piq-spectrum-seg" data-lvl="5"><span class="piq-seg-num">5</span></div>
+              <div class="piq-spectrum-seg" data-lvl="6"><span class="piq-seg-num">6</span></div>
+              <div class="piq-spectrum-seg" data-lvl="7"><span class="piq-seg-num">7</span></div>
+              <div class="piq-spectrum-seg" data-lvl="8"><span class="piq-seg-num">8</span></div>
+              <div class="piq-spectrum-seg" data-lvl="9"><span class="piq-seg-num">9</span></div>
+              <div class="piq-spectrum-seg" data-lvl="10"><span class="piq-seg-num">10</span></div>
               <div class="piq-spectrum-pin" id="piq-spectrum-pin"></div>
-            </div>
-            <div class="piq-spectrum-labels">
-              <span>Beginner</span><span>Intermediate</span><span>Advanced</span><span>Master</span>
             </div>
           </div>
 
-          <!-- Level title -->
+          <!-- Level title + name -->
           <div class="piq-hero-level">
             <span class="piq-hero-level-num" id="piq-hero-level">Level 1</span>
+            <span class="piq-hero-name" id="piq-hero-name">That is a red wine!</span>
             <span class="piq-hero-elo" id="piq-hero-elo">1000</span>
+          </div>
+
+          <!-- Radar Chart -->
+          <div class="piq-radar-wrap">
+            <canvas id="piq-radar" width="320" height="320"></canvas>
           </div>
 
           <!-- Stats row -->

@@ -73,6 +73,27 @@ document.addEventListener('DOMContentLoaded', () => {
     producer_knowledge: '#6A6B5A'
   };
 
+  const DOMAIN_KEYS = [
+    'grape_varieties', 'regions_appellations', 'tasting_sensory',
+    'winemaking', 'food_pairing', 'history_culture',
+    'service_business', 'blind_tasting', 'producer_knowledge'
+  ];
+
+  const LEVEL_NAMES = [
+    '', // 0 unused
+    'That is a red wine!',
+    "I'll have the house whatever",
+    'I love my Pinot',
+    'Wait, Chianti is a place?',
+    'Ok this is becoming a hobby',
+    'I have opinions about tannin',
+    'Malolactic, obviously',
+    'My flashcards have flashcards',
+    'I blind-tasted that',
+    'The vines speak to me',
+    'The vines speak to me' // level 11
+  ];
+
   // ── Card Selection ────────────────────────────────────
 
   function selectCard(stats) {
@@ -121,29 +142,195 @@ document.addEventListener('DOMContentLoaded', () => {
 
   function updateEntry() {
     const s = loadStats();
-    // Reset daily
     if (s.todayDate !== new Date().toDateString()) {
       s.todayCount = 0; s.todayDate = new Date().toDateString(); saveStats(s);
     }
 
     const level = eloToLevel(s.elo);
     document.getElementById('piq-hero-level').textContent = `Level ${level}`;
+    document.getElementById('piq-hero-name').textContent = LEVEL_NAMES[Math.min(level, 10)] || '';
     document.getElementById('piq-hero-elo').textContent = Math.round(s.elo);
     document.getElementById('piq-m-mastered').textContent = s.seenIds.length;
-    document.getElementById('piq-m-streak').textContent = s.bestStreak;
+    document.getElementById('piq-m-streak').textContent = s.bestStreak || 0;
     document.getElementById('piq-m-accuracy').textContent = s.totalAnswered > 0
       ? Math.round((s.totalCorrect / s.totalAnswered) * 100) + '%' : '--';
 
-    // Spectrum
-    updateSpectrum('piq-spectrum-pin', 'piq-spectrum-fill', s.elo);
+    updateSpectrumBar(s.elo);
+    drawRadar(s);
+
+    // Mobile: auto-scroll spectrum to current level
+    const scrollWrap = document.getElementById('piq-spectrum-scroll');
+    const activeSeg = scrollWrap.querySelector(`.piq-spectrum-seg[data-lvl="${level}"]`);
+    if (activeSeg && scrollWrap.scrollWidth > scrollWrap.clientWidth) {
+      activeSeg.scrollIntoView({ behavior: 'smooth', inline: 'center', block: 'nearest' });
+    }
   }
 
-  function updateSpectrum(pinId, fillId, elo) {
+  function updateSpectrumBar(elo) {
+    const level = eloToLevel(elo);
+    // Highlight active segment
+    document.querySelectorAll('.piq-spectrum-seg').forEach(seg => {
+      const lvl = parseInt(seg.dataset.lvl);
+      seg.classList.toggle('active', lvl === level);
+      seg.classList.toggle('passed', lvl < level);
+    });
+
+    // Pin position: percentage across the full track
     const pct = spectrumPercent(elo);
-    const pin = document.getElementById(pinId);
-    const fill = document.getElementById(fillId);
+    const pin = document.getElementById('piq-spectrum-pin');
     if (pin) pin.style.left = pct + '%';
-    if (fill) fill.style.width = pct + '%';
+
+    // Summary spectrum too
+    const sumPin = document.getElementById('piq-sum-spectrum-pin');
+    const sumFill = document.getElementById('piq-sum-spectrum-fill');
+    if (sumPin) sumPin.style.left = pct + '%';
+    if (sumFill) sumFill.style.width = pct + '%';
+  }
+
+  // ── Radar Chart (Canvas) ──────────────────────────────
+
+  function drawRadar(stats) {
+    const canvas = document.getElementById('piq-radar');
+    if (!canvas) return;
+    const ctx = canvas.getContext('2d');
+    const dpr = window.devicePixelRatio || 1;
+    const size = 320;
+    canvas.width = size * dpr;
+    canvas.height = size * dpr;
+    canvas.style.width = size + 'px';
+    canvas.style.height = size + 'px';
+    ctx.scale(dpr, dpr);
+
+    const cx = size / 2;
+    const cy = size / 2;
+    const maxR = 120;
+    const domains = DOMAIN_KEYS;
+    const n = domains.length;
+    const angleStep = (Math.PI * 2) / n;
+    const startAngle = -Math.PI / 2; // top
+
+    ctx.clearRect(0, 0, size, size);
+
+    // Background rings
+    const rings = [0.2, 0.4, 0.6, 0.8, 1.0];
+    rings.forEach(r => {
+      ctx.beginPath();
+      for (let i = 0; i <= n; i++) {
+        const a = startAngle + i * angleStep;
+        const x = cx + Math.cos(a) * maxR * r;
+        const y = cy + Math.sin(a) * maxR * r;
+        i === 0 ? ctx.moveTo(x, y) : ctx.lineTo(x, y);
+      }
+      ctx.closePath();
+      ctx.strokeStyle = 'rgba(44,24,16,0.08)';
+      ctx.lineWidth = 0.5;
+      ctx.stroke();
+    });
+
+    // Axis lines
+    for (let i = 0; i < n; i++) {
+      const a = startAngle + i * angleStep;
+      ctx.beginPath();
+      ctx.moveTo(cx, cy);
+      ctx.lineTo(cx + Math.cos(a) * maxR, cy + Math.sin(a) * maxR);
+      ctx.strokeStyle = 'rgba(44,24,16,0.06)';
+      ctx.lineWidth = 0.5;
+      ctx.stroke();
+    }
+
+    // Target ring (next level boundary) — dashed
+    const playerLevel = eloToLevel(stats.elo);
+    const nextThreshold = THRESHOLDS[Math.min(playerLevel, THRESHOLDS.length - 1)] || 2500;
+    const targetNorm = Math.min(1, nextThreshold / 2500);
+    ctx.beginPath();
+    ctx.setLineDash([4, 4]);
+    for (let i = 0; i <= n; i++) {
+      const a = startAngle + i * angleStep;
+      const x = cx + Math.cos(a) * maxR * targetNorm;
+      const y = cy + Math.sin(a) * maxR * targetNorm;
+      i === 0 ? ctx.moveTo(x, y) : ctx.lineTo(x, y);
+    }
+    ctx.closePath();
+    ctx.strokeStyle = 'rgba(114,47,55,0.25)';
+    ctx.lineWidth = 1;
+    ctx.stroke();
+    ctx.setLineDash([]);
+
+    // Player shape
+    const points = [];
+    for (let i = 0; i < n; i++) {
+      const domain = domains[i];
+      const domainElo = (stats.domainElo && stats.domainElo[domain]) || 1000;
+      const norm = Math.max(0.05, Math.min(1, domainElo / 2500));
+      const a = startAngle + i * angleStep;
+      points.push({
+        x: cx + Math.cos(a) * maxR * norm,
+        y: cy + Math.sin(a) * maxR * norm,
+        norm
+      });
+    }
+
+    // Fill
+    ctx.beginPath();
+    points.forEach((p, i) => i === 0 ? ctx.moveTo(p.x, p.y) : ctx.lineTo(p.x, p.y));
+    ctx.closePath();
+    const grad = ctx.createRadialGradient(cx, cy, 0, cx, cy, maxR);
+    grad.addColorStop(0, 'rgba(114,47,55,0.15)');
+    grad.addColorStop(1, 'rgba(114,47,55,0.08)');
+    ctx.fillStyle = grad;
+    ctx.fill();
+
+    // Stroke
+    ctx.beginPath();
+    points.forEach((p, i) => i === 0 ? ctx.moveTo(p.x, p.y) : ctx.lineTo(p.x, p.y));
+    ctx.closePath();
+    ctx.strokeStyle = 'rgba(114,47,55,0.5)';
+    ctx.lineWidth = 1.5;
+    ctx.stroke();
+
+    // Dots at vertices
+    points.forEach(p => {
+      ctx.beginPath();
+      ctx.arc(p.x, p.y, 3.5, 0, Math.PI * 2);
+      ctx.fillStyle = '#722F37';
+      ctx.fill();
+    });
+
+    // Labels
+    ctx.font = '500 10px Montserrat, sans-serif';
+    ctx.fillStyle = '#6B5D52';
+    ctx.textAlign = 'center';
+    ctx.textBaseline = 'middle';
+    for (let i = 0; i < n; i++) {
+      const a = startAngle + i * angleStep;
+      const labelR = maxR + 22;
+      const lx = cx + Math.cos(a) * labelR;
+      const ly = cy + Math.sin(a) * labelR;
+      const label = DOMAIN_LABELS[domains[i]] || domains[i];
+      ctx.fillText(label, lx, ly);
+    }
+  }
+
+  // Radar click → focus domain
+  const radarCanvas = document.getElementById('piq-radar');
+  if (radarCanvas) {
+    radarCanvas.addEventListener('click', (e) => {
+      const rect = radarCanvas.getBoundingClientRect();
+      const x = e.clientX - rect.left - 160;
+      const y = e.clientY - rect.top - 160;
+      const angle = Math.atan2(y, x);
+      const normalizedAngle = ((angle + Math.PI / 2) + Math.PI * 2) % (Math.PI * 2);
+      const idx = Math.round(normalizedAngle / (Math.PI * 2 / DOMAIN_KEYS.length)) % DOMAIN_KEYS.length;
+      const domain = DOMAIN_KEYS[idx];
+
+      // Activate that domain pill and start session
+      document.querySelectorAll('.piq-dpill').forEach(p => p.classList.remove('active'));
+      const pill = document.querySelector(`.piq-dpill[data-domain="${domain}"]`);
+      if (pill) pill.classList.add('active');
+      activeDomain = domain;
+      startSession(10);
+    });
+    radarCanvas.style.cursor = 'pointer';
   }
 
   // ── Session Flow ──────────────────────────────────────
