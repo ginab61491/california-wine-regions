@@ -39,6 +39,22 @@
 - Test at 375px, 390px, and 428px viewports
 
 
+## Content Accuracy Gate
+After any task that generates, modifies, or adds wine-related content
+(producer data, flashcards, grape descriptions, regional profiles, pairing
+logic), automatically run an accuracy check on the changed files BEFORE
+pushing.
+
+Output a brief accuracy summary as the last thing before pushing:
+- Number of claims checked
+- Any QUESTIONABLE or INCORRECT flags found
+- If any flags exist, DO NOT PUSH. Show me the flags and wait for approval.
+- If all claims pass, note "Accuracy check passed" and push.
+
+Save the full audit log to /docs/audits/audit-YYYY-MM-DD.md so I have
+a paper trail.
+
+
 ## Tech Stack
 - React + TypeScript + Tailwind
 - Anthropic API for AI features
