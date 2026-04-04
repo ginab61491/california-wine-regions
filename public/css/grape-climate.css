@@ -9,8 +9,9 @@
   --gc-text-faint: #9E9189;
   --gc-edge: #E8DFD2;
   background: var(--gc-bg); color: var(--gc-text); padding: 0;
+  overflow: hidden;
 }
-.gc-scroll { flex:1; overflow-y:auto; -webkit-overflow-scrolling:touch; }
+.gc-scroll { flex:1; overflow-y:auto; -webkit-overflow-scrolling:touch; min-height: 0; }
 .gc-body { max-width:520px; margin:0 auto; padding:32px 24px 48px; }
 
 /* Header */

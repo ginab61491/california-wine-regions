@@ -197,5 +197,9 @@ document.addEventListener('DOMContentLoaded', () => {
     if (sec && sec.classList.contains('active')) init();
   });
   const sec = document.getElementById('grapeclimate-section');
-  if (sec) observer.observe(sec, { attributes: true, attributeFilter: ['class'] });
+  if (sec) {
+    observer.observe(sec, { attributes: true, attributeFilter: ['class'] });
+    // Check immediately in case section is already active (deep link)
+    if (sec.classList.contains('active')) init();
+  }
 });
